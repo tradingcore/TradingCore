@@ -3,7 +3,7 @@ name: TradingCore - Análise Diária
 on:
   schedule:
     # Roda todos os dias às 9:00 UTC (6:00 AM Brasília)
-    - cron: '0 9 * * *'
+    - cron: '0 12 * * *'
   
   # Permite execução manual
   workflow_dispatch:
