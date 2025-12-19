@@ -1,0 +1,42 @@
+**1. MODELO DE NEGÓCIO:**
+
+A Petrobras, representada pela ação PETR4, é uma das maiores empresas de energia do mundo, com foco principal na exploração, produção, refino, comercialização e transporte de petróleo e gás natural. Suas principais linhas de receita incluem:
+
+- **Exploração e Produção (E&P):** A maior parte da receita vem da extração e venda de petróleo bruto e gás natural.
+- **Refino, Transporte e Comercialização:** Inclui a transformação do petróleo bruto em produtos refinados, como gasolina, diesel e querosene, além da distribuição e comercialização desses produtos.
+- **Gás e Energia:** Envolve a comercialização de gás natural e a geração de energia elétrica.
+- **Biocombustíveis e Outras Atividades:** Inclui a produção e venda de biocombustíveis e outras operações menores.
+
+**2. KPIs CHAVE:**
+
+- **Preço do Petróleo (Brent):** Flutuações no preço internacional do petróleo afetam diretamente a receita e a lucratividade.
+- **Câmbio (USD/BRL):** A variação cambial impacta os custos operacionais e a dívida, que é majoritariamente em dólares.
+- **Produção de Petróleo e Gás:** Volume de barris produzidos por dia.
+- **Capacidade de Refino e Margens de Refino:** Eficiência e rentabilidade das operações de refino.
+- **Investimentos em Capex:** Alocação de capital em novos projetos e manutenção.
+
+**3. TESES DE INVESTIMENTO:**
+
+Atualmente, a Petrobras está em um momento de **foco em eficiência e geração de caixa**, com uma estratégia voltada para a desalavancagem e maximização de retorno aos acionistas. A empresa tem priorizado a venda de ativos não essenciais, redução de dívida e aumento da distribuição de dividendos. A tese de investimento está centrada em:
+
+- **Dividendos:** Forte geração de caixa e política de dividendos atraente.
+- **Eficiência Operacional:** Foco na redução de custos e aumento da produtividade.
+- **Desinvestimentos:** Venda de ativos para focar em operações mais lucrativas.
+
+**4. RISCOS PRINCIPAIS:**
+
+- **Volatilidade do Preço do Petróleo:** Impacta diretamente a receita e a lucratividade.
+- **Risco Cambial:** Flutuações no câmbio podem aumentar o custo da dívida.
+- **Intervenção Governamental:** Como empresa estatal, está sujeita a mudanças regulatórias e políticas.
+- **Riscos Ambientais e de ESG:** Pressões para transição energética e questões ambientais podem afetar operações e reputação.
+- **Riscos Operacionais:** Acidentes e interrupções na produção podem impactar resultados.
+
+**5. O QUE BUSCAR EM NOTÍCIAS:**
+
+- **Mudanças nos Preços do Petróleo:** Impacto direto nas receitas.
+- **Decisões Governamentais e Regulatórias:** Potenciais mudanças na política de preços de combustíveis e intervenções.
+- **Resultados Financeiros e Guidance:** Desempenho trimestral e projeções futuras.
+- **Desinvestimentos e Aquisições:** Movimentos estratégicos que alterem o portfólio de ativos.
+- **Questões Ambientais e ESG:** Novas regulamentações ou incidentes que possam afetar a operação ou imagem da empresa.
+
+Focar em notícias que afetam diretamente a operação e a estratégia da empresa, evitando ruídos que não impactam os fundamentos financeiros.

@@ -1,0 +1,38 @@
+**1. MODELO DE NEGÓCIO:**
+
+A PETR3, ou Petrobras, é uma das maiores empresas de energia do mundo, com foco principal na exploração e produção de petróleo e gás natural. A empresa ganha dinheiro principalmente através das seguintes linhas de receita:
+
+- **Exploração e Produção (E&P):** A maior parte da receita vem da extração e venda de petróleo bruto e gás natural.
+- **Refino, Transporte e Comercialização:** Inclui a transformação do petróleo bruto em produtos refinados, como gasolina, diesel e querosene, e sua distribuição.
+- **Gás e Energia:** Envolve a comercialização de gás natural e a geração de energia elétrica.
+- **Petroquímica:** Participação em empresas do setor petroquímico, contribuindo com uma parcela menor da receita.
+
+**2. KPIs CHAVE:**
+
+- **Preço do Petróleo (Brent):** Flutuações nos preços internacionais do petróleo afetam diretamente a receita e a lucratividade.
+- **Taxa de Câmbio (USD/BRL):** A Petrobras realiza muitas transações em dólares, portanto, a valorização ou desvalorização do real impacta seus resultados financeiros.
+- **Produção Diária de Petróleo e Gás:** Medida em barris de óleo equivalente por dia (boe/d), é um indicador direto da capacidade operacional.
+- **Custo de Extração e Refino:** Influencia a margem de lucro.
+- **Capex e Opex:** Despesas de capital e operacionais são cruciais para a expansão e eficiência.
+
+**3. TESES DE INVESTIMENTO:**
+
+Atualmente, a Petrobras está em uma fase de foco em **Dividendos** e **Eficiência Operacional**. A empresa tem priorizado a desalavancagem financeira e a maximização de retorno aos acionistas através de dividendos robustos. Além disso, há um foco contínuo na redução de custos e aumento de eficiência, especialmente nas operações de E&P.
+
+**4. RISCOS PRINCIPAIS:**
+
+- **Volatilidade dos Preços do Petróleo:** Impacta diretamente a receita e a lucratividade.
+- **Risco Cambial:** Flutuações cambiais podem afetar a dívida e custos operacionais.
+- **Riscos Regulatórios e Políticos:** Mudanças na política governamental ou regulamentação podem impactar as operações e estratégias da empresa.
+- **Riscos Ambientais:** Desastres ambientais ou mudanças nas políticas de sustentabilidade podem afetar a reputação e operações.
+- **Concorrência e Inovação Tecnológica:** Avanços em energias renováveis e mudanças no mercado global de energia podem impactar a demanda por petróleo.
+
+**5. O QUE BUSCAR EM NOTÍCIAS:**
+
+- **Mudanças nos Preços do Petróleo:** Notícias sobre OPEP, conflitos geopolíticos ou descobertas de novas reservas.
+- **Política Governamental e Regulatória:** Alterações em políticas de exploração, refino e distribuição.
+- **Resultados Operacionais e Financeiros:** Relatórios trimestrais e anúncios de metas de produção.
+- **Movimentos Cambiais:** Impactos de políticas monetárias e econômicas no câmbio.
+- **Desenvolvimentos em Sustentabilidade:** Iniciativas ou pressões para transição energética e redução de emissões.
+
+Esses elementos são cruciais para entender o impacto real sobre a PETR3, enquanto outras notícias podem ser consideradas ruído se não afetarem diretamente esses fatores.

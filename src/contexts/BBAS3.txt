@@ -1,0 +1,38 @@
+**1. MODELO DE NEGÓCIO:**
+
+O Banco do Brasil S.A. (BBAS3) é uma instituição financeira diversificada, com operações que abrangem uma ampla gama de serviços bancários e financeiros. As principais linhas de receita incluem:
+
+- **Crédito e Empréstimos:** Oferece uma variedade de produtos de crédito para pessoas físicas e jurídicas, incluindo empréstimos pessoais, financiamentos imobiliários, crédito rural e capital de giro.
+- **Serviços Bancários:** Receita proveniente de tarifas e serviços, como administração de contas, cartões de crédito, seguros e gestão de ativos.
+- **Tesouraria e Investimentos:** Ganhos com operações de tesouraria, investimentos em títulos públicos e privados, e operações no mercado de câmbio.
+- **Participações em Subsidiárias:** Inclui receitas de suas participações em empresas de seguros, previdência e capitalização.
+
+**2. KPIs CHAVE:**
+
+- **Taxa Selic:** Influencia diretamente o custo de captação e a rentabilidade das operações de crédito.
+- **IPCA:** Impacta a inflação e, consequentemente, a demanda por crédito e a inadimplência.
+- **Inadimplência:** Níveis de inadimplência afetam a qualidade da carteira de crédito e as provisões para perdas.
+- **Câmbio:** Afeta operações de tesouraria e investimentos no exterior.
+- **Margem Financeira Líquida:** Indicador crucial da rentabilidade das operações de crédito.
+
+**3. TESES DE INVESTIMENTO:**
+
+Atualmente, o Banco do Brasil está posicionado como uma empresa de **Dividendos**, com foco em gerar retorno consistente para os acionistas por meio de distribuição de lucros. A estratégia de crescimento é moderada, com ênfase em eficiência operacional e digitalização dos serviços. A sólida posição de capital e a capacidade de gerar caixa são atrativos para investidores que buscam estabilidade e retorno previsível.
+
+**4. RISCOS PRINCIPAIS:**
+
+- **Risco Político:** Como uma empresa com participação estatal, decisões políticas podem impactar a governança e a estratégia do banco.
+- **Condições Econômicas:** Desaceleração econômica pode aumentar a inadimplência e reduzir a demanda por crédito.
+- **Concorrência:** Aumento da concorrência de fintechs e bancos digitais pode pressionar margens e participação de mercado.
+- **Regulatório:** Mudanças regulatórias podem afetar a operação e a lucratividade.
+- **Risco de Crédito:** A deterioração da qualidade da carteira de crédito pode impactar negativamente os resultados.
+
+**5. O QUE BUSCAR EM NOTÍCIAS:**
+
+- **Política Monetária:** Alterações na taxa Selic e suas implicações para o setor bancário.
+- **Desempenho Econômico:** Indicadores macroeconômicos que possam afetar a demanda por crédito e a inadimplência.
+- **Decisões Governamentais:** Qualquer mudança na política ou gestão do banco devido à influência estatal.
+- **Inovações Tecnológicas:** Avanços em digitalização e parcerias com fintechs que possam melhorar a eficiência e a oferta de serviços.
+- **Resultados Trimestrais:** Desempenho financeiro e operacional, com foco em margens, inadimplência e distribuição de dividendos.
+
+Ao filtrar notícias, é essencial distinguir entre eventos que impactam diretamente as operações e a estratégia do Banco do Brasil e aqueles que são apenas ruído de mercado.
