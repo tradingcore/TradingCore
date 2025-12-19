@@ -40,3 +40,23 @@ def formatar_timestamp():
     tz = pytz.timezone('America/Sao_Paulo')
     return datetime.now(tz).strftime('%d/%m/%Y %H:%M')
 
+
+def extrair_tickers_unicos(df_usuarios):
+    """
+    Extrai todos os tickers únicos de todos os usuários.
+    
+    Args:
+        df_usuarios: DataFrame com coluna 'Ticker 1' contendo tickers separados por vírgula
+        
+    Returns:
+        Set de tickers únicos (ex: {'PETR4', 'VALE3', 'BBAS3'})
+    """
+    todos_tickers = set()
+    
+    for _, row in df_usuarios.iterrows():
+        ticker_str = row.get('Ticker 1', '')
+        tickers = parsear_tickers(ticker_str)
+        todos_tickers.update(tickers)
+    
+    return todos_tickers
+
