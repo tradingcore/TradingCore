@@ -1,0 +1,53 @@
+name: Update Business Contexts
+
+on:
+  schedule:
+    # Roda todo dia 1 do mês às 00:00 UTC
+    - cron: '0 0 1 * *'
+  
+  # Permite execução manual
+  workflow_dispatch:
+
+jobs:
+  update-contexts:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Instalar dependências
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Autenticar Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }}
+          create_credentials_file: true
+      
+      - name: Atualizar Contextos
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          EVENT_REGISTRY_API_KEY: ${{ secrets.EVENT_REGISTRY_API_KEY }}
+          REMETENTE_EMAIL: ${{ secrets.REMETENTE_EMAIL }}
+          REMETENTE_SENHA: ${{ secrets.REMETENTE_SENHA }}
+          SHEET_ID: ${{ secrets.SHEET_ID }}
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ steps.auth.outputs.credentials_file_path }}
+        run: |
+          python src/scripts/update_all_contexts.py
+      
+      - name: Commit e Push das mudanças
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add src/contexts/*.txt
+          git commit -m "Update business contexts [automated]" || echo "No changes to commit"
+          git push
+

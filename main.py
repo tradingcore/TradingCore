@@ -4,11 +4,13 @@ Processa todos os usuários e envia análises diárias.
 
 OTIMIZADO: Processa cada ticker apenas uma vez, reutilizando
 análises para múltiplos usuários que compartilham os mesmos tickers.
+CONTEXTUAL: Usa tese estratégica de cada empresa para qualificar as notícias.
 """
 from src.config import validar_configuracoes
 from src.utils import calcular_periodo_24h, parsear_tickers, extrair_tickers_unicos
 from src.sheets_client import carregar_usuarios_sheets
 from src.news_fetcher import buscar_noticias
+from src.context_manager import garantir_contexto
 from src.ai_analyzer import (
     analisar_com_gpt,
     filtrar_top_relevantes,
@@ -27,12 +29,14 @@ def processar_todos_tickers(tickers_unicos, data_inicio, data_fim):
         data_fim: Data fim da busca
         
     Returns:
-        Tupla (cache_analises, cache_resumos):
+        Tupla (cache_analises, cache_resumos, cache_contextos):
             - cache_analises: {ticker: lista_de_analises}
             - cache_resumos: {ticker: resumo_executivo_texto}
+            - cache_contextos: {ticker: contexto_texto}
     """
     cache_analises = {}
     cache_resumos = {}
+    cache_contextos = {}
     total_tickers = len(tickers_unicos)
     
     print(f"\n{'='*60}")
@@ -43,7 +47,11 @@ def processar_todos_tickers(tickers_unicos, data_inicio, data_fim):
         try:
             print(f"\n[{idx}/{total_tickers}] Processando {ticker}...")
             
-            # Buscar notícias (1x por ticker)
+            # 1. Garantir contexto estratégico (Carrega ou gera via GPT-4o)
+            contexto = garantir_contexto(ticker)
+            cache_contextos[ticker] = contexto
+            
+            # 2. Buscar notícias (1x por ticker)
             artigos = buscar_noticias(ticker, data_inicio, data_fim)
             
             if not artigos:
@@ -51,15 +59,15 @@ def processar_todos_tickers(tickers_unicos, data_inicio, data_fim):
                 cache_analises[ticker] = []
                 continue
             
-            # Analisar com GPT (1x por ticker)
-            analises = analisar_com_gpt(artigos, ticker)
+            # 3. Analisar com GPT (1x por ticker, usando o contexto)
+            analises = analisar_com_gpt(artigos, ticker, contexto)
             
             if not analises:
                 print(f"  ⚠ {ticker}: Nenhuma análise gerada")
                 cache_analises[ticker] = []
                 continue
             
-            # Filtrar top relevantes
+            # 4. Filtrar top relevantes (baseado no relevancia_score)
             top_analises = filtrar_top_relevantes(analises)
             
             print(f"  ✓ {ticker}: {len(top_analises)} notícias relevantes selecionadas")
@@ -81,8 +89,8 @@ def processar_todos_tickers(tickers_unicos, data_inicio, data_fim):
     
     for ticker, analises in cache_analises.items():
         if analises:
-            # Gera resumo executivo para este ticker (1x)
-            resumo = gerar_resumo_executivo(analises)
+            # Gera resumo executivo para este ticker (1x, usando contexto)
+            resumo = gerar_resumo_executivo(analises, cache_contextos)
             cache_resumos[ticker] = resumo.get(ticker, "")
     
     # Resumo da fase 1
@@ -97,7 +105,7 @@ def processar_todos_tickers(tickers_unicos, data_inicio, data_fim):
     print(f"  Total de análises em cache: {total_noticias_cache}")
     print(f"{'='*60}")
     
-    return cache_analises, cache_resumos
+    return cache_analises, cache_resumos, cache_contextos
 
 
 def processar_usuario(usuario_dict, cache_analises, cache_resumos):
@@ -139,7 +147,7 @@ def processar_usuario(usuario_dict, cache_analises, cache_resumos):
         analises_ticker = cache_analises.get(ticker, [])
         todas_analises.extend(analises_ticker)
 
-    # Coletar resumos executivos do cache (sem nova chamada API!)
+    # Coletar resumos executivos do cache
     resumo_executivo = {}
     for ticker in tickers:
         if ticker in cache_resumos and cache_resumos[ticker]:
@@ -204,7 +212,7 @@ def main():
     print(f"✓ {len(tickers_unicos)} tickers únicos identificados: {', '.join(sorted(tickers_unicos))}")
     
     # Processar todos os tickers uma única vez
-    cache_analises, cache_resumos = processar_todos_tickers(tickers_unicos, data_inicio, data_fim)
+    cache_analises, cache_resumos, _ = processar_todos_tickers(tickers_unicos, data_inicio, data_fim)
 
     # =========================================================
     # FASE 2: Distribuir análises para cada usuário
@@ -219,7 +227,7 @@ def main():
     usuarios_erro = 0
     total_noticias = 0
 
-    # Processar cada usuário usando os caches (sem novas chamadas API!)
+    # Processar cada usuário usando os caches
     for idx, row in df_usuarios.iterrows():
         try:
             usuario_dict = row.to_dict()
