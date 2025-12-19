@@ -56,6 +56,14 @@ jobs:
         run: |
           python main.py
       
+      - name: Commit e Push de novos contextos
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add src/contexts/*.txt
+          git commit -m "Salva novos contextos gerados durante a análise diária [automated]" || echo "Sem novos contextos para salvar"
+          git push
+      
       - name: Limpar credenciais
         if: always()
         run: |
