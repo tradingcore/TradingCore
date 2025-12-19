@@ -8,6 +8,9 @@ on:
   # Permite execução manual
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   analyze-and-send:
     runs-on: ubuntu-latest
