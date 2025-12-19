@@ -4,6 +4,36 @@ Sistema que envia emails diários com análise de notícias sobre suas ações.
 
 ---
 
+## 🚀 Como Funciona
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    FASE 1 (APIs)                            │
+├─────────────────────────────────────────────────────────────┤
+│  1. Carrega usuários do Google Sheets                       │
+│  2. Extrai tickers ÚNICOS de todos os usuários              │
+│  3. Para cada ticker (1x apenas):                           │
+│     ├─ Busca notícias (Event Registry API)                  │
+│     ├─ Analisa com IA (OpenAI GPT)                          │
+│     └─ Gera resumo executivo (OpenAI GPT)                   │
+│  4. Armazena tudo em cache                                  │
+└─────────────────────────────────────────────────────────────┘
+                            │
+                            ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    FASE 2 (Emails)                          │
+├─────────────────────────────────────────────────────────────┤
+│  Para cada usuário:                                         │
+│     ├─ Pega análises do cache (0 chamadas API)              │
+│     ├─ Pega resumos do cache (0 chamadas API)               │
+│     └─ Envia email personalizado                            │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Otimização:** Se 10 usuários têm PETR4, o sistema busca e analisa PETR4 apenas 1 vez, economizando chamadas de API.
+
+---
+
 ## ⚡ Como Usar
 
 ### 1️⃣ Rodar Agora (Local)
@@ -46,7 +76,7 @@ GOOGLE_CREDENTIALS (conteúdo do config/credentials.json)
 **Ative o Workflow:**
 - Actions → TradingCore - Análise Diária → Enable workflow
 
-✅ **Pronto!** Rodará automaticamente todo dia às 6h da manhã.
+✅ **Pronto!** Rodará automaticamente todo dia às **9h da manhã (Brasília)**.
 
 ---
 
@@ -54,13 +84,21 @@ GOOGLE_CREDENTIALS (conteúdo do config/credentials.json)
 
 ```
 TradingCore/
-├── main.py                      # 🚀 Roda o sistema
+├── main.py                      # 🚀 Script principal (2 fases otimizadas)
 ├── requirements.txt             # 📦 Dependências
-├── .env                         # 🔑 Suas senhas
+├── .env                         # 🔑 Suas senhas (local)
+├── .github/workflows/           # ⏰ GitHub Actions
+│   └── daily-analysis.yml       # Cron job (9h Brasília)
 ├── config/                      # ⚙️ Configurações
 │   ├── credentials.json         # Google Cloud
 │   └── rodar.sh                 # Script para rodar
 └── src/                         # 💻 Código
+    ├── config.py                # Configurações e variáveis
+    ├── sheets_client.py         # Integração Google Sheets
+    ├── news_fetcher.py          # Busca notícias (Event Registry)
+    ├── ai_analyzer.py           # Análise com GPT (OpenAI)
+    ├── email_sender.py          # Geração e envio de emails
+    └── utils.py                 # Funções utilitárias
 ```
 
 ---
@@ -91,24 +129,30 @@ Planilha ID: `1rhQCLpOboojr9CNYXyisEQ-U8OnQAtqiU3kDq3nT-_o`
 Edite `.github/workflows/daily-analysis.yml`:
 
 ```yaml
-cron: '0 9 * * *'  # 9:00 UTC = 6:00 Brasília
+cron: '0 12 * * *'  # 12:00 UTC = 9:00 Brasília
 ```
 
 **Exemplos:**
-- `'0 12 * * *'` = 9h da manhã (Brasília)
+- `'0 9 * * *'` = 6h da manhã (Brasília)
+- `'0 12 * * *'` = 9h da manhã (Brasília) ← **atual**
+- `'0 15 * * *'` = 12h (meio-dia Brasília)
 - `'0 */6 * * *'` = A cada 6 horas
-- `'0 9 * * 1-5'` = Dias úteis às 6h
+- `'0 12 * * 1-5'` = Dias úteis às 9h
 
 ---
 
 ## 💰 Custos
 
-- GitHub Actions: **Grátis** (repo público)
-- OpenAI: ~$0.20/mês (2 usuários)
-- Event Registry: **Grátis** 
-- Gmail: **Grátis**
+| Serviço | Custo |
+|---------|-------|
+| GitHub Actions | **Grátis** (repo público) |
+| OpenAI (GPT-4o-mini) | ~$0.10-0.30/mês |
+| Event Registry | **Grátis** |
+| Gmail | **Grátis** |
 
-**Total: ~$0.20/mês** 💰
+**Total estimado: ~$0.20/mês** 💰
+
+*A otimização de cache reduz significativamente as chamadas à OpenAI quando há tickers repetidos entre usuários.*
 
 ---
 
