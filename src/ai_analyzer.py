@@ -186,3 +186,110 @@ Responda apenas com o resumo de 2 linhas, sem formatação adicional."""
             resumos_executivos[ticker] = "Resumo não disponível."
 
     return resumos_executivos
+
+
+def gerar_analise_consolidada(analises_por_ticker, contexto=None):
+    """
+    Gera análise consolidada dividida em blocos positivos e negativos.
+    
+    Args:
+        analises_por_ticker: Dict {ticker: [lista_de_analises]}
+        contexto: Dict {ticker: contexto_texto}
+    
+    Returns:
+        Dict {ticker: {'positivo': str, 'negativo': str}}
+    """
+    if not analises_por_ticker:
+        return {}
+    
+    url = "https://api.openai.com/v1/chat/completions"
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {OPENAI_API_KEY}",
+    }
+    
+    analises_consolidadas = {}
+    
+    for ticker, analises in analises_por_ticker.items():
+        if not analises:
+            continue
+        
+        try:
+            # Separar notícias por sentimento
+            positivas = [a for a in analises if a.get('sentimento', 0) > 0]
+            negativas = [a for a in analises if a.get('sentimento', 0) < 0]
+            
+            ctx_ticker = contexto.get(ticker, "") if contexto else ""
+            ctx_str = f"\nContexto da empresa:\n{ctx_ticker}\n" if ctx_ticker else ""
+            
+            resultado = {'positivo': '', 'negativo': ''}
+            
+            # Consolidar notícias positivas
+            if positivas:
+                noticias_texto = "\n".join([
+                    f"- {a.get('titulo', '')}: {a.get('resumo', '')}"
+                    for a in positivas
+                ])
+                
+                prompt = f"""Você é um analista sênior de ações.
+Consolide as notícias POSITIVAS abaixo sobre {ticker} em um único bloco coeso.
+{ctx_str}
+Crie uma narrativa fluida (não liste bullet points) de até 10 linhas que:
+- Integre os pontos principais sem repetir informações similares
+- Destaque o impacto real para a tese de investimento
+- Seja direta e informativa
+
+Notícias:
+{noticias_texto}
+
+Responda apenas com o texto consolidado, sem título ou formatação."""
+
+                data = {
+                    "model": OPENAI_MODEL,
+                    "messages": [{"role": "user", "content": prompt}],
+                    "temperature": OPENAI_TEMPERATURE,
+                }
+                
+                response = requests.post(url, headers=headers, json=data)
+                response.raise_for_status()
+                resultado['positivo'] = response.json()["choices"][0]["message"]["content"].strip()
+            
+            # Consolidar notícias negativas
+            if negativas:
+                noticias_texto = "\n".join([
+                    f"- {a.get('titulo', '')}: {a.get('resumo', '')}"
+                    for a in negativas
+                ])
+                
+                prompt = f"""Você é um analista sênior de ações.
+Consolide as notícias NEGATIVAS abaixo sobre {ticker} em um único bloco coeso.
+{ctx_str}
+Crie uma narrativa fluida (não liste bullet points) de até 10 linhas que:
+- Integre os pontos principais sem repetir informações similares
+- Destaque os riscos reais para a tese de investimento
+- Seja direta e informativa
+
+Notícias:
+{noticias_texto}
+
+Responda apenas com o texto consolidado, sem título ou formatação."""
+
+                data = {
+                    "model": OPENAI_MODEL,
+                    "messages": [{"role": "user", "content": prompt}],
+                    "temperature": OPENAI_TEMPERATURE,
+                }
+                
+                response = requests.post(url, headers=headers, json=data)
+                response.raise_for_status()
+                resultado['negativo'] = response.json()["choices"][0]["message"]["content"].strip()
+            
+            if resultado['positivo'] or resultado['negativo']:
+                analises_consolidadas[ticker] = resultado
+                print(f"  ✓ Análise consolidada gerada para {ticker}")
+        
+        except Exception as e:
+            print(f"  ⚠ Erro ao gerar análise consolidada de {ticker}: {e}")
+            continue
+    
+    return analises_consolidadas

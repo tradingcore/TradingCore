@@ -30,10 +30,11 @@ def processar_todos_tickers(tickers_unicos, data_inicio, data_fim):
         data_fim: Data fim da busca
         
     Returns:
-        Tupla (cache_analises, cache_resumos, cache_contextos):
+        Tupla (cache_analises, cache_resumos, cache_contextos, analises_consolidadas):
             - cache_analises: {ticker: lista_de_analises}
             - cache_resumos: {ticker: resumo_executivo_texto}
             - cache_contextos: {ticker: contexto_texto}
+            - analises_consolidadas: {ticker: {'positivo': str, 'negativo': str}}
     """
     cache_analises = {}
     cache_resumos = {}
@@ -98,26 +99,36 @@ def processar_todos_tickers(tickers_unicos, data_inicio, data_fim):
     tickers_com_noticias = sum(1 for t, a in cache_analises.items() if a)
     total_noticias_cache = sum(len(a) for a in cache_analises.values())
     
+    # Gerar análises consolidadas
+    print(f"\n{'='*60}")
+    print(f"📊 GERANDO ANÁLISES CONSOLIDADAS")
+    print(f"{'='*60}")
+    
+    from src.ai_analyzer import gerar_analise_consolidada
+    analises_consolidadas = gerar_analise_consolidada(cache_analises, cache_contextos)
+    
     print(f"\n{'='*60}")
     print(f"✓ FASE 1 CONCLUÍDA")
     print(f"  Tickers processados: {total_tickers}")
     print(f"  Tickers com notícias: {tickers_com_noticias}")
     print(f"  Resumos executivos gerados: {len(cache_resumos)}")
+    print(f"  Análises consolidadas geradas: {len(analises_consolidadas)}")
     print(f"  Total de análises em cache: {total_noticias_cache}")
     print(f"{'='*60}")
     
-    return cache_analises, cache_resumos, cache_contextos
+    return cache_analises, cache_resumos, cache_contextos, analises_consolidadas
 
 
-def processar_usuario(usuario_dict, cache_analises, cache_resumos, precos_dados):
+def processar_usuario(usuario_dict, cache_analises, cache_resumos, precos_dados, analises_consolidadas):
     """
-    Processa um único usuário usando os caches de análises, resumos e preços.
+    Processa um único usuário usando os caches de análises, resumos, preços e análises consolidadas.
     
     Args:
         usuario_dict: Dicionário com dados do usuário
         cache_analises: Dicionário {ticker: lista_de_analises}
         cache_resumos: Dicionário {ticker: resumo_executivo_texto}
         precos_dados: Dicionário {ticker: {preco_fechamento, variacao_percentual, sucesso}}
+        analises_consolidadas: Dicionário {ticker: {'positivo': str, 'negativo': str}}
         
     Returns:
         Tupla (sucesso: bool, num_noticias: int)
@@ -137,7 +148,7 @@ def processar_usuario(usuario_dict, cache_analises, cache_resumos, precos_dados)
     tickers = parsear_tickers(ticker_str)
     if not tickers:
         print(f"    ⚠ Nenhum ticker encontrado")
-        html = gerar_email_html(usuario_dict, [], {}, {})
+        html = gerar_email_html(usuario_dict, [], {}, {}, {})
         enviar_email(email, "TradingCore - Análise Diária", html)
         return True, 0
 
@@ -157,10 +168,13 @@ def processar_usuario(usuario_dict, cache_analises, cache_resumos, precos_dados)
 
     # Filtrar apenas os preços dos tickers do usuário
     precos_usuario = {t: precos_dados.get(t, {'sucesso': False}) for t in tickers}
+    
+    # Filtrar apenas as análises consolidadas dos tickers do usuário
+    consolidadas_usuario = {t: analises_consolidadas.get(t, {}) for t in tickers if t in analises_consolidadas}
 
     # Gerar e enviar email
     try:
-        html = gerar_email_html(usuario_dict, todas_analises, resumo_executivo, precos_usuario)
+        html = gerar_email_html(usuario_dict, todas_analises, resumo_executivo, precos_usuario, consolidadas_usuario)
 
         sucesso = enviar_email(
             email,
@@ -217,7 +231,7 @@ def main():
     print(f"✓ {len(tickers_unicos)} tickers únicos identificados: {', '.join(sorted(tickers_unicos))}")
     
     # Processar todos os tickers uma única vez
-    cache_analises, cache_resumos, _ = processar_todos_tickers(tickers_unicos, data_inicio, data_fim)
+    cache_analises, cache_resumos, _, analises_consolidadas = processar_todos_tickers(tickers_unicos, data_inicio, data_fim)
 
     # =========================================================
     # FASE 1.5: Buscar preços do Yahoo Finance
@@ -241,7 +255,7 @@ def main():
     for idx, row in df_usuarios.iterrows():
         try:
             usuario_dict = row.to_dict()
-            sucesso, num_noticias = processar_usuario(usuario_dict, cache_analises, cache_resumos, precos_dados)
+            sucesso, num_noticias = processar_usuario(usuario_dict, cache_analises, cache_resumos, precos_dados, analises_consolidadas)
 
             if sucesso:
                 usuarios_sucesso += 1

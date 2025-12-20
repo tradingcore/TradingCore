@@ -17,8 +17,10 @@ Sistema que envia emails diários com análise de notícias sobre suas ações, 
 │     ├─ Busca notícias (Event Registry API)                  │
 │     ├─ Analisa com IA (GPT-4o-mini + Contexto)              │
 │     │  └─ Atribui Relevância Score (0-10)                   │
-│     └─ Gera resumo executivo baseado na tese                │
-│  4. Armazena tudo em cache e persiste novos contextos       │
+│     ├─ Gera resumo executivo baseado na tese                │
+│     └─ Consolida notícias em blocos (positivo/negativo)     │
+│  4. Busca preços e variações (Yahoo Finance)                │
+│  5. Armazena tudo em cache e persiste novos contextos       │
 └─────────────────────────────────────────────────────────────┘
                             │
                             ▼
@@ -27,7 +29,8 @@ Sistema que envia emails diários com análise de notícias sobre suas ações, 
 ├─────────────────────────────────────────────────────────────┤
 │  Para cada usuário:                                         │
 │     ├─ Pega notícias filtradas pelo Score de Relevância     │
-│     ├─ Pega resumos do cache (0 chamadas API)               │
+│     ├─ Pega resumos e análises consolidadas do cache        │
+│     ├─ Pega preços e variações do cache                     │
 │     └─ Envia email personalizado                            │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -36,6 +39,8 @@ Sistema que envia emails diários com análise de notícias sobre suas ações, 
 - **Deduplicação:** Processa cada ação apenas uma vez, independente do número de usuários.
 - **Contexto de Negócio:** A IA estuda o modelo de negócio da empresa (KPIs, riscos) antes de julgar as notícias.
 - **Filtro de Ruído:** Usa um `relevancia_score` inteligente em vez de apenas sentimento.
+- **Análise Consolidada:** Agrupa notícias similares em blocos positivos/negativos para evitar redundância.
+- **Preços em Tempo Real:** Exibe preço de fechamento e variação percentual do Yahoo Finance.
 - **Persistência Automática:** Novos contextos gerados são salvos automaticamente no repositório para economizar tokens no futuro.
 
 ---
@@ -72,13 +77,14 @@ TradingCore/
 │   ├── daily-analysis.yml       # Análise diária (9h Brasília)
 │   └── update-contexts.yml      # Atualização mensal das teses
 └── src/
-    ├── contexts/                # 📂 Teses estratégicas (.txt)
-    ├── context_manager.py       # 🧠 Gestão de contexto business
-    ├── ai_analyzer.py           # 🤖 Análise IA com Score de Relevância
-    ├── news_fetcher.py          # 🔍 Busca de notícias
-    ├── email_sender.py          # 📧 Geração de emails HTML
-    ├── sheets_client.py         # 📊 Integração Google Sheets
-    └── utils.py                 # 🛠️ Utilitários
+   ├── contexts/                # 📂 Teses estratégicas (.txt)
+   ├── context_manager.py       # 🧠 Gestão de contexto business
+   ├── ai_analyzer.py           # 🤖 Análise IA + Consolidação de notícias
+   ├── news_fetcher.py          # 🔍 Busca de notícias
+   ├── price_fetcher.py         # 💰 Busca de preços (Yahoo Finance)
+   ├── email_sender.py          # 📧 Geração de emails HTML
+   ├── sheets_client.py         # 📊 Integração Google Sheets
+   └── utils.py                 # 🛠️ Utilitários
 ```
 
 ---

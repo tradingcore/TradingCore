@@ -8,7 +8,7 @@ from .config import REMETENTE_EMAIL, REMETENTE_SENHA, SMTP_SERVER, SMTP_PORT
 from .utils import formatar_timestamp
 
 
-def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_dados=None):
+def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_dados=None, analises_consolidadas=None):
     """
     Gera HTML formatado para o email com as análises de notícias.
 
@@ -17,6 +17,7 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_
         analises_agrupadas: Lista de análises de todos os tickers
         resumo_executivo: Dicionário {ticker: resumo_compacto}
         precos_dados: Dicionário {ticker: {preco_fechamento, variacao_percentual, sucesso}}
+        analises_consolidadas: Dicionário {ticker: {'positivo': str, 'negativo': str}}
 
     Returns:
         String com HTML formatado
@@ -26,6 +27,8 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_
         resumo_executivo = {}
     if precos_dados is None:
         precos_dados = {}
+    if analises_consolidadas is None:
+        analises_consolidadas = {}
 
     def sentimento_info(valor):
         """Converte sentimento em emoji e cor."""
@@ -125,6 +128,21 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_
             color: #666;
             font-size: 13px;
             line-height: 1.5;
+        }}
+        .noticia.consolidada {{
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border-left: 3px solid #667eea;
+        }}
+        .noticia.consolidada .noticia-titulo {{
+            font-size: 15px;
+            margin-bottom: 10px;
+        }}
+        .noticia.consolidada .noticia-resumo {{
+            line-height: 1.7;
+            text-align: justify;
         }}
         .sentimento {{
             display: inline-block;
@@ -311,25 +329,43 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_
         </div>
 """
     else:
-        for ticker, analises in por_ticker.items():
+        # Agrupar por ticker
+        por_ticker = {}
+        for analise in analises_agrupadas:
+            ticker = analise.get('ticker', 'Unknown')
+            if ticker not in por_ticker:
+                por_ticker[ticker] = []
+            por_ticker[ticker].append(analise)
+        
+        for ticker in por_ticker.keys():
+            consolidado = analises_consolidadas.get(ticker, {})
+            
+            if not consolidado or (not consolidado.get('positivo') and not consolidado.get('negativo')):
+                continue
+            
             html += f"""
         <div class="ticker-section">
             <div class="ticker-title">{ticker}</div>
 """
-            for analise in analises:
-                emoji, cor, label = sentimento_info(analise.get('sentimento', 0))
-                titulo = analise.get('titulo', 'Sem título')
-                resumo = analise.get('resumo', '')
-
+            
+            # Bloco Positivo
+            if consolidado.get('positivo'):
                 html += f"""
-            <div class="noticia">
-                <div class="noticia-titulo">{emoji} {titulo}</div>
-                <div class="noticia-resumo">{resumo}</div>
-                <span class="sentimento" style="background-color: {cor}; color: white;">
-                    {label}
-                </span>
+            <div class="noticia consolidada">
+                <div class="noticia-titulo">🟢 Pontos Positivos</div>
+                <div class="noticia-resumo">{consolidado['positivo']}</div>
             </div>
 """
+            
+            # Bloco Negativo
+            if consolidado.get('negativo'):
+                html += f"""
+            <div class="noticia consolidada">
+                <div class="noticia-titulo">🔴 Pontos de Atenção</div>
+                <div class="noticia-resumo">{consolidado['negativo']}</div>
+            </div>
+"""
+            
             html += """
         </div>
 """
