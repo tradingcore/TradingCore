@@ -1,0 +1,92 @@
+═══════════════════════════════════════════════════════════════
+🚀 PRÓXIMOS PASSOS - SUBIR PARA GITHUB
+═══════════════════════════════════════════════════════════════
+
+✅ PASSO 1: Git já está pronto! (completo)
+
+📝 PASSO 2: Criar Repositório no GitHub
+----------------------------------------
+
+1. Abra no navegador: https://github.com/new
+
+2. Preencha:
+   • Repository name: TradingCore
+   • Description: Sistema automático de análise de notícias da B3 com IA
+   • Visibilidade: 
+     - Public (recomendado - GitHub Actions grátis ilimitado)
+     - Private (2000 minutos grátis/mês)
+   
+3. NÃO marque nenhuma opção de "Initialize this repository"
+   
+4. Clique em "Create repository"
+
+
+🔗 PASSO 3: Conectar e Fazer Push
+----------------------------------
+
+No GitHub, você verá comandos. Copie o link do seu repositório e execute:
+
+    git remote add origin https://github.com/SEU_USUARIO/TradingCore.git
+    git push -u origin main
+
+Ou se preferir SSH:
+
+    git remote add origin git@github.com:SEU_USUARIO/TradingCore.git
+    git push -u origin main
+
+
+🔑 PASSO 4: Configurar Secrets (GitHub Actions)
+------------------------------------------------
+
+1. No seu repositório, vá em: Settings → Secrets and variables → Actions
+
+2. Clique em "New repository secret" e adicione CADA UM:
+
+   Nome: OPENAI_API_KEY
+   Valor: (copie do arquivo .env)
+   
+   Nome: EVENT_REGISTRY_API_KEY
+   Valor: (copie do arquivo .env)
+   
+   Nome: REMETENTE_EMAIL
+   Valor: (copie do arquivo .env)
+   
+   Nome: REMETENTE_SENHA
+   Valor: (copie do arquivo .env)
+   
+   Nome: SHEET_ID
+   Valor: (copie do arquivo .env)
+   
+   Nome: GOOGLE_CREDENTIALS
+   Valor: (copie TODO o conteúdo do config/credentials.json)
+
+
+📋 COMANDOS PARA COPIAR OS VALORES:
+------------------------------------
+
+# Ver valores do .env:
+cat .env
+
+# Copiar credentials.json para clipboard (macOS):
+cat config/credentials.json | pbcopy
+
+# Ver credentials.json:
+cat config/credentials.json
+
+
+✅ PASSO 5: Ativar Workflow
+----------------------------
+
+1. Vá em: Actions → TradingCore - Análise Diária
+2. Clique em "Enable workflow" (se aparecer)
+3. Teste manualmente: "Run workflow"
+
+
+🎉 PRONTO!
+----------
+
+Seu sistema vai rodar automaticamente todo dia às 6h da manhã (Brasília)!
+
+═══════════════════════════════════════════════════════════════
+
+

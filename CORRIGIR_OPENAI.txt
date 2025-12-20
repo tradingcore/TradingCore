@@ -1,0 +1,63 @@
+═══════════════════════════════════════════════════════════════
+🔑 CORRIGIR CHAVE OPENAI
+═══════════════════════════════════════════════════════════════
+
+❌ Problema: Chave da OpenAI foi revogada (compartilhada publicamente)
+
+✅ Solução: Gerar nova chave (2 minutos)
+
+📝 PASSO A PASSO:
+-----------------
+
+1. Acesse: https://platform.openai.com/api-keys
+
+2. Clique em "Create new secret key"
+
+3. Nome: "TradingCore"
+
+4. Copie a chave (começa com sk-proj-...)
+
+5. Cole no arquivo .env:
+   
+   nano .env
+   
+   Substitua a linha:
+   OPENAI_API_KEY=sk-proj-sGpja1EG...
+   
+   Pela nova chave:
+   OPENAI_API_KEY=SUA_NOVA_CHAVE_AQUI
+
+6. Salve (Ctrl+O, Enter, Ctrl+X)
+
+7. Teste novamente:
+   
+   ./config/rodar.sh
+
+
+⚠️ IMPORTANTE:
+--------------
+
+• Nunca compartilhe a chave em chats ou código público
+• A chave antiga foi revogada por segurança
+• Guarde a nova chave em local seguro
+
+
+🔄 ATUALIZAR NO GITHUB:
+-----------------------
+
+Depois de testar localmente:
+
+1. No GitHub: Settings → Secrets → Actions
+
+2. Encontre: OPENAI_API_KEY
+
+3. Clique em "Update"
+
+4. Cole a NOVA chave
+
+5. Save
+
+
+═══════════════════════════════════════════════════════════════
+
+

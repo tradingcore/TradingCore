@@ -17,6 +17,7 @@ from src.ai_analyzer import (
     gerar_resumo_executivo
 )
 from src.email_sender import gerar_email_html, enviar_email
+from src.price_fetcher import buscar_precos_multiplos
 
 
 def processar_todos_tickers(tickers_unicos, data_inicio, data_fim):
@@ -108,14 +109,15 @@ def processar_todos_tickers(tickers_unicos, data_inicio, data_fim):
     return cache_analises, cache_resumos, cache_contextos
 
 
-def processar_usuario(usuario_dict, cache_analises, cache_resumos):
+def processar_usuario(usuario_dict, cache_analises, cache_resumos, precos_dados):
     """
-    Processa um único usuário usando os caches de análises e resumos.
+    Processa um único usuário usando os caches de análises, resumos e preços.
     
     Args:
         usuario_dict: Dicionário com dados do usuário
         cache_analises: Dicionário {ticker: lista_de_analises}
         cache_resumos: Dicionário {ticker: resumo_executivo_texto}
+        precos_dados: Dicionário {ticker: {preco_fechamento, variacao_percentual, sucesso}}
         
     Returns:
         Tupla (sucesso: bool, num_noticias: int)
@@ -135,7 +137,7 @@ def processar_usuario(usuario_dict, cache_analises, cache_resumos):
     tickers = parsear_tickers(ticker_str)
     if not tickers:
         print(f"    ⚠ Nenhum ticker encontrado")
-        html = gerar_email_html(usuario_dict, [], {})
+        html = gerar_email_html(usuario_dict, [], {}, {})
         enviar_email(email, "TradingCore - Análise Diária", html)
         return True, 0
 
@@ -153,9 +155,12 @@ def processar_usuario(usuario_dict, cache_analises, cache_resumos):
         if ticker in cache_resumos and cache_resumos[ticker]:
             resumo_executivo[ticker] = cache_resumos[ticker]
 
+    # Filtrar apenas os preços dos tickers do usuário
+    precos_usuario = {t: precos_dados.get(t, {'sucesso': False}) for t in tickers}
+
     # Gerar e enviar email
     try:
-        html = gerar_email_html(usuario_dict, todas_analises, resumo_executivo)
+        html = gerar_email_html(usuario_dict, todas_analises, resumo_executivo, precos_usuario)
 
         sucesso = enviar_email(
             email,
@@ -215,6 +220,11 @@ def main():
     cache_analises, cache_resumos, _ = processar_todos_tickers(tickers_unicos, data_inicio, data_fim)
 
     # =========================================================
+    # FASE 1.5: Buscar preços do Yahoo Finance
+    # =========================================================
+    precos_dados = buscar_precos_multiplos(tickers_unicos)
+
+    # =========================================================
     # FASE 2: Distribuir análises para cada usuário
     # =========================================================
     print(f"\n{'='*60}")
@@ -231,7 +241,7 @@ def main():
     for idx, row in df_usuarios.iterrows():
         try:
             usuario_dict = row.to_dict()
-            sucesso, num_noticias = processar_usuario(usuario_dict, cache_analises, cache_resumos)
+            sucesso, num_noticias = processar_usuario(usuario_dict, cache_analises, cache_resumos, precos_dados)
 
             if sucesso:
                 usuarios_sucesso += 1

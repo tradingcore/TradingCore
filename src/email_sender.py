@@ -8,7 +8,7 @@ from .config import REMETENTE_EMAIL, REMETENTE_SENHA, SMTP_SERVER, SMTP_PORT
 from .utils import formatar_timestamp
 
 
-def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None):
+def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_dados=None):
     """
     Gera HTML formatado para o email com as análises de notícias.
 
@@ -16,6 +16,7 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None):
         usuario: Dicionário com dados do usuário (nome, email, etc)
         analises_agrupadas: Lista de análises de todos os tickers
         resumo_executivo: Dicionário {ticker: resumo_compacto}
+        precos_dados: Dicionário {ticker: {preco_fechamento, variacao_percentual, sucesso}}
 
     Returns:
         String com HTML formatado
@@ -23,6 +24,8 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None):
     nome = usuario.get('Qual seu nome completo?', 'Investidor')
     if resumo_executivo is None:
         resumo_executivo = {}
+    if precos_dados is None:
+        precos_dados = {}
 
     def sentimento_info(valor):
         """Converte sentimento em emoji e cor."""
@@ -168,6 +171,28 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None):
             font-weight: bold;
             color: #333;
             font-size: 14px;
+            margin-bottom: 5px;
+        }}
+        .preco-info {{
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 13px;
+            font-weight: normal;
+        }}
+        .preco-valor {{
+            color: #666;
+        }}
+        .variacao-positiva {{
+            color: #28a745;
+            font-weight: bold;
+        }}
+        .variacao-negativa {{
+            color: #dc3545;
+            font-weight: bold;
+        }}
+        .variacao-neutra {{
+            color: #666;
+            font-weight: bold;
         }}
         .resumo-texto {{
             color: #555;
@@ -245,9 +270,31 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None):
             <h2>📋 Resumo Executivo</h2>
 """
         for ticker, resumo in resumo_executivo.items():
+            # Buscar dados de preço para este ticker
+            preco_html = ""
+            if ticker in precos_dados and precos_dados[ticker]['sucesso']:
+                preco = precos_dados[ticker]['preco_fechamento']
+                variacao = precos_dados[ticker]['variacao_percentual']
+                
+                # Determinar classe CSS baseado na variação
+                if variacao > 0:
+                    variacao_class = "variacao-positiva"
+                    variacao_sinal = "+"
+                elif variacao < 0:
+                    variacao_class = "variacao-negativa"
+                    variacao_sinal = ""
+                else:
+                    variacao_class = "variacao-neutra"
+                    variacao_sinal = ""
+                
+                preco_html = f"""<span class="preco-info">
+                    <span class="preco-valor">R$ {preco:.2f}</span> 
+                    <span class="{variacao_class}">({variacao_sinal}{variacao:.2f}%)</span>
+                </span>"""
+            
             html += f"""
             <div class="resumo-item">
-                <div class="resumo-ticker">{ticker}</div>
+                <div class="resumo-ticker">{ticker}{preco_html}</div>
                 <div class="resumo-texto">{resumo}</div>
             </div>
 """

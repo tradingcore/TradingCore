@@ -1,0 +1,63 @@
+═══════════════════════════════════════════════════════════════
+🔧 ADICIONAR GITHUB ACTIONS WORKFLOW
+═══════════════════════════════════════════════════════════════
+
+✅ Código principal já está no GitHub!
+
+Agora precisa adicionar o workflow manualmente:
+
+📝 MÉTODO 1: Pelo GitHub (Mais Fácil)
+--------------------------------------
+
+1. Acesse: https://github.com/tradingcore/TradingCore
+
+2. Clique em "Add file" → "Create new file"
+
+3. Nome do arquivo:
+   .github/workflows/daily-analysis.yml
+
+4. Cole o conteúdo do arquivo:
+   .github/workflows/daily-analysis.yml
+   (arquivo está na pasta local)
+
+5. Commit → "Create daily-analysis.yml"
+
+
+📋 MÉTODO 2: Novo Token com Workflow Scope
+-------------------------------------------
+
+1. Crie novo token: https://github.com/settings/tokens
+
+2. Marque AMBOS:
+   ☑️ repo
+   ☑️ workflow
+
+3. Depois execute:
+
+   cd /Users/eduardo.fleischmann/TradingCore
+   git add .github/workflows/daily-analysis.yml
+   git commit -m "Add GitHub Actions workflow"
+   git remote remove origin
+   git remote add origin https://SEU_NOVO_TOKEN@github.com/tradingcore/TradingCore.git
+   git push
+
+
+🎯 DEPOIS: Configurar Secrets
+------------------------------
+
+Settings → Secrets and variables → Actions
+
+Adicione os 6 secrets:
+- OPENAI_API_KEY
+- EVENT_REGISTRY_API_KEY
+- REMETENTE_EMAIL
+- REMETENTE_SENHA
+- SHEET_ID
+- GOOGLE_CREDENTIALS
+
+Valores estão no .env e config/credentials.json
+
+
+═══════════════════════════════════════════════════════════════
+
+
