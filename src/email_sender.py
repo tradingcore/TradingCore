@@ -274,7 +274,8 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_
 <body>
     <div class="container">
         <div class="header">
-            <h1>📊 TradingCore - Análise Diária</h1>
+            <h1>TradingCore News</h1>
+            <p>Análise Diária</p>
             <p>Olá, {nome}!</p>
         </div>
 
