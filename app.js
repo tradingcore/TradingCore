@@ -17,7 +17,6 @@ const loginForm = document.getElementById("login-form");
 const portfolioForm = document.getElementById("portfolio-form");
 
 // DOM Elements - Dashboard Header
-const headerUserName = document.getElementById("header-user-name");
 const headerUserEmail = document.getElementById("header-user-email");
 const headerUserAvatar = document.getElementById("header-user-avatar");
 const logoutButton = document.getElementById("logout-button");
@@ -105,6 +104,16 @@ const isLoggedIn = () => {
 };
 
 // ========================================
+// UTILITY FUNCTIONS
+// ========================================
+const truncateEmail = (email) => {
+  if (!email) return "";
+  const parts = email.split("@");
+  if (parts[0].length <= 8) return email;
+  return parts[0].substring(0, 8) + "...";
+};
+
+// ========================================
 // VIEW MANAGEMENT (Landing vs Dashboard)
 // ========================================
 const showLandingPage = () => {
@@ -119,17 +128,18 @@ const showDashboard = () => {
   const session = getSession();
   const displayName = session.name || session.email?.split("@")[0] || "Usuário";
   
-  // Update header
-  if (headerUserName) headerUserName.textContent = displayName;
-  if (headerUserEmail) headerUserEmail.textContent = session.email || "";
+  // Update header - truncate email
+  if (headerUserEmail) headerUserEmail.textContent = truncateEmail(session.email);
   if (headerUserAvatar) headerUserAvatar.textContent = displayName.charAt(0).toUpperCase();
   
   // Update welcome
   if (welcomeName) welcomeName.textContent = displayName;
   
-  // Load tickers from session
+  // Load tickers from session into state
   userTickers.clear();
-  session.tickers.forEach((t) => userTickers.add(t));
+  session.tickers.forEach((t) => {
+    if (t && t.trim()) userTickers.add(t.trim().toUpperCase());
+  });
   renderUserTickers();
 };
 
@@ -208,23 +218,29 @@ const addTicker = async () => {
     return;
   }
 
+  // Add to local state
   userTickers.add(raw);
   tickerInput.value = "";
 
-  // Save to server and update local storage
-  await savePortfolioToServer();
+  // Update local storage
   localStorage.setItem(TICKERS_KEY, JSON.stringify(Array.from(userTickers)));
+
+  // Save to server (sends ALL current tickers, not just the new one)
+  await savePortfolioToServer();
 
   renderUserTickers();
   showToast(`${raw} adicionado à sua carteira!`, "success");
 };
 
 const removeTicker = async (ticker) => {
+  // Remove from local state
   userTickers.delete(ticker);
 
-  // Save to server and update local storage
-  await savePortfolioToServer();
+  // Update local storage
   localStorage.setItem(TICKERS_KEY, JSON.stringify(Array.from(userTickers)));
+
+  // Save to server (sends ALL current tickers)
+  await savePortfolioToServer();
 
   renderUserTickers();
   showToast(`${ticker} removido da carteira.`, "info");
@@ -234,6 +250,7 @@ const savePortfolioToServer = async () => {
   const session = getSession();
   if (!session.token || !session.email) return;
 
+  // Send ALL current tickers to server
   const tickers = Array.from(userTickers).join(", ");
 
   try {
@@ -335,7 +352,7 @@ const loadUserPortfolioFromServer = async () => {
       return result.data;
     }
   } catch (error) {
-    console.error("Erro ao carregar carteira:", error);
+    console.error("Erro ao carregar carteira do servidor:", error);
   }
   
   return null;
@@ -434,15 +451,17 @@ loginForm?.addEventListener("submit", async (event) => {
       ? tickersStr.split(",").map((t) => t.trim().toUpperCase()).filter((t) => t)
       : [];
 
+    console.log("Login response - tickers:", tickersStr, "parsed:", tickerArray);
+
     setSession(result.data.token, email, name, tickerArray);
     loginForm.reset();
     
-    // Show dashboard first
-    showDashboard();
     showToast("✓ Login realizado com sucesso!", "success");
 
-    // Then try to load fresh data from server (in case login response didn't include full data)
+    // Try to load fresh data from server (getPortfolio action)
     const portfolioData = await loadUserPortfolioFromServer();
+    console.log("Portfolio data from server:", portfolioData);
+    
     if (portfolioData) {
       if (portfolioData.name) {
         localStorage.setItem(NAME_KEY, portfolioData.name);
@@ -452,20 +471,13 @@ loginForm?.addEventListener("submit", async (event) => {
           .split(",")
           .map((t) => t.trim().toUpperCase())
           .filter((t) => t);
+        console.log("Fresh tickers from getPortfolio:", freshTickers);
         localStorage.setItem(TICKERS_KEY, JSON.stringify(freshTickers));
-        userTickers.clear();
-        freshTickers.forEach((t) => userTickers.add(t));
-        renderUserTickers();
-        
-        // Update header with fresh name if available
-        if (portfolioData.name) {
-          const displayName = portfolioData.name;
-          if (headerUserName) headerUserName.textContent = displayName;
-          if (headerUserAvatar) headerUserAvatar.textContent = displayName.charAt(0).toUpperCase();
-          if (welcomeName) welcomeName.textContent = displayName;
-        }
       }
     }
+
+    // Show dashboard with loaded data
+    showDashboard();
   } catch (error) {
     showToast(error.message || "Erro ao conectar com o servidor.", "error");
   } finally {
@@ -497,10 +509,10 @@ const boot = async () => {
 
   // Check if user is logged in
   if (isLoggedIn()) {
-    showDashboard();
-    
-    // Try to load fresh data from server
+    // Try to load fresh data from server first
     const portfolioData = await loadUserPortfolioFromServer();
+    console.log("Boot - Portfolio data:", portfolioData);
+    
     if (portfolioData) {
       if (portfolioData.name) {
         localStorage.setItem(NAME_KEY, portfolioData.name);
@@ -510,13 +522,13 @@ const boot = async () => {
           .split(",")
           .map((t) => t.trim().toUpperCase())
           .filter((t) => t);
+        console.log("Boot - Fresh tickers:", freshTickers);
         localStorage.setItem(TICKERS_KEY, JSON.stringify(freshTickers));
-        userTickers.clear();
-        freshTickers.forEach((t) => userTickers.add(t));
       }
-      // Re-render with fresh data
-      showDashboard();
     }
+
+    // Show dashboard with loaded data
+    showDashboard();
   } else {
     showLandingPage();
   }
