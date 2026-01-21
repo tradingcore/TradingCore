@@ -1,4 +1,4 @@
-const APP_SCRIPT_URL = "https://script.google.com/macros/s/REPLACE_ME/exec";
+const APP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby0BqLxkUkmu7QNtEl162XfHmsWPfsFdA9VJ3d73iXhgoRvwSiWDcOLUC-wVPb6uZyDaQ/exec";
 
 const TOKEN_KEY = "tc_token";
 const EMAIL_KEY = "tc_email";
