@@ -14,6 +14,8 @@
   --accent: #5b7cfa;
   --accent-2: #3bb3ff;
   --accent-3: #7b6cff;
+  --accent-green: #22c55e;
+  --accent-green-2: #16a34a;
   --accent-soft: rgba(91, 124, 250, 0.18);
   --border: rgba(120, 150, 200, 0.22);
 }
@@ -133,6 +135,24 @@ h3 {
   max-width: 680px;
 }
 
+.hero-note {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  max-width: 720px;
+}
+
+.price-highlight {
+  color: #ff4d4f;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+.free-trial-highlight {
+  color: #22c55e;
+  font-weight: 700;
+}
+
 .cta {
   display: flex;
   align-items: center;
@@ -146,7 +166,7 @@ h3 {
   justify-content: center;
   padding: 12px 22px;
   border-radius: 999px;
-  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  background: linear-gradient(120deg, var(--accent-green), var(--accent-green-2));
   color: #fff;
   font-weight: 600;
   border: 1px solid transparent;
@@ -154,18 +174,18 @@ h3 {
 }
 
 .button:hover {
-  background: linear-gradient(120deg, #4b6df0, #2ea9ff);
+  background: linear-gradient(120deg, #2bd46f, #129a46);
   transform: translateY(-1px);
 }
 
 .button--ghost {
-  background: transparent;
-  border: 1px solid var(--border);
+  background: linear-gradient(120deg, var(--accent-green), var(--accent-green-2));
+  border: 1px solid transparent;
   color: var(--text);
 }
 
 .button--ghost:hover {
-  background: var(--accent-soft);
+  background: linear-gradient(120deg, #2bd46f, #129a46);
 }
 
 .button--link {
