@@ -11,29 +11,41 @@ const landingPage = document.getElementById("landing-page");
 const appDashboard = document.getElementById("app-dashboard");
 const toastContainer = document.getElementById("toast-container");
 
+// DOM Elements - Mobile menu
+const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+const mobileNav = document.getElementById("mobile-nav");
+
 // DOM Elements - Forms
 const signupForm = document.getElementById("signup-form");
 const loginForm = document.getElementById("login-form");
-const portfolioForm = document.getElementById("portfolio-form");
 
 // DOM Elements - Dashboard Header
-const headerUserEmail = document.getElementById("header-user-email");
 const headerUserAvatar = document.getElementById("header-user-avatar");
 const logoutButton = document.getElementById("logout-button");
+const navDashboard = document.getElementById("nav-dashboard");
+
+// DOM Elements - Dashboard Sections
+const sectionCarteira = document.getElementById("section-carteira");
+const sectionPerfil = document.getElementById("section-perfil");
 
 // DOM Elements - Dashboard Content
 const welcomeName = document.getElementById("welcome-name");
 const tickerInput = document.getElementById("ticker-input");
-const tickerOptions = document.getElementById("ticker-options");
+const tickerSuggestions = document.getElementById("ticker-suggestions");
 const addTickerButton = document.getElementById("add-ticker");
 const tickerList = document.getElementById("ticker-list");
 const emptyTickers = document.getElementById("empty-tickers");
 const tickerCount = document.getElementById("ticker-count");
-const tickersHidden = document.getElementById("tickers-hidden");
+
+// DOM Elements - Profile
+const profileAvatar = document.getElementById("profile-avatar");
+const profileName = document.getElementById("profile-name");
+const profileEmail = document.getElementById("profile-email");
 
 // State
 const tickerCatalog = new Map();
 const userTickers = new Set();
+let currentSuggestionIndex = -1;
 
 // ========================================
 // TOAST NOTIFICATIONS
@@ -104,17 +116,7 @@ const isLoggedIn = () => {
 };
 
 // ========================================
-// UTILITY FUNCTIONS
-// ========================================
-const truncateEmail = (email) => {
-  if (!email) return "";
-  const parts = email.split("@");
-  if (parts[0].length <= 8) return email;
-  return parts[0].substring(0, 8) + "...";
-};
-
-// ========================================
-// VIEW MANAGEMENT (Landing vs Dashboard)
+// VIEW MANAGEMENT
 // ========================================
 const showLandingPage = () => {
   if (landingPage) landingPage.classList.remove("hidden");
@@ -128,31 +130,129 @@ const showDashboard = () => {
   const session = getSession();
   const displayName = session.name || session.email?.split("@")[0] || "Usuário";
   
-  // Update header - truncate email
-  if (headerUserEmail) headerUserEmail.textContent = truncateEmail(session.email);
+  // Update header
   if (headerUserAvatar) headerUserAvatar.textContent = displayName.charAt(0).toUpperCase();
   
   // Update welcome
   if (welcomeName) welcomeName.textContent = displayName;
   
-  // Load tickers from session into state
+  // Update profile section
+  if (profileAvatar) profileAvatar.textContent = displayName.charAt(0).toUpperCase();
+  if (profileName) profileName.textContent = session.name || displayName;
+  if (profileEmail) profileEmail.textContent = session.email || "-";
+  
+  // Load tickers from session
   userTickers.clear();
   session.tickers.forEach((t) => {
     if (t && t.trim()) userTickers.add(t.trim().toUpperCase());
   });
   renderUserTickers();
+  
+  // Show carteira section by default
+  showSection("carteira");
+};
+
+const showSection = (sectionName) => {
+  // Hide all sections
+  if (sectionCarteira) sectionCarteira.classList.add("hidden");
+  if (sectionPerfil) sectionPerfil.classList.add("hidden");
+  
+  // Show target section
+  if (sectionName === "carteira" && sectionCarteira) {
+    sectionCarteira.classList.remove("hidden");
+  } else if (sectionName === "perfil" && sectionPerfil) {
+    sectionPerfil.classList.remove("hidden");
+  }
+  
+  // Update nav active state
+  document.querySelectorAll(".nav-dashboard-item").forEach((item) => {
+    item.classList.toggle("active", item.dataset.section === sectionName);
+  });
+};
+
+// ========================================
+// TICKER AUTOCOMPLETE
+// ========================================
+const showSuggestions = (searchTerm) => {
+  if (!tickerSuggestions || !searchTerm) {
+    hideSuggestions();
+    return;
+  }
+
+  const term = searchTerm.toUpperCase();
+  const matches = [];
+  
+  tickerCatalog.forEach((name, code) => {
+    if (code.includes(term) || name.toUpperCase().includes(term)) {
+      matches.push({ code, name });
+    }
+  });
+
+  // Limit to 10 results
+  const limited = matches.slice(0, 10);
+
+  if (limited.length === 0) {
+    hideSuggestions();
+    return;
+  }
+
+  tickerSuggestions.innerHTML = limited
+    .map(
+      (item, index) => `
+      <div class="ticker-suggestion ${index === currentSuggestionIndex ? "selected" : ""}" data-code="${item.code}">
+        <span class="ticker-suggestion-code">${item.code}</span>
+        <span class="ticker-suggestion-name">${item.name}</span>
+      </div>
+    `
+    )
+    .join("");
+
+  tickerSuggestions.classList.remove("hidden");
+
+  // Add click handlers
+  tickerSuggestions.querySelectorAll(".ticker-suggestion").forEach((el) => {
+    el.addEventListener("click", () => {
+      selectSuggestion(el.dataset.code);
+    });
+  });
+};
+
+const hideSuggestions = () => {
+  if (tickerSuggestions) {
+    tickerSuggestions.classList.add("hidden");
+    tickerSuggestions.innerHTML = "";
+  }
+  currentSuggestionIndex = -1;
+};
+
+const selectSuggestion = (code) => {
+  if (tickerInput) {
+    tickerInput.value = code;
+  }
+  hideSuggestions();
+  addTicker();
+};
+
+const navigateSuggestions = (direction) => {
+  const suggestions = tickerSuggestions?.querySelectorAll(".ticker-suggestion");
+  if (!suggestions || suggestions.length === 0) return;
+
+  // Remove previous selection
+  suggestions.forEach((s) => s.classList.remove("selected"));
+
+  if (direction === "down") {
+    currentSuggestionIndex = Math.min(currentSuggestionIndex + 1, suggestions.length - 1);
+  } else {
+    currentSuggestionIndex = Math.max(currentSuggestionIndex - 1, 0);
+  }
+
+  suggestions[currentSuggestionIndex]?.classList.add("selected");
 };
 
 // ========================================
 // TICKER MANAGEMENT
 // ========================================
 const normalizeTicker = (value) => value.trim().toUpperCase();
-
-const updateHiddenTickers = () => {
-  if (tickersHidden) {
-    tickersHidden.value = Array.from(userTickers).join(", ");
-  }
-};
 
 const updateTickerCount = () => {
   if (tickerCount) {
@@ -164,7 +264,7 @@ const updateTickerCount = () => {
 const renderUserTickers = () => {
   if (!tickerList) return;
 
-  // Clear existing ticker items (keep empty state element)
+  // Clear existing ticker items
   const tickerItems = tickerList.querySelectorAll(".ticker-item");
   tickerItems.forEach((item) => item.remove());
 
@@ -182,20 +282,15 @@ const renderUserTickers = () => {
         item.innerHTML = `
           <span class="ticker-item-code">${ticker}</span>
           ${name ? `<span class="ticker-item-name">${name}</span>` : ""}
-          <button class="ticker-item-remove" type="button" aria-label="Remover ${ticker}" data-ticker="${ticker}">
-            ✕
-          </button>
+          <button class="ticker-item-remove" type="button" aria-label="Remover ${ticker}">✕</button>
         `;
 
-        const removeBtn = item.querySelector(".ticker-item-remove");
-        removeBtn.addEventListener("click", () => removeTicker(ticker));
-
+        item.querySelector(".ticker-item-remove").addEventListener("click", () => removeTicker(ticker));
         tickerList.appendChild(item);
       });
   }
 
   updateTickerCount();
-  updateHiddenTickers();
 };
 
 const addTicker = async () => {
@@ -215,17 +310,19 @@ const addTicker = async () => {
   if (userTickers.has(raw)) {
     showToast("Este ticker já está na sua carteira.", "info");
     tickerInput.value = "";
+    hideSuggestions();
     return;
   }
 
   // Add to local state
   userTickers.add(raw);
   tickerInput.value = "";
+  hideSuggestions();
 
   // Update local storage
   localStorage.setItem(TICKERS_KEY, JSON.stringify(Array.from(userTickers)));
 
-  // Save to server (sends ALL current tickers, not just the new one)
+  // Save to server
   await savePortfolioToServer();
 
   renderUserTickers();
@@ -233,13 +330,12 @@ const addTicker = async () => {
 };
 
 const removeTicker = async (ticker) => {
-  // Remove from local state
   userTickers.delete(ticker);
 
   // Update local storage
   localStorage.setItem(TICKERS_KEY, JSON.stringify(Array.from(userTickers)));
 
-  // Save to server (sends ALL current tickers)
+  // Save to server
   await savePortfolioToServer();
 
   renderUserTickers();
@@ -250,7 +346,6 @@ const savePortfolioToServer = async () => {
   const session = getSession();
   if (!session.token || !session.email) return;
 
-  // Send ALL current tickers to server
   const tickers = Array.from(userTickers).join(", ");
 
   try {
@@ -262,13 +357,10 @@ const savePortfolioToServer = async () => {
     });
   } catch (error) {
     console.error("Erro ao salvar carteira:", error);
-    showToast("Erro ao salvar carteira no servidor.", "error");
   }
 };
 
 const loadTickers = async () => {
-  if (!tickerOptions) return;
-
   try {
     const response = await fetch("docs/acoes-listadas-b3.csv");
     const text = await response.text();
@@ -291,12 +383,7 @@ const loadTickers = async () => {
       }
 
       if (!ticker || ticker === "Ticker") return;
-
       tickerCatalog.set(ticker, name);
-      const option = document.createElement("option");
-      option.value = ticker;
-      if (name) option.label = `${ticker} - ${name}`;
-      tickerOptions.appendChild(option);
     });
   } catch (error) {
     console.error("Erro ao carregar tickers:", error);
@@ -337,30 +424,55 @@ const requireScriptUrl = () => {
   return true;
 };
 
-const loadUserPortfolioFromServer = async () => {
-  const session = getSession();
-  if (!session.token || !session.email) return null;
-
+// Função para buscar dados do usuário da planilha
+const fetchUserDataFromSheet = async (email) => {
   try {
+    // Tenta buscar via getPortfolio
+    const session = getSession();
+    if (!session.token) return null;
+    
     const result = await postToScript({
       action: "getPortfolio",
       token: session.token,
-      email: session.email,
+      email: email,
     });
 
     if (result.ok && result.data) {
       return result.data;
     }
   } catch (error) {
-    console.error("Erro ao carregar carteira do servidor:", error);
+    console.log("getPortfolio não disponível, usando dados do login");
   }
-  
   return null;
 };
 
 // ========================================
 // EVENT HANDLERS
 // ========================================
+
+// Mobile menu
+mobileMenuBtn?.addEventListener("click", () => {
+  mobileMenuBtn.classList.toggle("active");
+  mobileNav?.classList.toggle("hidden");
+});
+
+// Close mobile menu on link click
+mobileNav?.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenuBtn?.classList.remove("active");
+    mobileNav?.classList.add("hidden");
+  });
+});
+
+// Dashboard navigation
+navDashboard?.addEventListener("click", (e) => {
+  const item = e.target.closest(".nav-dashboard-item");
+  if (item) {
+    showSection(item.dataset.section);
+  }
+});
+
+// Signup form
 signupForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
   if (!requireScriptUrl()) return;
@@ -407,7 +519,7 @@ signupForm?.addEventListener("submit", async (event) => {
     setSession(result.data.token, email, name, []);
     signupForm.reset();
     showDashboard();
-    showToast("🎉 Conta criada com sucesso! Bem-vindo ao TradingCore!", "success", 5000);
+    showToast("🎉 Conta criada com sucesso!", "success", 5000);
   } catch (error) {
     showToast(error.message || "Erro ao conectar com o servidor.", "error");
   } finally {
@@ -415,6 +527,7 @@ signupForm?.addEventListener("submit", async (event) => {
   }
 });
 
+// Login form
 loginForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
   if (!requireScriptUrl()) return;
@@ -444,39 +557,45 @@ loginForm?.addEventListener("submit", async (event) => {
       return;
     }
 
-    // Get name and tickers from login response
+    // Pega dados da resposta do login
     const name = result.data.name || "";
-    const tickersStr = result.data.tickers || "";
-    const tickerArray = tickersStr
-      ? tickersStr.split(",").map((t) => t.trim().toUpperCase()).filter((t) => t)
-      : [];
+    const tickersFromLogin = result.data.tickers || "";
+    
+    // Parse tickers
+    let tickerArray = [];
+    if (tickersFromLogin) {
+      tickerArray = tickersFromLogin
+        .split(",")
+        .map((t) => t.trim().toUpperCase())
+        .filter((t) => t);
+    }
 
-    console.log("Login response - tickers:", tickersStr, "parsed:", tickerArray);
+    console.log("Login - Nome:", name, "Tickers:", tickerArray);
 
+    // Salva sessão com os tickers do login
     setSession(result.data.token, email, name, tickerArray);
     loginForm.reset();
     
-    showToast("✓ Login realizado com sucesso!", "success");
+    showToast("✓ Login realizado!", "success");
 
-    // Try to load fresh data from server (getPortfolio action)
-    const portfolioData = await loadUserPortfolioFromServer();
-    console.log("Portfolio data from server:", portfolioData);
-    
-    if (portfolioData) {
-      if (portfolioData.name) {
-        localStorage.setItem(NAME_KEY, portfolioData.name);
+    // Tenta buscar dados atualizados do servidor
+    const freshData = await fetchUserDataFromSheet(email);
+    if (freshData) {
+      console.log("Dados do servidor:", freshData);
+      if (freshData.name) {
+        localStorage.setItem(NAME_KEY, freshData.name);
       }
-      if (portfolioData.tickers) {
-        const freshTickers = portfolioData.tickers
+      if (freshData.tickers) {
+        const freshTickers = freshData.tickers
           .split(",")
           .map((t) => t.trim().toUpperCase())
           .filter((t) => t);
-        console.log("Fresh tickers from getPortfolio:", freshTickers);
+        console.log("Tickers do servidor:", freshTickers);
         localStorage.setItem(TICKERS_KEY, JSON.stringify(freshTickers));
       }
     }
 
-    // Show dashboard with loaded data
+    // Mostra dashboard
     showDashboard();
   } catch (error) {
     showToast(error.message || "Erro ao conectar com o servidor.", "error");
@@ -485,18 +604,56 @@ loginForm?.addEventListener("submit", async (event) => {
   }
 });
 
+// Logout
 logoutButton?.addEventListener("click", () => {
   clearSession();
   showLandingPage();
   showToast("Você saiu da sua conta.", "info");
 });
 
-addTickerButton?.addEventListener("click", addTicker);
+// Ticker input - autocomplete
+tickerInput?.addEventListener("input", (e) => {
+  const value = e.target.value.trim();
+  if (value.length >= 1) {
+    showSuggestions(value);
+  } else {
+    hideSuggestions();
+  }
+});
 
 tickerInput?.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") {
+  const suggestions = tickerSuggestions?.querySelectorAll(".ticker-suggestion");
+  
+  if (event.key === "ArrowDown" && suggestions?.length > 0) {
     event.preventDefault();
-    addTicker();
+    navigateSuggestions("down");
+  } else if (event.key === "ArrowUp" && suggestions?.length > 0) {
+    event.preventDefault();
+    navigateSuggestions("up");
+  } else if (event.key === "Enter") {
+    event.preventDefault();
+    if (currentSuggestionIndex >= 0 && suggestions?.[currentSuggestionIndex]) {
+      selectSuggestion(suggestions[currentSuggestionIndex].dataset.code);
+    } else {
+      addTicker();
+    }
+  } else if (event.key === "Escape") {
+    hideSuggestions();
+  }
+});
+
+tickerInput?.addEventListener("blur", () => {
+  // Delay to allow click on suggestions
+  setTimeout(hideSuggestions, 200);
+});
+
+// Add ticker button
+addTickerButton?.addEventListener("click", addTicker);
+
+// Close suggestions on outside click
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".ticker-autocomplete")) {
+    hideSuggestions();
   }
 });
 
@@ -509,25 +666,25 @@ const boot = async () => {
 
   // Check if user is logged in
   if (isLoggedIn()) {
-    // Try to load fresh data from server first
-    const portfolioData = await loadUserPortfolioFromServer();
-    console.log("Boot - Portfolio data:", portfolioData);
+    // Tenta buscar dados atualizados do servidor
+    const session = getSession();
+    const freshData = await fetchUserDataFromSheet(session.email);
     
-    if (portfolioData) {
-      if (portfolioData.name) {
-        localStorage.setItem(NAME_KEY, portfolioData.name);
+    if (freshData) {
+      console.log("Boot - Dados do servidor:", freshData);
+      if (freshData.name) {
+        localStorage.setItem(NAME_KEY, freshData.name);
       }
-      if (portfolioData.tickers) {
-        const freshTickers = portfolioData.tickers
+      if (freshData.tickers) {
+        const freshTickers = freshData.tickers
           .split(",")
           .map((t) => t.trim().toUpperCase())
           .filter((t) => t);
-        console.log("Boot - Fresh tickers:", freshTickers);
+        console.log("Boot - Tickers:", freshTickers);
         localStorage.setItem(TICKERS_KEY, JSON.stringify(freshTickers));
       }
     }
 
-    // Show dashboard with loaded data
     showDashboard();
   } else {
     showLandingPage();

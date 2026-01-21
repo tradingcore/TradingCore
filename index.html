@@ -22,7 +22,7 @@
         <div class="container">
           <a href="#" class="brand">
             <img class="brand-logo" src="arts/Logo.png" alt="TradingCore" />
-            <span>TradingCore</span>
+            <span class="brand-text">TradingCore</span>
           </a>
           <nav class="nav">
             <a href="#como-funciona">Como funciona</a>
@@ -34,8 +34,26 @@
             <a class="button button--ghost button--small" href="#acesso">Entrar</a>
             <a class="button button--small" href="#acesso">Cadastrar</a>
           </div>
+          <!-- Mobile menu button -->
+          <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </header>
+
+      <!-- Mobile Nav -->
+      <nav class="mobile-nav hidden" id="mobile-nav">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#para-quem">Para quem é</a>
+        <a href="#demo">Demonstração</a>
+        <div class="mobile-nav-actions">
+          <a class="button button--ghost" href="#acesso">Entrar</a>
+          <a class="button" href="#acesso">Cadastrar</a>
+        </div>
+      </nav>
 
       <main>
         <section class="hero">
@@ -212,23 +230,22 @@
         <div class="container">
           <a href="#" class="brand">
             <img class="brand-logo" src="arts/Logo.png" alt="TradingCore" />
-            <span>TradingCore</span>
+            <span class="brand-text">TradingCore</span>
           </a>
           
           <!-- Menu da área logada -->
-          <nav class="nav-dashboard">
-            <a href="#" class="nav-dashboard-item active" data-section="carteira">
-              📊 Carteira
-            </a>
-            <a href="#" class="nav-dashboard-item" data-section="perfil">
-              👤 Perfil
-            </a>
+          <nav class="nav-dashboard" id="nav-dashboard">
+            <button class="nav-dashboard-item active" data-section="carteira" type="button">
+              📊 <span>Carteira</span>
+            </button>
+            <button class="nav-dashboard-item" data-section="perfil" type="button">
+              👤 <span>Perfil</span>
+            </button>
           </nav>
 
-          <!-- User dropdown -->
+          <!-- User area -->
           <div class="header-user">
             <div class="header-user-avatar" id="header-user-avatar">U</div>
-            <span class="header-user-email" id="header-user-email">user@...</span>
             <button class="button button--ghost button--small" id="logout-button" type="button">
               Sair
             </button>
@@ -245,59 +262,86 @@
             <p>Gerencie sua carteira de ativos e receba análises personalizadas todas as manhãs.</p>
           </div>
 
-          <!-- Card principal da carteira -->
-          <div class="dashboard-card dashboard-card--main">
-            <div class="dashboard-card-header">
-              <h2>
-                📊 Minha Carteira
-                <span class="badge" id="ticker-count">0 ativos</span>
-              </h2>
-            </div>
+          <!-- ============ SEÇÃO CARTEIRA ============ -->
+          <div id="section-carteira" class="dashboard-section">
+            <!-- Card principal da carteira -->
+            <div class="dashboard-card dashboard-card--main">
+              <div class="dashboard-card-header">
+                <h2>
+                  📊 Minha Carteira
+                  <span class="badge" id="ticker-count">0 ativos</span>
+                </h2>
+              </div>
 
-            <!-- Lista de tickers atuais -->
-            <div class="current-tickers">
-              <p class="current-tickers-title">Ativos monitorados</p>
-              <div id="ticker-list" class="ticker-list">
-                <div class="empty-state" id="empty-tickers">
-                  <div class="empty-state-icon">📭</div>
-                  <p>Você ainda não adicionou nenhum ativo.</p>
-                  <p class="empty-state-hint">Adicione abaixo para começar a receber análises diárias.</p>
+              <!-- Lista de tickers atuais -->
+              <div class="current-tickers">
+                <p class="current-tickers-title">Ativos monitorados</p>
+                <div id="ticker-list" class="ticker-list">
+                  <div class="empty-state" id="empty-tickers">
+                    <div class="empty-state-icon">📭</div>
+                    <p>Você ainda não adicionou nenhum ativo.</p>
+                    <p class="empty-state-hint">Adicione abaixo para começar a receber análises diárias.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Adicionar novo ticker -->
+              <div class="add-ticker-section">
+                <h3>➕ Adicionar novo ativo</h3>
+                <p class="form-note">Digite o código do ticker da B3 (ex: PETR4, VALE3, ITUB4)</p>
+                <div class="ticker-picker">
+                  <div class="ticker-autocomplete">
+                    <input
+                      type="text"
+                      id="ticker-input"
+                      placeholder="Digite um ticker..."
+                      autocomplete="off"
+                    />
+                    <div class="ticker-suggestions hidden" id="ticker-suggestions"></div>
+                  </div>
+                  <button class="button" type="button" id="add-ticker">
+                    Adicionar
+                  </button>
                 </div>
               </div>
             </div>
 
-            <!-- Adicionar novo ticker -->
-            <div class="add-ticker-section">
-              <h3>➕ Adicionar novo ativo</h3>
-              <p class="form-note">Digite o código do ticker da B3 (ex: PETR4, VALE3, ITUB4)</p>
-              <form id="portfolio-form" class="form form--flat">
-                <div class="ticker-picker">
-                  <div class="ticker-input">
-                    <input
-                      type="text"
-                      id="ticker-input"
-                      list="ticker-options"
-                      placeholder="Digite ou selecione um ticker"
-                    />
-                    <button class="button" type="button" id="add-ticker">
-                      Adicionar
-                    </button>
-                  </div>
-                  <datalist id="ticker-options"></datalist>
-                </div>
-                <input type="hidden" name="tickers" id="tickers-hidden" />
-              </form>
+            <!-- Info sobre entregas -->
+            <div class="dashboard-info-card">
+              <h3>📧 Sobre suas análises</h3>
+              <ul>
+                <li>Você receberá um email toda manhã, antes da abertura do mercado</li>
+                <li>O email contém apenas notícias relevantes para os ativos da sua carteira</li>
+                <li>Cada notícia é analisada por IA para identificar impacto real nos seus investimentos</li>
+              </ul>
             </div>
           </div>
 
-          <!-- Info sobre entregas -->
-          <div class="dashboard-info-card">
-            <h3>📧 Sobre suas análises</h3>
-            <ul>
-              <li>Você receberá um email toda manhã, antes da abertura do mercado</li>
-              <li>O email contém apenas notícias relevantes para os ativos da sua carteira</li>
-              <li>Cada notícia é analisada por IA para identificar impacto real nos seus investimentos</li>
-            </ul>
+          <!-- ============ SEÇÃO PERFIL ============ -->
+          <div id="section-perfil" class="dashboard-section hidden">
+            <div class="dashboard-card dashboard-card--main">
+              <div class="dashboard-card-header">
+                <h2>👤 Meu Perfil</h2>
+              </div>
+
+              <div class="profile-info">
+                <div class="profile-avatar-large" id="profile-avatar">U</div>
+                <div class="profile-details">
+                  <div class="profile-item">
+                    <span class="profile-label">Nome</span>
+                    <span class="profile-value" id="profile-name">-</span>
+                  </div>
+                  <div class="profile-item">
+                    <span class="profile-label">E-mail</span>
+                    <span class="profile-value" id="profile-email">-</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile-actions">
+                <p class="form-note">Para alterar seus dados, entre em contato pelo email contato@tradingcore.com.br</p>
+              </div>
+            </div>
           </div>
         </div>
       </main>
@@ -310,6 +354,6 @@
       </footer>
     </div>
 
-    <script src="app.js?v=5"></script>
+    <script src="app.js?v=6"></script>
   </body>
 </html>
