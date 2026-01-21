@@ -340,11 +340,21 @@ select:focus {
 
   .header .container {
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .cta {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .brand {
+    font-size: 2.2rem;
+  }
+
+  .brand-logo {
+    width: 64px;
+    height: 64px;
   }
 }
 
@@ -355,5 +365,26 @@ select:focus {
 
   .button {
     width: 100%;
+  }
+
+  .header .button {
+    width: auto;
+  }
+
+  .brand {
+    font-size: 1.8rem;
+  }
+
+  .brand-logo {
+    width: 52px;
+    height: 52px;
+  }
+
+  .demo-video {
+    width: 100%;
+  }
+
+  .cta-panel {
+    gap: 24px;
   }
 }
