@@ -47,7 +47,19 @@ const postToScript = async (payload) => {
     headers: { "Content-Type": "text/plain;charset=utf-8" },
     body: JSON.stringify(payload),
   });
-  const data = await response.json();
+
+  const text = await response.text();
+  let data;
+  try {
+    data = JSON.parse(text);
+  } catch (error) {
+    throw new Error(`Resposta invalida do Apps Script (status ${response.status}).`);
+  }
+
+  if (!response.ok) {
+    throw new Error(data.error || `Erro HTTP ${response.status}.`);
+  }
+
   return data;
 };
 
@@ -125,7 +137,7 @@ signupForm?.addEventListener("submit", async (event) => {
     setMessage("Conta criada com sucesso. Sua area logada esta liberada.", "success");
     signupForm.reset();
   } catch (error) {
-    setMessage("Erro ao conectar com o servidor.", "error");
+    setMessage(error.message || "Erro ao conectar com o servidor.", "error");
   } finally {
     setLoading(submitButton, false);
   }
@@ -166,7 +178,7 @@ loginForm?.addEventListener("submit", async (event) => {
     setMessage("Login realizado com sucesso.", "success");
     loginForm.reset();
   } catch (error) {
-    setMessage("Erro ao conectar com o servidor.", "error");
+    setMessage(error.message || "Erro ao conectar com o servidor.", "error");
   } finally {
     setLoading(submitButton, false);
   }
@@ -214,7 +226,7 @@ portfolioForm?.addEventListener("submit", async (event) => {
     portfolioForm.reset();
     setMessage("Carteira salva com sucesso.", "success");
   } catch (error) {
-    setMessage("Erro ao conectar com o servidor.", "error");
+    setMessage(error.message || "Erro ao conectar com o servidor.", "error");
   } finally {
     setLoading(submitButton, false);
   }
