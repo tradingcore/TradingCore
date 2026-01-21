@@ -11,12 +11,15 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Toast container para mensagens -->
+    <div id="toast-container" class="toast-container"></div>
+
     <header class="header">
       <div class="container">
-        <div class="brand">
+        <a href="#" class="brand">
           <img class="brand-logo" src="arts/Logo.png" alt="TradingCore" />
           <span>TradingCore</span>
-        </div>
+        </a>
         <nav class="nav">
           <a href="#como-funciona">Como funciona</a>
           <a href="#diferenciais">Diferenciais</a>
@@ -24,7 +27,9 @@
           <a href="#demo">Demonstração</a>
           <a href="#acesso">Área do cliente</a>
         </nav>
-        <a class="button button--ghost" href="#acesso">Teste grátis</a>
+        <div class="header-cta">
+          <a class="button" href="#acesso">Teste grátis</a>
+        </div>
       </div>
     </header>
 
@@ -121,104 +126,128 @@
         </div>
       </section>
 
-      <section id="acesso" class="section">
+      <section id="acesso" class="section auth-section">
         <div class="container">
-          <div class="section-head">
-            <h2>Área do cliente</h2>
-            <p class="lead">
-              Cadastre-se para iniciar seu teste gratuito e montar sua carteira.
-            </p>
-            <p class="form-note">
-              Sem cadastro de dados financeiros. Entrega diária pela manhã, antes da abertura
-              do mercado.
-            </p>
-          </div>
-
-          <div class="grid grid--2 auth-grid">
-            <div class="card">
-              <h3>Cadastro</h3>
-              <form id="signup-form" class="form form--flat">
-                <label>
-                  Nome completo
-                  <input type="text" name="name" autocomplete="name" required />
-                </label>
-                <label>
-                  E-mail
-                  <input type="email" name="email" autocomplete="email" required />
-                </label>
-                <label>
-                  Telefone com WhatsApp
-                  <input type="tel" name="phone" autocomplete="tel" required />
-                </label>
-                <label>
-                  Endereço
-                  <input type="text" name="address" autocomplete="street-address" required />
-                </label>
-                <label>
-                  Data de nascimento
-                  <input type="date" name="birthdate" required />
-                </label>
-                <label>
-                  Senha
-                  <input type="password" name="password" autocomplete="new-password" required />
-                </label>
-                <button class="button" type="submit">Criar conta</button>
-              </form>
+          <!-- ESTADO: NÃO LOGADO -->
+          <div id="auth-guest" class="auth-guest">
+            <div class="section-head">
+              <h2>Área do cliente</h2>
+              <p class="lead">
+                Cadastre-se para iniciar seu teste gratuito ou faça login para gerenciar sua carteira.
+              </p>
+              <p class="form-note">
+                Sem cadastro de dados financeiros. Entrega diária pela manhã, antes da abertura do mercado.
+              </p>
             </div>
 
-            <div class="card">
-              <h3>Login</h3>
-              <form id="login-form" class="form form--flat">
-                <label>
-                  E-mail
-                  <input type="email" name="email" autocomplete="email" required />
-                </label>
-                <label>
-                  Senha
-                  <input type="password" name="password" autocomplete="current-password" required />
-                </label>
-                <button class="button button--ghost" type="submit">Entrar</button>
-              </form>
+            <div class="auth-forms">
+              <!-- CADASTRO -->
+              <div class="auth-card">
+                <h3>✨ Criar conta</h3>
+                <form id="signup-form" class="form form--flat">
+                  <label>
+                    Nome completo
+                    <input type="text" name="name" autocomplete="name" required />
+                  </label>
+                  <label>
+                    E-mail
+                    <input type="email" name="email" autocomplete="email" required />
+                  </label>
+                  <label>
+                    Telefone com WhatsApp
+                    <input type="tel" name="phone" autocomplete="tel" required />
+                  </label>
+                  <label>
+                    Endereço
+                    <input type="text" name="address" autocomplete="street-address" required />
+                  </label>
+                  <label>
+                    Data de nascimento
+                    <input type="date" name="birthdate" required />
+                  </label>
+                  <label>
+                    Senha (mínimo 8 caracteres)
+                    <input type="password" name="password" autocomplete="new-password" required minlength="8" />
+                  </label>
+                  <button class="button" type="submit">Criar conta grátis</button>
+                </form>
+              </div>
+
+              <!-- LOGIN -->
+              <div class="auth-card">
+                <h3>🔐 Entrar</h3>
+                <form id="login-form" class="form form--flat">
+                  <label>
+                    E-mail
+                    <input type="email" name="email" autocomplete="email" required />
+                  </label>
+                  <label>
+                    Senha
+                    <input type="password" name="password" autocomplete="current-password" required />
+                  </label>
+                  <button class="button" type="submit">Entrar na minha conta</button>
+                </form>
+              </div>
             </div>
           </div>
 
-          <div id="dashboard" class="card dashboard hidden">
-            <div class="dashboard-head">
-              <div>
-                <h3>Minha carteira</h3>
-                <p class="form-note">
-                  Adicione seus tickers da B3 separados por vírgula (ex: PETR4, VALE3).
-                </p>
+          <!-- ESTADO: LOGADO - DASHBOARD -->
+          <div id="auth-dashboard" class="dashboard-container hidden">
+            <div class="dashboard-header">
+              <div class="dashboard-user">
+                <div class="dashboard-avatar" id="user-avatar">U</div>
+                <div class="dashboard-info">
+                  <h3 id="user-name">Usuário</h3>
+                  <p id="user-email">usuario@email.com</p>
+                </div>
               </div>
               <button class="button button--ghost" id="logout-button" type="button">
-                Sair
+                Sair da conta
               </button>
             </div>
-            <form id="portfolio-form" class="form form--flat">
-              <label>
-                Tickers B3
-                <div class="ticker-picker">
-                  <div class="ticker-input">
-                    <input
-                      type="text"
-                      id="ticker-input"
-                      list="ticker-options"
-                      placeholder="Digite ou selecione um ticker"
-                    />
-                    <button class="button button--ghost" type="button" id="add-ticker">
-                      Adicionar
-                    </button>
-                  </div>
-                  <datalist id="ticker-options"></datalist>
-                  <div id="ticker-chips" class="ticker-chips"></div>
-                </div>
-                <input type="hidden" name="tickers" id="tickers-hidden" required />
-              </label>
-              <button class="button" type="submit">Salvar carteira</button>
-            </form>
-          </div>
 
-          <div id="auth-message" class="form-note" role="status" aria-live="polite"></div>
+            <div class="dashboard-card">
+              <div class="dashboard-card-header">
+                <h4>
+                  📊 Minha Carteira
+                  <span class="badge" id="ticker-count">0 ativos</span>
+                </h4>
+              </div>
+
+              <!-- Lista de tickers atuais -->
+              <div class="current-tickers">
+                <p class="current-tickers-title">Ativos monitorados</p>
+                <div id="ticker-list" class="ticker-list">
+                  <div class="empty-state" id="empty-tickers">
+                    <div class="empty-state-icon">📭</div>
+                    <p>Você ainda não adicionou nenhum ativo.<br>Adicione abaixo para começar a receber análises.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Adicionar novo ticker -->
+              <div class="add-ticker-section">
+                <h5>➕ Adicionar novo ativo</h5>
+                <form id="portfolio-form" class="form form--flat">
+                  <div class="ticker-picker">
+                    <div class="ticker-input">
+                      <input
+                        type="text"
+                        id="ticker-input"
+                        list="ticker-options"
+                        placeholder="Digite ou selecione um ticker (ex: PETR4)"
+                      />
+                      <button class="button" type="button" id="add-ticker">
+                        Adicionar
+                      </button>
+                    </div>
+                    <datalist id="ticker-options"></datalist>
+                  </div>
+                  <input type="hidden" name="tickers" id="tickers-hidden" />
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -229,6 +258,6 @@
         <p>contato@tradingcore.com.br</p>
       </div>
     </footer>
-    <script src="app.js?v=2"></script>
+    <script src="app.js?v=3"></script>
   </body>
 </html>
