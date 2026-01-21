@@ -6,14 +6,24 @@ const EMAIL_KEY = "tc_email";
 const NAME_KEY = "tc_name";
 const TICKERS_KEY = "tc_tickers";
 
-// DOM Elements
+// DOM Elements - Views
+const landingPage = document.getElementById("landing-page");
+const appDashboard = document.getElementById("app-dashboard");
 const toastContainer = document.getElementById("toast-container");
+
+// DOM Elements - Forms
 const signupForm = document.getElementById("signup-form");
 const loginForm = document.getElementById("login-form");
 const portfolioForm = document.getElementById("portfolio-form");
+
+// DOM Elements - Dashboard Header
+const headerUserName = document.getElementById("header-user-name");
+const headerUserEmail = document.getElementById("header-user-email");
+const headerUserAvatar = document.getElementById("header-user-avatar");
 const logoutButton = document.getElementById("logout-button");
-const authGuest = document.getElementById("auth-guest");
-const authDashboard = document.getElementById("auth-dashboard");
+
+// DOM Elements - Dashboard Content
+const welcomeName = document.getElementById("welcome-name");
 const tickerInput = document.getElementById("ticker-input");
 const tickerOptions = document.getElementById("ticker-options");
 const addTickerButton = document.getElementById("add-ticker");
@@ -21,9 +31,6 @@ const tickerList = document.getElementById("ticker-list");
 const emptyTickers = document.getElementById("empty-tickers");
 const tickerCount = document.getElementById("ticker-count");
 const tickersHidden = document.getElementById("tickers-hidden");
-const userAvatar = document.getElementById("user-avatar");
-const userName = document.getElementById("user-name");
-const userEmail = document.getElementById("user-email");
 
 // State
 const tickerCatalog = new Map();
@@ -33,6 +40,8 @@ const userTickers = new Set();
 // TOAST NOTIFICATIONS
 // ========================================
 const showToast = (message, type = "info", duration = 4000) => {
+  if (!toastContainer) return;
+  
   const toast = document.createElement("div");
   toast.className = `toast toast--${type}`;
 
@@ -72,10 +81,7 @@ const setSession = (token, email, name = "", tickers = []) => {
   localStorage.setItem(TOKEN_KEY, token);
   localStorage.setItem(EMAIL_KEY, email);
   if (name) localStorage.setItem(NAME_KEY, name);
-  if (tickers.length > 0) {
-    localStorage.setItem(TICKERS_KEY, JSON.stringify(tickers));
-  }
-  updateUIForLoggedInUser();
+  localStorage.setItem(TICKERS_KEY, JSON.stringify(tickers));
 };
 
 const clearSession = () => {
@@ -84,7 +90,6 @@ const clearSession = () => {
   localStorage.removeItem(NAME_KEY);
   localStorage.removeItem(TICKERS_KEY);
   userTickers.clear();
-  updateUIForGuest();
 };
 
 const getSession = () => ({
@@ -100,31 +105,32 @@ const isLoggedIn = () => {
 };
 
 // ========================================
-// UI UPDATE FUNCTIONS
+// VIEW MANAGEMENT (Landing vs Dashboard)
 // ========================================
-const updateUIForLoggedInUser = () => {
+const showLandingPage = () => {
+  if (landingPage) landingPage.classList.remove("hidden");
+  if (appDashboard) appDashboard.classList.add("hidden");
+};
+
+const showDashboard = () => {
+  if (landingPage) landingPage.classList.add("hidden");
+  if (appDashboard) appDashboard.classList.remove("hidden");
+  
   const session = getSession();
-
-  // Hide guest forms, show dashboard
-  if (authGuest) authGuest.classList.add("hidden");
-  if (authDashboard) authDashboard.classList.remove("hidden");
-
-  // Update user info
-  const displayName = session.name || session.email.split("@")[0];
-  if (userAvatar) userAvatar.textContent = displayName.charAt(0).toUpperCase();
-  if (userName) userName.textContent = displayName;
-  if (userEmail) userEmail.textContent = session.email;
-
-  // Load user tickers
+  const displayName = session.name || session.email?.split("@")[0] || "Usuário";
+  
+  // Update header
+  if (headerUserName) headerUserName.textContent = displayName;
+  if (headerUserEmail) headerUserEmail.textContent = session.email || "";
+  if (headerUserAvatar) headerUserAvatar.textContent = displayName.charAt(0).toUpperCase();
+  
+  // Update welcome
+  if (welcomeName) welcomeName.textContent = displayName;
+  
+  // Load tickers from session
   userTickers.clear();
   session.tickers.forEach((t) => userTickers.add(t));
   renderUserTickers();
-};
-
-const updateUIForGuest = () => {
-  // Show guest forms, hide dashboard
-  if (authGuest) authGuest.classList.remove("hidden");
-  if (authDashboard) authDashboard.classList.add("hidden");
 };
 
 // ========================================
@@ -148,7 +154,7 @@ const updateTickerCount = () => {
 const renderUserTickers = () => {
   if (!tickerList) return;
 
-  // Clear list but keep empty state
+  // Clear existing ticker items (keep empty state element)
   const tickerItems = tickerList.querySelectorAll(".ticker-item");
   tickerItems.forEach((item) => item.remove());
 
@@ -205,8 +211,9 @@ const addTicker = async () => {
   userTickers.add(raw);
   tickerInput.value = "";
 
-  // Save to server
+  // Save to server and update local storage
   await savePortfolioToServer();
+  localStorage.setItem(TICKERS_KEY, JSON.stringify(Array.from(userTickers)));
 
   renderUserTickers();
   showToast(`${raw} adicionado à sua carteira!`, "success");
@@ -215,8 +222,9 @@ const addTicker = async () => {
 const removeTicker = async (ticker) => {
   userTickers.delete(ticker);
 
-  // Save to server
+  // Save to server and update local storage
   await savePortfolioToServer();
+  localStorage.setItem(TICKERS_KEY, JSON.stringify(Array.from(userTickers)));
 
   renderUserTickers();
   showToast(`${ticker} removido da carteira.`, "info");
@@ -229,19 +237,15 @@ const savePortfolioToServer = async () => {
   const tickers = Array.from(userTickers).join(", ");
 
   try {
-    const result = await postToScript({
+    await postToScript({
       action: "savePortfolio",
       token: session.token,
       email: session.email,
       tickers,
     });
-
-    if (result.ok) {
-      // Update local storage
-      localStorage.setItem(TICKERS_KEY, JSON.stringify(Array.from(userTickers)));
-    }
   } catch (error) {
     console.error("Erro ao salvar carteira:", error);
+    showToast("Erro ao salvar carteira no servidor.", "error");
   }
 };
 
@@ -316,9 +320,9 @@ const requireScriptUrl = () => {
   return true;
 };
 
-const loadUserPortfolio = async () => {
+const loadUserPortfolioFromServer = async () => {
   const session = getSession();
-  if (!session.token || !session.email) return;
+  if (!session.token || !session.email) return null;
 
   try {
     const result = await postToScript({
@@ -328,25 +332,13 @@ const loadUserPortfolio = async () => {
     });
 
     if (result.ok && result.data) {
-      const { name, tickers } = result.data;
-
-      if (name) localStorage.setItem(NAME_KEY, name);
-
-      if (tickers) {
-        const tickerArray = tickers
-          .split(",")
-          .map((t) => t.trim().toUpperCase())
-          .filter((t) => t);
-        localStorage.setItem(TICKERS_KEY, JSON.stringify(tickerArray));
-        userTickers.clear();
-        tickerArray.forEach((t) => userTickers.add(t));
-      }
-
-      updateUIForLoggedInUser();
+      return result.data;
     }
   } catch (error) {
     console.error("Erro ao carregar carteira:", error);
   }
+  
+  return null;
 };
 
 // ========================================
@@ -396,8 +388,9 @@ signupForm?.addEventListener("submit", async (event) => {
     }
 
     setSession(result.data.token, email, name, []);
-    showToast("🎉 Conta criada com sucesso! Bem-vindo ao TradingCore!", "success", 5000);
     signupForm.reset();
+    showDashboard();
+    showToast("🎉 Conta criada com sucesso! Bem-vindo ao TradingCore!", "success", 5000);
   } catch (error) {
     showToast(error.message || "Erro ao conectar com o servidor.", "error");
   } finally {
@@ -434,18 +427,45 @@ loginForm?.addEventListener("submit", async (event) => {
       return;
     }
 
-    // Set basic session first
+    // Get name and tickers from login response
     const name = result.data.name || "";
-    const tickers = result.data.tickers
-      ? result.data.tickers.split(",").map((t) => t.trim()).filter((t) => t)
+    const tickersStr = result.data.tickers || "";
+    const tickerArray = tickersStr
+      ? tickersStr.split(",").map((t) => t.trim().toUpperCase()).filter((t) => t)
       : [];
 
-    setSession(result.data.token, email, name, tickers);
-    showToast("✓ Login realizado com sucesso!", "success");
+    setSession(result.data.token, email, name, tickerArray);
     loginForm.reset();
+    
+    // Show dashboard first
+    showDashboard();
+    showToast("✓ Login realizado com sucesso!", "success");
 
-    // Load full portfolio from server
-    await loadUserPortfolio();
+    // Then try to load fresh data from server (in case login response didn't include full data)
+    const portfolioData = await loadUserPortfolioFromServer();
+    if (portfolioData) {
+      if (portfolioData.name) {
+        localStorage.setItem(NAME_KEY, portfolioData.name);
+      }
+      if (portfolioData.tickers) {
+        const freshTickers = portfolioData.tickers
+          .split(",")
+          .map((t) => t.trim().toUpperCase())
+          .filter((t) => t);
+        localStorage.setItem(TICKERS_KEY, JSON.stringify(freshTickers));
+        userTickers.clear();
+        freshTickers.forEach((t) => userTickers.add(t));
+        renderUserTickers();
+        
+        // Update header with fresh name if available
+        if (portfolioData.name) {
+          const displayName = portfolioData.name;
+          if (headerUserName) headerUserName.textContent = displayName;
+          if (headerUserAvatar) headerUserAvatar.textContent = displayName.charAt(0).toUpperCase();
+          if (welcomeName) welcomeName.textContent = displayName;
+        }
+      }
+    }
   } catch (error) {
     showToast(error.message || "Erro ao conectar com o servidor.", "error");
   } finally {
@@ -455,6 +475,7 @@ loginForm?.addEventListener("submit", async (event) => {
 
 logoutButton?.addEventListener("click", () => {
   clearSession();
+  showLandingPage();
   showToast("Você saiu da sua conta.", "info");
 });
 
@@ -476,11 +497,28 @@ const boot = async () => {
 
   // Check if user is logged in
   if (isLoggedIn()) {
-    updateUIForLoggedInUser();
-    // Load fresh data from server
-    await loadUserPortfolio();
+    showDashboard();
+    
+    // Try to load fresh data from server
+    const portfolioData = await loadUserPortfolioFromServer();
+    if (portfolioData) {
+      if (portfolioData.name) {
+        localStorage.setItem(NAME_KEY, portfolioData.name);
+      }
+      if (portfolioData.tickers) {
+        const freshTickers = portfolioData.tickers
+          .split(",")
+          .map((t) => t.trim().toUpperCase())
+          .filter((t) => t);
+        localStorage.setItem(TICKERS_KEY, JSON.stringify(freshTickers));
+        userTickers.clear();
+        freshTickers.forEach((t) => userTickers.add(t));
+      }
+      // Re-render with fresh data
+      showDashboard();
+    }
   } else {
-    updateUIForGuest();
+    showLandingPage();
   }
 };
 
