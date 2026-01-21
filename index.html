@@ -22,8 +22,9 @@
           <a href="#diferenciais">Diferenciais</a>
           <a href="#para-quem">Para quem é</a>
           <a href="#demo">Demonstração</a>
+          <a href="#acesso">Área do cliente</a>
         </nav>
-        <a class="button button--ghost" href="#contato">Teste grátis</a>
+        <a class="button button--ghost" href="#acesso">Teste grátis</a>
       </div>
     </header>
 
@@ -42,7 +43,7 @@
             Plano de <span class="price-highlight">R$ 24,90</span> gratuito por tempo limitado.
           </p>
           <div class="cta">
-            <a class="button" href="#contato">Teste grátis</a>
+            <a class="button" href="#acesso">Teste grátis</a>
             <a class="button button--link" href="#como-funciona">Ver como funciona</a>
           </div>
         </div>
@@ -120,33 +121,94 @@
         </div>
       </section>
 
-      <section id="contato" class="section">
+      <section id="acesso" class="section">
         <div class="container">
-          <div class="cta-panel">
-            <div>
-              <h2>Transforme informação em sinal</h2>
-              <p class="lead">
-                Receba um resumo diário que importa para sua carteira.
-              </p>
-              <p class="form-note">
-                Entrega diária pela manhã, antes da abertura do mercado.
-              </p>
+          <div class="section-head">
+            <h2>Área do cliente</h2>
+            <p class="lead">
+              Cadastre-se para iniciar seu teste gratuito e montar sua carteira.
+            </p>
+            <p class="form-note">
+              Sem cadastro de dados financeiros. Entrega diária pela manhã, antes da abertura
+              do mercado.
+            </p>
+          </div>
+
+          <div class="grid grid--2 auth-grid">
+            <div class="card">
+              <h3>Cadastro</h3>
+              <form id="signup-form" class="form form--flat">
+                <label>
+                  Nome completo
+                  <input type="text" name="name" autocomplete="name" required />
+                </label>
+                <label>
+                  E-mail
+                  <input type="email" name="email" autocomplete="email" required />
+                </label>
+                <label>
+                  Telefone com WhatsApp
+                  <input type="tel" name="phone" autocomplete="tel" required />
+                </label>
+                <label>
+                  Endereço
+                  <input type="text" name="address" autocomplete="street-address" required />
+                </label>
+                <label>
+                  Data de nascimento
+                  <input type="date" name="birthdate" required />
+                </label>
+                <label>
+                  Senha
+                  <input type="password" name="password" autocomplete="new-password" required />
+                </label>
+                <button class="button" type="submit">Criar conta</button>
+              </form>
             </div>
-            <div class="card card--preview">
-              <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLScZnZ7zoAkN1i7Vz7l7K2FToRLXJl4VHxTwwvk2Zp389eRMLA/viewform?embedded=true"
-                width="100%"
-                height="520"
-                frameborder="0"
-                marginheight="0"
-                marginwidth="0"
-                style="border: 0;"
-                title="Formulário TradingCore"
-              >
-                Carregando…
-              </iframe>
+
+            <div class="card">
+              <h3>Login</h3>
+              <form id="login-form" class="form form--flat">
+                <label>
+                  E-mail
+                  <input type="email" name="email" autocomplete="email" required />
+                </label>
+                <label>
+                  Senha
+                  <input type="password" name="password" autocomplete="current-password" required />
+                </label>
+                <button class="button button--ghost" type="submit">Entrar</button>
+              </form>
             </div>
           </div>
+
+          <div id="dashboard" class="card dashboard hidden">
+            <div class="dashboard-head">
+              <div>
+                <h3>Minha carteira</h3>
+                <p class="form-note">
+                  Adicione seus tickers da B3 separados por vírgula (ex: PETR4, VALE3).
+                </p>
+              </div>
+              <button class="button button--ghost" id="logout-button" type="button">
+                Sair
+              </button>
+            </div>
+            <form id="portfolio-form" class="form form--flat">
+              <label>
+                Tickers B3
+                <input
+                  type="text"
+                  name="tickers"
+                  placeholder="Ex: PETR4, VALE3, ITSA4"
+                  required
+                />
+              </label>
+              <button class="button" type="submit">Salvar carteira</button>
+            </form>
+          </div>
+
+          <div id="auth-message" class="form-note" role="status" aria-live="polite"></div>
         </div>
       </section>
     </main>
@@ -157,5 +219,6 @@
         <p>contato@tradingcore.com.br</p>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
