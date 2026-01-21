@@ -197,12 +197,22 @@
             <form id="portfolio-form" class="form form--flat">
               <label>
                 Tickers B3
-                <input
-                  type="text"
-                  name="tickers"
-                  placeholder="Ex: PETR4, VALE3, ITSA4"
-                  required
-                />
+                <div class="ticker-picker">
+                  <div class="ticker-input">
+                    <input
+                      type="text"
+                      id="ticker-input"
+                      list="ticker-options"
+                      placeholder="Digite ou selecione um ticker"
+                    />
+                    <button class="button button--ghost" type="button" id="add-ticker">
+                      Adicionar
+                    </button>
+                  </div>
+                  <datalist id="ticker-options"></datalist>
+                  <div id="ticker-chips" class="ticker-chips"></div>
+                </div>
+                <input type="hidden" name="tickers" id="tickers-hidden" required />
               </label>
               <button class="button" type="submit">Salvar carteira</button>
             </form>

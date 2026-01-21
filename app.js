@@ -10,6 +10,14 @@ const portfolioForm = document.getElementById("portfolio-form");
 const logoutButton = document.getElementById("logout-button");
 const dashboard = document.getElementById("dashboard");
 const authMessage = document.getElementById("auth-message");
+const tickerInput = document.getElementById("ticker-input");
+const tickerOptions = document.getElementById("ticker-options");
+const addTickerButton = document.getElementById("add-ticker");
+const tickerChips = document.getElementById("ticker-chips");
+const tickersHidden = document.getElementById("tickers-hidden");
+
+const tickerCatalog = new Map();
+const selectedTickers = new Set();
 
 const setMessage = (text, type = "") => {
   if (!authMessage) {
@@ -31,15 +39,7 @@ const setLoading = (button, isLoading) => {
   button.textContent = isLoading ? "Aguarde..." : button.dataset.originalText;
 };
 
-const normalizeTickers = (raw) =>
-  raw
-    .split(",")
-    .map((item) => item.trim().toUpperCase())
-    .filter(Boolean)
-    .join(", ");
-
-const isValidTickers = (value) =>
-  /^(?:[A-Z]{4}\d{1,2})(?:,\s*[A-Z]{4}\d{1,2})*$/.test(value);
+const normalizeTicker = (value) => value.trim().toUpperCase();
 
 const postToScript = async (payload) => {
   const response = await fetch(APP_SCRIPT_URL, {
@@ -86,6 +86,99 @@ const requireScriptUrl = () => {
     return false;
   }
   return true;
+};
+
+const updateHiddenTickers = () => {
+  if (tickersHidden) {
+    tickersHidden.value = Array.from(selectedTickers).join(", ");
+  }
+};
+
+const renderTickerChips = () => {
+  if (!tickerChips) {
+    return;
+  }
+  tickerChips.innerHTML = "";
+  Array.from(selectedTickers)
+    .sort()
+    .forEach((ticker) => {
+      const chip = document.createElement("span");
+      chip.className = "ticker-chip";
+      const name = tickerCatalog.get(ticker);
+      chip.textContent = name ? `${ticker} - ${name}` : ticker;
+
+      const removeButton = document.createElement("button");
+      removeButton.type = "button";
+      removeButton.setAttribute("aria-label", `Remover ${ticker}`);
+      removeButton.textContent = "×";
+      removeButton.addEventListener("click", () => {
+        selectedTickers.delete(ticker);
+        updateHiddenTickers();
+        renderTickerChips();
+      });
+
+      chip.appendChild(removeButton);
+      tickerChips.appendChild(chip);
+    });
+};
+
+const addTicker = () => {
+  if (!tickerInput) {
+    return;
+  }
+  const raw = normalizeTicker(tickerInput.value || "");
+  if (!raw) {
+    setMessage("Selecione um ticker para adicionar.", "error");
+    return;
+  }
+  if (!tickerCatalog.has(raw)) {
+    setMessage("Ticker nao encontrado na lista da B3.", "error");
+    return;
+  }
+  selectedTickers.add(raw);
+  updateHiddenTickers();
+  renderTickerChips();
+  tickerInput.value = "";
+  setMessage("", "");
+};
+
+const loadTickers = async () => {
+  if (!tickerOptions) {
+    return;
+  }
+  try {
+    const response = await fetch("docs/acoes-listadas-b3.csv");
+    const text = await response.text();
+    const lines = text.trim().split(/\r?\n/);
+    lines.slice(1).forEach((line) => {
+      if (!line) {
+        return;
+      }
+      let ticker = "";
+      let name = "";
+      const match = line.match(/^"([^"]+)","([^"]+)"/);
+      if (match) {
+        ticker = match[1];
+        name = match[2];
+      } else {
+        const parts = line.split(",");
+        ticker = parts[0]?.replace(/"/g, "") || "";
+        name = parts[1]?.replace(/"/g, "") || "";
+      }
+      if (!ticker || ticker === "Ticker") {
+        return;
+      }
+      tickerCatalog.set(ticker, name);
+      const option = document.createElement("option");
+      option.value = ticker;
+      if (name) {
+        option.label = `${ticker} - ${name}`;
+      }
+      tickerOptions.appendChild(option);
+    });
+  } catch (error) {
+    setMessage("Nao foi possivel carregar a lista da B3.", "error");
+  }
 };
 
 signupForm?.addEventListener("submit", async (event) => {
@@ -193,12 +286,9 @@ portfolioForm?.addEventListener("submit", async (event) => {
   const submitButton = portfolioForm.querySelector("button[type='submit']");
   setLoading(submitButton, true);
 
-  const formData = new FormData(portfolioForm);
-  const rawTickers = formData.get("tickers")?.toString() || "";
-  const tickers = normalizeTickers(rawTickers);
-
-  if (!tickers || !isValidTickers(tickers)) {
-    setMessage("Informe tickers validos da B3 (ex: PETR4, VALE3).", "error");
+  const tickers = Array.from(selectedTickers).join(", ");
+  if (!tickers) {
+    setMessage("Adicione ao menos um ticker da B3.", "error");
     setLoading(submitButton, false);
     return;
   }
@@ -223,7 +313,9 @@ portfolioForm?.addEventListener("submit", async (event) => {
       return;
     }
 
-    portfolioForm.reset();
+    selectedTickers.clear();
+    updateHiddenTickers();
+    renderTickerChips();
     setMessage("Carteira salva com sucesso.", "success");
   } catch (error) {
     setMessage(error.message || "Erro ao conectar com o servidor.", "error");
@@ -237,11 +329,23 @@ logoutButton?.addEventListener("click", () => {
   setMessage("Voce saiu da area logada.", "success");
 });
 
+addTickerButton?.addEventListener("click", addTicker);
+
+tickerInput?.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    addTicker();
+  }
+});
+
 const boot = () => {
   const session = getSession();
   if (session.token && session.email) {
     dashboard.classList.remove("hidden");
   }
+  updateHiddenTickers();
+  renderTickerChips();
+  loadTickers();
 };
 
 boot();
