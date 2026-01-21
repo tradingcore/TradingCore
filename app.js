@@ -1,4 +1,5 @@
-const APP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby0BqLxkUkmu7QNtEl162XfHmsWPfsFdA9VJ3d73iXhgoRvwSiWDcOLUC-wVPb6uZyDaQ/exec";
+const APP_SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycby0BqLxkUkmu7QNtEl162XfHmsWPfsFdA9VJ3d73iXhgoRvwSiWDcOLUC-wVPb6uZyDaQ/exec";
 
 const TOKEN_KEY = "tc_token";
 const EMAIL_KEY = "tc_email";
@@ -43,7 +44,7 @@ const isValidTickers = (value) =>
 const postToScript = async (payload) => {
   const response = await fetch(APP_SCRIPT_URL, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: { "Content-Type": "text/plain;charset=utf-8" },
     body: JSON.stringify(payload),
   });
   const data = await response.json();
