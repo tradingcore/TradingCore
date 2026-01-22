@@ -343,13 +343,13 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_
                     variacao_class = "variacao-neutra"
                     variacao_sinal = ""
                 
-                # Mostrar data do preço e intervalo da variação
+                # Mostrar data do preço e da variação (apenas data final)
                 preco_data_html = f' <span class="preco-data">({data_preco_fmt})</span>' if data_preco_fmt else ''
-                variacao_periodo_html = f' <span class="preco-data">({data_var_de_fmt}→{data_var_ate_fmt})</span>' if data_var_de_fmt and data_var_ate_fmt else ''
+                variacao_data_html = f' <span class="preco-data">({data_var_ate_fmt})</span>' if data_var_ate_fmt else ''
                 
                 preco_html = f"""<span class="preco-info">
                     <span class="preco-valor">R$ {preco:.2f}{preco_data_html}</span> 
-                    <span class="{variacao_class}">({variacao_sinal}{variacao:.2f}%){variacao_periodo_html}</span>
+                    <span class="{variacao_class}">({variacao_sinal}{variacao:.2f}%){variacao_data_html}</span>
                 </span>"""
             
             html += f"""

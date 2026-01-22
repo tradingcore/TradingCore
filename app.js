@@ -654,13 +654,12 @@ const createNewsCard = (ticker, resumo, consolidado, preco) => {
     const variacaoClass = variacao > 0 ? "variacao-positiva" : variacao < 0 ? "variacao-negativa" : "variacao-neutra";
     const variacaoSinal = variacao > 0 ? "+" : "";
     
-    // Datas de preço e variação
+    // Datas de preço e variação (apenas data final)
     const dataPreco = preco.data_preco ? formatDateRef(preco.data_preco) : "";
-    const dataVarDe = preco.data_variacao_de ? formatDateRef(preco.data_variacao_de) : "";
     const dataVarAte = preco.data_variacao_ate ? formatDateRef(preco.data_variacao_ate) : "";
     
     const precoDataHtml = dataPreco ? `<span class="preco-data">(${dataPreco})</span>` : "";
-    const variacaoDataHtml = dataVarDe && dataVarAte ? `<span class="preco-data">(${dataVarDe}→${dataVarAte})</span>` : "";
+    const variacaoDataHtml = dataVarAte ? `<span class="preco-data">(${dataVarAte})</span>` : "";
     
     precoHtml = `
       <div class="news-ticker-preco">
