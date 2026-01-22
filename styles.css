@@ -1661,6 +1661,295 @@ select:focus {
 }
 
 /* ========================================
+   MAPA DE CALOR
+======================================== */
+.heatmap-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.heatmap-section-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--text);
+}
+
+.heatmap-updated {
+  font-size: 0.8rem;
+  color: var(--muted);
+  background: var(--surface-light);
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.heatmap-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.heatmap-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: sticky;
+  top: 20px;
+}
+
+.heatmap-main {
+  min-width: 0;
+}
+
+/* Filtro de setor */
+.setor-filter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.setor-filter-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s ease;
+}
+
+.setor-filter-item:hover {
+  background: var(--surface-light);
+  color: var(--text);
+}
+
+.setor-filter-item.active {
+  background: rgba(91, 124, 250, 0.15);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.setor-filter-item .setor-badge {
+  background: var(--surface-light);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-left: auto;
+}
+
+/* Legenda */
+.heatmap-legend {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.heatmap-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.heatmap-legend-color {
+  width: 24px;
+  height: 16px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+/* Container do mapa */
+.heatmap-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.heatmap-container:empty {
+  display: none;
+}
+
+/* Setor no mapa */
+.heatmap-sector {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.heatmap-sector-title {
+  background: var(--surface-light);
+  padding: 12px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heatmap-sector-count {
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.heatmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
+  gap: 4px;
+  padding: 8px;
+}
+
+/* Item individual */
+.heatmap-item {
+  aspect-ratio: 1.3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  padding: 4px;
+}
+
+.heatmap-item:hover {
+  transform: scale(1.08);
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.heatmap-item--highlight {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.heatmap-ticker {
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.heatmap-change {
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Cores por variação */
+.heatmap-item--strong-up {
+  background: linear-gradient(135deg, #15803d, #16a34a);
+}
+
+.heatmap-item--up {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+}
+
+.heatmap-item--slight-up {
+  background: linear-gradient(135deg, #22c55e, #4ade80);
+}
+
+.heatmap-item--slight-down {
+  background: linear-gradient(135deg, #f87171, #fca5a5);
+}
+
+.heatmap-item--down {
+  background: linear-gradient(135deg, #ef4444, #f87171);
+}
+
+.heatmap-item--strong-down {
+  background: linear-gradient(135deg, #b91c1c, #dc2626);
+}
+
+.heatmap-item--neutral {
+  background: linear-gradient(135deg, #4b5563, #6b7280);
+}
+
+/* Loading state */
+.heatmap-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  color: var(--muted);
+  gap: 16px;
+}
+
+.heatmap-loading.hidden {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .heatmap-layout {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .heatmap-sidebar {
+    position: relative;
+    top: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .heatmap-sidebar .sidebar-card {
+    flex: 1;
+    min-width: 140px;
+  }
+
+  .heatmap-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .setor-filter-list {
+    max-height: 200px;
+  }
+
+  .heatmap-container {
+    grid-template-columns: 1fr;
+  }
+
+  .heatmap-grid {
+    grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
+    gap: 3px;
+  }
+
+  .heatmap-item {
+    aspect-ratio: 1.2;
+  }
+
+  .heatmap-ticker {
+    font-size: 0.65rem;
+  }
+
+  .heatmap-change {
+    font-size: 0.55rem;
+  }
+}
+
+/* ========================================
    DESTAQUE DO DIA
 ======================================== */
 .destaque-container {

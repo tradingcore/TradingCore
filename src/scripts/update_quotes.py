@@ -6,11 +6,31 @@ Roda via GitHub Actions a cada 15 minutos durante o pregão.
 
 import os
 import json
+import csv
 import yfinance as yf
 from datetime import datetime
 import pytz
 import firebase_admin
 from firebase_admin import credentials, firestore
+
+# Mapeamento de setores Yahoo Finance -> PT-BR
+SECTOR_TRANSLATION = {
+    'Financial Services': 'Financeiro',
+    'Financials': 'Financeiro',
+    'Energy': 'Energia',
+    'Basic Materials': 'Materiais Básicos',
+    'Materials': 'Materiais Básicos',
+    'Consumer Cyclical': 'Consumo Cíclico',
+    'Consumer Defensive': 'Consumo Básico',
+    'Industrials': 'Indústria',
+    'Healthcare': 'Saúde',
+    'Technology': 'Tecnologia',
+    'Communication Services': 'Comunicações',
+    'Utilities': 'Utilidades',
+    'Real Estate': 'Imobiliário',
+    '': 'Outros',
+    None: 'Outros'
+}
 
 
 def init_firebase():
@@ -129,6 +149,90 @@ def fetch_b3_quotes(db, now):
     return b3_quotes
 
 
+def fetch_heatmap_data(db, now):
+    """Busca dados para o mapa de calor - top 100 ações B3 organizadas por setor."""
+    print('\n🗺️ Mapa de Calor - Top 100 ações B3:')
+    
+    # Caminho do CSV (relativo ao script)
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    csv_path = os.path.join(script_dir, '..', '..', 'docs', 'acoes-listadas-b3.csv')
+    
+    # Ler top 100 tickers do CSV (já ordenado por volume)
+    top_tickers = []
+    try:
+        with open(csv_path, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for i, row in enumerate(reader):
+                if i >= 100:  # Top 100
+                    break
+                ticker = row.get('Ticker', '').strip()
+                if ticker:
+                    top_tickers.append(ticker)
+        print(f'  → {len(top_tickers)} tickers carregados do CSV')
+    except Exception as e:
+        print(f'  ✗ Erro ao ler CSV: {e}')
+        return {}
+    
+    # Buscar cotações e setores
+    heatmap_data = {}  # setor -> [ações]
+    
+    for i, ticker in enumerate(top_tickers):
+        try:
+            ticker_yahoo = f'{ticker}.SA'
+            stock = yf.Ticker(ticker_yahoo)
+            
+            # Buscar histórico
+            hist = stock.history(period='2d')
+            if hist.empty:
+                continue
+            
+            price = float(hist['Close'].iloc[-1])
+            change_pct = 0
+            if len(hist) >= 2:
+                prev = float(hist['Close'].iloc[-2])
+                change_pct = ((price - prev) / prev) * 100
+            
+            # Buscar setor
+            info = stock.info
+            sector_en = info.get('sector', '') or info.get('industry', '') or ''
+            sector_pt = SECTOR_TRANSLATION.get(sector_en, 'Outros')
+            
+            # Adicionar ao setor
+            if sector_pt not in heatmap_data:
+                heatmap_data[sector_pt] = []
+            
+            heatmap_data[sector_pt].append({
+                'ticker': ticker,
+                'price': round(price, 2),
+                'change': round(change_pct, 2),
+                'sector': sector_pt
+            })
+            
+            # Log a cada 10 ações
+            if (i + 1) % 10 == 0:
+                print(f'  → Processado {i + 1}/{len(top_tickers)} ações...')
+                
+        except Exception as e:
+            print(f'  ✗ {ticker}: {e}')
+            continue
+    
+    # Ordenar ações dentro de cada setor por variação
+    for sector in heatmap_data:
+        heatmap_data[sector].sort(key=lambda x: x['change'], reverse=True)
+    
+    # Salvar no Firestore
+    if heatmap_data:
+        total_acoes = sum(len(acoes) for acoes in heatmap_data.values())
+        db.collection('market_data').document('heatmap').set({
+            'data': heatmap_data,
+            'totalAcoes': total_acoes,
+            'updatedAt': now.isoformat()
+        })
+        print(f'  ✓ Mapa de calor salvo: {len(heatmap_data)} setores, {total_acoes} ações')
+    
+    return heatmap_data
+
+
 def main():
     """Função principal."""
     tz = pytz.timezone('America/Sao_Paulo')
@@ -143,6 +247,7 @@ def main():
     
     fetch_market_quotes(db, now)
     fetch_b3_quotes(db, now)
+    fetch_heatmap_data(db, now)
     
     print('\n✅ Atualização concluída!')
 

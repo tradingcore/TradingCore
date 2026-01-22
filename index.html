@@ -315,6 +315,9 @@
             <button class="nav-dashboard-item" data-section="noticias" type="button">
               📰 <span>Notícias</span>
             </button>
+            <button class="nav-dashboard-item" data-section="mapa" type="button">
+              🗺️ <span>Mapa</span>
+            </button>
             <button class="nav-dashboard-item" data-section="perfil" type="button">
               👤 <span>Perfil</span>
             </button>
@@ -569,6 +572,91 @@
                 <div id="news-loading" class="news-loading hidden">
                   <div class="news-loading-spinner"></div>
                   <p>Carregando notícias...</p>
+                </div>
+              </main>
+            </div>
+          </div>
+
+          <!-- ============ SEÇÃO MAPA DE CALOR ============ -->
+          <div id="section-mapa" class="dashboard-section hidden">
+            <!-- Header da seção -->
+            <div class="heatmap-section-header">
+              <h2>🗺️ Mapa de Calor B3</h2>
+              <span class="heatmap-updated" id="heatmap-updated">Atualizado: --</span>
+            </div>
+
+            <!-- Layout duas colunas -->
+            <div class="heatmap-layout">
+              <!-- SIDEBAR ESQUERDA: Filtros -->
+              <aside class="heatmap-sidebar">
+                <!-- Filtro por Setor -->
+                <div class="sidebar-card">
+                  <div class="sidebar-card-header sidebar-card-header--toggle" id="setor-filter-toggle">
+                    <span>🎯 Filtrar por setor</span>
+                    <span class="sidebar-toggle-arrow">▼</span>
+                  </div>
+                  <div class="sidebar-card-content expanded" id="setor-filter-content">
+                    <div class="setor-filter-list" id="setor-filter-list">
+                      <button type="button" class="setor-filter-item active" data-setor="all">
+                        Todos os setores
+                      </button>
+                      <!-- Ativos da carteira serão adicionados via JS -->
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Legenda -->
+                <div class="sidebar-card">
+                  <div class="sidebar-card-header">
+                    <span>📊 Legenda</span>
+                  </div>
+                  <div class="heatmap-legend">
+                    <div class="heatmap-legend-item">
+                      <span class="heatmap-legend-color heatmap-item--strong-up"></span>
+                      <span>+3% ou mais</span>
+                    </div>
+                    <div class="heatmap-legend-item">
+                      <span class="heatmap-legend-color heatmap-item--up"></span>
+                      <span>+1% a +3%</span>
+                    </div>
+                    <div class="heatmap-legend-item">
+                      <span class="heatmap-legend-color heatmap-item--slight-up"></span>
+                      <span>0% a +1%</span>
+                    </div>
+                    <div class="heatmap-legend-item">
+                      <span class="heatmap-legend-color heatmap-item--slight-down"></span>
+                      <span>0% a -1%</span>
+                    </div>
+                    <div class="heatmap-legend-item">
+                      <span class="heatmap-legend-color heatmap-item--down"></span>
+                      <span>-1% a -3%</span>
+                    </div>
+                    <div class="heatmap-legend-item">
+                      <span class="heatmap-legend-color heatmap-item--strong-down"></span>
+                      <span>-3% ou menos</span>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+
+              <!-- CONTEÚDO PRINCIPAL: Mapa -->
+              <main class="heatmap-main">
+                <!-- Container do mapa de calor -->
+                <div id="heatmap-container" class="heatmap-container">
+                  <!-- Renderizado via JS -->
+                </div>
+
+                <!-- Loading state -->
+                <div id="heatmap-loading" class="heatmap-loading">
+                  <div class="news-loading-spinner"></div>
+                  <p>Carregando mapa de calor...</p>
+                </div>
+
+                <!-- Estado vazio -->
+                <div id="heatmap-empty" class="empty-state hidden">
+                  <div class="empty-state-icon">🗺️</div>
+                  <p>Mapa de calor não disponível.</p>
+                  <p class="empty-state-hint">Os dados são atualizados a cada 15 minutos durante o pregão.</p>
                 </div>
               </main>
             </div>

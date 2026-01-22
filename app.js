@@ -69,6 +69,7 @@ const navDashboard = document.getElementById("nav-dashboard");
 const sectionCarteira = document.getElementById("section-carteira");
 const sectionPerfil = document.getElementById("section-perfil");
 const sectionNoticias = document.getElementById("section-noticias");
+const sectionMapa = document.getElementById("section-mapa");
 
 // DOM Elements - News Section
 const newsContainer = document.getElementById("news-container");
@@ -255,6 +256,7 @@ const showSection = (sectionName) => {
   if (sectionCarteira) sectionCarteira.classList.add("hidden");
   if (sectionPerfil) sectionPerfil.classList.add("hidden");
   if (sectionNoticias) sectionNoticias.classList.add("hidden");
+  if (sectionMapa) sectionMapa.classList.add("hidden");
   
   // Show target section
   if (sectionName === "carteira" && sectionCarteira) {
@@ -267,6 +269,9 @@ const showSection = (sectionName) => {
     updateMarketStatus();
     renderTickerFilter();
     loadTodayNews();
+  } else if (sectionName === "mapa" && sectionMapa) {
+    sectionMapa.classList.remove("hidden");
+    loadHeatmap();
   }
   
   // Update nav active state
@@ -1438,6 +1443,170 @@ const createSentimentChart = (ticker, historico) => {
       </div>
     </div>
   `;
+};
+
+// ========================================
+// HEATMAP FUNCTIONS
+// ========================================
+let heatmapData = null;
+let activeSetorFilter = "all";
+
+const loadHeatmap = async () => {
+  const container = document.getElementById("heatmap-container");
+  const loading = document.getElementById("heatmap-loading");
+  const empty = document.getElementById("heatmap-empty");
+  const updated = document.getElementById("heatmap-updated");
+  
+  // Mostrar loading
+  if (loading) loading.classList.remove("hidden");
+  if (empty) empty.classList.add("hidden");
+  if (container) container.innerHTML = "";
+  
+  try {
+    const doc = await db.collection("market_data").doc("heatmap").get();
+    
+    if (!doc.exists) {
+      if (loading) loading.classList.add("hidden");
+      if (empty) empty.classList.remove("hidden");
+      return;
+    }
+    
+    const data = doc.data();
+    heatmapData = data.data;
+    
+    // Atualizar timestamp
+    if (updated && data.updatedAt) {
+      const date = new Date(data.updatedAt);
+      updated.textContent = `Atualizado: ${date.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}`;
+    }
+    
+    // Renderizar filtro de setores
+    renderSetorFilter();
+    
+    // Renderizar heatmap
+    renderHeatmap();
+    
+    if (loading) loading.classList.add("hidden");
+    
+  } catch (error) {
+    console.error("Erro ao carregar heatmap:", error);
+    if (loading) loading.classList.add("hidden");
+    if (empty) empty.classList.remove("hidden");
+  }
+};
+
+const renderSetorFilter = () => {
+  const filterList = document.getElementById("setor-filter-list");
+  if (!filterList || !heatmapData) return;
+  
+  const session = getSession();
+  const userTickers = session.tickers || [];
+  
+  // Limpar items existentes (exceto "Todos")
+  filterList.querySelectorAll(".setor-filter-item:not([data-setor='all'])").forEach((el) => el.remove());
+  
+  // Criar mapeamento ticker -> setor
+  const tickerToSetor = {};
+  for (const [setor, acoes] of Object.entries(heatmapData)) {
+    for (const acao of acoes) {
+      tickerToSetor[acao.ticker] = setor;
+    }
+  }
+  
+  // Adicionar tickers do usuário que existem no heatmap
+  userTickers.forEach((ticker) => {
+    const setor = tickerToSetor[ticker];
+    if (setor) {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "setor-filter-item";
+      btn.dataset.setor = setor;
+      btn.dataset.ticker = ticker;
+      btn.innerHTML = `${ticker} <span class="setor-badge">${setor}</span>`;
+      btn.addEventListener("click", () => filterHeatmapByTicker(ticker, setor));
+      filterList.appendChild(btn);
+    }
+  });
+  
+  // Event handler para "Todos"
+  const allBtn = filterList.querySelector("[data-setor='all']");
+  if (allBtn) {
+    allBtn.onclick = () => filterHeatmapBySetor("all");
+  }
+};
+
+const filterHeatmapBySetor = (setor) => {
+  activeSetorFilter = setor;
+  
+  // Atualizar UI dos botões
+  document.querySelectorAll(".setor-filter-item").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.setor === setor);
+  });
+  
+  renderHeatmap();
+};
+
+const filterHeatmapByTicker = (ticker, setor) => {
+  activeSetorFilter = setor;
+  
+  // Atualizar UI dos botões
+  document.querySelectorAll(".setor-filter-item").forEach((btn) => {
+    const isActive = btn.dataset.ticker === ticker || (btn.dataset.setor === "all" && setor === "all");
+    btn.classList.toggle("active", isActive);
+  });
+  
+  renderHeatmap(ticker);
+};
+
+const renderHeatmap = (highlightTicker = null) => {
+  const container = document.getElementById("heatmap-container");
+  if (!container || !heatmapData) return;
+  
+  let html = "";
+  
+  // Filtrar setores se necessário
+  const setores = activeSetorFilter === "all" 
+    ? Object.entries(heatmapData) 
+    : Object.entries(heatmapData).filter(([setor]) => setor === activeSetorFilter);
+  
+  // Ordenar setores por quantidade de ações (maior primeiro)
+  setores.sort((a, b) => b[1].length - a[1].length);
+  
+  for (const [setor, acoes] of setores) {
+    html += `
+      <div class="heatmap-sector">
+        <div class="heatmap-sector-title">
+          ${setor}
+          <span class="heatmap-sector-count">${acoes.length} ações</span>
+        </div>
+        <div class="heatmap-grid">
+          ${acoes.map(acao => {
+            const colorClass = getHeatmapColorClass(acao.change);
+            const highlightClass = highlightTicker === acao.ticker ? "heatmap-item--highlight" : "";
+            const sign = acao.change > 0 ? "+" : "";
+            return `
+              <div class="heatmap-item ${colorClass} ${highlightClass}" 
+                   title="${acao.ticker}: R$ ${acao.price} (${sign}${acao.change.toFixed(2)}%)">
+                <span class="heatmap-ticker">${acao.ticker.replace(/\d+$/, "")}</span>
+                <span class="heatmap-change">${sign}${acao.change.toFixed(1)}%</span>
+              </div>
+            `;
+          }).join("")}
+        </div>
+      </div>
+    `;
+  }
+  
+  container.innerHTML = html;
+};
+
+const getHeatmapColorClass = (change) => {
+  if (change >= 3) return "heatmap-item--strong-up";
+  if (change >= 1) return "heatmap-item--up";
+  if (change >= 0) return "heatmap-item--slight-up";
+  if (change >= -1) return "heatmap-item--slight-down";
+  if (change >= -3) return "heatmap-item--down";
+  return "heatmap-item--strong-down";
 };
 
 // ========================================
