@@ -629,18 +629,27 @@ const fetchMarketQuotes = async () => {
   
   for (const ticker of MARKET_TICKERS) {
     try {
-      const mockData = await getMockOrCachedQuote(ticker.symbol);
-      if (mockData) {
-        results.push({
-          symbol: ticker.name,
-          price: mockData.price,
-          change: mockData.change,
-          changePercent: mockData.changePercent,
-          type: ticker.type
-        });
-      }
+      const cachedData = await getMockOrCachedQuote(ticker.symbol);
+      
+      // Sempre mostrar o ticker (mesmo sem dados)
+      results.push({
+        symbol: ticker.name,
+        price: cachedData?.price ?? null,
+        change: cachedData?.change ?? 0,
+        changePercent: cachedData?.changePercent ?? 0,
+        type: ticker.type,
+        hasData: !!cachedData
+      });
     } catch (e) {
       console.warn(`Erro ao buscar ${ticker.symbol}:`, e);
+      results.push({
+        symbol: ticker.name,
+        price: null,
+        change: 0,
+        changePercent: 0,
+        type: ticker.type,
+        hasData: false
+      });
     }
   }
   
@@ -708,54 +717,55 @@ const getMockOrCachedQuote = async (symbol) => {
     if (doc.exists) {
       const data = doc.data();
       if (data[symbol]) {
+        console.log(`✓ Cotação ${symbol} do cache:`, data[symbol]);
         return data[symbol];
       }
     }
   } catch (e) {
-    console.warn("Cache de cotações não disponível");
+    console.warn("Cache de cotações não disponível:", e);
   }
   
-  // Fallback: dados aproximados (serão atualizados pelo backend)
-  const fallbackData = {
-    "^BVSP": { price: 128500, change: 1250, changePercent: 0.98 },
-    "USDBRL=X": { price: 5.85, change: -0.02, changePercent: -0.34 },
-    "EURBRL=X": { price: 6.32, change: 0.01, changePercent: 0.16 },
-    "GC=F": { price: 2045.50, change: 12.30, changePercent: 0.60 },
-    "BTC-USD": { price: 42150, change: 850, changePercent: 2.06 }
-  };
-  
-  return fallbackData[symbol] || null;
+  // Se não tem cache, retorna null (não mostra valor errado)
+  console.warn(`⚠ Sem cache para ${symbol}`);
+  return null;
 };
 
 const createTickerItem = (quote) => {
-  const changeClass = quote.change > 0 ? "up" : quote.change < 0 ? "down" : "neutral";
-  const changeSign = quote.change > 0 ? "+" : "";
+  const changeClass = quote.changePercent > 0 ? "up" : quote.changePercent < 0 ? "down" : "neutral";
+  const changeSign = quote.changePercent > 0 ? "+" : "";
   
   // Formatação especial para cada tipo
   let priceStr;
-  if (quote.price === null) {
-    priceStr = "--";
+  if (quote.price === null || quote.price === undefined) {
+    priceStr = "...";
   } else if (quote.type === "index") {
-    priceStr = quote.price.toLocaleString("pt-BR", { maximumFractionDigits: 0 });
+    priceStr = Number(quote.price).toLocaleString("pt-BR", { maximumFractionDigits: 0 });
   } else if (quote.type === "crypto") {
-    priceStr = `$${quote.price.toLocaleString("en-US", { maximumFractionDigits: 0 })}`;
+    priceStr = `$${Number(quote.price).toLocaleString("en-US", { maximumFractionDigits: 0 })}`;
   } else if (quote.type === "commodity") {
-    priceStr = `$${quote.price.toLocaleString("en-US", { minimumFractionDigits: 2 })}`;
+    priceStr = `$${Number(quote.price).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
   } else if (quote.type === "stock") {
-    priceStr = `R$ ${quote.price.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}`;
+    priceStr = `R$ ${Number(quote.price).toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
   } else {
-    priceStr = `R$ ${quote.price.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}`;
+    // currency (Dólar, Euro)
+    priceStr = `R$ ${Number(quote.price).toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 4 })}`;
   }
   
   // Destacar visualmente os tickers do usuário
   const isUserStock = quote.type === "stock";
   const symbolClass = isUserStock ? "ticker-tape-symbol ticker-tape-symbol--user" : "ticker-tape-symbol";
   
+  // Se tem dados válidos, mostrar variação
+  const hasValidData = quote.price !== null && quote.price !== undefined;
+  const changeHtml = hasValidData 
+    ? `<span class="ticker-tape-change ticker-tape-change--${changeClass}">${changeSign}${Number(quote.changePercent).toFixed(2)}%</span>` 
+    : "";
+  
   return `
     <span class="ticker-tape-item${isUserStock ? " ticker-tape-item--user" : ""}">
       <span class="${symbolClass}">${quote.symbol}</span>
       <span class="ticker-tape-price">${priceStr}</span>
-      ${quote.price !== null ? `<span class="ticker-tape-change ticker-tape-change--${changeClass}">${changeSign}${quote.changePercent.toFixed(2)}%</span>` : ""}
+      ${changeHtml}
     </span>
     <span class="ticker-tape-separator">|</span>
   `;
