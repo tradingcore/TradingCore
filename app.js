@@ -962,9 +962,13 @@ const loadNewsForDate = async (dateStr) => {
 const clearNewsContent = () => {
   if (!newsContainer) return;
   
-  // Remove all news cards and periodo info, keep empty state
-  const newsCards = newsContainer.querySelectorAll(".news-ticker-card, .news-periodo-info");
+  // Remove all news cards, keep empty state
+  const newsCards = newsContainer.querySelectorAll(".news-ticker-card");
   newsCards.forEach((card) => card.remove());
+  
+  // Clear periodo
+  const periodoValor = document.getElementById("news-periodo-valor");
+  if (periodoValor) periodoValor.textContent = "--";
   
   // Hide destaque
   if (destaqueContainer) destaqueContainer.classList.add("hidden");
@@ -991,15 +995,10 @@ const renderNews = async (data) => {
     renderDestaque(destaque);
   }
 
-  // Mostrar período das notícias se disponível
-  if (periodo_noticias && periodo_noticias.de && periodo_noticias.ate) {
-    const periodoDiv = document.createElement("div");
-    periodoDiv.className = "news-periodo-info";
-    periodoDiv.innerHTML = `
-      <span class="news-periodo-label">📅 Período das notícias:</span>
-      <span class="news-periodo-valor">${formatDateRef(periodo_noticias.de)} → ${formatDateRef(periodo_noticias.ate)}</span>
-    `;
-    newsContainer.appendChild(periodoDiv);
+  // Mostrar período das notícias no header
+  const periodoValor = document.getElementById("news-periodo-valor");
+  if (periodoValor && periodo_noticias && periodo_noticias.de && periodo_noticias.ate) {
+    periodoValor.textContent = `${formatDateRef(periodo_noticias.de)} → ${formatDateRef(periodo_noticias.ate)}`;
   }
 
   // Buscar histórico de sentimento para cada ticker

@@ -1229,6 +1229,151 @@ select:focus {
 }
 
 /* ========================================
+   NEWS SECTION LAYOUT (duas colunas)
+======================================== */
+.news-section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.news-section-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--text);
+}
+
+.news-periodo-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding: 10px 14px;
+  background: var(--surface-light);
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.news-periodo-header .news-periodo-label {
+  color: var(--muted);
+}
+
+.news-periodo-header .news-periodo-valor {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.news-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.news-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: sticky;
+  top: 20px;
+}
+
+.sidebar-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.sidebar-card-header {
+  background: var(--surface-light);
+  padding: 12px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+
+.sidebar-card .news-calendar-container {
+  max-width: none;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+}
+
+.sidebar-card .market-status-card {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.sidebar-card--info {
+  background: rgba(91, 124, 250, 0.05);
+  border-color: rgba(91, 124, 250, 0.2);
+}
+
+.sidebar-info-list {
+  list-style: none;
+  padding: 12px 14px;
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.sidebar-info-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.sidebar-info-list li:last-child {
+  border-bottom: none;
+}
+
+.news-main {
+  min-width: 0;
+}
+
+/* Mobile: sidebar no topo */
+@media (max-width: 900px) {
+  .news-layout {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .news-sidebar {
+    position: relative;
+    top: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .sidebar-card {
+    flex: 1;
+    min-width: 140px;
+  }
+
+  .sidebar-card--info {
+    display: none;
+  }
+
+  .news-section-header h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .news-sidebar {
+    flex-direction: column;
+  }
+
+  .sidebar-card {
+    min-width: 100%;
+  }
+}
+
+/* ========================================
    DESTAQUE DO DIA
 ======================================== */
 .destaque-container {

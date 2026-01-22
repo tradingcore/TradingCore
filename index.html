@@ -381,98 +381,112 @@
 
           <!-- ============ SEÇÃO NOTÍCIAS ============ -->
           <div id="section-noticias" class="dashboard-section hidden">
-            <div class="dashboard-card dashboard-card--main">
-              <div class="dashboard-card-header">
-                <h2>
-                  📰 Minhas Notícias
-                  <span class="badge" id="news-date">--</span>
-                </h2>
-              </div>
-
-              <!-- Botão para mostrar/esconder calendário -->
-              <div class="calendar-toggle-container">
-                <button type="button" class="calendar-toggle-btn" id="calendar-toggle">
-                  <span class="calendar-toggle-icon">📅</span>
-                  <span class="calendar-toggle-text">Ver calendário</span>
-                  <span class="calendar-toggle-arrow" id="calendar-arrow">▼</span>
-                </button>
-              </div>
-
-              <!-- Calendário de histórico (colapsável) -->
-              <div class="news-calendar-container hidden" id="calendar-container">
-                <div class="news-calendar-header">
-                  <button type="button" class="calendar-nav-btn" id="calendar-prev">◀</button>
-                  <span class="calendar-month-year" id="calendar-month-year">Janeiro 2026</span>
-                  <button type="button" class="calendar-nav-btn" id="calendar-next">▶</button>
-                </div>
-                <div class="news-calendar-grid">
-                  <div class="calendar-weekday">D</div>
-                  <div class="calendar-weekday">S</div>
-                  <div class="calendar-weekday">T</div>
-                  <div class="calendar-weekday">Q</div>
-                  <div class="calendar-weekday">Q</div>
-                  <div class="calendar-weekday">S</div>
-                  <div class="calendar-weekday">S</div>
-                  <div id="calendar-days" class="calendar-days"></div>
-                </div>
-                <div class="calendar-legend">
-                  <span class="legend-item"><span class="legend-dot legend-dot--positive"></span> Positivo</span>
-                  <span class="legend-item"><span class="legend-dot legend-dot--negative"></span> Negativo</span>
-                  <span class="legend-item"><span class="legend-dot legend-dot--neutral"></span> Neutro</span>
-                </div>
-              </div>
-
-              <!-- Card de Mercado / Próximos Feriados -->
-              <div class="market-status-card" id="market-status-card">
-                <div class="market-status-header">
-                  <span class="market-status-indicator" id="market-status-indicator">●</span>
-                  <span class="market-status-text" id="market-status-text">Verificando...</span>
-                </div>
-                <div class="market-next-holiday" id="market-next-holiday">
-                  <span class="holiday-label">📅 Próximo feriado:</span>
-                  <span class="holiday-info" id="holiday-info">--</span>
-                </div>
-              </div>
-
-              <!-- Card de Destaque do Dia -->
-              <div id="destaque-container" class="destaque-container hidden">
-                <div class="destaque-card">
-                  <div class="destaque-header">
-                    <span class="destaque-label">⭐ DESTAQUE DO DIA</span>
-                    <span class="destaque-sentimento" id="destaque-sentimento">--</span>
-                  </div>
-                  <div class="destaque-ticker" id="destaque-ticker">--</div>
-                  <div class="destaque-titulo" id="destaque-titulo">--</div>
-                  <div class="destaque-resumo" id="destaque-resumo">--</div>
-                </div>
-              </div>
-
-              <!-- Container das notícias -->
-              <div id="news-container" class="news-container">
-                <!-- Estado vazio inicial -->
-                <div class="empty-state" id="empty-news">
-                  <div class="empty-state-icon">📭</div>
-                  <p>Nenhuma notícia disponível para esta data.</p>
-                  <p class="empty-state-hint">As notícias são enviadas todo dia pela manhã, antes da abertura do mercado.</p>
-                </div>
-              </div>
-
-              <!-- Loading state -->
-              <div id="news-loading" class="news-loading hidden">
-                <div class="news-loading-spinner"></div>
-                <p>Carregando notícias...</p>
-              </div>
+            <!-- Header da seção -->
+            <div class="news-section-header">
+              <h2>📰 Minhas Notícias</h2>
+              <span class="badge" id="news-date">--</span>
+            </div>
+            
+            <!-- Período das notícias (logo abaixo do título) -->
+            <div class="news-periodo-header" id="news-periodo-header">
+              <span class="news-periodo-label">📅 Período:</span>
+              <span class="news-periodo-valor" id="news-periodo-valor">--</span>
             </div>
 
-            <!-- Info sobre entregas -->
-            <div class="dashboard-info-card">
-              <h3>📧 Sobre suas notícias</h3>
-              <ul>
-                <li>As notícias são processadas toda manhã, antes da abertura do mercado</li>
-                <li>Apenas notícias relevantes para os ativos da sua carteira são exibidas</li>
-                <li>Cada notícia é analisada por IA para identificar pontos positivos e de atenção</li>
-                <li>Você também recebe estas notícias por email</li>
-              </ul>
+            <!-- Layout duas colunas -->
+            <div class="news-layout">
+              <!-- SIDEBAR ESQUERDA: Filtros -->
+              <aside class="news-sidebar">
+                <!-- Calendário -->
+                <div class="sidebar-card">
+                  <div class="sidebar-card-header">
+                    <span>📅 Calendário</span>
+                  </div>
+                  <div class="news-calendar-container" id="calendar-container">
+                    <div class="news-calendar-header">
+                      <button type="button" class="calendar-nav-btn" id="calendar-prev">◀</button>
+                      <span class="calendar-month-year" id="calendar-month-year">Janeiro 2026</span>
+                      <button type="button" class="calendar-nav-btn" id="calendar-next">▶</button>
+                    </div>
+                    <div class="news-calendar-grid">
+                      <div class="calendar-weekday">D</div>
+                      <div class="calendar-weekday">S</div>
+                      <div class="calendar-weekday">T</div>
+                      <div class="calendar-weekday">Q</div>
+                      <div class="calendar-weekday">Q</div>
+                      <div class="calendar-weekday">S</div>
+                      <div class="calendar-weekday">S</div>
+                      <div id="calendar-days" class="calendar-days"></div>
+                    </div>
+                    <div class="calendar-legend">
+                      <span class="legend-item"><span class="legend-dot legend-dot--positive"></span> Positivo</span>
+                      <span class="legend-item"><span class="legend-dot legend-dot--negative"></span> Negativo</span>
+                      <span class="legend-item"><span class="legend-dot legend-dot--neutral"></span> Neutro</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Status do Mercado -->
+                <div class="sidebar-card">
+                  <div class="sidebar-card-header">
+                    <span>📊 Mercado</span>
+                  </div>
+                  <div class="market-status-card" id="market-status-card">
+                    <div class="market-status-header">
+                      <span class="market-status-indicator" id="market-status-indicator">●</span>
+                      <span class="market-status-text" id="market-status-text">Verificando...</span>
+                    </div>
+                    <div class="market-next-holiday" id="market-next-holiday">
+                      <span class="holiday-label">Próximo feriado:</span>
+                      <span class="holiday-info" id="holiday-info">--</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Info sobre entregas -->
+                <div class="sidebar-card sidebar-card--info">
+                  <div class="sidebar-card-header">
+                    <span>📧 Info</span>
+                  </div>
+                  <ul class="sidebar-info-list">
+                    <li>Notícias processadas toda manhã</li>
+                    <li>Análise por IA</li>
+                    <li>Enviadas também por email</li>
+                  </ul>
+                </div>
+              </aside>
+
+              <!-- CONTEÚDO PRINCIPAL: Notícias -->
+              <main class="news-main">
+                <!-- Card de Destaque do Dia -->
+                <div id="destaque-container" class="destaque-container hidden">
+                  <div class="destaque-card">
+                    <div class="destaque-header">
+                      <span class="destaque-label">⭐ DESTAQUE DO DIA</span>
+                      <span class="destaque-sentimento" id="destaque-sentimento">--</span>
+                    </div>
+                    <div class="destaque-ticker" id="destaque-ticker">--</div>
+                    <div class="destaque-titulo" id="destaque-titulo">--</div>
+                    <div class="destaque-resumo" id="destaque-resumo">--</div>
+                  </div>
+                </div>
+
+                <!-- Container das notícias -->
+                <div id="news-container" class="news-container">
+                  <!-- Estado vazio inicial -->
+                  <div class="empty-state" id="empty-news">
+                    <div class="empty-state-icon">📭</div>
+                    <p>Nenhuma notícia disponível para esta data.</p>
+                    <p class="empty-state-hint">As notícias são enviadas todo dia pela manhã, antes da abertura do mercado.</p>
+                  </div>
+                </div>
+
+                <!-- Loading state -->
+                <div id="news-loading" class="news-loading hidden">
+                  <div class="news-loading-spinner"></div>
+                  <p>Carregando notícias...</p>
+                </div>
+              </main>
             </div>
           </div>
         </div>
