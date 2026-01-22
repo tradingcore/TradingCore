@@ -238,6 +238,9 @@
             <button class="nav-dashboard-item active" data-section="carteira" type="button">
               📊 <span>Carteira</span>
             </button>
+            <button class="nav-dashboard-item" data-section="noticias" type="button">
+              📰 <span>Notícias</span>
+            </button>
             <button class="nav-dashboard-item" data-section="perfil" type="button">
               👤 <span>Perfil</span>
             </button>
@@ -366,6 +369,54 @@
                   </button>
                 </div>
               </form>
+            </div>
+          </div>
+
+          <!-- ============ SEÇÃO NOTÍCIAS ============ -->
+          <div id="section-noticias" class="dashboard-section hidden">
+            <div class="dashboard-card dashboard-card--main">
+              <div class="dashboard-card-header">
+                <h2>
+                  📰 Minhas Notícias
+                  <span class="badge" id="news-date">--</span>
+                </h2>
+              </div>
+
+              <!-- Seletor de data -->
+              <div class="news-date-selector">
+                <label for="news-date-input">Selecionar data:</label>
+                <input type="date" id="news-date-input" />
+                <button type="button" class="button button--small" id="load-news-btn">
+                  Carregar
+                </button>
+              </div>
+
+              <!-- Container das notícias -->
+              <div id="news-container" class="news-container">
+                <!-- Estado vazio inicial -->
+                <div class="empty-state" id="empty-news">
+                  <div class="empty-state-icon">📭</div>
+                  <p>Nenhuma notícia disponível para esta data.</p>
+                  <p class="empty-state-hint">As notícias são enviadas todo dia pela manhã, antes da abertura do mercado.</p>
+                </div>
+              </div>
+
+              <!-- Loading state -->
+              <div id="news-loading" class="news-loading hidden">
+                <div class="news-loading-spinner"></div>
+                <p>Carregando notícias...</p>
+              </div>
+            </div>
+
+            <!-- Info sobre entregas -->
+            <div class="dashboard-info-card">
+              <h3>📧 Sobre suas notícias</h3>
+              <ul>
+                <li>As notícias são processadas toda manhã, antes da abertura do mercado</li>
+                <li>Apenas notícias relevantes para os ativos da sua carteira são exibidas</li>
+                <li>Cada notícia é analisada por IA para identificar pontos positivos e de atenção</li>
+                <li>Você também recebe estas notícias por email</li>
+              </ul>
             </div>
           </div>
         </div>

@@ -36,6 +36,15 @@ const navDashboard = document.getElementById("nav-dashboard");
 // DOM Elements - Dashboard Sections
 const sectionCarteira = document.getElementById("section-carteira");
 const sectionPerfil = document.getElementById("section-perfil");
+const sectionNoticias = document.getElementById("section-noticias");
+
+// DOM Elements - News Section
+const newsContainer = document.getElementById("news-container");
+const emptyNews = document.getElementById("empty-news");
+const newsLoading = document.getElementById("news-loading");
+const newsDateBadge = document.getElementById("news-date");
+const newsDateInput = document.getElementById("news-date-input");
+const loadNewsBtn = document.getElementById("load-news-btn");
 
 // DOM Elements - Dashboard Content
 const welcomeName = document.getElementById("welcome-name");
@@ -188,12 +197,17 @@ const showSection = (sectionName) => {
   // Hide all sections
   if (sectionCarteira) sectionCarteira.classList.add("hidden");
   if (sectionPerfil) sectionPerfil.classList.add("hidden");
+  if (sectionNoticias) sectionNoticias.classList.add("hidden");
   
   // Show target section
   if (sectionName === "carteira" && sectionCarteira) {
     sectionCarteira.classList.remove("hidden");
   } else if (sectionName === "perfil" && sectionPerfil) {
     sectionPerfil.classList.remove("hidden");
+  } else if (sectionName === "noticias" && sectionNoticias) {
+    sectionNoticias.classList.remove("hidden");
+    // Carregar notícias do dia atual ao abrir a seção
+    loadTodayNews();
   }
   
   // Update nav active state
@@ -516,6 +530,172 @@ const updateProfileOnServer = async (name, phone, address) => {
 };
 
 // ========================================
+// NEWS FUNCTIONS
+// ========================================
+const formatDateBR = (dateStr) => {
+  const [year, month, day] = dateStr.split("-");
+  return `${day}/${month}/${year}`;
+};
+
+const getTodayDateStr = () => {
+  const today = new Date();
+  return today.toISOString().split("T")[0];
+};
+
+const loadTodayNews = () => {
+  const today = getTodayDateStr();
+  if (newsDateInput) newsDateInput.value = today;
+  loadNewsForDate(today);
+};
+
+const loadNewsForDate = async (dateStr) => {
+  const user = auth.currentUser;
+  if (!user) return;
+
+  // Show loading
+  if (newsLoading) newsLoading.classList.remove("hidden");
+  if (emptyNews) emptyNews.classList.add("hidden");
+  clearNewsContent();
+
+  // Update date badge
+  if (newsDateBadge) newsDateBadge.textContent = formatDateBR(dateStr);
+
+  try {
+    const newsRef = db.collection("users").doc(user.uid).collection("news").doc(dateStr);
+    const doc = await newsRef.get();
+
+    if (newsLoading) newsLoading.classList.add("hidden");
+
+    if (!doc.exists) {
+      if (emptyNews) emptyNews.classList.remove("hidden");
+      return;
+    }
+
+    const data = doc.data();
+    renderNews(data);
+  } catch (error) {
+    console.error("Erro ao carregar notícias:", error);
+    if (newsLoading) newsLoading.classList.add("hidden");
+    if (emptyNews) emptyNews.classList.remove("hidden");
+    showToast("Erro ao carregar notícias. Tente novamente.", "error");
+  }
+};
+
+const clearNewsContent = () => {
+  if (!newsContainer) return;
+  
+  // Remove all news cards, keep empty state
+  const newsCards = newsContainer.querySelectorAll(".news-ticker-card");
+  newsCards.forEach((card) => card.remove());
+};
+
+const renderNews = (data) => {
+  if (!newsContainer) return;
+
+  const { resumos, consolidadas, precos } = data;
+  
+  // Check if there's any content
+  const hasResumos = resumos && Object.keys(resumos).length > 0;
+  const hasConsolidadas = consolidadas && Object.keys(consolidadas).length > 0;
+  
+  if (!hasResumos && !hasConsolidadas) {
+    if (emptyNews) emptyNews.classList.remove("hidden");
+    return;
+  }
+
+  if (emptyNews) emptyNews.classList.add("hidden");
+
+  // Get all tickers (union of resumos and consolidadas)
+  const tickers = new Set([
+    ...Object.keys(resumos || {}),
+    ...Object.keys(consolidadas || {})
+  ]);
+
+  // Render each ticker
+  Array.from(tickers).sort().forEach((ticker) => {
+    const resumo = resumos?.[ticker] || "";
+    const consolidado = consolidadas?.[ticker] || {};
+    const preco = precos?.[ticker] || {};
+    
+    const card = createNewsCard(ticker, resumo, consolidado, preco);
+    newsContainer.appendChild(card);
+  });
+};
+
+const createNewsCard = (ticker, resumo, consolidado, preco) => {
+  const card = document.createElement("div");
+  card.className = "news-ticker-card";
+
+  // Header with ticker and price
+  let precoHtml = "";
+  if (preco.sucesso) {
+    const variacao = preco.variacao_percentual || 0;
+    const variacaoClass = variacao > 0 ? "variacao-positiva" : variacao < 0 ? "variacao-negativa" : "variacao-neutra";
+    const variacaoSinal = variacao > 0 ? "+" : "";
+    precoHtml = `
+      <div class="news-ticker-preco">
+        <span class="preco-valor">R$ ${preco.preco_fechamento?.toFixed(2) || "0.00"}</span>
+        <span class="${variacaoClass}">(${variacaoSinal}${variacao.toFixed(2)}%)</span>
+      </div>
+    `;
+  }
+
+  // Executive summary
+  let resumoHtml = "";
+  if (resumo) {
+    resumoHtml = `
+      <div class="news-resumo">
+        <h4>📋 Resumo Executivo</h4>
+        <p>${resumo}</p>
+      </div>
+    `;
+  }
+
+  // Consolidated analysis
+  let consolidadoHtml = "";
+  if (consolidado.positivo || consolidado.negativo) {
+    let positivoHtml = "";
+    let negativoHtml = "";
+    
+    if (consolidado.positivo) {
+      positivoHtml = `
+        <div class="news-bloco news-bloco--positivo">
+          <h5>🟢 Pontos Positivos</h5>
+          <p>${consolidado.positivo}</p>
+        </div>
+      `;
+    }
+    
+    if (consolidado.negativo) {
+      negativoHtml = `
+        <div class="news-bloco news-bloco--negativo">
+          <h5>🔴 Pontos de Atenção</h5>
+          <p>${consolidado.negativo}</p>
+        </div>
+      `;
+    }
+    
+    consolidadoHtml = `
+      <div class="news-consolidado">
+        ${positivoHtml}
+        ${negativoHtml}
+      </div>
+    `;
+  }
+
+  card.innerHTML = `
+    <div class="news-ticker-header">
+      <h3 class="news-ticker-code">${ticker}</h3>
+      ${precoHtml}
+    </div>
+    ${resumoHtml}
+    ${consolidadoHtml}
+  `;
+
+  return card;
+};
+
+// ========================================
 // EVENT HANDLERS
 // ========================================
 
@@ -697,6 +877,14 @@ tickerInput?.addEventListener("blur", () => {
 
 // Add ticker button
 addTickerButton?.addEventListener("click", addTicker);
+
+// Load news button
+loadNewsBtn?.addEventListener("click", () => {
+  const dateStr = newsDateInput?.value;
+  if (dateStr) {
+    loadNewsForDate(dateStr);
+  }
+});
 
 // Profile form
 profileForm?.addEventListener("submit", async (event) => {
