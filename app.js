@@ -625,78 +625,58 @@ const loadTickerTape = async () => {
 };
 
 const fetchMarketQuotes = async () => {
+  // Carregar dados do Firestore primeiro
+  await loadMarketDataFromFirestore();
+  
   const results = [];
   
   for (const ticker of MARKET_TICKERS) {
-    try {
-      const cachedData = await getMockOrCachedQuote(ticker.symbol);
-      
-      // Sempre mostrar o ticker (mesmo sem dados)
-      results.push({
-        symbol: ticker.name,
-        price: cachedData?.price ?? null,
-        change: cachedData?.change ?? 0,
-        changePercent: cachedData?.changePercent ?? 0,
-        type: ticker.type,
-        hasData: !!cachedData
-      });
-    } catch (e) {
-      console.warn(`Erro ao buscar ${ticker.symbol}:`, e);
-      results.push({
-        symbol: ticker.name,
-        price: null,
-        change: 0,
-        changePercent: 0,
-        type: ticker.type,
-        hasData: false
-      });
+    const cachedData = getMarketQuote(ticker.symbol);
+    
+    if (cachedData) {
+      console.log(`✓ ${ticker.name}:`, cachedData);
+    } else {
+      console.warn(`⚠ Sem dados para ${ticker.symbol}`);
     }
+    
+    results.push({
+      symbol: ticker.name,
+      price: cachedData?.price ?? null,
+      change: cachedData?.change ?? 0,
+      changePercent: cachedData?.changePercent ?? 0,
+      type: ticker.type,
+      hasData: !!cachedData
+    });
   }
   
   return results;
 };
 
 const fetchUserPortfolioQuotes = async () => {
-  const user = auth.currentUser;
-  if (!user) return [];
-  
   const session = getSession();
   const tickers = session.tickers || [];
   
   if (tickers.length === 0) return [];
   
+  // Garantir que o cache foi carregado
+  await loadMarketDataFromFirestore();
+  
   const results = [];
   
-  // Buscar preços do cache no Firestore (salvo pelo backend)
-  try {
-    const doc = await db.collection("market_data").doc("b3_quotes").get();
-    const cachedPrices = doc.exists ? doc.data() : {};
+  for (const ticker of tickers) {
+    const cachedData = getB3Quote(ticker);
     
-    for (const ticker of tickers) {
-      // Tentar pegar do cache
-      if (cachedPrices[ticker]) {
-        results.push({
-          symbol: ticker,
-          price: cachedPrices[ticker].price,
-          change: cachedPrices[ticker].change || 0,
-          changePercent: cachedPrices[ticker].changePercent || 0,
-          type: "stock"
-        });
-      } else {
-        // Se não tem cache, mostrar só o ticker sem preço
-        results.push({
-          symbol: ticker,
-          price: null,
-          change: 0,
-          changePercent: 0,
-          type: "stock"
-        });
-      }
-    }
-  } catch (e) {
-    console.warn("Erro ao buscar preços da carteira:", e);
-    // Fallback: mostrar tickers sem preço
-    for (const ticker of tickers) {
+    if (cachedData) {
+      console.log(`✓ ${ticker}:`, cachedData);
+      results.push({
+        symbol: ticker,
+        price: cachedData.price,
+        change: cachedData.change || 0,
+        changePercent: cachedData.changePercent || 0,
+        type: "stock"
+      });
+    } else {
+      console.warn(`⚠ Sem dados B3 para ${ticker}`);
       results.push({
         symbol: ticker,
         price: null,
@@ -710,24 +690,57 @@ const fetchUserPortfolioQuotes = async () => {
   return results;
 };
 
-const getMockOrCachedQuote = async (symbol) => {
-  // Tentar buscar do Firestore (cache do backend)
-  try {
-    const doc = await db.collection("market_data").doc("quotes").get();
-    if (doc.exists) {
-      const data = doc.data();
-      if (data[symbol]) {
-        console.log(`✓ Cotação ${symbol} do cache:`, data[symbol]);
-        return data[symbol];
-      }
-    }
-  } catch (e) {
-    console.warn("Cache de cotações não disponível:", e);
+// Cache local para evitar múltiplas requisições ao Firestore
+let marketQuotesCache = null;
+let b3QuotesCache = null;
+let cacheTimestamp = 0;
+const CACHE_TTL = 60000; // 1 minuto
+
+const loadMarketDataFromFirestore = async () => {
+  const now = Date.now();
+  
+  // Se cache ainda é válido, retorna
+  if (marketQuotesCache && (now - cacheTimestamp) < CACHE_TTL) {
+    return;
   }
   
-  // Se não tem cache, retorna null (não mostra valor errado)
-  console.warn(`⚠ Sem cache para ${symbol}`);
-  return null;
+  try {
+    // Buscar cotações de mercado
+    const quotesDoc = await db.collection("market_data").doc("quotes").get();
+    if (quotesDoc.exists) {
+      marketQuotesCache = quotesDoc.data();
+      console.log("📊 Cotações de mercado carregadas:", Object.keys(marketQuotesCache));
+    } else {
+      console.warn("⚠ Documento market_data/quotes não existe");
+      marketQuotesCache = {};
+    }
+    
+    // Buscar cotações B3
+    const b3Doc = await db.collection("market_data").doc("b3_quotes").get();
+    if (b3Doc.exists) {
+      b3QuotesCache = b3Doc.data();
+      console.log("💹 Cotações B3 carregadas:", Object.keys(b3QuotesCache));
+    } else {
+      console.warn("⚠ Documento market_data/b3_quotes não existe");
+      b3QuotesCache = {};
+    }
+    
+    cacheTimestamp = now;
+  } catch (e) {
+    console.error("❌ Erro ao carregar cotações do Firestore:", e);
+    marketQuotesCache = {};
+    b3QuotesCache = {};
+  }
+};
+
+const getMarketQuote = (symbol) => {
+  if (!marketQuotesCache) return null;
+  return marketQuotesCache[symbol] || null;
+};
+
+const getB3Quote = (ticker) => {
+  if (!b3QuotesCache) return null;
+  return b3QuotesCache[ticker] || null;
 };
 
 const createTickerItem = (quote) => {
