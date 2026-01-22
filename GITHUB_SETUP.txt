@@ -54,11 +54,8 @@ Ou se preferir SSH:
    Nome: REMETENTE_SENHA
    Valor: (copie do arquivo .env)
    
-   Nome: SHEET_ID
-   Valor: (copie do arquivo .env)
-   
-   Nome: GOOGLE_CREDENTIALS
-   Valor: (copie TODO o conteúdo do config/credentials.json)
+   Nome: FIREBASE_SERVICE_ACCOUNT_JSON
+   Valor: (copie TODO o conteúdo do config/firebase_service_account.json)
 
 
 📋 COMANDOS PARA COPIAR OS VALORES:
@@ -67,11 +64,11 @@ Ou se preferir SSH:
 # Ver valores do .env:
 cat .env
 
-# Copiar credentials.json para clipboard (macOS):
-cat config/credentials.json | pbcopy
+# Copiar firebase_service_account.json para clipboard (macOS):
+cat config/firebase_service_account.json | pbcopy
 
-# Ver credentials.json:
-cat config/credentials.json
+# Ver firebase_service_account.json:
+cat config/firebase_service_account.json
 
 
 ✅ PASSO 5: Ativar Workflow

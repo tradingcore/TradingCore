@@ -7,8 +7,8 @@ echo ""
 # Voltar para raiz do projeto
 cd "$(dirname "$0")/.."
 
-# Definir credenciais do Google
-export GOOGLE_APPLICATION_CREDENTIALS="config/credentials.json"
+# Definir credenciais do Firebase
+export FIREBASE_SERVICE_ACCOUNT="config/firebase_service_account.json"
 
 # Rodar sistema
 python3 main.py

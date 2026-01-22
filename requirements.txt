@@ -1,5 +1,4 @@
-gspread>=6.0.0
-google-auth>=2.23.0
+firebase-admin>=6.4.0
 eventregistry>=9.0
 pandas>=2.0.0
 requests>=2.31.0

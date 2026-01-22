@@ -1,5 +1,11 @@
-const APP_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycby0BqLxkUkmu7QNtEl162XfHmsWPfsFdA9VJ3d73iXhgoRvwSiWDcOLUC-wVPb6uZyDaQ/exec";
+const FIREBASE_CONFIG = window.FIREBASE_CONFIG || {};
+if (!FIREBASE_CONFIG.apiKey || FIREBASE_CONFIG.apiKey === "REPLACE_ME") {
+  console.error("Configure o FIREBASE_CONFIG em index.html.");
+}
+
+firebase.initializeApp(FIREBASE_CONFIG);
+const auth = firebase.auth();
+const db = firebase.firestore();
 
 const TOKEN_KEY = "tc_token";
 const EMAIL_KEY = "tc_email";
@@ -369,18 +375,19 @@ const removeTicker = async (ticker) => {
 };
 
 const savePortfolioToServer = async () => {
-  const session = getSession();
-  if (!session.token || !session.email) return;
+  const user = auth.currentUser;
+  if (!user) return;
 
-  const tickers = Array.from(userTickers).join(", ");
+  const tickers = Array.from(userTickers);
 
   try {
-    await postToScript({
-      action: "savePortfolio",
-      token: session.token,
-      email: session.email,
-      tickers,
-    });
+    await getUserDocRef(user.uid).set(
+      {
+        tickers,
+        updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
+      },
+      { merge: true }
+    );
   } catch (error) {
     console.error("Erro ao salvar carteira:", error);
   }
@@ -417,95 +424,91 @@ const loadTickers = async () => {
 };
 
 // ========================================
-// API COMMUNICATION
+// FIREBASE HELPERS
 // ========================================
-const postToScript = async (payload) => {
-  const response = await fetch(APP_SCRIPT_URL, {
-    method: "POST",
-    headers: { "Content-Type": "text/plain;charset=utf-8" },
-    body: JSON.stringify(payload),
-  });
-
-  const text = await response.text();
-  let data;
-
-  try {
-    data = JSON.parse(text);
-  } catch (error) {
-    throw new Error(`Resposta inválida do servidor (status ${response.status}).`);
-  }
-
-  if (!response.ok) {
-    throw new Error(data.error || `Erro HTTP ${response.status}.`);
-  }
-
-  return data;
-};
-
-const requireScriptUrl = () => {
-  if (APP_SCRIPT_URL.includes("REPLACE_ME")) {
-    showToast("Configure a URL do Apps Script em app.js.", "error");
+const ensureFirebaseReady = () => {
+  if (!FIREBASE_CONFIG.apiKey || FIREBASE_CONFIG.apiKey === "REPLACE_ME") {
+    showToast("Configure o Firebase em index.html.", "error");
     return false;
   }
   return true;
 };
 
-// Função para buscar dados do usuário da planilha
-const fetchUserDataFromSheet = async (email) => {
-  try {
-    const session = getSession();
-    if (!session.token) return null;
-    
-    const result = await postToScript({
-      action: "getPortfolio",
-      token: session.token,
-      email: email,
-    });
+const getUserDocRef = (uid) => db.collection("users").doc(uid);
 
-    if (result.ok && result.data) {
-      console.log("getPortfolio retornou:", result.data);
-      return result.data;
-    }
-  } catch (error) {
-    console.log("getPortfolio não disponível:", error.message);
+const normalizeTickers = (value) => {
+  if (Array.isArray(value)) {
+    return value.map((t) => String(t).trim().toUpperCase()).filter((t) => t);
   }
-  return null;
+  if (typeof value === "string") {
+    return value
+      .split(",")
+      .map((t) => t.trim().toUpperCase())
+      .filter((t) => t);
+  }
+  return [];
 };
 
-// Função para salvar os dados do usuário na storage local
+const fetchUserDataFromFirestore = async (uid) => {
+  try {
+    const snap = await getUserDocRef(uid).get();
+    if (!snap.exists) return null;
+    return snap.data();
+  } catch (error) {
+    console.error("Erro ao buscar perfil:", error);
+    return null;
+  }
+};
+
 const saveUserDataToStorage = (data) => {
   if (!data) return;
-  
+
   if (data.name) localStorage.setItem(NAME_KEY, data.name);
   if (data.phone !== undefined) localStorage.setItem(PHONE_KEY, data.phone);
   if (data.address !== undefined) localStorage.setItem(ADDRESS_KEY, data.address);
   if (data.birthdate !== undefined) localStorage.setItem(BIRTHDATE_KEY, data.birthdate);
-  
+
   if (data.tickers !== undefined) {
-    const tickerArray = data.tickers
-      .split(",")
-      .map((t) => t.trim().toUpperCase())
-      .filter((t) => t);
+    const tickerArray = normalizeTickers(data.tickers);
     localStorage.setItem(TICKERS_KEY, JSON.stringify(tickerArray));
   }
 };
 
-// Função para atualizar o perfil no servidor
+const getAuthErrorMessage = (error) => {
+  const code = error?.code || "";
+  if (code.includes("auth/email-already-in-use")) {
+    return "E-mail já cadastrado.";
+  }
+  if (code.includes("auth/invalid-email")) {
+    return "E-mail inválido.";
+  }
+  if (code.includes("auth/weak-password")) {
+    return "A senha precisa ter pelo menos 6 caracteres.";
+  }
+  if (code.includes("auth/invalid-credential") || code.includes("auth/wrong-password")) {
+    return "Email ou senha incorretos.";
+  }
+  if (code.includes("auth/user-not-found")) {
+    return "Usuário não encontrado.";
+  }
+  return error?.message || "Erro ao autenticar.";
+};
+
 const updateProfileOnServer = async (name, phone, address) => {
-  const session = getSession();
-  if (!session.token || !session.email) return false;
+  const user = auth.currentUser;
+  if (!user) return false;
 
   try {
-    const result = await postToScript({
-      action: "updateProfile",
-      token: session.token,
-      email: session.email,
-      name,
-      phone,
-      address,
-    });
-
-    return result.ok;
+    await getUserDocRef(user.uid).set(
+      {
+        name,
+        phone,
+        address,
+        updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
+      },
+      { merge: true }
+    );
+    return true;
   } catch (error) {
     console.error("Erro ao atualizar perfil:", error);
     return false;
@@ -541,7 +544,7 @@ navDashboard?.addEventListener("click", (e) => {
 // Signup form
 signupForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
-  if (!requireScriptUrl()) return;
+  if (!ensureFirebaseReady()) return;
 
   const submitButton = signupForm.querySelector("button[type='submit']");
   setLoading(submitButton, true);
@@ -567,22 +570,23 @@ signupForm?.addEventListener("submit", async (event) => {
   }
 
   try {
-    const result = await postToScript({
-      action: "signup",
-      name,
-      email,
-      phone,
-      address,
-      birthdate,
-      password,
-    });
+    const credential = await auth.createUserWithEmailAndPassword(email, password);
+    const user = credential.user;
 
-    if (!result.ok) {
-      showToast(result.error || "Não foi possível criar a conta.", "error");
-      return;
-    }
+    await getUserDocRef(user.uid).set(
+      {
+        name,
+        email,
+        phone,
+        address,
+        birthdate,
+        tickers: [],
+        createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+      },
+      { merge: true }
+    );
 
-    setSession(result.data.token, email, {
+    setSession(user.uid, email, {
       name,
       tickers: [],
       phone,
@@ -593,7 +597,7 @@ signupForm?.addEventListener("submit", async (event) => {
     showDashboard();
     showToast("🎉 Conta criada com sucesso!", "success", 5000);
   } catch (error) {
-    showToast(error.message || "Erro ao conectar com o servidor.", "error");
+    showToast(getAuthErrorMessage(error), "error");
   } finally {
     setLoading(submitButton, false);
   }
@@ -602,7 +606,7 @@ signupForm?.addEventListener("submit", async (event) => {
 // Login form
 loginForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
-  if (!requireScriptUrl()) return;
+  if (!ensureFirebaseReady()) return;
 
   const submitButton = loginForm.querySelector("button[type='submit']");
   setLoading(submitButton, true);
@@ -618,63 +622,41 @@ loginForm?.addEventListener("submit", async (event) => {
   }
 
   try {
-    const result = await postToScript({
-      action: "login",
-      email,
-      password,
+    const credential = await auth.signInWithEmailAndPassword(email, password);
+    const user = credential.user;
+
+    const profile = await fetchUserDataFromFirestore(user.uid);
+    const tickers = normalizeTickers(profile?.tickers);
+
+    setSession(user.uid, user.email || email, {
+      name: profile?.name || "",
+      tickers,
+      phone: profile?.phone || "",
+      address: profile?.address || "",
+      birthdate: profile?.birthdate || "",
     });
 
-    if (!result.ok) {
-      showToast(result.error || "Email ou senha incorretos.", "error");
-      return;
-    }
-
-    // Pega dados da resposta do login
-    const loginData = result.data;
-    console.log("Login - Dados recebidos:", loginData);
-
-    // Parse tickers
-    let tickerArray = [];
-    if (loginData.tickers) {
-      tickerArray = loginData.tickers
-        .split(",")
-        .map((t) => t.trim().toUpperCase())
-        .filter((t) => t);
-    }
-
-    // Salva sessão com todos os dados do login
-    setSession(loginData.token, email, {
-      name: loginData.name || "",
-      tickers: tickerArray,
-      phone: loginData.phone || "",
-      address: loginData.address || "",
-      birthdate: loginData.birthdate || "",
-    });
-    
     loginForm.reset();
     showToast("✓ Login realizado!", "success");
-
-    // Tenta buscar dados atualizados do servidor (para ter certeza)
-    const freshData = await fetchUserDataFromSheet(email);
-    if (freshData) {
-      console.log("Dados atualizados do servidor:", freshData);
-      saveUserDataToStorage(freshData);
-    }
-
-    // Mostra dashboard
     showDashboard();
   } catch (error) {
-    showToast(error.message || "Erro ao conectar com o servidor.", "error");
+    showToast(getAuthErrorMessage(error), "error");
   } finally {
     setLoading(submitButton, false);
   }
 });
 
 // Logout
-logoutButton?.addEventListener("click", () => {
-  clearSession();
-  showLandingPage();
-  showToast("Você saiu da sua conta.", "info");
+logoutButton?.addEventListener("click", async () => {
+  try {
+    await auth.signOut();
+  } catch (error) {
+    console.error("Erro ao sair:", error);
+  } finally {
+    clearSession();
+    showLandingPage();
+    showToast("Você saiu da sua conta.", "info");
+  }
 });
 
 // Ticker input - autocomplete
@@ -769,26 +751,45 @@ document.addEventListener("click", (e) => {
 // INITIALIZATION
 // ========================================
 const boot = async () => {
-  // Load ticker catalog first
   await loadTickers();
 
-  // Check if user is logged in
-  if (isLoggedIn()) {
-    // Tenta buscar dados atualizados do servidor
-    const session = getSession();
-    console.log("Boot - Sessão atual:", session);
-    
-    const freshData = await fetchUserDataFromSheet(session.email);
-    
-    if (freshData) {
-      console.log("Boot - Dados do servidor:", freshData);
-      saveUserDataToStorage(freshData);
-    }
+  auth.onAuthStateChanged(async (user) => {
+    if (user) {
+      let profile = await fetchUserDataFromFirestore(user.uid);
 
-    showDashboard();
-  } else {
-    showLandingPage();
-  }
+      if (!profile) {
+        profile = {
+          name: "",
+          email: user.email || "",
+          phone: "",
+          address: "",
+          birthdate: "",
+          tickers: [],
+        };
+        await getUserDocRef(user.uid).set(
+          {
+            ...profile,
+            createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+          },
+          { merge: true }
+        );
+      }
+
+      const tickers = normalizeTickers(profile.tickers);
+      setSession(user.uid, user.email || "", {
+        name: profile.name || "",
+        tickers,
+        phone: profile.phone || "",
+        address: profile.address || "",
+        birthdate: profile.birthdate || "",
+      });
+
+      showDashboard();
+    } else {
+      clearSession();
+      showLandingPage();
+    }
+  });
 };
 
 boot();

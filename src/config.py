@@ -21,8 +21,9 @@ REMETENTE_SENHA = os.getenv("REMETENTE_SENHA")
 SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.gmail.com")
 SMTP_PORT = int(os.getenv("SMTP_PORT", "465"))
 
-# Google Sheets Configuration
-SHEET_ID = os.getenv("SHEET_ID")
+# Firebase Configuration
+FIREBASE_SERVICE_ACCOUNT = os.getenv("FIREBASE_SERVICE_ACCOUNT")
+FIREBASE_SERVICE_ACCOUNT_JSON = os.getenv("FIREBASE_SERVICE_ACCOUNT_JSON")
 
 # Processing Parameters
 MAX_NOTICIAS_POR_TICKER = int(os.getenv("MAX_NOTICIAS_POR_TICKER", "20"))
@@ -38,7 +39,7 @@ def validar_configuracoes():
         ("EVENT_REGISTRY_API_KEY", EVENT_REGISTRY_API_KEY),
         ("REMETENTE_EMAIL", REMETENTE_EMAIL),
         ("REMETENTE_SENHA", REMETENTE_SENHA),
-        ("SHEET_ID", SHEET_ID),
+        ("FIREBASE_SERVICE_ACCOUNT or FIREBASE_SERVICE_ACCOUNT_JSON", FIREBASE_SERVICE_ACCOUNT or FIREBASE_SERVICE_ACCOUNT_JSON),
     ]
     
     missing = [name for name, value in required if not value]

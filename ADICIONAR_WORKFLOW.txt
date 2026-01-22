@@ -47,15 +47,14 @@ Agora precisa adicionar o workflow manualmente:
 
 Settings → Secrets and variables → Actions
 
-Adicione os 6 secrets:
+Adicione os 5 secrets:
 - OPENAI_API_KEY
 - EVENT_REGISTRY_API_KEY
 - REMETENTE_EMAIL
 - REMETENTE_SENHA
-- SHEET_ID
-- GOOGLE_CREDENTIALS
+- FIREBASE_SERVICE_ACCOUNT_JSON
 
-Valores estão no .env e config/credentials.json
+Valores estão no .env e config/firebase_service_account.json
 
 
 ═══════════════════════════════════════════════════════════════

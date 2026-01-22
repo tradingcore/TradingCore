@@ -10,7 +10,7 @@ Sistema que envia emails diários com análise de notícias sobre suas ações, 
 ┌─────────────────────────────────────────────────────────────┐
 │                    FASE 1 (Inteligência & Cache)            │
 ├─────────────────────────────────────────────────────────────┤
-│  1. Carrega usuários do Google Sheets                       │
+│  1. Carrega usuários do Firebase                            │
 │  2. Extrai tickers ÚNICOS de todos os usuários              │
 │  3. Para cada ticker (1x apenas):                           │
 │     ├─ Carrega/Gera Tese Estratégica (Contexto Business)    │
@@ -62,7 +62,7 @@ python main.py
 ### 2️⃣ Rodar Automático (GitHub Actions)
 
 **Configure Secrets no GitHub** (Settings → Secrets → Actions):
-`OPENAI_API_KEY`, `EVENT_REGISTRY_API_KEY`, `REMETENTE_EMAIL`, `REMETENTE_SENHA`, `SHEET_ID`, `GOOGLE_CREDENTIALS`.
+`OPENAI_API_KEY`, `EVENT_REGISTRY_API_KEY`, `REMETENTE_EMAIL`, `REMETENTE_SENHA`, `FIREBASE_SERVICE_ACCOUNT_JSON`.
 
 ✅ **Pronto!** Rodará automaticamente todo dia às **9h da manhã (Brasília)**.
 
@@ -83,7 +83,7 @@ TradingCore/
    ├── news_fetcher.py          # 🔍 Busca de notícias
    ├── price_fetcher.py         # 💰 Busca de preços (Yahoo Finance)
    ├── email_sender.py          # 📧 Geração de emails HTML
-   ├── sheets_client.py         # 📊 Integração Google Sheets
+   ├── firebase_client.py       # 🔥 Integração Firebase (Firestore)
    └── utils.py                 # 🛠️ Utilitários
 ```
 
@@ -91,9 +91,14 @@ TradingCore/
 
 ## 🔧 Configuração
 
-### Google Sheets - Usuários
-Planilha ID: `1rhQCLpOboojr9CNYXyisEQ-U8OnQAtqiU3kDq3nT-_o`
-**Colunas:** `Qual seu nome completo?`, `Qual seu e-mail?`, `Ticker 1`.
+### Firebase - Usuários
+Coleção `users` com documentos `users/{uid}` contendo os campos: `name`, `email`, `tickers`.
+
+### Migração (Sheets → Firebase)
+Exporte a planilha como CSV e rode:
+```bash
+python src/scripts/migrate_sheets_to_firestore.py --csv caminho/para/arquivo.csv --create-auth
+```
 
 ---
 

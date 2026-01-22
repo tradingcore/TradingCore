@@ -8,7 +8,7 @@ CONTEXTUAL: Usa tese estratégica de cada empresa para qualificar as notícias.
 """
 from src.config import validar_configuracoes
 from src.utils import calcular_periodo_24h, parsear_tickers, extrair_tickers_unicos
-from src.sheets_client import carregar_usuarios_sheets
+from src.firebase_client import carregar_usuarios_firestore
 from src.news_fetcher import buscar_noticias
 from src.context_manager import garantir_contexto
 from src.ai_analyzer import (
@@ -211,7 +211,7 @@ def main():
 
     # Carregar usuários
     print(f"\n📊 Carregando usuários...")
-    df_usuarios = carregar_usuarios_sheets()
+    df_usuarios = carregar_usuarios_firestore()
 
     if df_usuarios.empty:
         print("✗ Nenhum usuário encontrado!")

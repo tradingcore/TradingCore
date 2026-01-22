@@ -4,7 +4,7 @@ import sys
 # Adicionar a raiz do projeto ao path para importar src
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
-from src.sheets_client import carregar_usuarios_sheets
+from src.firebase_client import carregar_usuarios_firestore
 from src.utils import extrair_tickers_unicos
 from src.context_manager import gerar_contexto_ia
 
@@ -15,7 +15,7 @@ def main():
     
     # 1. Carregar usuários para descobrir todos os tickers
     print("📊 Carregando tickers da planilha...")
-    df_usuarios = carregar_usuarios_sheets()
+    df_usuarios = carregar_usuarios_firestore()
     
     if df_usuarios.empty:
         print("✗ Nenhum usuário encontrado!")
