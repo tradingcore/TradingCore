@@ -152,6 +152,18 @@ img {
   opacity: 0.5;
 }
 
+/* Destacar tickers do usuário */
+.ticker-tape-item--user {
+  background: rgba(34, 197, 94, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin: 0 -4px;
+}
+
+.ticker-tape-symbol--user {
+  color: var(--accent-green) !important;
+}
+
 .ticker-tape-loading {
   color: var(--muted);
   font-size: 0.75rem;

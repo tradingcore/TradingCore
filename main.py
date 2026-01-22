@@ -260,6 +260,13 @@ def main():
     # FASE 1.5: Buscar preços do Yahoo Finance
     # =========================================================
     precos_dados = buscar_precos_multiplos(tickers_unicos)
+    
+    # =========================================================
+    # FASE 1.6: Atualizar cotações no Firestore (para ticker tape)
+    # =========================================================
+    from src.market_data_updater import atualizar_cotacoes_mercado, atualizar_cotacoes_b3
+    atualizar_cotacoes_mercado()
+    atualizar_cotacoes_b3(tickers_unicos)
 
     # =========================================================
     # FASE 2: Distribuir análises para cada usuário

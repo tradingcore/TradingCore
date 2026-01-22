@@ -243,6 +243,9 @@ const showDashboard = () => {
   });
   renderUserTickers();
   
+  // Atualizar ticker tape com ativos do usuário
+  loadTickerTape();
+  
   // Show carteira section by default
   showSection("carteira");
 };
@@ -427,6 +430,7 @@ const addTicker = async () => {
   await savePortfolioToServer();
 
   renderUserTickers();
+  loadTickerTape(); // Atualizar ticker tape com novo ativo
   showToast(`${raw} adicionado à sua carteira!`, "success");
 };
 
@@ -588,11 +592,11 @@ const updateProfileOnServer = async (name, phone, address) => {
 // TICKER TAPE (Cotações em tempo real)
 // ========================================
 const MARKET_TICKERS = [
-  { symbol: "^BVSP", name: "IBOV" },
-  { symbol: "USDBRL=X", name: "Dólar" },
-  { symbol: "EURBRL=X", name: "Euro" },
-  { symbol: "GC=F", name: "Ouro" },
-  { symbol: "BTC-USD", name: "Bitcoin" }
+  { symbol: "^BVSP", name: "IBOV", type: "index" },
+  { symbol: "USDBRL=X", name: "Dólar", type: "currency" },
+  { symbol: "EURBRL=X", name: "Euro", type: "currency" },
+  { symbol: "GC=F", name: "Ouro", type: "commodity" },
+  { symbol: "BTC-USD", name: "Bitcoin", type: "crypto" }
 ];
 
 const loadTickerTape = async () => {
@@ -600,12 +604,18 @@ const loadTickerTape = async () => {
   if (!tickerTapeContent) return;
 
   try {
-    // Buscar dados via proxy CORS ou API alternativa
-    const quotes = await fetchMarketQuotes();
+    // Buscar cotações de mercado
+    const marketQuotes = await fetchMarketQuotes();
     
-    if (quotes && quotes.length > 0) {
+    // Buscar cotações da carteira do usuário (se logado)
+    const userQuotes = await fetchUserPortfolioQuotes();
+    
+    // Combinar: primeiro mercado, depois carteira do usuário
+    const allQuotes = [...marketQuotes, ...userQuotes];
+    
+    if (allQuotes && allQuotes.length > 0) {
       // Duplicar para efeito de loop contínuo
-      const itemsHtml = [...quotes, ...quotes].map(q => createTickerItem(q)).join("");
+      const itemsHtml = [...allQuotes, ...allQuotes].map(q => createTickerItem(q)).join("");
       tickerTapeContent.innerHTML = itemsHtml;
     }
   } catch (error) {
@@ -615,25 +625,76 @@ const loadTickerTape = async () => {
 };
 
 const fetchMarketQuotes = async () => {
-  // Usar API do Yahoo Finance via proxy público
-  // Nota: Em produção, usar backend próprio para evitar CORS
   const results = [];
   
   for (const ticker of MARKET_TICKERS) {
     try {
-      // Simular dados (em produção, usar API real)
-      // Yahoo Finance não permite CORS direto, então usamos dados mock que são atualizados via backend
       const mockData = await getMockOrCachedQuote(ticker.symbol);
       if (mockData) {
         results.push({
           symbol: ticker.name,
           price: mockData.price,
           change: mockData.change,
-          changePercent: mockData.changePercent
+          changePercent: mockData.changePercent,
+          type: ticker.type
         });
       }
     } catch (e) {
       console.warn(`Erro ao buscar ${ticker.symbol}:`, e);
+    }
+  }
+  
+  return results;
+};
+
+const fetchUserPortfolioQuotes = async () => {
+  const user = auth.currentUser;
+  if (!user) return [];
+  
+  const session = getSession();
+  const tickers = session.tickers || [];
+  
+  if (tickers.length === 0) return [];
+  
+  const results = [];
+  
+  // Buscar preços do cache no Firestore (salvo pelo backend)
+  try {
+    const doc = await db.collection("market_data").doc("b3_quotes").get();
+    const cachedPrices = doc.exists ? doc.data() : {};
+    
+    for (const ticker of tickers) {
+      // Tentar pegar do cache
+      if (cachedPrices[ticker]) {
+        results.push({
+          symbol: ticker,
+          price: cachedPrices[ticker].price,
+          change: cachedPrices[ticker].change || 0,
+          changePercent: cachedPrices[ticker].changePercent || 0,
+          type: "stock"
+        });
+      } else {
+        // Se não tem cache, mostrar só o ticker sem preço
+        results.push({
+          symbol: ticker,
+          price: null,
+          change: 0,
+          changePercent: 0,
+          type: "stock"
+        });
+      }
+    }
+  } catch (e) {
+    console.warn("Erro ao buscar preços da carteira:", e);
+    // Fallback: mostrar tickers sem preço
+    for (const ticker of tickers) {
+      results.push({
+        symbol: ticker,
+        price: null,
+        change: 0,
+        changePercent: 0,
+        type: "stock"
+      });
     }
   }
   
@@ -672,21 +733,29 @@ const createTickerItem = (quote) => {
   
   // Formatação especial para cada tipo
   let priceStr;
-  if (quote.symbol === "IBOV") {
+  if (quote.price === null) {
+    priceStr = "--";
+  } else if (quote.type === "index") {
     priceStr = quote.price.toLocaleString("pt-BR", { maximumFractionDigits: 0 });
-  } else if (quote.symbol === "Bitcoin") {
+  } else if (quote.type === "crypto") {
     priceStr = `$${quote.price.toLocaleString("en-US", { maximumFractionDigits: 0 })}`;
-  } else if (quote.symbol === "Ouro") {
+  } else if (quote.type === "commodity") {
     priceStr = `$${quote.price.toLocaleString("en-US", { minimumFractionDigits: 2 })}`;
+  } else if (quote.type === "stock") {
+    priceStr = `R$ ${quote.price.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}`;
   } else {
     priceStr = `R$ ${quote.price.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}`;
   }
   
+  // Destacar visualmente os tickers do usuário
+  const isUserStock = quote.type === "stock";
+  const symbolClass = isUserStock ? "ticker-tape-symbol ticker-tape-symbol--user" : "ticker-tape-symbol";
+  
   return `
-    <span class="ticker-tape-item">
-      <span class="ticker-tape-symbol">${quote.symbol}</span>
+    <span class="ticker-tape-item${isUserStock ? " ticker-tape-item--user" : ""}">
+      <span class="${symbolClass}">${quote.symbol}</span>
       <span class="ticker-tape-price">${priceStr}</span>
-      <span class="ticker-tape-change ticker-tape-change--${changeClass}">${changeSign}${quote.changePercent.toFixed(2)}%</span>
+      ${quote.price !== null ? `<span class="ticker-tape-change ticker-tape-change--${changeClass}">${changeSign}${quote.changePercent.toFixed(2)}%</span>` : ""}
     </span>
     <span class="ticker-tape-separator">|</span>
   `;
