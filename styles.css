@@ -245,8 +245,7 @@ img {
    HEADER
 ======================================== */
 .header {
-  position: sticky;
-  top: 32px; /* Height of ticker tape */
+  position: relative;
   background: linear-gradient(90deg, rgba(10, 18, 34, 0.98), rgba(10, 22, 40, 0.98));
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -1774,10 +1773,6 @@ select:focus {
   .ticker-tape-change {
     font-size: 0.65rem;
     padding: 1px 5px;
-  }
-
-  .header {
-    top: 28px; /* Adjusted for mobile ticker tape height */
   }
 
   /* Market status card mobile */
