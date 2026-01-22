@@ -971,8 +971,11 @@ const clearNewsContent = () => {
   const periodoValor = document.getElementById("news-periodo-valor");
   if (periodoValor) periodoValor.textContent = "--";
   
-  // Hide destaque
-  if (destaqueContainer) destaqueContainer.classList.add("hidden");
+  // Hide destaque e limpar marcação
+  if (destaqueContainer) {
+    destaqueContainer.classList.add("hidden");
+    destaqueContainer.dataset.hasDestaque = "false";
+  }
 };
 
 const renderNews = async (data) => {
@@ -1072,8 +1075,9 @@ const renderDestaque = (destaque) => {
   
   const { ticker, titulo, resumo, sentimento } = destaque;
   
-  // Mostrar container
+  // Mostrar container e marcar que tem destaque
   destaqueContainer.classList.remove("hidden");
+  destaqueContainer.dataset.hasDestaque = "true";
   
   if (destaqueTicker) {
     destaqueTicker.textContent = ticker || "--";
@@ -1569,9 +1573,11 @@ modalSignupForm?.addEventListener("submit", async (e) => {
   const name = formData.get("name")?.trim();
   const email = formData.get("email")?.trim().toLowerCase();
   const phone = formData.get("phone")?.trim();
+  const birthdate = formData.get("birthdate");
+  const address = formData.get("address")?.trim();
   const password = formData.get("password");
 
-  if (!name || !email || !phone || !password) {
+  if (!name || !email || !phone || !birthdate || !address || !password) {
     showToast("Preencha todos os campos.", "error");
     setLoading(submitBtn, false);
     return;
@@ -1592,8 +1598,8 @@ modalSignupForm?.addEventListener("submit", async (e) => {
         name,
         email,
         phone,
-        address: "",
-        birthdate: "",
+        address,
+        birthdate,
         tickers: [],
         createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       },
@@ -1604,8 +1610,8 @@ modalSignupForm?.addEventListener("submit", async (e) => {
       name,
       tickers: [],
       phone,
-      address: "",
-      birthdate: "",
+      address,
+      birthdate,
     });
 
     modalSignupForm.reset();
@@ -1702,6 +1708,19 @@ const filterNewsByTicker = (ticker) => {
       card.style.display = cardTicker === ticker ? "" : "none";
     }
   });
+  
+  // Mostrar/esconder destaque do dia (só aparece em "Todos")
+  const destaqueEl = document.getElementById("destaque-container");
+  if (destaqueEl) {
+    if (ticker === "all") {
+      // Só mostra se tinha destaque antes
+      if (destaqueEl.dataset.hasDestaque === "true") {
+        destaqueEl.classList.remove("hidden");
+      }
+    } else {
+      destaqueEl.classList.add("hidden");
+    }
+  }
   
   // Mobile: fechar filtro após seleção
   if (window.innerWidth <= 900) {
