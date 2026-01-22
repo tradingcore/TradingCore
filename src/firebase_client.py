@@ -3,11 +3,14 @@ Cliente para integração com Firebase Firestore.
 """
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 import pandas as pd
 import firebase_admin
 from firebase_admin import credentials, firestore
 from .config import FIREBASE_SERVICE_ACCOUNT, FIREBASE_SERVICE_ACCOUNT_JSON
+
+# Timezone de São Paulo (UTC-3)
+SP_TZ = timezone(timedelta(hours=-3))
 
 
 def _init_firestore():
@@ -80,8 +83,8 @@ def salvar_noticias_usuario(uid, resumos, consolidadas, precos):
     try:
         db = _init_firestore()
         
-        # Data de hoje no formato YYYY-MM-DD
-        hoje = datetime.now().strftime("%Y-%m-%d")
+        # Data de hoje no formato YYYY-MM-DD (timezone São Paulo)
+        hoje = datetime.now(SP_TZ).strftime("%Y-%m-%d")
         
         # Referência para o documento de notícias do dia
         news_ref = db.collection("users").document(uid).collection("news").document(hoje)

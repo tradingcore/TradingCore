@@ -539,7 +539,11 @@ const formatDateBR = (dateStr) => {
 
 const getTodayDateStr = () => {
   const today = new Date();
-  return today.toISOString().split("T")[0];
+  // Usar data local (não UTC) para corresponder ao backend
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, "0");
+  const day = String(today.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
 };
 
 const loadTodayNews = () => {
