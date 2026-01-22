@@ -55,6 +55,9 @@ const destaqueResumo = document.getElementById("destaque-resumo");
 const destaqueSentimento = document.getElementById("destaque-sentimento");
 
 // DOM Elements - Calendar
+const calendarContainer = document.getElementById("calendar-container");
+const calendarToggle = document.getElementById("calendar-toggle");
+const calendarArrow = document.getElementById("calendar-arrow");
 const calendarMonthYear = document.getElementById("calendar-month-year");
 const calendarDays = document.getElementById("calendar-days");
 const calendarPrev = document.getElementById("calendar-prev");
@@ -64,6 +67,7 @@ const calendarNext = document.getElementById("calendar-next");
 let currentCalendarMonth = new Date().getMonth();
 let currentCalendarYear = new Date().getFullYear();
 let availableNewsDates = new Map(); // Map<dateStr, sentimentAvg>
+let calendarExpanded = false;
 
 // DOM Elements - Dashboard Content
 const welcomeName = document.getElementById("welcome-name");
@@ -854,20 +858,16 @@ const renderCalendar = () => {
     if (availableNewsDates.has(dateStr)) {
       dayElement.classList.add("calendar-day--has-news");
       
-      // Adicionar indicador de sentimento
+      // Colorir dia inteiro baseado no sentimento
       const sentimento = availableNewsDates.get(dateStr);
-      const indicator = document.createElement("span");
-      indicator.className = "calendar-day-indicator";
       
       if (sentimento > 0.2) {
-        indicator.classList.add("indicator--positive");
+        dayElement.classList.add("calendar-day--positive");
       } else if (sentimento < -0.2) {
-        indicator.classList.add("indicator--negative");
+        dayElement.classList.add("calendar-day--negative");
       } else {
-        indicator.classList.add("indicator--neutral");
+        dayElement.classList.add("calendar-day--neutral");
       }
-      
-      dayElement.appendChild(indicator);
       
       // Adicionar evento de clique
       dayElement.addEventListener("click", () => {
@@ -877,12 +877,30 @@ const renderCalendar = () => {
         
         // Carregar notícias desse dia
         loadNewsForDate(dateStr);
+        
+        // Fechar calendário após seleção em mobile
+        if (window.innerWidth <= 768) {
+          toggleCalendar();
+        }
       });
     } else {
       dayElement.classList.add("calendar-day--disabled");
     }
     
     calendarDays.appendChild(dayElement);
+  }
+};
+
+// Toggle calendário
+const toggleCalendar = () => {
+  calendarExpanded = !calendarExpanded;
+  
+  if (calendarContainer) {
+    calendarContainer.classList.toggle("hidden", !calendarExpanded);
+  }
+  
+  if (calendarToggle) {
+    calendarToggle.classList.toggle("active", calendarExpanded);
   }
 };
 
@@ -921,17 +939,15 @@ const createNewsCard = (ticker, resumo, consolidado, preco, sentimentoHistorico)
     const variacaoClass = variacao > 0 ? "variacao-positiva" : variacao < 0 ? "variacao-negativa" : "variacao-neutra";
     const variacaoSinal = variacao > 0 ? "+" : "";
     
-    // Datas de preço e variação (apenas data final)
-    const dataPreco = preco.data_preco ? formatDateRef(preco.data_preco) : "";
-    const dataVarAte = preco.data_variacao_ate ? formatDateRef(preco.data_variacao_ate) : "";
-    
-    const precoDataHtml = dataPreco ? `<span class="preco-data">(${dataPreco})</span>` : "";
-    const variacaoDataHtml = dataVarAte ? `<span class="preco-data">(${dataVarAte})</span>` : "";
+    // Data de referência única (simplificado)
+    const dataRef = preco.data_referencia ? formatDateRef(preco.data_referencia) : "";
+    const dataRefHtml = dataRef ? `<span class="preco-data">(ref. ${dataRef})</span>` : "";
     
     precoHtml = `
       <div class="news-ticker-preco">
-        <span class="preco-valor">R$ ${preco.preco_fechamento?.toFixed(2) || "0.00"} ${precoDataHtml}</span>
-        <span class="${variacaoClass}">(${variacaoSinal}${variacao.toFixed(2)}%) ${variacaoDataHtml}</span>
+        <span class="preco-valor">R$ ${preco.preco_fechamento?.toFixed(2) || "0.00"}</span>
+        <span class="${variacaoClass}">${variacaoSinal}${variacao.toFixed(2)}%</span>
+        ${dataRefHtml}
       </div>
     `;
   }
@@ -1264,7 +1280,9 @@ tickerInput?.addEventListener("blur", () => {
 // Add ticker button
 addTickerButton?.addEventListener("click", addTicker);
 
-// Load news button (removed - using calendar now)
+// Calendar toggle
+calendarToggle?.addEventListener("click", toggleCalendar);
+
 // Calendar navigation
 calendarPrev?.addEventListener("click", prevMonth);
 calendarNext?.addEventListener("click", nextMonth);

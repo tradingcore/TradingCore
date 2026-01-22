@@ -1147,25 +1147,74 @@ select:focus {
 }
 
 /* ========================================
-   CALENDAR
+   CALENDAR TOGGLE
+======================================== */
+.calendar-toggle-container {
+  margin-bottom: 16px;
+}
+
+.calendar-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--surface-light);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.calendar-toggle-btn:hover {
+  background: rgba(91, 124, 250, 0.1);
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.calendar-toggle-btn.active {
+  background: rgba(91, 124, 250, 0.15);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.calendar-toggle-icon {
+  font-size: 1rem;
+}
+
+.calendar-toggle-arrow {
+  font-size: 0.7rem;
+  transition: transform 0.2s ease;
+  margin-left: auto;
+}
+
+.calendar-toggle-btn.active .calendar-toggle-arrow {
+  transform: rotate(180deg);
+}
+
+/* ========================================
+   CALENDAR (COMPACTO)
 ======================================== */
 .news-calendar-container {
   background: var(--surface-light);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 18px;
-  margin-bottom: 20px;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 16px;
+  animation: slideDown 0.2s ease;
 }
 
 .news-calendar-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .calendar-month-year {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--text);
 }
@@ -1173,12 +1222,12 @@ select:focus {
 .calendar-nav-btn {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 8px 12px;
+  border-radius: 6px;
+  padding: 6px 10px;
   color: var(--muted);
   cursor: pointer;
   transition: all 0.2s ease;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .calendar-nav-btn:hover {
@@ -1190,15 +1239,15 @@ select:focus {
 .news-calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 4px;
+  gap: 3px;
 }
 
 .calendar-weekday {
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   color: var(--muted);
-  padding: 8px 0;
+  padding: 6px 0;
 }
 
 .calendar-days {
@@ -1208,13 +1257,11 @@ select:focus {
 .calendar-day {
   aspect-ratio: 1;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 0.85rem;
-  border-radius: 8px;
+  font-size: 0.75rem;
+  border-radius: 6px;
   cursor: default;
-  position: relative;
   transition: all 0.2s ease;
   color: var(--muted);
 }
@@ -1231,77 +1278,74 @@ select:focus {
 
 .calendar-day--has-news {
   cursor: pointer;
-  color: var(--text);
-  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-weight: 600;
 }
 
 .calendar-day--has-news:hover {
-  background: rgba(91, 124, 250, 0.2);
-  transform: scale(1.05);
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Cores de fundo para dias com notícias (substitui pontinho) */
+.calendar-day--positive {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.7), rgba(34, 197, 94, 0.5));
+  color: white;
+}
+
+.calendar-day--negative {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.7), rgba(239, 68, 68, 0.5));
+  color: white;
+}
+
+.calendar-day--neutral {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.7), rgba(251, 191, 36, 0.5));
+  color: #1a1a1a;
 }
 
 .calendar-day--selected {
   background: var(--accent) !important;
   color: white !important;
+  box-shadow: 0 2px 8px rgba(91, 124, 250, 0.4);
 }
 
 .calendar-day--disabled {
-  opacity: 0.4;
-}
-
-.calendar-day-indicator {
-  position: absolute;
-  bottom: 4px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-}
-
-.indicator--positive {
-  background: #22c55e;
-}
-
-.indicator--negative {
-  background: #ef4444;
-}
-
-.indicator--neutral {
-  background: #fbbf24;
+  opacity: 0.35;
 }
 
 .calendar-legend {
   display: flex;
   justify-content: center;
-  gap: 16px;
-  margin-top: 14px;
-  padding-top: 14px;
+  gap: 14px;
+  margin-top: 12px;
+  padding-top: 12px;
   border-top: 1px solid var(--border);
 }
 
 .legend-item {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 0.75rem;
+  gap: 5px;
+  font-size: 0.7rem;
   color: var(--muted);
 }
 
 .legend-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
 }
 
 .legend-dot--positive {
-  background: #22c55e;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.8), rgba(34, 197, 94, 0.6));
 }
 
 .legend-dot--negative {
-  background: #ef4444;
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.8), rgba(239, 68, 68, 0.6));
 }
 
 .legend-dot--neutral {
-  background: #fbbf24;
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.8), rgba(251, 191, 36, 0.6));
 }
 
 /* ========================================
@@ -1780,24 +1824,32 @@ select:focus {
     font-size: 0.8rem;
   }
 
+  /* Calendar toggle mobile */
+  .calendar-toggle-btn {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
   /* Calendar mobile */
   .news-calendar-container {
-    padding: 14px;
-    border-radius: 12px;
-    margin-bottom: 16px;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 14px;
   }
 
   .news-calendar-header {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .calendar-month-year {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .calendar-nav-btn {
-    padding: 6px 10px;
-    font-size: 0.85rem;
+    padding: 5px 8px;
+    font-size: 0.75rem;
   }
 
   .news-calendar-grid {
@@ -1805,37 +1857,32 @@ select:focus {
   }
 
   .calendar-weekday {
-    font-size: 0.7rem;
-    padding: 6px 0;
+    font-size: 0.65rem;
+    padding: 4px 0;
   }
 
   .calendar-day {
-    font-size: 0.8rem;
-    border-radius: 6px;
-  }
-
-  .calendar-day-indicator {
-    width: 5px;
-    height: 5px;
-    bottom: 3px;
+    font-size: 0.7rem;
+    border-radius: 4px;
   }
 
   .calendar-legend {
-    gap: 10px;
-    margin-top: 12px;
-    padding-top: 12px;
+    gap: 8px;
+    margin-top: 10px;
+    padding-top: 10px;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .legend-item {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     gap: 4px;
   }
 
   .legend-dot {
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
   }
 
   .news-container {

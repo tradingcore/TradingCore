@@ -382,8 +382,17 @@
                 </h2>
               </div>
 
-              <!-- Calendário de histórico -->
-              <div class="news-calendar-container">
+              <!-- Botão para mostrar/esconder calendário -->
+              <div class="calendar-toggle-container">
+                <button type="button" class="calendar-toggle-btn" id="calendar-toggle">
+                  <span class="calendar-toggle-icon">📅</span>
+                  <span class="calendar-toggle-text">Ver calendário</span>
+                  <span class="calendar-toggle-arrow" id="calendar-arrow">▼</span>
+                </button>
+              </div>
+
+              <!-- Calendário de histórico (colapsável) -->
+              <div class="news-calendar-container hidden" id="calendar-container">
                 <div class="news-calendar-header">
                   <button type="button" class="calendar-nav-btn" id="calendar-prev">◀</button>
                   <span class="calendar-month-year" id="calendar-month-year">Janeiro 2026</span>

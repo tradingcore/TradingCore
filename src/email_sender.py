@@ -313,11 +313,9 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_
             if ticker in precos_dados and precos_dados[ticker]['sucesso']:
                 preco = precos_dados[ticker]['preco_fechamento']
                 variacao = precos_dados[ticker]['variacao_percentual']
-                data_preco = precos_dados[ticker].get('data_preco', '')
-                data_var_de = precos_dados[ticker].get('data_variacao_de', '')
-                data_var_ate = precos_dados[ticker].get('data_variacao_ate', '')
+                data_referencia = precos_dados[ticker].get('data_referencia', '')
                 
-                # Formatar datas
+                # Formatar data de referência
                 def formatar_data(d):
                     if not d:
                         return ""
@@ -328,9 +326,7 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_
                     except:
                         return d
                 
-                data_preco_fmt = formatar_data(data_preco)
-                data_var_de_fmt = formatar_data(data_var_de)
-                data_var_ate_fmt = formatar_data(data_var_ate)
+                data_ref_fmt = formatar_data(data_referencia)
                 
                 # Determinar classe CSS baseado na variação
                 if variacao > 0:
@@ -343,13 +339,12 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_
                     variacao_class = "variacao-neutra"
                     variacao_sinal = ""
                 
-                # Mostrar data do preço e da variação (apenas data final)
-                preco_data_html = f' <span class="preco-data">({data_preco_fmt})</span>' if data_preco_fmt else ''
-                variacao_data_html = f' <span class="preco-data">({data_var_ate_fmt})</span>' if data_var_ate_fmt else ''
+                # Uma única data de referência no final
+                data_ref_html = f' <span class="preco-data">(ref. {data_ref_fmt})</span>' if data_ref_fmt else ''
                 
                 preco_html = f"""<span class="preco-info">
-                    <span class="preco-valor">R$ {preco:.2f}{preco_data_html}</span> 
-                    <span class="{variacao_class}">({variacao_sinal}{variacao:.2f}%){variacao_data_html}</span>
+                    <span class="preco-valor">R$ {preco:.2f}</span> 
+                    <span class="{variacao_class}">{variacao_sinal}{variacao:.2f}%</span>{data_ref_html}
                 </span>"""
             
             html += f"""
