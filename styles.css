@@ -1381,6 +1381,7 @@ select:focus {
   border-radius: 12px;
   padding: 14px;
   margin-bottom: 16px;
+  max-width: 320px;
   animation: slideDown 0.2s ease;
 }
 
