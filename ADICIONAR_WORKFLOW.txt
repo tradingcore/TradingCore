@@ -1,62 +1,67 @@
 ═══════════════════════════════════════════════════════════════
-🔧 ADICIONAR GITHUB ACTIONS WORKFLOW
+🔧 CONFIGURAR GITHUB ACTIONS - TRADINGCORE
 ═══════════════════════════════════════════════════════════════
 
-✅ Código principal já está no GitHub!
+✅ Workflows já estão configurados no repositório!
 
-Agora precisa adicionar o workflow manualmente:
+📋 SECRETS NECESSÁRIOS NO GITHUB
+---------------------------------
 
-📝 MÉTODO 1: Pelo GitHub (Mais Fácil)
---------------------------------------
+Acesse: https://github.com/tradingcore/TradingCore/settings/secrets/actions
 
-1. Acesse: https://github.com/tradingcore/TradingCore
+Adicione os seguintes secrets:
 
-2. Clique em "Add file" → "Create new file"
+1. OPENAI_API_KEY
+   → Sua chave da API OpenAI
+   → Obtém em: https://platform.openai.com/api-keys
 
-3. Nome do arquivo:
-   .github/workflows/daily-analysis.yml
+2. EVENT_REGISTRY_API_KEY
+   → Sua chave do Event Registry (busca de notícias)
+   → Obtém em: https://eventregistry.org/
 
-4. Cole o conteúdo do arquivo:
-   .github/workflows/daily-analysis.yml
-   (arquivo está na pasta local)
+3. REMETENTE_EMAIL
+   → Email Gmail que vai enviar os emails
+   → Exemplo: tradingcore@gmail.com
 
-5. Commit → "Create daily-analysis.yml"
+4. REMETENTE_SENHA
+   → Senha de App do Gmail (não é a senha normal!)
+   → Como criar:
+     1. Acesse: https://myaccount.google.com/security
+     2. Ative Verificação em 2 etapas
+     3. Vá em "Senhas de app"
+     4. Crie uma senha para "Mail"
+     5. Copie os 16 caracteres gerados
 
-
-📋 MÉTODO 2: Novo Token com Workflow Scope
--------------------------------------------
-
-1. Crie novo token: https://github.com/settings/tokens
-
-2. Marque AMBOS:
-   ☑️ repo
-   ☑️ workflow
-
-3. Depois execute:
-
-   cd /Users/eduardo.fleischmann/TradingCore
-   git add .github/workflows/daily-analysis.yml
-   git commit -m "Add GitHub Actions workflow"
-   git remote remove origin
-   git remote add origin https://SEU_NOVO_TOKEN@github.com/tradingcore/TradingCore.git
-   git push
+5. FIREBASE_SERVICE_ACCOUNT_JSON
+   → JSON da Service Account do Firebase
+   → Como obter:
+     1. Acesse: https://console.firebase.google.com
+     2. Selecione o projeto tradingcore-db
+     3. Engrenagem → Configurações do projeto
+     4. Aba "Contas de serviço"
+     5. "Gerar nova chave privada"
+     6. Cole o CONTEÚDO INTEIRO do arquivo JSON
 
 
-🎯 DEPOIS: Configurar Secrets
-------------------------------
+📅 SCHEDULES CONFIGURADOS
+--------------------------
 
-Settings → Secrets and variables → Actions
+1. daily-analysis.yml
+   → Roda: Todos os dias às 9:00 AM (Brasília)
+   → Faz: Busca notícias, analisa com GPT, envia emails
 
-Adicione os 5 secrets:
-- OPENAI_API_KEY
-- EVENT_REGISTRY_API_KEY
-- REMETENTE_EMAIL
-- REMETENTE_SENHA
-- FIREBASE_SERVICE_ACCOUNT_JSON
+2. update-contexts.yml
+   → Roda: Todo dia 1 do mês
+   → Faz: Atualiza contextos estratégicos das empresas
 
-Valores estão no .env e config/firebase_service_account.json
+
+🚀 TESTAR MANUALMENTE
+----------------------
+
+1. Vá em: https://github.com/tradingcore/TradingCore/actions
+2. Selecione "TradingCore - Análise Diária"
+3. Clique em "Run workflow" → "Run workflow"
+4. Acompanhe os logs em tempo real
 
 
 ═══════════════════════════════════════════════════════════════
-
-
