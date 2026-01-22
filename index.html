@@ -685,6 +685,67 @@
         </div>
       </main>
 
+      <!-- Modal de Notícias do Ticker (Mapa de Calor) -->
+      <div id="ticker-news-modal" class="ticker-news-modal hidden">
+        <div class="ticker-news-modal-overlay" id="ticker-news-modal-overlay"></div>
+        <div class="ticker-news-modal-content">
+          <button type="button" class="ticker-news-modal-close" id="ticker-news-modal-close">&times;</button>
+          
+          <div class="ticker-news-modal-header">
+            <div class="ticker-news-modal-ticker" id="ticker-news-modal-ticker">PETR4</div>
+            <div class="ticker-news-modal-price" id="ticker-news-modal-price">
+              <span class="price-value">R$ --</span>
+              <span class="price-change">--%</span>
+            </div>
+          </div>
+
+          <div class="ticker-news-modal-sentiment" id="ticker-news-modal-sentiment">
+            <span class="sentiment-emoji">🟢</span>
+            <span class="sentiment-text">Carregando...</span>
+          </div>
+
+          <div class="ticker-news-modal-body" id="ticker-news-modal-body">
+            <!-- Loading -->
+            <div class="ticker-news-loading" id="ticker-news-loading">
+              <div class="news-loading-spinner"></div>
+              <p>Carregando notícias...</p>
+            </div>
+
+            <!-- Conteúdo das notícias -->
+            <div class="ticker-news-content hidden" id="ticker-news-content">
+              <!-- Bloco Positivo -->
+              <div class="ticker-news-block ticker-news-block--positive hidden" id="ticker-news-positive">
+                <div class="ticker-news-block-title">🟢 Pontos Positivos</div>
+                <div class="ticker-news-block-text" id="ticker-news-positive-text"></div>
+              </div>
+
+              <!-- Bloco Negativo -->
+              <div class="ticker-news-block ticker-news-block--negative hidden" id="ticker-news-negative">
+                <div class="ticker-news-block-title">🔴 Pontos de Atenção</div>
+                <div class="ticker-news-block-text" id="ticker-news-negative-text"></div>
+              </div>
+
+              <!-- Fontes -->
+              <div class="ticker-news-sources" id="ticker-news-sources">
+                <div class="ticker-news-sources-title">📰 Fontes</div>
+                <ul class="ticker-news-sources-list" id="ticker-news-sources-list"></ul>
+              </div>
+            </div>
+
+            <!-- Sem notícias -->
+            <div class="ticker-news-empty hidden" id="ticker-news-empty">
+              <div class="empty-state-icon">📭</div>
+              <p>Nenhuma notícia disponível para este ticker.</p>
+              <p class="empty-state-hint">As notícias são processadas todo dia pela manhã.</p>
+            </div>
+          </div>
+
+          <div class="ticker-news-modal-footer">
+            <span class="ticker-news-date" id="ticker-news-date">Atualizado: --</span>
+          </div>
+        </div>
+      </div>
+
       <footer class="footer">
         <div class="container">
           <p>TradingCore © 2026. Todos os direitos reservados.</p>

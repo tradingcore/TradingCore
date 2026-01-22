@@ -932,7 +932,7 @@ const loadTodayNews = async () => {
   loadNewsForDate(today);
 };
 
-const loadNewsForDate = async (dateStr) => {
+const loadNewsForDate = async (dateStr, isRetry = false) => {
   const user = auth.currentUser;
   if (!user) return;
 
@@ -945,18 +945,98 @@ const loadNewsForDate = async (dateStr) => {
   if (newsDateBadge) newsDateBadge.textContent = formatDateBR(dateStr);
 
   try {
-    const newsRef = db.collection("users").doc(user.uid).collection("news").doc(dateStr);
-    const doc = await newsRef.get();
-
-    if (newsLoading) newsLoading.classList.add("hidden");
-
-    if (!doc.exists) {
+    // Obter tickers da carteira do usuário
+    const session = getSession();
+    const userTickers = session.tickers || [];
+    
+    if (userTickers.length === 0) {
+      if (newsLoading) newsLoading.classList.add("hidden");
       if (emptyNews) emptyNews.classList.remove("hidden");
       return;
     }
 
-    const data = doc.data();
-    renderNews(data);
+    // Buscar notícias globais para cada ticker do usuário
+    const newsData = {
+      resumos: {},
+      consolidadas: {},
+      precos: {},
+      destaque: null,
+      periodo_noticias: { de: dateStr, ate: dateStr }
+    };
+    
+    let hasAnyNews = false;
+    let bestDestaque = null;
+    
+    for (const ticker of userTickers) {
+      try {
+        const tickerRef = db.collection("news_global").doc(dateStr).collection("tickers").doc(ticker);
+        const tickerDoc = await tickerRef.get();
+        
+        if (tickerDoc.exists) {
+          const data = tickerDoc.data();
+          hasAnyNews = true;
+          
+          // Montar resumo
+          if (data.positivo || data.negativo) {
+            const resumoParts = [];
+            if (data.positivo) resumoParts.push(data.positivo.substring(0, 200));
+            if (data.negativo) resumoParts.push(data.negativo.substring(0, 200));
+            newsData.resumos[ticker] = resumoParts.join(" | ");
+          }
+          
+          // Montar consolidadas
+          newsData.consolidadas[ticker] = {
+            positivo: data.positivo || "",
+            negativo: data.negativo || ""
+          };
+          
+          // Preços (usar dados do heatmap se disponível)
+          newsData.precos[ticker] = {
+            sucesso: true,
+            preco_fechamento: data.preco || 0,
+            variacao_percentual: data.variacao || 0
+          };
+          
+          // Destaque (pegar o mais relevante)
+          if (data.fontes && data.fontes.length > 0 && (!bestDestaque || (data.noticias_relevantes || 0) > (bestDestaque.noticias_relevantes || 0))) {
+            bestDestaque = {
+              ticker: ticker,
+              titulo: data.fontes[0].titulo || "",
+              resumo: data.fontes[0].resumo || "",
+              sentimento: data.sentimento === "Positivo" ? 0.5 : data.sentimento === "Negativo" ? -0.5 : 0,
+              noticias_relevantes: data.noticias_relevantes || 0
+            };
+          }
+        }
+      } catch (err) {
+        console.warn(`Erro ao buscar notícias de ${ticker}:`, err);
+      }
+    }
+
+    if (newsLoading) newsLoading.classList.add("hidden");
+
+    if (!hasAnyNews) {
+      // Se não tem notícias e não é retry, tentar dia anterior
+      if (!isRetry) {
+        const prevDate = new Date(dateStr + "T12:00:00");
+        prevDate.setDate(prevDate.getDate() - 1);
+        const prevDateStr = prevDate.toISOString().split("T")[0];
+        
+        console.log(`Sem notícias para ${dateStr}, tentando ${prevDateStr}...`);
+        loadNewsForDate(prevDateStr, true);
+        return;
+      }
+      
+      if (emptyNews) emptyNews.classList.remove("hidden");
+      return;
+    }
+    
+    // Adicionar destaque
+    if (bestDestaque) {
+      newsData.destaque = bestDestaque;
+    }
+
+    renderNews(newsData);
   } catch (error) {
     console.error("Erro ao carregar notícias:", error);
     if (newsLoading) newsLoading.classList.add("hidden");
@@ -1605,6 +1685,9 @@ const renderHeatmap = (highlightTicker = null) => {
             const marketCapFormatted = formatMarketCap(acao.marketCap);
             return `
               <div class="heatmap-item ${colorClass} ${sizeClass} ${highlightClass}" 
+                   data-ticker="${acao.ticker}"
+                   data-price="${acao.price}"
+                   data-change="${acao.change}"
                    title="${acao.ticker}: R$ ${acao.price} (${sign}${acao.change.toFixed(2)}%) | Market Cap: ${marketCapFormatted}">
                 <span class="heatmap-ticker">${acao.ticker}</span>
                 <span class="heatmap-change">${sign}${acao.change.toFixed(1)}%</span>
@@ -1641,6 +1724,177 @@ const getHeatmapColorClass = (change) => {
   if (change >= -3) return "heatmap-item--down";
   return "heatmap-item--strong-down";
 };
+
+// ========================================
+// MODAL DE NOTÍCIAS DO TICKER (MAPA DE CALOR)
+// ========================================
+const tickerNewsModal = document.getElementById("ticker-news-modal");
+const tickerNewsModalOverlay = document.getElementById("ticker-news-modal-overlay");
+const tickerNewsModalClose = document.getElementById("ticker-news-modal-close");
+
+const showTickerNewsModal = async (ticker, price, change) => {
+  if (!tickerNewsModal) return;
+  
+  // Mostrar modal
+  tickerNewsModal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+  
+  // Atualizar header
+  const tickerEl = document.getElementById("ticker-news-modal-ticker");
+  const priceEl = document.getElementById("ticker-news-modal-price");
+  
+  if (tickerEl) tickerEl.textContent = ticker;
+  if (priceEl) {
+    const sign = change > 0 ? "+" : "";
+    const changeClass = change > 0 ? "positive" : change < 0 ? "negative" : "";
+    priceEl.innerHTML = `
+      <span class="price-value">R$ ${price.toFixed(2)}</span>
+      <span class="price-change ${changeClass}">${sign}${change.toFixed(2)}%</span>
+    `;
+  }
+  
+  // Mostrar loading
+  const loadingEl = document.getElementById("ticker-news-loading");
+  const contentEl = document.getElementById("ticker-news-content");
+  const emptyEl = document.getElementById("ticker-news-empty");
+  const sentimentEl = document.getElementById("ticker-news-modal-sentiment");
+  
+  if (loadingEl) loadingEl.style.display = "flex";
+  if (contentEl) contentEl.classList.add("hidden");
+  if (emptyEl) emptyEl.classList.add("hidden");
+  if (sentimentEl) sentimentEl.innerHTML = `<span class="sentiment-emoji">⏳</span><span class="sentiment-text">Carregando...</span>`;
+  
+  // Buscar notícias do Firestore
+  try {
+    const hoje = new Date().toLocaleDateString("en-CA"); // YYYY-MM-DD
+    const docRef = db.collection("news_global").doc(hoje).collection("tickers").doc(ticker);
+    const doc = await docRef.get();
+    
+    if (loadingEl) loadingEl.style.display = "none";
+    
+    if (!doc.exists) {
+      // Tentar dia anterior
+      const ontem = new Date();
+      ontem.setDate(ontem.getDate() - 1);
+      const ontemStr = ontem.toLocaleDateString("en-CA");
+      
+      const docOntem = await db.collection("news_global").doc(ontemStr).collection("tickers").doc(ticker).get();
+      
+      if (!docOntem.exists) {
+        if (emptyEl) emptyEl.classList.remove("hidden");
+        return;
+      }
+      
+      renderTickerNewsModal(docOntem.data(), ontemStr);
+      return;
+    }
+    
+    renderTickerNewsModal(doc.data(), hoje);
+    
+  } catch (error) {
+    console.error("Erro ao buscar notícias do ticker:", error);
+    if (loadingEl) loadingEl.style.display = "none";
+    if (emptyEl) emptyEl.classList.remove("hidden");
+  }
+};
+
+const renderTickerNewsModal = (data, dataRef) => {
+  const contentEl = document.getElementById("ticker-news-content");
+  const sentimentEl = document.getElementById("ticker-news-modal-sentiment");
+  const positiveEl = document.getElementById("ticker-news-positive");
+  const negativeEl = document.getElementById("ticker-news-negative");
+  const positiveTextEl = document.getElementById("ticker-news-positive-text");
+  const negativeTextEl = document.getElementById("ticker-news-negative-text");
+  const sourcesListEl = document.getElementById("ticker-news-sources-list");
+  const dateEl = document.getElementById("ticker-news-date");
+  
+  // Sentimento
+  if (sentimentEl) {
+    const sentimento = data.sentimento || "Neutro";
+    let emoji = "🟡";
+    if (sentimento === "Positivo") emoji = "🟢";
+    else if (sentimento === "Negativo") emoji = "🔴";
+    
+    sentimentEl.innerHTML = `<span class="sentiment-emoji">${emoji}</span><span class="sentiment-text">${sentimento}</span>`;
+  }
+  
+  // Bloco positivo
+  if (positiveEl && positiveTextEl) {
+    if (data.positivo) {
+      positiveTextEl.textContent = data.positivo;
+      positiveEl.classList.remove("hidden");
+    } else {
+      positiveEl.classList.add("hidden");
+    }
+  }
+  
+  // Bloco negativo
+  if (negativeEl && negativeTextEl) {
+    if (data.negativo) {
+      negativeTextEl.textContent = data.negativo;
+      negativeEl.classList.remove("hidden");
+    } else {
+      negativeEl.classList.add("hidden");
+    }
+  }
+  
+  // Fontes
+  if (sourcesListEl && data.fontes && data.fontes.length > 0) {
+    sourcesListEl.innerHTML = data.fontes.map(fonte => `
+      <li>
+        <strong>${fonte.titulo || "Sem título"}</strong>
+        ${fonte.resumo || ""}
+      </li>
+    `).join("");
+  } else if (sourcesListEl) {
+    sourcesListEl.innerHTML = "<li>Nenhuma fonte disponível</li>";
+  }
+  
+  // Data
+  if (dateEl) {
+    const dataFormatada = dataRef ? new Date(dataRef + "T12:00:00").toLocaleDateString("pt-BR") : "--";
+    dateEl.textContent = `Notícias de: ${dataFormatada}`;
+  }
+  
+  // Mostrar conteúdo
+  if (contentEl) contentEl.classList.remove("hidden");
+};
+
+const hideTickerNewsModal = () => {
+  if (!tickerNewsModal) return;
+  tickerNewsModal.classList.add("hidden");
+  document.body.style.overflow = "";
+};
+
+// Event listeners para o modal
+if (tickerNewsModalOverlay) {
+  tickerNewsModalOverlay.addEventListener("click", hideTickerNewsModal);
+}
+
+if (tickerNewsModalClose) {
+  tickerNewsModalClose.addEventListener("click", hideTickerNewsModal);
+}
+
+// Event listener para clique nos itens do heatmap (delegação)
+document.addEventListener("click", (e) => {
+  const item = e.target.closest(".heatmap-item");
+  if (item) {
+    const ticker = item.dataset.ticker;
+    const price = parseFloat(item.dataset.price) || 0;
+    const change = parseFloat(item.dataset.change) || 0;
+    
+    if (ticker) {
+      showTickerNewsModal(ticker, price, change);
+    }
+  }
+});
+
+// Fechar modal com ESC
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && tickerNewsModal && !tickerNewsModal.classList.contains("hidden")) {
+    hideTickerNewsModal();
+  }
+});
 
 // ========================================
 // EVENT HANDLERS

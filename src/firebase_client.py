@@ -187,3 +187,164 @@ def buscar_uid_por_email(email):
     except Exception as e:
         print(f"  ✗ Erro ao buscar UID por email: {e}")
         return None
+
+
+# ========================================
+# FUNÇÕES PARA NOTÍCIAS GLOBAIS
+# ========================================
+
+def salvar_noticia_global(data_referencia, ticker, analise):
+    """
+    Salva análise de um ticker na coleção global de notícias.
+    
+    Args:
+        data_referencia: Data no formato YYYY-MM-DD
+        ticker: Código do ticker (ex: "PETR4")
+        analise: Dict com dados da análise
+        
+    Returns:
+        bool: True se salvou com sucesso
+    """
+    try:
+        db = _init_firestore()
+        
+        # Estrutura: news_global/{data}/tickers/{ticker}
+        doc_ref = db.collection("news_global").document(data_referencia).collection("tickers").document(ticker)
+        
+        # Adicionar timestamp
+        dados = {
+            **analise,
+            "timestamp": firestore.SERVER_TIMESTAMP,
+            "data": data_referencia
+        }
+        
+        doc_ref.set(dados)
+        return True
+        
+    except Exception as e:
+        print(f"  ✗ Erro ao salvar notícia global {ticker}: {e}")
+        return False
+
+
+def buscar_noticias_globais(data_referencia, tickers):
+    """
+    Busca notícias globais de múltiplos tickers para uma data.
+    
+    Args:
+        data_referencia: Data no formato YYYY-MM-DD
+        tickers: Lista de tickers para buscar
+        
+    Returns:
+        Dict {ticker: dados_analise}
+    """
+    try:
+        db = _init_firestore()
+        resultado = {}
+        
+        # Buscar cada ticker
+        for ticker in tickers:
+            doc_ref = db.collection("news_global").document(data_referencia).collection("tickers").document(ticker)
+            doc = doc_ref.get()
+            
+            if doc.exists:
+                resultado[ticker] = doc.to_dict()
+        
+        return resultado
+        
+    except Exception as e:
+        print(f"  ✗ Erro ao buscar notícias globais: {e}")
+        return {}
+
+
+def buscar_dia_mais_recente_com_noticias(tickers, dias_limite=30):
+    """
+    Busca o dia mais recente que tem notícias para os tickers especificados.
+    Útil para clientes novos que não têm notícias do dia atual.
+    
+    Args:
+        tickers: Lista de tickers para buscar
+        dias_limite: Número máximo de dias para buscar no passado
+        
+    Returns:
+        Tuple (data, noticias_dict) ou (None, {}) se não encontrar
+    """
+    try:
+        db = _init_firestore()
+        hoje = datetime.now(SP_TZ).date()
+        
+        for i in range(dias_limite):
+            data = (hoje - timedelta(days=i)).strftime("%Y-%m-%d")
+            
+            # Verificar se existe alguma notícia para esta data
+            noticias = buscar_noticias_globais(data, tickers)
+            
+            if noticias:
+                print(f"  ✓ Encontradas notícias de {data} para {len(noticias)} tickers")
+                return data, noticias
+        
+        return None, {}
+        
+    except Exception as e:
+        print(f"  ✗ Erro ao buscar dia mais recente: {e}")
+        return None, {}
+
+
+def listar_datas_com_noticias(dias_limite=30):
+    """
+    Lista as datas que têm notícias globais salvas.
+    
+    Args:
+        dias_limite: Número máximo de dias para listar
+        
+    Returns:
+        Lista de datas (strings YYYY-MM-DD) ordenadas do mais recente
+    """
+    try:
+        db = _init_firestore()
+        hoje = datetime.now(SP_TZ).date()
+        datas_com_noticias = []
+        
+        for i in range(dias_limite):
+            data = (hoje - timedelta(days=i)).strftime("%Y-%m-%d")
+            
+            # Verificar se existe o documento da data
+            doc_ref = db.collection("news_global").document(data)
+            
+            # Verificar se tem algum ticker
+            tickers = doc_ref.collection("tickers").limit(1).stream()
+            
+            if any(True for _ in tickers):
+                datas_com_noticias.append(data)
+        
+        return datas_com_noticias
+        
+    except Exception as e:
+        print(f"  ✗ Erro ao listar datas: {e}")
+        return []
+
+
+def buscar_noticia_ticker(data_referencia, ticker):
+    """
+    Busca notícia de um ticker específico para uma data.
+    
+    Args:
+        data_referencia: Data no formato YYYY-MM-DD
+        ticker: Código do ticker
+        
+    Returns:
+        Dict com dados da análise ou None
+    """
+    try:
+        db = _init_firestore()
+        
+        doc_ref = db.collection("news_global").document(data_referencia).collection("tickers").document(ticker)
+        doc = doc_ref.get()
+        
+        if doc.exists:
+            return doc.to_dict()
+        
+        return None
+        
+    except Exception as e:
+        print(f"  ✗ Erro ao buscar notícia de {ticker}: {e}")
+        return None

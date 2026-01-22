@@ -1,224 +1,262 @@
 """
 Script principal do TradingCore.
-Processa todos os usuários e envia análises diárias.
+Processa TODAS as 400 ações B3 e salva globalmente.
+Depois distribui para cada usuário com base na sua carteira.
 
-OTIMIZADO: Processa cada ticker apenas uma vez, reutilizando
-análises para múltiplos usuários que compartilham os mesmos tickers.
-CONTEXTUAL: Usa tese estratégica de cada empresa para qualificar as notícias.
+OTIMIZADO:
+- Busca de notícias em batch (50 tickers por chamada)
+- Análise de notícias em batch (5 notícias por chamada)
+- Armazenamento global (não duplica por usuário)
 """
+import csv
+import os
 from src.config import validar_configuracoes
-from src.utils import calcular_periodo_24h, parsear_tickers, extrair_tickers_unicos
-from src.firebase_client import carregar_usuarios_firestore, salvar_noticias_usuario, buscar_uid_por_email
-from src.news_fetcher import buscar_noticias
-from src.context_manager import garantir_contexto
-from src.ai_analyzer import (
-    analisar_com_gpt,
-    filtrar_top_relevantes,
-    gerar_resumo_executivo
+from src.utils import calcular_periodo_24h, parsear_tickers
+from src.firebase_client import (
+    carregar_usuarios_firestore, 
+    buscar_uid_por_email,
+    salvar_noticia_global,
+    buscar_noticias_globais
 )
+from src.news_fetcher import buscar_noticias_todos_tickers
+from src.ai_analyzer import gerar_analise_ticker_global
 from src.email_sender import gerar_email_html, enviar_email
 from src.price_fetcher import buscar_precos_multiplos
 
 
-def processar_todos_tickers(tickers_unicos, data_inicio, data_fim):
+def carregar_tickers_b3():
+    """Carrega todos os tickers da B3 do arquivo CSV."""
+    csv_path = os.path.join(os.path.dirname(__file__), 'docs', 'acoes-listadas-b3.csv')
+    tickers = []
+    
+    try:
+        with open(csv_path, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                ticker = row.get('Ticker', '').strip()
+                if ticker:
+                    tickers.append(ticker)
+        print(f"✓ {len(tickers)} tickers carregados do CSV")
+        return tickers
+    except Exception as e:
+        print(f"✗ Erro ao carregar CSV: {e}")
+        return []
+
+
+def processar_noticias_globais(tickers, data_inicio, data_fim, data_referencia):
     """
-    Processa todos os tickers únicos uma única vez.
+    Processa notícias de todos os tickers e salva globalmente.
     
     Args:
-        tickers_unicos: Set de tickers únicos
+        tickers: Lista de todos os tickers B3
         data_inicio: Data início da busca
         data_fim: Data fim da busca
+        data_referencia: Data de referência para salvar (YYYY-MM-DD)
         
     Returns:
-        Tupla (cache_analises, cache_resumos, cache_contextos, analises_consolidadas):
-            - cache_analises: {ticker: lista_de_analises}
-            - cache_resumos: {ticker: resumo_executivo_texto}
-            - cache_contextos: {ticker: contexto_texto}
-            - analises_consolidadas: {ticker: {'positivo': str, 'negativo': str}}
+        Dict {ticker: dados_analise} com tickers que tiveram notícias
     """
-    cache_analises = {}
-    cache_resumos = {}
-    cache_contextos = {}
-    total_tickers = len(tickers_unicos)
-    
     print(f"\n{'='*60}")
-    print(f"📊 FASE 1: PROCESSANDO {total_tickers} TICKERS ÚNICOS")
+    print(f"📰 FASE 1: BUSCANDO NOTÍCIAS DE {len(tickers)} TICKERS")
     print(f"{'='*60}")
     
-    for idx, ticker in enumerate(sorted(tickers_unicos), 1):
+    # Buscar todas as notícias em batch
+    noticias_por_ticker = buscar_noticias_todos_tickers(tickers, data_inicio, data_fim)
+    
+    # Contar tickers com notícias
+    tickers_com_noticias = [t for t, artigos in noticias_por_ticker.items() if artigos]
+    print(f"\n✓ {len(tickers_com_noticias)} tickers com notícias encontradas")
+    
+    if not tickers_com_noticias:
+        print("⚠ Nenhuma notícia encontrada para nenhum ticker!")
+        return {}
+    
+    print(f"\n{'='*60}")
+    print(f"🤖 FASE 2: ANALISANDO {len(tickers_com_noticias)} TICKERS COM NOTÍCIAS")
+    print(f"{'='*60}")
+    
+    # Analisar e salvar cada ticker
+    analises_globais = {}
+    processados = 0
+    
+    for ticker in tickers_com_noticias:
+        artigos = noticias_por_ticker[ticker]
+        processados += 1
+        
         try:
-            print(f"\n[{idx}/{total_tickers}] Processando {ticker}...")
+            print(f"\n[{processados}/{len(tickers_com_noticias)}] Analisando {ticker} ({len(artigos)} artigos)...")
             
-            # 1. Garantir contexto estratégico (Carrega ou gera via GPT-4o)
-            contexto = garantir_contexto(ticker)
-            cache_contextos[ticker] = contexto
+            # Gerar análise completa
+            analise = gerar_analise_ticker_global(artigos, ticker)
             
-            # 2. Buscar notícias (1x por ticker)
-            artigos = buscar_noticias(ticker, data_inicio, data_fim)
-            
-            if not artigos:
-                print(f"  ⚠ {ticker}: Nenhuma notícia encontrada")
-                cache_analises[ticker] = []
-                continue
-            
-            # 3. Analisar com GPT (1x por ticker, usando o contexto)
-            analises = analisar_com_gpt(artigos, ticker, contexto)
-            
-            if not analises:
-                print(f"  ⚠ {ticker}: Nenhuma análise gerada")
-                cache_analises[ticker] = []
-                continue
-            
-            # 4. Filtrar top relevantes (baseado no relevancia_score)
-            top_analises = filtrar_top_relevantes(analises)
-            
-            print(f"  ✓ {ticker}: {len(top_analises)} notícias relevantes selecionadas")
-            
-            # Armazenar no cache
-            cache_analises[ticker] = top_analises
-            
+            if analise:
+                # Salvar no Firebase globalmente
+                salvar_noticia_global(data_referencia, ticker, analise)
+                analises_globais[ticker] = analise
+                print(f"  ✓ {ticker}: Análise salva ({analise.get('noticias_relevantes', 0)} relevantes)")
+            else:
+                print(f"  ⚠ {ticker}: Nenhuma notícia relevante")
+                
         except Exception as e:
             print(f"  ✗ Erro ao processar {ticker}: {e}")
-            cache_analises[ticker] = []
             continue
     
-    # =========================================================
-    # Gerar resumos executivos (1x por ticker com notícias)
-    # =========================================================
     print(f"\n{'='*60}")
-    print(f"📝 GERANDO RESUMOS EXECUTIVOS")
+    print(f"✓ FASE 2 CONCLUÍDA")
+    print(f"  Tickers analisados: {len(tickers_com_noticias)}")
+    print(f"  Análises salvas: {len(analises_globais)}")
     print(f"{'='*60}")
     
-    for ticker, analises in cache_analises.items():
-        if analises:
-            # Gera resumo executivo para este ticker (1x, usando contexto)
-            resumo = gerar_resumo_executivo(analises, cache_contextos)
-            cache_resumos[ticker] = resumo.get(ticker, "")
-    
-    # Resumo da fase 1
-    tickers_com_noticias = sum(1 for t, a in cache_analises.items() if a)
-    total_noticias_cache = sum(len(a) for a in cache_analises.values())
-    
-    # Gerar análises consolidadas
-    print(f"\n{'='*60}")
-    print(f"📊 GERANDO ANÁLISES CONSOLIDADAS")
-    print(f"{'='*60}")
-    
-    from src.ai_analyzer import gerar_analise_consolidada
-    analises_consolidadas = gerar_analise_consolidada(cache_analises, cache_contextos)
-    
-    print(f"\n{'='*60}")
-    print(f"✓ FASE 1 CONCLUÍDA")
-    print(f"  Tickers processados: {total_tickers}")
-    print(f"  Tickers com notícias: {tickers_com_noticias}")
-    print(f"  Resumos executivos gerados: {len(cache_resumos)}")
-    print(f"  Análises consolidadas geradas: {len(analises_consolidadas)}")
-    print(f"  Total de análises em cache: {total_noticias_cache}")
-    print(f"{'='*60}")
-    
-    return cache_analises, cache_resumos, cache_contextos, analises_consolidadas
+    return analises_globais
 
 
-def processar_usuario(usuario_dict, cache_analises, cache_resumos, precos_dados, analises_consolidadas, periodo_noticias=None):
+def enviar_emails_usuarios(data_referencia, periodo_noticias):
     """
-    Processa um único usuário usando os caches de análises, resumos, preços e análises consolidadas.
+    Envia emails para todos os usuários buscando notícias da coleção global.
     
     Args:
-        usuario_dict: Dicionário com dados do usuário
-        cache_analises: Dicionário {ticker: lista_de_analises}
-        cache_resumos: Dicionário {ticker: resumo_executivo_texto}
-        precos_dados: Dicionário {ticker: {preco_fechamento, variacao_percentual, sucesso}}
-        analises_consolidadas: Dicionário {ticker: {'positivo': str, 'negativo': str}}
-        periodo_noticias: Tupla (data_inicio, data_fim) do período das notícias
-        
-    Returns:
-        Tupla (sucesso: bool, num_noticias: int)
+        data_referencia: Data de referência (YYYY-MM-DD)
+        periodo_noticias: Tupla (data_inicio, data_fim)
     """
-    nome = usuario_dict.get('Qual seu nome completo?', 'N/A')
-    email = usuario_dict.get('Qual seu e-mail?', '')
-    ticker_str = usuario_dict.get('Ticker 1', '')
-
-    print(f"\n  Processando: {nome} ({email})")
-
-    # Validar email
-    if not email or '@' not in email:
-        print(f"    ✗ Email inválido: {email}")
-        return False, 0
-
-    # Parsear tickers do usuário
-    tickers = parsear_tickers(ticker_str)
-    if not tickers:
-        print(f"    ⚠ Nenhum ticker encontrado")
-        html = gerar_email_html(usuario_dict, [], {}, {}, {})
-        enviar_email(email, "TradingCore - Análise Diária", html)
-        return True, 0
-
-    print(f"    Tickers: {', '.join(tickers)}")
+    print(f"\n{'='*60}")
+    print(f"📧 FASE 3: ENVIANDO EMAILS")
+    print(f"{'='*60}")
     
-    # Coletar análises do cache para os tickers do usuário
-    todas_analises = []
-    for ticker in tickers:
-        analises_ticker = cache_analises.get(ticker, [])
-        todas_analises.extend(analises_ticker)
-
-    # Coletar resumos executivos do cache
-    resumo_executivo = {}
-    for ticker in tickers:
-        if ticker in cache_resumos and cache_resumos[ticker]:
-            resumo_executivo[ticker] = cache_resumos[ticker]
-
-    # Filtrar apenas os preços dos tickers do usuário
-    precos_usuario = {t: precos_dados.get(t, {'sucesso': False}) for t in tickers}
+    # Carregar usuários
+    print(f"\n📊 Carregando usuários...")
+    df_usuarios = carregar_usuarios_firestore()
     
-    # Filtrar apenas as análises consolidadas dos tickers do usuário
-    consolidadas_usuario = {t: analises_consolidadas.get(t, {}) for t in tickers if t in analises_consolidadas}
-
-    # Calcular sentimento médio por ticker para histórico
-    sentimento_medio = {}
-    for ticker in tickers:
-        analises_ticker = cache_analises.get(ticker, [])
-        if analises_ticker:
-            sentimentos = [a.get('sentimento', 0) for a in analises_ticker if a.get('relevante', False)]
-            if sentimentos:
-                sentimento_medio[ticker] = sum(sentimentos) / len(sentimentos)
-
-    # Salvar notícias no Firestore para acesso via site
-    uid = buscar_uid_por_email(email)
-    if uid and (resumo_executivo or consolidadas_usuario):
-        salvar_noticias_usuario(
-            uid, 
-            resumo_executivo, 
-            consolidadas_usuario, 
-            precos_usuario, 
-            periodo_noticias,
-            todas_analises,  # Para identificar destaque
-            sentimento_medio  # Para histórico de sentimento
-        )
-
-    # Gerar e enviar email
-    try:
-        html = gerar_email_html(usuario_dict, todas_analises, resumo_executivo, precos_usuario, consolidadas_usuario, periodo_noticias)
-
-        sucesso = enviar_email(
-            email,
-            f"TradingCore - Análise Diária ({len(todas_analises)} notícias)",
-            html
-        )
-
-        if sucesso:
-            print(f"    ✓ Email enviado! {len(todas_analises)} notícias")
-
-        return sucesso, len(todas_analises)
-
-    except Exception as e:
-        print(f"    ✗ Erro ao enviar email: {e}")
-        return False, len(todas_analises)
+    if df_usuarios.empty:
+        print("⚠ Nenhum usuário encontrado!")
+        return
+    
+    print(f"✓ {len(df_usuarios)} usuários carregados")
+    
+    # Coletar todos os tickers dos usuários para buscar preços
+    todos_tickers = set()
+    for _, row in df_usuarios.iterrows():
+        ticker_str = row.get('Ticker 1', '')
+        tickers = parsear_tickers(ticker_str)
+        todos_tickers.update(tickers)
+    
+    # Buscar preços
+    print(f"\n💰 Buscando preços de {len(todos_tickers)} tickers...")
+    precos_dados = buscar_precos_multiplos(todos_tickers)
+    
+    # Estatísticas
+    usuarios_sucesso = 0
+    usuarios_erro = 0
+    total_noticias = 0
+    
+    # Processar cada usuário
+    for idx, row in df_usuarios.iterrows():
+        try:
+            usuario_dict = row.to_dict()
+            nome = usuario_dict.get('Qual seu nome completo?', 'N/A')
+            email = usuario_dict.get('Qual seu e-mail?', '')
+            ticker_str = usuario_dict.get('Ticker 1', '')
+            
+            print(f"\n  Processando: {nome} ({email})")
+            
+            # Validar email
+            if not email or '@' not in email:
+                print(f"    ✗ Email inválido")
+                usuarios_erro += 1
+                continue
+            
+            # Parsear tickers
+            tickers = parsear_tickers(ticker_str)
+            if not tickers:
+                print(f"    ⚠ Nenhum ticker")
+                html = gerar_email_html(usuario_dict, [], {}, {}, {})
+                enviar_email(email, "TradingCore - Análise Diária", html)
+                usuarios_sucesso += 1
+                continue
+            
+            print(f"    Tickers: {', '.join(tickers)}")
+            
+            # Buscar notícias globais dos tickers do usuário
+            noticias_usuario = buscar_noticias_globais(data_referencia, tickers)
+            
+            # Montar dados para o email
+            todas_analises = []
+            resumo_executivo = {}
+            consolidadas_usuario = {}
+            precos_usuario = {}
+            
+            for ticker in tickers:
+                dados_ticker = noticias_usuario.get(ticker, {})
+                precos_usuario[ticker] = precos_dados.get(ticker, {'sucesso': False})
+                
+                if dados_ticker:
+                    # Resumo executivo (usar positivo + negativo resumidos)
+                    resumo_parts = []
+                    if dados_ticker.get('positivo'):
+                        resumo_parts.append(dados_ticker['positivo'][:200])
+                    if dados_ticker.get('negativo'):
+                        resumo_parts.append(dados_ticker['negativo'][:200])
+                    
+                    if resumo_parts:
+                        resumo_executivo[ticker] = " | ".join(resumo_parts)
+                    
+                    # Consolidadas
+                    consolidadas_usuario[ticker] = {
+                        'positivo': dados_ticker.get('positivo', ''),
+                        'negativo': dados_ticker.get('negativo', '')
+                    }
+                    
+                    # Adicionar fontes como "análises" para contagem
+                    for fonte in dados_ticker.get('fontes', []):
+                        todas_analises.append({
+                            'titulo': fonte.get('titulo', ''),
+                            'resumo': fonte.get('resumo', ''),
+                            'ticker': ticker,
+                            'relevante': True,
+                            'sentimento': 0
+                        })
+            
+            # Gerar e enviar email
+            html = gerar_email_html(
+                usuario_dict, 
+                todas_analises, 
+                resumo_executivo, 
+                precos_usuario, 
+                consolidadas_usuario, 
+                periodo_noticias
+            )
+            
+            sucesso = enviar_email(
+                email,
+                f"TradingCore - Análise Diária ({len(todas_analises)} notícias)",
+                html
+            )
+            
+            if sucesso:
+                print(f"    ✓ Email enviado! {len(todas_analises)} notícias")
+                usuarios_sucesso += 1
+                total_noticias += len(todas_analises)
+            else:
+                usuarios_erro += 1
+                
+        except Exception as e:
+            print(f"    ✗ Erro: {e}")
+            usuarios_erro += 1
+            continue
+    
+    # Resumo
+    print(f"\n{'='*60}")
+    print(f"📊 RESUMO DOS EMAILS")
+    print(f"{'='*60}")
+    print(f"✓ Sucesso: {usuarios_sucesso}")
+    print(f"✗ Erro: {usuarios_erro}")
+    print(f"📰 Total de notícias enviadas: {total_noticias}")
+    print(f"{'='*60}")
 
 
 def main():
     """Função principal que executa o processamento completo."""
     print("\n" + "="*60)
-    print("🚀 TRADINGCORE - INICIANDO PROCESSAMENTO")
+    print("🚀 TRADINGCORE - PROCESSAMENTO GLOBAL")
     print("="*60)
 
     # Validar configurações
@@ -231,86 +269,56 @@ def main():
     # Calcular período
     data_inicio, data_fim = calcular_periodo_24h()
     print(f"\n📅 Período: {data_inicio} a {data_fim}")
-
-    # Carregar usuários
-    print(f"\n📊 Carregando usuários...")
-    df_usuarios = carregar_usuarios_firestore()
-
-    if df_usuarios.empty:
-        print("✗ Nenhum usuário encontrado!")
-        return
-
-    print(f"✓ {len(df_usuarios)} usuários carregados")
-
-    # =========================================================
-    # FASE 1: Extrair e processar tickers únicos
-    # =========================================================
-    tickers_unicos = extrair_tickers_unicos(df_usuarios)
     
-    if not tickers_unicos:
-        print("✗ Nenhum ticker encontrado em nenhum usuário!")
+    # Data de referência para salvar (hoje)
+    from datetime import datetime
+    import pytz
+    tz = pytz.timezone('America/Sao_Paulo')
+    data_referencia = datetime.now(tz).strftime('%Y-%m-%d')
+    print(f"📅 Data de referência: {data_referencia}")
+
+    # =========================================================
+    # FASE 1-2: Carregar tickers e processar notícias globais
+    # =========================================================
+    tickers_b3 = carregar_tickers_b3()
+    
+    if not tickers_b3:
+        print("✗ Nenhum ticker B3 encontrado!")
         return
     
-    print(f"✓ {len(tickers_unicos)} tickers únicos identificados: {', '.join(sorted(tickers_unicos))}")
-    
-    # Processar todos os tickers uma única vez
-    cache_analises, cache_resumos, _, analises_consolidadas = processar_todos_tickers(tickers_unicos, data_inicio, data_fim)
-
-    # =========================================================
-    # FASE 1.5: Buscar preços do Yahoo Finance
-    # =========================================================
-    precos_dados = buscar_precos_multiplos(tickers_unicos)
+    # Processar todas as notícias e salvar globalmente
+    analises_globais = processar_noticias_globais(
+        tickers_b3, 
+        data_inicio, 
+        data_fim, 
+        data_referencia
+    )
     
     # =========================================================
-    # FASE 1.6: Atualizar cotações no Firestore (para ticker tape)
-    # =========================================================
-    from src.market_data_updater import atualizar_cotacoes_mercado, atualizar_cotacoes_b3
-    atualizar_cotacoes_mercado()
-    atualizar_cotacoes_b3(tickers_unicos)
-
-    # =========================================================
-    # FASE 2: Distribuir análises para cada usuário
+    # FASE 3: Atualizar cotações no Firestore (para ticker tape e heatmap)
     # =========================================================
     print(f"\n{'='*60}")
-    print(f"📧 FASE 2: ENVIANDO EMAILS PARA {len(df_usuarios)} USUÁRIOS")
+    print(f"📈 ATUALIZANDO COTAÇÕES")
     print(f"{'='*60}")
-
-    # Estatísticas
-    total_usuarios = len(df_usuarios)
-    usuarios_sucesso = 0
-    usuarios_erro = 0
-    total_noticias = 0
-
-    # Processar cada usuário usando os caches
+    
+    try:
+        from src.market_data_updater import atualizar_cotacoes_mercado, atualizar_cotacoes_b3
+        atualizar_cotacoes_mercado()
+        atualizar_cotacoes_b3(set(tickers_b3))
+    except Exception as e:
+        print(f"⚠ Erro ao atualizar cotações: {e}")
+    
+    # =========================================================
+    # FASE 4: Enviar emails para usuários
+    # =========================================================
     periodo_noticias = (data_inicio, data_fim)
-    for idx, row in df_usuarios.iterrows():
-        try:
-            usuario_dict = row.to_dict()
-            sucesso, num_noticias = processar_usuario(usuario_dict, cache_analises, cache_resumos, precos_dados, analises_consolidadas, periodo_noticias)
-
-            if sucesso:
-                usuarios_sucesso += 1
-                total_noticias += num_noticias
-            else:
-                usuarios_erro += 1
-
-        except Exception as e:
-            print(f"\n✗ Erro crítico ao processar usuário {idx}: {e}")
-            usuarios_erro += 1
-            continue
-
+    enviar_emails_usuarios(data_referencia, periodo_noticias)
+    
     # Resumo final
     print("\n" + "="*60)
-    print("📊 RESUMO DO PROCESSAMENTO")
-    print("="*60)
-    print(f"Tickers únicos processados: {len(tickers_unicos)}")
-    print(f"Total de usuários: {total_usuarios}")
-    print(f"✓ Sucesso: {usuarios_sucesso}")
-    print(f"✗ Erro: {usuarios_erro}")
-    print(f"📰 Total de notícias enviadas: {total_noticias}")
-    print(f"📈 Média de notícias por usuário: {total_noticias/max(usuarios_sucesso,1):.1f}")
-    print("="*60)
-    print("✅ PROCESSAMENTO CONCLUÍDO!")
+    print("✅ PROCESSAMENTO GLOBAL CONCLUÍDO!")
+    print(f"  Tickers B3 processados: {len(tickers_b3)}")
+    print(f"  Análises globais salvas: {len(analises_globais)}")
     print("="*60 + "\n")
 
 
