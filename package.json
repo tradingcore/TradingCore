@@ -1,0 +1,19 @@
+{
+  "name": "tradingcore",
+  "version": "1.0.0",
+  "description": "TradingCore - Analises de ativos da B3 com IA",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": ["trading", "b3", "stocks", "ai"],
+  "author": "TradingCore",
+  "license": "MIT"
+}
