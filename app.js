@@ -626,6 +626,12 @@ const renderNews = (data) => {
   });
 };
 
+const formatDateRef = (dateStr) => {
+  if (!dateStr) return "";
+  const [year, month, day] = dateStr.split("-");
+  return `${day}/${month}`;
+};
+
 const createNewsCard = (ticker, resumo, consolidado, preco) => {
   const card = document.createElement("div");
   card.className = "news-ticker-card";
@@ -636,10 +642,12 @@ const createNewsCard = (ticker, resumo, consolidado, preco) => {
     const variacao = preco.variacao_percentual || 0;
     const variacaoClass = variacao > 0 ? "variacao-positiva" : variacao < 0 ? "variacao-negativa" : "variacao-neutra";
     const variacaoSinal = variacao > 0 ? "+" : "";
+    const dataRef = preco.data_referencia ? `<span class="preco-data">(${formatDateRef(preco.data_referencia)})</span>` : "";
     precoHtml = `
       <div class="news-ticker-preco">
         <span class="preco-valor">R$ ${preco.preco_fechamento?.toFixed(2) || "0.00"}</span>
         <span class="${variacaoClass}">(${variacaoSinal}${variacao.toFixed(2)}%)</span>
+        ${dataRef}
       </div>
     `;
   }

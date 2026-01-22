@@ -200,6 +200,11 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_
         .preco-valor {{
             color: #666;
         }}
+        .preco-data {{
+            color: #999;
+            font-size: 12px;
+            margin-left: 4px;
+        }}
         .variacao-positiva {{
             color: #28a745;
             font-weight: bold;
@@ -294,6 +299,17 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_
             if ticker in precos_dados and precos_dados[ticker]['sucesso']:
                 preco = precos_dados[ticker]['preco_fechamento']
                 variacao = precos_dados[ticker]['variacao_percentual']
+                data_ref = precos_dados[ticker].get('data_referencia', '')
+                
+                # Formatar data de referência
+                data_ref_formatada = ""
+                if data_ref:
+                    try:
+                        from datetime import datetime
+                        dt = datetime.strptime(data_ref, "%Y-%m-%d")
+                        data_ref_formatada = dt.strftime("%d/%m")
+                    except:
+                        data_ref_formatada = data_ref
                 
                 # Determinar classe CSS baseado na variação
                 if variacao > 0:
@@ -306,9 +322,10 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_
                     variacao_class = "variacao-neutra"
                     variacao_sinal = ""
                 
+                data_html = f' <span class="preco-data">({data_ref_formatada})</span>' if data_ref_formatada else ''
                 preco_html = f"""<span class="preco-info">
                     <span class="preco-valor">R$ {preco:.2f}</span> 
-                    <span class="{variacao_class}">({variacao_sinal}{variacao:.2f}%)</span>
+                    <span class="{variacao_class}">({variacao_sinal}{variacao:.2f}%)</span>{data_html}
                 </span>"""
             
             html += f"""
