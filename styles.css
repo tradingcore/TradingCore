@@ -676,16 +676,199 @@ h3 {
 ======================================== */
 .toast-container {
   position: fixed;
-  top: 80px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
   display: flex;
   flex-direction: column;
   gap: 10px;
   pointer-events: none;
-  width: 90%;
+  width: auto;
+  max-width: 360px;
+}
+
+@media (max-width: 768px) {
+  .toast-container {
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+    max-width: none;
+  }
+}
+
+/* ========================================
+   AUTH MODAL (estilo Amazon)
+======================================== */
+.auth-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 5000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 20px 20px;
+  overflow-y: auto;
+}
+
+.auth-modal-overlay.hidden {
+  display: none;
+}
+
+.auth-modal {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  width: 100%;
   max-width: 400px;
+  padding: 0;
+  position: relative;
+  animation: modalSlideIn 0.25s ease-out;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.auth-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--surface-light);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+  z-index: 10;
+}
+
+.auth-modal-close:hover {
+  background: var(--error-bg);
+  border-color: var(--error-border);
+  color: #f87171;
+}
+
+.auth-modal-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+}
+
+.auth-modal-tab {
+  flex: 1;
+  padding: 16px;
+  background: transparent;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.auth-modal-tab:hover {
+  color: var(--text);
+}
+
+.auth-modal-tab.active {
+  color: var(--accent);
+}
+
+.auth-modal-tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+}
+
+.auth-modal-content {
+  padding: 24px;
+}
+
+.auth-modal-content.hidden {
+  display: none;
+}
+
+.auth-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-modal-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-modal-form label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.auth-modal-form input {
+  padding: 12px 14px;
+  background: var(--surface-light);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease;
+}
+
+.auth-modal-form input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.auth-modal-form input::placeholder {
+  color: var(--muted);
+}
+
+.auth-modal-form .button--full {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+}
+
+.auth-modal-footer {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.auth-modal-switch {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-modal-switch:hover {
+  text-decoration: underline;
 }
 
 .toast {
@@ -1334,6 +1517,86 @@ select:focus {
   min-width: 0;
 }
 
+/* Sidebar toggle headers */
+.sidebar-card-header--toggle {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.sidebar-card-header--toggle:hover {
+  background: rgba(91, 124, 250, 0.1);
+}
+
+.sidebar-toggle-arrow {
+  font-size: 0.7rem;
+  transition: transform 0.2s ease;
+  color: var(--muted);
+}
+
+.sidebar-card-header--toggle.expanded .sidebar-toggle-arrow {
+  transform: rotate(180deg);
+}
+
+.sidebar-card-content {
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.sidebar-card-content.collapsed {
+  max-height: 0;
+}
+
+/* Filtro de Ticker */
+.ticker-filter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px;
+}
+
+.ticker-filter-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s ease;
+}
+
+.ticker-filter-item:hover {
+  background: var(--surface-light);
+  color: var(--text);
+}
+
+.ticker-filter-item.active {
+  background: rgba(91, 124, 250, 0.15);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.ticker-filter-item .ticker-badge {
+  background: var(--surface-light);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.ticker-filter-item.active .ticker-badge {
+  background: rgba(91, 124, 250, 0.2);
+  color: var(--accent);
+}
+
 /* Mobile: sidebar no topo */
 @media (max-width: 900px) {
   .news-layout {
@@ -1344,14 +1607,12 @@ select:focus {
   .news-sidebar {
     position: relative;
     top: 0;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 12px;
+    flex-direction: column;
+    gap: 8px;
   }
 
   .sidebar-card {
-    flex: 1;
-    min-width: 140px;
+    width: 100%;
   }
 
   .sidebar-card--info {
@@ -1360,6 +1621,20 @@ select:focus {
 
   .news-section-header h2 {
     font-size: 1.2rem;
+  }
+
+  /* Mobile: calendário e filtros compactos (colapsados por padrão) */
+  .sidebar-card-content {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .sidebar-card-content.expanded {
+    max-height: 500px;
+  }
+
+  .sidebar-card-header--toggle .sidebar-toggle-arrow {
+    display: inline;
   }
 }
 

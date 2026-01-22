@@ -265,6 +265,7 @@ const showSection = (sectionName) => {
     sectionNoticias.classList.remove("hidden");
     // Atualizar status do mercado e carregar notícias
     updateMarketStatus();
+    renderTickerFilter();
     loadTodayNews();
   }
   
@@ -1439,6 +1440,279 @@ const createSentimentChart = (ticker, historico) => {
 // EVENT HANDLERS
 // ========================================
 
+// ========================================
+// AUTH MODAL
+// ========================================
+const authModalOverlay = document.getElementById("auth-modal-overlay");
+const authModal = document.getElementById("auth-modal");
+const authModalClose = document.getElementById("auth-modal-close");
+const authModalTabs = document.querySelectorAll(".auth-modal-tab");
+const modalLoginForm = document.getElementById("modal-login-form");
+const modalSignupForm = document.getElementById("modal-signup-form");
+
+const openAuthModal = (tab = "login") => {
+  if (!authModalOverlay) return;
+  
+  authModalOverlay.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+  
+  // Ativar tab correta
+  switchAuthTab(tab);
+};
+
+const closeAuthModal = () => {
+  if (!authModalOverlay) return;
+  
+  authModalOverlay.classList.add("hidden");
+  document.body.style.overflow = "";
+};
+
+const switchAuthTab = (tab) => {
+  // Atualizar tabs
+  authModalTabs.forEach((t) => {
+    t.classList.toggle("active", t.dataset.tab === tab);
+  });
+  
+  // Atualizar conteúdo
+  document.querySelectorAll("[data-tab-content]").forEach((content) => {
+    content.classList.toggle("hidden", content.dataset.tabContent !== tab);
+  });
+};
+
+// Botões de abrir modal
+document.getElementById("btn-open-login")?.addEventListener("click", () => openAuthModal("login"));
+document.getElementById("btn-open-signup")?.addEventListener("click", () => openAuthModal("signup"));
+document.getElementById("btn-mobile-login")?.addEventListener("click", () => {
+  mobileNav?.classList.add("hidden");
+  mobileMenuBtn?.classList.remove("active");
+  openAuthModal("login");
+});
+document.getElementById("btn-mobile-signup")?.addEventListener("click", () => {
+  mobileNav?.classList.add("hidden");
+  mobileMenuBtn?.classList.remove("active");
+  openAuthModal("signup");
+});
+document.getElementById("btn-hero-signup")?.addEventListener("click", () => openAuthModal("signup"));
+
+// Fechar modal
+authModalClose?.addEventListener("click", closeAuthModal);
+authModalOverlay?.addEventListener("click", (e) => {
+  if (e.target === authModalOverlay) closeAuthModal();
+});
+
+// Tabs
+authModalTabs.forEach((tab) => {
+  tab.addEventListener("click", () => switchAuthTab(tab.dataset.tab));
+});
+
+// Links de switch
+document.querySelectorAll(".auth-modal-switch").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    switchAuthTab(link.dataset.switch);
+  });
+});
+
+// Form de Login no Modal
+modalLoginForm?.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  if (!ensureFirebaseReady()) return;
+
+  const submitBtn = modalLoginForm.querySelector("button[type='submit']");
+  setLoading(submitBtn, true);
+
+  const formData = new FormData(modalLoginForm);
+  const email = formData.get("email")?.trim().toLowerCase();
+  const password = formData.get("password");
+
+  if (!email || !password) {
+    showToast("Informe seu email e senha.", "error");
+    setLoading(submitBtn, false);
+    return;
+  }
+
+  try {
+    const credential = await auth.signInWithEmailAndPassword(email, password);
+    const user = credential.user;
+
+    const profile = await fetchUserDataFromFirestore(user.uid);
+    const tickers = normalizeTickers(profile?.tickers);
+
+    setSession(user.uid, user.email || email, {
+      name: profile?.name || "",
+      tickers,
+      phone: profile?.phone || "",
+      address: profile?.address || "",
+      birthdate: profile?.birthdate || "",
+    });
+
+    modalLoginForm.reset();
+    closeAuthModal();
+    showToast("✓ Login realizado!", "success");
+    showDashboard();
+  } catch (error) {
+    showToast(getAuthErrorMessage(error), "error");
+  } finally {
+    setLoading(submitBtn, false);
+  }
+});
+
+// Form de Cadastro no Modal
+modalSignupForm?.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  if (!ensureFirebaseReady()) return;
+
+  const submitBtn = modalSignupForm.querySelector("button[type='submit']");
+  setLoading(submitBtn, true);
+
+  const formData = new FormData(modalSignupForm);
+  const name = formData.get("name")?.trim();
+  const email = formData.get("email")?.trim().toLowerCase();
+  const phone = formData.get("phone")?.trim();
+  const password = formData.get("password");
+
+  if (!name || !email || !phone || !password) {
+    showToast("Preencha todos os campos.", "error");
+    setLoading(submitBtn, false);
+    return;
+  }
+
+  if (password.length < 8) {
+    showToast("A senha precisa ter pelo menos 8 caracteres.", "error");
+    setLoading(submitBtn, false);
+    return;
+  }
+
+  try {
+    const credential = await auth.createUserWithEmailAndPassword(email, password);
+    const user = credential.user;
+
+    await getUserDocRef(user.uid).set(
+      {
+        name,
+        email,
+        phone,
+        address: "",
+        birthdate: "",
+        tickers: [],
+        createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+      },
+      { merge: true }
+    );
+
+    setSession(user.uid, email, {
+      name,
+      tickers: [],
+      phone,
+      address: "",
+      birthdate: "",
+    });
+
+    modalSignupForm.reset();
+    closeAuthModal();
+    showDashboard();
+    showToast("🎉 Conta criada com sucesso!", "success", 5000);
+  } catch (error) {
+    showToast(getAuthErrorMessage(error), "error");
+  } finally {
+    setLoading(submitBtn, false);
+  }
+});
+
+// ========================================
+// SIDEBAR TOGGLES & FILTERS
+// ========================================
+let activeTickerFilter = "all";
+
+// Toggle sidebar cards (mobile)
+document.querySelectorAll(".sidebar-card-header--toggle").forEach((header) => {
+  header.addEventListener("click", () => {
+    const content = header.nextElementSibling;
+    const isExpanded = header.classList.contains("expanded");
+    
+    header.classList.toggle("expanded", !isExpanded);
+    content?.classList.toggle("expanded", !isExpanded);
+    content?.classList.toggle("collapsed", isExpanded);
+  });
+});
+
+// Inicializar estado no desktop (expandido) vs mobile (colapsado)
+const initSidebarState = () => {
+  const isMobile = window.innerWidth <= 900;
+  
+  document.querySelectorAll(".sidebar-card-header--toggle").forEach((header) => {
+    const content = header.nextElementSibling;
+    
+    if (isMobile) {
+      header.classList.remove("expanded");
+      content?.classList.add("collapsed");
+      content?.classList.remove("expanded");
+    } else {
+      header.classList.add("expanded");
+      content?.classList.remove("collapsed");
+      content?.classList.add("expanded");
+    }
+  });
+};
+
+// Chamar na inicialização e resize
+initSidebarState();
+window.addEventListener("resize", initSidebarState);
+
+// Filtro de ticker
+const renderTickerFilter = () => {
+  const filterList = document.getElementById("ticker-filter-list");
+  if (!filterList) return;
+  
+  const session = getSession();
+  const tickers = session.tickers || [];
+  
+  // Limpar items existentes (exceto "Todos")
+  filterList.querySelectorAll(".ticker-filter-item:not([data-ticker='all'])").forEach((el) => el.remove());
+  
+  // Adicionar tickers do usuário
+  tickers.forEach((ticker) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "ticker-filter-item";
+    btn.dataset.ticker = ticker;
+    btn.textContent = ticker;
+    btn.addEventListener("click", () => filterNewsByTicker(ticker));
+    filterList.appendChild(btn);
+  });
+  
+  // Event handler para "Todos"
+  filterList.querySelector("[data-ticker='all']")?.addEventListener("click", () => filterNewsByTicker("all"));
+};
+
+const filterNewsByTicker = (ticker) => {
+  activeTickerFilter = ticker;
+  
+  // Atualizar UI dos botões
+  document.querySelectorAll(".ticker-filter-item").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.ticker === ticker);
+  });
+  
+  // Filtrar cards de notícias
+  document.querySelectorAll(".news-ticker-card").forEach((card) => {
+    if (ticker === "all") {
+      card.style.display = "";
+    } else {
+      const cardTicker = card.querySelector(".news-ticker-code")?.textContent?.trim();
+      card.style.display = cardTicker === ticker ? "" : "none";
+    }
+  });
+  
+  // Mobile: fechar filtro após seleção
+  if (window.innerWidth <= 900) {
+    const filterHeader = document.getElementById("ticker-filter-toggle");
+    const filterContent = document.getElementById("ticker-filter-content");
+    filterHeader?.classList.remove("expanded");
+    filterContent?.classList.add("collapsed");
+    filterContent?.classList.remove("expanded");
+  }
+};
+
 // Mobile menu
 mobileMenuBtn?.addEventListener("click", () => {
   mobileMenuBtn.classList.toggle("active");
@@ -1617,9 +1891,6 @@ tickerInput?.addEventListener("blur", () => {
 
 // Add ticker button
 addTickerButton?.addEventListener("click", addTicker);
-
-// Calendar toggle
-calendarToggle?.addEventListener("click", toggleCalendar);
 
 // Calendar navigation
 calendarPrev?.addEventListener("click", prevMonth);

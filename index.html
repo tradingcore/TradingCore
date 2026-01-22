@@ -21,6 +21,63 @@
     <!-- Toast container para mensagens -->
     <div id="toast-container" class="toast-container"></div>
 
+    <!-- Modal de Login/Cadastro (estilo Amazon) -->
+    <div class="auth-modal-overlay hidden" id="auth-modal-overlay">
+      <div class="auth-modal" id="auth-modal">
+        <button type="button" class="auth-modal-close" id="auth-modal-close">✕</button>
+        
+        <!-- Tabs -->
+        <div class="auth-modal-tabs">
+          <button type="button" class="auth-modal-tab active" data-tab="login">Entrar</button>
+          <button type="button" class="auth-modal-tab" data-tab="signup">Criar conta</button>
+        </div>
+
+        <!-- Login Form -->
+        <div class="auth-modal-content" id="modal-login" data-tab-content="login">
+          <form id="modal-login-form" class="auth-modal-form">
+            <div class="form-group">
+              <label for="modal-login-email">Email</label>
+              <input type="email" id="modal-login-email" name="email" placeholder="seu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="modal-login-password">Senha</label>
+              <input type="password" id="modal-login-password" name="password" placeholder="••••••••" required />
+            </div>
+            <button type="submit" class="button button--full">Entrar</button>
+          </form>
+          <p class="auth-modal-footer">
+            Não tem conta? <a href="#" class="auth-modal-switch" data-switch="signup">Criar conta grátis</a>
+          </p>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="auth-modal-content hidden" id="modal-signup" data-tab-content="signup">
+          <form id="modal-signup-form" class="auth-modal-form">
+            <div class="form-group">
+              <label for="modal-signup-name">Nome completo</label>
+              <input type="text" id="modal-signup-name" name="name" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="modal-signup-email">Email</label>
+              <input type="email" id="modal-signup-email" name="email" placeholder="seu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="modal-signup-phone">Telefone</label>
+              <input type="tel" id="modal-signup-phone" name="phone" placeholder="(11) 99999-9999" required />
+            </div>
+            <div class="form-group">
+              <label for="modal-signup-password">Senha (mín. 8 caracteres)</label>
+              <input type="password" id="modal-signup-password" name="password" placeholder="••••••••" minlength="8" required />
+            </div>
+            <button type="submit" class="button button--full">Criar conta grátis</button>
+          </form>
+          <p class="auth-modal-footer">
+            Já tem conta? <a href="#" class="auth-modal-switch" data-switch="login">Fazer login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
     <!-- ============================================
          LANDING PAGE (VISITANTE NÃO LOGADO)
     ============================================= -->
@@ -38,8 +95,8 @@
             <a href="#demo">Demonstração</a>
           </nav>
           <div class="header-actions">
-            <a class="button button--ghost button--small" href="#acesso">Entrar</a>
-            <a class="button button--small" href="#acesso">Cadastrar</a>
+            <button class="button button--ghost button--small" id="btn-open-login">Entrar</button>
+            <button class="button button--small" id="btn-open-signup">Cadastrar</button>
           </div>
           <!-- Mobile menu button -->
           <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
@@ -57,8 +114,8 @@
         <a href="#para-quem">Para quem é</a>
         <a href="#demo">Demonstração</a>
         <div class="mobile-nav-actions">
-          <a class="button button--ghost" href="#acesso">Entrar</a>
-          <a class="button" href="#acesso">Cadastrar</a>
+          <button class="button button--ghost" id="btn-mobile-login">Entrar</button>
+          <button class="button" id="btn-mobile-signup">Cadastrar</button>
         </div>
       </nav>
 
@@ -77,7 +134,7 @@
               Plano de <span class="price-highlight">R$ 24,90</span> gratuito por tempo limitado.
             </p>
             <div class="cta">
-              <a class="button" href="#acesso">Teste grátis</a>
+              <button class="button" id="btn-hero-signup">Teste grátis</button>
               <a class="button button--link" href="#como-funciona">Ver como funciona</a>
             </div>
           </div>
@@ -397,12 +454,29 @@
             <div class="news-layout">
               <!-- SIDEBAR ESQUERDA: Filtros -->
               <aside class="news-sidebar">
+                <!-- Filtro por Ticker -->
+                <div class="sidebar-card">
+                  <div class="sidebar-card-header sidebar-card-header--toggle" id="ticker-filter-toggle">
+                    <span>🎯 Filtrar por ativo</span>
+                    <span class="sidebar-toggle-arrow">▼</span>
+                  </div>
+                  <div class="sidebar-card-content" id="ticker-filter-content">
+                    <div class="ticker-filter-list" id="ticker-filter-list">
+                      <button type="button" class="ticker-filter-item active" data-ticker="all">
+                        Todos os ativos
+                      </button>
+                      <!-- Tickers serão adicionados via JS -->
+                    </div>
+                  </div>
+                </div>
+
                 <!-- Calendário -->
                 <div class="sidebar-card">
-                  <div class="sidebar-card-header">
+                  <div class="sidebar-card-header sidebar-card-header--toggle" id="calendar-toggle">
                     <span>📅 Calendário</span>
+                    <span class="sidebar-toggle-arrow">▼</span>
                   </div>
-                  <div class="news-calendar-container" id="calendar-container">
+                  <div class="sidebar-card-content" id="calendar-container">
                     <div class="news-calendar-header">
                       <button type="button" class="calendar-nav-btn" id="calendar-prev">◀</button>
                       <span class="calendar-month-year" id="calendar-month-year">Janeiro 2026</span>
@@ -424,6 +498,7 @@
                       <span class="legend-item"><span class="legend-dot legend-dot--neutral"></span> Neutro</span>
                     </div>
                   </div>
+                </div>
                 </div>
 
                 <!-- Status do Mercado -->
