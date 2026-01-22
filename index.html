@@ -382,13 +382,45 @@
                 </h2>
               </div>
 
-              <!-- Seletor de data -->
-              <div class="news-date-selector">
-                <label for="news-date-input">Selecionar data:</label>
-                <input type="date" id="news-date-input" />
-                <button type="button" class="button button--small" id="load-news-btn">
-                  Carregar
-                </button>
+              <!-- Calendário de histórico -->
+              <div class="news-calendar-container">
+                <div class="news-calendar-header">
+                  <button type="button" class="calendar-nav-btn" id="calendar-prev">◀</button>
+                  <span class="calendar-month-year" id="calendar-month-year">Janeiro 2026</span>
+                  <button type="button" class="calendar-nav-btn" id="calendar-next">▶</button>
+                </div>
+                <div class="news-calendar-grid">
+                  <div class="calendar-weekday">D</div>
+                  <div class="calendar-weekday">S</div>
+                  <div class="calendar-weekday">T</div>
+                  <div class="calendar-weekday">Q</div>
+                  <div class="calendar-weekday">Q</div>
+                  <div class="calendar-weekday">S</div>
+                  <div class="calendar-weekday">S</div>
+                  <div id="calendar-days" class="calendar-days"></div>
+                </div>
+                <div class="calendar-legend">
+                  <span class="legend-item"><span class="legend-dot legend-dot--positive"></span> Positivo</span>
+                  <span class="legend-item"><span class="legend-dot legend-dot--negative"></span> Negativo</span>
+                  <span class="legend-item"><span class="legend-dot legend-dot--neutral"></span> Neutro</span>
+                </div>
+              </div>
+
+              <!-- Card de Destaque do Dia -->
+              <div id="destaque-container" class="destaque-container hidden">
+                <div class="destaque-card">
+                  <div class="destaque-header">
+                    <span class="destaque-label">⭐ DESTAQUE DO DIA</span>
+                    <span class="destaque-score" id="destaque-score">--</span>
+                  </div>
+                  <div class="destaque-ticker" id="destaque-ticker">--</div>
+                  <div class="destaque-titulo" id="destaque-titulo">--</div>
+                  <div class="destaque-resumo" id="destaque-resumo">--</div>
+                  <div class="destaque-sentimento" id="destaque-sentimento">
+                    <span class="destaque-sentimento-icon">--</span>
+                    <span class="destaque-sentimento-text">--</span>
+                  </div>
+                </div>
               </div>
 
               <!-- Container das notícias -->

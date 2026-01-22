@@ -70,7 +70,7 @@ def carregar_usuarios_firestore():
         return pd.DataFrame()
 
 
-def salvar_noticias_usuario(uid, resumos, consolidadas, precos, periodo_noticias=None):
+def salvar_noticias_usuario(uid, resumos, consolidadas, precos, periodo_noticias=None, analises=None, sentimento_medio=None):
     """
     Salva as notícias processadas para um usuário no Firestore.
     
@@ -80,6 +80,8 @@ def salvar_noticias_usuario(uid, resumos, consolidadas, precos, periodo_noticias
         consolidadas: Dict {ticker: {'positivo': str, 'negativo': str}}
         precos: Dict {ticker: {preco_fechamento, variacao_percentual, sucesso, ...}}
         periodo_noticias: Tuple (data_inicio, data_fim) do período das notícias
+        analises: Lista de análises para identificar o destaque
+        sentimento_medio: Dict {ticker: sentimento_medio} para histórico
     """
     try:
         db = _init_firestore()
@@ -106,6 +108,16 @@ def salvar_noticias_usuario(uid, resumos, consolidadas, precos, periodo_noticias
                 "ate": periodo_noticias[1]
             }
         
+        # Identificar destaque do dia (notícia mais relevante)
+        if analises:
+            destaque = _identificar_destaque(analises)
+            if destaque:
+                dados["destaque"] = destaque
+        
+        # Salvar sentimento médio por ticker para histórico
+        if sentimento_medio:
+            dados["sentimento_historico"] = sentimento_medio
+        
         # Salvar no Firestore
         news_ref.set(dados, merge=True)
         
@@ -115,6 +127,40 @@ def salvar_noticias_usuario(uid, resumos, consolidadas, precos, periodo_noticias
     except Exception as e:
         print(f"  ✗ Erro ao salvar notícias no Firestore: {e}")
         return False
+
+
+def _identificar_destaque(analises):
+    """
+    Identifica a notícia mais relevante para ser o destaque do dia.
+    
+    Args:
+        analises: Lista de análises com relevancia_score e sentimento
+        
+    Returns:
+        Dict com dados do destaque ou None
+    """
+    if not analises:
+        return None
+    
+    # Filtrar apenas análises relevantes
+    relevantes = [a for a in analises if a.get('relevante', False)]
+    
+    if not relevantes:
+        return None
+    
+    # Ordenar por relevância (maior primeiro)
+    ordenadas = sorted(relevantes, key=lambda x: x.get('relevancia_score', 0), reverse=True)
+    
+    # Pegar a mais relevante
+    top = ordenadas[0]
+    
+    return {
+        "ticker": top.get('ticker', ''),
+        "titulo": top.get('titulo', ''),
+        "resumo": top.get('resumo', ''),
+        "relevancia_score": top.get('relevancia_score', 0),
+        "sentimento": top.get('sentimento', 0)
+    }
 
 
 def buscar_uid_por_email(email):

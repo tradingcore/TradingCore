@@ -46,6 +46,25 @@ const newsDateBadge = document.getElementById("news-date");
 const newsDateInput = document.getElementById("news-date-input");
 const loadNewsBtn = document.getElementById("load-news-btn");
 
+// DOM Elements - Destaque
+const destaqueContainer = document.getElementById("destaque-container");
+const destaqueScore = document.getElementById("destaque-score");
+const destaqueTicker = document.getElementById("destaque-ticker");
+const destaqueTitulo = document.getElementById("destaque-titulo");
+const destaqueResumo = document.getElementById("destaque-resumo");
+const destaqueSentimento = document.getElementById("destaque-sentimento");
+
+// DOM Elements - Calendar
+const calendarMonthYear = document.getElementById("calendar-month-year");
+const calendarDays = document.getElementById("calendar-days");
+const calendarPrev = document.getElementById("calendar-prev");
+const calendarNext = document.getElementById("calendar-next");
+
+// Calendar State
+let currentCalendarMonth = new Date().getMonth();
+let currentCalendarYear = new Date().getFullYear();
+let availableNewsDates = new Map(); // Map<dateStr, sentimentAvg>
+
 // DOM Elements - Dashboard Content
 const welcomeName = document.getElementById("welcome-name");
 const tickerInput = document.getElementById("ticker-input");
@@ -546,9 +565,13 @@ const getTodayDateStr = () => {
   return `${year}-${month}-${day}`;
 };
 
-const loadTodayNews = () => {
+const loadTodayNews = async () => {
   const today = getTodayDateStr();
-  if (newsDateInput) newsDateInput.value = today;
+  
+  // Carregar datas disponíveis para o calendário
+  await loadAvailableNewsDates();
+  
+  // Carregar notícias de hoje
   loadNewsForDate(today);
 };
 
@@ -591,12 +614,15 @@ const clearNewsContent = () => {
   // Remove all news cards and periodo info, keep empty state
   const newsCards = newsContainer.querySelectorAll(".news-ticker-card, .news-periodo-info");
   newsCards.forEach((card) => card.remove());
+  
+  // Hide destaque
+  if (destaqueContainer) destaqueContainer.classList.add("hidden");
 };
 
-const renderNews = (data) => {
+const renderNews = async (data) => {
   if (!newsContainer) return;
 
-  const { resumos, consolidadas, precos, periodo_noticias } = data;
+  const { resumos, consolidadas, precos, periodo_noticias, destaque } = data;
   
   // Check if there's any content
   const hasResumos = resumos && Object.keys(resumos).length > 0;
@@ -609,6 +635,11 @@ const renderNews = (data) => {
 
   if (emptyNews) emptyNews.classList.add("hidden");
 
+  // Renderizar destaque do dia
+  if (destaque && destaque.ticker) {
+    renderDestaque(destaque);
+  }
+
   // Mostrar período das notícias se disponível
   if (periodo_noticias && periodo_noticias.de && periodo_noticias.ate) {
     const periodoDiv = document.createElement("div");
@@ -619,6 +650,9 @@ const renderNews = (data) => {
     `;
     newsContainer.appendChild(periodoDiv);
   }
+
+  // Buscar histórico de sentimento para cada ticker
+  const sentimentoHistorico = await getSentimentHistory();
 
   // Get all tickers (union of resumos and consolidadas)
   const tickers = new Set([
@@ -631,10 +665,243 @@ const renderNews = (data) => {
     const resumo = resumos?.[ticker] || "";
     const consolidado = consolidadas?.[ticker] || {};
     const preco = precos?.[ticker] || {};
+    const historico = sentimentoHistorico[ticker] || [];
     
-    const card = createNewsCard(ticker, resumo, consolidado, preco);
+    const card = createNewsCard(ticker, resumo, consolidado, preco, historico);
     newsContainer.appendChild(card);
   });
+};
+
+const getSentimentHistory = async () => {
+  const user = auth.currentUser;
+  if (!user) return {};
+
+  try {
+    // Buscar os últimos 7 dias de notícias
+    const newsRef = db.collection("users").doc(user.uid).collection("news")
+      .orderBy("data", "desc")
+      .limit(7);
+    
+    const snapshot = await newsRef.get();
+    
+    // Organizar por ticker
+    const porTicker = {};
+    
+    snapshot.forEach((doc) => {
+      const data = doc.data();
+      const dateStr = doc.id;
+      const sentimentoHist = data.sentimento_historico || {};
+      
+      // Para cada ticker nesse dia
+      Object.entries(sentimentoHist).forEach(([ticker, sentimento]) => {
+        if (!porTicker[ticker]) {
+          porTicker[ticker] = [];
+        }
+        porTicker[ticker].push({
+          data: dateStr,
+          sentimento: sentimento
+        });
+      });
+    });
+    
+    // Ordenar por data (mais antigo primeiro)
+    Object.keys(porTicker).forEach((ticker) => {
+      porTicker[ticker].sort((a, b) => a.data.localeCompare(b.data));
+    });
+    
+    return porTicker;
+  } catch (error) {
+    console.error("Erro ao buscar histórico de sentimento:", error);
+    return {};
+  }
+};
+
+const renderDestaque = (destaque) => {
+  if (!destaqueContainer) return;
+  
+  const { ticker, titulo, resumo, relevancia_score, sentimento } = destaque;
+  
+  // Mostrar container
+  destaqueContainer.classList.remove("hidden");
+  
+  // Preencher dados
+  if (destaqueScore) {
+    destaqueScore.textContent = `${(relevancia_score || 0).toFixed(1)}/10`;
+  }
+  
+  if (destaqueTicker) {
+    destaqueTicker.textContent = ticker || "--";
+  }
+  
+  if (destaqueTitulo) {
+    destaqueTitulo.textContent = titulo || "--";
+  }
+  
+  if (destaqueResumo) {
+    destaqueResumo.textContent = resumo || "--";
+  }
+  
+  if (destaqueSentimento) {
+    const sent = sentimento || 0;
+    let icon, text, className;
+    
+    if (sent > 0.3) {
+      icon = "🟢";
+      text = "Positivo";
+      className = "destaque-sentimento--positivo";
+    } else if (sent < -0.3) {
+      icon = "🔴";
+      text = "Negativo";
+      className = "destaque-sentimento--negativo";
+    } else {
+      icon = "🟡";
+      text = "Neutro";
+      className = "destaque-sentimento--neutro";
+    }
+    
+    destaqueSentimento.className = `destaque-sentimento ${className}`;
+    destaqueSentimento.innerHTML = `
+      <span class="destaque-sentimento-icon">${icon}</span>
+      <span class="destaque-sentimento-text">${text} (${sent.toFixed(2)})</span>
+    `;
+  }
+};
+
+// ========================================
+// CALENDAR FUNCTIONS
+// ========================================
+const MONTH_NAMES = [
+  "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+  "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+];
+
+const loadAvailableNewsDates = async () => {
+  const user = auth.currentUser;
+  if (!user) return;
+
+  try {
+    // Buscar todos os documentos de notícias do usuário
+    const newsRef = db.collection("users").doc(user.uid).collection("news");
+    const snapshot = await newsRef.get();
+    
+    availableNewsDates.clear();
+    
+    snapshot.forEach((doc) => {
+      const data = doc.data();
+      const dateStr = doc.id; // formato YYYY-MM-DD
+      
+      // Calcular sentimento médio do dia
+      let sentimentoMedio = 0;
+      const sentimentoHist = data.sentimento_historico;
+      
+      if (sentimentoHist && Object.keys(sentimentoHist).length > 0) {
+        const valores = Object.values(sentimentoHist);
+        sentimentoMedio = valores.reduce((a, b) => a + b, 0) / valores.length;
+      } else if (data.destaque && data.destaque.sentimento !== undefined) {
+        sentimentoMedio = data.destaque.sentimento;
+      }
+      
+      availableNewsDates.set(dateStr, sentimentoMedio);
+    });
+    
+    renderCalendar();
+  } catch (error) {
+    console.error("Erro ao carregar datas disponíveis:", error);
+  }
+};
+
+const renderCalendar = () => {
+  if (!calendarDays || !calendarMonthYear) return;
+  
+  // Atualizar título
+  calendarMonthYear.textContent = `${MONTH_NAMES[currentCalendarMonth]} ${currentCalendarYear}`;
+  
+  // Limpar dias
+  calendarDays.innerHTML = "";
+  
+  // Primeiro dia do mês
+  const firstDay = new Date(currentCalendarYear, currentCalendarMonth, 1);
+  const startingDay = firstDay.getDay(); // 0 = Domingo
+  
+  // Último dia do mês
+  const lastDay = new Date(currentCalendarYear, currentCalendarMonth + 1, 0);
+  const totalDays = lastDay.getDate();
+  
+  // Dias vazios antes do primeiro dia
+  for (let i = 0; i < startingDay; i++) {
+    const emptyDay = document.createElement("div");
+    emptyDay.className = "calendar-day calendar-day--empty";
+    calendarDays.appendChild(emptyDay);
+  }
+  
+  // Dias do mês
+  const today = new Date();
+  const todayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
+  
+  for (let day = 1; day <= totalDays; day++) {
+    const dateStr = `${currentCalendarYear}-${String(currentCalendarMonth + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+    
+    const dayElement = document.createElement("div");
+    dayElement.className = "calendar-day";
+    dayElement.textContent = day;
+    
+    // Verificar se é hoje
+    if (dateStr === todayStr) {
+      dayElement.classList.add("calendar-day--today");
+    }
+    
+    // Verificar se tem notícias nesse dia
+    if (availableNewsDates.has(dateStr)) {
+      dayElement.classList.add("calendar-day--has-news");
+      
+      // Adicionar indicador de sentimento
+      const sentimento = availableNewsDates.get(dateStr);
+      const indicator = document.createElement("span");
+      indicator.className = "calendar-day-indicator";
+      
+      if (sentimento > 0.2) {
+        indicator.classList.add("indicator--positive");
+      } else if (sentimento < -0.2) {
+        indicator.classList.add("indicator--negative");
+      } else {
+        indicator.classList.add("indicator--neutral");
+      }
+      
+      dayElement.appendChild(indicator);
+      
+      // Adicionar evento de clique
+      dayElement.addEventListener("click", () => {
+        // Marcar dia selecionado
+        document.querySelectorAll(".calendar-day--selected").forEach(el => el.classList.remove("calendar-day--selected"));
+        dayElement.classList.add("calendar-day--selected");
+        
+        // Carregar notícias desse dia
+        loadNewsForDate(dateStr);
+      });
+    } else {
+      dayElement.classList.add("calendar-day--disabled");
+    }
+    
+    calendarDays.appendChild(dayElement);
+  }
+};
+
+const prevMonth = () => {
+  currentCalendarMonth--;
+  if (currentCalendarMonth < 0) {
+    currentCalendarMonth = 11;
+    currentCalendarYear--;
+  }
+  renderCalendar();
+};
+
+const nextMonth = () => {
+  currentCalendarMonth++;
+  if (currentCalendarMonth > 11) {
+    currentCalendarMonth = 0;
+    currentCalendarYear++;
+  }
+  renderCalendar();
 };
 
 const formatDateRef = (dateStr) => {
@@ -643,7 +910,7 @@ const formatDateRef = (dateStr) => {
   return `${day}/${month}`;
 };
 
-const createNewsCard = (ticker, resumo, consolidado, preco) => {
+const createNewsCard = (ticker, resumo, consolidado, preco, sentimentoHistorico) => {
   const card = document.createElement("div");
   card.className = "news-ticker-card";
 
@@ -667,6 +934,12 @@ const createNewsCard = (ticker, resumo, consolidado, preco) => {
         <span class="${variacaoClass}">(${variacaoSinal}${variacao.toFixed(2)}%) ${variacaoDataHtml}</span>
       </div>
     `;
+  }
+  
+  // Gráfico de sentimento (se houver histórico)
+  let graficoHtml = "";
+  if (sentimentoHistorico && sentimentoHistorico.length > 1) {
+    graficoHtml = createSentimentChart(ticker, sentimentoHistorico);
   }
 
   // Executive summary
@@ -717,11 +990,95 @@ const createNewsCard = (ticker, resumo, consolidado, preco) => {
       <h3 class="news-ticker-code">${ticker}</h3>
       ${precoHtml}
     </div>
+    ${graficoHtml}
     ${resumoHtml}
     ${consolidadoHtml}
   `;
 
   return card;
+};
+
+const createSentimentChart = (ticker, historico) => {
+  if (!historico || historico.length < 2) return "";
+  
+  // Pegar últimos 7 dias
+  const dados = historico.slice(-7);
+  
+  // Calcular tendência
+  const primeiro = dados[0].sentimento;
+  const ultimo = dados[dados.length - 1].sentimento;
+  const tendencia = ultimo - primeiro;
+  
+  let tendenciaIcon, tendenciaText, tendenciaClass;
+  if (tendencia > 0.1) {
+    tendenciaIcon = "📈";
+    tendenciaText = "Melhorando";
+    tendenciaClass = "tendencia--positiva";
+  } else if (tendencia < -0.1) {
+    tendenciaIcon = "📉";
+    tendenciaText = "Piorando";
+    tendenciaClass = "tendencia--negativa";
+  } else {
+    tendenciaIcon = "➡️";
+    tendenciaText = "Estável";
+    tendenciaClass = "tendencia--neutra";
+  }
+  
+  // Criar pontos do gráfico
+  const maxSent = 1;
+  const minSent = -1;
+  const range = maxSent - minSent;
+  
+  const pontos = dados.map((d, i) => {
+    const x = (i / (dados.length - 1)) * 100;
+    const y = 100 - ((d.sentimento - minSent) / range) * 100;
+    return `${x},${y}`;
+  }).join(" ");
+  
+  // Criar labels de data
+  const labels = dados.map(d => formatDateRef(d.data)).join("");
+  
+  return `
+    <div class="sentiment-chart-container">
+      <div class="sentiment-chart-header">
+        <span class="sentiment-chart-title">📊 Sentimento (${dados.length} dias)</span>
+        <span class="sentiment-tendencia ${tendenciaClass}">
+          ${tendenciaIcon} ${tendenciaText}
+        </span>
+      </div>
+      <div class="sentiment-chart">
+        <svg viewBox="0 0 100 60" preserveAspectRatio="none" class="sentiment-chart-svg">
+          <!-- Linha de zero -->
+          <line x1="0" y1="30" x2="100" y2="30" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+          <!-- Área do gráfico -->
+          <polyline 
+            points="${pontos}"
+            fill="none"
+            stroke="url(#gradient-${ticker})"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <!-- Pontos -->
+          ${dados.map((d, i) => {
+            const x = (i / (dados.length - 1)) * 100;
+            const y = 100 - ((d.sentimento - minSent) / range) * 100;
+            const color = d.sentimento > 0.2 ? "#22c55e" : d.sentimento < -0.2 ? "#ef4444" : "#fbbf24";
+            return `<circle cx="${x}" cy="${y}" r="3" fill="${color}"/>`;
+          }).join("")}
+          <defs>
+            <linearGradient id="gradient-${ticker}" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#5b7cfa"/>
+              <stop offset="100%" stop-color="#22c55e"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="sentiment-chart-labels">
+          ${dados.map(d => `<span>${formatDateRef(d.data)}</span>`).join("")}
+        </div>
+      </div>
+    </div>
+  `;
 };
 
 // ========================================
@@ -907,13 +1264,10 @@ tickerInput?.addEventListener("blur", () => {
 // Add ticker button
 addTickerButton?.addEventListener("click", addTicker);
 
-// Load news button
-loadNewsBtn?.addEventListener("click", () => {
-  const dateStr = newsDateInput?.value;
-  if (dateStr) {
-    loadNewsForDate(dateStr);
-  }
-});
+// Load news button (removed - using calendar now)
+// Calendar navigation
+calendarPrev?.addEventListener("click", prevMonth);
+calendarNext?.addEventListener("click", nextMonth);
 
 // Profile form
 profileForm?.addEventListener("submit", async (event) => {

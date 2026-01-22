@@ -1041,6 +1041,336 @@ select:focus {
   font-weight: 600;
 }
 
+/* ========================================
+   DESTAQUE DO DIA
+======================================== */
+.destaque-container {
+  margin-bottom: 20px;
+}
+
+.destaque-card {
+  background: linear-gradient(135deg, rgba(91, 124, 250, 0.15), rgba(123, 108, 255, 0.1));
+  border: 2px solid var(--accent);
+  border-radius: 16px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.destaque-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-3), var(--accent-2));
+}
+
+.destaque-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.destaque-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+.destaque-score {
+  background: var(--accent);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.destaque-ticker {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent-green);
+  margin-bottom: 8px;
+}
+
+.destaque-titulo {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.destaque-resumo {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.destaque-sentimento {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.destaque-sentimento--positivo {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+}
+
+.destaque-sentimento--negativo {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+.destaque-sentimento--neutro {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+}
+
+.destaque-sentimento-icon {
+  font-size: 1rem;
+}
+
+.destaque-sentimento-text {
+  font-size: 0.85rem;
+}
+
+/* ========================================
+   CALENDAR
+======================================== */
+.news-calendar-container {
+  background: var(--surface-light);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.news-calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.calendar-month-year {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.calendar-nav-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.calendar-nav-btn:hover {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.news-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.calendar-weekday {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  padding: 8px 0;
+}
+
+.calendar-days {
+  display: contents;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  cursor: default;
+  position: relative;
+  transition: all 0.2s ease;
+  color: var(--muted);
+}
+
+.calendar-day--empty {
+  background: transparent;
+}
+
+.calendar-day--today {
+  border: 2px solid var(--accent);
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.calendar-day--has-news {
+  cursor: pointer;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.calendar-day--has-news:hover {
+  background: rgba(91, 124, 250, 0.2);
+  transform: scale(1.05);
+}
+
+.calendar-day--selected {
+  background: var(--accent) !important;
+  color: white !important;
+}
+
+.calendar-day--disabled {
+  opacity: 0.4;
+}
+
+.calendar-day-indicator {
+  position: absolute;
+  bottom: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.indicator--positive {
+  background: #22c55e;
+}
+
+.indicator--negative {
+  background: #ef4444;
+}
+
+.indicator--neutral {
+  background: #fbbf24;
+}
+
+.calendar-legend {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.legend-dot--positive {
+  background: #22c55e;
+}
+
+.legend-dot--negative {
+  background: #ef4444;
+}
+
+.legend-dot--neutral {
+  background: #fbbf24;
+}
+
+/* ========================================
+   SENTIMENT CHART
+======================================== */
+.sentiment-chart-container {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.sentiment-chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.sentiment-chart-title {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.sentiment-tendencia {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.tendencia--positiva {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+}
+
+.tendencia--negativa {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+.tendencia--neutra {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+}
+
+.sentiment-chart {
+  position: relative;
+}
+
+.sentiment-chart-svg {
+  width: 100%;
+  height: 60px;
+  display: block;
+}
+
+.sentiment-chart-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.sentiment-chart-labels span {
+  font-size: 0.65rem;
+  color: var(--muted);
+  opacity: 0.7;
+}
+
 .news-loading {
   display: flex;
   flex-direction: column;
@@ -1413,6 +1743,101 @@ select:focus {
     flex-wrap: wrap;
   }
 
+  /* Destaque mobile */
+  .destaque-card {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .destaque-header {
+    margin-bottom: 12px;
+  }
+
+  .destaque-label {
+    font-size: 0.7rem;
+  }
+
+  .destaque-score {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+  }
+
+  .destaque-ticker {
+    font-size: 1.2rem;
+  }
+
+  .destaque-titulo {
+    font-size: 0.95rem;
+  }
+
+  .destaque-resumo {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+  }
+
+  .destaque-sentimento {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  /* Calendar mobile */
+  .news-calendar-container {
+    padding: 14px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+
+  .news-calendar-header {
+    margin-bottom: 12px;
+  }
+
+  .calendar-month-year {
+    font-size: 0.9rem;
+  }
+
+  .calendar-nav-btn {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+
+  .news-calendar-grid {
+    gap: 2px;
+  }
+
+  .calendar-weekday {
+    font-size: 0.7rem;
+    padding: 6px 0;
+  }
+
+  .calendar-day {
+    font-size: 0.8rem;
+    border-radius: 6px;
+  }
+
+  .calendar-day-indicator {
+    width: 5px;
+    height: 5px;
+    bottom: 3px;
+  }
+
+  .calendar-legend {
+    gap: 10px;
+    margin-top: 12px;
+    padding-top: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .legend-item {
+    font-size: 0.7rem;
+    gap: 4px;
+  }
+
+  .legend-dot {
+    width: 6px;
+    height: 6px;
+  }
+
   .news-container {
     gap: 16px;
   }
@@ -1535,6 +1960,36 @@ select:focus {
 
   .field-hint {
     font-size: 0.7rem;
+  }
+
+  /* Sentiment chart mobile */
+  .sentiment-chart-container {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  .sentiment-chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .sentiment-chart-title {
+    font-size: 0.75rem;
+  }
+
+  .sentiment-tendencia {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+
+  .sentiment-chart-svg {
+    height: 50px;
+  }
+
+  .sentiment-chart-labels span {
+    font-size: 0.6rem;
   }
 }
 

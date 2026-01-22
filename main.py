@@ -173,10 +173,27 @@ def processar_usuario(usuario_dict, cache_analises, cache_resumos, precos_dados,
     # Filtrar apenas as análises consolidadas dos tickers do usuário
     consolidadas_usuario = {t: analises_consolidadas.get(t, {}) for t in tickers if t in analises_consolidadas}
 
+    # Calcular sentimento médio por ticker para histórico
+    sentimento_medio = {}
+    for ticker in tickers:
+        analises_ticker = cache_analises.get(ticker, [])
+        if analises_ticker:
+            sentimentos = [a.get('sentimento', 0) for a in analises_ticker if a.get('relevante', False)]
+            if sentimentos:
+                sentimento_medio[ticker] = sum(sentimentos) / len(sentimentos)
+
     # Salvar notícias no Firestore para acesso via site
     uid = buscar_uid_por_email(email)
     if uid and (resumo_executivo or consolidadas_usuario):
-        salvar_noticias_usuario(uid, resumo_executivo, consolidadas_usuario, precos_usuario, periodo_noticias)
+        salvar_noticias_usuario(
+            uid, 
+            resumo_executivo, 
+            consolidadas_usuario, 
+            precos_usuario, 
+            periodo_noticias,
+            todas_analises,  # Para identificar destaque
+            sentimento_medio  # Para histórico de sentimento
+        )
 
     # Gerar e enviar email
     try:
