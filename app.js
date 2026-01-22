@@ -1582,14 +1582,22 @@ const renderHeatmap = (highlightTicker = null) => {
     const topThreshold = marketCaps[Math.floor(marketCaps.length * 0.1)] || 0; // Top 10%
     const midThreshold = marketCaps[Math.floor(marketCaps.length * 0.3)] || 0; // Top 30%
     
+    // Filtrar ações válidas (sem NaN)
+    const acoesValidas = acoes.filter(acao => 
+      acao.price != null && !isNaN(acao.price) && 
+      acao.change != null && !isNaN(acao.change)
+    );
+    
+    if (acoesValidas.length === 0) continue;
+    
     html += `
       <div class="heatmap-sector">
         <div class="heatmap-sector-title">
           ${setor}
-          <span class="heatmap-sector-count">${acoes.length} ações</span>
+          <span class="heatmap-sector-count">${acoesValidas.length} ações</span>
         </div>
         <div class="heatmap-grid">
-          ${acoes.map(acao => {
+          ${acoesValidas.map(acao => {
             const colorClass = getHeatmapColorClass(acao.change);
             const highlightClass = highlightTicker === acao.ticker ? "heatmap-item--highlight" : "";
             const sizeClass = getSizeClass(acao.marketCap || 0, topThreshold, midThreshold);
@@ -1598,7 +1606,7 @@ const renderHeatmap = (highlightTicker = null) => {
             return `
               <div class="heatmap-item ${colorClass} ${sizeClass} ${highlightClass}" 
                    title="${acao.ticker}: R$ ${acao.price} (${sign}${acao.change.toFixed(2)}%) | Market Cap: ${marketCapFormatted}">
-                <span class="heatmap-ticker">${acao.ticker.replace(/\d+$/, "")}</span>
+                <span class="heatmap-ticker">${acao.ticker}</span>
                 <span class="heatmap-change">${sign}${acao.change.toFixed(1)}%</span>
               </div>
             `;
