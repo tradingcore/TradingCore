@@ -1203,6 +1203,11 @@ select:focus {
    RESPONSIVE - MOBILE FIRST
 ======================================== */
 @media (max-width: 768px) {
+  /* Base mobile adjustments */
+  .container {
+    padding: 0 16px;
+  }
+
   .nav {
     display: none;
   }
@@ -1215,8 +1220,34 @@ select:focus {
     display: flex;
   }
 
+  .header .container {
+    padding: 10px 16px;
+  }
+
+  .brand {
+    font-size: 1.1rem;
+    gap: 8px;
+  }
+
+  .brand-logo {
+    width: 32px;
+    height: 32px;
+  }
+
   .hero {
-    padding: 60px 0 50px;
+    padding: 50px 0 40px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .lead {
+    font-size: 0.95rem;
   }
 
   .cta {
@@ -1234,7 +1265,7 @@ select:focus {
   }
 
   .section {
-    padding: 50px 0;
+    padding: 40px 0;
   }
 
   .auth-forms {
@@ -1243,12 +1274,12 @@ select:focus {
 
   /* Dashboard mobile */
   .nav-dashboard {
-    gap: 4px;
+    gap: 2px;
   }
 
   .nav-dashboard-item {
     padding: 8px 10px;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 
   .nav-dashboard-item span {
@@ -1271,15 +1302,43 @@ select:focus {
   }
 
   .dashboard-main {
-    padding: 24px 0;
+    padding: 20px 0;
+  }
+
+  .dashboard-welcome {
+    margin-bottom: 20px;
+  }
+
+  .dashboard-welcome h1 {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+  }
+
+  .dashboard-welcome p {
+    font-size: 0.9rem;
   }
 
   .dashboard-card {
-    padding: 20px;
+    padding: 16px;
+    border-radius: 14px;
   }
 
   .dashboard-card--main {
-    padding: 20px;
+    padding: 16px;
+  }
+
+  .dashboard-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .dashboard-card-header {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+  }
+
+  .badge {
+    font-size: 0.7rem;
+    padding: 3px 8px;
   }
 
   .ticker-picker {
@@ -1303,9 +1362,26 @@ select:focus {
     display: none;
   }
 
+  .current-tickers {
+    margin-bottom: 24px;
+  }
+
+  .add-ticker-section {
+    padding-top: 20px;
+  }
+
+  .footer {
+    padding: 24px 0;
+  }
+
   .footer .container {
     flex-direction: column;
     text-align: center;
+    gap: 8px;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
   }
 
   /* News section mobile */
@@ -1313,10 +1389,17 @@ select:focus {
     flex-direction: column;
     align-items: stretch;
     gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+  }
+
+  .news-date-selector label {
+    font-size: 0.85rem;
   }
 
   .news-date-selector input[type="date"] {
     max-width: 100%;
+    padding: 10px 12px;
   }
 
   .news-date-selector .button {
@@ -1324,22 +1407,134 @@ select:focus {
     justify-content: center;
   }
 
+  .news-periodo-info {
+    padding: 12px 14px;
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+  }
+
+  .news-container {
+    gap: 16px;
+  }
+
   .news-ticker-card {
-    padding: 16px;
+    padding: 14px;
+    border-radius: 12px;
   }
 
   .news-ticker-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
   }
 
-  .news-resumo,
+  .news-ticker-code {
+    font-size: 1.15rem;
+  }
+
+  .news-ticker-preco {
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 0.85rem;
+  }
+
+  .preco-data {
+    font-size: 0.75rem;
+    margin-left: 4px;
+  }
+
+  .news-resumo {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  .news-resumo h4 {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+
+  .news-resumo p {
+    font-size: 0.85rem;
+    line-height: 1.55;
+  }
+
+  .news-consolidado {
+    gap: 10px;
+  }
+
   .news-bloco {
-    padding: 14px;
+    padding: 12px;
+  }
+
+  .news-bloco h5 {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
   }
 
   .news-bloco p {
+    font-size: 0.82rem;
+    line-height: 1.55;
     text-align: left;
+  }
+
+  /* Dashboard info card mobile */
+  .dashboard-info-card {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .dashboard-info-card h3 {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+
+  .dashboard-info-card ul {
+    font-size: 0.85rem;
+    padding-left: 16px;
+  }
+
+  .dashboard-info-card li {
+    margin-bottom: 6px;
+  }
+
+  /* Profile mobile */
+  .profile-header {
+    gap: 16px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .profile-avatar-large {
+    width: 56px;
+    height: 56px;
+    font-size: 1.4rem;
+  }
+
+  .profile-header-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .profile-header-info p {
+    font-size: 0.85rem;
+  }
+
+  .profile-form {
+    gap: 16px;
+  }
+
+  .profile-field label {
+    font-size: 0.8rem;
+  }
+
+  .profile-field input {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+  }
+
+  .field-hint {
+    font-size: 0.7rem;
   }
 }
 
