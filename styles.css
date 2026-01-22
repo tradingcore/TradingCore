@@ -1780,25 +1780,25 @@ select:focus {
 }
 
 .heatmap-legend-size--large {
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 18px;
 }
 
 .heatmap-legend-size--medium {
-  width: 24px;
+  width: 20px;
   height: 16px;
 }
 
 .heatmap-legend-size--small {
-  width: 14px;
+  width: 16px;
   height: 14px;
 }
 
 /* Container do mapa */
 .heatmap-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
 }
 
 .heatmap-container:empty {
@@ -1833,43 +1833,47 @@ select:focus {
 
 .heatmap-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
-  gap: 4px;
-  padding: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 6px;
+  padding: 12px;
 }
 
 /* Item individual */
 .heatmap-item {
-  aspect-ratio: 1.3;
+  aspect-ratio: 1.2;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: transform 0.15s, box-shadow 0.15s;
-  padding: 4px;
+  padding: 6px;
+  min-height: 50px;
   /* Tamanho padrão (pequeno) */
   grid-column: span 1;
   grid-row: span 1;
 }
 
-/* Tamanhos baseados no market cap */
+/* Tamanhos baseados no market cap - mais sutis */
 .heatmap-item--large {
-  grid-column: span 2;
-  grid-row: span 2;
-  aspect-ratio: 1;
-}
-
-.heatmap-item--medium {
   grid-column: span 2;
   grid-row: span 1;
   aspect-ratio: 2;
+  min-height: 70px;
+}
+
+.heatmap-item--medium {
+  grid-column: span 1;
+  grid-row: span 1;
+  aspect-ratio: 1.2;
+  min-height: 60px;
 }
 
 .heatmap-item--small {
   grid-column: span 1;
   grid-row: span 1;
+  min-height: 50px;
 }
 
 .heatmap-item:hover {
@@ -1885,27 +1889,27 @@ select:focus {
 
 .heatmap-ticker {
   font-weight: 700;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   color: white;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .heatmap-item--large .heatmap-ticker {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .heatmap-item--medium .heatmap-ticker {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 .heatmap-change {
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .heatmap-item--large .heatmap-change {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
 }
 
 .heatmap-item--medium .heatmap-change {
