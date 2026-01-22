@@ -324,23 +324,48 @@
                 <h2>👤 Meu Perfil</h2>
               </div>
 
-              <div class="profile-info">
+              <div class="profile-header">
                 <div class="profile-avatar-large" id="profile-avatar">U</div>
-                <div class="profile-details">
-                  <div class="profile-item">
-                    <span class="profile-label">Nome</span>
-                    <span class="profile-value" id="profile-name">-</span>
-                  </div>
-                  <div class="profile-item">
-                    <span class="profile-label">E-mail</span>
-                    <span class="profile-value" id="profile-email">-</span>
-                  </div>
+                <div class="profile-header-info">
+                  <h3 id="profile-display-name">Usuário</h3>
+                  <p id="profile-display-email">usuario@email.com</p>
                 </div>
               </div>
 
-              <div class="profile-actions">
-                <p class="form-note">Para alterar seus dados, entre em contato pelo email contato@tradingcore.com.br</p>
-              </div>
+              <form id="profile-form" class="profile-form">
+                <div class="profile-field">
+                  <label for="profile-name">Nome completo</label>
+                  <input type="text" id="profile-name" name="name" placeholder="Seu nome" />
+                </div>
+
+                <div class="profile-field">
+                  <label for="profile-email">E-mail</label>
+                  <input type="email" id="profile-email" name="email" disabled />
+                  <span class="field-hint">O e-mail não pode ser alterado</span>
+                </div>
+
+                <div class="profile-field">
+                  <label for="profile-phone">Telefone com WhatsApp</label>
+                  <input type="tel" id="profile-phone" name="phone" placeholder="(11) 99999-9999" />
+                </div>
+
+                <div class="profile-field">
+                  <label for="profile-address">Endereço</label>
+                  <input type="text" id="profile-address" name="address" placeholder="Seu endereço" />
+                </div>
+
+                <div class="profile-field">
+                  <label for="profile-birthdate">Data de nascimento</label>
+                  <input type="date" id="profile-birthdate" name="birthdate" disabled />
+                  <span class="field-hint">A data de nascimento não pode ser alterada</span>
+                </div>
+
+                <div class="profile-actions">
+                  <button type="submit" class="button" id="save-profile-btn">
+                    Salvar alterações
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -354,6 +379,6 @@
       </footer>
     </div>
 
-    <script src="app.js?v=6"></script>
+    <script src="app.js?v=7"></script>
   </body>
 </html>

@@ -5,6 +5,9 @@ const TOKEN_KEY = "tc_token";
 const EMAIL_KEY = "tc_email";
 const NAME_KEY = "tc_name";
 const TICKERS_KEY = "tc_tickers";
+const PHONE_KEY = "tc_phone";
+const ADDRESS_KEY = "tc_address";
+const BIRTHDATE_KEY = "tc_birthdate";
 
 // DOM Elements - Views
 const landingPage = document.getElementById("landing-page");
@@ -39,8 +42,15 @@ const tickerCount = document.getElementById("ticker-count");
 
 // DOM Elements - Profile
 const profileAvatar = document.getElementById("profile-avatar");
+const profileDisplayName = document.getElementById("profile-display-name");
+const profileDisplayEmail = document.getElementById("profile-display-email");
+const profileForm = document.getElementById("profile-form");
 const profileName = document.getElementById("profile-name");
 const profileEmail = document.getElementById("profile-email");
+const profilePhone = document.getElementById("profile-phone");
+const profileAddress = document.getElementById("profile-address");
+const profileBirthdate = document.getElementById("profile-birthdate");
+const saveProfileBtn = document.getElementById("save-profile-btn");
 
 // State
 const tickerCatalog = new Map();
@@ -88,11 +98,14 @@ const setLoading = (button, isLoading) => {
 // ========================================
 // SESSION MANAGEMENT
 // ========================================
-const setSession = (token, email, name = "", tickers = []) => {
+const setSession = (token, email, userData = {}) => {
   localStorage.setItem(TOKEN_KEY, token);
   localStorage.setItem(EMAIL_KEY, email);
-  if (name) localStorage.setItem(NAME_KEY, name);
-  localStorage.setItem(TICKERS_KEY, JSON.stringify(tickers));
+  if (userData.name) localStorage.setItem(NAME_KEY, userData.name);
+  if (userData.tickers !== undefined) localStorage.setItem(TICKERS_KEY, JSON.stringify(userData.tickers || []));
+  if (userData.phone !== undefined) localStorage.setItem(PHONE_KEY, userData.phone);
+  if (userData.address !== undefined) localStorage.setItem(ADDRESS_KEY, userData.address);
+  if (userData.birthdate !== undefined) localStorage.setItem(BIRTHDATE_KEY, userData.birthdate);
 };
 
 const clearSession = () => {
@@ -100,6 +113,9 @@ const clearSession = () => {
   localStorage.removeItem(EMAIL_KEY);
   localStorage.removeItem(NAME_KEY);
   localStorage.removeItem(TICKERS_KEY);
+  localStorage.removeItem(PHONE_KEY);
+  localStorage.removeItem(ADDRESS_KEY);
+  localStorage.removeItem(BIRTHDATE_KEY);
   userTickers.clear();
 };
 
@@ -108,6 +124,9 @@ const getSession = () => ({
   email: localStorage.getItem(EMAIL_KEY),
   name: localStorage.getItem(NAME_KEY),
   tickers: JSON.parse(localStorage.getItem(TICKERS_KEY) || "[]"),
+  phone: localStorage.getItem(PHONE_KEY) || "",
+  address: localStorage.getItem(ADDRESS_KEY) || "",
+  birthdate: localStorage.getItem(BIRTHDATE_KEY) || "",
 });
 
 const isLoggedIn = () => {
@@ -136,10 +155,17 @@ const showDashboard = () => {
   // Update welcome
   if (welcomeName) welcomeName.textContent = displayName;
   
-  // Update profile section
+  // Update profile header
   if (profileAvatar) profileAvatar.textContent = displayName.charAt(0).toUpperCase();
-  if (profileName) profileName.textContent = session.name || displayName;
-  if (profileEmail) profileEmail.textContent = session.email || "-";
+  if (profileDisplayName) profileDisplayName.textContent = displayName;
+  if (profileDisplayEmail) profileDisplayEmail.textContent = session.email || "-";
+  
+  // Fill profile form
+  if (profileName) profileName.value = session.name || "";
+  if (profileEmail) profileEmail.value = session.email || "";
+  if (profilePhone) profilePhone.value = session.phone || "";
+  if (profileAddress) profileAddress.value = session.address || "";
+  if (profileBirthdate) profileBirthdate.value = session.birthdate || "";
   
   // Load tickers from session
   userTickers.clear();
@@ -427,7 +453,6 @@ const requireScriptUrl = () => {
 // Função para buscar dados do usuário da planilha
 const fetchUserDataFromSheet = async (email) => {
   try {
-    // Tenta buscar via getPortfolio
     const session = getSession();
     if (!session.token) return null;
     
@@ -438,12 +463,53 @@ const fetchUserDataFromSheet = async (email) => {
     });
 
     if (result.ok && result.data) {
+      console.log("getPortfolio retornou:", result.data);
       return result.data;
     }
   } catch (error) {
-    console.log("getPortfolio não disponível, usando dados do login");
+    console.log("getPortfolio não disponível:", error.message);
   }
   return null;
+};
+
+// Função para salvar os dados do usuário na storage local
+const saveUserDataToStorage = (data) => {
+  if (!data) return;
+  
+  if (data.name) localStorage.setItem(NAME_KEY, data.name);
+  if (data.phone !== undefined) localStorage.setItem(PHONE_KEY, data.phone);
+  if (data.address !== undefined) localStorage.setItem(ADDRESS_KEY, data.address);
+  if (data.birthdate !== undefined) localStorage.setItem(BIRTHDATE_KEY, data.birthdate);
+  
+  if (data.tickers !== undefined) {
+    const tickerArray = data.tickers
+      .split(",")
+      .map((t) => t.trim().toUpperCase())
+      .filter((t) => t);
+    localStorage.setItem(TICKERS_KEY, JSON.stringify(tickerArray));
+  }
+};
+
+// Função para atualizar o perfil no servidor
+const updateProfileOnServer = async (name, phone, address) => {
+  const session = getSession();
+  if (!session.token || !session.email) return false;
+
+  try {
+    const result = await postToScript({
+      action: "updateProfile",
+      token: session.token,
+      email: session.email,
+      name,
+      phone,
+      address,
+    });
+
+    return result.ok;
+  } catch (error) {
+    console.error("Erro ao atualizar perfil:", error);
+    return false;
+  }
 };
 
 // ========================================
@@ -516,7 +582,13 @@ signupForm?.addEventListener("submit", async (event) => {
       return;
     }
 
-    setSession(result.data.token, email, name, []);
+    setSession(result.data.token, email, {
+      name,
+      tickers: [],
+      phone,
+      address,
+      birthdate,
+    });
     signupForm.reset();
     showDashboard();
     showToast("🎉 Conta criada com sucesso!", "success", 5000);
@@ -558,41 +630,35 @@ loginForm?.addEventListener("submit", async (event) => {
     }
 
     // Pega dados da resposta do login
-    const name = result.data.name || "";
-    const tickersFromLogin = result.data.tickers || "";
-    
+    const loginData = result.data;
+    console.log("Login - Dados recebidos:", loginData);
+
     // Parse tickers
     let tickerArray = [];
-    if (tickersFromLogin) {
-      tickerArray = tickersFromLogin
+    if (loginData.tickers) {
+      tickerArray = loginData.tickers
         .split(",")
         .map((t) => t.trim().toUpperCase())
         .filter((t) => t);
     }
 
-    console.log("Login - Nome:", name, "Tickers:", tickerArray);
-
-    // Salva sessão com os tickers do login
-    setSession(result.data.token, email, name, tickerArray);
-    loginForm.reset();
+    // Salva sessão com todos os dados do login
+    setSession(loginData.token, email, {
+      name: loginData.name || "",
+      tickers: tickerArray,
+      phone: loginData.phone || "",
+      address: loginData.address || "",
+      birthdate: loginData.birthdate || "",
+    });
     
+    loginForm.reset();
     showToast("✓ Login realizado!", "success");
 
-    // Tenta buscar dados atualizados do servidor
+    // Tenta buscar dados atualizados do servidor (para ter certeza)
     const freshData = await fetchUserDataFromSheet(email);
     if (freshData) {
-      console.log("Dados do servidor:", freshData);
-      if (freshData.name) {
-        localStorage.setItem(NAME_KEY, freshData.name);
-      }
-      if (freshData.tickers) {
-        const freshTickers = freshData.tickers
-          .split(",")
-          .map((t) => t.trim().toUpperCase())
-          .filter((t) => t);
-        console.log("Tickers do servidor:", freshTickers);
-        localStorage.setItem(TICKERS_KEY, JSON.stringify(freshTickers));
-      }
+      console.log("Dados atualizados do servidor:", freshData);
+      saveUserDataToStorage(freshData);
     }
 
     // Mostra dashboard
@@ -650,6 +716,48 @@ tickerInput?.addEventListener("blur", () => {
 // Add ticker button
 addTickerButton?.addEventListener("click", addTicker);
 
+// Profile form
+profileForm?.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  const name = profileName?.value?.trim() || "";
+  const phone = profilePhone?.value?.trim() || "";
+  const address = profileAddress?.value?.trim() || "";
+
+  if (!name) {
+    showToast("O nome é obrigatório.", "error");
+    return;
+  }
+
+  if (saveProfileBtn) setLoading(saveProfileBtn, true);
+
+  try {
+    const success = await updateProfileOnServer(name, phone, address);
+
+    if (success) {
+      // Atualiza storage local
+      localStorage.setItem(NAME_KEY, name);
+      localStorage.setItem(PHONE_KEY, phone);
+      localStorage.setItem(ADDRESS_KEY, address);
+
+      // Atualiza displays
+      const displayName = name || getSession().email?.split("@")[0] || "Usuário";
+      if (headerUserAvatar) headerUserAvatar.textContent = displayName.charAt(0).toUpperCase();
+      if (welcomeName) welcomeName.textContent = displayName;
+      if (profileAvatar) profileAvatar.textContent = displayName.charAt(0).toUpperCase();
+      if (profileDisplayName) profileDisplayName.textContent = displayName;
+
+      showToast("Perfil atualizado com sucesso!", "success");
+    } else {
+      showToast("Erro ao salvar. Tente novamente.", "error");
+    }
+  } catch (error) {
+    showToast("Erro ao conectar com o servidor.", "error");
+  } finally {
+    if (saveProfileBtn) setLoading(saveProfileBtn, false);
+  }
+});
+
 // Close suggestions on outside click
 document.addEventListener("click", (e) => {
   if (!e.target.closest(".ticker-autocomplete")) {
@@ -668,21 +776,13 @@ const boot = async () => {
   if (isLoggedIn()) {
     // Tenta buscar dados atualizados do servidor
     const session = getSession();
+    console.log("Boot - Sessão atual:", session);
+    
     const freshData = await fetchUserDataFromSheet(session.email);
     
     if (freshData) {
       console.log("Boot - Dados do servidor:", freshData);
-      if (freshData.name) {
-        localStorage.setItem(NAME_KEY, freshData.name);
-      }
-      if (freshData.tickers) {
-        const freshTickers = freshData.tickers
-          .split(",")
-          .map((t) => t.trim().toUpperCase())
-          .filter((t) => t);
-        console.log("Boot - Tickers:", freshTickers);
-        localStorage.setItem(TICKERS_KEY, JSON.stringify(freshTickers));
-      }
+      saveUserDataToStorage(freshData);
     }
 
     showDashboard();

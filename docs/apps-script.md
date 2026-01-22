@@ -5,7 +5,7 @@ a carteira na planilha do Google Sheets.
 
 ## 1) Crie a planilha
 Crie uma planilha com a aba principal (ex: `Form_Responses`). A primeira linha deve
-ter estes cabeçalhos, nessa ordem:
+ter estes cabecalhos, nessa ordem:
 
 1. Carimbo de data/hora
 2. Qual seu nome completo?
@@ -55,11 +55,15 @@ function doPost(e) {
         return handleLogin(payload);
       case "savePortfolio":
         return handleSavePortfolio(payload);
+      case "getPortfolio":
+        return handleGetPortfolio(payload);
+      case "updateProfile":
+        return handleUpdateProfile(payload);
       default:
         return jsonOutput({ ok: false, error: "Acao invalida." });
     }
   } catch (error) {
-    return jsonOutput({ ok: false, error: "Erro no servidor." });
+    return jsonOutput({ ok: false, error: "Erro no servidor: " + error.message });
   }
 }
 
@@ -95,7 +99,14 @@ function handleSignup(data) {
 
   sheet.appendRow(row);
   const token = createToken(email);
-  return jsonOutput({ ok: true, data: { token } });
+  return jsonOutput({ 
+    ok: true, 
+    data: { 
+      token,
+      name: name,
+      tickers: ""
+    } 
+  });
 }
 
 function handleLogin(data) {
@@ -118,13 +129,29 @@ function handleLogin(data) {
     return jsonOutput({ ok: false, error: "Senha invalida." });
   }
 
+  const name = sheet.getRange(rowIndex, headerMap["Qual seu nome completo?"]).getValue();
+  const tickers = sheet.getRange(rowIndex, headerMap["Ticker"]).getValue();
+  const phone = sheet.getRange(rowIndex, headerMap["Telefone com WhatsApp"]).getValue();
+  const address = sheet.getRange(rowIndex, headerMap["Endereco"]).getValue();
+  const birthdate = sheet.getRange(rowIndex, headerMap["Data de nascimento"]).getValue();
+
   const token = createToken(email);
-  return jsonOutput({ ok: true, data: { token } });
+  return jsonOutput({ 
+    ok: true, 
+    data: { 
+      token,
+      name: name || "",
+      tickers: tickers || "",
+      phone: phone || "",
+      address: address || "",
+      birthdate: birthdate || ""
+    } 
+  });
 }
 
 function handleSavePortfolio(data) {
   const { token, email, tickers } = data;
-  if (!token || !email || !tickers) {
+  if (!token || !email) {
     return jsonOutput({ ok: false, error: "Dados incompletos." });
   }
 
@@ -139,8 +166,73 @@ function handleSavePortfolio(data) {
     return jsonOutput({ ok: false, error: "Conta nao encontrada." });
   }
 
-  sheet.getRange(rowIndex, headerMap["Ticker"]).setValue(tickers);
+  sheet.getRange(rowIndex, headerMap["Ticker"]).setValue(tickers || "");
   sheet.getRange(rowIndex, headerMap["Status da conta"]).setValue("Ativo");
+  return jsonOutput({ ok: true });
+}
+
+function handleGetPortfolio(data) {
+  const { token, email } = data;
+  if (!token || !email) {
+    return jsonOutput({ ok: false, error: "Dados incompletos." });
+  }
+
+  if (!validateToken(token, email)) {
+    return jsonOutput({ ok: false, error: "Sessao expirada." });
+  }
+
+  const sheet = getSheet();
+  const headerMap = getHeaderMap(sheet);
+  const rowIndex = findRowByEmail(sheet, headerMap, email);
+  if (!rowIndex) {
+    return jsonOutput({ ok: false, error: "Conta nao encontrada." });
+  }
+
+  const name = sheet.getRange(rowIndex, headerMap["Qual seu nome completo?"]).getValue();
+  const tickers = sheet.getRange(rowIndex, headerMap["Ticker"]).getValue();
+  const phone = sheet.getRange(rowIndex, headerMap["Telefone com WhatsApp"]).getValue();
+  const address = sheet.getRange(rowIndex, headerMap["Endereco"]).getValue();
+  const birthdate = sheet.getRange(rowIndex, headerMap["Data de nascimento"]).getValue();
+
+  return jsonOutput({ 
+    ok: true, 
+    data: { 
+      name: name || "",
+      tickers: tickers || "",
+      phone: phone || "",
+      address: address || "",
+      birthdate: birthdate || ""
+    } 
+  });
+}
+
+function handleUpdateProfile(data) {
+  const { token, email, name, phone, address } = data;
+  if (!token || !email) {
+    return jsonOutput({ ok: false, error: "Dados incompletos." });
+  }
+
+  if (!validateToken(token, email)) {
+    return jsonOutput({ ok: false, error: "Sessao expirada." });
+  }
+
+  const sheet = getSheet();
+  const headerMap = getHeaderMap(sheet);
+  const rowIndex = findRowByEmail(sheet, headerMap, email);
+  if (!rowIndex) {
+    return jsonOutput({ ok: false, error: "Conta nao encontrada." });
+  }
+
+  if (name !== undefined) {
+    sheet.getRange(rowIndex, headerMap["Qual seu nome completo?"]).setValue(name);
+  }
+  if (phone !== undefined) {
+    sheet.getRange(rowIndex, headerMap["Telefone com WhatsApp"]).setValue(phone);
+  }
+  if (address !== undefined) {
+    sheet.getRange(rowIndex, headerMap["Endereco"]).setValue(address);
+  }
+
   return jsonOutput({ ok: true });
 }
 
@@ -208,7 +300,7 @@ function createToken(email) {
     exp: Date.now() + CONFIG.TOKEN_TTL_MS,
   };
   PropertiesService.getScriptProperties().setProperty(
-    `token_${token}`,
+    "token_" + token,
     JSON.stringify(payload)
   );
   return token;
@@ -216,7 +308,7 @@ function createToken(email) {
 
 function validateToken(token, email) {
   const payload = PropertiesService.getScriptProperties().getProperty(
-    `token_${token}`
+    "token_" + token
   );
   if (!payload) {
     return false;
@@ -242,9 +334,24 @@ function jsonOutput(payload) {
 4. Quem tem acesso: "Qualquer pessoa".
 5. Copie a URL do Web App.
 
+**IMPORTANTE**: Sempre que atualizar o codigo, faca uma NOVA implantacao para que as mudancas tenham efeito!
+
 ## 4) Atualize o frontend
-No arquivo `app.js`, substitua `REPLACE_ME` pela URL do Web App.
+No arquivo app.js, substitua REPLACE_ME pela URL do Web App.
+
+## Endpoints disponiveis
+
+| Action | Descricao | Parametros |
+|--------|-----------|------------|
+| signup | Criar conta | name, email, phone, address, birthdate, password |
+| login | Fazer login | email, password |
+| savePortfolio | Salvar tickers | token, email, tickers |
+| getPortfolio | Buscar dados do usuario | token, email |
+| updateProfile | Atualizar perfil | token, email, name?, phone?, address? |
 
 ## Observacoes
 - Este backend e simples e atende ao MVP.
 - Senhas sao armazenadas como hash+sal, nunca em texto puro.
+- O login agora retorna name e tickers junto com o token.
+- A action getPortfolio permite buscar os dados a qualquer momento.
+- A action updateProfile permite editar nome, telefone e endereco.
