@@ -54,11 +54,187 @@ img {
 }
 
 /* ========================================
+   TICKER TAPE (Cotações)
+======================================== */
+.ticker-tape {
+  background: linear-gradient(90deg, #0d1929, #101d2f);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+  position: relative;
+  height: 32px;
+}
+
+.ticker-tape::before,
+.ticker-tape::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ticker-tape::before {
+  left: 0;
+  background: linear-gradient(90deg, #0d1929, transparent);
+}
+
+.ticker-tape::after {
+  right: 0;
+  background: linear-gradient(90deg, transparent, #0d1929);
+}
+
+.ticker-tape-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  white-space: nowrap;
+  animation: ticker-scroll 30s linear infinite;
+  gap: 32px;
+  padding: 0 20px;
+}
+
+.ticker-tape-content:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-tape-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.ticker-tape-symbol {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.ticker-tape-price {
+  color: var(--muted);
+}
+
+.ticker-tape-change {
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+}
+
+.ticker-tape-change--up {
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.15);
+}
+
+.ticker-tape-change--down {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.15);
+}
+
+.ticker-tape-change--neutral {
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.ticker-tape-separator {
+  color: var(--border);
+  opacity: 0.5;
+}
+
+.ticker-tape-loading {
+  color: var(--muted);
+  font-size: 0.75rem;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* ========================================
+   MARKET STATUS CARD
+======================================== */
+.market-status-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 16px;
+  background: var(--surface-light);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.market-status-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.market-status-indicator {
+  font-size: 0.8rem;
+  animation: blink 2s ease-in-out infinite;
+}
+
+.market-status-indicator.market-open {
+  color: #22c55e;
+}
+
+.market-status-indicator.market-closed {
+  color: #ef4444;
+}
+
+.market-status-indicator.market-holiday {
+  color: #fbbf24;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.market-status-text {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.market-next-holiday {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+}
+
+.holiday-label {
+  color: var(--muted);
+}
+
+.holiday-info {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* ========================================
    HEADER
 ======================================== */
 .header {
   position: sticky;
-  top: 0;
+  top: 32px; /* Height of ticker tape */
   background: linear-gradient(90deg, rgba(10, 18, 34, 0.98), rgba(10, 22, 40, 0.98));
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -1082,15 +1258,6 @@ select:focus {
   color: var(--accent);
 }
 
-.destaque-score {
-  background: var(--accent);
-  color: white;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 700;
-}
-
 .destaque-ticker {
   font-size: 1.4rem;
   font-weight: 700;
@@ -1577,6 +1744,47 @@ select:focus {
    RESPONSIVE - MOBILE FIRST
 ======================================== */
 @media (max-width: 768px) {
+  /* Ticker tape mobile */
+  .ticker-tape {
+    height: 28px;
+  }
+
+  .ticker-tape-content {
+    gap: 24px;
+    padding: 0 12px;
+  }
+
+  .ticker-tape-item {
+    font-size: 0.7rem;
+    gap: 6px;
+  }
+
+  .ticker-tape-change {
+    font-size: 0.65rem;
+    padding: 1px 5px;
+  }
+
+  .header {
+    top: 28px; /* Adjusted for mobile ticker tape height */
+  }
+
+  /* Market status card mobile */
+  .market-status-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 14px;
+  }
+
+  .market-status-text {
+    font-size: 0.8rem;
+  }
+
+  .market-next-holiday {
+    font-size: 0.75rem;
+    flex-wrap: wrap;
+  }
+
   /* Base mobile adjustments */
   .container {
     padding: 0 16px;
@@ -1799,11 +2007,6 @@ select:focus {
 
   .destaque-label {
     font-size: 0.7rem;
-  }
-
-  .destaque-score {
-    font-size: 0.75rem;
-    padding: 3px 8px;
   }
 
   .destaque-ticker {

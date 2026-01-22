@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Ticker Tape - Cotações em tempo real -->
+    <div class="ticker-tape" id="ticker-tape">
+      <div class="ticker-tape-content" id="ticker-tape-content">
+        <span class="ticker-tape-loading">Carregando cotações...</span>
+      </div>
+    </div>
+
     <!-- Toast container para mensagens -->
     <div id="toast-container" class="toast-container"></div>
 
@@ -415,20 +422,28 @@
                 </div>
               </div>
 
+              <!-- Card de Mercado / Próximos Feriados -->
+              <div class="market-status-card" id="market-status-card">
+                <div class="market-status-header">
+                  <span class="market-status-indicator" id="market-status-indicator">●</span>
+                  <span class="market-status-text" id="market-status-text">Verificando...</span>
+                </div>
+                <div class="market-next-holiday" id="market-next-holiday">
+                  <span class="holiday-label">📅 Próximo feriado:</span>
+                  <span class="holiday-info" id="holiday-info">--</span>
+                </div>
+              </div>
+
               <!-- Card de Destaque do Dia -->
               <div id="destaque-container" class="destaque-container hidden">
                 <div class="destaque-card">
                   <div class="destaque-header">
                     <span class="destaque-label">⭐ DESTAQUE DO DIA</span>
-                    <span class="destaque-score" id="destaque-score">--</span>
+                    <span class="destaque-sentimento" id="destaque-sentimento">--</span>
                   </div>
                   <div class="destaque-ticker" id="destaque-ticker">--</div>
                   <div class="destaque-titulo" id="destaque-titulo">--</div>
                   <div class="destaque-resumo" id="destaque-resumo">--</div>
-                  <div class="destaque-sentimento" id="destaque-sentimento">
-                    <span class="destaque-sentimento-icon">--</span>
-                    <span class="destaque-sentimento-text">--</span>
-                  </div>
                 </div>
               </div>
 

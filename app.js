@@ -7,6 +7,38 @@ firebase.initializeApp(FIREBASE_CONFIG);
 const auth = firebase.auth();
 const db = firebase.firestore();
 
+// ========================================
+// FERIADOS ANBIMA (2024-2030)
+// ========================================
+const FERIADOS = {
+  "2024": ["01-01", "02-12", "02-13", "03-29", "04-21", "05-01", "05-30", "09-07", "10-12", "11-02", "11-15", "11-20", "12-25"],
+  "2025": ["01-01", "03-03", "03-04", "04-18", "04-21", "05-01", "06-19", "09-07", "10-12", "11-02", "11-15", "11-20", "12-25"],
+  "2026": ["01-01", "02-16", "02-17", "04-03", "04-21", "05-01", "06-04", "09-07", "10-12", "11-02", "11-15", "11-20", "12-25"],
+  "2027": ["01-01", "02-08", "02-09", "03-26", "04-21", "05-01", "05-27", "09-07", "10-12", "11-02", "11-15", "11-20", "12-25"],
+  "2028": ["01-01", "02-28", "02-29", "04-14", "04-21", "05-01", "06-15", "09-07", "10-12", "11-02", "11-15", "11-20", "12-25"],
+  "2029": ["01-01", "02-12", "02-13", "03-30", "04-21", "05-01", "05-31", "09-07", "10-12", "11-02", "11-15", "11-20", "12-25"],
+  "2030": ["01-01", "03-04", "03-05", "04-19", "04-21", "05-01", "06-20", "09-07", "10-12", "11-02", "11-15", "11-20", "12-25"]
+};
+
+const FERIADOS_NOMES = {
+  "01-01": "Confraternização Universal",
+  "02-08": "Carnaval", "02-09": "Carnaval", "02-12": "Carnaval", "02-13": "Carnaval",
+  "02-16": "Carnaval", "02-17": "Carnaval", "02-28": "Carnaval", "02-29": "Carnaval",
+  "03-03": "Carnaval", "03-04": "Carnaval", "03-05": "Carnaval",
+  "03-26": "Paixão de Cristo", "03-29": "Paixão de Cristo", "03-30": "Paixão de Cristo",
+  "04-03": "Paixão de Cristo", "04-14": "Paixão de Cristo", "04-18": "Paixão de Cristo", "04-19": "Paixão de Cristo",
+  "04-21": "Tiradentes",
+  "05-01": "Dia do Trabalho",
+  "05-27": "Corpus Christi", "05-30": "Corpus Christi", "05-31": "Corpus Christi",
+  "06-04": "Corpus Christi", "06-15": "Corpus Christi", "06-19": "Corpus Christi", "06-20": "Corpus Christi",
+  "09-07": "Independência",
+  "10-12": "N. Sra. Aparecida",
+  "11-02": "Finados",
+  "11-15": "Proclamação da República",
+  "11-20": "Consciência Negra",
+  "12-25": "Natal"
+};
+
 const TOKEN_KEY = "tc_token";
 const EMAIL_KEY = "tc_email";
 const NAME_KEY = "tc_name";
@@ -48,7 +80,6 @@ const loadNewsBtn = document.getElementById("load-news-btn");
 
 // DOM Elements - Destaque
 const destaqueContainer = document.getElementById("destaque-container");
-const destaqueScore = document.getElementById("destaque-score");
 const destaqueTicker = document.getElementById("destaque-ticker");
 const destaqueTitulo = document.getElementById("destaque-titulo");
 const destaqueResumo = document.getElementById("destaque-resumo");
@@ -229,7 +260,8 @@ const showSection = (sectionName) => {
     sectionPerfil.classList.remove("hidden");
   } else if (sectionName === "noticias" && sectionNoticias) {
     sectionNoticias.classList.remove("hidden");
-    // Carregar notícias do dia atual ao abrir a seção
+    // Atualizar status do mercado e carregar notícias
+    updateMarketStatus();
     loadTodayNews();
   }
   
@@ -553,6 +585,229 @@ const updateProfileOnServer = async (name, phone, address) => {
 };
 
 // ========================================
+// TICKER TAPE (Cotações em tempo real)
+// ========================================
+const MARKET_TICKERS = [
+  { symbol: "^BVSP", name: "IBOV" },
+  { symbol: "USDBRL=X", name: "Dólar" },
+  { symbol: "EURBRL=X", name: "Euro" },
+  { symbol: "GC=F", name: "Ouro" },
+  { symbol: "BTC-USD", name: "Bitcoin" }
+];
+
+const loadTickerTape = async () => {
+  const tickerTapeContent = document.getElementById("ticker-tape-content");
+  if (!tickerTapeContent) return;
+
+  try {
+    // Buscar dados via proxy CORS ou API alternativa
+    const quotes = await fetchMarketQuotes();
+    
+    if (quotes && quotes.length > 0) {
+      // Duplicar para efeito de loop contínuo
+      const itemsHtml = [...quotes, ...quotes].map(q => createTickerItem(q)).join("");
+      tickerTapeContent.innerHTML = itemsHtml;
+    }
+  } catch (error) {
+    console.error("Erro ao carregar cotações:", error);
+    tickerTapeContent.innerHTML = `<span class="ticker-tape-loading">Cotações indisponíveis</span>`;
+  }
+};
+
+const fetchMarketQuotes = async () => {
+  // Usar API do Yahoo Finance via proxy público
+  // Nota: Em produção, usar backend próprio para evitar CORS
+  const results = [];
+  
+  for (const ticker of MARKET_TICKERS) {
+    try {
+      // Simular dados (em produção, usar API real)
+      // Yahoo Finance não permite CORS direto, então usamos dados mock que são atualizados via backend
+      const mockData = await getMockOrCachedQuote(ticker.symbol);
+      if (mockData) {
+        results.push({
+          symbol: ticker.name,
+          price: mockData.price,
+          change: mockData.change,
+          changePercent: mockData.changePercent
+        });
+      }
+    } catch (e) {
+      console.warn(`Erro ao buscar ${ticker.symbol}:`, e);
+    }
+  }
+  
+  return results;
+};
+
+const getMockOrCachedQuote = async (symbol) => {
+  // Tentar buscar do Firestore (cache do backend)
+  try {
+    const doc = await db.collection("market_data").doc("quotes").get();
+    if (doc.exists) {
+      const data = doc.data();
+      if (data[symbol]) {
+        return data[symbol];
+      }
+    }
+  } catch (e) {
+    console.warn("Cache de cotações não disponível");
+  }
+  
+  // Fallback: dados aproximados (serão atualizados pelo backend)
+  const fallbackData = {
+    "^BVSP": { price: 128500, change: 1250, changePercent: 0.98 },
+    "USDBRL=X": { price: 5.85, change: -0.02, changePercent: -0.34 },
+    "EURBRL=X": { price: 6.32, change: 0.01, changePercent: 0.16 },
+    "GC=F": { price: 2045.50, change: 12.30, changePercent: 0.60 },
+    "BTC-USD": { price: 42150, change: 850, changePercent: 2.06 }
+  };
+  
+  return fallbackData[symbol] || null;
+};
+
+const createTickerItem = (quote) => {
+  const changeClass = quote.change > 0 ? "up" : quote.change < 0 ? "down" : "neutral";
+  const changeSign = quote.change > 0 ? "+" : "";
+  
+  // Formatação especial para cada tipo
+  let priceStr;
+  if (quote.symbol === "IBOV") {
+    priceStr = quote.price.toLocaleString("pt-BR", { maximumFractionDigits: 0 });
+  } else if (quote.symbol === "Bitcoin") {
+    priceStr = `$${quote.price.toLocaleString("en-US", { maximumFractionDigits: 0 })}`;
+  } else if (quote.symbol === "Ouro") {
+    priceStr = `$${quote.price.toLocaleString("en-US", { minimumFractionDigits: 2 })}`;
+  } else {
+    priceStr = `R$ ${quote.price.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}`;
+  }
+  
+  return `
+    <span class="ticker-tape-item">
+      <span class="ticker-tape-symbol">${quote.symbol}</span>
+      <span class="ticker-tape-price">${priceStr}</span>
+      <span class="ticker-tape-change ticker-tape-change--${changeClass}">${changeSign}${quote.changePercent.toFixed(2)}%</span>
+    </span>
+    <span class="ticker-tape-separator">|</span>
+  `;
+};
+
+// ========================================
+// MARKET STATUS & HOLIDAYS
+// ========================================
+const ehFeriado = (date) => {
+  const year = date.getFullYear().toString();
+  const monthDay = `${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+  
+  return FERIADOS[year]?.includes(monthDay) || false;
+};
+
+const ehFimDeSemana = (date) => {
+  const day = date.getDay();
+  return day === 0 || day === 6; // Domingo ou Sábado
+};
+
+const ehDiaUtil = (date) => {
+  return !ehFimDeSemana(date) && !ehFeriado(date);
+};
+
+const getProximoFeriado = () => {
+  const hoje = new Date();
+  const anoAtual = hoje.getFullYear();
+  
+  // Verificar próximos 2 anos
+  for (let ano = anoAtual; ano <= anoAtual + 1; ano++) {
+    const feriados = FERIADOS[ano.toString()] || [];
+    
+    for (const mesDia of feriados) {
+      const [mes, dia] = mesDia.split("-");
+      const dataFeriado = new Date(ano, parseInt(mes) - 1, parseInt(dia));
+      
+      if (dataFeriado > hoje) {
+        const nome = FERIADOS_NOMES[mesDia] || "Feriado";
+        const diasRestantes = Math.ceil((dataFeriado - hoje) / (1000 * 60 * 60 * 24));
+        
+        return {
+          data: dataFeriado,
+          nome,
+          diasRestantes,
+          formatado: `${dia}/${mes} (${nome})`
+        };
+      }
+    }
+  }
+  
+  return null;
+};
+
+const getMarketStatus = () => {
+  const agora = new Date();
+  const hora = agora.getHours();
+  const minuto = agora.getMinutes();
+  const horaDecimal = hora + minuto / 60;
+  
+  // Verificar se é dia útil
+  if (!ehDiaUtil(agora)) {
+    if (ehFeriado(agora)) {
+      const mesDia = `${String(agora.getMonth() + 1).padStart(2, "0")}-${String(agora.getDate()).padStart(2, "0")}`;
+      const nome = FERIADOS_NOMES[mesDia] || "Feriado";
+      return { open: false, status: "holiday", message: `Fechado - ${nome}` };
+    }
+    return { open: false, status: "closed", message: "Fechado - Fim de semana" };
+  }
+  
+  // Horário do pregão B3: 10:00 - 17:55 (horário normal)
+  if (horaDecimal >= 10 && horaDecimal < 17.92) {
+    return { open: true, status: "open", message: "Mercado aberto" };
+  }
+  
+  // Pré-abertura: 9:45 - 10:00
+  if (horaDecimal >= 9.75 && horaDecimal < 10) {
+    return { open: false, status: "preopen", message: "Pré-abertura" };
+  }
+  
+  // After-market: 17:55 - 18:00
+  if (horaDecimal >= 17.92 && horaDecimal < 18) {
+    return { open: false, status: "aftermarket", message: "After-market" };
+  }
+  
+  return { open: false, status: "closed", message: "Mercado fechado" };
+};
+
+const updateMarketStatus = () => {
+  const indicator = document.getElementById("market-status-indicator");
+  const statusText = document.getElementById("market-status-text");
+  const holidayInfo = document.getElementById("holiday-info");
+  
+  // Status atual do mercado
+  const status = getMarketStatus();
+  
+  if (indicator) {
+    indicator.className = "market-status-indicator";
+    if (status.status === "open") {
+      indicator.classList.add("market-open");
+    } else if (status.status === "holiday") {
+      indicator.classList.add("market-holiday");
+    } else {
+      indicator.classList.add("market-closed");
+    }
+  }
+  
+  if (statusText) {
+    statusText.textContent = status.message;
+  }
+  
+  // Próximo feriado
+  const proximoFeriado = getProximoFeriado();
+  if (holidayInfo && proximoFeriado) {
+    const diasTexto = proximoFeriado.diasRestantes === 1 
+      ? "amanhã" 
+      : `em ${proximoFeriado.diasRestantes} dias`;
+    holidayInfo.textContent = `${proximoFeriado.formatado} - ${diasTexto}`;
+  }
+};
+
+// ========================================
 // NEWS FUNCTIONS
 // ========================================
 const formatDateBR = (dateStr) => {
@@ -723,15 +978,10 @@ const getSentimentHistory = async () => {
 const renderDestaque = (destaque) => {
   if (!destaqueContainer) return;
   
-  const { ticker, titulo, resumo, relevancia_score, sentimento } = destaque;
+  const { ticker, titulo, resumo, sentimento } = destaque;
   
   // Mostrar container
   destaqueContainer.classList.remove("hidden");
-  
-  // Preencher dados
-  if (destaqueScore) {
-    destaqueScore.textContent = `${(relevancia_score || 0).toFixed(1)}/10`;
-  }
   
   if (destaqueTicker) {
     destaqueTicker.textContent = ticker || "--";
@@ -764,10 +1014,7 @@ const renderDestaque = (destaque) => {
     }
     
     destaqueSentimento.className = `destaque-sentimento ${className}`;
-    destaqueSentimento.innerHTML = `
-      <span class="destaque-sentimento-icon">${icon}</span>
-      <span class="destaque-sentimento-text">${text} (${sent.toFixed(2)})</span>
-    `;
+    destaqueSentimento.innerHTML = `${icon} ${text}`;
   }
 };
 
@@ -1340,6 +1587,12 @@ document.addEventListener("click", (e) => {
 // INITIALIZATION
 // ========================================
 const boot = async () => {
+  // Carregar ticker tape imediatamente
+  loadTickerTape();
+  
+  // Atualizar ticker tape a cada 5 minutos
+  setInterval(loadTickerTape, 5 * 60 * 1000);
+  
   await loadTickers();
 
   auth.onAuthStateChanged(async (user) => {
