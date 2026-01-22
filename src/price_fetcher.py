@@ -31,7 +31,9 @@ def buscar_preco_e_variacao(ticker):
             return {
                 'preco_fechamento': None,
                 'variacao_percentual': None,
-                'data_referencia': None,
+                'data_preco': None,
+                'data_variacao_de': None,
+                'data_variacao_ate': None,
                 'sucesso': False
             }
         
@@ -39,18 +41,21 @@ def buscar_preco_e_variacao(ticker):
         preco_atual = hist['Close'].iloc[-1]
         preco_anterior = hist['Close'].iloc[-2]
         
-        # Pegar a data de referência (último dia útil)
-        data_referencia = hist.index[-1].strftime("%Y-%m-%d")
+        # Pegar as datas de referência
+        data_preco = hist.index[-1].strftime("%Y-%m-%d")  # Data do preço atual
+        data_anterior = hist.index[-2].strftime("%Y-%m-%d")  # Data do preço anterior (para variação)
         
         # Calcular variação percentual
         variacao_pct = ((preco_atual - preco_anterior) / preco_anterior) * 100
         
-        print(f"  ✓ {ticker}: R$ {preco_atual:.2f} ({variacao_pct:+.2f}%) - {data_referencia}")
+        print(f"  ✓ {ticker}: R$ {preco_atual:.2f} ({variacao_pct:+.2f}%) - Preço: {data_preco}, Var: {data_anterior}→{data_preco}")
         
         return {
             'preco_fechamento': float(preco_atual),
             'variacao_percentual': float(variacao_pct),
-            'data_referencia': data_referencia,
+            'data_preco': data_preco,           # Data do preço de fechamento
+            'data_variacao_de': data_anterior,   # Variação: de qual dia
+            'data_variacao_ate': data_preco,     # Variação: até qual dia
             'sucesso': True
         }
         
@@ -59,7 +64,9 @@ def buscar_preco_e_variacao(ticker):
         return {
             'preco_fechamento': None,
             'variacao_percentual': None,
-            'data_referencia': None,
+            'data_preco': None,
+            'data_variacao_de': None,
+            'data_variacao_ate': None,
             'sucesso': False
         }
 

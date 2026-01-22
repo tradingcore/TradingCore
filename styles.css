@@ -1021,6 +1021,26 @@ select:focus {
   gap: 20px;
 }
 
+.news-periodo-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  background: rgba(91, 124, 250, 0.1);
+  border: 1px solid rgba(91, 124, 250, 0.3);
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.news-periodo-label {
+  color: var(--muted);
+}
+
+.news-periodo-valor {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 .news-loading {
   display: flex;
   flex-direction: column;

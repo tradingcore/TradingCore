@@ -8,7 +8,7 @@ from .config import REMETENTE_EMAIL, REMETENTE_SENHA, SMTP_SERVER, SMTP_PORT
 from .utils import formatar_timestamp
 
 
-def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_dados=None, analises_consolidadas=None):
+def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_dados=None, analises_consolidadas=None, periodo_noticias=None):
     """
     Gera HTML formatado para o email com as análises de notícias.
 
@@ -16,8 +16,9 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_
         usuario: Dicionário com dados do usuário (nome, email, etc)
         analises_agrupadas: Lista de análises de todos os tickers
         resumo_executivo: Dicionário {ticker: resumo_compacto}
-        precos_dados: Dicionário {ticker: {preco_fechamento, variacao_percentual, sucesso}}
+        precos_dados: Dicionário {ticker: {preco_fechamento, variacao_percentual, sucesso, data_preco, data_variacao_de, data_variacao_ate}}
         analises_consolidadas: Dicionário {ticker: {'positivo': str, 'negativo': str}}
+        periodo_noticias: Tupla (data_inicio, data_fim) do período das notícias
 
     Returns:
         String com HTML formatado
@@ -283,8 +284,21 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_
             <p>Análise Diária</p>
             <p>Olá, {nome}!</p>
         </div>
-
-        <p class="intro">Aqui está o resumo das notícias mais relevantes sobre suas ações nas últimas 24 horas:</p>
+"""
+    
+    # Formatar período das notícias
+    periodo_texto = "nas últimas 24 horas"
+    if periodo_noticias:
+        try:
+            from datetime import datetime
+            dt_inicio = datetime.strptime(periodo_noticias[0], "%Y-%m-%d")
+            dt_fim = datetime.strptime(periodo_noticias[1], "%Y-%m-%d")
+            periodo_texto = f"de {dt_inicio.strftime('%d/%m/%Y')} a {dt_fim.strftime('%d/%m/%Y')}"
+        except:
+            pass
+    
+    html += f"""
+        <p class="intro">Aqui está o resumo das notícias mais relevantes sobre suas ações <strong>{periodo_texto}</strong>:</p>
 """
 
     # Adiciona seção de Resumo Executivo se houver
@@ -299,17 +313,24 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_
             if ticker in precos_dados and precos_dados[ticker]['sucesso']:
                 preco = precos_dados[ticker]['preco_fechamento']
                 variacao = precos_dados[ticker]['variacao_percentual']
-                data_ref = precos_dados[ticker].get('data_referencia', '')
+                data_preco = precos_dados[ticker].get('data_preco', '')
+                data_var_de = precos_dados[ticker].get('data_variacao_de', '')
+                data_var_ate = precos_dados[ticker].get('data_variacao_ate', '')
                 
-                # Formatar data de referência
-                data_ref_formatada = ""
-                if data_ref:
+                # Formatar datas
+                def formatar_data(d):
+                    if not d:
+                        return ""
                     try:
                         from datetime import datetime
-                        dt = datetime.strptime(data_ref, "%Y-%m-%d")
-                        data_ref_formatada = dt.strftime("%d/%m")
+                        dt = datetime.strptime(d, "%Y-%m-%d")
+                        return dt.strftime("%d/%m")
                     except:
-                        data_ref_formatada = data_ref
+                        return d
+                
+                data_preco_fmt = formatar_data(data_preco)
+                data_var_de_fmt = formatar_data(data_var_de)
+                data_var_ate_fmt = formatar_data(data_var_ate)
                 
                 # Determinar classe CSS baseado na variação
                 if variacao > 0:
@@ -322,10 +343,13 @@ def gerar_email_html(usuario, analises_agrupadas, resumo_executivo=None, precos_
                     variacao_class = "variacao-neutra"
                     variacao_sinal = ""
                 
-                data_html = f' <span class="preco-data">({data_ref_formatada})</span>' if data_ref_formatada else ''
+                # Mostrar data do preço e intervalo da variação
+                preco_data_html = f' <span class="preco-data">({data_preco_fmt})</span>' if data_preco_fmt else ''
+                variacao_periodo_html = f' <span class="preco-data">({data_var_de_fmt}→{data_var_ate_fmt})</span>' if data_var_de_fmt and data_var_ate_fmt else ''
+                
                 preco_html = f"""<span class="preco-info">
-                    <span class="preco-valor">R$ {preco:.2f}</span> 
-                    <span class="{variacao_class}">({variacao_sinal}{variacao:.2f}%)</span>{data_html}
+                    <span class="preco-valor">R$ {preco:.2f}{preco_data_html}</span> 
+                    <span class="{variacao_class}">({variacao_sinal}{variacao:.2f}%){variacao_periodo_html}</span>
                 </span>"""
             
             html += f"""

@@ -588,15 +588,15 @@ const loadNewsForDate = async (dateStr) => {
 const clearNewsContent = () => {
   if (!newsContainer) return;
   
-  // Remove all news cards, keep empty state
-  const newsCards = newsContainer.querySelectorAll(".news-ticker-card");
+  // Remove all news cards and periodo info, keep empty state
+  const newsCards = newsContainer.querySelectorAll(".news-ticker-card, .news-periodo-info");
   newsCards.forEach((card) => card.remove());
 };
 
 const renderNews = (data) => {
   if (!newsContainer) return;
 
-  const { resumos, consolidadas, precos } = data;
+  const { resumos, consolidadas, precos, periodo_noticias } = data;
   
   // Check if there's any content
   const hasResumos = resumos && Object.keys(resumos).length > 0;
@@ -608,6 +608,17 @@ const renderNews = (data) => {
   }
 
   if (emptyNews) emptyNews.classList.add("hidden");
+
+  // Mostrar período das notícias se disponível
+  if (periodo_noticias && periodo_noticias.de && periodo_noticias.ate) {
+    const periodoDiv = document.createElement("div");
+    periodoDiv.className = "news-periodo-info";
+    periodoDiv.innerHTML = `
+      <span class="news-periodo-label">📅 Período das notícias:</span>
+      <span class="news-periodo-valor">${formatDateRef(periodo_noticias.de)} → ${formatDateRef(periodo_noticias.ate)}</span>
+    `;
+    newsContainer.appendChild(periodoDiv);
+  }
 
   // Get all tickers (union of resumos and consolidadas)
   const tickers = new Set([
@@ -642,12 +653,19 @@ const createNewsCard = (ticker, resumo, consolidado, preco) => {
     const variacao = preco.variacao_percentual || 0;
     const variacaoClass = variacao > 0 ? "variacao-positiva" : variacao < 0 ? "variacao-negativa" : "variacao-neutra";
     const variacaoSinal = variacao > 0 ? "+" : "";
-    const dataRef = preco.data_referencia ? `<span class="preco-data">(${formatDateRef(preco.data_referencia)})</span>` : "";
+    
+    // Datas de preço e variação
+    const dataPreco = preco.data_preco ? formatDateRef(preco.data_preco) : "";
+    const dataVarDe = preco.data_variacao_de ? formatDateRef(preco.data_variacao_de) : "";
+    const dataVarAte = preco.data_variacao_ate ? formatDateRef(preco.data_variacao_ate) : "";
+    
+    const precoDataHtml = dataPreco ? `<span class="preco-data">(${dataPreco})</span>` : "";
+    const variacaoDataHtml = dataVarDe && dataVarAte ? `<span class="preco-data">(${dataVarDe}→${dataVarAte})</span>` : "";
+    
     precoHtml = `
       <div class="news-ticker-preco">
-        <span class="preco-valor">R$ ${preco.preco_fechamento?.toFixed(2) || "0.00"}</span>
-        <span class="${variacaoClass}">(${variacaoSinal}${variacao.toFixed(2)}%)</span>
-        ${dataRef}
+        <span class="preco-valor">R$ ${preco.preco_fechamento?.toFixed(2) || "0.00"} ${precoDataHtml}</span>
+        <span class="${variacaoClass}">(${variacaoSinal}${variacao.toFixed(2)}%) ${variacaoDataHtml}</span>
       </div>
     `;
   }

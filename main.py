@@ -119,7 +119,7 @@ def processar_todos_tickers(tickers_unicos, data_inicio, data_fim):
     return cache_analises, cache_resumos, cache_contextos, analises_consolidadas
 
 
-def processar_usuario(usuario_dict, cache_analises, cache_resumos, precos_dados, analises_consolidadas):
+def processar_usuario(usuario_dict, cache_analises, cache_resumos, precos_dados, analises_consolidadas, periodo_noticias=None):
     """
     Processa um único usuário usando os caches de análises, resumos, preços e análises consolidadas.
     
@@ -129,6 +129,7 @@ def processar_usuario(usuario_dict, cache_analises, cache_resumos, precos_dados,
         cache_resumos: Dicionário {ticker: resumo_executivo_texto}
         precos_dados: Dicionário {ticker: {preco_fechamento, variacao_percentual, sucesso}}
         analises_consolidadas: Dicionário {ticker: {'positivo': str, 'negativo': str}}
+        periodo_noticias: Tupla (data_inicio, data_fim) do período das notícias
         
     Returns:
         Tupla (sucesso: bool, num_noticias: int)
@@ -175,11 +176,11 @@ def processar_usuario(usuario_dict, cache_analises, cache_resumos, precos_dados,
     # Salvar notícias no Firestore para acesso via site
     uid = buscar_uid_por_email(email)
     if uid and (resumo_executivo or consolidadas_usuario):
-        salvar_noticias_usuario(uid, resumo_executivo, consolidadas_usuario, precos_usuario)
+        salvar_noticias_usuario(uid, resumo_executivo, consolidadas_usuario, precos_usuario, periodo_noticias)
 
     # Gerar e enviar email
     try:
-        html = gerar_email_html(usuario_dict, todas_analises, resumo_executivo, precos_usuario, consolidadas_usuario)
+        html = gerar_email_html(usuario_dict, todas_analises, resumo_executivo, precos_usuario, consolidadas_usuario, periodo_noticias)
 
         sucesso = enviar_email(
             email,
@@ -257,10 +258,11 @@ def main():
     total_noticias = 0
 
     # Processar cada usuário usando os caches
+    periodo_noticias = (data_inicio, data_fim)
     for idx, row in df_usuarios.iterrows():
         try:
             usuario_dict = row.to_dict()
-            sucesso, num_noticias = processar_usuario(usuario_dict, cache_analises, cache_resumos, precos_dados, analises_consolidadas)
+            sucesso, num_noticias = processar_usuario(usuario_dict, cache_analises, cache_resumos, precos_dados, analises_consolidadas, periodo_noticias)
 
             if sucesso:
                 usuarios_sucesso += 1

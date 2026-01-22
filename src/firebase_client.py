@@ -70,7 +70,7 @@ def carregar_usuarios_firestore():
         return pd.DataFrame()
 
 
-def salvar_noticias_usuario(uid, resumos, consolidadas, precos):
+def salvar_noticias_usuario(uid, resumos, consolidadas, precos, periodo_noticias=None):
     """
     Salva as notícias processadas para um usuário no Firestore.
     
@@ -78,7 +78,8 @@ def salvar_noticias_usuario(uid, resumos, consolidadas, precos):
         uid: ID do usuário no Firestore
         resumos: Dict {ticker: resumo_executivo}
         consolidadas: Dict {ticker: {'positivo': str, 'negativo': str}}
-        precos: Dict {ticker: {preco_fechamento, variacao_percentual, sucesso}}
+        precos: Dict {ticker: {preco_fechamento, variacao_percentual, sucesso, ...}}
+        periodo_noticias: Tuple (data_inicio, data_fim) do período das notícias
     """
     try:
         db = _init_firestore()
@@ -97,6 +98,13 @@ def salvar_noticias_usuario(uid, resumos, consolidadas, precos):
             "timestamp": firestore.SERVER_TIMESTAMP,
             "data": hoje
         }
+        
+        # Adicionar período das notícias se disponível
+        if periodo_noticias:
+            dados["periodo_noticias"] = {
+                "de": periodo_noticias[0],
+                "ate": periodo_noticias[1]
+            }
         
         # Salvar no Firestore
         news_ref.set(dados, merge=True)
