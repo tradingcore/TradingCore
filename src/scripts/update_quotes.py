@@ -157,18 +157,16 @@ def fetch_heatmap_data(db, now):
     script_dir = os.path.dirname(os.path.abspath(__file__))
     csv_path = os.path.join(script_dir, '..', '..', 'docs', 'acoes-listadas-b3.csv')
     
-    # Ler top 100 tickers do CSV (já ordenado por volume)
-    top_tickers = []
+    # Ler todos os tickers do CSV (já ordenado por volume)
+    all_tickers = []
     try:
         with open(csv_path, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
-            for i, row in enumerate(reader):
-                if i >= 100:  # Top 100
-                    break
+            for row in reader:
                 ticker = row.get('Ticker', '').strip()
                 if ticker:
-                    top_tickers.append(ticker)
-        print(f'  → {len(top_tickers)} tickers carregados do CSV')
+                    all_tickers.append(ticker)
+        print(f'  → {len(all_tickers)} tickers carregados do CSV')
     except Exception as e:
         print(f'  ✗ Erro ao ler CSV: {e}')
         return {}
@@ -176,7 +174,7 @@ def fetch_heatmap_data(db, now):
     # Buscar cotações e setores
     heatmap_data = {}  # setor -> [ações]
     
-    for i, ticker in enumerate(top_tickers):
+    for i, ticker in enumerate(all_tickers):
         try:
             ticker_yahoo = f'{ticker}.SA'
             stock = yf.Ticker(ticker_yahoo)
@@ -192,10 +190,11 @@ def fetch_heatmap_data(db, now):
                 prev = float(hist['Close'].iloc[-2])
                 change_pct = ((price - prev) / prev) * 100
             
-            # Buscar setor
+            # Buscar setor e market cap
             info = stock.info
             sector_en = info.get('sector', '') or info.get('industry', '') or ''
             sector_pt = SECTOR_TRANSLATION.get(sector_en, 'Outros')
+            market_cap = info.get('marketCap', 0) or 0
             
             # Adicionar ao setor
             if sector_pt not in heatmap_data:
@@ -205,20 +204,21 @@ def fetch_heatmap_data(db, now):
                 'ticker': ticker,
                 'price': round(price, 2),
                 'change': round(change_pct, 2),
-                'sector': sector_pt
+                'sector': sector_pt,
+                'marketCap': market_cap
             })
             
-            # Log a cada 10 ações
-            if (i + 1) % 10 == 0:
-                print(f'  → Processado {i + 1}/{len(top_tickers)} ações...')
+            # Log a cada 25 ações
+            if (i + 1) % 25 == 0:
+                print(f'  → Processado {i + 1}/{len(all_tickers)} ações...')
                 
         except Exception as e:
             print(f'  ✗ {ticker}: {e}')
             continue
     
-    # Ordenar ações dentro de cada setor por variação
+    # Ordenar ações dentro de cada setor por market cap (maior primeiro)
     for sector in heatmap_data:
-        heatmap_data[sector].sort(key=lambda x: x['change'], reverse=True)
+        heatmap_data[sector].sort(key=lambda x: x['marketCap'], reverse=True)
     
     # Salvar no Firestore
     if heatmap_data:

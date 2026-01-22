@@ -1772,6 +1772,28 @@ select:focus {
   flex-shrink: 0;
 }
 
+.heatmap-legend-size {
+  border-radius: 4px;
+  background: var(--surface-light);
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.heatmap-legend-size--large {
+  width: 28px;
+  height: 28px;
+}
+
+.heatmap-legend-size--medium {
+  width: 24px;
+  height: 16px;
+}
+
+.heatmap-legend-size--small {
+  width: 14px;
+  height: 14px;
+}
+
 /* Container do mapa */
 .heatmap-container {
   display: grid;
@@ -1827,10 +1849,31 @@ select:focus {
   cursor: pointer;
   transition: transform 0.15s, box-shadow 0.15s;
   padding: 4px;
+  /* Tamanho padrão (pequeno) */
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* Tamanhos baseados no market cap */
+.heatmap-item--large {
+  grid-column: span 2;
+  grid-row: span 2;
+  aspect-ratio: 1;
+}
+
+.heatmap-item--medium {
+  grid-column: span 2;
+  grid-row: span 1;
+  aspect-ratio: 2;
+}
+
+.heatmap-item--small {
+  grid-column: span 1;
+  grid-row: span 1;
 }
 
 .heatmap-item:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
   z-index: 10;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
@@ -1847,10 +1890,26 @@ select:focus {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+.heatmap-item--large .heatmap-ticker {
+  font-size: 1rem;
+}
+
+.heatmap-item--medium .heatmap-ticker {
+  font-size: 0.85rem;
+}
+
 .heatmap-change {
   font-size: 0.6rem;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.heatmap-item--large .heatmap-change {
+  font-size: 0.85rem;
+}
+
+.heatmap-item--medium .heatmap-change {
+  font-size: 0.7rem;
 }
 
 /* Cores por variação */

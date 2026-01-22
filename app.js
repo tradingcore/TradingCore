@@ -1569,10 +1569,19 @@ const renderHeatmap = (highlightTicker = null) => {
     ? Object.entries(heatmapData) 
     : Object.entries(heatmapData).filter(([setor]) => setor === activeSetorFilter);
   
-  // Ordenar setores por quantidade de ações (maior primeiro)
-  setores.sort((a, b) => b[1].length - a[1].length);
+  // Ordenar setores por total de market cap (maior primeiro)
+  setores.sort((a, b) => {
+    const totalA = a[1].reduce((sum, acao) => sum + (acao.marketCap || 0), 0);
+    const totalB = b[1].reduce((sum, acao) => sum + (acao.marketCap || 0), 0);
+    return totalB - totalA;
+  });
   
   for (const [setor, acoes] of setores) {
+    // Calcular limiares de market cap para este setor
+    const marketCaps = acoes.map(a => a.marketCap || 0).sort((a, b) => b - a);
+    const topThreshold = marketCaps[Math.floor(marketCaps.length * 0.1)] || 0; // Top 10%
+    const midThreshold = marketCaps[Math.floor(marketCaps.length * 0.3)] || 0; // Top 30%
+    
     html += `
       <div class="heatmap-sector">
         <div class="heatmap-sector-title">
@@ -1583,10 +1592,12 @@ const renderHeatmap = (highlightTicker = null) => {
           ${acoes.map(acao => {
             const colorClass = getHeatmapColorClass(acao.change);
             const highlightClass = highlightTicker === acao.ticker ? "heatmap-item--highlight" : "";
+            const sizeClass = getSizeClass(acao.marketCap || 0, topThreshold, midThreshold);
             const sign = acao.change > 0 ? "+" : "";
+            const marketCapFormatted = formatMarketCap(acao.marketCap);
             return `
-              <div class="heatmap-item ${colorClass} ${highlightClass}" 
-                   title="${acao.ticker}: R$ ${acao.price} (${sign}${acao.change.toFixed(2)}%)">
+              <div class="heatmap-item ${colorClass} ${sizeClass} ${highlightClass}" 
+                   title="${acao.ticker}: R$ ${acao.price} (${sign}${acao.change.toFixed(2)}%) | Market Cap: ${marketCapFormatted}">
                 <span class="heatmap-ticker">${acao.ticker.replace(/\d+$/, "")}</span>
                 <span class="heatmap-change">${sign}${acao.change.toFixed(1)}%</span>
               </div>
@@ -1598,6 +1609,20 @@ const renderHeatmap = (highlightTicker = null) => {
   }
   
   container.innerHTML = html;
+};
+
+const getSizeClass = (marketCap, topThreshold, midThreshold) => {
+  if (marketCap >= topThreshold && topThreshold > 0) return "heatmap-item--large";
+  if (marketCap >= midThreshold && midThreshold > 0) return "heatmap-item--medium";
+  return "heatmap-item--small";
+};
+
+const formatMarketCap = (value) => {
+  if (!value) return "N/A";
+  if (value >= 1e12) return `R$ ${(value / 1e12).toFixed(1)}T`;
+  if (value >= 1e9) return `R$ ${(value / 1e9).toFixed(1)}B`;
+  if (value >= 1e6) return `R$ ${(value / 1e6).toFixed(0)}M`;
+  return `R$ ${value.toLocaleString("pt-BR")}`;
 };
 
 const getHeatmapColorClass = (change) => {
