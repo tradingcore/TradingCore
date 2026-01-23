@@ -1,26 +1,15 @@
 """
-Script para gerar contextos estratégicos das ações B3 via OpenAI.
-Roda uma vez para popular o arquivo contextos-acoes.json.
+Script para buscar descrições das ações B3 via Yahoo Finance.
+Cria um JSON simples com {ticker: description}.
 
 Uso: python src/scripts/gerar_contextos.py
 """
-import os
-import sys
-import json
 import csv
+import json
 import time
-import requests
 from pathlib import Path
 
-# Adicionar src ao path
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-
-from dotenv import load_dotenv
-load_dotenv()
-
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-OPENAI_MODEL = "gpt-4o-mini"
-USE_OPENAI = os.getenv("USE_OPENAI", "0").strip() == "1"
+import yfinance as yf
 
 # Paths
 SCRIPT_DIR = Path(__file__).parent
@@ -36,17 +25,21 @@ def carregar_tickers_csv():
         reader = csv.DictReader(f)
         for row in reader:
             ticker = row.get('Ticker', '').strip()
-            nome = row.get('Nome', '').strip()
-            if ticker:
-                tickers.append({'ticker': ticker, 'nome': nome})
+            if ticker and ticker not in tickers:
+                tickers.append(ticker)
     return tickers
 
 
 def carregar_contextos_existentes():
-    """Carrega contextos já gerados."""
+    """Carrega contextos já salvos."""
     if JSON_PATH.exists():
-        with open(JSON_PATH, 'r', encoding='utf-8') as f:
-            return json.load(f)
+        try:
+            with open(JSON_PATH, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                if isinstance(data, dict):
+                    return data
+        except:
+            pass
     return {}
 
 
@@ -56,135 +49,73 @@ def salvar_contextos(contextos):
         json.dump(contextos, f, ensure_ascii=False, indent=2)
 
 
-def gerar_contexto_openai(ticker, nome):
-    """Gera contexto via OpenAI API."""
-    url = "https://api.openai.com/v1/chat/completions"
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {OPENAI_API_KEY}",
-    }
-    
-    prompt = f"""Você é um analista de ações brasileiro experiente.
-Gere um contexto estratégico COMPACTO para a ação {ticker} ({nome}) da B3.
-
-Responda em JSON exatamente neste formato:
-{{
-  "nome": "{nome}",
-  "setor": "Setor da empresa",
-  "modelo": "Descrição compacta do modelo de negócio em 1-2 frases",
-  "kpis": ["KPI1", "KPI2", "KPI3", "KPI4"],
-  "tese": "Tese de investimento em 1-2 frases",
-  "riscos": ["Risco1", "Risco2", "Risco3"],
-  "buscar": ["Tema1", "Tema2", "Tema3", "Tema4", "Tema5"]
-}}
-
-Seja conciso e focado em informações relevantes para análise de notícias.
-Responda APENAS o JSON, sem explicações."""
-
-    data = {
-        "model": OPENAI_MODEL,
-        "messages": [{"role": "user", "content": prompt}],
-        "temperature": 0.3,
-    }
-    
+def buscar_description_yahoo(ticker):
+    """Busca description do Yahoo Finance."""
     try:
-        response = requests.post(url, headers=headers, json=data, timeout=30)
-        response.raise_for_status()
+        symbol = f"{ticker}.SA"
+        stock = yf.Ticker(symbol)
+        info = stock.info
         
-        conteudo = response.json()["choices"][0]["message"]["content"]
+        # Pegar description (longBusinessSummary)
+        description = info.get('longBusinessSummary', '')
         
-        # Limpar markdown
-        conteudo = conteudo.strip()
-        if conteudo.startswith("```"):
-            conteudo = conteudo.split("```")[1]
-            if conteudo.startswith("json"):
-                conteudo = conteudo[4:]
-            conteudo = conteudo.strip()
+        if description:
+            return description
         
-        return json.loads(conteudo)
+        return None
         
     except Exception as e:
-        print(f"  ✗ Erro ao gerar contexto para {ticker}: {e}")
         return None
-
-
-def gerar_contexto_generico(ticker, nome):
-    """Gera contexto genérico para empresas sem informações específicas."""
-    return {
-        "nome": nome,
-        "setor": "Não classificado",
-        "modelo": f"{nome} é uma empresa listada na B3.",
-        "kpis": ["Receita", "EBITDA", "Lucro líquido", "Endividamento"],
-        "tese": "Empresa listada na B3 com informações limitadas.",
-        "riscos": ["Liquidez", "Governança", "Informações limitadas"],
-        "buscar": [nome, ticker, "Resultados", "Aquisições", "Reestruturação"]
-    }
 
 
 def main():
     print("="*60)
-    print("🔧 GERADOR DE CONTEXTOS DE AÇÕES B3")
+    print("📊 BUSCANDO DESCRIÇÕES DO YAHOO FINANCE")
     print("="*60)
-    
-    if USE_OPENAI and not OPENAI_API_KEY:
-        print("✗ OPENAI_API_KEY não configurada!")
-        return
     
     # Carregar dados
     tickers = carregar_tickers_csv()
     contextos = carregar_contextos_existentes()
     
-    print(f"\n📊 {len(tickers)} tickers no CSV")
-    print(f"📄 {len(contextos) - 1} contextos já existentes")  # -1 para _metadata
+    print(f"\n📋 {len(tickers)} tickers únicos no CSV")
+    print(f"📄 {len(contextos)} contextos já existentes")
     
     # Identificar tickers sem contexto
-    tickers_sem_contexto = [
-        t for t in tickers 
-        if t['ticker'] not in contextos and not t['ticker'].startswith('_')
-    ]
+    tickers_sem_contexto = [t for t in tickers if t not in contextos]
     
-    print(f"🔍 {len(tickers_sem_contexto)} tickers sem contexto")
+    print(f"🔍 {len(tickers_sem_contexto)} tickers sem descrição\n")
     
     if not tickers_sem_contexto:
-        print("\n✅ Todos os tickers já têm contexto!")
+        print("✅ Todos os tickers já têm descrição!")
         return
     
-    print(f"\n📝 Gerando contextos para {len(tickers_sem_contexto)} tickers...")
-    print("   (Ctrl+C para parar a qualquer momento)\n")
+    print(f"📝 Buscando descrições para {len(tickers_sem_contexto)} tickers...")
+    print("   (Ctrl+C para parar)\n")
     
-    gerados = 0
-    erros = 0
+    encontrados = 0
+    nao_encontrados = 0
     
     try:
-        for i, t in enumerate(tickers_sem_contexto):
-            ticker = t['ticker']
-            nome = t['nome']
+        for i, ticker in enumerate(tickers_sem_contexto):
+            print(f"[{i+1}/{len(tickers_sem_contexto)}] {ticker}...", end=" ", flush=True)
             
-            print(f"[{i+1}/{len(tickers_sem_contexto)}] {ticker} ({nome})...", end=" ")
+            description = buscar_description_yahoo(ticker)
             
-            # Gerar via OpenAI (opcional)
-            contexto = None
-            if USE_OPENAI:
-                contexto = gerar_contexto_openai(ticker, nome)
-            
-            if contexto:
-                contextos[ticker] = contexto
-                gerados += 1
-                print("✓")
+            if description:
+                contextos[ticker] = description
+                encontrados += 1
+                print(f"✓ ({len(description)} chars)")
             else:
-                # Usar genérico
-                contextos[ticker] = gerar_contexto_generico(ticker, nome)
-                erros += 1
-                print("⚠ (genérico)")
+                nao_encontrados += 1
+                print("✗ (sem descrição)")
             
-            # Salvar a cada 10 contextos
-            if (i + 1) % 10 == 0:
+            # Salvar a cada 20 tickers
+            if (i + 1) % 20 == 0:
                 salvar_contextos(contextos)
-                print(f"   💾 Salvo ({gerados} gerados, {erros} genéricos)")
+                print(f"   💾 Salvo ({encontrados} encontrados, {nao_encontrados} sem descrição)")
             
-            # Rate limit (apenas quando usando API)
-            if USE_OPENAI:
-                time.sleep(0.5)
+            # Rate limit
+            time.sleep(0.3)
             
     except KeyboardInterrupt:
         print("\n\n⏹ Interrompido pelo usuário")
@@ -194,9 +125,9 @@ def main():
     
     print(f"\n{'='*60}")
     print(f"✅ CONCLUÍDO")
-    print(f"   Contextos gerados: {gerados}")
-    print(f"   Contextos genéricos: {erros}")
-    print(f"   Total no arquivo: {len(contextos) - 1}")
+    print(f"   Descrições encontradas: {encontrados}")
+    print(f"   Sem descrição: {nao_encontrados}")
+    print(f"   Total no arquivo: {len(contextos)}")
     print(f"{'='*60}")
 
 

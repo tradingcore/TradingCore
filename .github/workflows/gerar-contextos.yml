@@ -1,0 +1,30 @@
+name: Gerar Contextos das Ações
+
+on:
+  workflow_dispatch:  # Rodar manualmente
+
+jobs:
+  gerar-contextos:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: pip install yfinance
+      
+      - name: Gerar contextos via Yahoo Finance
+        run: python src/scripts/gerar_contextos.py
+      
+      - name: Commit e Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs/contextos-acoes.json
+          git diff --staged --quiet || git commit -m "feat: Contextos das ações via Yahoo Finance"
+          git push
