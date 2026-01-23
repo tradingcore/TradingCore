@@ -22,6 +22,7 @@ from src.news_fetcher import buscar_noticias_todos_tickers
 from src.ai_analyzer import gerar_analise_ticker_global
 from src.email_sender import gerar_email_html, enviar_email
 from src.price_fetcher import buscar_precos_multiplos
+from src.context_manager import carregar_contexto
 
 
 def carregar_tickers_b3():
@@ -86,8 +87,13 @@ def processar_noticias_globais(tickers, data_inicio, data_fim, data_referencia):
         try:
             print(f"\n[{processados}/{len(tickers_com_noticias)}] Analisando {ticker} ({len(artigos)} artigos)...")
             
-            # Gerar análise completa
-            analise = gerar_analise_ticker_global(artigos, ticker)
+            # Carregar contexto estratégico (se disponível)
+            contexto = carregar_contexto(ticker)
+            if contexto:
+                print(f"  📋 Contexto carregado para {ticker}")
+            
+            # Gerar análise completa (com contexto)
+            analise = gerar_analise_ticker_global(artigos, ticker, contexto)
             
             if analise:
                 # Salvar no Firebase globalmente

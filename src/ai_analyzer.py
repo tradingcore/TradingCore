@@ -422,14 +422,16 @@ Responda apenas com o texto consolidado, sem título ou formatação."""
     return analises_consolidadas
 
 
-def gerar_analise_ticker_global(artigos, ticker):
+def gerar_analise_ticker_global(artigos, ticker, contexto=None):
     """
     Gera análise completa de um ticker para armazenamento global.
     Otimizado para processar todas as notícias de uma vez.
+    Usa contexto estratégico quando disponível.
     
     Args:
         artigos: Lista de artigos do ticker
         ticker: Código do ticker
+        contexto: Texto com contexto estratégico da empresa (opcional)
     
     Returns:
         Dict com análise completa ou None se não houver notícias relevantes
@@ -437,8 +439,8 @@ def gerar_analise_ticker_global(artigos, ticker):
     if not artigos:
         return None
     
-    # Analisar todas as notícias em batch
-    analises = analisar_noticias_batch(artigos, ticker)
+    # Analisar todas as notícias em batch (com contexto se disponível)
+    analises = analisar_noticias_batch(artigos, ticker, contexto)
     
     if not analises:
         return None
@@ -465,8 +467,9 @@ def gerar_analise_ticker_global(artigos, ticker):
     positivas = [a for a in relevantes if a.get('sentimento', 0) > 0]
     negativas = [a for a in relevantes if a.get('sentimento', 0) < 0]
     
-    # Gerar consolidado
-    consolidado = gerar_analise_consolidada({ticker: relevantes})
+    # Gerar consolidado (com contexto)
+    contexto_dict = {ticker: contexto} if contexto else None
+    consolidado = gerar_analise_consolidada({ticker: relevantes}, contexto_dict)
     
     # Extrair fontes
     fontes = []

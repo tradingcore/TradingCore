@@ -1,0 +1,657 @@
+{
+  "_metadata": {
+    "descricao": "Contextos estratégicos das ações B3 para análise de notícias",
+    "versao": "1.0",
+    "atualizado": "2026-01-23"
+  },
+  
+  "B3SA3": {
+    "nome": "B3",
+    "setor": "Serviços Financeiros",
+    "modelo": "Única bolsa de valores do Brasil, opera mercados de ações, derivativos, câmbio e renda fixa. Receita vem de taxas de negociação, listagem e dados de mercado.",
+    "kpis": ["Volume negociado", "Número de investidores", "Receita por segmento", "Market share"],
+    "tese": "Monopólio natural com alta barreira de entrada. Beneficia-se do crescimento do mercado de capitais brasileiro.",
+    "riscos": ["Regulação", "Competição internacional", "Volatilidade do mercado"],
+    "buscar": ["Volume de negociação", "Novos investidores", "IPOs", "Regulação CVM", "Taxas"]
+  },
+
+  "VALE3": {
+    "nome": "Vale",
+    "setor": "Mineração",
+    "modelo": "Maior produtora de minério de ferro do mundo. Opera também em níquel, cobre e manganês. Exporta principalmente para China.",
+    "kpis": ["Preço do minério de ferro", "Produção (Mt)", "Custo C1", "EBITDA/ton"],
+    "tese": "Commodity player com custos baixos. Alta geração de caixa permite dividendos robustos.",
+    "riscos": ["Preço do minério", "Demanda China", "Acidentes ambientais", "Câmbio"],
+    "buscar": ["Preço minério de ferro", "Economia chinesa", "Produção Vale", "Acidentes/barragens", "Dividendos"]
+  },
+
+  "PETR4": {
+    "nome": "Petrobras",
+    "setor": "Petróleo e Gás",
+    "modelo": "Maior empresa do Brasil. Produção de petróleo no pré-sal, refino e distribuição. Receita indexada ao dólar e preço do petróleo.",
+    "kpis": ["Preço do Brent", "Produção (boe/d)", "Lifting cost", "Paridade de preços"],
+    "tese": "Dividendos elevados com política de preços. Pré-sal com custos competitivos globalmente.",
+    "riscos": ["Interferência política", "Preço do petróleo", "Política de preços", "Transição energética"],
+    "buscar": ["Preço do petróleo", "Política de preços", "Dividendos", "Produção", "Interferência governo"]
+  },
+
+  "PETR3": {
+    "nome": "Petrobras",
+    "setor": "Petróleo e Gás",
+    "modelo": "Maior empresa do Brasil. Produção de petróleo no pré-sal, refino e distribuição. Receita indexada ao dólar e preço do petróleo.",
+    "kpis": ["Preço do Brent", "Produção (boe/d)", "Lifting cost", "Paridade de preços"],
+    "tese": "Dividendos elevados com política de preços. Pré-sal com custos competitivos globalmente.",
+    "riscos": ["Interferência política", "Preço do petróleo", "Política de preços", "Transição energética"],
+    "buscar": ["Preço do petróleo", "Política de preços", "Dividendos", "Produção", "Interferência governo"]
+  },
+
+  "ITUB4": {
+    "nome": "Itaú Unibanco",
+    "setor": "Bancos",
+    "modelo": "Maior banco privado do Brasil. Receita de crédito, serviços, seguros e tesouraria. Forte em alta renda e corporate.",
+    "kpis": ["ROE", "Inadimplência", "Margem financeira", "Índice de eficiência"],
+    "tese": "Banco premium com melhor ROE do setor. Forte em digitalização e controle de custos.",
+    "riscos": ["Competição fintechs", "Inadimplência", "Taxa Selic", "Regulação"],
+    "buscar": ["Resultados trimestrais", "Inadimplência", "Selic", "Fintechs", "Dividendos"]
+  },
+
+  "BBDC4": {
+    "nome": "Bradesco",
+    "setor": "Bancos",
+    "modelo": "Segundo maior banco privado. Forte em seguros (Bradesco Seguros). Presença massiva em varejo bancário.",
+    "kpis": ["ROE", "Inadimplência", "Margem financeira", "Prêmios de seguros"],
+    "tese": "Recuperação operacional em andamento. Seguros como diferencial competitivo.",
+    "riscos": ["Eficiência operacional", "Inadimplência", "Competição digital"],
+    "buscar": ["Resultados trimestrais", "Inadimplência", "Seguros Bradesco", "Eficiência"]
+  },
+
+  "BBAS3": {
+    "nome": "Banco do Brasil",
+    "setor": "Bancos",
+    "modelo": "Maior banco do país por ativos. Líder em agronegócio e crédito consignado. Controlado pelo governo federal.",
+    "kpis": ["ROE", "Inadimplência", "Carteira agro", "Payout de dividendos"],
+    "tese": "Dividendos atrativos com valuation descontado. Líder no agronegócio brasileiro.",
+    "riscos": ["Interferência política", "Governança", "Inadimplência"],
+    "buscar": ["Política governo", "Dividendos", "Agronegócio", "Resultados", "Nomeações"]
+  },
+
+  "ABEV3": {
+    "nome": "Ambev",
+    "setor": "Bebidas",
+    "modelo": "Maior cervejaria da América Latina. Dona das marcas Brahma, Skol, Antarctica, Budweiser. Também refrigerantes e energéticos.",
+    "kpis": ["Volume de vendas", "Preço médio", "Market share", "EBITDA margin"],
+    "tese": "Empresa defensiva com marcas fortes. Foco em premiumização e eficiência.",
+    "riscos": ["Competição (Heineken)", "Custos de commodities", "Consumo"],
+    "buscar": ["Market share cerveja", "Heineken", "Preços", "Consumo", "Commodities"]
+  },
+
+  "MGLU3": {
+    "nome": "Magazine Luiza",
+    "setor": "Varejo",
+    "modelo": "Varejista multicanal (lojas físicas + e-commerce). Marketplace e fintech (MagaluPay). Logística própria.",
+    "kpis": ["GMV", "Take rate", "Margem EBITDA", "NPS"],
+    "tese": "Turnaround em andamento. Foco em rentabilidade vs crescimento.",
+    "riscos": ["Juros altos", "Competição (Mercado Livre, Amazon)", "Inadimplência"],
+    "buscar": ["E-commerce", "Marketplace", "Resultados", "Competição", "Juros"]
+  },
+
+  "WEGE3": {
+    "nome": "WEG",
+    "setor": "Bens de Capital",
+    "modelo": "Fabricante de motores elétricos, geradores, transformadores e automação. Exporta para 135 países.",
+    "kpis": ["Receita por região", "Margem EBITDA", "ROIC", "Backlog"],
+    "tese": "Empresa de qualidade com crescimento consistente. Beneficia-se da eletrificação global.",
+    "riscos": ["Câmbio", "Ciclo industrial", "Custos de matéria-prima"],
+    "buscar": ["Exportações", "Energia renovável", "Resultados", "Aquisições", "Eletrificação"]
+  },
+
+  "RENT3": {
+    "nome": "Localiza",
+    "setor": "Locação de Veículos",
+    "modelo": "Maior locadora de veículos do Brasil. Atua em RAC (aluguel), gestão de frotas e seminovos.",
+    "kpis": ["Frota total", "Taxa de ocupação", "Tarifa média", "Depreciação"],
+    "tese": "Líder absoluta com escala. Beneficia-se de mobilidade como serviço.",
+    "riscos": ["Preço de veículos", "Depreciação", "Competição", "Selic"],
+    "buscar": ["Vendas de carros", "Seminovos", "Depreciação", "Competição", "Frota"]
+  },
+
+  "ITSA4": {
+    "nome": "Itaúsa",
+    "setor": "Holdings",
+    "modelo": "Holding que controla Itaú Unibanco. Também tem participações em Alpargatas, Dexco, CCR, Aegea.",
+    "kpis": ["NAV", "Desconto holding", "Dividendos Itaú"],
+    "tese": "Forma indireta de investir no Itaú com desconto. Diversificação via outras participações.",
+    "riscos": ["Desempenho Itaú", "Desconto holding", "Outras participações"],
+    "buscar": ["Resultados Itaú", "Dividendos", "Novas aquisições", "Valor das participações"]
+  },
+
+  "CSAN3": {
+    "nome": "Cosan",
+    "setor": "Energia/Infraestrutura",
+    "modelo": "Holding diversificada: Raízen (etanol/combustíveis), Rumo (logística), Compass (gás), Moove (lubrificantes).",
+    "kpis": ["EBITDA consolidado", "Alavancagem", "Valor das participações"],
+    "tese": "Conglomerado com ativos estratégicos em energia e infraestrutura. Gestão de alta qualidade.",
+    "riscos": ["Alavancagem", "Complexidade", "Preço commodities"],
+    "buscar": ["Raízen", "Rumo", "Compass", "Aquisições", "Endividamento"]
+  },
+
+  "VIVT3": {
+    "nome": "Telefônica Brasil (Vivo)",
+    "setor": "Telecomunicações",
+    "modelo": "Maior operadora de telecom do Brasil. Líder em móvel e banda larga fibra. Receita de serviços e dados.",
+    "kpis": ["ARPU", "Churn", "Market share", "Capex/Receita"],
+    "tese": "Empresa defensiva com dividendos consistentes. Líder em fibra óptica.",
+    "riscos": ["Competição", "Regulação Anatel", "Investimentos em rede"],
+    "buscar": ["Market share", "Fibra óptica", "5G", "Dividendos", "Resultados"]
+  },
+
+  "TIMS3": {
+    "nome": "TIM Brasil",
+    "setor": "Telecomunicações",
+    "modelo": "Segunda maior operadora móvel. Foco em crescimento de fibra e 5G. Receita de serviços e pós-pago.",
+    "kpis": ["ARPU", "Churn", "Clientes pós-pago", "Cobertura 5G"],
+    "tese": "Turnaround com foco em rentabilidade. Expansão de fibra e 5G.",
+    "riscos": ["Competição", "Investimentos", "Regulação"],
+    "buscar": ["Market share", "5G", "Fibra", "Resultados", "Dividendos"]
+  },
+
+  "GGBR4": {
+    "nome": "Gerdau",
+    "setor": "Siderurgia",
+    "modelo": "Maior produtora de aço do Brasil. Opera também nos EUA e América Latina. Foco em aços longos e especiais.",
+    "kpis": ["Preço do aço", "Spread metálico", "Utilização capacidade", "EBITDA/ton"],
+    "tese": "Diversificação geográfica reduz volatilidade. EUA com margens melhores.",
+    "riscos": ["Preço do aço", "Importações China", "Construção civil"],
+    "buscar": ["Preço aço", "Construção civil", "EUA", "Importações", "Resultados"]
+  },
+
+  "CSNA3": {
+    "nome": "CSN - Companhia Siderúrgica Nacional",
+    "setor": "Siderurgia/Mineração",
+    "modelo": "Siderúrgica integrada com mineração própria. Também atua em cimento e logística.",
+    "kpis": ["Preço do aço", "Preço minério", "Alavancagem", "EBITDA"],
+    "tese": "Verticalização com minério próprio. Diversificação em cimento.",
+    "riscos": ["Alavancagem elevada", "Preço commodities", "Governança"],
+    "buscar": ["Preço aço/minério", "Endividamento", "Cimento", "Resultados"]
+  },
+
+  "USIM5": {
+    "nome": "Usiminas",
+    "setor": "Siderurgia",
+    "modelo": "Siderúrgica focada em aços planos para indústria automotiva e construção. Mineração própria.",
+    "kpis": ["Preço do aço", "Volume vendido", "Utilização capacidade", "EBITDA/ton"],
+    "tese": "Exposição ao setor automotivo e construção civil brasileira.",
+    "riscos": ["Importações", "Demanda automotiva", "Custos"],
+    "buscar": ["Setor automotivo", "Construção civil", "Importações aço", "Resultados"]
+  },
+
+  "SUZB3": {
+    "nome": "Suzano",
+    "setor": "Papel e Celulose",
+    "modelo": "Maior produtora de celulose de eucalipto do mundo. Exporta 90% da produção. Também papel e embalagens.",
+    "kpis": ["Preço da celulose", "Custo caixa", "Produção", "EBITDA"],
+    "tese": "Líder global com custos baixos. Demanda estrutural por embalagens sustentáveis.",
+    "riscos": ["Preço celulose", "Câmbio", "Demanda China"],
+    "buscar": ["Preço celulose", "Demanda China", "Produção", "Câmbio", "Resultados"]
+  },
+
+  "KLBN11": {
+    "nome": "Klabin",
+    "setor": "Papel e Celulose",
+    "modelo": "Maior produtora de papel do Brasil. Atua em celulose, papéis para embalagens e sacos industriais.",
+    "kpis": ["Preço celulose/papel", "Volume vendido", "Mix de produtos", "EBITDA"],
+    "tese": "Portfólio diversificado reduz volatilidade. Foco em embalagens sustentáveis.",
+    "riscos": ["Preço commodities", "Câmbio", "Investimentos"],
+    "buscar": ["Preço celulose/papel", "Embalagens", "Resultados", "Expansões"]
+  },
+
+  "EQTL3": {
+    "nome": "Equatorial Energia",
+    "setor": "Utilities - Energia",
+    "modelo": "Holding de distribuição e transmissão de energia. Opera em MA, PA, PI, AL, RS, GO, SP. Também saneamento.",
+    "kpis": ["Perdas de energia", "Inadimplência", "RAP", "EBITDA"],
+    "tese": "Turnaround operacional em concessões. Crescimento via M&A.",
+    "riscos": ["Regulação", "Inadimplência", "Execução de turnarounds"],
+    "buscar": ["Aquisições", "Perdas de energia", "Regulação Aneel", "Resultados"]
+  },
+
+  "ENEV3": {
+    "nome": "Eneva",
+    "setor": "Energia - Geração",
+    "modelo": "Geradora de energia térmica a gás. Opera usinas integradas com campos de gás próprios (reservatório-to-wire).",
+    "kpis": ["Despacho de energia", "Reservas de gás", "Margem de contribuição", "EBITDA"],
+    "tese": "Modelo integrado único no Brasil. Expansão em gás e renováveis.",
+    "riscos": ["Hidrologia", "Preço do gás", "Regulação"],
+    "buscar": ["Despacho térmicas", "Reservas gás", "Novos projetos", "Resultados"]
+  },
+
+  "CMIG4": {
+    "nome": "Cemig",
+    "setor": "Utilities - Energia",
+    "modelo": "Companhia de energia de Minas Gerais. Atua em geração, transmissão, distribuição e comercialização.",
+    "kpis": ["Tarifa", "Perdas", "Inadimplência", "EBITDA"],
+    "tese": "Empresa estatal com potencial de melhoria operacional. Dividendos atrativos.",
+    "riscos": ["Interferência política", "Governança", "Regulação"],
+    "buscar": ["Governo MG", "Privatização", "Resultados", "Dividendos", "Regulação"]
+  },
+
+  "CPFE3": {
+    "nome": "CPFL Energia",
+    "setor": "Utilities - Energia",
+    "modelo": "Holding de energia controlada pela State Grid (China). Distribuição em SP e RS, geração e comercialização.",
+    "kpis": ["Perdas", "Inadimplência", "Geração renovável", "EBITDA"],
+    "tese": "Empresa defensiva com dividendos consistentes. Gestão profissional chinesa.",
+    "riscos": ["Regulação", "Inadimplência", "Investimentos"],
+    "buscar": ["Resultados", "Dividendos", "Regulação Aneel", "Renováveis"]
+  },
+
+  "SBSP3": {
+    "nome": "Sabesp",
+    "setor": "Saneamento",
+    "modelo": "Maior empresa de saneamento do Brasil. Abastece São Paulo. Receita de água e esgoto.",
+    "kpis": ["Perdas de água", "Tarifa", "Cobertura esgoto", "Investimentos"],
+    "tese": "Privatização pode destravar valor. Marco do saneamento favorável.",
+    "riscos": ["Risco político", "Crise hídrica", "Investimentos necessários"],
+    "buscar": ["Privatização", "Governo SP", "Tarifas", "Crise hídrica", "Resultados"]
+  },
+
+  "CPLE3": {
+    "nome": "Copel",
+    "setor": "Utilities - Energia",
+    "modelo": "Companhia de energia do Paraná. Geração, transmissão, distribuição e telecom.",
+    "kpis": ["Geração hídrica", "Perdas", "EBITDA", "Alavancagem"],
+    "tese": "Privatização em 2023 destravou valor. Foco em eficiência e dividendos.",
+    "riscos": ["Hidrologia", "Regulação", "Execução pós-privatização"],
+    "buscar": ["Resultados", "Eficiência operacional", "Dividendos", "Hidrologia"]
+  },
+
+  "TAEE11": {
+    "nome": "Taesa",
+    "setor": "Transmissão de Energia",
+    "modelo": "Transmissora de energia elétrica. Receita regulada (RAP) com contratos de longo prazo. Alta previsibilidade.",
+    "kpis": ["RAP", "Disponibilidade", "Novos leilões", "Payout"],
+    "tese": "Empresa de dividendos com receita previsível. Baixo risco operacional.",
+    "riscos": ["Renovação de concessões", "Novos leilões", "Taxa de desconto"],
+    "buscar": ["Leilões transmissão", "Dividendos", "Resultados", "Concessões"]
+  },
+
+  "PRIO3": {
+    "nome": "PetroRio (PRIO)",
+    "setor": "Petróleo e Gás",
+    "modelo": "Produtora independente de petróleo. Especializada em revitalização de campos maduros. M&A driven.",
+    "kpis": ["Produção (boe/d)", "Lifting cost", "Preço Brent", "Reservas"],
+    "tese": "Crescimento via aquisições. Execução operacional de excelência. Custos baixos.",
+    "riscos": ["Preço do petróleo", "Execução de M&A", "Declínio de campos"],
+    "buscar": ["Produção", "Aquisições", "Preço petróleo", "Reservas", "Resultados"]
+  },
+
+  "BRAV3": {
+    "nome": "3R Petroleum",
+    "setor": "Petróleo e Gás",
+    "modelo": "Produtora independente focada em campos terrestres (onshore). Compra ativos da Petrobras.",
+    "kpis": ["Produção (boe/d)", "Lifting cost", "Aquisições", "EBITDA"],
+    "tese": "Crescimento via aquisições de ativos maduros da Petrobras.",
+    "riscos": ["Preço do petróleo", "Execução operacional", "Integração de ativos"],
+    "buscar": ["Produção", "Aquisições", "Preço petróleo", "Resultados"]
+  },
+
+  "VBBR3": {
+    "nome": "Vibra Energia",
+    "setor": "Distribuição de Combustíveis",
+    "modelo": "Maior distribuidora de combustíveis do Brasil (ex-BR Distribuidora). Rede de postos, aviação, B2B.",
+    "kpis": ["Volume vendido", "Margem EBITDA/m³", "Market share", "Rede de postos"],
+    "tese": "Líder com escala e eficiência. Expansão em renováveis e conveniência.",
+    "riscos": ["Competição", "Preço combustíveis", "Transição energética"],
+    "buscar": ["Market share", "Margens", "Etanol", "Resultados", "Renováveis"]
+  },
+
+  "RAIZ4": {
+    "nome": "Raízen",
+    "setor": "Açúcar, Etanol e Energia",
+    "modelo": "JV Cosan/Shell. Maior produtora de etanol e açúcar. Também distribuição (Shell) e energia renovável.",
+    "kpis": ["Produção etanol/açúcar", "Preço commodities", "Margem distribuição", "E2G"],
+    "tese": "Líder integrada em biocombustíveis. Etanol de segunda geração (E2G) como diferencial.",
+    "riscos": ["Preço commodities", "Safra", "Execução E2G"],
+    "buscar": ["Preço açúcar/etanol", "Safra", "E2G", "Resultados", "Shell"]
+  },
+
+  "RAIL3": {
+    "nome": "Rumo",
+    "setor": "Logística - Ferrovias",
+    "modelo": "Maior operadora ferroviária do Brasil. Transporta grãos do Centro-Oeste aos portos. Concessão até 2079.",
+    "kpis": ["Volume transportado", "Tarifa/TKU", "Capex", "EBITDA"],
+    "tese": "Infraestrutura essencial para agronegócio. Expansão de capacidade em andamento.",
+    "riscos": ["Safra agrícola", "Investimentos", "Competição rodoviária"],
+    "buscar": ["Safra grãos", "Volume transportado", "Expansões", "Resultados"]
+  },
+
+  "ECOR3": {
+    "nome": "EcoRodovias",
+    "setor": "Concessões Rodoviárias",
+    "modelo": "Operadora de rodovias pedagiadas. Também atua em portos e logística.",
+    "kpis": ["Tráfego", "Tarifa", "Capex", "Alavancagem"],
+    "tese": "Receita previsível com reajustes inflacionários. Novos leilões como crescimento.",
+    "riscos": ["Tráfego", "Investimentos obrigatórios", "Novos leilões"],
+    "buscar": ["Tráfego", "Leilões", "Resultados", "Endividamento"]
+  },
+
+  "LREN3": {
+    "nome": "Lojas Renner",
+    "setor": "Varejo - Moda",
+    "modelo": "Maior varejista de moda do Brasil. Também Camicado (casa) e Youcom (jovem). Fintech Realize.",
+    "kpis": ["SSS", "Margem bruta", "Inadimplência Realize", "ROIC"],
+    "tese": "Líder em fast fashion brasileiro. Digitalização e omnicanalidade.",
+    "riscos": ["Consumo", "Competição (Shein)", "Inadimplência"],
+    "buscar": ["Vendas mesmas lojas", "Competição", "Realize", "Resultados"]
+  },
+
+  "COGN3": {
+    "nome": "Cogna Educação",
+    "setor": "Educação",
+    "modelo": "Maior grupo de educação do Brasil. Ensino superior (Kroton), básico (Vasta) e preparatórios.",
+    "kpis": ["Base de alunos", "Ticket médio", "Inadimplência", "EBITDA"],
+    "tese": "Turnaround em andamento. Foco em rentabilidade vs crescimento.",
+    "riscos": ["Inadimplência", "FIES", "Competição EAD"],
+    "buscar": ["Captação alunos", "Inadimplência", "FIES", "Vasta", "Resultados"]
+  },
+
+  "YDUQ3": {
+    "nome": "Yduqs",
+    "setor": "Educação",
+    "modelo": "Grupo de educação superior. Presencial, EAD e medicina. Marcas: Estácio, Ibmec, Idomed.",
+    "kpis": ["Base de alunos", "Ticket médio", "Inadimplência", "Margem EBITDA"],
+    "tese": "Forte em medicina (ticket alto). Recuperação do presencial.",
+    "riscos": ["Inadimplência", "Competição EAD", "Regulação MEC"],
+    "buscar": ["Captação alunos", "Medicina", "EAD", "Resultados"]
+  },
+
+  "HAPV3": {
+    "nome": "Hapvida",
+    "setor": "Saúde",
+    "modelo": "Maior operadora de saúde do Brasil (após fusão com NotreDame). Modelo verticalizado (plano + hospitais).",
+    "kpis": ["Beneficiários", "Sinistralidade", "Ticket médio", "EBITDA"],
+    "tese": "Escala e verticalização geram eficiência. Potencial de sinergias da fusão.",
+    "riscos": ["Sinistralidade", "Integração", "Regulação ANS"],
+    "buscar": ["Sinistralidade", "Sinergias fusão", "Beneficiários", "Resultados"]
+  },
+
+  "RDOR3": {
+    "nome": "Rede D'Or",
+    "setor": "Saúde - Hospitais",
+    "modelo": "Maior rede de hospitais privados do Brasil. 69 hospitais. Também opera planos de saúde (SulAmérica).",
+    "kpis": ["Leitos", "Taxa de ocupação", "Ticket médio", "EBITDA"],
+    "tese": "Líder em hospitais premium. Consolidador do setor. Sinergias com SulAmérica.",
+    "riscos": ["Competição", "Sinistralidade SulAmérica", "Expansão"],
+    "buscar": ["Aquisições", "Ocupação", "SulAmérica", "Resultados"]
+  },
+
+  "FLRY3": {
+    "nome": "Fleury",
+    "setor": "Saúde - Diagnósticos",
+    "modelo": "Maior rede de medicina diagnóstica do Brasil. Laboratórios e centros de imagem. Também B2B.",
+    "kpis": ["Exames realizados", "Ticket médio", "Market share", "Margem EBITDA"],
+    "tese": "Líder em diagnósticos premium. Expansão via aquisições e B2B.",
+    "riscos": ["Competição", "Reembolso planos", "Tecnologia"],
+    "buscar": ["Aquisições", "Exames", "B2B", "Resultados"]
+  },
+
+  "RADL3": {
+    "nome": "RaiaDrogasil",
+    "setor": "Varejo - Farmácias",
+    "modelo": "Maior rede de farmácias do Brasil. Marcas Droga Raia e Drogasil. Também marketplace e healthtech.",
+    "kpis": ["SSS", "Novas lojas", "Market share", "Margem EBITDA"],
+    "tese": "Líder em farmácias com expansão consistente. Digitalização acelerada.",
+    "riscos": ["Competição", "Regulação preços", "Expansão"],
+    "buscar": ["Abertura de lojas", "Market share", "Digital", "Resultados"]
+  },
+
+  "PCAR3": {
+    "nome": "Grupo Pão de Açúcar (GPA)",
+    "setor": "Varejo - Supermercados",
+    "modelo": "Rede de supermercados focada em alta renda. Marcas Pão de Açúcar e Extra (em reestruturação).",
+    "kpis": ["SSS", "Margem bruta", "Vendas online", "EBITDA"],
+    "tese": "Turnaround após spin-off do Assaí. Foco em premium e proximidade.",
+    "riscos": ["Execução turnaround", "Competição", "Endividamento"],
+    "buscar": ["Vendas mesmas lojas", "Margens", "Reestruturação", "Resultados"]
+  },
+
+  "ASAI3": {
+    "nome": "Assaí Atacadista",
+    "setor": "Varejo - Atacarejo",
+    "modelo": "Rede de atacarejo (cash & carry). Foco em pequenos comerciantes e famílias. Expansão acelerada.",
+    "kpis": ["SSS", "Novas lojas", "Vendas/m²", "Margem EBITDA"],
+    "tese": "Crescimento estrutural do atacarejo. Conversões de Extra.",
+    "riscos": ["Competição (Atacadão)", "Expansão", "Consumo"],
+    "buscar": ["Abertura de lojas", "Vendas", "Competição", "Resultados"]
+  },
+
+  "CVCB3": {
+    "nome": "CVC",
+    "setor": "Turismo",
+    "modelo": "Maior operadora de turismo do Brasil. Pacotes, passagens, hotéis. Franquias e online.",
+    "kpis": ["Reservas", "Take rate", "Lojas", "EBITDA"],
+    "tese": "Recuperação pós-pandemia. Turismo doméstico e internacional.",
+    "riscos": ["Câmbio", "Competição online", "Endividamento"],
+    "buscar": ["Turismo", "Reservas", "Câmbio", "Resultados"]
+  },
+
+  "SMFT3": {
+    "nome": "Smart Fit",
+    "setor": "Fitness",
+    "modelo": "Maior rede de academias da América Latina. Modelo low cost e premium (Bio Ritmo).",
+    "kpis": ["Membros", "Churn", "Receita/membro", "Margem EBITDA"],
+    "tese": "Líder em fitness com escala. Expansão internacional e premium.",
+    "riscos": ["Churn", "Competição", "Expansão"],
+    "buscar": ["Membros", "Novas academias", "Churn", "Resultados"]
+  },
+
+  "BPAC11": {
+    "nome": "BTG Pactual",
+    "setor": "Bancos de Investimento",
+    "modelo": "Maior banco de investimento da América Latina. Asset, wealth, corporate, sales & trading.",
+    "kpis": ["ROE", "AuM", "Receitas por segmento", "Captação líquida"],
+    "tese": "Líder em banco de investimento. Expansão em varejo alta renda.",
+    "riscos": ["Volatilidade mercados", "Competição", "Regulação"],
+    "buscar": ["Resultados", "AuM", "M&A", "IPOs"]
+  },
+
+  "CYRE3": {
+    "nome": "Cyrela",
+    "setor": "Construção Civil",
+    "modelo": "Construtora e incorporadora focada em média-alta renda. Atua em SP, RJ e regionais.",
+    "kpis": ["Lançamentos", "Vendas líquidas", "VSO", "Margem bruta"],
+    "tese": "Líder em alta renda com execução consistente. Ciclo imobiliário favorável.",
+    "riscos": ["Juros altos", "Distratos", "Custos de construção"],
+    "buscar": ["Lançamentos", "Vendas", "Selic", "Resultados"]
+  },
+
+  "MRVE3": {
+    "nome": "MRV",
+    "setor": "Construção Civil",
+    "modelo": "Maior construtora do Brasil em unidades. Foco em baixa renda (MCMV). Também Resia (EUA) e Luggo (locação).",
+    "kpis": ["Lançamentos", "Vendas", "Margem bruta", "MCMV"],
+    "tese": "Líder em baixa renda com escala. MCMV estrutural no Brasil.",
+    "riscos": ["Custos de construção", "MCMV", "Resia EUA"],
+    "buscar": ["MCMV", "Vendas", "Custos", "Resia", "Resultados"]
+  },
+
+  "DIRR3": {
+    "nome": "Direcional",
+    "setor": "Construção Civil",
+    "modelo": "Construtora focada em baixa renda (MCMV) e média renda (Riva). Alta eficiência operacional.",
+    "kpis": ["Lançamentos", "Vendas", "VSO", "Margem bruta"],
+    "tese": "Execução superior em baixa renda. Margens acima da média do setor.",
+    "riscos": ["MCMV", "Custos de construção", "Expansão Riva"],
+    "buscar": ["MCMV", "Vendas", "Margens", "Resultados"]
+  },
+
+  "GMAT3": {
+    "nome": "Grupo Mateus",
+    "setor": "Varejo - Supermercados",
+    "modelo": "Rede de supermercados do Nordeste. Atacarejo, varejo e eletro. Expansão acelerada.",
+    "kpis": ["SSS", "Novas lojas", "Market share", "Margem EBITDA"],
+    "tese": "Líder regional com expansão. Mercado nordestino em crescimento.",
+    "riscos": ["Competição", "Execução expansão", "Consumo regional"],
+    "buscar": ["Abertura lojas", "Nordeste", "Competição", "Resultados"]
+  },
+
+  "CEAB3": {
+    "nome": "C&A Brasil",
+    "setor": "Varejo - Moda",
+    "modelo": "Varejista de moda focada em classes B e C. Lojas em shoppings e ruas. Fintech C&A Pay.",
+    "kpis": ["SSS", "Margem bruta", "Inadimplência C&A Pay", "EBITDA"],
+    "tese": "Turnaround operacional. Digitalização e fintech como diferenciais.",
+    "riscos": ["Consumo", "Competição (Shein)", "Execução"],
+    "buscar": ["Vendas", "C&A Pay", "Competição", "Resultados"]
+  },
+
+  "NATU3": {
+    "nome": "Natura &Co",
+    "setor": "Cosméticos",
+    "modelo": "Holding de cosméticos: Natura, Avon, The Body Shop, Aesop. Venda direta e varejo.",
+    "kpis": ["Receita por marca", "Margem EBITDA", "Consultoras ativas", "E-commerce"],
+    "tese": "Turnaround após integração de marcas. Venda de ativos não-core.",
+    "riscos": ["Integração de marcas", "Avon", "Endividamento"],
+    "buscar": ["Avon", "Vendas", "Reestruturação", "Resultados"]
+  },
+
+  "TOTS3": {
+    "nome": "Totvs",
+    "setor": "Tecnologia - Software",
+    "modelo": "Maior empresa de software do Brasil. ERPs para médias empresas. Também fintech e business performance.",
+    "kpis": ["ARR", "Churn", "NRR", "Margem EBITDA"],
+    "tese": "Líder em ERP com receita recorrente. Expansão em fintech e BPO.",
+    "riscos": ["Competição", "Churn", "Execução de novas verticais"],
+    "buscar": ["ARR", "Novas verticais", "Aquisições", "Resultados"]
+  },
+
+  "POSI3": {
+    "nome": "Positivo Tecnologia",
+    "setor": "Tecnologia - Hardware",
+    "modelo": "Fabricante de computadores, tablets e servidores. Também educacional e corporativo.",
+    "kpis": ["Vendas por segmento", "Market share", "Margem bruta", "EBITDA"],
+    "tese": "Líder em hardware educacional. Diversificação em corporativo.",
+    "riscos": ["Competição", "Câmbio", "Demanda educacional"],
+    "buscar": ["Licitações", "Vendas", "Educação", "Resultados"]
+  },
+
+  "GOAU4": {
+    "nome": "Metalúrgica Gerdau",
+    "setor": "Holdings",
+    "modelo": "Holding que controla a Gerdau. Acesso indireto às operações siderúrgicas.",
+    "kpis": ["Valor da participação", "Desconto holding", "Dividendos Gerdau"],
+    "tese": "Forma de investir na Gerdau com potencial desconto.",
+    "riscos": ["Desempenho Gerdau", "Desconto holding"],
+    "buscar": ["Resultados Gerdau", "Dividendos", "Aço"]
+  },
+
+  "BEEF3": {
+    "nome": "Minerva Foods",
+    "setor": "Alimentos - Frigoríficos",
+    "modelo": "Frigorífico focado em exportação de carne bovina. Opera no Brasil, Uruguai, Paraguai e Argentina.",
+    "kpis": ["Exportações", "Preço do boi", "Margem EBITDA", "China"],
+    "tese": "Exposição à demanda global por proteína. Diversificação geográfica.",
+    "riscos": ["Preço do boi", "Embargos", "China", "Câmbio"],
+    "buscar": ["Exportações China", "Embargos", "Preço boi", "Resultados"]
+  },
+
+  "JBSS3": {
+    "nome": "JBS",
+    "setor": "Alimentos - Frigoríficos",
+    "modelo": "Maior frigorífico do mundo. Opera carne bovina, suína, frango. EUA representa 70% da receita.",
+    "kpis": ["Receita por proteína", "Margem EBITDA", "EUA vs Brasil", "Endividamento"],
+    "tese": "Diversificação geográfica e de proteínas. Exposição ao dólar.",
+    "riscos": ["Ciclo do gado EUA", "Investigações", "Câmbio"],
+    "buscar": ["Resultados EUA", "Carne bovina", "Investigações", "Resultados"]
+  },
+
+  "BRFS3": {
+    "nome": "BRF",
+    "setor": "Alimentos - Frigoríficos",
+    "modelo": "Produtor de alimentos processados. Marcas Sadia e Perdigão. Frangos e suínos.",
+    "kpis": ["Volume vendido", "Preço médio", "Margem bruta", "EBITDA"],
+    "tese": "Turnaround operacional. Forte em alimentos processados e exportação.",
+    "riscos": ["Custos de grãos", "Competição", "Execução"],
+    "buscar": ["Custos grãos", "Exportações", "Margens", "Resultados"]
+  },
+
+  "QUAL3": {
+    "nome": "Qualicorp",
+    "setor": "Saúde - Planos",
+    "modelo": "Administradora de benefícios. Vende planos de saúde coletivos por adesão. Forte em SP.",
+    "kpis": ["Vidas", "Churn", "Ticket médio", "EBITDA"],
+    "tese": "Turnaround com foco em retenção. Setor de saúde resiliente.",
+    "riscos": ["Churn elevado", "Regulação ANS", "Competição"],
+    "buscar": ["Vidas", "Churn", "Reajustes", "Resultados"]
+  },
+
+  "VAMO3": {
+    "nome": "Vamos (Grupo Simpar)",
+    "setor": "Locação - Caminhões",
+    "modelo": "Maior locadora de caminhões e máquinas do Brasil. Também concessionárias e seminovos.",
+    "kpis": ["Frota", "Yield", "Ocupação", "EBITDA"],
+    "tese": "Mercado de locação de caminhões em crescimento. Consolidadora do setor.",
+    "riscos": ["Depreciação", "Selic", "Execução"],
+    "buscar": ["Frota", "Contratos", "Seminovos", "Resultados"]
+  },
+
+  "POMO4": {
+    "nome": "Marcopolo",
+    "setor": "Bens de Capital - Ônibus",
+    "modelo": "Maior fabricante de carrocerias de ônibus da América Latina. Exporta para 100 países.",
+    "kpis": ["Produção", "Exportações", "Margem EBITDA", "Backlog"],
+    "tese": "Líder em ônibus com exposição internacional. Eletrificação como oportunidade.",
+    "riscos": ["Ciclo de investimentos", "Câmbio", "Demanda"],
+    "buscar": ["Produção", "Exportações", "Ônibus elétricos", "Resultados"]
+  },
+
+  "AXIA3": {
+    "nome": "Axia Energia",
+    "setor": "Energia",
+    "modelo": "Empresa de energia renovável e distribuição. Atuação diversificada no setor elétrico.",
+    "kpis": ["Geração", "EBITDA", "Alavancagem", "Projetos"],
+    "tese": "Exposição a energia renovável em crescimento.",
+    "riscos": ["Regulação", "Execução de projetos", "Hidrologia"],
+    "buscar": ["Projetos", "Geração", "Resultados"]
+  },
+
+  "AMBP3": {
+    "nome": "Ambipar",
+    "setor": "Serviços Ambientais",
+    "modelo": "Empresa de gestão ambiental. Response (emergências) e Environment (resíduos, reciclagem).",
+    "kpis": ["Receita por segmento", "Aquisições", "Margem EBITDA", "Alavancagem"],
+    "tese": "Consolidadora do setor ambiental. ESG como tema estrutural.",
+    "riscos": ["Alavancagem", "Integração de aquisições", "Execução"],
+    "buscar": ["Aquisições", "Endividamento", "ESG", "Resultados"]
+  },
+
+  "ENGI11": {
+    "nome": "Energisa",
+    "setor": "Utilities - Energia",
+    "modelo": "Grupo de distribuição de energia. 11 distribuidoras em 9 estados. Também transmissão e geração.",
+    "kpis": ["Perdas", "Inadimplência", "Tarifa", "EBITDA"],
+    "tese": "Gestão de excelência em distribuição. Crescimento via aquisições.",
+    "riscos": ["Regulação", "Inadimplência", "Economia regional"],
+    "buscar": ["Perdas", "Aquisições", "Regulação", "Resultados"]
+  },
+
+  "ANIM3": {
+    "nome": "Ânima Educação",
+    "setor": "Educação",
+    "modelo": "Grupo de educação superior. Forte em medicina e presencial premium. Marcas regionais.",
+    "kpis": ["Base de alunos", "Ticket médio", "Medicina", "EBITDA"],
+    "tese": "Foco em medicina (ticket alto) e presencial premium.",
+    "riscos": ["Inadimplência", "Regulação MEC", "Competição"],
+    "buscar": ["Medicina", "Captação", "Resultados"]
+  },
+
+  "RCSL4": {
+    "nome": "Recrusul",
+    "setor": "Bens de Capital",
+    "modelo": "Fabricante de implementos rodoviários (carretas, semirreboques).",
+    "kpis": ["Produção", "Vendas", "Margem", "Backlog"],
+    "tese": "Exposição ao setor de transportes.",
+    "riscos": ["Ciclo econômico", "Competição", "Custos"],
+    "buscar": ["Produção", "Vendas", "Setor transportes", "Resultados"]
+  }
+}
