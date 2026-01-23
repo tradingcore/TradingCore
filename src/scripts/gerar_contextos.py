@@ -50,47 +50,42 @@ def salvar_contextos(contextos):
 
 
 def buscar_description_yahoo(ticker):
-    """Busca description do Yahoo Finance."""
+    """Busca description do Yahoo Finance via yfinance."""
     try:
         symbol = f"{ticker}.SA"
         stock = yf.Ticker(symbol)
         info = stock.info
         
-        # Pegar description (longBusinessSummary)
         description = info.get('longBusinessSummary', '')
-        
-        if description:
-            return description
-        
-        return None
+        return description if description else None
         
     except Exception as e:
+        print(f"[erro: {e}]", end=" ")
         return None
 
 
 def main():
     print("="*60)
-    print("📊 BUSCANDO DESCRIÇÕES DO YAHOO FINANCE")
+    print("BUSCANDO DESCRIÇÕES DO YAHOO FINANCE")
     print("="*60)
     
     # Carregar dados
     tickers = carregar_tickers_csv()
     contextos = carregar_contextos_existentes()
     
-    print(f"\n📋 {len(tickers)} tickers únicos no CSV")
-    print(f"📄 {len(contextos)} contextos já existentes")
+    print(f"\n{len(tickers)} tickers únicos no CSV")
+    print(f"{len(contextos)} contextos já existentes")
     
     # Identificar tickers sem contexto
     tickers_sem_contexto = [t for t in tickers if t not in contextos]
     
-    print(f"🔍 {len(tickers_sem_contexto)} tickers sem descrição\n")
+    print(f"{len(tickers_sem_contexto)} tickers sem descrição\n")
     
     if not tickers_sem_contexto:
-        print("✅ Todos os tickers já têm descrição!")
+        print("Todos os tickers já têm descrição!")
         return
     
-    print(f"📝 Buscando descrições para {len(tickers_sem_contexto)} tickers...")
-    print("   (Ctrl+C para parar)\n")
+    print(f"Buscando descrições para {len(tickers_sem_contexto)} tickers...\n")
     
     encontrados = 0
     nao_encontrados = 0
@@ -104,27 +99,29 @@ def main():
             if description:
                 contextos[ticker] = description
                 encontrados += 1
-                print(f"✓ ({len(description)} chars)")
+                print(f"OK ({len(description)} chars)")
             else:
                 nao_encontrados += 1
-                print("✗ (sem descrição)")
+                print("sem descrição")
             
             # Salvar a cada 20 tickers
             if (i + 1) % 20 == 0:
                 salvar_contextos(contextos)
-                print(f"   💾 Salvo ({encontrados} encontrados, {nao_encontrados} sem descrição)")
+                print(f"   Salvo ({encontrados} encontrados, {nao_encontrados} sem descrição)")
             
-            # Rate limit
-            time.sleep(0.3)
+            # Rate limit - 1s entre requisições para evitar bloqueio
+            time.sleep(1)
             
     except KeyboardInterrupt:
-        print("\n\n⏹ Interrompido pelo usuário")
+        print("\n\nInterrompido pelo usuário")
+    except Exception as e:
+        print(f"\nErro: {e}")
     
     # Salvar final
     salvar_contextos(contextos)
     
     print(f"\n{'='*60}")
-    print(f"✅ CONCLUÍDO")
+    print(f"CONCLUÍDO")
     print(f"   Descrições encontradas: {encontrados}")
     print(f"   Sem descrição: {nao_encontrados}")
     print(f"   Total no arquivo: {len(contextos)}")
