@@ -95,8 +95,8 @@ TICKER_NOMES = {
     "ITSA4": ["Itaúsa"],
 }
 
-# Tamanho do batch para busca (limitado pelo plano da API Event Registry)
-BATCH_SIZE = 15
+# Tamanho do batch para busca (limitado pelo plano da API Event Registry - max 15)
+BATCH_SIZE = 10
 
 
 def buscar_noticias(ticker, data_inicio, data_fim, max_items=None):
@@ -148,35 +148,44 @@ def buscar_noticias(ticker, data_inicio, data_fim, max_items=None):
         return []
 
 
-def buscar_noticias_individual(ticker, data_inicio, data_fim, max_items=10):
+def buscar_noticias_batch(tickers, data_inicio, data_fim, max_items_total=200):
     """
-    Busca notícias de um ticker específico.
-    
+    Busca notícias de múltiplos tickers usando nomes de empresas.
+    Usa uma keyword por ticker (nome da empresa).
+
     Args:
-        ticker: Código do ticker
+        tickers: Lista de tickers (ex: ["PETR4", "VALE3"])
         data_inicio: Data início no formato YYYY-MM-DD
         data_fim: Data fim no formato YYYY-MM-DD
-        max_items: Número máximo de artigos
+        max_items_total: Número máximo total de artigos
 
     Returns:
-        Lista de artigos
+        Dicionário {ticker: [lista de artigos]}
     """
+    if not tickers:
+        return {}
+
     try:
         er = EventRegistry(apiKey=EVENT_REGISTRY_API_KEY)
+
+        # Construir lista de keywords (nomes das empresas)
+        keywords_list = []
+        ticker_to_keyword = {}
         
-        # Buscar pelo ticker e nome da empresa se disponível
-        termos = TICKER_NOMES.get(ticker, [ticker])
-        if ticker not in termos:
-            termos.append(ticker)
+        for ticker in tickers:
+            # Usar nome da empresa se disponível, senão usar o ticker
+            nome = TICKER_NOMES.get(ticker, [ticker])[0]
+            keywords_list.append(nome)
+            ticker_to_keyword[ticker] = nome.upper()
         
-        # Usar o primeiro termo (mais relevante)
-        keyword = termos[0] if termos else ticker
+        # Construir query com OR
+        keywords = " OR ".join(keywords_list)
         
         query = {
             "$query": {
                 "$and": [
                     {
-                        "keyword": keyword,
+                        "keyword": keywords,
                         "keywordLoc": "body"
                     },
                     {
@@ -188,56 +197,76 @@ def buscar_noticias_individual(ticker, data_inicio, data_fim, max_items=10):
         }
 
         q = QueryArticlesIter.initWithComplexQuery(query)
-        artigos = []
+        artigos_raw = []
 
-        for article in q.execQuery(er, maxItems=max_items):
-            artigos.append(article)
+        for article in q.execQuery(er, maxItems=max_items_total):
+            artigos_raw.append(article)
 
-        return artigos
+        print(f"  📰 Batch: {len(artigos_raw)} notícias encontradas para {len(tickers)} tickers")
+
+        # Separar artigos por ticker
+        resultado = {ticker: [] for ticker in tickers}
+        
+        for artigo in artigos_raw:
+            body = artigo.get('body', '') or ''
+            title = artigo.get('title', '') or ''
+            texto_completo = f"{title} {body}".upper()
+            
+            # Verificar quais tickers são mencionados neste artigo
+            for ticker in tickers:
+                keyword = ticker_to_keyword[ticker]
+                # Também verificar o código do ticker
+                if keyword in texto_completo or ticker in texto_completo:
+                    if artigo not in resultado[ticker]:
+                        resultado[ticker].append(artigo)
+
+        # Log de resultados
+        tickers_com_noticias = sum(1 for t in resultado if resultado[t])
+        total_noticias = sum(len(v) for v in resultado.values())
+        print(f"  ✓ {tickers_com_noticias}/{len(tickers)} tickers com notícias ({total_noticias} total)")
+
+        return resultado
 
     except Exception as e:
-        return []
+        print(f"  ✗ Erro ao buscar notícias em batch: {e}")
+        return {ticker: [] for ticker in tickers}
 
 
-def buscar_noticias_todos_tickers(tickers, data_inicio, data_fim, limite_tickers=100):
+def buscar_noticias_todos_tickers(tickers, data_inicio, data_fim, batch_size=None):
     """
-    Busca notícias de todos os tickers individualmente.
-    Limitado aos top N tickers para otimizar tempo.
+    Busca notícias de todos os tickers, dividindo em batches de 10.
+    Processa todas as 400 ações.
 
     Args:
-        tickers: Lista completa de tickers (já ordenada por importância)
+        tickers: Lista completa de tickers
         data_inicio: Data início no formato YYYY-MM-DD
         data_fim: Data fim no formato YYYY-MM-DD
-        limite_tickers: Número máximo de tickers a processar
+        batch_size: Tamanho de cada batch (default: BATCH_SIZE = 10)
 
     Returns:
         Dicionário {ticker: [lista de artigos]}
     """
-    # Limitar aos top tickers
-    tickers_limitados = tickers[:limite_tickers]
-    
+    if batch_size is None:
+        batch_size = BATCH_SIZE
+
     resultado_final = {}
-    total = len(tickers_limitados)
+    total_batches = (len(tickers) + batch_size - 1) // batch_size
 
-    print(f"\n📰 Buscando notícias de {total} tickers (top {limite_tickers} mais negociados)...")
+    print(f"\n📰 Buscando notícias de {len(tickers)} tickers em {total_batches} batches de {batch_size}...")
 
-    for i, ticker in enumerate(tickers_limitados):
-        try:
-            artigos = buscar_noticias_individual(ticker, data_inicio, data_fim)
-            resultado_final[ticker] = artigos
-            
-            if artigos:
-                print(f"  [{i+1}/{total}] ✓ {ticker}: {len(artigos)} notícias")
-            
-            # Log de progresso a cada 20 tickers
-            if (i + 1) % 20 == 0:
-                tickers_com_noticias = sum(1 for t in resultado_final if resultado_final[t])
-                print(f"  → Progresso: {i+1}/{total} processados, {tickers_com_noticias} com notícias")
-                
-        except Exception as e:
-            print(f"  [{i+1}/{total}] ✗ {ticker}: {e}")
-            resultado_final[ticker] = []
-            continue
+    for i in range(0, len(tickers), batch_size):
+        batch = tickers[i:i + batch_size]
+        batch_num = (i // batch_size) + 1
+        
+        print(f"\n  Batch {batch_num}/{total_batches} ({len(batch)} tickers)...")
+        
+        resultado_batch = buscar_noticias_batch(batch, data_inicio, data_fim)
+        resultado_final.update(resultado_batch)
+        
+        # Log de progresso a cada 10 batches
+        if batch_num % 10 == 0:
+            tickers_com_noticias = sum(1 for t in resultado_final if resultado_final[t])
+            print(f"  → Progresso: {batch_num}/{total_batches} batches, {tickers_com_noticias} tickers com notícias")
 
     # Resumo final
     tickers_com_noticias = sum(1 for t in resultado_final if resultado_final[t])
