@@ -27,4 +27,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add docs/contextos-acoes.json
           git diff --staged --quiet || git commit -m "feat: Contextos das ações via Yahoo Finance"
+          git pull --rebase origin main
           git push
