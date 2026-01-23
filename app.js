@@ -1212,29 +1212,60 @@ const loadAvailableNewsDates = async () => {
   if (!user) return;
 
   try {
-    // Buscar todos os documentos de notícias do usuário
-    const newsRef = db.collection("users").doc(user.uid).collection("news");
-    const snapshot = await newsRef.get();
+    // Obter tickers do usuário
+    const session = getSession();
+    const userTickers = session?.tickers || [];
+    
+    if (userTickers.length === 0) {
+      renderCalendar();
+      return;
+    }
     
     availableNewsDates.clear();
     
-    snapshot.forEach((doc) => {
-      const data = doc.data();
-      const dateStr = doc.id; // formato YYYY-MM-DD
+    // Verificar últimos 30 dias em news_global
+    for (let i = 0; i < 30; i++) {
+      const date = new Date();
+      date.setDate(date.getDate() - i);
+      const dateStr = date.toISOString().split("T")[0];
       
-      // Calcular sentimento médio do dia
-      let sentimentoMedio = 0;
-      const sentimentoHist = data.sentimento_historico;
+      let dayHasNews = false;
+      let sentimentoTotal = 0;
+      let sentimentoCount = 0;
       
-      if (sentimentoHist && Object.keys(sentimentoHist).length > 0) {
-        const valores = Object.values(sentimentoHist);
-        sentimentoMedio = valores.reduce((a, b) => a + b, 0) / valores.length;
-      } else if (data.destaque && data.destaque.sentimento !== undefined) {
-        sentimentoMedio = data.destaque.sentimento;
+      // Verificar se tem notícia para algum ticker do usuário neste dia
+      for (const ticker of userTickers) {
+        try {
+          const docRef = db.collection("news_global").doc(dateStr).collection("tickers").doc(ticker);
+          const doc = await docRef.get();
+          
+          if (doc.exists) {
+            dayHasNews = true;
+            const data = doc.data();
+            
+            // Calcular sentimento
+            if (data.sentimento_medio !== undefined) {
+              sentimentoTotal += data.sentimento_medio;
+              sentimentoCount++;
+            } else if (data.sentimento === "Positivo") {
+              sentimentoTotal += 0.5;
+              sentimentoCount++;
+            } else if (data.sentimento === "Negativo") {
+              sentimentoTotal += -0.5;
+              sentimentoCount++;
+            }
+          }
+        } catch (err) {
+          // Ignorar erros de ticker individual
+        }
       }
       
-      availableNewsDates.set(dateStr, sentimentoMedio);
-    });
+      // Se tem notícia neste dia, adicionar ao calendário
+      if (dayHasNews) {
+        const sentimentoMedio = sentimentoCount > 0 ? sentimentoTotal / sentimentoCount : 0;
+        availableNewsDates.set(dateStr, sentimentoMedio);
+      }
+    }
     
     renderCalendar();
   } catch (error) {
