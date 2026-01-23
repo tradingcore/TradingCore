@@ -1794,6 +1794,35 @@ select:focus {
   height: 14px;
 }
 
+/* Legenda de opacidade (notícias) */
+.heatmap-legend-opacity {
+  width: 24px;
+  height: 18px;
+  border-radius: 3px;
+  background: var(--accent);
+}
+
+.heatmap-legend-opacity--has-news {
+  opacity: 1;
+}
+
+.heatmap-legend-opacity--no-news {
+  opacity: 0.4;
+}
+
+.heatmap-legend-hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+/* Ação sem notícias no mapa */
+.heatmap-item--no-news {
+  opacity: 0.4;
+}
+
 /* Container do mapa */
 .heatmap-container {
   display: grid;

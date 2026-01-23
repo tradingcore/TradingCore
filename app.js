@@ -1562,6 +1562,9 @@ const createSentimentChart = (ticker, historico) => {
 let heatmapData = null;
 let activeSetorFilter = "all";
 
+// Tickers que têm notícias disponíveis
+let tickersWithNews = new Set();
+
 const loadHeatmap = async () => {
   const container = document.getElementById("heatmap-container");
   const loading = document.getElementById("heatmap-loading");
@@ -1591,6 +1594,9 @@ const loadHeatmap = async () => {
       updated.textContent = `Atualizado: ${date.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}`;
     }
     
+    // Buscar quais tickers têm notícias hoje
+    await loadTickersWithNews();
+    
     // Renderizar filtro de setores
     renderSetorFilter();
     
@@ -1603,6 +1609,41 @@ const loadHeatmap = async () => {
     console.error("Erro ao carregar heatmap:", error);
     if (loading) loading.classList.add("hidden");
     if (empty) empty.classList.remove("hidden");
+  }
+};
+
+const loadTickersWithNews = async () => {
+  tickersWithNews.clear();
+  
+  try {
+    // Data de hoje
+    const hoje = new Date().toISOString().split("T")[0];
+    
+    // Buscar subcoleção de tickers em news_global para hoje
+    const tickersRef = db.collection("news_global").doc(hoje).collection("tickers");
+    const snapshot = await tickersRef.get();
+    
+    snapshot.forEach((doc) => {
+      tickersWithNews.add(doc.id);
+    });
+    
+    console.log(`📰 ${tickersWithNews.size} ações com notícias hoje`);
+    
+    // Se não tem notícias hoje, tentar ontem
+    if (tickersWithNews.size === 0) {
+      const ontem = new Date();
+      ontem.setDate(ontem.getDate() - 1);
+      const ontemStr = ontem.toISOString().split("T")[0];
+      
+      const snapshotOntem = await db.collection("news_global").doc(ontemStr).collection("tickers").get();
+      snapshotOntem.forEach((doc) => {
+        tickersWithNews.add(doc.id);
+      });
+      
+      console.log(`📰 ${tickersWithNews.size} ações com notícias ontem`);
+    }
+  } catch (error) {
+    console.error("Erro ao carregar tickers com notícias:", error);
   }
 };
 
@@ -1712,14 +1753,15 @@ const renderHeatmap = (highlightTicker = null) => {
             const colorClass = getHeatmapColorClass(acao.change);
             const highlightClass = highlightTicker === acao.ticker ? "heatmap-item--highlight" : "";
             const sizeClass = getSizeClass(acao.marketCap || 0, topThreshold, midThreshold);
+            const newsClass = tickersWithNews.has(acao.ticker) ? "" : "heatmap-item--no-news";
             const sign = acao.change > 0 ? "+" : "";
             const marketCapFormatted = formatMarketCap(acao.marketCap);
             return `
-              <div class="heatmap-item ${colorClass} ${sizeClass} ${highlightClass}" 
+              <div class="heatmap-item ${colorClass} ${sizeClass} ${highlightClass} ${newsClass}" 
                    data-ticker="${acao.ticker}"
                    data-price="${acao.price}"
                    data-change="${acao.change}"
-                   title="${acao.ticker}: R$ ${acao.price} (${sign}${acao.change.toFixed(2)}%) | Market Cap: ${marketCapFormatted}">
+                   title="${acao.ticker}: R$ ${acao.price} (${sign}${acao.change.toFixed(2)}%) | Market Cap: ${marketCapFormatted}${newsClass ? '' : ' | 📰 Tem notícias'}">
                 <span class="heatmap-ticker">${acao.ticker}</span>
                 <span class="heatmap-change">${sign}${acao.change.toFixed(1)}%</span>
               </div>
