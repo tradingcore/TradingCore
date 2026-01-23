@@ -24,8 +24,8 @@ TICKER_NOMES = {
     # Adicionar mais conforme necessário
 }
 
-# Tamanho do batch para busca
-BATCH_SIZE = 50
+# Tamanho do batch para busca (limitado pelo plano da API Event Registry)
+BATCH_SIZE = 15
 
 
 def buscar_noticias(ticker, data_inicio, data_fim, max_items=None):
