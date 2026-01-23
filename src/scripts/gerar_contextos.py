@@ -20,6 +20,7 @@ load_dotenv()
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_MODEL = "gpt-4o-mini"
+USE_OPENAI = os.getenv("USE_OPENAI", "0").strip() == "1"
 
 # Paths
 SCRIPT_DIR = Path(__file__).parent
@@ -125,7 +126,7 @@ def main():
     print("🔧 GERADOR DE CONTEXTOS DE AÇÕES B3")
     print("="*60)
     
-    if not OPENAI_API_KEY:
+    if USE_OPENAI and not OPENAI_API_KEY:
         print("✗ OPENAI_API_KEY não configurada!")
         return
     
@@ -161,8 +162,10 @@ def main():
             
             print(f"[{i+1}/{len(tickers_sem_contexto)}] {ticker} ({nome})...", end=" ")
             
-            # Gerar via OpenAI
-            contexto = gerar_contexto_openai(ticker, nome)
+            # Gerar via OpenAI (opcional)
+            contexto = None
+            if USE_OPENAI:
+                contexto = gerar_contexto_openai(ticker, nome)
             
             if contexto:
                 contextos[ticker] = contexto
@@ -179,8 +182,9 @@ def main():
                 salvar_contextos(contextos)
                 print(f"   💾 Salvo ({gerados} gerados, {erros} genéricos)")
             
-            # Rate limit
-            time.sleep(0.5)
+            # Rate limit (apenas quando usando API)
+            if USE_OPENAI:
+                time.sleep(0.5)
             
     except KeyboardInterrupt:
         print("\n\n⏹ Interrompido pelo usuário")
