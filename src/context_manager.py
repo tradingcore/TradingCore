@@ -1,8 +1,7 @@
 """
 Gerenciador de contextos estratégicos das ações.
-Usa o arquivo JSON com contextos pré-gerados.
+Usa o arquivo JSON com descrições do Yahoo Finance.
 """
-import os
 import json
 from pathlib import Path
 
@@ -24,7 +23,7 @@ def _carregar_contextos():
         try:
             with open(CONTEXTOS_PATH, 'r', encoding='utf-8') as f:
                 _contextos_cache = json.load(f)
-                print(f"✓ {len(_contextos_cache) - 1} contextos carregados")  # -1 para _metadata
+                print(f"✓ {len(_contextos_cache)} contextos carregados")
                 return _contextos_cache
         except Exception as e:
             print(f"⚠ Erro ao carregar contextos: {e}")
@@ -38,23 +37,29 @@ def _carregar_contextos():
 
 def carregar_contexto(ticker):
     """
-    Carrega o contexto de um ticker do arquivo JSON.
+    Carrega o contexto (descrição) de um ticker do arquivo JSON.
     
     Args:
         ticker: Código do ticker (ex: "PETR4")
         
     Returns:
-        String formatada com o contexto ou None
+        String com a descrição do Yahoo Finance ou None
     """
     contextos = _carregar_contextos()
     
     if ticker not in contextos:
         return None
     
-    ctx = contextos[ticker]
+    descricao = contextos[ticker]
     
-    # Formatar como texto para a IA
-    texto = f"""
+    # Se for string, é o formato novo (apenas descrição)
+    if isinstance(descricao, str):
+        return f"CONTEXTO DA EMPRESA ({ticker}):\n{descricao}"
+    
+    # Se for dict, é o formato antigo (retrocompatibilidade)
+    if isinstance(descricao, dict):
+        ctx = descricao
+        texto = f"""
 EMPRESA: {ctx.get('nome', ticker)}
 SETOR: {ctx.get('setor', 'N/A')}
 
@@ -73,18 +78,20 @@ RISCOS PRINCIPAIS:
 O QUE BUSCAR EM NOTÍCIAS:
 {', '.join(ctx.get('buscar', []))}
 """
-    return texto.strip()
+        return texto.strip()
+    
+    return None
 
 
 def carregar_contexto_dict(ticker):
     """
-    Carrega o contexto de um ticker como dicionário.
+    Carrega o contexto de um ticker como dicionário ou string.
     
     Args:
         ticker: Código do ticker
         
     Returns:
-        Dict com o contexto ou None
+        Dict/String com o contexto ou None
     """
     contextos = _carregar_contextos()
     return contextos.get(ticker)
@@ -93,7 +100,6 @@ def carregar_contexto_dict(ticker):
 def garantir_contexto(ticker):
     """
     Tenta carregar o contexto. Retorna None se não existir.
-    (Não gera mais via IA - usa apenas contextos pré-carregados)
     
     Args:
         ticker: Código do ticker
@@ -107,21 +113,28 @@ def garantir_contexto(ticker):
 def listar_tickers_com_contexto():
     """Retorna lista de tickers que têm contexto."""
     contextos = _carregar_contextos()
-    return [k for k in contextos.keys() if not k.startswith('_')]
+    return list(contextos.keys())
 
 
 def obter_buscar_noticias(ticker):
     """
-    Retorna a lista de temas a buscar em notícias para um ticker.
-    Útil para melhorar a busca de notícias.
+    Retorna palavras-chave para buscar notícias.
+    No formato novo, retorna apenas o ticker.
     
     Args:
         ticker: Código do ticker
         
     Returns:
-        Lista de strings ou [ticker] se não houver contexto
+        Lista de strings para busca
     """
     ctx = carregar_contexto_dict(ticker)
-    if ctx and 'buscar' in ctx:
+    
+    if ctx is None:
+        return [ticker]
+    
+    # Formato antigo com lista de temas
+    if isinstance(ctx, dict) and 'buscar' in ctx:
         return ctx['buscar']
+    
+    # Formato novo - retorna apenas o ticker
     return [ticker]
