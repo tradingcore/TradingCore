@@ -151,7 +151,9 @@ def buscar_noticias(ticker, data_inicio, data_fim, max_items=None):
 def buscar_noticias_batch(tickers, data_inicio, data_fim, max_items_total=200):
     """
     Busca notícias de múltiplos tickers usando nomes de empresas.
-    Usa uma keyword por ticker (nome da empresa).
+    Usa sintaxe correta do Event Registry com $or.
+    
+    Ref: https://newsapi.ai/blog/how-to-make-complex-queries/
 
     Args:
         tickers: Lista de tickers (ex: ["PETR4", "VALE3"])
@@ -178,14 +180,15 @@ def buscar_noticias_batch(tickers, data_inicio, data_fim, max_items_total=200):
             keywords_list.append(nome)
             ticker_to_keyword[ticker] = nome.upper()
         
-        # Construir query com OR
-        keywords = " OR ".join(keywords_list)
-        
+        # Construir query com $or corretamente
+        # Ref: https://newsapi.ai/blog/how-to-make-complex-queries/
         query = {
             "$query": {
                 "$and": [
                     {
-                        "keyword": keywords,
+                        "keyword": {
+                            "$or": keywords_list
+                        },
                         "keywordLoc": "body"
                     },
                     {
