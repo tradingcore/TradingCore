@@ -2198,6 +2198,15 @@ const renderHeatmap = (highlightTicker = null) => {
     );
     
     if (acoesValidas.length === 0) continue;
+
+    const session = getSession();
+    const userTickers = new Set((session.tickers || []).map((t) => t.toUpperCase()));
+    const acoesOrdenadas = acoesValidas.slice().sort((a, b) => {
+      const aIsUser = userTickers.has(a.ticker) ? 1 : 0;
+      const bIsUser = userTickers.has(b.ticker) ? 1 : 0;
+      if (bIsUser !== aIsUser) return bIsUser - aIsUser;
+      return (b.marketCap || 0) - (a.marketCap || 0);
+    });
     
     html += `
       <div class="heatmap-sector">
@@ -2206,15 +2215,17 @@ const renderHeatmap = (highlightTicker = null) => {
           <span class="heatmap-sector-count">${acoesValidas.length} ações</span>
         </div>
         <div class="heatmap-grid">
-          ${acoesValidas.map(acao => {
+          ${acoesOrdenadas.map(acao => {
             const colorClass = getHeatmapColorClass(acao.change);
             const highlightClass = highlightTicker === acao.ticker ? "heatmap-item--highlight" : "";
             const sizeClass = getSizeClass(acao.marketCap || 0, topThreshold, midThreshold);
             const newsClass = tickersWithNews.has(acao.ticker) ? "" : "heatmap-item--no-news";
+            const isUserTicker = userTickers.has(acao.ticker);
+            const userClass = isUserTicker ? "heatmap-item--portfolio" : "";
             const sign = acao.change > 0 ? "+" : "";
             const marketCapFormatted = formatMarketCap(acao.marketCap);
             return `
-              <div class="heatmap-item ${colorClass} ${sizeClass} ${highlightClass} ${newsClass}" 
+              <div class="heatmap-item ${colorClass} ${sizeClass} ${highlightClass} ${newsClass} ${userClass}" 
                    data-ticker="${acao.ticker}"
                    data-price="${acao.price}"
                    data-change="${acao.change}"

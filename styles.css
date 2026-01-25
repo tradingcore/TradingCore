@@ -2171,6 +2171,12 @@ select:focus {
   outline-offset: 2px;
 }
 
+/* Itens do portfólio no mapa */
+.heatmap-item--portfolio {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.6) inset;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 .heatmap-ticker {
   font-weight: 700;
   font-size: 0.7rem;
