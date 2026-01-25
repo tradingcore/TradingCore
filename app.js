@@ -70,6 +70,7 @@ const sectionCarteira = document.getElementById("section-carteira");
 const sectionPerfil = document.getElementById("section-perfil");
 const sectionNoticias = document.getElementById("section-noticias");
 const sectionMapa = document.getElementById("section-mapa");
+const sectionExposicoes = document.getElementById("section-exposicoes");
 
 // DOM Elements - News Section
 const newsContainer = document.getElementById("news-container");
@@ -121,6 +122,12 @@ const profilePhone = document.getElementById("profile-phone");
 const profileAddress = document.getElementById("profile-address");
 const profileBirthdate = document.getElementById("profile-birthdate");
 const saveProfileBtn = document.getElementById("save-profile-btn");
+
+// DOM Elements - Exposures
+const exposuresContainer = document.getElementById("exposures-container");
+const exposuresLoading = document.getElementById("exposures-loading");
+const exposuresEmpty = document.getElementById("exposures-empty");
+const exposuresUpdated = document.getElementById("exposures-updated");
 
 // State
 const tickerCatalog = new Map();
@@ -257,6 +264,7 @@ const showSection = (sectionName) => {
   if (sectionPerfil) sectionPerfil.classList.add("hidden");
   if (sectionNoticias) sectionNoticias.classList.add("hidden");
   if (sectionMapa) sectionMapa.classList.add("hidden");
+  if (sectionExposicoes) sectionExposicoes.classList.add("hidden");
   
   // Show target section
   if (sectionName === "carteira" && sectionCarteira) {
@@ -272,6 +280,9 @@ const showSection = (sectionName) => {
   } else if (sectionName === "mapa" && sectionMapa) {
     sectionMapa.classList.remove("hidden");
     loadHeatmap();
+  } else if (sectionName === "exposicoes" && sectionExposicoes) {
+    sectionExposicoes.classList.remove("hidden");
+    loadExposures();
   }
   
   // Update nav active state
@@ -1554,6 +1565,363 @@ const createSentimentChart = (ticker, historico) => {
       </div>
     </div>
   `;
+};
+
+// ========================================
+// EXPOSURES (FATORES QUE INFLUENCIAM AS AÇÕES)
+// ========================================
+const EXPOSURE_LOOKBACK_DAYS = 21;
+const EXPOSURE_CACHE_TTL = 5 * 60 * 1000;
+let exposureCache = null;
+
+const EXPOSURE_FACTORS = [
+  {
+    id: "usd",
+    label: "Dólar (USD/BRL)",
+    hint: "Sensibilidade a custos ou receitas em moeda estrangeira.",
+    keywords: ["dólar", "usd", "câmbio", "cambio", "us$", "moeda americana"]
+  },
+  {
+    id: "juros",
+    label: "Juros e crédito",
+    hint: "Impacto de juros, captação e condições de crédito.",
+    keywords: ["juros", "selic", "copom", "curva de juros", "spread", "captação", "capitacao", "crédito", "credito"]
+  },
+  {
+    id: "commodities",
+    label: "Commodities",
+    hint: "Exposição a preços de commodities relevantes ao setor.",
+    keywords: ["petróleo", "petroleo", "brent", "minério", "minerio", "soja", "milho", "aço", "aco", "celulose", "gás", "gas"]
+  },
+  {
+    id: "energia",
+    label: "Energia e combustível",
+    hint: "Custos de energia, combustíveis e logística energética.",
+    keywords: ["combustível", "combustivel", "diesel", "gasolina", "querosene", "energia", "tarifa", "electricidade"]
+  },
+  {
+    id: "consumo",
+    label: "Consumo e renda",
+    hint: "Demanda doméstica, renda disponível e comportamento do consumidor.",
+    keywords: ["consumo", "varejo", "demanda", "renda", "salário", "salario", "inflação", "inflacao"]
+  },
+  {
+    id: "china",
+    label: "Demanda externa/China",
+    hint: "Exposição a exportações e demanda internacional.",
+    keywords: ["china", "exportação", "exportacao", "demanda externa", "embarques", "importação", "importacao"]
+  },
+  {
+    id: "regulacao",
+    label: "Regulação e política pública",
+    hint: "Mudanças regulatórias e decisões governamentais.",
+    keywords: ["regulação", "regulacao", "aneel", "anatel", "anvisa", "bndes", "governo", "tributo", "imposto", "regulatório", "regulatorio"]
+  },
+  {
+    id: "logistica",
+    label: "Logística e frete",
+    hint: "Custos e gargalos de logística, fretes e distribuição.",
+    keywords: ["frete", "logística", "logistica", "porto", "rodovia", "aeroporto", "cadeia de suprimentos", "suprimentos"]
+  }
+];
+
+const getSentimentScore = (data) => {
+  if (typeof data.sentimento_medio === "number") return data.sentimento_medio;
+  if (data.sentimento === "Positivo") return 0.5;
+  if (data.sentimento === "Negativo") return -0.5;
+  return 0;
+};
+
+const buildDateRange = (days) => {
+  const dates = [];
+  const today = new Date();
+  for (let i = 0; i < days; i++) {
+    const date = new Date(today);
+    date.setDate(date.getDate() - i);
+    dates.push(date.toISOString().split("T")[0]);
+  }
+  return dates.reverse();
+};
+
+const matchFactor = (text, factor) => {
+  if (!text) return false;
+  const lower = text.toLowerCase();
+  return factor.keywords.some((keyword) => lower.includes(keyword));
+};
+
+const extractEvidence = (factor, data) => {
+  const fontes = Array.isArray(data.fontes) ? data.fontes : [];
+  for (const fonte of fontes) {
+    const titulo = fonte?.titulo || "";
+    const resumo = fonte?.resumo || "";
+    if (matchFactor(titulo, factor)) return titulo;
+    if (matchFactor(resumo, factor)) return resumo;
+  }
+  if (matchFactor(data.positivo || "", factor)) return data.positivo;
+  if (matchFactor(data.negativo || "", factor)) return data.negativo;
+  return "";
+};
+
+const analyzeTickerExposures = (tickerNews) => {
+  const factorStats = new Map();
+
+  EXPOSURE_FACTORS.forEach((factor) => {
+    factorStats.set(factor.id, {
+      ...factor,
+      mentions: 0,
+      scoreTotal: 0,
+      evidence: "",
+      evidenceDate: ""
+    });
+  });
+
+  tickerNews.forEach((entry) => {
+    const data = entry.data || {};
+    const sentiment = getSentimentScore(data);
+    const positivo = (data.positivo || "").toLowerCase();
+    const negativo = (data.negativo || "").toLowerCase();
+    const sourcesText = (data.fontes || [])
+      .map((fonte) => `${fonte?.titulo || ""} ${fonte?.resumo || ""}`.trim())
+      .join(" ");
+    const combined = `${positivo} ${negativo} ${sourcesText}`.trim();
+
+    EXPOSURE_FACTORS.forEach((factor) => {
+      if (!matchFactor(combined, factor)) return;
+
+      const stats = factorStats.get(factor.id);
+      if (!stats) return;
+
+      stats.mentions += 1;
+      stats.scoreTotal += sentiment;
+
+      if (positivo && matchFactor(positivo, factor)) stats.scoreTotal += 0.3;
+      if (negativo && matchFactor(negativo, factor)) stats.scoreTotal -= 0.3;
+
+      const evidence = extractEvidence(factor, data);
+      if (evidence && (!stats.evidenceDate || entry.date > stats.evidenceDate)) {
+        stats.evidence = evidence;
+        stats.evidenceDate = entry.date;
+      }
+    });
+  });
+
+  const factors = Array.from(factorStats.values())
+    .filter((factor) => factor.mentions > 0)
+    .map((factor) => {
+      const score = factor.scoreTotal / factor.mentions;
+      const sentiment =
+        score > 0.15 ? "positivo" : score < -0.15 ? "negativo" : "neutro";
+      return {
+        ...factor,
+        score,
+        sentiment
+      };
+    })
+    .sort((a, b) => {
+      if (b.mentions !== a.mentions) return b.mentions - a.mentions;
+      return Math.abs(b.score) - Math.abs(a.score);
+    })
+    .slice(0, 5);
+
+  return factors;
+};
+
+const fetchExposureNews = async (tickers, dates) => {
+  const results = {};
+  tickers.forEach((ticker) => {
+    results[ticker] = [];
+  });
+
+  for (const dateStr of dates) {
+    const promises = tickers.map(async (ticker) => {
+      try {
+        const docRef = db.collection("news_global").doc(dateStr).collection("tickers").doc(ticker);
+        const doc = await docRef.get();
+        if (doc.exists) {
+          results[ticker].push({ date: dateStr, data: doc.data() });
+        }
+      } catch (error) {
+        // Ignorar falhas pontuais
+      }
+    });
+
+    await Promise.all(promises);
+  }
+
+  return results;
+};
+
+const truncateText = (text, limit = 120) => {
+  const cleaned = text.replace(/\s+/g, " ").trim();
+  if (cleaned.length <= limit) return cleaned;
+  return `${cleaned.slice(0, limit).trim()}...`;
+};
+
+const renderExposures = (exposuresByTicker, dateRange) => {
+  if (!exposuresContainer) return;
+  exposuresContainer.innerHTML = "";
+
+  const tickers = Object.keys(exposuresByTicker);
+  let totalFactors = 0;
+
+  tickers.forEach((ticker) => {
+    const factors = exposuresByTicker[ticker];
+    totalFactors += factors.length;
+
+    const card = document.createElement("div");
+    card.className = "exposure-card";
+
+    const header = document.createElement("div");
+    header.className = "exposure-card-header";
+
+    const titleWrap = document.createElement("div");
+    titleWrap.className = "exposure-card-title";
+
+    const title = document.createElement("h3");
+    title.textContent = ticker;
+
+    const companyName = document.createElement("span");
+    companyName.className = "exposure-card-name";
+    companyName.textContent = tickerCatalog.get(ticker) || "Ativo da carteira";
+
+    titleWrap.appendChild(title);
+    titleWrap.appendChild(companyName);
+
+    const count = document.createElement("span");
+    count.className = "exposure-card-count";
+    count.textContent = `${factors.length} ${factors.length === 1 ? "fator" : "fatores"}`;
+
+    header.appendChild(titleWrap);
+    header.appendChild(count);
+    card.appendChild(header);
+
+    if (factors.length === 0) {
+      const empty = document.createElement("div");
+      empty.className = "exposure-card-empty";
+      empty.textContent = "Sem sinais suficientes nas notícias recentes.";
+      card.appendChild(empty);
+    } else {
+      const list = document.createElement("div");
+      list.className = "exposure-factors";
+
+      factors.forEach((factor) => {
+        const item = document.createElement("div");
+        item.className = `exposure-factor exposure-factor--${factor.sentiment}`;
+
+        const main = document.createElement("div");
+        main.className = "exposure-factor-main";
+
+        const label = document.createElement("span");
+        label.className = "exposure-factor-label";
+        label.textContent = factor.label;
+
+        const badge = document.createElement("span");
+        badge.className = `exposure-factor-badge exposure-factor-badge--${factor.sentiment}`;
+        badge.textContent =
+          factor.sentiment === "positivo"
+            ? "Positivo"
+            : factor.sentiment === "negativo"
+            ? "Negativo"
+            : "Neutro";
+
+        main.appendChild(label);
+        main.appendChild(badge);
+
+        const meta = document.createElement("div");
+        meta.className = "exposure-factor-meta";
+        meta.textContent = `${factor.mentions} ${factor.mentions === 1 ? "menção" : "menções"} em notícias recentes`;
+
+        const hint = document.createElement("p");
+        hint.className = "exposure-factor-hint";
+        hint.textContent = factor.hint;
+
+        item.appendChild(main);
+        item.appendChild(meta);
+
+        if (factor.evidence) {
+          const evidence = document.createElement("div");
+          evidence.className = "exposure-factor-evidence";
+          evidence.textContent = `Ex: ${truncateText(factor.evidence)}`;
+          item.appendChild(evidence);
+        }
+
+        item.appendChild(hint);
+        list.appendChild(item);
+      });
+
+      card.appendChild(list);
+    }
+
+    exposuresContainer.appendChild(card);
+  });
+
+  if (exposuresEmpty) {
+    const hasFactors = totalFactors > 0;
+    exposuresEmpty.classList.toggle("hidden", hasFactors);
+    if (!hasFactors) {
+      exposuresContainer.innerHTML = "";
+    }
+  }
+
+  if (exposuresUpdated && dateRange?.from && dateRange?.to) {
+    exposuresUpdated.textContent = `Base: ${formatDateRef(dateRange.from)} → ${formatDateRef(dateRange.to)}`;
+  }
+};
+
+const loadExposures = async () => {
+  if (exposuresLoading) exposuresLoading.classList.remove("hidden");
+  if (exposuresEmpty) exposuresEmpty.classList.add("hidden");
+  if (exposuresContainer) exposuresContainer.innerHTML = "";
+
+  const session = getSession();
+  const tickers = (session.tickers || []).map((t) => t.toUpperCase());
+
+  if (tickers.length === 0) {
+    if (exposuresLoading) exposuresLoading.classList.add("hidden");
+    if (exposuresEmpty) exposuresEmpty.classList.remove("hidden");
+    return;
+  }
+
+  const tickersKey = tickers.slice().sort().join(",");
+  const now = Date.now();
+
+  if (
+    exposureCache &&
+    exposureCache.tickersKey === tickersKey &&
+    now - exposureCache.timestamp < EXPOSURE_CACHE_TTL
+  ) {
+    renderExposures(exposureCache.data, exposureCache.range);
+    if (exposuresLoading) exposuresLoading.classList.add("hidden");
+    return;
+  }
+
+  try {
+    const dates = buildDateRange(EXPOSURE_LOOKBACK_DAYS);
+    const fromDate = dates[0];
+    const toDate = dates[dates.length - 1];
+
+    const newsMap = await fetchExposureNews(tickers, dates);
+    const exposuresByTicker = {};
+
+    tickers.forEach((ticker) => {
+      const tickerNews = newsMap[ticker] || [];
+      exposuresByTicker[ticker] = analyzeTickerExposures(tickerNews);
+    });
+
+    exposureCache = {
+      tickersKey,
+      timestamp: now,
+      data: exposuresByTicker,
+      range: { from: fromDate, to: toDate }
+    };
+
+    renderExposures(exposuresByTicker, { from: fromDate, to: toDate });
+  } catch (error) {
+    console.error("Erro ao carregar exposições:", error);
+    if (exposuresEmpty) exposuresEmpty.classList.remove("hidden");
+  } finally {
+    if (exposuresLoading) exposuresLoading.classList.add("hidden");
+  }
 };
 
 // ========================================
