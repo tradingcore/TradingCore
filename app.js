@@ -925,6 +925,25 @@ const formatDateBR = (dateStr) => {
   return `${day}/${month}/${year}`;
 };
 
+const buildShortSummary = (text, limit = 220) => {
+  if (!text) return "";
+  const clean = String(text).replace(/\s+/g, " ").trim();
+  if (clean.length <= limit) return clean;
+
+  const snippet = clean.slice(0, limit);
+  const punctuationMatch = snippet.match(/.*[.!?;:](?=\s|$)/);
+  if (punctuationMatch) {
+    return punctuationMatch[0].trim();
+  }
+
+  const lastSpace = snippet.lastIndexOf(" ");
+  if (lastSpace > 0) {
+    return `${snippet.slice(0, lastSpace).trim()}...`;
+  }
+
+  return `${snippet.trim()}...`;
+};
+
 const getTodayDateStr = () => {
   const today = new Date();
   // Usar data local (não UTC) para corresponder ao backend
@@ -988,11 +1007,11 @@ const loadNewsForDate = async (dateStr, isRetry = false) => {
           const data = tickerDoc.data();
           hasAnyNews = true;
           
-          // Montar resumo
+          // Montar resumo (curto, sem cortar frases)
           if (data.positivo || data.negativo) {
             const resumoParts = [];
-            if (data.positivo) resumoParts.push(data.positivo.substring(0, 200));
-            if (data.negativo) resumoParts.push(data.negativo.substring(0, 200));
+            if (data.positivo) resumoParts.push(buildShortSummary(data.positivo));
+            if (data.negativo) resumoParts.push(buildShortSummary(data.negativo));
             newsData.resumos[ticker] = resumoParts.join(" | ");
           }
           

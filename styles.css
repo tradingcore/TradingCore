@@ -2364,7 +2364,7 @@ select:focus {
 }
 
 .ticker-news-modal-header {
-  padding: 24px 24px 16px;
+  padding: 24px 64px 16px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
