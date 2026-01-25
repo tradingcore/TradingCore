@@ -1580,55 +1580,65 @@ const EXPOSURE_FACTORS = [
     id: "usd",
     label: "Dólar (USD/BRL)",
     hint: "Custos ou receitas em moeda estrangeira que afetam margens.",
-    keywords: ["dólar", "usd", "câmbio", "cambio", "us$", "moeda americana"]
+    keywords: ["dólar", "usd", "câmbio", "cambio", "us$", "moeda americana"],
+    positiveHints: ["exportação", "exportacao", "receita em dólar", "receita em dolar", "hedge", "dólar forte", "dolar forte"],
+    negativeHints: ["importação", "importacao", "custo em dólar", "custo em dolar", "combustível importado", "insumo importado"]
   },
   {
     id: "juros",
     label: "Juros e crédito",
     hint: "Estrutura de capital, captação e custo do dinheiro.",
-    keywords: ["juros", "selic", "copom", "curva de juros", "spread", "captação", "capitacao", "crédito", "credito"]
+    keywords: ["juros", "selic", "copom", "curva de juros", "spread", "captação", "capitacao", "crédito", "credito"],
+    positiveHints: ["expansão de spread", "margem financeira", "resultado financeiro", "redução de inadimplência", "inadimplência menor"],
+    negativeHints: ["custo da dívida", "custo da divida", "endividamento", "dívida cara", "divida cara", "refinanciamento"]
   },
   {
     id: "commodities",
     label: "Commodities",
     hint: "Preço das matérias-primas ligadas ao core business.",
-    keywords: ["petróleo", "petroleo", "brent", "minério", "minerio", "soja", "milho", "aço", "aco", "celulose", "gás", "gas"]
+    keywords: ["petróleo", "petroleo", "brent", "minério", "minerio", "soja", "milho", "aço", "aco", "celulose", "gás", "gas"],
+    positiveHints: ["preço alto", "cotação elevada", "prêmio", "demanda firme"],
+    negativeHints: ["queda de preço", "preço baixo", "excesso de oferta", "pressão de custos"]
   },
   {
     id: "energia",
     label: "Energia e combustível",
     hint: "Custo de energia e combustíveis que afetam operação.",
-    keywords: ["combustível", "combustivel", "diesel", "gasolina", "querosene", "energia", "tarifa", "electricidade"]
+    keywords: ["combustível", "combustivel", "diesel", "gasolina", "querosene", "energia", "tarifa", "electricidade"],
+    positiveHints: ["redução de tarifa", "queda no diesel", "energia mais barata"],
+    negativeHints: ["alta de tarifa", "combustível caro", "custo de energia"]
   },
   {
-    id: "consumo",
-    label: "Consumo e renda",
-    hint: "Demanda doméstica e comportamento do consumidor.",
-    keywords: ["consumo", "varejo", "demanda", "renda", "salário", "salario", "inflação", "inflacao"]
+    id: "inflacao",
+    label: "Inflação",
+    hint: "Pressões de preço que afetam custos e poder de compra.",
+    keywords: ["inflação", "inflacao", "ipca", "cesta básica", "cesta basica"],
+    positiveHints: ["repasse de preços", "poder de precificação", "preços mais altos"],
+    negativeHints: ["compressão de margem", "custo crescente", "perda de poder de compra"]
   },
   {
     id: "emprego",
     label: "Emprego e desemprego",
     hint: "Mercado de trabalho e capacidade de consumo.",
-    keywords: ["emprego", "desemprego", "mercado de trabalho"]
+    keywords: ["emprego", "desemprego", "mercado de trabalho", "renda", "massa salarial"],
+    positiveHints: ["queda do desemprego", "massa salarial em alta", "emprego forte"],
+    negativeHints: ["alta do desemprego", "renda menor", "emprego fraco"]
   },
   {
-    id: "china",
-    label: "Demanda externa/China",
-    hint: "Exportações e demanda internacional por produtos.",
-    keywords: ["china", "exportação", "exportacao", "demanda externa", "embarques", "importação", "importacao"]
+    id: "atividade",
+    label: "Atividade econômica (PIB)",
+    hint: "Ritmo da economia e demanda agregada.",
+    keywords: ["pib", "atividade econômica", "atividade economica", "crescimento econômico", "crescimento economico", "produção industrial", "producao industrial"],
+    positiveHints: ["crescimento", "aceleração", "melhora de atividade", "expansão"],
+    negativeHints: ["recessão", "desaceleração", "queda de atividade", "contração"]
   },
   {
-    id: "regulacao",
+    id: "tributos",
     label: "Regulação e tributos",
     hint: "Impostos, incentivos e mudanças regulatórias do setor.",
-    keywords: ["regulação", "regulacao", "aneel", "anatel", "anvisa", "bndes", "governo", "tributo", "imposto", "regulatório", "regulatorio"]
-  },
-  {
-    id: "logistica",
-    label: "Logística e frete",
-    hint: "Gargalos de logística e custos de distribuição.",
-    keywords: ["frete", "logística", "logistica", "porto", "rodovia", "aeroporto", "cadeia de suprimentos", "suprimentos"]
+    keywords: ["regulação", "regulacao", "aneel", "anatel", "anvisa", "bndes", "governo", "tributo", "imposto", "regulatório", "regulatorio"],
+    positiveHints: ["redução de imposto", "incentivo", "subsídio", "benefício fiscal", "beneficio fiscal"],
+    negativeHints: ["aumento de imposto", "taxa extra", "carga tributária", "carga tributaria", "regra mais dura"]
   }
 ];
 
@@ -1649,6 +1659,12 @@ const matchFactor = (text, factor) => {
   return factor.keywords.some((keyword) => lower.includes(keyword));
 };
 
+const countHints = (text, hints = []) => {
+  if (!text || hints.length === 0) return 0;
+  const lower = text.toLowerCase();
+  return hints.reduce((acc, hint) => acc + (lower.includes(hint) ? 1 : 0), 0);
+};
+
 const analyzeTickerExposures = (tickerNews) => {
   const factorStats = new Map();
 
@@ -1656,7 +1672,9 @@ const analyzeTickerExposures = (tickerNews) => {
     factorStats.set(factor.id, {
       ...factor,
       mentions: 0,
-      uniqueDates: new Set()
+      uniqueDates: new Set(),
+      positiveMentions: 0,
+      negativeMentions: 0
     });
   });
 
@@ -1678,6 +1696,15 @@ const analyzeTickerExposures = (tickerNews) => {
       stats.mentions += 1;
       stats.uniqueDates.add(entry.date);
 
+      const positiveHits = countHints(combined, factor.positiveHints);
+      const negativeHits = countHints(combined, factor.negativeHints);
+
+      if (positiveHits > negativeHits) {
+        stats.positiveMentions += 1;
+      } else if (negativeHits > positiveHits) {
+        stats.negativeMentions += 1;
+      }
+
     });
   });
 
@@ -1691,7 +1718,18 @@ const analyzeTickerExposures = (tickerNews) => {
     })
     .slice(0, 5);
 
-  return factors;
+  return factors.map((factor) => {
+    const direction =
+      factor.positiveMentions > factor.negativeMentions
+        ? "positivo"
+        : factor.negativeMentions > factor.positiveMentions
+        ? "negativo"
+        : "neutro";
+    return {
+      ...factor,
+      direction
+    };
+  });
 };
 
 const fetchExposureNews = async (tickers, dates) => {
@@ -1728,7 +1766,10 @@ const buildExposureMap = (exposuresByTicker) => {
       id: factor.id,
       label: factor.label,
       hint: factor.hint,
-      count: 0
+      count: 0,
+      positive: 0,
+      negative: 0,
+      neutral: 0
     });
   });
 
@@ -1736,7 +1777,12 @@ const buildExposureMap = (exposuresByTicker) => {
     const factors = exposuresByTicker[ticker] || [];
     factors.forEach((factor) => {
       const entry = totals.get(factor.id);
-      if (entry) entry.count += 1;
+      if (entry) {
+        entry.count += 1;
+        if (factor.direction === "positivo") entry.positive += 1;
+        else if (factor.direction === "negativo") entry.negative += 1;
+        else entry.neutral += 1;
+      }
     });
   });
 
@@ -1756,12 +1802,24 @@ const renderExposureMap = (mapData, totalTickers) => {
 
   mapData.forEach((factor) => {
     const percent = totalTickers > 0 ? Math.round((factor.count / totalTickers) * 100) : 0;
+    const direction =
+      factor.positive > factor.negative
+        ? "positivo"
+        : factor.negative > factor.positive
+        ? "negativo"
+        : "neutro";
+    const directionLabel =
+      direction === "positivo" ? "Positivo" : direction === "negativo" ? "Negativo" : "Neutro";
     const item = document.createElement("div");
-    item.className = "exposures-map-item";
+    item.className = `exposures-map-item exposures-map-item--${direction}`;
     item.innerHTML = `
       <div class="exposures-map-header">
         <span class="exposures-map-label">${factor.label}</span>
         <span class="exposures-map-value">${factor.count} / ${totalTickers} (${percent}%)</span>
+      </div>
+      <div class="exposures-map-subtitle">
+        <span class="exposures-map-direction exposures-map-direction--${direction}">${directionLabel}</span>
+        <span class="exposures-map-split">Pos: ${factor.positive} • Neg: ${factor.negative}</span>
       </div>
       <div class="exposures-map-bar">
         <span style="width: ${percent}%"></span>
@@ -1833,7 +1891,17 @@ const renderExposures = (exposuresByTicker, dateRange) => {
         label.className = "exposure-factor-label";
         label.textContent = factor.label;
 
+        const badge = document.createElement("span");
+        badge.className = `exposure-factor-badge exposure-factor-badge--${factor.direction || "neutro"}`;
+        badge.textContent =
+          factor.direction === "positivo"
+            ? "Positivo"
+            : factor.direction === "negativo"
+            ? "Negativo"
+            : "Neutro";
+
         main.appendChild(label);
+        main.appendChild(badge);
 
         const meta = document.createElement("div");
         meta.className = "exposure-factor-meta";
