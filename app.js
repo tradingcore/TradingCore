@@ -1649,19 +1649,6 @@ const matchFactor = (text, factor) => {
   return factor.keywords.some((keyword) => lower.includes(keyword));
 };
 
-const extractEvidence = (factor, data) => {
-  const fontes = Array.isArray(data.fontes) ? data.fontes : [];
-  for (const fonte of fontes) {
-    const titulo = fonte?.titulo || "";
-    const resumo = fonte?.resumo || "";
-    if (matchFactor(titulo, factor)) return titulo;
-    if (matchFactor(resumo, factor)) return resumo;
-  }
-  if (matchFactor(data.positivo || "", factor)) return data.positivo;
-  if (matchFactor(data.negativo || "", factor)) return data.negativo;
-  return "";
-};
-
 const analyzeTickerExposures = (tickerNews) => {
   const factorStats = new Map();
 
@@ -1669,9 +1656,7 @@ const analyzeTickerExposures = (tickerNews) => {
     factorStats.set(factor.id, {
       ...factor,
       mentions: 0,
-      scoreTotal: 0,
-      evidence: "",
-      evidenceDate: ""
+      scoreTotal: 0
     });
   });
 
@@ -1697,11 +1682,6 @@ const analyzeTickerExposures = (tickerNews) => {
       if (positivo && matchFactor(positivo, factor)) stats.scoreTotal += 0.3;
       if (negativo && matchFactor(negativo, factor)) stats.scoreTotal -= 0.3;
 
-      const evidence = extractEvidence(factor, data);
-      if (evidence && (!stats.evidenceDate || entry.date > stats.evidenceDate)) {
-        stats.evidence = evidence;
-        stats.evidenceDate = entry.date;
-      }
     });
   });
 
@@ -1749,12 +1729,6 @@ const fetchExposureNews = async (tickers, dates) => {
   }
 
   return results;
-};
-
-const truncateText = (text, limit = 120) => {
-  const cleaned = text.replace(/\s+/g, " ").trim();
-  if (cleaned.length <= limit) return cleaned;
-  return `${cleaned.slice(0, limit).trim()}...`;
 };
 
 const renderExposures = (exposuresByTicker, dateRange) => {
@@ -1829,7 +1803,7 @@ const renderExposures = (exposuresByTicker, dateRange) => {
 
         const meta = document.createElement("div");
         meta.className = "exposure-factor-meta";
-        meta.textContent = `${factor.mentions} ${factor.mentions === 1 ? "menção" : "menções"} em notícias recentes`;
+        meta.textContent = `${factor.mentions} ${factor.mentions === 1 ? "sinal" : "sinais"} recentes`;
 
         const hint = document.createElement("p");
         hint.className = "exposure-factor-hint";
@@ -1837,13 +1811,6 @@ const renderExposures = (exposuresByTicker, dateRange) => {
 
         item.appendChild(main);
         item.appendChild(meta);
-
-        if (factor.evidence) {
-          const evidence = document.createElement("div");
-          evidence.className = "exposure-factor-evidence";
-          evidence.textContent = `Ex: ${truncateText(factor.evidence)}`;
-          item.appendChild(evidence);
-        }
 
         item.appendChild(hint);
         list.appendChild(item);
