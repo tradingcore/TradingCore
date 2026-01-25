@@ -128,6 +128,7 @@ const exposuresContainer = document.getElementById("exposures-container");
 const exposuresLoading = document.getElementById("exposures-loading");
 const exposuresEmpty = document.getElementById("exposures-empty");
 const exposuresUpdated = document.getElementById("exposures-updated");
+const exposuresMap = document.getElementById("exposures-map");
 
 // State
 const tickerCatalog = new Map();
@@ -1578,59 +1579,58 @@ const EXPOSURE_FACTORS = [
   {
     id: "usd",
     label: "Dólar (USD/BRL)",
-    hint: "Sensibilidade a custos ou receitas em moeda estrangeira.",
+    hint: "Custos ou receitas em moeda estrangeira que afetam margens.",
     keywords: ["dólar", "usd", "câmbio", "cambio", "us$", "moeda americana"]
   },
   {
     id: "juros",
     label: "Juros e crédito",
-    hint: "Impacto de juros, captação e condições de crédito.",
+    hint: "Estrutura de capital, captação e custo do dinheiro.",
     keywords: ["juros", "selic", "copom", "curva de juros", "spread", "captação", "capitacao", "crédito", "credito"]
   },
   {
     id: "commodities",
     label: "Commodities",
-    hint: "Exposição a preços de commodities relevantes ao setor.",
+    hint: "Preço das matérias-primas ligadas ao core business.",
     keywords: ["petróleo", "petroleo", "brent", "minério", "minerio", "soja", "milho", "aço", "aco", "celulose", "gás", "gas"]
   },
   {
     id: "energia",
     label: "Energia e combustível",
-    hint: "Custos de energia, combustíveis e logística energética.",
+    hint: "Custo de energia e combustíveis que afetam operação.",
     keywords: ["combustível", "combustivel", "diesel", "gasolina", "querosene", "energia", "tarifa", "electricidade"]
   },
   {
     id: "consumo",
     label: "Consumo e renda",
-    hint: "Demanda doméstica, renda disponível e comportamento do consumidor.",
+    hint: "Demanda doméstica e comportamento do consumidor.",
     keywords: ["consumo", "varejo", "demanda", "renda", "salário", "salario", "inflação", "inflacao"]
+  },
+  {
+    id: "emprego",
+    label: "Emprego e desemprego",
+    hint: "Mercado de trabalho e capacidade de consumo.",
+    keywords: ["emprego", "desemprego", "mercado de trabalho"]
   },
   {
     id: "china",
     label: "Demanda externa/China",
-    hint: "Exposição a exportações e demanda internacional.",
+    hint: "Exportações e demanda internacional por produtos.",
     keywords: ["china", "exportação", "exportacao", "demanda externa", "embarques", "importação", "importacao"]
   },
   {
     id: "regulacao",
-    label: "Regulação e política pública",
-    hint: "Mudanças regulatórias e decisões governamentais.",
+    label: "Regulação e tributos",
+    hint: "Impostos, incentivos e mudanças regulatórias do setor.",
     keywords: ["regulação", "regulacao", "aneel", "anatel", "anvisa", "bndes", "governo", "tributo", "imposto", "regulatório", "regulatorio"]
   },
   {
     id: "logistica",
     label: "Logística e frete",
-    hint: "Custos e gargalos de logística, fretes e distribuição.",
+    hint: "Gargalos de logística e custos de distribuição.",
     keywords: ["frete", "logística", "logistica", "porto", "rodovia", "aeroporto", "cadeia de suprimentos", "suprimentos"]
   }
 ];
-
-const getSentimentScore = (data) => {
-  if (typeof data.sentimento_medio === "number") return data.sentimento_medio;
-  if (data.sentimento === "Positivo") return 0.5;
-  if (data.sentimento === "Negativo") return -0.5;
-  return 0;
-};
 
 const buildDateRange = (days) => {
   const dates = [];
@@ -1656,13 +1656,12 @@ const analyzeTickerExposures = (tickerNews) => {
     factorStats.set(factor.id, {
       ...factor,
       mentions: 0,
-      scoreTotal: 0
+      uniqueDates: new Set()
     });
   });
 
   tickerNews.forEach((entry) => {
     const data = entry.data || {};
-    const sentiment = getSentimentScore(data);
     const positivo = (data.positivo || "").toLowerCase();
     const negativo = (data.negativo || "").toLowerCase();
     const sourcesText = (data.fontes || [])
@@ -1677,29 +1676,18 @@ const analyzeTickerExposures = (tickerNews) => {
       if (!stats) return;
 
       stats.mentions += 1;
-      stats.scoreTotal += sentiment;
-
-      if (positivo && matchFactor(positivo, factor)) stats.scoreTotal += 0.3;
-      if (negativo && matchFactor(negativo, factor)) stats.scoreTotal -= 0.3;
+      stats.uniqueDates.add(entry.date);
 
     });
   });
 
   const factors = Array.from(factorStats.values())
     .filter((factor) => factor.mentions > 0)
-    .map((factor) => {
-      const score = factor.scoreTotal / factor.mentions;
-      const sentiment =
-        score > 0.15 ? "positivo" : score < -0.15 ? "negativo" : "neutro";
-      return {
-        ...factor,
-        score,
-        sentiment
-      };
-    })
     .sort((a, b) => {
-      if (b.mentions !== a.mentions) return b.mentions - a.mentions;
-      return Math.abs(b.score) - Math.abs(a.score);
+      const aDays = a.uniqueDates.size;
+      const bDays = b.uniqueDates.size;
+      if (bDays !== aDays) return bDays - aDays;
+      return b.mentions - a.mentions;
     })
     .slice(0, 5);
 
@@ -1731,12 +1719,68 @@ const fetchExposureNews = async (tickers, dates) => {
   return results;
 };
 
+const buildExposureMap = (exposuresByTicker) => {
+  const tickers = Object.keys(exposuresByTicker);
+  const totals = new Map();
+
+  EXPOSURE_FACTORS.forEach((factor) => {
+    totals.set(factor.id, {
+      id: factor.id,
+      label: factor.label,
+      hint: factor.hint,
+      count: 0
+    });
+  });
+
+  tickers.forEach((ticker) => {
+    const factors = exposuresByTicker[ticker] || [];
+    factors.forEach((factor) => {
+      const entry = totals.get(factor.id);
+      if (entry) entry.count += 1;
+    });
+  });
+
+  return Array.from(totals.values())
+    .filter((entry) => entry.count > 0)
+    .sort((a, b) => b.count - a.count);
+};
+
+const renderExposureMap = (mapData, totalTickers) => {
+  if (!exposuresMap) return;
+  exposuresMap.innerHTML = "";
+
+  if (!mapData || mapData.length === 0) {
+    exposuresMap.innerHTML = "<p class='exposures-map-empty'>Nenhum fator identificado para a carteira.</p>";
+    return;
+  }
+
+  mapData.forEach((factor) => {
+    const percent = totalTickers > 0 ? Math.round((factor.count / totalTickers) * 100) : 0;
+    const item = document.createElement("div");
+    item.className = "exposures-map-item";
+    item.innerHTML = `
+      <div class="exposures-map-header">
+        <span class="exposures-map-label">${factor.label}</span>
+        <span class="exposures-map-value">${factor.count} / ${totalTickers} (${percent}%)</span>
+      </div>
+      <div class="exposures-map-bar">
+        <span style="width: ${percent}%"></span>
+      </div>
+      <p class="exposures-map-hint">${factor.hint}</p>
+    `;
+    exposuresMap.appendChild(item);
+  });
+};
+
 const renderExposures = (exposuresByTicker, dateRange) => {
   if (!exposuresContainer) return;
   exposuresContainer.innerHTML = "";
 
   const tickers = Object.keys(exposuresByTicker);
   let totalFactors = 0;
+
+  const exposureMap = buildExposureMap(exposuresByTicker);
+  renderExposureMap(exposureMap, tickers.length);
 
   tickers.forEach((ticker) => {
     const factors = exposuresByTicker[ticker];
@@ -1772,7 +1816,7 @@ const renderExposures = (exposuresByTicker, dateRange) => {
     if (factors.length === 0) {
       const empty = document.createElement("div");
       empty.className = "exposure-card-empty";
-      empty.textContent = "Sem sinais suficientes nas notícias recentes.";
+      empty.textContent = "Sem dados suficientes para mapear fatores.";
       card.appendChild(empty);
     } else {
       const list = document.createElement("div");
@@ -1780,7 +1824,7 @@ const renderExposures = (exposuresByTicker, dateRange) => {
 
       factors.forEach((factor) => {
         const item = document.createElement("div");
-        item.className = `exposure-factor exposure-factor--${factor.sentiment}`;
+        item.className = "exposure-factor";
 
         const main = document.createElement("div");
         main.className = "exposure-factor-main";
@@ -1789,21 +1833,11 @@ const renderExposures = (exposuresByTicker, dateRange) => {
         label.className = "exposure-factor-label";
         label.textContent = factor.label;
 
-        const badge = document.createElement("span");
-        badge.className = `exposure-factor-badge exposure-factor-badge--${factor.sentiment}`;
-        badge.textContent =
-          factor.sentiment === "positivo"
-            ? "Positivo"
-            : factor.sentiment === "negativo"
-            ? "Negativo"
-            : "Neutro";
-
         main.appendChild(label);
-        main.appendChild(badge);
 
         const meta = document.createElement("div");
         meta.className = "exposure-factor-meta";
-        meta.textContent = `${factor.mentions} ${factor.mentions === 1 ? "sinal" : "sinais"} recentes`;
+        meta.textContent = `${factor.mentions} ${factor.mentions === 1 ? "referência" : "referências"} no histórico recente`;
 
         const hint = document.createElement("p");
         hint.className = "exposure-factor-hint";
@@ -1846,6 +1880,7 @@ const loadExposures = async () => {
   if (tickers.length === 0) {
     if (exposuresLoading) exposuresLoading.classList.add("hidden");
     if (exposuresEmpty) exposuresEmpty.classList.remove("hidden");
+    if (exposuresMap) exposuresMap.innerHTML = "";
     return;
   }
 

@@ -1336,6 +1336,79 @@ h3 {
   gap: 18px;
 }
 
+.exposures-map-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 10px 30px rgba(10, 30, 60, 0.2);
+}
+
+.exposures-map-card h3 {
+  margin: 0 0 14px;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.exposures-map {
+  display: grid;
+  gap: 12px;
+}
+
+.exposures-map-item {
+  background: var(--surface-light);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.exposures-map-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.exposures-map-label {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.exposures-map-value {
+  font-size: 0.8rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.exposures-map-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(91, 124, 250, 0.15);
+  overflow: hidden;
+}
+
+.exposures-map-bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  border-radius: 999px;
+}
+
+.exposures-map-hint {
+  margin: 8px 0 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.exposures-map-empty {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
 .exposure-card {
   background: var(--surface-light);
   border: 1px solid var(--border);
@@ -1395,18 +1468,6 @@ h3 {
   padding: 14px 16px;
 }
 
-.exposure-factor--positivo {
-  border-left: 4px solid #22c55e;
-}
-
-.exposure-factor--negativo {
-  border-left: 4px solid #ef4444;
-}
-
-.exposure-factor--neutro {
-  border-left: 4px solid #fbbf24;
-}
-
 .exposure-factor-main {
   display: flex;
   align-items: center;
@@ -1418,28 +1479,6 @@ h3 {
   font-weight: 600;
   color: var(--text);
   font-size: 0.95rem;
-}
-
-.exposure-factor-badge {
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 999px;
-}
-
-.exposure-factor-badge--positivo {
-  background: rgba(34, 197, 94, 0.15);
-  color: #22c55e;
-}
-
-.exposure-factor-badge--negativo {
-  background: rgba(239, 68, 68, 0.15);
-  color: #ef4444;
-}
-
-.exposure-factor-badge--neutro {
-  background: rgba(251, 191, 36, 0.15);
-  color: #fbbf24;
 }
 
 .exposure-factor-meta {
@@ -3414,6 +3453,21 @@ select:focus {
 
   .exposures-intro {
     font-size: 0.9rem;
+  }
+
+  .exposures-map-card {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .exposures-map-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .exposures-map-label {
+    font-size: 0.85rem;
   }
 
   .exposure-card {
