@@ -4,30 +4,27 @@ Cria um JSON simples com {ticker: description}.
 
 Uso: python src/scripts/gerar_contextos.py
 """
-import csv
 import json
 import time
+import sys
 from pathlib import Path
 
 import yfinance as yf
 
-# Paths
+# Adicionar src ao path para imports
 SCRIPT_DIR = Path(__file__).parent
 PROJECT_ROOT = SCRIPT_DIR.parent.parent
-CSV_PATH = PROJECT_ROOT / "docs" / "acoes-listadas-b3.csv"
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from src.ticker_loader import carregar_tickers_listados
+
+# Paths
 JSON_PATH = PROJECT_ROOT / "docs" / "contextos-acoes.json"
 
 
 def carregar_tickers_csv():
-    """Carrega lista de tickers do CSV."""
-    tickers = []
-    with open(CSV_PATH, 'r', encoding='utf-8') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            ticker = row.get('Ticker', '').strip()
-            if ticker and ticker not in tickers:
-                tickers.append(ticker)
-    return tickers
+    """Carrega lista de tickers de empresas listadas."""
+    return carregar_tickers_listados()
 
 
 def carregar_contextos_existentes():

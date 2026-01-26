@@ -486,29 +486,56 @@ const savePortfolioToServer = async () => {
 
 const loadTickers = async () => {
   try {
-    const response = await fetch("docs/acoes-listadas-b3.csv");
+    // Carregar CSV de empresas listadas
+    const response = await fetch("docs/empresas-cnpj-cvm-ticker-atualizado.csv");
     const text = await response.text();
     const lines = text.trim().split(/\r?\n/);
 
+    // Parsear CSV (colunas: CNPJ, Nome, Nome_Curto, Codigo_CVM, Ticker)
     lines.slice(1).forEach((line) => {
       if (!line) return;
 
-      let ticker = "";
-      let name = "";
-      const match = line.match(/^"([^"]+)","([^"]+)"/);
+      // Parsear linha considerando campos com vírgulas entre aspas
+      const parseCSVLine = (str) => {
+        const result = [];
+        let current = "";
+        let inQuotes = false;
+        
+        for (let i = 0; i < str.length; i++) {
+          const char = str[i];
+          if (char === '"') {
+            inQuotes = !inQuotes;
+          } else if (char === ',' && !inQuotes) {
+            result.push(current.trim());
+            current = "";
+          } else {
+            current += char;
+          }
+        }
+        result.push(current.trim());
+        return result;
+      };
 
-      if (match) {
-        ticker = match[1];
-        name = match[2];
-      } else {
-        const parts = line.split(",");
-        ticker = parts[0]?.replace(/"/g, "") || "";
-        name = parts[1]?.replace(/"/g, "") || "";
-      }
+      const parts = parseCSVLine(line);
+      const nome = parts[1] || "";        // Nome formal
+      const nomeCurto = parts[2] || "";   // Nome curto (para busca)
+      const tickerStr = parts[4] || "";   // Ticker(s)
 
-      if (!ticker || ticker === "Ticker") return;
-      tickerCatalog.set(ticker, name);
+      // Ignorar empresas não listadas
+      if (!tickerStr || tickerStr === "Não listada" || tickerStr === "Ticker") return;
+
+      // Usar nome curto se disponível, senão usar nome formal
+      const displayName = nomeCurto || nome;
+
+      // Expandir múltiplos tickers (ex: "PETR3, PETR4")
+      const tickers = tickerStr.split(",").map(t => t.trim()).filter(t => t);
+      
+      tickers.forEach((ticker) => {
+        tickerCatalog.set(ticker, displayName);
+      });
     });
+    
+    console.log(`✓ ${tickerCatalog.size} tickers carregados no catálogo`);
   } catch (error) {
     console.error("Erro ao carregar tickers:", error);
   }

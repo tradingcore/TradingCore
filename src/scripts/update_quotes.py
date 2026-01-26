@@ -5,13 +5,17 @@ Roda via GitHub Actions a cada 15 minutos durante o pregão.
 """
 
 import os
+import sys
 import json
-import csv
 import yfinance as yf
 from datetime import datetime
 import pytz
 import firebase_admin
 from firebase_admin import credentials, firestore
+
+# Adicionar src ao path para imports
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
+from src.ticker_loader import carregar_tickers_listados
 
 # Mapeamento de setores Yahoo Finance -> PT-BR
 SECTOR_TRANSLATION = {
@@ -150,26 +154,12 @@ def fetch_b3_quotes(db, now):
 
 
 def fetch_heatmap_data(db, now):
-    """Busca dados para o mapa de calor - top 100 ações B3 organizadas por setor."""
-    print('\n🗺️ Mapa de Calor - Top 100 ações B3:')
+    """Busca dados para o mapa de calor - ações B3 organizadas por setor."""
+    print('\n🗺️ Mapa de Calor - Ações B3:')
     
-    # Caminho do CSV (relativo ao script)
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    csv_path = os.path.join(script_dir, '..', '..', 'docs', 'acoes-listadas-b3.csv')
-    
-    # Ler todos os tickers do CSV (já ordenado por volume)
-    all_tickers = []
-    try:
-        with open(csv_path, 'r', encoding='utf-8') as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                ticker = row.get('Ticker', '').strip()
-                if ticker:
-                    all_tickers.append(ticker)
-        print(f'  → {len(all_tickers)} tickers carregados do CSV')
-    except Exception as e:
-        print(f'  ✗ Erro ao ler CSV: {e}')
-        return {}
+    # Carregar tickers de empresas listadas
+    all_tickers = carregar_tickers_listados()
+    print(f'  → {len(all_tickers)} tickers carregados (empresas listadas)')
     
     # Buscar cotações e setores
     heatmap_data = {}  # setor -> [ações]

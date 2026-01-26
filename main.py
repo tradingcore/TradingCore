@@ -1,15 +1,14 @@
 """
 Script principal do TradingCore.
-Processa TODAS as 400 ações B3 e salva globalmente.
+Processa empresas listadas na B3 e salva globalmente.
 Depois distribui para cada usuário com base na sua carteira.
 
 OTIMIZADO:
 - Busca de notícias em batch (50 tickers por chamada)
 - Análise de notícias em batch (5 notícias por chamada)
 - Armazenamento global (não duplica por usuário)
+- Usa apenas empresas listadas (1 ticker por empresa)
 """
-import csv
-import os
 from src.config import validar_configuracoes
 from src.utils import calcular_periodo_24h, parsear_tickers
 from src.firebase_client import (
@@ -23,25 +22,14 @@ from src.ai_analyzer import gerar_analise_ticker_global
 from src.email_sender import gerar_email_html, enviar_email
 from src.price_fetcher import buscar_precos_multiplos
 from src.context_manager import carregar_contexto
+from src.ticker_loader import carregar_tickers_listados
 
 
 def carregar_tickers_b3():
-    """Carrega todos os tickers da B3 do arquivo CSV."""
-    csv_path = os.path.join(os.path.dirname(__file__), 'docs', 'acoes-listadas-b3.csv')
-    tickers = []
-    
-    try:
-        with open(csv_path, 'r', encoding='utf-8') as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                ticker = row.get('Ticker', '').strip()
-                if ticker:
-                    tickers.append(ticker)
-        print(f"✓ {len(tickers)} tickers carregados do CSV")
-        return tickers
-    except Exception as e:
-        print(f"✗ Erro ao carregar CSV: {e}")
-        return []
+    """Carrega tickers de empresas listadas (1 por empresa, priorizando final 3)."""
+    tickers = carregar_tickers_listados()
+    print(f"✓ {len(tickers)} tickers carregados (empresas listadas)")
+    return tickers
 
 
 def processar_noticias_globais(tickers, data_inicio, data_fim, data_referencia):

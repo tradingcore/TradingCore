@@ -1,99 +1,22 @@
 """
 Módulo para busca de notícias usando Event Registry API.
 Otimizado com busca em batch para reduzir chamadas de API.
+Usa nomes curtos das empresas do CSV para melhorar resultados.
 """
 import re
 from eventregistry import EventRegistry, QueryArticlesIter
 from .config import EVENT_REGISTRY_API_KEY, MAX_NOTICIAS_POR_TICKER
+from .ticker_loader import carregar_catalogo_empresas
 
-# Mapeamento de tickers para nomes de empresas (para melhorar a busca)
-TICKER_NOMES = {
-    # Energia / Petróleo
-    "PETR4": ["Petrobras"],
-    "PETR3": ["Petrobras"],
-    "PRIO3": ["PetroRio", "PRIO"],
-    "CSAN3": ["Cosan"],
-    "RAIZ4": ["Raízen", "Raizen"],
-    "VBBR3": ["Vibra", "Vibra Energia"],
-    "BRAV3": ["3R Petroleum"],
-    
-    # Mineração
-    "VALE3": ["Vale"],
-    "CSNA3": ["CSN", "Siderúrgica Nacional"],
-    "GGBR4": ["Gerdau"],
-    "USIM5": ["Usiminas"],
-    
-    # Bancos
-    "ITUB4": ["Itaú", "Itau Unibanco"],
-    "BBDC4": ["Bradesco"],
-    "BBAS3": ["Banco do Brasil"],
-    "SANB11": ["Santander Brasil"],
-    "BPAC11": ["BTG Pactual"],
-    
-    # Varejo
-    "MGLU3": ["Magazine Luiza", "Magalu"],
-    "LREN3": ["Lojas Renner", "Renner"],
-    "AMER3": ["Americanas"],
-    "PCAR3": ["Pão de Açúcar", "GPA"],
-    "ASAI3": ["Assaí"],
-    "CEAB3": ["C&A Brasil"],
-    
-    # Telecomunicações
-    "VIVT3": ["Vivo", "Telefônica Brasil"],
-    "TIMS3": ["TIM Brasil", "TIM"],
-    
-    # Serviços
-    "B3SA3": ["B3", "Bolsa Brasil"],
-    "RENT3": ["Localiza"],
-    "RAIL3": ["Rumo"],
-    "ECOR3": ["EcoRodovias"],
-    
-    # Alimentos / Bebidas
-    "ABEV3": ["Ambev"],
-    "JBSS3": ["JBS"],
-    "MRFG3": ["Marfrig"],
-    "BEEF3": ["Minerva Foods"],
-    
-    # Tecnologia / Indústria
-    "WEGE3": ["WEG"],
-    "TOTS3": ["Totvs"],
-    "POSI3": ["Positivo"],
-    
-    # Utilities
-    "ELET3": ["Eletrobras"],
-    "ELET6": ["Eletrobras"],
-    "SBSP3": ["Sabesp"],
-    "CPFE3": ["CPFL Energia"],
-    "EQTL3": ["Equatorial"],
-    "ENEV3": ["Eneva"],
-    "ENGI11": ["Energisa"],
-    "TAEE11": ["Taesa"],
-    "CMIG4": ["Cemig"],
-    "CPLE6": ["Copel"],
-    
-    # Saúde
-    "HAPV3": ["Hapvida"],
-    "RDOR3": ["Rede D'Or"],
-    "FLRY3": ["Fleury"],
-    "QUAL3": ["Qualicorp"],
-    
-    # Construção / Imóveis
-    "CYRE3": ["Cyrela"],
-    "MRVE3": ["MRV"],
-    "EZTC3": ["EZTEC"],
-    "EVEN3": ["Even"],
-    
-    # Educação
-    "COGN3": ["Cogna"],
-    "YDUQ3": ["Yduqs"],
-    "ANIM3": ["Ânima Educação"],
-    
-    # Outros
-    "CVCB3": ["CVC"],
-    "SUZB3": ["Suzano"],
-    "KLBN11": ["Klabin"],
-    "ITSA4": ["Itaúsa"],
-}
+# Catálogo de empresas (ticker -> nome_curto) - carregado do CSV
+_CATALOGO_EMPRESAS = None
+
+def _get_catalogo():
+    """Retorna catálogo de empresas (com cache)."""
+    global _CATALOGO_EMPRESAS
+    if _CATALOGO_EMPRESAS is None:
+        _CATALOGO_EMPRESAS = carregar_catalogo_empresas()
+    return _CATALOGO_EMPRESAS
 
 # Tamanho do batch para busca (limitado pelo plano da API Event Registry - max 15)
 BATCH_SIZE = 10
@@ -170,13 +93,14 @@ def buscar_noticias_batch(tickers, data_inicio, data_fim, max_items_total=200):
     try:
         er = EventRegistry(apiKey=EVENT_REGISTRY_API_KEY)
 
-        # Construir lista de keywords (nomes das empresas)
+        # Construir lista de keywords (nomes curtos das empresas)
+        catalogo = _get_catalogo()
         keywords_list = []
         ticker_to_keyword = {}
         
         for ticker in tickers:
-            # Usar nome da empresa se disponível, senão usar o ticker
-            nome = TICKER_NOMES.get(ticker, [ticker])[0]
+            # Usar nome curto da empresa se disponível, senão usar o ticker
+            nome = catalogo.get(ticker, ticker)
             keywords_list.append(nome)
             ticker_to_keyword[ticker] = nome.upper()
         
@@ -238,7 +162,7 @@ def buscar_noticias_batch(tickers, data_inicio, data_fim, max_items_total=200):
 def buscar_noticias_todos_tickers(tickers, data_inicio, data_fim, batch_size=None):
     """
     Busca notícias de todos os tickers, dividindo em batches de 10.
-    Processa todas as 400 ações.
+    Processa todas as empresas listadas na B3.
 
     Args:
         tickers: Lista completa de tickers
