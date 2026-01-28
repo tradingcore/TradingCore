@@ -1,0 +1,34 @@
+{
+  "ticker": "LIGT3",
+  "codigo_cvm": "19879",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "19879_2025-09-30_LIGHT_SA_-_EM_RECUPERAÇÃO_JUDICIAL.pdf",
+  "texto_contexto": "A Light S.A. é uma empresa brasileira que se destaca no setor de energia elétrica, operando predominantemente nas áreas de distribuição e comercialização de energia. Seu modelo de negócio é fundamentado na concessão de serviços de distribuição, que é a principal atividade da empresa, além de englobar a geração e comercialização de energia por meio de sua subsidiária, a Light Energia. Essa estrutura permite que a empresa não apenas forneça energia aos consumidores, mas também participe ativamente do mercado de geração, diversificando suas fontes de receita e mitigando riscos associados a flutuações de demanda.\n\nA operação da Light é segmentada em duas áreas principais: a Light SESA, que se encarrega da distribuição de energia, e a Light Energia, que abrange as atividades de geração e comercialização. Essa divisão permite à empresa focar em suas competências essenciais, ao mesmo tempo em que busca otimizar a eficiência operacional e a qualidade do serviço prestado. Os principais indicadores de desempenho (KPIs) utilizados pela Light incluem a Receita Líquida, EBITDA e Lucro Líquido, além de métricas de qualidade como a Duração Equivalente das Interrupções (DEC) e a Frequência Equivalente de Interrupções (FEC). A monitorização das Perdas Não Técnicas é igualmente crucial, pois reflete a eficiência operacional e a capacidade da empresa de minimizar desperdícios.\n\nOs drivers de valor da Light estão intimamente ligados à renovação de concessões, à melhoria contínua na qualidade do serviço e à redução das perdas não técnicas. A capacidade de investimento em infraestrutura e tecnologia também é um fator determinante para o crescimento sustentável da empresa. A renovação das concessões é um aspecto vital, pois garante a continuidade das operações e a estabilidade financeira, permitindo que a empresa planeje investimentos de longo prazo.\n\nEntretanto, a Light enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade nos preços de energia é um dos principais desafios, uma vez que flutuações nos preços podem afetar a rentabilidade e a competitividade da empresa. Além disso, mudanças regulatórias podem introduzir incertezas, exigindo que a empresa se adapte rapidamente às novas exigências. A dependência de condições climáticas também é um fator a ser considerado, pois eventos climáticos extremos podem influenciar tanto a demanda quanto a capacidade de geração de energia.\n\nA estrutura de capital da Light é marcada por um nível significativo de endividamento, que foi recentemente reestruturado para se alinhar às práticas do setor elétrico. A relação Dívida Líquida/EBITDA indica um perfil de endividamento que busca equilibrar a alavancagem financeira com a geração de caixa. A empresa, por outro lado, mantém uma posição de caixa robusta, o que proporciona flexibilidade financeira e capacidade de enfrentar desafios de curto prazo.\n\nA governança corporativa da Light é um aspecto fundamental para sua operação, especialmente em um setor tão regulado quanto o de energia elétrica. A supervisão da ANEEL (Agência Nacional de Energia Elétrica) é um fator crítico, uma vez que a agência regula as concessões e tarifas, influenciando diretamente a rentabilidade da empresa. A recente recomendação da ANEEL para a renovação da concessão da Light SESA por um período de 30 anos é um marco significativo, pois pode proporcionar maior estabilidade e oportunidades de crescimento a longo prazo.\n\nAlém disso, a Light está implementando estratégias voltadas para a melhoria da qualidade do serviço e a redução das perdas, alinhando-se às exigências regulatórias e buscando aumentar a satisfação do cliente. A competição no setor elétrico é intensa, com diversas empresas disputando participação de mercado, o que exige que a Light permaneça atenta às inovações e às melhores práticas do setor.\n\nPor fim, a sensibilidade macroeconômica também desempenha um papel importante nas operações da Light. Fatores como crescimento econômico, inflação e políticas governamentais podem influenciar a demanda por energia e, consequentemente, o desempenho financeiro da empresa. A capacidade da Light de se adaptar a essas condições e de implementar estratégias eficazes será crucial para garantir sua sustentabilidade e crescimento no futuro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$3.6 bi (trimestre) | R$10.8 bi (LTM)\n- EBITDA: R$0.5 bi (trimestre) | R$1.4 bi (LTM) | Margem 13.9%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.4 bi (LTM)\n- Dívida: R$5.2 bi (líquida) | R$7.9 bi (bruta)\n- Capex: R$0.5 bi (trimestre) | R$1.2 bi (LTM)\n- Operacional: A receita líquida totalizou R$3,6 bilhões no 3T25, com um EBITDA ajustado de R$508 milhões. O lucro líquido foi de R$33 milhões, refletindo uma queda significativa em relação ao ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 3631000000,
+      "receita_liquida_ltm": 10830000000,
+      "ebitda_tri": 508000000,
+      "ebitda_ltm": 1416000000,
+      "lucro_liquido_tri": 33000000,
+      "lucro_liquido_ltm": 400000000,
+      "divida_liquida": 5221000000,
+      "divida_bruta": 7863000000,
+      "capex_tri": 472000000,
+      "capex_ltm": 1187000000,
+      "margem_ebitda_pct": 13.9,
+      "margem_liquida_pct": 0.9
+    },
+    "operacionais": {
+      "descricao": "A receita líquida totalizou R$3,6 bilhões no 3T25, com um EBITDA ajustado de R$508 milhões. O lucro líquido foi de R$33 milhões, refletindo uma queda significativa em relação ao ano anterior.",
+      "metricas": {
+        "dec": 6.08,
+        "fec": 2.97,
+        "perdas_nao_tecnicas_pct": 22.8
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:50:57.072451Z"
+}

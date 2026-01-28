@@ -1,0 +1,34 @@
+{
+  "ticker": "LVTC3",
+  "codigo_cvm": "25895",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25895_2025-09-30_LIVETECH_DA_BAHIA_INDÚSTRIA_E_COMÉRCIO_SA.pdf",
+  "texto_contexto": "A Livetech da Bahia Indústria e Comércio S.A., uma empresa que se destaca no cenário brasileiro de tecnologia, opera sob o modelo de negócios conhecido como \"Technology as a Service\" (TaaS). Desde sua fundação em 2003, a Livetech se posicionou como pioneira nesse segmento, oferecendo soluções inovadoras que vão além da simples venda de equipamentos, focando na locação de tecnologias que atendem a diversas demandas do mercado. A empresa atua principalmente nos setores de Telecomunicações, Energia Solar e Corporativo, com uma gama de produtos e serviços que inclui áudio e vídeo profissional, segurança eletrônica e redes privativas 5G. Nos últimos anos, a Livetech tem direcionado sua atenção para a cibersegurança, um segmento em franca expansão e que se tornou essencial em um mundo cada vez mais digital e interconectado.\n\nOs principais indicadores-chave de desempenho (KPIs) da Livetech, como receita líquida, lucro bruto ajustado, EBITDA ajustado e margem EBITDA ajustada, são reflexos da robustez de sua operação e da eficiência de sua gestão. A empresa tem demonstrado um crescimento consistente, evidenciado por um aumento significativo na receita líquida em períodos recentes, o que ressalta sua capacidade de gerar caixa operacional de forma eficaz. A relação entre a dívida líquida e o EBITDA ajustado, que se mantém em níveis controláveis, indica uma boa capacidade de pagamento das obrigações financeiras, permitindo à Livetech continuar investindo em inovações e na expansão de suas operações.\n\nOs drivers de valor para a Livetech são multifacetados e incluem a eficiência na gestão do capital de giro, a capacidade de inovação contínua em seus serviços e a habilidade de se adaptar rapidamente às demandas do mercado. Em um ambiente de alta competitividade e incertezas econômicas, a empresa precisa estar atenta às mudanças nas preferências dos consumidores e às novas tecnologias que surgem. No entanto, a Livetech também enfrenta riscos significativos, como a volatilidade das taxas de juros, que pode impactar seus custos de financiamento, e a dependência de contratos de locação, que estão sujeitos a variações nas condições de mercado e na demanda por seus serviços.\n\nA estrutura de capital da Livetech é composta por uma combinação de dívida e patrimônio líquido, refletindo uma estratégia de financiamento que busca equilibrar o crescimento com a sustentabilidade financeira. O aumento na dívida bruta nos últimos períodos é um indicativo da necessidade de financiamento para suportar suas operações e investimentos em tecnologia, o que é crucial para manter sua posição de liderança no mercado. Além disso, a regulação do setor de telecomunicações e energia no Brasil é um fator crítico que a empresa deve considerar, uma vez que precisa cumprir com as normas estabelecidas pela Comissão de Valores Mobiliários e outros órgãos reguladores, o que pode impactar suas operações e estratégias de crescimento.\n\nEventos recentes, como a mudança de seu código de negociação na B3, de LVTC3 para WDCN3, são parte de uma estratégia mais ampla de alinhamento da identidade corporativa com a marca no mercado de capitais. Essa mudança não apenas reforça a imagem da empresa, mas também pode influenciar sua capacidade de atrair investidores e parceiros estratégicos. Além disso, reconhecimentos como a certificação como uma das melhores empresas para se trabalhar no Brasil e prêmios em categorias de sustentabilidade e governança são elementos que fortalecem a reputação da Livetech, contribuindo para a construção de uma imagem positiva no mercado.\n\nPor fim, a sensibilidade macroeconômica é um aspecto que a Livetech deve monitorar de perto. Fatores como a inflação, as taxas de juros e a estabilidade política podem impactar diretamente a demanda por seus serviços e a capacidade de investimento da empresa. Em um cenário de incertezas, a habilidade da Livetech de se adaptar e inovar será fundamental para garantir sua continuidade e crescimento no mercado, consolidando sua posição como líder em soluções tecnológicas no Brasil.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.2 bi (trimestre) | R$0.7 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.2 bi (LTM) | Margem 26.8%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Dívida: R$0.5 bi (líquida) | R$0.7 bi (bruta)\n- Capex: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Operacional: A Livetech da Bahia encerrou o 3T25 com receita líquida de R$ 222,5 milhões, um crescimento de 11,3% em relação ao 3T24, e gerou R$ 98,5 milhões em caixa operacional.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 222500000,
+      "receita_liquida_ltm": 658300000,
+      "ebitda_tri": 59700000,
+      "ebitda_ltm": 202800000,
+      "lucro_liquido_tri": 4800000,
+      "lucro_liquido_ltm": 11900000,
+      "divida_liquida": 462300000,
+      "divida_bruta": 667500000,
+      "capex_tri": 16400000,
+      "capex_ltm": 36900000,
+      "margem_ebitda_pct": 26.8,
+      "margem_liquida_pct": 2.2
+    },
+    "operacionais": {
+      "descricao": "A Livetech da Bahia encerrou o 3T25 com receita líquida de R$ 222,5 milhões, um crescimento de 11,3% em relação ao 3T24, e gerou R$ 98,5 milhões em caixa operacional.",
+      "metricas": {
+        "quantidade_novos_contratos_taas": 162,
+        "ticket_medio_novos_contratos_taas": 167400,
+        "prazo_novos_contratos_taas_meses": 36
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:51:34.193315Z"
+}

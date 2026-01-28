@@ -1,0 +1,35 @@
+{
+  "ticker": "RENT3",
+  "codigo_cvm": "19739",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "19739_2025-09-30_LOCALIZA_RENT_A_CAR_SA.pdf",
+  "texto_contexto": "A Localiza (RENT3) se destaca no setor de locação de veículos e gestão de frotas, apresentando um modelo de negócio robusto e diversificado que abrange serviços de aluguel de carros, gestão de frotas corporativas e a comercialização de seminovos. A empresa tem se posicionado como uma das líderes do mercado, aproveitando sua expertise para oferecer soluções que vão além do simples aluguel de veículos, integrando serviços de manutenção e tecnologia de conectividade, que são cada vez mais valorizados pelos consumidores e empresas.\n\nO modelo de negócio da Localiza é estruturado em três segmentos principais: Aluguel de Carros, Gestão de Frotas e Seminovos. Cada um desses segmentos contribui de maneira significativa para a geração de receita, com o aluguel de carros sendo o carro-chefe, seguido pela gestão de frotas, que atende a uma demanda crescente por parte de empresas que buscam otimizar seus custos operacionais. A venda de seminovos, por sua vez, não apenas complementa a receita, mas também permite à Localiza uma gestão eficiente de sua frota, garantindo que os veículos sejam renovados de forma estratégica.\n\nOs principais drivers de valor para a Localiza incluem a eficiência operacional, que é fundamental para manter a competitividade em um mercado dinâmico, e a inovação tecnológica. A empresa tem investido em soluções de inteligência artificial e em plataformas em nuvem, que não apenas melhoram a experiência do cliente, mas também otimizam processos internos, resultando em uma operação mais ágil e eficaz. A experiência do cliente é um pilar central da estratégia da Localiza, evidenciada pelo uso do NPS (Net Promoter Score) como um KPI crucial para medir a satisfação e lealdade dos clientes.\n\nEntretanto, a Localiza enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade econômica, por exemplo, pode afetar a demanda por locação de veículos, especialmente em períodos de recessão. Além disso, mudanças nas regulamentações fiscais e tributárias, como a recente redução do IPI para veículos novos, podem influenciar diretamente os preços e a competitividade no mercado. A flutuação nos preços dos veículos também representa um desafio, uma vez que a empresa precisa gerenciar sua frota de forma a minimizar custos e maximizar a rentabilidade. A concorrência no setor de locação de veículos é intensa, com novos entrantes e modelos de negócios disruptivos que podem alterar rapidamente o cenário competitivo.\n\nA estrutura de capital da Localiza é composta por uma combinação de dívida líquida e patrimônio líquido, com uma gestão ativa da dívida que busca otimizar custos e alongar prazos. Essa abordagem permite à empresa cobrir suas obrigações de curto prazo, mantendo um nível de caixa adequado para enfrentar eventuais adversidades. A governança corporativa da Localiza é estruturada para garantir transparência e responsabilidade, com um conselho de administração que supervisiona as operações e a estratégia de longo prazo da empresa.\n\nA regulação do setor é um fator crítico que a Localiza deve monitorar continuamente. Políticas fiscais e regulamentações governamentais podem impactar diretamente a operação e a rentabilidade da empresa. A capacidade de adaptação às mudanças regulatórias é essencial, especialmente em um ambiente onde a legislação pode mudar rapidamente. Eventos significativos, como a integração de aquisições, como a da Locamerica, também são cruciais para o crescimento da Localiza, pois a sinergia entre as operações pode gerar economias de escala e fortalecer a posição competitiva da empresa.\n\nPor fim, a sensibilidade macroeconômica é um aspecto que não pode ser ignorado. A Localiza, como muitas empresas do setor, está sujeita a flutuações econômicas que podem afetar a confiança do consumidor e, consequentemente, a demanda por seus serviços. Fatores como taxas de juros, inflação e crescimento econômico são determinantes para o desempenho da empresa, e sua capacidade de se adaptar a essas variáveis será fundamental para garantir sua sustentabilidade e crescimento no longo prazo. Em um cenário de incertezas, a Localiza se destaca por sua resiliência e capacidade de inovação, posicionando-se como uma referência no setor de locação de veículos e gestão de frotas.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$10.7 bi (trimestre) | N/D (LTM)\n- EBITDA: R$3.5 bi (trimestre) | N/D (LTM) | Margem 33.0%\n- Lucro Líquido: R$0.9 bi (trimestre) | N/D (LTM)\n- Operacional: No 3T25, a Localiza apresentou receita líquida de R$10,7 bilhões, EBITDA de R$3,5 bilhões e lucro líquido de R$871 milhões, com um ROIC anualizado de 15,4%. A divisão de Aluguel de Carros teve receita de R$2,6 bilhões e EBITDA de R$1,8 bilhão, enquanto Seminovos alcançou R$5,8 bilhões em receita.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 10732000000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 3544000000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 871000000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 33.0,
+      "margem_liquida_pct": 8.1
+    },
+    "operacionais": {
+      "descricao": "No 3T25, a Localiza apresentou receita líquida de R$10,7 bilhões, EBITDA de R$3,5 bilhões e lucro líquido de R$871 milhões, com um ROIC anualizado de 15,4%. A divisão de Aluguel de Carros teve receita de R$2,6 bilhões e EBITDA de R$1,8 bilhão, enquanto Seminovos alcançou R$5,8 bilhões em receita.",
+      "metricas": {
+        "carros_vendidos": 75473,
+        "numero_agencias": 599,
+        "diaria_media_aluguel": 150,
+        "taxa_utilizacao_frota": 80.8
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:52:25.271070Z"
+}

@@ -1,0 +1,35 @@
+{
+  "ticker": "LOGG3",
+  "codigo_cvm": "23272",
+  "data_release": "2025-03-31",
+  "fonte_pdf": "23272_2025-03-31_LOG_COMMERCIAL_PROPERTIES_E_PARTICIPAÇÕES.pdf",
+  "texto_contexto": "A LOG Commercial Properties e Participações S.A. (LOGG3) se posiciona como uma das principais forças no setor de desenvolvimento e locação de galpões logísticos de classe A no Brasil, destacando-se por um modelo de negócios que combina a locação de ativos existentes com o desenvolvimento de novos empreendimentos. Essa abordagem integrada permite à empresa não apenas maximizar a utilização de seus ativos, mas também responder de forma ágil às demandas do mercado, especialmente em regiões metropolitanas e áreas estratégicas do país, onde a logística desempenha um papel crucial para a eficiência das cadeias de suprimento.\n\nO foco da LOG em segmentos de locação de galpões e desenvolvimento de ativos é impulsionado por drivers de valor que incluem a eficiência na gestão de custos e a pré-locação de ativos antes da entrega. Essa estratégia não apenas garante uma receita mais estável, mas também minimiza a exposição ao risco de vacância, um dos principais desafios enfrentados por empresas do setor. A diversificação geográfica da LOG, que abrange diferentes regiões do Brasil, e sua capacidade de atender a diversos setores da economia, desde e-commerce até indústrias tradicionais, são fatores que contribuem para a resiliência do seu modelo de negócios.\n\nOs principais indicadores de desempenho (KPIs) da LOG, como receita líquida, lucro líquido, EBITDA, taxa de vacância e ticket médio por metro quadrado, são reflexos diretos da eficiência operacional da empresa e da demanda por seus ativos. A taxa de vacância, que se estabilizou em níveis baixos, é um indicativo da forte aceitação de seus galpões no mercado, enquanto o ticket médio competitivo demonstra a capacidade da LOG de se posicionar de maneira favorável em um ambiente de crescente concorrência.\n\nEntretanto, a empresa não está isenta de riscos. A volatilidade do mercado imobiliário, a dependência de setores específicos da economia e a possibilidade de aumento nas taxas de juros são fatores que podem impactar negativamente tanto o custo de financiamento quanto a demanda por locação. A gestão proativa desses riscos é essencial para garantir a continuidade do crescimento e a estabilidade financeira da LOG.\n\nA estrutura de capital da LOG é robusta, caracterizada por uma alavancagem ajustada que reflete uma gestão financeira disciplinada. A redução significativa da dívida líquida ajustada em relação ao EBITDA demonstra um compromisso com a saúde financeira e a sustentabilidade a longo prazo. Além disso, a empresa tem um compromisso claro com a distribuição de dividendos, prevendo a destinação de uma parte significativa do lucro líquido ajustado para esse fim, o que pode atrair investidores em busca de retornos consistentes.\n\nA governança corporativa da LOG é um aspecto fundamental para sua operação, especialmente em um setor que enfrenta regulamentações rigorosas. A conformidade com as normas do setor imobiliário e as exigências ambientais são cruciais, especialmente em relação à certificação de sustentabilidade de seus empreendimentos. A empresa tem se destacado por suas iniciativas de responsabilidade social e ambiental, que não apenas atendem às expectativas regulatórias, mas também são cada vez mais valorizadas por investidores e clientes, refletindo uma tendência global em direção a práticas empresariais mais sustentáveis.\n\nEventos críticos, como a execução do plano \"LOG 2 Milhões\", que visa entregar uma quantidade significativa de área bruta locável até um horizonte futuro, e a conclusão de emissões de Certificados de Recebíveis Imobiliários (CRI), são fundamentais para o crescimento da empresa. Essas iniciativas não apenas fortalecem a estrutura de capital da LOG, mas também garantem os recursos necessários para o desenvolvimento de novos projetos, permitindo que a empresa mantenha sua posição de liderança no mercado.\n\nPor fim, a sensibilidade macroeconômica é um fator que a LOG deve monitorar de perto. Mudanças nas condições econômicas, políticas e sociais podem impactar a demanda por locação e o custo de financiamento. A capacidade da empresa de se adaptar a essas mudanças, mantendo sua eficiência operacional e sua proposta de valor, será determinante para seu sucesso contínuo em um ambiente competitivo e dinâmico. A LOGG3, portanto, não apenas se destaca por sua atuação no setor logístico, mas também por sua visão estratégica e compromisso com a sustentabilidade e a responsabilidade social, elementos que se tornam cada vez mais essenciais no cenário atual.\n\nNÚMEROS DE REFERÊNCIA (1T2025):\n- Receita Líquida: R$0.1 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.1 bi (trimestre) | N/D (LTM) | Margem 218.3%\n- Lucro Líquido: R$0.1 bi (trimestre) | N/D (LTM)\n- Dívida Líquida: R$0.7 bi\n- Capex: R$0.2 bi (trimestre) | N/D (LTM)\n- Operacional: Entregas de 102,1 mil m² de ABL com 100% de pré-locação e vacância estabilizada em 1,55%. Absorção bruta de 114,6 mil m².",
+  "numeros_referencia": {
+    "periodo_trimestre": "1T2025",
+    "financeiros": {
+      "receita_liquida_tri": 55327000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 120769000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 86365000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 663600000,
+      "divida_bruta": null,
+      "capex_tri": 171809000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 218.3,
+      "margem_liquida_pct": 156.1
+    },
+    "operacionais": {
+      "descricao": "Entregas de 102,1 mil m² de ABL com 100% de pré-locação e vacância estabilizada em 1,55%. Absorção bruta de 114,6 mil m².",
+      "metricas": {
+        "entregas_m2": 102100,
+        "pre_locacao_pct": 100,
+        "vacancia_pct": 1.55,
+        "absorcao_bruta_m2": 114600
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:53:17.391769Z"
+}
