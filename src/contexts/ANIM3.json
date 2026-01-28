@@ -1,0 +1,36 @@
+{
+  "ticker": "ANIM3",
+  "codigo_cvm": "23248",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "23248_2025-09-30_ANIMA_HOLDING_SA.pdf",
+  "texto_contexto": "A Ânima Educação (ANIM3) se destaca no setor educacional brasileiro, operando com um modelo de negócio diversificado que abrange uma ampla gama de cursos e programas de ensino superior. A empresa oferece graduações, pós-graduações e educação continuada, tanto na modalidade presencial quanto a distância, o que a posiciona de forma estratégica para atender a diferentes perfis de alunos e suas necessidades educacionais. A geração de receita da Ânima é predominantemente baseada nas mensalidades pagas pelos alunos, além de contar com parcerias e repasses a polos de ensino a distância, o que amplia sua capacidade de alcance e flexibilidade.\n\nO portfólio da Ânima é dividido em três segmentos principais: o Ânima Core, que se concentra na educação acadêmica tradicional; o Ensino Digital, que se dedica a cursos online; e o Inspirali, que foca na educação médica e continuada. Essa segmentação permite à empresa não apenas diversificar suas fontes de receita, mas também adaptar suas ofertas às demandas específicas de cada nicho de mercado. A crescente aceitação e demanda por educação digital têm sido um motor importante de crescimento, especialmente em um cenário onde a flexibilidade e a acessibilidade se tornaram cruciais para os alunos.\n\nOs principais indicadores de desempenho (KPIs) da Ânima, como receita líquida, lucro líquido, EBITDA ajustado e margem EBITDA, refletem a saúde financeira e a eficiência operacional da empresa. O crescimento consistente em receita e lucro, aliado a um aumento significativo na margem EBITDA, demonstra a capacidade da Ânima de controlar custos e otimizar suas operações. Os drivers de valor que impulsionam o desempenho da empresa incluem a qualidade da oferta educacional, a eficácia na atração e retenção de alunos, o aumento do ticket médio e a expansão das modalidades de ensino, especialmente no digital. Esses fatores são fundamentais para sustentar o crescimento a longo prazo e a competitividade no setor.\n\nEntretanto, a Ânima não está isenta de riscos. A concorrência crescente no setor educacional, impulsionada por novas instituições e plataformas de ensino, representa um desafio significativo. Além disso, mudanças nas regulamentações governamentais podem impactar a estrutura de preços e a oferta de cursos, especialmente no contexto do Ensino a Distância, que tem passado por um processo de reavaliação regulatória. A dependência de financiamento estudantil também é um fator de risco, uma vez que a capacidade de pagamento dos alunos pode ser afetada por condições econômicas adversas.\n\nA estrutura de capital da Ânima é caracterizada por uma alavancagem moderada, com uma relação de dívida líquida sobre EBITDA ajustado que indica uma gestão financeira conservadora. Essa abordagem permite à empresa manter uma capacidade robusta de geração de caixa, essencial para sustentar investimentos em crescimento e inovação. A governança corporativa da Ânima também desempenha um papel crucial, com práticas que buscam garantir transparência e responsabilidade, fundamentais para a confiança dos investidores e stakeholders.\n\nO ambiente regulatório no qual a Ânima opera é um fator crítico que pode influenciar suas operações. As recentes mudanças no marco regulatório do Ensino a Distância, por exemplo, têm o potencial de alterar a dinâmica do mercado, afetando tanto a oferta de cursos quanto a estrutura de preços. Além disso, eventos como aquisições estratégicas, como a recente aquisição de 100% da UniFG, e a implementação de novas tecnologias educacionais são elementos que podem impactar a trajetória de crescimento da Ânima, influenciando a percepção de mercado e a performance financeira da empresa.\n\nPor fim, a sensibilidade macroeconômica é um aspecto que não pode ser ignorado. Fatores como a taxa de desemprego, a inflação e a renda disponível da população têm um impacto direto na demanda por educação. Em períodos de instabilidade econômica, a procura por cursos de graduação e pós-graduação pode ser afetada, assim como a capacidade dos alunos de arcar com mensalidades. Portanto, a Ânima Educação precisa estar atenta a essas variáveis macroeconômicas, ajustando suas estratégias para garantir a continuidade do crescimento e a manutenção de sua posição de destaque no setor educacional.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.0 bi (trimestre) | R$3.1 bi (LTM)\n- EBITDA: R$0.3 bi (trimestre) | R$0.9 bi (LTM) | Margem 30.1%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- Operacional: Crescimento de 5,4% na atração do Ânima Core e aumento de 6,7% no tíquete médio do Ensino Acadêmico.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1005900000,
+      "receita_liquida_ltm": 3051400000,
+      "ebitda_tri": 303000000,
+      "ebitda_ltm": 945000000,
+      "lucro_liquido_tri": 36500000,
+      "lucro_liquido_ltm": 141800000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 30.1,
+      "margem_liquida_pct": 3.6
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 5,4% na atração do Ânima Core e aumento de 6,7% no tíquete médio do Ensino Acadêmico.",
+      "metricas": {
+        "base_alunos_total": 360826,
+        "base_alunos_ensino_academico": 313988,
+        "ticket_medio_ensino_academico": 900,
+        "ticket_medio_ensino_digital": 230,
+        "ticket_medio_inspirali": 9670
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:06:14.612006Z"
+}

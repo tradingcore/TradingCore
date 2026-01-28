@@ -1,0 +1,34 @@
+{
+  "ticker": "ARML3",
+  "codigo_cvm": "26069",
+  "data_release": "2025-11-11",
+  "fonte_pdf": "26069_2025-11-11_ARMAC_LOCAÇÃO_LOGÍSTICA_E_SERVIÇOS_SA.pdf",
+  "texto_contexto": "A Armac Locação, Logística e Serviços S.A. se posiciona como uma referência no setor de locação de equipamentos, com um modelo de negócio que prioriza a locação de máquinas e equipamentos pesados, como os da linha amarela, além de caminhões vocacionais e empilhadeiras. Este enfoque em locação de longo prazo, que representa uma significativa parcela de suas receitas, permite à empresa não apenas garantir uma previsibilidade de fluxo de caixa, mas também mitigar a volatilidade inerente ao setor. A Armac se destaca por sua capacidade de oferecer contratos que, em sua maioria, ultrapassam um ano, o que proporciona uma base sólida para o planejamento financeiro e operacional.\n\nOs segmentos de atuação da Armac são diversificados, englobando não apenas a locação de equipamentos, mas também a venda de ativos e a prestação de serviços associados. A empresa adota uma abordagem que prioriza a medição de disponibilidade em seus contratos, resultando em receitas fixas que contribuem para a estabilidade financeira. Essa estratégia é fundamental para a construção de um portfólio robusto, que não apenas atende às necessidades dos clientes, mas também se adapta às dinâmicas do mercado.\n\nOs principais indicadores de desempenho da Armac, como EBITDA ajustado, margem EBITDA e lucro líquido, são reflexos de sua eficiência operacional e da gestão eficaz de seus recursos. A empresa apresenta um retorno sobre o capital investido (ROIC) ajustado que demonstra sua capacidade de gerar valor a partir dos investimentos realizados. A manutenção de uma frota moderna e eficiente é um dos principais drivers de valor, assim como a otimização do portfólio de contratos e a gestão de custos, que são cruciais para a competitividade e sustentabilidade do negócio.\n\nEntretanto, a Armac não está isenta de riscos. A volatilidade econômica e as flutuações nas taxas de juros podem impactar diretamente seu custo de capital e, consequentemente, sua estrutura de financiamento. A dependência de contratos de longo prazo, embora ofereça previsibilidade, também traz o risco de que a não renovação ou a deterioração das condições contratuais possam afetar negativamente a receita. A empresa, portanto, deve estar atenta a esses fatores e desenvolver estratégias para mitigar esses riscos.\n\nA estrutura de capital da Armac é composta por uma combinação equilibrada de dívida e patrimônio líquido, com um nível de alavancagem que, embora moderado, exige uma gestão cuidadosa para garantir a saúde financeira a longo prazo. A empresa está sujeita à regulação da Comissão de Valores Mobiliários (CVM), o que implica em uma rigorosa conformidade com as normas contábeis brasileiras e internacionais (IFRS), assegurando transparência e confiabilidade nas informações financeiras.\n\nNo que diz respeito à competição, a Armac opera em um ambiente dinâmico, onde a capacidade de manter a qualidade e a eficiência operacional é crucial. A empresa deve estar atenta às novas demandas do mercado e às inovações tecnológicas que podem alterar a forma como os serviços são prestados. A execução de sua estratégia de crescimento, que pode incluir parcerias e aquisições, é fundamental para expandir sua presença em nichos de mercado e fortalecer sua posição competitiva.\n\nA sensibilidade macroeconômica também desempenha um papel importante na operação da Armac. Fatores como a saúde da economia, os níveis de investimento em infraestrutura e a demanda por serviços de locação de equipamentos podem influenciar diretamente o desempenho da empresa. Em um cenário de crescimento econômico, a demanda por locação tende a aumentar, enquanto em períodos de retração, a empresa pode enfrentar desafios significativos.\n\nA gestão da Armac enfatiza a importância de construir relacionamentos duradouros com seus clientes, reconhecendo que a satisfação do cliente é um pilar fundamental para a sustentabilidade do negócio. A valorização do cliente não apenas contribui para a fidelização, mas também para a reputação da empresa no mercado, o que é essencial em um setor onde a confiança e a qualidade do serviço são determinantes para o sucesso. Assim, a Armac se posiciona não apenas como uma fornecedora de equipamentos, mas como uma parceira estratégica para seus clientes, buscando sempre agregar valor e inovar em suas ofertas.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.4 bi (trimestre) | R$1.6 bi (LTM)\n- EBITDA: R$0.2 bi (trimestre) | R$0.8 bi (LTM) | Margem 50.6%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.2 bi (LTM)\n- Dívida: R$1.8 bi (líquida) | R$2.4 bi (bruta)\n- Capex: R$0.2 bi (trimestre) | R$0.7 bi (LTM)\n- Operacional: Receita bruta de R$ 534,9 milhões, EBITDA de locação ajustado de R$ 200,1 milhões com margem de 50,6%. Lucro líquido de R$ 38,3 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 395900000,
+      "receita_liquida_ltm": 1583600000,
+      "ebitda_tri": 200100000,
+      "ebitda_ltm": 799200000,
+      "lucro_liquido_tri": 38300000,
+      "lucro_liquido_ltm": 158360000,
+      "divida_liquida": 1756400000,
+      "divida_bruta": 2386000000,
+      "capex_tri": 180000000,
+      "capex_ltm": 720000000,
+      "margem_ebitda_pct": 50.6,
+      "margem_liquida_pct": 7.7
+    },
+    "operacionais": {
+      "descricao": "Receita bruta de R$ 534,9 milhões, EBITDA de locação ajustado de R$ 200,1 milhões com margem de 50,6%. Lucro líquido de R$ 38,3 milhões.",
+      "metricas": {
+        "frota_locacao": 11888,
+        "taxa_utilizacao_pct": 74.4,
+        "produtividade_pct": 58.8
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:06:43.636001Z"
+}

@@ -1,0 +1,34 @@
+{
+  "ticker": "CBEE3",
+  "codigo_cvm": "3050",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "3050_2025-09-30_AMPLA_ENERGIA_E_SERVIÇOS_SA.pdf",
+  "texto_contexto": "A Ampla Energia e Serviços S.A., conhecida como Enel Distribuição Rio, é uma das principais empresas do setor de distribuição de energia elétrica no Brasil, operando em um mercado altamente regulado e competitivo. Com uma abrangência significativa, a companhia atende aproximadamente 3,1 milhões de consumidores em 66 municípios do estado do Rio de Janeiro, o que representa cerca de 75% do território fluminense. O modelo de negócio da Ampla é centrado na distribuição de energia elétrica, com um forte compromisso em garantir a qualidade do fornecimento e a satisfação do cliente. Para isso, a empresa investe continuamente em infraestrutura e inovação tecnológica, buscando não apenas atender à demanda, mas também se antecipar às necessidades dos consumidores.\n\nOs segmentos de atuação da Ampla incluem tanto o mercado cativo, que abrange consumidores residenciais, comerciais e industriais, quanto o mercado livre, que tem experimentado um crescimento notável nos últimos anos. Essa migração de clientes do mercado cativo para o mercado livre é um fenômeno que a empresa monitora de perto, pois impacta diretamente sua receita e estratégia de negócios. Os principais indicadores de desempenho (KPIs) utilizados pela Ampla para avaliar sua performance incluem a Receita Líquida, EBITDA, Margem EBITDA, além de métricas de qualidade do fornecimento, como a Duração Equivalente de Interrupção (DEC) e a Frequência Equivalente de Interrupção (FEC). Esses KPIs são fundamentais para a gestão da empresa, pois refletem não apenas a eficiência operacional, mas também a percepção de qualidade por parte dos consumidores.\n\nOs drivers de valor da Ampla estão intimamente ligados à eficiência operacional, à qualidade do serviço prestado e à capacidade de investimento em novas tecnologias. A empresa tem se esforçado para melhorar continuamente a qualidade do fornecimento de energia, o que se traduz na redução dos indicadores DEC e FEC. Além disso, a implementação de iniciativas voltadas para a digitalização e modernização da rede elétrica é uma prioridade, uma vez que essas ações não apenas melhoram a eficiência, mas também contribuem para a sustentabilidade e a resiliência da infraestrutura elétrica.\n\nEntretanto, a Ampla enfrenta uma série de riscos que podem impactar sua operação e desempenho financeiro. Eventos climáticos adversos, por exemplo, podem afetar tanto a qualidade do fornecimento quanto a demanda por energia. Além disso, a empresa está sujeita a riscos regulatórios e de mercado, especialmente em um cenário de crescente concorrência no setor de energia elétrica e a migração de consumidores para o mercado livre. A estrutura de capital da Ampla é caracterizada por um nível de endividamento que, embora tenha sido reduzido ao longo do tempo, ainda representa um desafio, especialmente em um contexto de aumento dos custos operacionais e financeiros. A gestão cuidadosa da estrutura de capital é, portanto, essencial para garantir a continuidade das operações e a realização de investimentos necessários.\n\nA regulação do setor elétrico é um fator crítico para a operação da Ampla. A Agência Nacional de Energia Elétrica (ANEEL) exerce um papel fundamental na supervisão das tarifas e da qualidade do serviço prestado, impondo regras que a empresa deve seguir. Os reajustes tarifários anuais, por exemplo, impactam diretamente a receita da companhia e a percepção de valor pelos consumidores. Eventos críticos, como a recente negativa da ANEEL em relação ao refinanciamento de mútuos financeiros, podem afetar a liquidez e a estratégia de financiamento da empresa, exigindo uma gestão financeira ainda mais rigorosa.\n\nPor fim, a sensibilidade macroeconômica também desempenha um papel importante na operação da Ampla. Fatores como a inflação, as taxas de juros e o crescimento econômico influenciam a demanda por energia e a capacidade de pagamento dos consumidores. Em um cenário econômico desafiador, a empresa deve estar preparada para ajustar suas estratégias e operações, garantindo que continue a atender às expectativas de seus clientes e a manter sua posição no mercado. A combinação desses elementos torna a Ampla uma empresa dinâmica, que precisa constantemente se adaptar às mudanças do ambiente regulatório, às demandas do mercado e às expectativas dos consumidores.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$2.4 bi (trimestre) | R$7.0 bi (LTM)\n- EBITDA: R$0.3 bi (trimestre) | R$1.1 bi (LTM) | Margem 13.7%\n- Lucro Líquido: R$-0.1 bi (trimestre) | R$-0.1 bi (LTM)\n- Capex: R$0.4 bi (trimestre) | R$1.1 bi (LTM)\n- Operacional: Venda de 2.586 GWh de energia, com 3,1 milhões de consumidores atendidos.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 2404848000,
+      "receita_liquida_ltm": 6971901000,
+      "ebitda_tri": 330338000,
+      "ebitda_ltm": 1143209000,
+      "lucro_liquido_tri": -108801000,
+      "lucro_liquido_ltm": -126361000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": 409821000,
+      "capex_ltm": 1064598000,
+      "margem_ebitda_pct": 13.74,
+      "margem_liquida_pct": -4.52
+    },
+    "operacionais": {
+      "descricao": "Venda de 2.586 GWh de energia, com 3,1 milhões de consumidores atendidos.",
+      "metricas": {
+        "volume_energia_venda": 2586000,
+        "numero_consumidores": 3123824,
+        "capex": 409821000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:05:45.128261Z"
+}

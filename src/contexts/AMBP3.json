@@ -1,0 +1,30 @@
+{
+  "ticker": "AMBP3",
+  "codigo_cvm": "24961",
+  "data_release": "2025-06-30",
+  "fonte_pdf": "24961_2025-06-30_AMBIPAR_PARTICIPAÇÕES_E_EMPREENDIMENTOS_SA.pdf",
+  "texto_contexto": "A Ambipar Participações e Empreendimentos S.A. se destaca no mercado como uma provedora integral de soluções ambientais, adotando um modelo de negócio que a posiciona como uma \"one-stop shop\" para serviços relacionados à gestão de resíduos e sustentabilidade. Essa abordagem permite que a empresa atenda a uma ampla gama de necessidades de seus clientes, oferecendo serviços que vão desde a valorização e tratamento de resíduos até a resposta a emergências ambientais. O modelo é dividido em dois segmentos principais: Environment e Response. O segmento Environment é focado na valorização e tratamento de resíduos, um campo que tem ganhado crescente relevância em um mundo cada vez mais preocupado com a sustentabilidade e a preservação ambiental. Por outro lado, o segmento Response se dedica a serviços de emergência e manutenção, com ênfase na mitigação de riscos ambientais, um aspecto crucial em um cenário onde desastres naturais e acidentes industriais podem ter consequências devastadoras.\n\nOs principais indicadores de desempenho da Ambipar, como receita líquida, EBITDA e retorno sobre o capital investido (ROIC), refletem a saúde financeira e a eficiência operacional da empresa. A receita líquida e o EBITDA são fundamentais para avaliar a capacidade da empresa de gerar lucro e sustentar suas operações, enquanto a margem EBITDA e o ROIC operacional são indicadores de como a empresa está gerenciando seus recursos e capital. A gestão eficiente do capital é um dos pilares que sustentam o crescimento da Ambipar, especialmente em um ambiente de negócios que exige agilidade e adaptação constante.\n\nOs drivers de valor da Ambipar são diversos e incluem a expansão geográfica, a diversificação de serviços e a eficiência operacional. A empresa tem se beneficiado de uma demanda crescente por soluções sustentáveis, impulsionada por uma conscientização ambiental cada vez maior entre consumidores e empresas. Essa tendência é particularmente evidente no segmento Environment, que tem experimentado um crescimento significativo, refletindo a necessidade urgente de práticas mais responsáveis em relação ao meio ambiente. A capacidade da Ambipar de integrar aquisições e expandir sua presença em novos mercados é um fator crítico para seu sucesso a longo prazo.\n\nEntretanto, a Ambipar não está isenta de riscos. A volatilidade das taxas de juros pode impactar suas despesas financeiras, e a dependência de contratos de longo prazo a torna vulnerável a mudanças nas regulamentações ambientais. A estrutura de capital da empresa, que combina dívida e patrimônio líquido, é gerenciável, mas a alavancagem financeira deve ser monitorada de perto para garantir que a empresa mantenha sua flexibilidade financeira e capacidade de investimento.\n\nA governança corporativa é um aspecto essencial para a Ambipar, especialmente considerando que suas operações estão sujeitas a rigorosas normas ambientais e à supervisão de órgãos reguladores, como a Comissão de Valores Mobiliários (CVM) e o Comitê de Pronunciamentos Contábeis (CPC). A conformidade com essas regulamentações é vital não apenas para a operação da empresa, mas também para a manutenção de sua reputação no mercado. Mudanças nas políticas ambientais, flutuações econômicas e a integração de novas aquisições são eventos críticos que podem impactar a empresa, exigindo uma gestão cuidadosa para garantir sinergias e eficiência operacional.\n\nA competição no setor de soluções ambientais é intensa, com diversas empresas buscando se destacar em um mercado em crescimento. A Ambipar, no entanto, tem se posicionado como líder, aproveitando sua experiência e expertise para oferecer serviços diferenciados. A sensibilidade macroeconômica também desempenha um papel importante, uma vez que a demanda por serviços ambientais pode ser influenciada por ciclos econômicos, políticas governamentais e mudanças nas preferências dos consumidores. A empresa continua a se concentrar em sua estratégia de crescimento sustentável, buscando fortalecer sua posição como líder global em soluções ambientais, enquanto navega pelos desafios e oportunidades que o mercado apresenta.\n\nNÚMEROS DE REFERÊNCIA (2T2025):\n- Receita Líquida: R$1.8 bi (trimestre) | R$3.5 bi (LTM)\n- EBITDA: R$0.6 bi (trimestre) | R$1.1 bi (LTM) | Margem 33.1%\n- Lucro Líquido: R$-0.1 bi (trimestre) | R$-0.3 bi (LTM)\n- Dívida: R$6.0 bi (líquida) | R$10.7 bi (bruta)\n- Capex: R$0.3 bi (trimestre) | R$0.5 bi (LTM)\n- Operacional: Crescimento de 25,2% na receita líquida em relação ao 2T24, com EBITDA de R$ 585,7 milhões e margem EBITDA de 33,1%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "2T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1770700000,
+      "receita_liquida_ltm": 3510500000,
+      "ebitda_tri": 585700000,
+      "ebitda_ltm": 1137700000,
+      "lucro_liquido_tri": -134100000,
+      "lucro_liquido_ltm": -299900000,
+      "divida_liquida": 5999100000,
+      "divida_bruta": 10652700000,
+      "capex_tri": 271900000,
+      "capex_ltm": 467300000,
+      "margem_ebitda_pct": 33.1,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 25,2% na receita líquida em relação ao 2T24, com EBITDA de R$ 585,7 milhões e margem EBITDA de 33,1%.",
+      "metricas": {}
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:04:51.935525Z"
+}

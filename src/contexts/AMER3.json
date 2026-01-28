@@ -1,0 +1,34 @@
+{
+  "ticker": "AMER3",
+  "codigo_cvm": "20990",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20990_2025-09-30_AMERICANAS_SA_-_EM_RECUPERAÇÃO_JUDICIAL.pdf",
+  "texto_contexto": "A Americanas (AMER3) é uma das principais empresas do setor de varejo no Brasil, operando com um modelo de negócios que abrange a venda de produtos físicos e digitais, além de oferecer serviços financeiros. Com uma base de aproximadamente 45 milhões de clientes, a empresa se destaca pela diversidade de segmentos que cobre, incluindo alimentos, higiene e limpeza, e produtos eletrônicos. Essa ampla gama de ofertas permite à Americanas atender a diferentes perfis de consumidores, consolidando sua presença no mercado varejista nacional.\n\nOs principais indicadores de desempenho da Americanas, como o crescimento da receita líquida e as vendas em mesmas lojas, são fundamentais para avaliar a saúde financeira da empresa. A expansão de sua plataforma de serviços financeiros também se revela um driver importante, contribuindo significativamente para o aumento das vendas e a fidelização dos clientes. A empresa tem investido em eficiência operacional e na adoção de soluções tecnológicas, como inteligência artificial, para otimizar sua cadeia de suprimentos e melhorar a experiência do cliente. Programas de fidelidade, como o \"Cliente A\", e campanhas promocionais direcionadas são estratégias que visam não apenas aumentar as vendas, mas também fortalecer o relacionamento com os consumidores.\n\nEntretanto, a Americanas enfrenta um ambiente macroeconômico desafiador, que inclui a necessidade de adaptação às mudanças no comportamento do consumidor e a intensa pressão competitiva que caracteriza o setor de varejo. A concorrência não se limita apenas a outros varejistas tradicionais, mas também inclui plataformas de e-commerce que têm ganhado espaço significativo no mercado. Essa dinâmica exige que a Americanas esteja constantemente inovando e se adaptando para manter sua relevância e competitividade.\n\nA estrutura de capital da empresa é um aspecto crítico a ser considerado, especialmente em um contexto de recuperação judicial. Com dívidas relacionadas a debêntures que somam R$1,9 bilhão e um saldo de caixa e equivalentes de R$1,3 bilhão, a Americanas se encontra em um processo de reestruturação financeira que impacta diretamente sua capacidade de investimento e crescimento. A recuperação judicial, além de ser uma resposta a desafios financeiros, também representa uma oportunidade para a empresa reavaliar suas operações e focar em áreas que possam gerar maior valor.\n\nA governança corporativa da Americanas é um fator essencial para a confiança dos investidores e stakeholders. A recente transição de liderança, com a nomeação de um novo CEO, sinaliza uma nova fase para a empresa, que busca implementar um plano de recuperação judicial focado na reestruturação e na melhoria da eficiência operacional. A venda de unidades de negócios não essenciais, como a UPI Uni.Co, é uma estratégia que visa concentrar esforços nas áreas mais lucrativas e com maior potencial de crescimento.\n\nA regulação do setor varejista no Brasil, que abrange normas fiscais e de proteção ao consumidor, também desempenha um papel importante na operação da Americanas. A conformidade com essas regulamentações é crucial para evitar penalidades e garantir a continuidade das operações. Além disso, a empresa deve estar atenta às mudanças nas políticas econômicas e sociais que podem impactar o comportamento do consumidor e, consequentemente, suas vendas.\n\nPor fim, a sensibilidade macroeconômica é um fator que pode influenciar diretamente o desempenho da Americanas. Variáveis como inflação, taxa de desemprego e mudanças nas taxas de juros podem afetar o poder de compra dos consumidores e, por extensão, as vendas da empresa. Em um cenário onde a recuperação econômica é incerta, a Americanas precisa estar preparada para ajustar suas estratégias e operações de acordo com as condições do mercado, buscando sempre um caminho sustentável para o crescimento e a rentabilidade a longo prazo. A combinação de todos esses fatores molda o futuro da Americanas, que, apesar dos desafios, busca se reinventar e se posicionar de maneira competitiva no dinâmico mercado varejista brasileiro.\n\nNÚMEROS DE REFERÊNCIA (9M2025):\n- Receita Líquida: R$8.6 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.2 bi (trimestre) | N/D (LTM) | Margem 2.8%\n- Lucro Líquido: R$-0.2 bi (trimestre) | N/D (LTM)\n- Operacional: Crescimento de 10,1% nas vendas mesmas lojas e GMV total de R$ 11,9 bilhões, com 45 milhões de clientes.",
+  "numeros_referencia": {
+    "periodo_trimestre": "9M2025",
+    "financeiros": {
+      "receita_liquida_tri": 8615000000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 240000000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": -227000000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 2.8,
+      "margem_liquida_pct": -2.6
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 10,1% nas vendas mesmas lojas e GMV total de R$ 11,9 bilhões, com 45 milhões de clientes.",
+      "metricas": {
+        "gmv_total": 11900000000,
+        "vendas_mesmas_lojas_pct": 10.1,
+        "clientes": 45000000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:05:17.258330Z"
+}
