@@ -1,0 +1,36 @@
+{
+  "ticker": "RRRP3",
+  "codigo_cvm": "25291",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25291_2025-09-30_BRAVA_ENERGIA_SA.pdf",
+  "texto_contexto": "A Brava Energia se destaca no setor energético brasileiro, com um modelo de negócios robusto que abrange tanto as atividades de exploração e produção de petróleo e gás natural (upstream) quanto a refinação e comercialização de derivados (downstream). Essa integração vertical permite à empresa não apenas otimizar suas operações, mas também maximizar a captura de valor ao longo de toda a cadeia produtiva. A Brava busca constantemente aumentar sua eficiência operacional, o que se reflete em seus principais indicadores de desempenho, como receita líquida, EBITDA ajustado e margem EBITDA, além de métricas operacionais como o custo de extração e a produção média diária de hidrocarbonetos.\n\nOs drivers de valor da Brava Energia são multifacetados. A capacidade de aumentar a produção, a gestão eficiente de custos e a otimização da estrutura de capital são fundamentais para a sustentabilidade e o crescimento da empresa. A eficiência operacional é um pilar central, pois a empresa busca não apenas reduzir custos, mas também melhorar a produtividade em suas operações. A gestão de capital é igualmente crítica, com a Brava focando em manter um equilíbrio saudável entre dívida e capital próprio, o que lhe permite navegar em um ambiente de mercado volátil e garantir a geração de fluxo de caixa positivo.\n\nEntretanto, a Brava não está isenta de riscos. A volatilidade dos preços do petróleo é um dos principais desafios, impactando diretamente a receita e a lucratividade da empresa. Além disso, a empresa enfrenta riscos regulatórios, especialmente em um setor tão sensível a mudanças nas normas ambientais e de segurança. A dependência de parceiros e fornecedores também representa um risco operacional, uma vez que a continuidade das operações pode ser afetada por fatores externos. A Brava tem se mostrado proativa na mitigação desses riscos, implementando estratégias de hedging para proteger-se contra flutuações de preços de commodities e buscando diversificar suas fontes de suprimento.\n\nA estrutura de capital da Brava Energia é caracterizada por um mix equilibrado de dívida e capital próprio, com um foco claro na redução da alavancagem financeira. Essa abordagem permite à empresa manter uma posição sólida em um mercado que pode ser imprevisível. A gestão ativa da dívida é um aspecto importante da estratégia financeira da Brava, refletindo um compromisso com a saúde financeira e a sustentabilidade a longo prazo.\n\nNo que diz respeito à governança, a Brava Energia adota práticas que visam garantir a transparência e a responsabilidade em suas operações. A empresa está comprometida com princípios de governança ambiental, social e corporativa (ESG), alinhando suas atividades com padrões internacionais de sustentabilidade. Isso não apenas melhora a reputação da empresa, mas também a posiciona favoravelmente em um mercado cada vez mais exigente em termos de responsabilidade social e ambiental.\n\nA Brava opera em um ambiente regulatório complexo, que exige conformidade com normas rigorosas de segurança e ambientais, além de regulamentações específicas do setor de petróleo e gás no Brasil. A capacidade da empresa de se adaptar a essas exigências é crucial para sua operação e crescimento. Eventos críticos, como a conclusão de aquisições e a integração de novos ativos, desempenham um papel significativo na estratégia da Brava, permitindo-lhe expandir sua presença no mercado e diversificar suas operações.\n\nA competição no setor de energia é intensa, com várias empresas disputando participação de mercado em um ambiente que exige inovação e eficiência. A Brava Energia, ao integrar suas operações e focar em práticas sustentáveis, busca se diferenciar e criar uma proposta de valor única. A sensibilidade macroeconômica também é um fator a ser considerado, uma vez que a economia global e as políticas energéticas podem impactar diretamente a demanda por petróleo e gás, influenciando as operações e a estratégia da empresa.\n\nEm suma, a Brava Energia se posiciona como uma empresa resiliente e adaptável, com um modelo de negócios que busca maximizar a eficiência e a sustentabilidade. Com um foco claro em governança, gestão de riscos e inovação, a empresa está bem equipada para enfrentar os desafios do setor e aproveitar as oportunidades que surgem em um mercado em constante evolução.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$3.1 bi (trimestre) | N/D (LTM)\n- EBITDA: R$1.3 bi (trimestre) | N/D (LTM) | Margem 42.5%\n- Operacional: Produção média de 91,8 mil boe/d, com 73,4 mil bbl/d de petróleo e 18,4 mil boe/d de gás.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 3058600000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 1299600000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": null,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 42.5,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "Produção média de 91,8 mil boe/d, com 73,4 mil bbl/d de petróleo e 18,4 mil boe/d de gás.",
+      "metricas": {
+        "producao_media_boe_dia": 91800,
+        "producao_media_petroleo_bbl_dia": 73400,
+        "producao_media_gas_boe_dia": 18400,
+        "preco_medio_venda_petroleo_usd_bbl": 61.9,
+        "preco_medio_venda_gas_usd_mmbtu": 6.4
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:21:23.386528Z"
+}

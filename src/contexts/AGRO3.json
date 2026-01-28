@@ -1,0 +1,38 @@
+{
+  "ticker": "AGRO3",
+  "codigo_cvm": "20036",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20036_2025-09-30_BRASILAGRO_CIA_BRAS_DE_PROP_AGRICOLAS.pdf",
+  "texto_contexto": "A BrasilAgro (AGRO3) se destaca como uma das principais empresas do setor de agronegócio no Brasil, com um modelo de negócio que se concentra na aquisição, desenvolvimento, exploração e comercialização de propriedades rurais com aptidão agropecuária. A companhia tem como objetivo transformar ativos rurais por meio da implementação de culturas de maior valor agregado, além de investir em infraestrutura e tecnologia para maximizar a rentabilidade de suas operações. Essa abordagem permite que a BrasilAgro não apenas amplie sua capacidade produtiva, mas também aumente a eficiência operacional, garantindo um retorno mais robusto sobre os investimentos realizados.\n\nA atuação da BrasilAgro abrange diversos segmentos do agronegócio, incluindo grãos, cana-de-açúcar e pecuária, o que proporciona um portfólio diversificado e a mitigação de riscos associados a flutuações em um único mercado. A empresa opera em uma vasta área de 252.796 hectares, distribuídos em seis estados brasileiros, além de contar com propriedades no Paraguai e na Bolívia. Essa presença geográfica diversificada não apenas amplia as oportunidades de negócio, mas também permite à BrasilAgro se beneficiar de diferentes condições climáticas e de mercado, aumentando sua resiliência frente a adversidades.\n\nOs principais indicadores de desempenho da BrasilAgro, como receita líquida, EBITDA ajustado, margem EBITDA e a variação do valor justo de ativos biológicos, são fundamentais para a avaliação da performance financeira e operacional da empresa. Esses KPIs refletem a eficiência na gestão das propriedades e a rentabilidade das culturas cultivadas, permitindo que a companhia monitore seu progresso e ajuste suas estratégias conforme necessário. Os drivers de valor da BrasilAgro incluem a produtividade das culturas, a valorização das propriedades rurais e a capacidade de adaptação às condições de mercado e climáticas, fatores que são essenciais para sustentar o crescimento e a competitividade da empresa.\n\nEntretanto, a BrasilAgro não está isenta de riscos. A sazonalidade do agronegócio pode impactar a geração de receita em períodos específicos do ano, enquanto os riscos climáticos, como secas ou excessos de chuva, podem afetar a produção agrícola de maneira significativa. Além disso, a volatilidade dos preços das commodities e as variações cambiais representam desafios que podem impactar a rentabilidade da empresa. A estrutura de capital da BrasilAgro é composta por um mix de dívida e patrimônio líquido, com um custo médio da dívida atrelado ao CDI, o que pode influenciar sua capacidade de investimento e expansão. A gestão prudente da estrutura de capital é crucial para garantir que a empresa possa financiar suas operações e projetos de crescimento de forma sustentável.\n\nA governança corporativa da BrasilAgro é um aspecto importante que contribui para a transparência e a responsabilidade nas suas operações. A empresa busca manter altos padrões de conformidade regulatória, especialmente em um setor que é fortemente impactado por normas ambientais e de uso da terra. A regulação do setor agrícola no Brasil exige que a BrasilAgro esteja em conformidade com legislações que visam a sustentabilidade e a preservação ambiental, o que pode influenciar suas operações e estratégias de longo prazo. Mudanças nas políticas agrícolas, flutuações nos preços das commodities e condições climáticas adversas são eventos críticos que podem afetar de maneira significativa os resultados financeiros e operacionais da empresa.\n\nA competição no setor de agronegócio é intensa, com diversas empresas disputando participação de mercado. A BrasilAgro, no entanto, se diferencia por sua abordagem focada na transformação de ativos e na maximização da rentabilidade, o que lhe confere uma posição competitiva favorável. A sensibilidade macroeconômica também desempenha um papel importante nas operações da empresa, uma vez que fatores como taxas de juros, inflação e políticas econômicas podem impactar tanto a demanda por produtos agrícolas quanto os custos de produção.\n\nEm suma, a BrasilAgro é uma empresa que, por meio de um modelo de negócio robusto e diversificado, busca não apenas se estabelecer como líder no agronegócio, mas também garantir um crescimento sustentável em um ambiente repleto de desafios e oportunidades. A gestão eficaz dos riscos, a adaptação às condições de mercado e a conformidade com as regulamentações são fundamentais para o sucesso contínuo da empresa, que se posiciona de maneira estratégica para enfrentar as dinâmicas do setor agrícola e contribuir para o desenvolvimento do agronegócio na região.\n\nNÚMEROS DE REFERÊNCIA (1T2026):\n- Receita Líquida: R$0.3 bi (trimestre) | R$0.3 bi (LTM)\n- EBITDA: R$0.0 bi (trimestre) | R$0.0 bi (LTM) | Margem 21.2%\n- Lucro Líquido: R$-0.0 bi (trimestre) | R$-0.0 bi (LTM)\n- Operacional: Receita líquida de R$ 302,97 milhões, com prejuízo líquido de R$ 64,28 milhões. O EBITDA ajustado foi de R$ 64,35 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "1T2026",
+    "financeiros": {
+      "receita_liquida_tri": 302969000,
+      "receita_liquida_ltm": 286643000,
+      "ebitda_tri": 64348,
+      "ebitda_ltm": 64349,
+      "lucro_liquido_tri": -64275,
+      "lucro_liquido_ltm": -64275,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 21.2,
+      "margem_liquida_pct": -21.2
+    },
+    "operacionais": {
+      "descricao": "Receita líquida de R$ 302,97 milhões, com prejuízo líquido de R$ 64,28 milhões. O EBITDA ajustado foi de R$ 64,35 milhões.",
+      "metricas": {
+        "quantidade_vendida_ton": 900560,
+        "soja_vendida_ton": 63235,
+        "milho_vendido_ton": 23777,
+        "feijao_vendido_ton": 749,
+        "algodao_pluma_vendido_ton": 2351,
+        "cana_de_acucar_vendida_ton": 804034,
+        "pecuaria_vendida_ton": 1026
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:20:16.231082Z"
+}

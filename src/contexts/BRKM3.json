@@ -1,0 +1,35 @@
+{
+  "ticker": "BRKM3",
+  "codigo_cvm": "4820",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "4820_2025-09-30_BRASKEM_SA.pdf",
+  "texto_contexto": "A Braskem S.A. se destaca como uma das principais empresas petroquímicas da América Latina, com um modelo de negócio robusto que se concentra na transformação de matérias-primas em produtos químicos e plásticos. A companhia é reconhecida pela sua especialização na produção de resinas e biopolímeros, atendendo a uma ampla gama de indústrias, incluindo construção, automotiva, embalagens e bens de consumo. Essa diversidade de aplicações permite à Braskem não apenas diversificar suas fontes de receita, mas também se posicionar como uma fornecedora essencial em setores estratégicos da economia.\n\nA estrutura operacional da Braskem é segmentada em três principais áreas geográficas: Brasil/América do Sul, Estados Unidos e Europa, e México. Cada um desses segmentos contribui de maneira distinta para o desempenho financeiro da empresa, refletindo as dinâmicas de mercado locais e as particularidades da demanda por produtos petroquímicos. Essa segmentação geográfica também permite à Braskem mitigar riscos associados a flutuações econômicas em regiões específicas, ao mesmo tempo em que aproveita oportunidades de crescimento em mercados emergentes.\n\nOs principais indicadores de desempenho da Braskem, como EBITDA recorrente, margem EBITDA, receita líquida e custo dos produtos vendidos, são fundamentais para avaliar a saúde financeira e a eficiência operacional da empresa. O EBITDA recorrente, em particular, é um reflexo da capacidade da companhia de gerar lucro operacional de forma consistente, excluindo itens não recorrentes que poderiam distorcer a análise de desempenho. A margem EBITDA, por sua vez, serve como um indicador de eficiência, permitindo que a empresa avalie sua capacidade de controlar custos e maximizar lucros em relação à receita gerada.\n\nOs drivers de valor da Braskem são influenciados por diversos fatores, incluindo a demanda global por produtos petroquímicos, a eficiência operacional e a capacidade de inovação, especialmente em relação a produtos sustentáveis. A empresa tem se empenhado em desenvolver soluções que atendam às crescentes exigências por sustentabilidade, alinhando-se às tendências globais que priorizam a redução do impacto ambiental. Além disso, iniciativas regulatórias que visam proteger a indústria química brasileira, como o Projeto de Lei 892/25, que institui incentivos fiscais, podem proporcionar um ambiente mais favorável para a competitividade do setor.\n\nEntretanto, a Braskem não está isenta de riscos. A volatilidade dos preços das matérias-primas, que são fundamentais para a produção de seus produtos, pode impactar significativamente a rentabilidade da empresa. A concorrência internacional também representa um desafio, uma vez que empresas de outros países podem oferecer produtos similares a preços competitivos. Além disso, questões regulatórias e ambientais, especialmente em relação ao evento geológico em Alagoas, têm gerado compromissos financeiros substanciais e ações legais que podem afetar a reputação e a estabilidade financeira da Braskem.\n\nA estrutura de capital da Braskem é marcada por um nível elevado de endividamento, refletindo uma dívida bruta significativa e uma proporção de dívida líquida ajustada/EBITDA que indica uma alavancagem financeira elevada. Essa situação exige uma gestão financeira cuidadosa, pois a empresa precisa equilibrar suas obrigações financeiras com a necessidade de investimentos em inovação e sustentabilidade.\n\nA regulação do setor petroquímico é um aspecto crítico para a Braskem, que deve se adaptar constantemente a mudanças nas políticas governamentais e nas normas ambientais. O evento geológico em Alagoas, que resultou em desafios operacionais e financeiros, exige que a empresa invista em medidas de mitigação e reparação, além de impactar sua reputação no mercado. A combinação desses fatores torna o ambiente operacional da Braskem complexo e desafiador, exigindo uma gestão estratégica cuidadosa para garantir a sustentabilidade e o crescimento a longo prazo.\n\nPor fim, a sensibilidade macroeconômica é um elemento que não pode ser ignorado na análise da Braskem. A empresa está sujeita a variações nas condições econômicas globais, que podem influenciar a demanda por seus produtos e, consequentemente, seu desempenho financeiro. A capacidade da Braskem de navegar por esse ambiente dinâmico e desafiador será crucial para sua continuidade e sucesso no mercado petroquímico.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$17.3 bi (trimestre) | R$54.6 bi (LTM)\n- EBITDA: R$0.8 bi (trimestre) | R$2.6 bi (LTM) | Margem 4.7%\n- Lucro Líquido: R$-0.0 bi (trimestre) | R$0.4 bi (LTM)\n- Dívida: R$13.0 bi (líquida) | R$8.4 bi (bruta)\n- Operacional: Vendas de resinas totalizaram 787 kton, com taxa de utilização de eteno em 65%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 17299000000,
+      "receita_liquida_ltm": 54616000000,
+      "ebitda_tri": 818000000,
+      "ebitda_ltm": 2567000000,
+      "lucro_liquido_tri": -26000000,
+      "lucro_liquido_ltm": 405000000,
+      "divida_liquida": 13000000000,
+      "divida_bruta": 8400000000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 4.73,
+      "margem_liquida_pct": -0.15
+    },
+    "operacionais": {
+      "descricao": "Vendas de resinas totalizaram 787 kton, com taxa de utilização de eteno em 65%.",
+      "metricas": {
+        "vendas_resinas_kton": 787,
+        "vendas_quimicos_kton": 700,
+        "taxa_utilizacao_eteno_pct": 65,
+        "vendas_resinas_exportacao_kton": 229
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:20:49.981347Z"
+}
