@@ -1,0 +1,34 @@
+{
+  "ticker": "TTEN3",
+  "codigo_cvm": "25950",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25950_2025-09-30_TRÊS_TENTOS_AGROINDUSTRIAL_SA.pdf",
+  "texto_contexto": "A 3tentos, uma empresa familiar com três décadas de atuação, se destaca como um dos principais ecossistemas agrícolas do Brasil, oferecendo um modelo de negócio verticalizado e integrado que abrange uma vasta gama de produtos e serviços voltados para o setor agrícola. Com um portfólio diversificado, a companhia não apenas comercializa insumos agrícolas, como sementes, fertilizantes e defensivos, mas também atua na originação e trading de grãos, além de se dedicar à industrialização desses produtos em suas fábricas. Essa abordagem permite à 3tentos atender a cerca de 24 mil produtores rurais, com os quais estabelece relacionamentos de longo prazo, promovendo consultorias e treinamentos que visam maximizar a produtividade e a eficiência no campo.\n\nOs segmentos de atuação da 3tentos são bem definidos e interconectados. No segmento de Insumos, a empresa fornece os recursos necessários para o cultivo, enquanto no segmento de Grãos, realiza a compra e venda, contando com uma robusta capacidade de armazenagem que supera 2,1 milhões de toneladas. A Indústria, por sua vez, é responsável pela transformação da soja em produtos como farelo, óleo e biodiesel, o que não apenas agrega valor à matéria-prima, mas também posiciona a empresa em um mercado em crescimento, especialmente em relação à demanda por biocombustíveis.\n\nOs principais indicadores de desempenho da 3tentos, como receita operacional líquida, lucro bruto ajustado, EBITDA ajustado e lucro líquido, são fundamentais para avaliar a saúde financeira e operacional da empresa. Esses KPIs refletem não apenas a eficiência das operações, mas também a capacidade da companhia de se adaptar às dinâmicas do mercado agrícola, que é influenciado por uma série de fatores, incluindo a sazonalidade das colheitas e a volatilidade dos preços das commodities.\n\nOs drivers de valor da 3tentos são diversos e incluem a expansão geográfica, que permite à empresa alcançar novos mercados e diversificar sua base de clientes. A diversificação de produtos e serviços também é um fator crucial, pois a companhia busca atender às variadas necessidades dos produtores rurais, adaptando-se às tendências e demandas do setor. Além disso, a 3tentos se beneficia de parcerias estratégicas e do fortalecimento de sua presença em hubs logísticos, o que otimiza a distribuição e a eficiência operacional.\n\nEntretanto, a empresa não está isenta de riscos. A volatilidade dos preços das commodities pode impactar diretamente suas margens de lucro, enquanto as mudanças climáticas representam uma ameaça significativa às safras e, consequentemente, à oferta de produtos. A dependência de crédito rural também é um fator de vulnerabilidade, uma vez que condições econômicas adversas podem restringir o acesso a financiamentos, afetando a capacidade dos produtores de investir em insumos e tecnologias.\n\nA estrutura de capital da 3tentos é composta por um equilíbrio entre dívida e patrimônio líquido, refletindo uma gestão financeira que busca otimizar os recursos disponíveis. A companhia está sujeita a uma série de regulamentações que governam tanto o setor agrícola quanto o financeiro, incluindo normas de segurança alimentar e práticas de sustentabilidade, que são cada vez mais exigidas pelo mercado e pela sociedade.\n\nEventos críticos, como a conclusão de novas unidades industriais, como a fábrica de etanol no Vale do Araguaia, são fundamentais para o crescimento futuro da 3tentos. Essas iniciativas não apenas ampliam a capacidade produtiva da empresa, mas também reforçam sua competitividade em um mercado que está em constante evolução. A expansão das operações é vista como um passo essencial para garantir a sustentabilidade e a relevância da 3tentos no cenário agrícola brasileiro, que é influenciado por fatores macroeconômicos, como políticas governamentais, flutuações cambiais e tendências globais de consumo. Assim, a 3tentos se posiciona não apenas como uma fornecedora de insumos e produtos agrícolas, mas como um parceiro estratégico para os agricultores, comprometida com a inovação e a sustentabilidade no setor.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$5.0 bi (trimestre) | R$12.1 bi (LTM)\n- EBITDA: R$0.2 bi (trimestre) | R$0.6 bi (LTM) | Margem 3.3%\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.7 bi (LTM)\n- Operacional: Crescimento de 42,9% na receita líquida, com forte desempenho em todos os segmentos, especialmente em Grãos com aumento de 93%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 4994879000,
+      "receita_liquida_ltm": 12056864000,
+      "ebitda_tri": 166284000,
+      "ebitda_ltm": 637541000,
+      "lucro_liquido_tri": 203044000,
+      "lucro_liquido_ltm": 726310000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 3.3,
+      "margem_liquida_pct": 4.1
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 42,9% na receita líquida, com forte desempenho em todos os segmentos, especialmente em Grãos com aumento de 93%.",
+      "metricas": {
+        "volume_grãos": null,
+        "volume_insumos": null,
+        "volume_indústria": null
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:41:27.553467Z"
+}

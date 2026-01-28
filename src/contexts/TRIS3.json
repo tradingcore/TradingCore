@@ -1,0 +1,34 @@
+{
+  "ticker": "TRIS3",
+  "codigo_cvm": "21130",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "21130_2025-09-30_TRISUL_SA.pdf",
+  "texto_contexto": "A Trisul S.A. é uma destacada empresa brasileira no setor de incorporação e construção, com uma trajetória que ultrapassa quatro décadas, consolidando-se principalmente na dinâmica e competitiva cidade de São Paulo. O modelo de negócio da Trisul é caracterizado pela integração vertical de suas operações, abrangendo desde a concepção e desenvolvimento até a construção e comercialização de empreendimentos imobiliários. Essa abordagem permite à empresa não apenas otimizar custos e prazos, mas também garantir um controle de qualidade mais rigoroso ao longo de todo o processo.\n\nO portfólio da Trisul é diversificado, atendendo a uma ampla gama de perfis de clientes, que vão desde aqueles em busca de habitação de interesse social até consumidores de empreendimentos de alto padrão. Essa segmentação é uma estratégia deliberada que visa capturar diferentes nichos de mercado, permitindo à empresa se adaptar às variações na demanda e às condições econômicas. A companhia opera em segmentos que incluem o econômico, médio, médio-alto e alto padrão, o que a posiciona de forma flexível em um mercado que frequentemente apresenta oscilações.\n\nOs principais indicadores de desempenho da Trisul, como o Valor Geral de Vendas (VGV), as vendas contratadas e a receita líquida, são fundamentais para avaliar a saúde financeira e a performance da empresa. O VGV, em particular, reflete o potencial de receita dos empreendimentos e é um termômetro importante para a estratégia de lançamentos da companhia. Além disso, a velocidade de vendas sobre a oferta (VSO) e a composição do landbank, que é majoritariamente voltado para habitação de interesse social, são métricas que ajudam a entender a eficiência da Trisul em capturar oportunidades de mercado.\n\nOs drivers de valor da Trisul são amplos e incluem a capacidade de lançar novos empreendimentos de forma eficaz, a eficiência na execução das obras e uma gestão de custos que busca maximizar a rentabilidade. A empresa também se destaca por sua posição no Novo Mercado da B3, que impõe um rigoroso padrão de governança corporativa. Essa adesão a práticas de governança não apenas aumenta a transparência e a confiança dos investidores, mas também fortalece a reputação da Trisul no mercado.\n\nEntretanto, a Trisul não está isenta de riscos. O setor imobiliário é notoriamente volátil, e a empresa deve navegar por um ambiente que pode ser afetado por mudanças nas políticas econômicas e regulatórias, além de enfrentar uma concorrência acirrada. A estrutura de capital da companhia, que combina dívida e patrimônio líquido, é um aspecto crucial a ser monitorado. Com um endividamento líquido que se mantém em níveis controlados, a Trisul demonstra uma posição financeira relativamente saudável, o que lhe confere uma certa resiliência em tempos de incerteza econômica.\n\nA regulação do setor imobiliário no Brasil, que inclui diretrizes da Comissão de Valores Mobiliários (CVM) e do Sistema Financeiro da Habitação (SFH), exerce um impacto significativo sobre as operações da Trisul. A conformidade com essas normas é essencial não apenas para a legalidade das operações, mas também para a manutenção da confiança dos investidores e clientes. Eventos críticos, como a aprovação de novos lançamentos e a entrega de empreendimentos, são determinantes para a geração de receita e para a reputação da empresa no mercado.\n\nAlém disso, a Trisul demonstra um compromisso crescente com a sustentabilidade e a responsabilidade social, integrando práticas de ESG (ambientais, sociais e de governança) em suas operações. Essa abordagem não apenas atende a uma demanda crescente por parte dos consumidores e investidores por práticas empresariais responsáveis, mas também posiciona a empresa como uma líder em um setor que cada vez mais valoriza a sustentabilidade.\n\nA sensibilidade macroeconômica é outro fator que não pode ser ignorado. A Trisul, como muitas empresas do setor imobiliário, está sujeita a flutuações nas taxas de juros, na inflação e nas condições de crédito, que podem impactar diretamente a demanda por novos empreendimentos. A capacidade da empresa de se adaptar a essas variáveis econômicas será crucial para sua continuidade e crescimento no mercado.\n\nEm suma, a Trisul S.A. é uma empresa robusta e bem posicionada no setor imobiliário brasileiro, com um modelo de negócio que combina diversificação, governança sólida e um compromisso com a sustentabilidade. No entanto, a companhia deve permanecer atenta aos riscos e desafios que o ambiente econômico e regulatório apresenta, garantindo assim sua relevância e competitividade no futuro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.4 bi (trimestre) | R$0.9 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.2 bi (LTM) | Margem 20.4%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.1 bi (LTM)\n- Dívida Líquida: R$0.5 bi\n- Operacional: Vendas Brutas de R$ 456,2 milhões, crescimento de 32,2% em relação ao 3T24. Vendas Contratadas totalizaram R$ 409,5 milhões, com 614 unidades vendidas.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 372603000,
+      "receita_liquida_ltm": 938253000,
+      "ebitda_tri": 60737000,
+      "ebitda_ltm": 164028000,
+      "lucro_liquido_tri": 54909000,
+      "lucro_liquido_ltm": 147838000,
+      "divida_liquida": 478998000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 20.4,
+      "margem_liquida_pct": 14.7
+    },
+    "operacionais": {
+      "descricao": "Vendas Brutas de R$ 456,2 milhões, crescimento de 32,2% em relação ao 3T24. Vendas Contratadas totalizaram R$ 409,5 milhões, com 614 unidades vendidas.",
+      "metricas": {
+        "vendas_brutas": 456200000,
+        "vendas_contratadas": 409504000,
+        "numero_unidades_vendidas": 614
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:40:39.407950Z"
+}
