@@ -1,0 +1,34 @@
+{
+  "ticker": "RNEW3",
+  "codigo_cvm": "21636",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "21636_2025-09-30_RENOVA_ENERGIA_SA.pdf",
+  "texto_contexto": "A Renova Energia (RNEW3) se posiciona como uma das principais empresas no setor de energia renovável no Brasil, com um foco claro na geração de energia eólica e solar. Seu modelo de negócio é estruturado em torno da comercialização de energia elétrica, tanto em mercados regulados quanto livres, o que lhe permite uma diversificação de fontes de receita e uma otimização contínua de sua infraestrutura existente. A empresa possui um portfólio robusto de projetos que abrange complexos eólicos e solares, refletindo uma capacidade instalada significativa que a coloca em uma posição competitiva no mercado.\n\nOs segmentos de atuação da Renova são predominantemente voltados para a geração de energia elétrica a partir de fontes renováveis, com uma ênfase especial na energia eólica e solar. Essa estratégia não apenas atende à crescente demanda por energia limpa, mas também se alinha com as tendências globais de sustentabilidade e responsabilidade ambiental. A empresa busca atender tanto o mercado regulado, que é mais estável e previsível, quanto o mercado livre, que oferece oportunidades de maior margem e flexibilidade. Essa abordagem permite à Renova fornecer soluções integradas para grandes consumidores de energia, ampliando seu alcance e potencial de receita.\n\nOs principais indicadores de desempenho (KPIs) utilizados pela Renova incluem a geração de energia bruta e líquida, receita operacional, EBITDA ajustado e lucro líquido. Esses KPIs são fundamentais para avaliar a eficiência operacional da empresa e sua capacidade de gerar valor para os acionistas. A eficiência operacional é um dos principais drivers de valor da Renova, juntamente com a capacidade de expansão de projetos e a diversificação das fontes de receita. A empresa também se destaca por suas iniciativas em sustentabilidade e responsabilidade social, que não apenas reforçam seu compromisso com a transição energética, mas também criam valor para todos os stakeholders envolvidos.\n\nEntretanto, a Renova enfrenta uma série de riscos que podem impactar sua operação e rentabilidade. A volatilidade dos preços de energia é um fator crítico, uma vez que flutuações nos preços podem afetar diretamente a receita da empresa. Além disso, a dependência de condições climáticas favoráveis para a geração de energia representa um risco inerente, especialmente em um setor onde a variabilidade pode ser significativa. Os desafios regulatórios também são uma preocupação constante, pois mudanças nas políticas governamentais e nas regulamentações da ANEEL podem influenciar as tarifas e as condições de mercado, impactando a viabilidade financeira dos projetos em andamento.\n\nA estrutura de capital da Renova é composta por uma combinação de dívida e capital próprio, refletindo uma estratégia de financiamento que busca equilibrar a alavancagem financeira com a necessidade de investimentos contínuos. A empresa tem se empenhado em fortalecer sua posição financeira, buscando aportes de capital e conversões de dívidas para melhorar sua liquidez e capacidade de investimento. Essa abordagem é essencial para sustentar o crescimento e a expansão de seus projetos, especialmente em um setor que exige investimentos significativos em infraestrutura.\n\nA regulação no setor de energia é um fator crítico para a Renova, uma vez que as tarifas e as condições de mercado são influenciadas por políticas governamentais e regulamentações da ANEEL. Eventos críticos, como a conclusão de projetos significativos e mudanças nas políticas de incentivo à energia renovável, podem impactar diretamente a competitividade da empresa e a viabilidade financeira de seus projetos. A evolução do mercado de energia, incluindo a crescente concorrência de outras fontes de energia renovável e a pressão por preços mais baixos, também representa um desafio que a Renova deve enfrentar.\n\nPor fim, a sensibilidade macroeconômica é um aspecto que não pode ser ignorado. Fatores como a inflação, a taxa de câmbio e as políticas econômicas do governo podem influenciar tanto a demanda por energia quanto os custos operacionais da empresa. A capacidade da Renova de se adaptar a essas condições macroeconômicas será crucial para sua sustentabilidade e crescimento a longo prazo. Em um cenário global cada vez mais voltado para a sustentabilidade, a Renova Energia se posiciona como uma protagonista na transição energética, buscando não apenas atender à demanda por energia renovável, mas também contribuir para um futuro mais sustentável.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.1 bi (trimestre) | R$0.4 bi (LTM)\n- EBITDA: R$0.0 bi (trimestre) | N/D (LTM)\n- Lucro Líquido: R$-0.0 bi (trimestre) | R$-0.1 bi (LTM)\n- Operacional: Geração líquida de 328,5 GWh, crescimento de 8,0% em relação ao mesmo período do ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 143900000,
+      "receita_liquida_ltm": 377900000,
+      "ebitda_tri": 31700000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": -44600000,
+      "lucro_liquido_ltm": -102300000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "Geração líquida de 328,5 GWh, crescimento de 8,0% em relação ao mesmo período do ano anterior.",
+      "metricas": {
+        "geracao_liquida": 328500000,
+        "geracao_bruta": 450400000,
+        "crescimento_geracao": 8.0
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:42:14.173560Z"
+}

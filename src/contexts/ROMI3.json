@@ -1,0 +1,38 @@
+{
+  "ticker": "ROMI3",
+  "codigo_cvm": "7510",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "7510_2025-09-30_ROMI_SA.pdf",
+  "texto_contexto": "A Indústrias ROMI (ROMI3) é uma referência no setor de máquinas e equipamentos industriais no Brasil, com uma trajetória que remonta a 1930. Desde sua fundação, a empresa se especializou na fabricação de máquinas industriais e equipamentos, além de se destacar como um importante produtor de peças fundidas e usinadas. O modelo de negócio da ROMI é robusto e diversificado, centrado na produção e comercialização de uma ampla gama de ferramentas e máquinas, que incluem tornos convencionais, tornos CNC, centros de usinagem e máquinas de moldagem por injeção de plásticos. A empresa tem se posicionado na vanguarda da inovação ao incorporar tecnologias da Indústria 4.0 em seus produtos, o que permite a utilização inteligente dos dados gerados por suas máquinas, aumentando a eficiência e a competitividade no mercado.\n\nOs segmentos de atuação da ROMI são amplos e incluem máquinas-ferramenta, máquinas para processamento de plásticos e a produção de peças fundidas e usinadas. Essa diversidade não apenas amplia a base de clientes da empresa, mas também a protege contra flutuações em setores específicos. Os principais indicadores de desempenho (KPIs) da empresa, como receita líquida de operações, margem EBITDA e taxa de utilização da capacidade instalada, são fundamentais para monitorar a saúde financeira e operacional da companhia. A inovação contínua em produtos, a diversificação de soluções, a eficiência operacional e a expansão no mercado internacional são os principais drivers de valor que sustentam o crescimento da ROMI.\n\nEntretanto, a empresa não está isenta de riscos. A volatilidade da demanda nos setores atendidos, a dependência de condições econômicas favoráveis e a intensa concorrência no mercado de máquinas e equipamentos são desafios constantes. A estrutura de capital da ROMI é composta por financiamentos em moeda local e estrangeira, com um montante significativo destinado à modernização de suas instalações e ao desenvolvimento de novos produtos. Essa estratégia de investimento é crucial para manter a competitividade e a inovação, mas também expõe a empresa a riscos associados a flutuações cambiais e condições de crédito.\n\nA governança corporativa da ROMI é reforçada pelo seu status de listagem no segmento \"Novo Mercado\" da B3, que exige um compromisso rigoroso com práticas de transparência e responsabilidade. Essa estrutura de governança é essencial para fortalecer a confiança dos investidores e stakeholders, especialmente em um ambiente econômico incerto. A regulação do setor industrial no Brasil, que inclui normas de segurança e ambientais, também impacta as operações da empresa, exigindo conformidade e adaptação contínua às exigências legais.\n\nRecentemente, a morte de Dr. Romeu Romi, co-fundador da empresa, trouxe à tona a importância de seu legado e a forte influência que ele exerceu na cultura organizacional da ROMI. Sua visão e liderança foram fundamentais para moldar a identidade da empresa, e sua ausência representa um desafio emocional e estratégico para a continuidade de sua missão. Além disso, a empresa enfrenta desafios relacionados à incerteza econômica e à confiança do empreendedor industrial, que têm se mostrado cautelosos em relação a investimentos. Essa cautela pode impactar a demanda por máquinas e equipamentos, exigindo da ROMI uma estratégia ágil e adaptativa para navegar em um cenário econômico em constante mudança.\n\nEm suma, a Indústrias ROMI se destaca como uma empresa sólida e inovadora no setor de máquinas e equipamentos industriais, com um modelo de negócio diversificado e uma forte ênfase em governança e inovação. No entanto, a empresa deve continuar a monitorar os riscos associados à volatilidade do mercado e à regulação, ao mesmo tempo em que busca oportunidades de crescimento e expansão em um ambiente competitivo e desafiador.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.3 bi (trimestre) | R$0.9 bi (LTM)\n- EBITDA: R$0.0 bi (trimestre) | R$0.1 bi (LTM) | Margem 10.9%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- Capex: R$0.1 bi (trimestre) | R$0.1 bi (LTM)\n- Operacional: Crescimento da receita líquida de 31,9% em relação ao 3T24, com um backlog de pedidos consolidado de R$ 895,3 milhões, representando um aumento de 18,0% em relação ao ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 349283000,
+      "receita_liquida_ltm": 938473000,
+      "ebitda_tri": 37934000,
+      "ebitda_ltm": 84691000,
+      "lucro_liquido_tri": 27356000,
+      "lucro_liquido_ltm": 53818000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": 58257000,
+      "capex_ltm": 144189000,
+      "margem_ebitda_pct": 10.9,
+      "margem_liquida_pct": 7.8
+    },
+    "operacionais": {
+      "descricao": "Crescimento da receita líquida de 31,9% em relação ao 3T24, com um backlog de pedidos consolidado de R$ 895,3 milhões, representando um aumento de 18,0% em relação ao ano anterior.",
+      "metricas": {
+        "ordem_intake": 388500000,
+        "backlog_pedidos": 895300000,
+        "unidades_vendidas": {
+          "ROMI_Machines": 225,
+          "Burkhardt_Weber": 4,
+          "Rough_and_Machined_Cast_Iron_Parts": 2728
+        }
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:45:01.069768Z"
+}

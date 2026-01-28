@@ -1,0 +1,34 @@
+{
+  "ticker": "RDOR3",
+  "codigo_cvm": "24821",
+  "data_release": "2025-11-05",
+  "fonte_pdf": "24821_2025-11-05_REDE_DOR_SÃO_LUIZ_SA.pdf",
+  "texto_contexto": "A Rede D’Or São Luiz S.A. se destaca como a maior rede privada de assistência médica do Brasil, com uma trajetória de 47 anos que a consolidou como uma referência no setor. Sua presença se estende por 13 estados e pelo Distrito Federal, refletindo uma estratégia de expansão geográfica que visa atender a uma demanda crescente por serviços de saúde de qualidade. O modelo de negócio da empresa é multifacetado, abrangendo a prestação de serviços hospitalares, oncologia e seguros de saúde, com um foco especial na integração de suas operações. A recente incorporação da SulAmérica, uma das principais seguradoras do país, fortaleceu sua atuação em segmentos como seguro saúde, previdência e gestão de ativos, ampliando sua proposta de valor e diversificando suas fontes de receita.\n\nA Rede D’Or opera uma vasta rede de 79 hospitais, sendo 76 de propriedade própria e 3 sob gestão, totalizando mais de 13 mil leitos. Este portfólio robusto não apenas a posiciona como líder em serviços hospitalares, mas também a torna a maior rede integrada de tratamento oncológico do Brasil e uma das mais significativas redes diagnósticas da América Latina. Os principais indicadores de desempenho, como receita líquida, EBITDA e margem EBITDA, são fundamentais para avaliar a saúde financeira da empresa. O crescimento consistente da receita líquida, aliado a uma margem EBITDA sólida, demonstra a eficácia de suas operações e a capacidade de gerar valor para os acionistas.\n\nOs drivers de valor da Rede D’Or são diversos e incluem a expansão orgânica, que se traduz em novas aquisições e a abertura de unidades, a eficiência operacional, que busca otimizar custos e processos, e a qualidade dos serviços prestados, que é essencial para manter a satisfação do paciente e a reputação da marca. A capacidade de inovação tecnológica, especialmente em plataformas digitais, tem se mostrado um diferencial competitivo, facilitando o agendamento de consultas e a gestão da saúde dos pacientes, o que se torna cada vez mais relevante em um cenário onde a digitalização é uma tendência crescente.\n\nA estrutura de capital da empresa é robusta, com um nível de endividamento que, embora presente, é gerenciável e demonstra uma leve redução em sua relação de dívida líquida sobre EBITDA. A sólida posição de caixa da Rede D’Or, que exclui provisões técnicas, proporciona uma margem de manobra financeira que permite investimentos em expansão e inovação, além de garantir a liquidez necessária para enfrentar desafios operacionais e de mercado.\n\nNo que diz respeito à governança, a empresa se compromete a seguir as melhores práticas, especialmente após a fusão com a SulAmérica, que trouxe novas exigências regulatórias e de compliance. A regulação do setor de saúde no Brasil, que envolve normas da ANS e da SUSEP, impõe desafios que a Rede D’Or deve gerenciar com diligência, garantindo a conformidade e a transparência em suas operações.\n\nEntretanto, a empresa não está isenta de riscos. A sinistralidade nos seguros é uma preocupação constante, especialmente em um ambiente onde a demanda por serviços de saúde pode ser volátil. A concorrência no setor de saúde é intensa, com diversas operadoras buscando capturar participação de mercado, o que pode pressionar margens e afetar a capacidade de reajuste de preços nos contratos com operadoras de saúde. Além disso, a volatilidade econômica pode impactar a demanda por serviços de saúde, uma vez que em períodos de crise, as pessoas tendem a adiar procedimentos não emergenciais.\n\nA sensibilidade macroeconômica é um fator que a Rede D’Or deve monitorar de perto, uma vez que mudanças nas condições econômicas podem influenciar tanto a capacidade de investimento da empresa quanto o comportamento dos consumidores em relação à utilização de serviços de saúde. Em suma, a Rede D’Or São Luiz S.A. se posiciona como um player estratégico no setor de saúde brasileiro, com um modelo de negócios diversificado e uma estrutura sólida, mas que deve navegar por um ambiente regulatório complexo e por desafios competitivos e macroeconômicos para manter seu crescimento e sustentabilidade a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$14.6 bi (trimestre) | R$41.9 bi (LTM)\n- EBITDA: R$2.9 bi (trimestre) | R$7.7 bi (LTM) | Margem 19.8%\n- Lucro Líquido: R$1.5 bi (trimestre) | R$3.6 bi (LTM)\n- Operacional: Volume de pacientes-dia recorde de 784 mil, com 157 mil procedimentos cirúrgicos realizados no trimestre.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 14583100000,
+      "receita_liquida_ltm": 41883500000,
+      "ebitda_tri": 2887900000,
+      "ebitda_ltm": 7678000000,
+      "lucro_liquido_tri": 1455800000,
+      "lucro_liquido_ltm": 3603500000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 19.8,
+      "margem_liquida_pct": 10.0
+    },
+    "operacionais": {
+      "descricao": "Volume de pacientes-dia recorde de 784 mil, com 157 mil procedimentos cirúrgicos realizados no trimestre.",
+      "metricas": {
+        "volume_pacientes_dia": 784000,
+        "procedimentos_cirurgicos": 157000,
+        "taxa_ocupacao_leitos_pct": 81.6
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:41:19.744323Z"
+}

@@ -1,0 +1,36 @@
+{
+  "ticker": "RBNS11",
+  "codigo_cvm": "25801",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25801_2025-09-30_RODOBENS_SA.pdf",
+  "texto_contexto": "A Rodobens, uma das principais empresas do setor automotivo e financeiro no Brasil, opera com um modelo de negócios integrado que se destaca pela sinergia entre a venda de veículos e a oferta de serviços financeiros. Essa abordagem permite à empresa não apenas comercializar automóveis, mas também proporcionar soluções financeiras que atendem às necessidades de seus clientes, como consórcios e seguros. Essa integração é fundamental para a criação de valor, pois a Rodobens consegue oferecer um pacote completo que facilita a aquisição de veículos e a gestão financeira associada.\n\nOs segmentos de atuação da Rodobens são claramente delineados em duas frentes principais: o varejo automotivo e os serviços financeiros. No varejo automotivo, a empresa se dedica à venda de automóveis, além de serviços pós-venda que garantem a satisfação e a fidelização dos clientes. Por outro lado, os serviços financeiros abrangem a gestão de consórcios e a oferta de produtos de crédito, que se tornaram uma parte significativa da receita da empresa. Essa diversificação de segmentos permite à Rodobens mitigar riscos e aproveitar oportunidades em diferentes áreas do mercado.\n\nOs principais indicadores de desempenho da Rodobens refletem a saúde financeira e operacional da empresa. A carteira de crédito, que representa um ativo crucial, é um dos KPIs mais relevantes, evidenciando a capacidade da empresa de gerar receita a partir de suas operações financeiras. A receita futura contratada de consórcio também é um indicador importante, pois demonstra a demanda por suas soluções financeiras e a confiança dos consumidores na empresa. Além disso, o lucro líquido e a margem de contribuição são métricas que ajudam a avaliar a eficiência operacional e a rentabilidade da Rodobens, essenciais para sustentar seu crescimento a longo prazo.\n\nOs drivers de valor da Rodobens são impulsionados por diversos fatores, sendo o crescimento nas vendas de veículos um dos mais significativos. A eficiência operacional, que se traduz em processos otimizados e redução de custos, também é um fator crítico para a maximização da rentabilidade. A expansão da carteira de crédito, especialmente no segmento de consórcios, é outro motor de crescimento, uma vez que esse produto tem se mostrado cada vez mais atrativo para os consumidores que buscam alternativas de financiamento.\n\nEntretanto, a Rodobens enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade do mercado automotivo é uma preocupação constante, uma vez que fatores econômicos, como variações na taxa de juros e na renda disponível dos consumidores, podem afetar a demanda por veículos. Além disso, a qualidade da carteira de crédito é um aspecto que requer atenção, pois inadimplência pode comprometer a saúde financeira da empresa. A concorrência no setor também é intensa, com diversas empresas disputando participação de mercado, o que pode pressionar margens e exigir inovações constantes.\n\nA estrutura de capital da Rodobens é robusta, com uma dívida bruta que, embora significativa, é equilibrada por um saldo de caixa e aplicações financeiras que proporcionam uma posição de liquidez confortável. Essa estrutura permite à empresa manter flexibilidade financeira, essencial para enfrentar desafios e aproveitar oportunidades de investimento. A governança corporativa da Rodobens é orientada por princípios de transparência e responsabilidade, o que fortalece a confiança dos investidores e stakeholders.\n\nA empresa opera sob um ambiente regulatório que abrange tanto o setor automotivo quanto o financeiro, com normas que regem a concessão de crédito e a operação de consórcios. A conformidade com essas regulamentações é crucial para a continuidade das operações e para a mitigação de riscos legais. Eventos críticos, como interrupções na cadeia de suprimentos, podem impactar a produção e a entrega de veículos, como demonstrado por situações recentes que afetaram grandes montadoras. A capacidade da Rodobens de se adaptar a mudanças nas condições de mercado e nas políticas econômicas é um indicativo de sua resiliência e compromisso com o crescimento sustentável.\n\nEm um cenário macroeconômico, a Rodobens é sensível a variáveis como a taxa de juros, a inflação e o nível de confiança do consumidor. Mudanças nessas condições podem influenciar diretamente a demanda por veículos e a disposição dos consumidores em buscar soluções financeiras. A empresa, no entanto, demonstra um compromisso contínuo com a inovação e a melhoria de seus processos, buscando não apenas se adaptar, mas também liderar em um mercado em constante evolução. Essa abordagem proativa é fundamental para garantir a sustentabilidade e o crescimento da Rodobens em um ambiente competitivo e desafiador.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.7 bi (trimestre) | R$4.4 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.4 bi (LTM) | Margem 8.5%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- Operacional: Negócios gerados totalizaram R$ 5,5 bilhões, com crescimento de 20% em relação ao ano anterior. A carteira de crédito atingiu R$ 20,7 bilhões, um aumento de 17,4%. O lucro líquido foi de R$ 100,2 milhões, com uma margem líquida de 5,9%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1693500000,
+      "receita_liquida_ltm": 4379500000,
+      "ebitda_tri": 143300000,
+      "ebitda_ltm": 350900000,
+      "lucro_liquido_tri": 100200000,
+      "lucro_liquido_ltm": 243500000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 8.5,
+      "margem_liquida_pct": 5.9
+    },
+    "operacionais": {
+      "descricao": "Negócios gerados totalizaram R$ 5,5 bilhões, com crescimento de 20% em relação ao ano anterior. A carteira de crédito atingiu R$ 20,7 bilhões, um aumento de 17,4%. O lucro líquido foi de R$ 100,2 milhões, com uma margem líquida de 5,9%.",
+      "metricas": {
+        "negocios_gerados": 5500000000,
+        "carteira_credito": 20700000000,
+        "clientes": 238000,
+        "veiculos_vendidos": 34000,
+        "parceiros_comissionados": 5300
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:44:09.290709Z"
+}

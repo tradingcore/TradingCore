@@ -1,0 +1,35 @@
+{
+  "ticker": "RDNI3",
+  "codigo_cvm": "20451",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20451_2025-09-30_RNI_NEGÓCIOS_IMOBILIÁRIOS_SA.pdf",
+  "texto_contexto": "A RNI Negócios Imobiliários, identificada pelo código RDNI3, é uma incorporadora e construtora brasileira que se destaca no cenário do mercado imobiliário nacional, sendo parte do grupo Empresas Rodobens. Com um foco claro no desenvolvimento de empreendimentos habitacionais, a RNI tem sua atuação fortemente vinculada ao programa governamental Minha Casa, Minha Vida (MCMV), que visa facilitar o acesso à moradia para a população de baixa e média renda. Este alinhamento com políticas públicas habitacionais não apenas amplia o alcance da empresa, mas também a posiciona como um agente relevante na promoção do desenvolvimento urbano e social.\n\nO modelo de negócio da RNI é centrado na construção e venda de unidades habitacionais, com uma abordagem que prioriza a monetização de estoques e a execução eficiente de projetos em andamento. A empresa busca constantemente otimizar suas operações, garantindo uma gestão financeira sustentável que permita a continuidade de seus projetos e a expansão de sua presença no mercado. A eficiência operacional é um dos pilares que sustentam a estratégia da RNI, permitindo que a empresa se adapte rapidamente às condições do mercado e às demandas habitacionais, que podem variar significativamente em função de fatores econômicos e sociais.\n\nA atuação da RNI se desdobra em dois segmentos principais: o MCMV, que representa a maior parte de suas vendas, e o segmento SBPE (Sistema Brasileiro de Poupança e Empréstimo). O MCMV, em particular, é um motor vital para a empresa, dado que proporciona acesso a um público amplo e diversificado que busca por moradia. Os principais indicadores de desempenho (KPIs) da RNI, como receita líquida, lucro bruto, margem bruta, vendas contratadas e a relação entre dívida líquida e patrimônio líquido, são fundamentais para avaliar a saúde financeira da empresa e sua capacidade de gerar valor para os acionistas.\n\nOs drivers de valor da RNI são multifacetados e incluem a habilidade de capturar valor sobre a carteira de estoques, a eficiência na execução de projetos e a gestão rigorosa de custos. A empresa também se destaca pela sua capacidade de adaptação às condições do mercado, o que é crucial em um setor que pode ser altamente volátil. A demanda habitacional, influenciada por fatores como a renda da população e as taxas de juros, é um aspecto que a RNI monitora de perto, buscando sempre alinhar sua oferta às necessidades do mercado.\n\nEntretanto, a RNI não está isenta de riscos. A volatilidade do mercado imobiliário, as altas taxas de juros que impactam os custos de financiamento e a capacidade de venda, além de riscos regulatórios associados à legislação do setor e à política habitacional do governo, são desafios constantes. A estrutura de capital da empresa é marcada por um nível significativo de endividamento, refletindo um compromisso contínuo com a desalavancagem e a preservação de liquidez. Essa estrutura exige uma gestão cuidadosa para garantir que a empresa mantenha sua capacidade de investimento e crescimento, mesmo em tempos de incerteza econômica.\n\nA regulação do setor imobiliário no Brasil é complexa e envolve uma série de normas que regem a construção civil, a venda de imóveis e a proteção ao consumidor. Mudanças nas políticas habitacionais, alterações nas taxas de juros e flutuações econômicas podem impactar diretamente a operação da RNI, exigindo uma postura proativa e adaptativa. A empresa tem se concentrado em manter uma abordagem prudente e disciplinada em suas operações, buscando mitigar os efeitos de um ambiente macroeconômico desafiador.\n\nEm um cenário competitivo, a RNI enfrenta a pressão de outras incorporadoras e construtoras que também buscam capturar a demanda habitacional. A capacidade de se diferenciar por meio de inovações em seus produtos, serviços e processos é essencial para garantir sua posição no mercado. A sensibilidade a fatores macroeconômicos, como crescimento econômico, emprego e políticas monetárias, também desempenha um papel crucial na performance da empresa, tornando a análise contínua desses elementos uma parte vital da estratégia da RNI.\n\nDessa forma, a RNI Negócios Imobiliários se apresenta como uma empresa resiliente, com um modelo de negócio bem definido e uma estratégia focada na eficiência e na adaptação às dinâmicas do mercado. Sua capacidade de navegar em um ambiente regulatório complexo e de responder às demandas do consumidor será fundamental para seu sucesso contínuo e para a criação de valor a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.1 bi (trimestre) | R$0.3 bi (LTM)\n- EBITDA: R$-0.0 bi (trimestre) | R$-0.0 bi (LTM)\n- Lucro Líquido: R$-0.0 bi (trimestre) | R$-0.1 bi (LTM)\n- Dívida Líquida: R$0.5 bi\n- Operacional: Vendas brutas de R$ 72 milhões, com distratos de R$ 72 milhões, resultando em vendas líquidas praticamente neutras. Estoque total de R$ 299 milhões, com 81% enquadrados no programa MCMV.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 123128000,
+      "receita_liquida_ltm": 276088000,
+      "ebitda_tri": -4155000,
+      "ebitda_ltm": -33329000,
+      "lucro_liquido_tri": -28608000,
+      "lucro_liquido_ltm": -102474000,
+      "divida_liquida": 453759000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": -23.3
+    },
+    "operacionais": {
+      "descricao": "Vendas brutas de R$ 72 milhões, com distratos de R$ 72 milhões, resultando em vendas líquidas praticamente neutras. Estoque total de R$ 299 milhões, com 81% enquadrados no programa MCMV.",
+      "metricas": {
+        "vendas_brutas": 72000000,
+        "distratos": 72000000,
+        "estoque_total": 299000000,
+        "vso_bruta_pct": 25
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:43:10.800026Z"
+}
