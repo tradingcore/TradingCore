@@ -1,0 +1,35 @@
+{
+  "ticker": "PLPL3",
+  "codigo_cvm": "25070",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25070_2025-09-30_PLANO_PLANO_DESENVOLVIMENTO_IMOBILIÁRIO_SA.pdf",
+  "texto_contexto": "A Plano&Plano Desenvolvimento Imobiliário S.A. se destaca como uma das principais incorporadoras do Brasil, com um foco estratégico voltado para o desenvolvimento de empreendimentos habitacionais destinados aos segmentos de baixa e média renda. A essência do seu modelo de negócio reside na incorporação imobiliária, que envolve a aquisição de terrenos, o desenvolvimento de projetos arquitetônicos e a comercialização de unidades habitacionais. A empresa tem se posicionado de maneira assertiva no mercado, especialmente através do programa Minha Casa Minha Vida, que tem sido um pilar fundamental para a sua atuação, permitindo que a Plano&Plano atenda a uma demanda crescente por habitação acessível, especialmente na região metropolitana de São Paulo.\n\nOs principais indicadores de desempenho da Plano&Plano, como o Valor Geral de Vendas (VGV) dos lançamentos, as vendas líquidas, a margem bruta, o EBITDA ajustado e o lucro líquido, são essenciais para a avaliação da saúde financeira e da eficiência operacional da empresa. Esses KPIs não apenas refletem o desempenho passado, mas também servem como ferramentas de previsão para o futuro, permitindo que a empresa ajuste suas estratégias conforme as condições de mercado. Os drivers de valor que impulsionam o crescimento da Plano&Plano incluem a capacidade de lançar novos empreendimentos de forma eficaz, a gestão rigorosa de custos, a qualidade dos produtos oferecidos e a força da marca, que se traduz em confiança do consumidor e reconhecimento no mercado.\n\nEntretanto, a empresa não está isenta de riscos. O setor imobiliário é notoriamente volátil e sujeito a uma série de fatores externos que podem impactar sua operação. A volatilidade econômica, as mudanças nas taxas de juros, as variações nos custos de construção e a possibilidade de inadimplência dos clientes são apenas alguns dos desafios que a Plano&Plano enfrenta. Além disso, a dependência de programas governamentais, como o Minha Casa Minha Vida, torna a empresa vulnerável a mudanças nas políticas habitacionais, que podem afetar diretamente a demanda por seus produtos. Em períodos de incerteza política ou econômica, a capacidade da empresa de manter suas vendas e lançamentos pode ser severamente comprometida.\n\nA estrutura de capital da Plano&Plano é caracterizada por uma combinação equilibrada de dívida e patrimônio líquido, com a empresa mantendo uma relação de dívida líquida sobre patrimônio líquido relativamente baixa. Essa estrutura sugere uma posição financeira saudável, permitindo que a companhia tenha flexibilidade para investir em novos projetos e enfrentar adversidades. A governança corporativa da empresa é robusta, com a Plano&Plano sujeita a rigorosas normas regulatórias estabelecidas pela Comissão de Valores Mobiliários (CVM) e pelo Conselho Federal de Contabilidade (CFC), além de seguir as normas internacionais de contabilidade (IFRS). Essa conformidade não apenas garante transparência, mas também fortalece a confiança dos investidores e stakeholders.\n\nA competição no mercado imobiliário brasileiro é intensa, com diversas incorporadoras disputando espaço em um cenário que se torna cada vez mais saturado. A capacidade da Plano&Plano de se diferenciar por meio da qualidade de seus produtos, inovação em design e eficiência operacional será crucial para manter sua posição de destaque. Além disso, a empresa deve estar atenta às tendências do mercado e às preferências dos consumidores, que estão em constante evolução.\n\nPor fim, a sensibilidade macroeconômica é um fator determinante para o desempenho da Plano&Plano. Fatores como a taxa de desemprego, a inflação, a renda disponível e as políticas de crédito habitacional influenciam diretamente a capacidade de compra dos consumidores e, consequentemente, a demanda por habitação. A empresa deve, portanto, monitorar de perto esses indicadores e estar preparada para ajustar suas estratégias em resposta a mudanças no ambiente econômico. A capacidade da Plano&Plano de se adaptar a essas dinâmicas e de manter sua trajetória de crescimento será fundamental para seu sucesso a longo prazo, garantindo que continue a desempenhar um papel significativo no fornecimento de habitação acessível no Brasil.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.8 bi (trimestre) | R$0.0 bi (LTM)\n- Lucro Líquido: R$6.0 bi (trimestre) | R$0.0 bi (LTM)\n- Dívida Líquida: R$0.1 bi\n- Operacional: Lançamentos totalizaram R$ 2,1 bilhões com 9 empreendimentos e 8.436 unidades. Vendas líquidas no mercado privado foram de R$ 1,02 bilhão.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 814400000,
+      "receita_liquida_ltm": 0,
+      "ebitda_tri": 0,
+      "ebitda_ltm": 0,
+      "lucro_liquido_tri": 6000000000,
+      "lucro_liquido_ltm": 0,
+      "divida_liquida": 90900000,
+      "divida_bruta": 0,
+      "capex_tri": 0,
+      "capex_ltm": 0,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": 7.4
+    },
+    "operacionais": {
+      "descricao": "Lançamentos totalizaram R$ 2,1 bilhões com 9 empreendimentos e 8.436 unidades. Vendas líquidas no mercado privado foram de R$ 1,02 bilhão.",
+      "metricas": {
+        "vendas_liquidas": 1020197000,
+        "lançamentos": 2141806000,
+        "unidades_lancadas": 8436,
+        "ticket_medio": 280200
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:32:04.301634Z"
+}

@@ -1,0 +1,34 @@
+{
+  "ticker": "PRIO3",
+  "codigo_cvm": "22187",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "22187_2025-09-30_PRIO_SA.pdf",
+  "texto_contexto": "A PRIO S.A., reconhecida como a maior empresa independente de produção de óleo e gás natural no Brasil, tem se destacado por sua abordagem focada na aquisição de ativos em produção, além de se empenhar no redesenvolvimento e na maximização da eficiência operacional. Este modelo de negócio é orientado para a criação de valor para os acionistas, priorizando a segurança e a sustentabilidade ambiental em todas as suas operações. A companhia atua em segmentos estratégicos, incluindo a exploração e produção de petróleo e gás em campos relevantes como Albacora Leste, Frade, Peregrino e Wahoo, além de desenvolver operações de comercialização que garantem condições vantajosas nas negociações de petróleo.\n\nOs principais indicadores de desempenho da PRIO, como EBITDA ajustado, receita total, lucro líquido e lifting cost, são fundamentais para a avaliação da eficiência operacional e da rentabilidade da empresa. A capacidade de aumentar a produção e a eficiência na operação dos ativos, juntamente com uma gestão de custos eficaz, são os principais drivers de valor que impulsionam o desempenho da companhia. Além disso, a habilidade da PRIO em navegar por um ambiente regulatório complexo e dinâmico é crucial para sua estratégia de crescimento e sustentabilidade a longo prazo.\n\nEntretanto, a operação da PRIO não está isenta de riscos. A volatilidade dos preços do petróleo é um fator que pode impactar significativamente a rentabilidade da empresa, assim como questões regulatórias que podem afetar suas concessões e operações. Desafios operacionais, que incluem a manutenção e a eficiência dos ativos, e riscos ambientais também são preocupações constantes que a companhia deve gerenciar para garantir a continuidade de suas atividades e a proteção de seu patrimônio.\n\nA estrutura de capital da PRIO é robusta, caracterizada por uma combinação equilibrada de dívida e capital próprio. A empresa tem conseguido manter um custo médio da dívida considerado adequado, o que lhe proporciona uma flexibilidade financeira importante para investir em novos projetos e na expansão de suas operações. A regulação, por sua vez, é um aspecto crítico para a PRIO, com a Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP) exercendo um papel fundamental na supervisão das operações e concessões da empresa. A obtenção de licenças para o desenvolvimento de novos campos, a interdição temporária de ativos e a emissão de dívidas para fortalecer a posição de caixa são eventos que influenciam diretamente a estratégia de crescimento e a operação da companhia.\n\nNo que diz respeito à competição, a PRIO enfrenta um ambiente desafiador, com a presença de grandes players do setor e outras empresas independentes que buscam expandir suas operações no Brasil. A capacidade de se diferenciar por meio de eficiência operacional e inovação é essencial para manter uma posição competitiva no mercado. Além disso, a sensibilidade macroeconômica, incluindo fatores como a demanda global por petróleo, políticas energéticas e tendências de sustentabilidade, pode impactar diretamente as operações e a estratégia da PRIO.\n\nDessa forma, a PRIO S.A. se posiciona como uma empresa resiliente e adaptável, que busca constantemente maximizar sua produção e eficiência, ao mesmo tempo em que enfrenta os desafios de um setor em constante evolução. A combinação de uma gestão estratégica, uma estrutura de capital sólida e um compromisso com a sustentabilidade e a segurança são elementos que sustentam a trajetória de crescimento da companhia e a sua busca por valor a longo prazo para os acionistas.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.6 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.3 bi (trimestre) | N/D (LTM)\n- Lucro Líquido: R$0.1 bi (trimestre) | N/D (LTM)\n- Operacional: Produção total de 88,2 mil barris por dia, com destaque para eficiência operacional de 91,1% em Albacora Leste.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 558000000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 320000000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 92000000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": 16.5
+    },
+    "operacionais": {
+      "descricao": "Produção total de 88,2 mil barris por dia, com destaque para eficiência operacional de 91,1% em Albacora Leste.",
+      "metricas": {
+        "producao_media": 88200,
+        "vendas_total": 8800000,
+        "preco_medio_barril": 68.32
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:35:06.035281Z"
+}

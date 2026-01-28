@@ -1,0 +1,35 @@
+{
+  "ticker": "PSSA3",
+  "codigo_cvm": "16659",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "16659_2025-09-30_PORTO_SEGURO_SA.pdf",
+  "texto_contexto": "A Porto Seguro S.A. se destaca como uma das principais operadoras no setor de seguros e serviços financeiros no Brasil, apresentando um modelo de negócio diversificado que abrange uma ampla gama de produtos e serviços. Com um portfólio que inclui seguros de automóveis, patrimoniais, vida, saúde, além de serviços financeiros como empréstimos e consórcios, a empresa atende a mais de 18 milhões de clientes, refletindo sua capacidade de adaptação às necessidades do mercado e de seus consumidores. A estrutura de negócios da Porto Seguro é segmentada em quatro áreas principais: Porto Seguro, que abrange os seguros tradicionais; Porto Saúde, focada em seguros de saúde e odontológicos; Porto Bank, que oferece serviços financeiros e de crédito; e Porto Serviço, que engloba serviços de assistência e parcerias estratégicas.\n\nOs principais indicadores de desempenho da Porto Seguro são fundamentais para entender sua saúde financeira e operacional. A receita total, o lucro líquido e o retorno sobre o patrimônio líquido (ROAE) são métricas que refletem a eficiência e a rentabilidade da empresa. O índice combinado, por sua vez, é um indicador crucial para avaliar a performance no setor de seguros, pois relaciona os custos com sinistros e despesas operacionais em relação às receitas. A empresa tem se concentrado em expandir sua base de clientes e diversificar seus produtos, além de investir em inovação tecnológica, o que não apenas melhora a experiência do cliente, mas também busca aumentar a rentabilidade em um ambiente competitivo.\n\nEntretanto, a Porto Seguro não está isenta de riscos. A volatilidade do mercado de seguros, a intensa concorrência e a exposição a sinistros são desafios constantes que a empresa precisa gerenciar. Além disso, a necessidade de adaptação às mudanças regulatórias impõe um nível adicional de complexidade à operação. A estrutura de capital da Porto Seguro é robusta, com um patrimônio líquido que proporciona uma base sólida para suas operações. A empresa mantém um capital regulatório adequado, em conformidade com as exigências da Superintendência de Seguros Privados (SUSEP) e do Banco Central, o que é essencial para garantir a solvência e a confiança dos investidores.\n\nA governança corporativa da Porto Seguro é estruturada para atender às rigorosas normas do setor, assegurando que a empresa opere de maneira transparente e responsável. A regulação do setor de seguros é um fator crítico, exigindo que a Porto Seguro não apenas cumpra com as normas de solvência, mas também mantenha altos padrões de governança. Isso é vital para a manutenção da confiança dos consumidores e investidores, especialmente em um ambiente onde a reputação pode ser facilmente afetada por eventos adversos.\n\nAlém disso, a Porto Seguro deve estar atenta a eventos críticos que podem impactar seu desempenho, como mudanças nas políticas econômicas e regulatórias, flutuações nas taxas de juros e na inflação, bem como eventos climáticos que podem afetar a sinistralidade. A empresa também demonstra um compromisso com a responsabilidade social e ambiental, buscando integrar práticas sustentáveis em suas operações e produtos. Essa abordagem não apenas contribui para a construção de uma imagem positiva no mercado, mas também pode influenciar a aceitação de seus produtos por consumidores cada vez mais conscientes das questões ambientais e sociais.\n\nEm um cenário macroeconômico em constante mudança, a sensibilidade da Porto Seguro a fatores externos é um aspecto que merece atenção. A empresa precisa monitorar de perto as tendências econômicas, as condições de mercado e as expectativas dos consumidores, adaptando suas estratégias conforme necessário para garantir um crescimento sustentável e a manutenção de sua posição de destaque no setor. A capacidade de inovar e se adaptar rapidamente às mudanças do mercado será um diferencial crucial para a Porto Seguro, permitindo que a empresa não apenas sobreviva, mas prospere em um ambiente competitivo e desafiador.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$10.5 bi (trimestre) | R$30.5 bi (LTM)\n- Lucro Líquido: R$0.8 bi (trimestre) | R$2.5 bi (LTM)\n- Operacional: A Porto Seguro registrou receita total de R$ 10,5 bilhões, com lucro líquido de R$ 831,9 milhões e ROAE de 23%. A vertical de seguros teve receita de R$ 5,7 bilhões, enquanto a vertical de saúde alcançou R$ 2,2 bilhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 10507000000,
+      "receita_liquida_ltm": 30455700000,
+      "ebitda_tri": null,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 831900000,
+      "lucro_liquido_ltm": 2542200000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": 7.9
+    },
+    "operacionais": {
+      "descricao": "A Porto Seguro registrou receita total de R$ 10,5 bilhões, com lucro líquido de R$ 831,9 milhões e ROAE de 23%. A vertical de seguros teve receita de R$ 5,7 bilhões, enquanto a vertical de saúde alcançou R$ 2,2 bilhões.",
+      "metricas": {
+        "clientes": 18000000,
+        "veiculos_segurados": 6200000,
+        "vidas_seguradas": 5800000,
+        "itens_vidas": 16700000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:32:43.819090Z"
+}
