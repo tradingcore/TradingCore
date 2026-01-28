@@ -1,0 +1,32 @@
+{
+  "ticker": "MILS3",
+  "codigo_cvm": "22012",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "22012_2025-09-30_MILLS_LOCAÇÃO_SERVIÇOS_E_LOGÍSTICA_SA.pdf",
+  "texto_contexto": "A Mills Locação, Serviços e Logística S.A. se destaca no setor de locação de equipamentos e serviços relacionados, apresentando um modelo de negócio que se concentra na oferta de soluções integradas voltadas para a construção civil, infraestrutura e logística. A empresa se organiza em segmentos que abrangem a locação de equipamentos leves e pesados, intralogística, além de formas e escoramentos, permitindo que atenda a uma ampla gama de clientes em setores diversos, como construção, agronegócio, mineração e florestal. Essa diversificação setorial é um dos pilares que sustentam a resiliência e a capacidade de adaptação da Mills às flutuações do mercado.\n\nOs principais indicadores de desempenho da Mills, como receita líquida, EBITDA ajustado, margem EBITDA, lucro líquido e fluxo de caixa operacional ajustado, são fundamentais para avaliar a eficiência operacional e a rentabilidade da empresa. Esses KPIs não apenas refletem a saúde financeira da companhia, mas também servem como ferramentas de gestão que orientam as decisões estratégicas e operacionais. A busca por um crescimento sustentável da receita é um dos drivers de valor mais significativos para a Mills, que se empenha em diversificar seu portfólio de contratos de longo prazo, garantindo uma base de receita estável e previsível.\n\nA eficiência na alocação de capital é outro aspecto crucial que impulsiona o desempenho da Mills. A empresa se beneficia de um ciclo robusto de investimentos em infraestrutura no Brasil, que tem gerado uma demanda crescente por seus serviços. No entanto, a Mills não está isenta de riscos. A volatilidade econômica, as flutuações na demanda por locação de equipamentos, as pressões competitivas e as mudanças nas taxas de juros são fatores que podem impactar sua rentabilidade e os custos de financiamento. A gestão proativa desses riscos é essencial para a manutenção de sua posição no mercado.\n\nA estrutura de capital da Mills é caracterizada por um nível de endividamento controlado, com uma relação de dívida líquida sobre EBITDA ajustado que se mantém estável, proporcionando à empresa a flexibilidade financeira necessária para sustentar seu crescimento, tanto orgânico quanto inorgânico. A gestão rigorosa da estrutura de capital é uma prioridade, com foco na otimização do custo da dívida e no alongamento do prazo médio de vencimento. Essa abordagem não apenas fortalece a posição financeira da empresa, mas também a prepara para aproveitar oportunidades de crescimento que possam surgir.\n\nA governança corporativa da Mills é estruturada para garantir transparência e conformidade com as normas regulatórias, incluindo normas contábeis e de compliance, que a empresa segue rigorosamente. Essa conformidade não apenas alinha a Mills às melhores práticas internacionais de contabilidade, mas também reforça a confiança dos investidores e stakeholders na gestão da empresa.\n\nEventos críticos, como a conclusão de aquisições estratégicas, como a da Next Rental, têm um impacto significativo na trajetória da Mills. Essas aquisições ampliam sua base de ativos e contratos, fortalecendo sua posição competitiva no mercado. Além disso, emissões de debêntures têm sido uma estratégia utilizada para reforçar a posição de caixa da empresa, suportando sua estratégia de crescimento e permitindo que a Mills mantenha um fluxo de capital adequado para suas operações.\n\nA capacidade da Mills de navegar por um ambiente econômico desafiador e de manter sua trajetória de crescimento sustentável será fundamental para a criação de valor a longo prazo para seus acionistas e stakeholders. A sensibilidade da empresa a fatores macroeconômicos, como a taxa de juros, a inflação e a dinâmica do mercado de trabalho, também deve ser considerada, uma vez que esses elementos podem influenciar diretamente a demanda por seus serviços e a capacidade de investimento em novos projetos. Assim, a Mills se posiciona como uma empresa estratégica no setor de locação de equipamentos, com um modelo de negócio sólido e uma visão voltada para o futuro, pronta para enfrentar os desafios e aproveitar as oportunidades que o mercado oferece.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.5 bi (trimestre) | R$1.3 bi (LTM)\n- EBITDA: R$0.3 bi (trimestre) | R$0.7 bi (LTM) | Margem 52.7%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- Capex: R$0.3 bi (trimestre) | R$0.6 bi (LTM)\n- Operacional: Crescimento de 15,1% na receita líquida em relação ao 3T24, com EBITDA ajustado de R$ 254,6 milhões e lucro líquido de R$ 67,3 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 482700000,
+      "receita_liquida_ltm": 1345300000,
+      "ebitda_tri": 254600000,
+      "ebitda_ltm": 688300000,
+      "lucro_liquido_tri": 67300000,
+      "lucro_liquido_ltm": 222600000,
+      "divida_liquida": null,
+      "divida_bruta": 2200000000,
+      "capex_tri": 261200000,
+      "capex_ltm": 595400000,
+      "margem_ebitda_pct": 52.7,
+      "margem_liquida_pct": 13.9
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 15,1% na receita líquida em relação ao 3T24, com EBITDA ajustado de R$ 254,6 milhões e lucro líquido de R$ 67,3 milhões.",
+      "metricas": {
+        "contratos_longo_prazo_pct": 55
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:07:53.323415Z"
+}

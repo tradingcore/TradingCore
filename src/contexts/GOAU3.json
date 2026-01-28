@@ -1,0 +1,35 @@
+{
+  "ticker": "GOAU3",
+  "codigo_cvm": "8656",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "8656_2025-09-30_METALURGICA_GERDAU_SA.pdf",
+  "texto_contexto": "A Metalúrgica Gerdau S.A., com sede em São Paulo, é uma das mais proeminentes empresas do setor metalúrgico brasileiro e se destaca como a maior produtora de aço do país. Com uma presença significativa nas Américas, a Gerdau não apenas lidera a produção de aços longos, mas também se posiciona como uma das principais fornecedoras de aços especiais em nível global. O modelo de negócio da empresa é robusto e diversificado, centrado na produção e comercialização de aço, que inclui a transformação de sucata em aço. Essa abordagem não apenas reforça a sustentabilidade de suas operações, mas também posiciona a Gerdau como a maior recicladora da América Latina, com aproximadamente 70% de sua produção oriunda de materiais reciclados.\n\nA Gerdau opera em três segmentos geográficos principais: Brasil, América do Norte e América do Sul. Essa segmentação permite à empresa atender a uma ampla gama de mercados, oferecendo produtos que vão desde aços longos e planos até aços especiais e minério de ferro. A diversificação geográfica é um dos principais drivers de valor da companhia, pois proporciona resiliência diante de flutuações econômicas regionais e permite que a Gerdau capitalize sobre oportunidades de crescimento em diferentes mercados.\n\nOs indicadores de desempenho, como produção e vendas de aço, receita líquida, EBITDA ajustado e lucro líquido, são fundamentais para a avaliação da saúde financeira da empresa. A Gerdau busca constantemente otimizar sua margem EBITDA e manter um fluxo de caixa livre positivo, refletindo sua capacidade de gerar caixa a partir das operações. A eficiência operacional é um pilar central para a empresa, que investe em inovações tecnológicas e melhorias de processos para aumentar sua competitividade e reduzir custos.\n\nEntretanto, a Gerdau não está isenta de riscos. A volatilidade dos preços das commodities, especialmente do aço e da sucata, representa um desafio constante, impactando diretamente suas margens e resultados. Além disso, a pressão competitiva no mercado interno, a dependência de importações e a dinâmica de defesa comercial são fatores que podem influenciar a performance da empresa. A Gerdau deve estar atenta a eventos críticos, como a aprovação de novas políticas tarifárias ou mudanças nas regulamentações ambientais, que podem afetar sua competitividade e operações.\n\nA estrutura de capital da Gerdau é considerada saudável, com uma relação de dívida líquida/EBITDA ajustado que permite à empresa realizar os investimentos necessários para o desenvolvimento de seus negócios. A companhia adota uma política de distribuição de dividendos que reflete seu compromisso com a geração de valor para os acionistas, comprometendo-se a distribuir no mínimo 30% do lucro líquido anual. Essa abordagem não apenas demonstra a solidez financeira da empresa, mas também sua intenção de manter um relacionamento positivo com os investidores.\n\nNo que diz respeito à governança, a Gerdau se destaca por suas práticas de transparência e responsabilidade, buscando alinhar os interesses de seus acionistas e demais partes interessadas. A empresa é proativa em sua abordagem à sustentabilidade, com iniciativas voltadas para a redução das emissões de gases de efeito estufa e a promoção de práticas ambientais responsáveis. Esse compromisso é cada vez mais relevante em um contexto global que valoriza a responsabilidade social e ambiental das empresas.\n\nA regulação do setor de aço é um aspecto crítico que pode influenciar a competitividade da Gerdau. Medidas como tarifas de importação e regulamentações ambientais podem impactar diretamente suas operações e resultados financeiros. A empresa deve estar atenta às mudanças regulatórias e adaptar suas estratégias conforme necessário para mitigar riscos e aproveitar oportunidades.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A Gerdau está sujeita às oscilações da economia global, que podem afetar a demanda por aço e, consequentemente, sua performance financeira. A empresa precisa monitorar atentamente as condições econômicas, políticas e sociais nos mercados em que opera, ajustando suas estratégias para navegar em um ambiente em constante mudança. Assim, a Metalúrgica Gerdau se posiciona como uma empresa resiliente e adaptável, pronta para enfrentar os desafios do setor e capitalizar sobre as oportunidades que surgem em um mercado dinâmico.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$18.0 bi (trimestre) | R$52.9 bi (LTM)\n- EBITDA: R$2.7 bi (trimestre) | R$7.7 bi (LTM) | Margem 15.2%\n- Lucro Líquido: R$1.1 bi (trimestre) | R$2.7 bi (LTM)\n- Capex: R$1.7 bi (trimestre) | N/D (LTM)\n- Operacional: Vendas de aço alcançaram 3,1 milhões de toneladas no 3T25, crescimento de 9% em relação ao 2T25.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 17983000000,
+      "receita_liquida_ltm": 52884000000,
+      "ebitda_tri": 2735000000,
+      "ebitda_ltm": 7690000000,
+      "lucro_liquido_tri": 1090000000,
+      "lucro_liquido_ltm": 2709000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": 1700000000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 15.2,
+      "margem_liquida_pct": 6.1
+    },
+    "operacionais": {
+      "descricao": "Vendas de aço alcançaram 3,1 milhões de toneladas no 3T25, crescimento de 9% em relação ao 2T25.",
+      "metricas": {
+        "vendas_aco_toneladas": 3087000,
+        "producao_aco_bruto_toneladas": null,
+        "exportacoes_toneladas": 330000,
+        "mercado_interno_toneladas": 1252000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:06:52.864875Z"
+}

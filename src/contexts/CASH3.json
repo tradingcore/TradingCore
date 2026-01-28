@@ -1,0 +1,34 @@
+{
+  "ticker": "CASH3",
+  "codigo_cvm": "25232",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25232_2025-09-30_MELIUZ_SA.pdf",
+  "texto_contexto": "A Méliuz se destaca como uma plataforma inovadora no cenário de e-commerce e serviços financeiros no Brasil, oferecendo uma proposta de valor centrada na experiência do consumidor através do cashback. Seu modelo de negócio é estruturado em parcerias estratégicas com varejistas, permitindo que a empresa monetize sua base de usuários ao receber comissões por transações realizadas. Essa abordagem não apenas impulsiona a receita, mas também fideliza os consumidores, que são atraídos pela possibilidade de economizar em suas compras.\n\nOs segmentos de atuação da Méliuz são diversificados, com o Shopping Brasil sendo o principal responsável pela geração de receita. Este segmento é complementado pelos Serviços Financeiros, que incluem contas digitais e cartões de crédito, desenvolvidos em colaboração com o Banco BV. Essa diversificação permite à empresa não apenas capturar uma fatia significativa do mercado de e-commerce, mas também explorar oportunidades no setor financeiro, ampliando seu portfólio de produtos e serviços.\n\nOs principais indicadores de desempenho da Méliuz, como receita líquida, EBITDA e crescimento da base de usuários, são fundamentais para avaliar sua saúde financeira e potencial de crescimento. A empresa tem demonstrado um crescimento robusto, refletido na expansão de sua base de usuários, que já ultrapassa os 45 milhões. O programa de fidelidade Méliuz Prime, que teve um crescimento expressivo, é um dos principais motores de engajamento e retenção, evidenciando a capacidade da empresa de criar valor para seus clientes.\n\nEntretanto, a Méliuz enfrenta riscos significativos que podem impactar sua trajetória. A dependência de parcerias com varejistas é um fator crítico, pois qualquer alteração nas condições de mercado ou nas relações comerciais pode afetar diretamente sua receita. Além disso, a concorrência no setor de e-commerce é intensa, com diversas empresas disputando a atenção dos consumidores. A volatilidade do mercado financeiro, especialmente em relação à sua estratégia de Bitcoin Treasury, também representa um desafio, exigindo uma gestão cuidadosa e adaptativa.\n\nA estrutura de capital da Méliuz é robusta, caracterizada pela ausência de dívidas, o que proporciona à empresa uma flexibilidade financeira considerável para realizar investimentos e aquisições estratégicas. Essa solidez financeira é um ativo valioso, especialmente em um ambiente de negócios que pode ser volátil e incerto. A governança corporativa da empresa é igualmente importante, pois a conformidade com as regulamentações do setor de e-commerce e serviços financeiros é essencial para garantir a continuidade das operações e a confiança dos investidores.\n\nA regulação do setor é um aspecto crítico que a Méliuz deve monitorar de perto, uma vez que mudanças nas normas podem impactar suas operações e estratégias de crescimento. A capacidade de adaptação a essas mudanças é vital para a sustentabilidade do negócio a longo prazo. Além disso, a empresa deve estar atenta a eventos críticos, como a implementação de seu plano estratégico para 2025, que visa acelerar o crescimento e a rentabilidade, e a execução de um programa de recompra de ações, que demonstra seu compromisso em gerar valor para os acionistas.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A Méliuz deve estar preparada para responder a flutuações econômicas que podem afetar o comportamento do consumidor e, consequentemente, suas operações. A interação entre a evolução do mercado de e-commerce, as dinâmicas do setor financeiro e as condições econômicas gerais será determinante para o futuro da empresa. A habilidade da Méliuz em navegar por esses desafios e aproveitar as oportunidades que surgem em um ambiente em constante mudança será crucial para sua trajetória de sucesso.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.1 bi (trimestre) | R$0.4 bi (LTM)\n- EBITDA: R$0.0 bi (trimestre) | R$0.1 bi (LTM) | Margem 21.4%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Operacional: Crescimento de 63% na receita do Shopping Brasil, atingindo R$ 98,2 milhões. Base de usuários cresceu 29% com mais de 10 milhões de contas adicionadas.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 123700000,
+      "receita_liquida_ltm": 426600000,
+      "ebitda_tri": 26500000,
+      "ebitda_ltm": 94700000,
+      "lucro_liquido_tri": 14200000,
+      "lucro_liquido_ltm": 31800000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 21.4,
+      "margem_liquida_pct": 11.5
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 63% na receita do Shopping Brasil, atingindo R$ 98,2 milhões. Base de usuários cresceu 29% com mais de 10 milhões de contas adicionadas.",
+      "metricas": {
+        "usuarios_totais": 45900000,
+        "crescimento_usuarios_pct": 29,
+        "crescimento_receita_shopping_pct": 63
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:04:04.733169Z"
+}
