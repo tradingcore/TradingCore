@@ -1,0 +1,33 @@
+{
+  "ticker": "HMOB3",
+  "codigo_cvm": "25674",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25674_2025-09-30_HMOBI_PARTICIPAÇÕES_SA.pdf",
+  "texto_contexto": "A Hmobi Participações (HMOB3) se destaca como uma entidade fundamental no setor de transporte metroviário no Rio de Janeiro, atuando como controladora do MetrôRio e da Metrobarra. Seu modelo de negócio é centrado na concessão de serviços de transporte público, com um foco claro na operação e manutenção de linhas de metrô. A empresa busca oferecer um serviço que não apenas atenda à demanda de mobilidade da população, mas que também seja eficiente e acessível, refletindo um compromisso com a qualidade e a pontualidade no transporte de passageiros.\n\nOs segmentos de atuação da Hmobi são predominantemente o transporte de passageiros e a geração de receitas acessórias. A locação de espaços comerciais nas estações é uma fonte adicional de receita que complementa a receita tarifária, permitindo à empresa diversificar suas fontes de receita e mitigar riscos associados à variação no número de passageiros. A capacidade de gerar receitas adicionais é um aspecto estratégico que contribui para a sustentabilidade financeira da empresa.\n\nOs principais indicadores de desempenho (KPIs) da Hmobi incluem a receita líquida, o EBITDA, a margem EBITDA e o número de passageiros transportados. A receita líquida e o EBITDA são fundamentais para a avaliação da performance financeira da empresa, enquanto a margem EBITDA serve como um reflexo da eficiência operacional. O número de passageiros transportados é um driver de valor crucial, uma vez que está intimamente ligado à receita tarifária e, portanto, à viabilidade econômica do negócio.\n\nOs drivers de valor da Hmobi são variados e incluem a eficiência na gestão de custos, a capacidade de adaptação a mudanças regulatórias e econômicas, e a implementação de inovações tecnológicas. A adoção de sistemas de bilhetagem eletrônica, por exemplo, não apenas melhora a experiência do usuário, mas também otimiza a operação, reduzindo custos e aumentando a eficiência. Além disso, a empresa se beneficia de reajustes tarifários, que podem impactar positivamente suas receitas, especialmente em um cenário de inflação controlada.\n\nEntretanto, a Hmobi enfrenta uma série de riscos que podem afetar sua operação e rentabilidade. A dependência de regulamentações governamentais é um dos principais desafios, uma vez que mudanças nas políticas públicas podem impactar diretamente a operação da empresa. Além disso, a variação no comportamento dos usuários, como mudanças na demanda de passageiros, pode afetar a receita tarifária. Riscos financeiros, como flutuações nas taxas de juros e na inflação, também são preocupações constantes que podem impactar a estrutura de capital da empresa.\n\nA estrutura de capital da Hmobi é composta por uma combinação de dívida e patrimônio líquido, com um nível de endividamento que reflete um compromisso com uma estrutura financeira sólida. A empresa emitiu debêntures para financiar suas operações e investimentos, o que demonstra uma estratégia de captação de recursos que visa garantir a continuidade e a expansão de suas atividades. A emissão de debêntures, como a 10ª realizada em outubro de 2025, é um exemplo de como a Hmobi busca otimizar sua estrutura de capital e financiar seus projetos de forma sustentável.\n\nA governança da Hmobi é influenciada pela regulação do setor de transporte metroviário, que é um aspecto crítico para a operação da empresa. A assinatura do Décimo Termo Aditivo ao Contrato de Concessão em abril de 2025, que unificou as concessões das Linhas 1, 2 e 4, representa um marco importante que impacta a operação e a estrutura de governança da empresa. Essa unificação promove sinergias e simplificação administrativa, permitindo uma gestão mais eficiente e integrada das operações. A incorporação da Metrobarra pelo MetrôRio, aprovada em outubro de 2025, também é um passo significativo na otimização da estrutura societária, consolidando ativos e passivos e reforçando a posição da Hmobi no mercado.\n\nA competição no setor de transporte metroviário é intensa, com a Hmobi enfrentando desafios de outros modais de transporte, como ônibus e VLTs, que também buscam atender à demanda de mobilidade urbana. A capacidade da Hmobi de se diferenciar por meio da qualidade do serviço, da inovação e da eficiência operacional será crucial para manter sua posição de destaque no mercado.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A Hmobi está sujeita a variações econômicas que podem impactar a demanda por transporte público, como mudanças na renda da população e nas taxas de desemprego. A empresa deve estar atenta a esses fatores e pronta para se adaptar a um ambiente econômico em constante mudança, garantindo assim sua resiliência e sustentabilidade a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.3 bi (trimestre) | R$0.9 bi (LTM)\n- EBITDA: R$0.2 bi (trimestre) | R$0.5 bi (LTM) | Margem 51.7%\n- Lucro Líquido: R$-0.0 bi (trimestre) | R$-0.0 bi (LTM)\n- Operacional: A HMOBI transportou 47,7 milhões de passageiros no 3T25, com 41,3 milhões de passageiros pagantes.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 324700000,
+      "receita_liquida_ltm": 921300000,
+      "ebitda_tri": 168000000,
+      "ebitda_ltm": 456300000,
+      "lucro_liquido_tri": -36800000,
+      "lucro_liquido_ltm": -8300000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 51.7,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "A HMOBI transportou 47,7 milhões de passageiros no 3T25, com 41,3 milhões de passageiros pagantes.",
+      "metricas": {
+        "passageiros_transportados": 47700000,
+        "passageiros_pagantes": 41300000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:28:56.106225Z"
+}

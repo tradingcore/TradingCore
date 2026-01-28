@@ -1,0 +1,35 @@
+{
+  "ticker": "HBOR3",
+  "codigo_cvm": "20877",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20877_2025-09-30_HELBOR_EMPREENDIMENTOS_SA.pdf",
+  "texto_contexto": "A Helbor Empreendimentos S.A. se destaca como uma das principais incorporadoras do Brasil, com uma trajetória de quase cinco décadas no setor imobiliário. A empresa é reconhecida por sua especialização no desenvolvimento de empreendimentos residenciais de médio e alto padrão, com um foco predominante na cidade e na região metropolitana de São Paulo. O modelo de negócio da Helbor é estruturado em torno da identificação de oportunidades em terrenos urbanos, o que é complementado por uma gestão integral do processo de incorporação. Essa abordagem inclui a formação de parcerias estratégicas com outras incorporadoras e construtoras, utilizando Sociedades de Propósito Específico (SPE) para cada projeto. Essa estratégia permite uma gestão eficiente e isolada de cada empreendimento, mitigando riscos e otimizando recursos.\n\nOs segmentos de atuação da Helbor são amplos, com um foco principal no desenvolvimento de imóveis residenciais. A empresa mantém um robusto landbank, que representa um ativo estratégico, com um potencial significativo de Valor Geral de Vendas (VGV). A gestão desse portfólio é crucial para a sustentabilidade e o crescimento da empresa, uma vez que a capacidade de lançar novos empreendimentos é um dos principais drivers de valor. A eficiência na gestão de vendas e repasses, aliada à otimização do portfólio de ativos, também contribui para o desempenho financeiro da Helbor. A disciplina financeira, refletida na redução da alavancagem, é um aspecto fundamental que permite à empresa navegar em um mercado imobiliário volátil.\n\nOs principais indicadores de desempenho (KPIs) da Helbor, como as Vendas Brutas Totais e a Velocidade de Vendas (VSO), são essenciais para avaliar a saúde financeira e a eficácia das estratégias implementadas. A participação da Helbor nas vendas e a margem bruta ajustada são métricas que demonstram a capacidade da empresa de se posicionar de forma competitiva no mercado. No entanto, a Helbor enfrenta riscos significativos, incluindo a volatilidade do mercado imobiliário, mudanças nas condições econômicas e regulatórias, e a dependência de lançamentos bem-sucedidos para a geração de receita. Esses fatores podem impactar diretamente a performance da empresa e sua capacidade de atender às expectativas dos investidores.\n\nA estrutura de capital da Helbor é composta por um capital social robusto, acompanhado de uma dívida bruta que reflete uma estratégia de desalavancagem e disciplina financeira. A empresa está listada no Novo Mercado da B3, o que implica um compromisso com altos padrões de governança corporativa. Essa governança é crucial para a construção de confiança com investidores e stakeholders, especialmente em um setor que demanda transparência e responsabilidade. A regulação do setor imobiliário no Brasil, que abrange normas de incorporação e financiamento, também desempenha um papel significativo nas operações da Helbor, exigindo conformidade com legislações específicas que podem influenciar a dinâmica do mercado.\n\nA competição no setor imobiliário é intensa, e a capacidade da Helbor de lançar novos projetos em um ambiente competitivo é um fator crítico para seu sucesso. A gestão de custos de construção e a adaptação a mudanças nas políticas econômicas e fiscais são desafios constantes que a empresa deve enfrentar. Além disso, a continuidade da estratégia de desinvestimento em ativos não estratégicos, como a venda de terrenos, é um fator importante para a manutenção da saúde financeira da Helbor. A empresa deve permanecer atenta às tendências do mercado e às necessidades dos consumidores, adaptando suas ofertas para garantir que continue a ser uma referência no setor imobiliário brasileiro. Em um cenário macroeconômico em constante mudança, a sensibilidade da Helbor a fatores como taxas de juros, inflação e políticas habitacionais será determinante para sua trajetória futura e para a criação de valor a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.2 bi (trimestre) | R$0.8 bi (LTM)\n- Operacional: Vendas Brutas Totais de R$ 478,8 milhões, com participação da Helbor de 65,8%. Lançamentos totalizaram R$ 587,0 milhões e entregas somaram R$ 730,9 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 232630000,
+      "receita_liquida_ltm": 817434000,
+      "ebitda_tri": null,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": null,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "Vendas Brutas Totais de R$ 478,8 milhões, com participação da Helbor de 65,8%. Lançamentos totalizaram R$ 587,0 milhões e entregas somaram R$ 730,9 milhões.",
+      "metricas": {
+        "vendas_brutas_totais": 478800000,
+        "participacao_helbor_pct": 65.8,
+        "lancamentos": 587000000,
+        "entregas": 730900000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:27:24.726210Z"
+}

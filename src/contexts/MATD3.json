@@ -1,0 +1,35 @@
+{
+  "ticker": "MATD3",
+  "codigo_cvm": "25690",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25690_2025-09-30_HOSPITAL_MATER_DEI_SA.pdf",
+  "texto_contexto": "A Mater Dei se destaca como uma das principais redes de saúde no Brasil, com um modelo de negócio centrado na prestação de serviços hospitalares de alta qualidade. A empresa se posiciona no mercado com uma proposta que abrange uma ampla gama de serviços médicos, incluindo atendimentos em unidades de terapia intensiva, cirurgias complexas, oncologia e outros procedimentos especializados. Essa diversidade de serviços permite à Mater Dei atender a diferentes perfis de pacientes, abrangendo tanto aqueles que utilizam convênios de saúde quanto pacientes particulares, além de gerar receitas adicionais por meio de serviços médicos complementares.\n\nOs principais indicadores de desempenho da Mater Dei, como receita líquida, lucro bruto e EBITDA ajustado, são fundamentais para avaliar a eficiência operacional e a rentabilidade da companhia. A taxa de ocupação dos leitos e o número de pacientes-dia são métricas cruciais que refletem a capacidade de atendimento da rede e a demanda por seus serviços. Esses KPIs não apenas ajudam a monitorar a saúde financeira da empresa, mas também são essenciais para a tomada de decisões estratégicas, como a expansão da capacidade hospitalar e a introdução de novas tecnologias e tratamentos inovadores, como a terapia CAR-T, que têm o potencial de revolucionar o tratamento de doenças complexas.\n\nOs drivers de valor da Mater Dei são amplos e variados. A expansão da capacidade hospitalar, por meio da abertura de novas unidades e da modernização das existentes, é um fator determinante para o crescimento da receita. Além disso, a introdução de inovações tecnológicas e a melhoria contínua na qualidade do atendimento são aspectos que não apenas atraem pacientes, mas também consolidam a reputação da empresa no setor. O reconhecimento por meio de prêmios e certificações é um indicativo da excelência nos serviços prestados, o que pode resultar em uma maior fidelização dos pacientes e na atração de novos convênios.\n\nEntretanto, a Mater Dei enfrenta uma série de riscos que podem impactar sua operação e desempenho financeiro. A variação na demanda por serviços de saúde é um fator crítico, especialmente em um cenário onde mudanças demográficas e epidemiológicas podem influenciar o perfil dos pacientes atendidos. Além disso, a empresa está sujeita a um ambiente regulatório rigoroso, que inclui normas de segurança e qualidade, bem como exigências contábeis e de auditoria. Mudanças nas regulamentações do setor de saúde podem exigir adaptações rápidas e significativas, o que pode gerar custos adicionais e impactar a estratégia de negócios.\n\nA concorrência com outras instituições de saúde também representa um desafio constante. O mercado de saúde no Brasil é altamente competitivo, com diversas redes hospitalares buscando capturar a mesma base de pacientes. A dependência de convênios médicos é outro risco a ser considerado, uma vez que alterações nas políticas de reembolso e nas condições contratuais podem afetar diretamente a receita da empresa.\n\nA estrutura de capital da Mater Dei é composta por uma combinação de dívida de curto e longo prazo, que é monitorada através da relação entre dívida líquida e EBITDA. Essa métrica é crucial para avaliar a capacidade da empresa em gerar caixa suficiente para cobrir suas obrigações financeiras, especialmente em um setor onde os investimentos em infraestrutura e tecnologia são constantes e significativos.\n\nA governança corporativa da Mater Dei é estruturada para garantir a transparência e a responsabilidade nas operações, com um conselho que supervisiona as estratégias e práticas da empresa. A regulação do setor de saúde, que é bastante rigorosa, exige que a Mater Dei mantenha altos padrões de qualidade e segurança, o que, por sua vez, pode influenciar positivamente a percepção do mercado e a confiança dos investidores.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. O desempenho da Mater Dei pode ser afetado por variáveis econômicas, como a inflação, o desemprego e as políticas de saúde pública. Em tempos de crise econômica, a demanda por serviços de saúde pode ser impactada, assim como a capacidade dos pacientes de arcar com custos, o que torna a gestão financeira e a adaptação às condições de mercado ainda mais cruciais para a sustentabilidade e o crescimento da empresa. Em suma, a Mater Dei se posiciona como uma rede de saúde robusta, com um modelo de negócios diversificado e uma estratégia focada na qualidade, mas que deve navegar por um ambiente repleto de desafios e oportunidades.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.6 bi (trimestre) | R$1.6 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.3 bi (LTM) | Margem 22.2%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- Dívida: R$0.7 bi (líquida) | R$1.4 bi (bruta)\n- Operacional: A média de leitos operacionais foi de 1246, com 87473 pacientes-dia no trimestre e uma taxa de ocupação de 76,3%. O ticket médio foi de R$ 2,67.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 567857000,
+      "receita_liquida_ltm": 1612982000,
+      "ebitda_tri": 125861000,
+      "ebitda_ltm": 337635000,
+      "lucro_liquido_tri": 27482000,
+      "lucro_liquido_ltm": 74746000,
+      "divida_liquida": 738000000,
+      "divida_bruta": 1417000000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 22.2,
+      "margem_liquida_pct": 4.8
+    },
+    "operacionais": {
+      "descricao": "A média de leitos operacionais foi de 1246, com 87473 pacientes-dia no trimestre e uma taxa de ocupação de 76,3%. O ticket médio foi de R$ 2,67.",
+      "metricas": {
+        "leitos_operacionais": 1246,
+        "pacientes_dia": 87473,
+        "taxa_ocupacao_pct": 76.3,
+        "ticket_medio": 2.67
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:29:50.715769Z"
+}

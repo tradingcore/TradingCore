@@ -1,0 +1,34 @@
+{
+  "ticker": "HOOT3",
+  "codigo_cvm": "6700",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "6700_2025-09-30_HOTEIS_OTHON_SA_-_EM_RECUPERAÇÃO_JUDICIAL.pdf",
+  "texto_contexto": "A Hotéis Othon S.A., uma das mais tradicionais redes hoteleiras de capital nacional no Brasil, tem uma história que remonta a 1943, quando iniciou suas atividades com a inauguração do Hotel Aeroporto no Rio de Janeiro. Desde então, a empresa se consolidou como um importante player no setor de hospitalidade, focando na gestão e operação de hotéis. Atualmente, a Hotéis Othon opera dois hotéis próprios na cidade do Rio de Janeiro, o Rio Othon e o Savoy, além de um quiosque em Copacabana, o Quiosque Wave by Othon. A companhia, no entanto, enfrentou desafios significativos nos últimos anos, que levaram à descontinuação da administração de outros empreendimentos hoteleiros, em grande parte devido ao impacto da pandemia de coronavírus e a dificuldades financeiras preexistentes.\n\nO modelo de negócio da Hotéis Othon é centrado em três segmentos principais: hospedagem, serviços de alimentação e bebidas, e eventos corporativos. A empresa busca oferecer uma experiência diferenciada aos seus hóspedes, combinando conforto e qualidade no atendimento, o que é fundamental para a fidelização de clientes em um mercado altamente competitivo. Os indicadores-chave de desempenho (KPIs) utilizados pela companhia, como taxa de ocupação, diária média, receita por quarto disponível (RevPAR) e margem EBITDA, são essenciais para medir a eficiência operacional e a rentabilidade do negócio. A taxa de ocupação, por exemplo, reflete a capacidade da empresa de atrair hóspedes, enquanto a diária média e o RevPAR são indicadores diretos da performance financeira dos hotéis.\n\nOs drivers de valor para a Hotéis Othon estão intimamente ligados à recuperação do turismo na cidade do Rio de Janeiro, que é um destino turístico de relevância internacional. A gestão eficiente de custos operacionais também se destaca como um fator crucial, especialmente em um cenário onde a competição é acirrada e as margens de lucro podem ser estreitas. A capacidade de atrair e reter clientes, por meio de estratégias de marketing eficazes e um serviço de qualidade, é vital para o sucesso da empresa.\n\nEntretanto, a Hotéis Othon enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade do setor de turismo, influenciada por fatores econômicos, políticos e sociais, pode afetar a demanda por serviços hoteleiros. Além disso, mudanças nas preferências dos consumidores, que podem se inclinar para novas formas de hospedagem, como o aluguel de imóveis por meio de plataformas digitais, representam um desafio adicional. A dependência de fatores regulatórios, que incluem normas de saúde pública e regulamentações específicas do setor hoteleiro, também pode influenciar as operações da empresa.\n\nA estrutura de capital da Hotéis Othon é composta por ações, e o valor de mercado da companhia reflete a confiança dos investidores na sua capacidade de recuperação e no desempenho futuro. A administração da empresa tem se mostrado proativa em revisar suas estratégias e implementar medidas que visem à estabilização financeira e à continuidade das operações. Eventos críticos, como a venda de ativos significativos, incluindo os hotéis Bahia e Belo Horizonte Othon, e a implementação de um plano de recuperação judicial, são marcos que evidenciam a busca da empresa por um novo caminho em um cenário desafiador.\n\nA governança da Hotéis Othon é um aspecto que merece destaque, uma vez que a transparência e a responsabilidade na gestão são fundamentais para a confiança dos investidores e stakeholders. A empresa está sujeita a regulamentações que não apenas regem suas operações, mas também garantem a conformidade com padrões de qualidade e segurança, essenciais para a manutenção da reputação no setor.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A saúde da economia brasileira, as taxas de câmbio, a inflação e o nível de emprego são elementos que influenciam diretamente o turismo e, consequentemente, o desempenho da Hotéis Othon. A recuperação econômica, especialmente em um contexto pós-pandemia, será crucial para a revitalização do setor hoteleiro e para a trajetória futura da empresa. A capacidade da Hotéis Othon de se adaptar a essas condições e de inovar em suas ofertas será determinante para sua sustentabilidade e crescimento a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.1 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.1 bi (trimestre) | N/D (LTM) | Margem 38.6%\n- Lucro Líquido: R$0.0 bi (trimestre) | N/D (LTM)\n- Operacional: Taxa de ocupação de 75,7%, diária média de R$789,33, e RevPAR com aumento de 34,4%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 137000000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 52900000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 29300000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 38.6,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "Taxa de ocupação de 75,7%, diária média de R$789,33, e RevPAR com aumento de 34,4%.",
+      "metricas": {
+        "taxa_ocupacao_pct": 75.7,
+        "diaria_media": 789.33,
+        "revpar": null
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:30:26.726241Z"
+}
