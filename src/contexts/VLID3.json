@@ -1,0 +1,33 @@
+{
+  "ticker": "VLID3",
+  "codigo_cvm": "20028",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20028_2025-09-30_VALID_SOLUÇÕES_SA.pdf",
+  "texto_contexto": "A Valid (B3: VLID3) é uma empresa que se destaca no setor de soluções de identificação e segurança de dados, operando com um modelo de negócio centrado em tecnologia e inovação. Sua atuação abrange uma ampla gama de produtos e serviços, que vão desde a identificação digital até soluções de pagamento, posicionando-a como uma referência em segmentos estratégicos como ID & Gov. Digital, Mobile e Pay. O portfólio diversificado da Valid inclui a emissão de documentos, serviços de eSIM e soluções de onboarding digital, refletindo sua capacidade de adaptação às necessidades do mercado e às demandas dos clientes.\n\nOs principais indicadores de desempenho da Valid, como receita líquida, EBITDA e lucro líquido, são fundamentais para avaliar sua performance financeira. A empresa tem demonstrado uma sólida capacidade de geração de caixa e rentabilidade, o que é crucial para sustentar suas operações e financiar inovações. Os drivers de valor da companhia estão intimamente ligados à sua habilidade de inovar continuamente, expandir para novos negócios e diversificar sua base de clientes, que inclui tanto governos quanto empresas de diferentes setores. Essa diversificação não apenas fortalece a resiliência da Valid frente a oscilações de mercado, mas também amplia suas oportunidades de crescimento.\n\nEntretanto, a Valid não está isenta de riscos. A empresa enfrenta desafios relacionados a oscilações no mercado, mudanças regulatórias e a necessidade de se adaptar a um ambiente competitivo em constante evolução. A dinâmica do setor de tecnologia e segurança de dados exige que a Valid esteja sempre atenta às tendências e inovações, além de pronta para responder a novas exigências legais e de mercado. A estrutura de capital da empresa é caracterizada por um equilíbrio saudável entre dívida e capital próprio, com uma posição de caixa líquida que supera o endividamento. Essa solidez financeira permite à Valid uma gestão eficiente de seus recursos e a capacidade de investir em projetos estratégicos, como evidenciado pelo recente acordo com a FINEP, que visa apoiar iniciativas de tecnologia e inovação.\n\nA regulação é um aspecto crítico para a Valid, especialmente em segmentos que lidam com dados sensíveis e identificação. A conformidade com normas de segurança e privacidade é não apenas uma obrigação legal, mas também um fator que influencia a confiança dos clientes e a reputação da empresa no mercado. Eventos significativos, como a aprovação de mudanças no estatuto social e a distribuição de dividendos, também têm um impacto direto na percepção de valor da empresa entre os investidores.\n\nCom quase 70 anos de história, a Valid busca consolidar sua posição como um dos principais players no ecossistema digital. A empresa está comprometida com a sustentabilidade e a geração de valor para seus acionistas e stakeholders, reconhecendo que a inovação e a responsabilidade social são fundamentais para o seu sucesso a longo prazo. A sensibilidade macroeconômica também desempenha um papel importante em sua estratégia, uma vez que fatores como a inflação, taxas de juros e a evolução da economia global podem influenciar tanto a demanda por seus produtos quanto a capacidade de investimento em novas tecnologias. Assim, a Valid se posiciona como uma empresa resiliente e adaptável, pronta para enfrentar os desafios do futuro e aproveitar as oportunidades que surgem em um mundo cada vez mais digital.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.5 bi (trimestre) | R$1.5 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.3 bi (LTM) | Margem 21.0%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- Operacional: Crescimento de 30% em novos negócios, com receita total de R$ 540MM no trimestre.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 540000000,
+      "receita_liquida_ltm": 1531000000,
+      "ebitda_tri": 115000000,
+      "ebitda_ltm": 311000000,
+      "lucro_liquido_tri": 52000000,
+      "lucro_liquido_ltm": 180000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 21,
+      "margem_liquida_pct": 10
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 30% em novos negócios, com receita total de R$ 540MM no trimestre.",
+      "metricas": {
+        "novos_negocios_pct": 15,
+        "lucro_liquido_recorrente_tri": 67000000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:49:25.242607Z"
+}

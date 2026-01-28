@@ -1,0 +1,35 @@
+{
+  "ticker": "USIM3",
+  "codigo_cvm": "14320",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "14320_2025-09-30_USINAS_SID_DE_MINAS_GERAIS_SA-USIMINAS.pdf",
+  "texto_contexto": "A Usiminas (USIM3) é uma das principais empresas do Brasil no setor de siderurgia e mineração, destacando-se pela sua atuação integrada que abrange desde a extração do minério de ferro até a produção e comercialização de produtos siderúrgicos, como o aço. Esse modelo de negócio verticalmente integrado proporciona à Usiminas um controle mais rigoroso sobre a qualidade dos insumos e dos produtos finais, além de permitir uma gestão mais eficiente dos custos operacionais. A empresa se divide em dois segmentos principais: Siderurgia, que se concentra na produção de aço bruto e laminados, e Mineração, que é responsável pela extração e venda de minério de ferro. Essa estrutura segmentada permite à Usiminas atender a diferentes demandas do mercado, diversificando suas fontes de receita e mitigando riscos associados a flutuações em um único segmento.\n\nOs principais indicadores de desempenho (KPIs) da Usiminas são fundamentais para a avaliação de sua eficiência operacional e rentabilidade. Entre eles, destacam-se o volume de vendas de aço e minério de ferro, a receita líquida, o EBITDA ajustado e a margem EBITDA. Esses KPIs não apenas refletem a saúde financeira da empresa, mas também são essenciais para a tomada de decisões estratégicas. Os drivers de valor que impulsionam o desempenho da Usiminas incluem a demanda por aço, tanto no mercado interno quanto externo, a eficiência na produção, a gestão de custos e a capacidade de inovação em produtos e processos. A empresa precisa estar atenta às tendências do mercado e às necessidades dos clientes para se manter competitiva.\n\nEntretanto, a Usiminas enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade dos preços das commodities, especialmente do minério de ferro e do aço, é um fator crítico que pode afetar suas margens de lucro. Além disso, a concorrência no setor siderúrgico é intensa, com diversas empresas buscando capturar participação de mercado. A dependência de ciclos econômicos também representa um risco, uma vez que a demanda por aço está intimamente ligada ao desempenho da construção civil e da indústria automotiva. Outro aspecto a ser considerado é a exposição da Usiminas a variações cambiais, especialmente em relação à sua dívida em moeda estrangeira, o que pode impactar sua estrutura de capital e custos financeiros.\n\nA estrutura de capital da Usiminas é composta por uma combinação de dívida e patrimônio líquido, com uma significativa redução na dívida líquida observada em períodos recentes. Essa diminuição da alavancagem financeira proporciona à empresa maior flexibilidade para investir em novos projetos e enfrentar períodos de instabilidade econômica. A governança corporativa da Usiminas é estruturada para garantir transparência e responsabilidade, com práticas que buscam alinhar os interesses dos acionistas e demais stakeholders. A empresa opera sob um regime regulatório que inclui normas ambientais e de segurança, além de estar sujeita a regulamentações específicas do setor de mineração e siderurgia. A conformidade com essas normas é crucial para a operação sustentável da Usiminas e para a manutenção de sua licença social para operar.\n\nEventos críticos que podem impactar a Usiminas incluem mudanças nas políticas governamentais, que podem afetar a tributação e a regulamentação do setor, flutuações nos preços internacionais de aço e minério, e a evolução da demanda global. A capacidade da empresa de se adaptar a essas condições, gerenciar seus riscos e inovar em seus processos e produtos será fundamental para sua sustentabilidade e crescimento a longo prazo. Em um ambiente macroeconômico em constante mudança, a Usiminas deve permanecer vigilante e proativa, buscando oportunidades que possam surgir, ao mesmo tempo em que mitiga os riscos associados a um setor tão dinâmico e competitivo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$6.6 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.4 bi (trimestre) | N/D (LTM) | Margem 6.6%\n- Lucro Líquido: R$-3.5 bi (trimestre) | N/D (LTM)\n- Dívida: R$0.3 bi (líquida) | R$6.4 bi (bruta)\n- Capex: R$0.3 bi (trimestre) | N/D (LTM)\n- Operacional: Vendas de aço totalizaram 1.104 mil toneladas, com produção de 746 mil toneladas de aço bruto.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 6604238000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 434123000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": -3503338000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 327007000,
+      "divida_bruta": 6363004000,
+      "capex_tri": 266000000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 6.6,
+      "margem_liquida_pct": -53.0
+    },
+    "operacionais": {
+      "descricao": "Vendas de aço totalizaram 1.104 mil toneladas, com produção de 746 mil toneladas de aço bruto.",
+      "metricas": {
+        "vendas_aco": 1104000,
+        "vendas_minerio": 2503000,
+        "producao_aco_bruto": 746000,
+        "producao_minerio": 2412000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:47:42.250290Z"
+}

@@ -1,0 +1,35 @@
+{
+  "ticker": "LLIS3",
+  "codigo_cvm": "21440",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "21440_2025-09-30_VESTE_SA_ESTILO.pdf",
+  "texto_contexto": "A Le Lis Blanc (LLIS3) é uma proeminente empresa brasileira no setor de vestuário e acessórios de alto padrão, que se destaca por sua abordagem multifacetada ao mercado, operando tanto no modelo B2C (Business to Consumer) quanto no B2B (Business to Business). A companhia é reconhecida por suas marcas icônicas, como Le Lis, Dudalina, John John e BO.BÔ, que abrangem uma ampla gama de segmentos, desde moda feminina e masculina até acessórios, permitindo que a empresa atenda a diferentes perfis de consumidores e suas variadas necessidades.\n\nO modelo de negócio da Le Lis Blanc é centrado na experiência do cliente, buscando não apenas oferecer produtos de alta qualidade, mas também criar uma conexão emocional com seus consumidores. A empresa tem investido significativamente na expansão de seus canais digitais, reconhecendo a importância do e-commerce e das plataformas digitais na atualidade. Essa estratégia é complementada pela abertura de novas franquias, que visam aumentar a presença física da marca em diferentes regiões do Brasil, além de fortalecer a gestão de estoques, um aspecto crucial para a eficiência operacional e a rentabilidade.\n\nOs principais indicadores de desempenho (KPIs) da Le Lis Blanc, como faturamento bruto, lucro líquido ajustado, margem bruta e EBITDA ajustado, são fundamentais para avaliar a saúde financeira da empresa e sua capacidade de gerar valor. Esses KPIs não apenas refletem a eficiência operacional, mas também a eficácia das estratégias implementadas pela companhia. A inovação em produtos e serviços, incluindo o desenvolvimento de aplicativos que facilitam as vendas online, é um driver de valor significativo, permitindo que a empresa se adapte rapidamente às mudanças nas preferências dos consumidores e às tendências do mercado.\n\nEntretanto, a Le Lis Blanc enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade do mercado de moda, caracterizada por mudanças rápidas nas tendências e preferências dos consumidores, representa um desafio constante. A intensa concorrência no setor, com a presença de marcas estabelecidas e novas entrantes, exige que a empresa mantenha um diferencial competitivo. Além disso, a dependência de tendências de consumo e a gestão de estoques são fatores críticos que podem afetar a rentabilidade, especialmente em um ambiente de incerteza econômica.\n\nA estrutura de capital da Le Lis Blanc é composta por dívida líquida, que, embora controlada, deve ser gerida com cautela para evitar pressões financeiras. O índice de endividamento em relação ao EBITDA ajustado sugere uma posição relativamente saudável, mas a empresa deve estar atenta a flutuações nas taxas de juros e nas condições de crédito que podem impactar sua capacidade de financiamento. A governança corporativa da companhia é um aspecto importante, pois a transparência e a responsabilidade nas decisões estratégicas são essenciais para manter a confiança dos investidores e stakeholders.\n\nAdicionalmente, a Le Lis Blanc opera em um ambiente regulatório que inclui legislações fiscais e trabalhistas, que podem influenciar suas operações e custos. A conformidade com essas normas é fundamental para evitar penalidades e garantir a sustentabilidade do negócio. Eventos críticos, como a implementação de novas estratégias de marketing, a abertura de lojas e franquias, e a adaptação às mudanças nas preferências dos consumidores, especialmente em relação à digitalização e ao e-commerce, são determinantes para o futuro da empresa.\n\nA sensibilidade macroeconômica também desempenha um papel importante nas operações da Le Lis Blanc. Fatores como a inflação, o desemprego e a confiança do consumidor podem afetar diretamente o consumo de bens de luxo e moda. Em um cenário econômico desafiador, a empresa deve ser ágil e flexível, ajustando suas estratégias para mitigar riscos e aproveitar oportunidades que possam surgir. A capacidade de inovar e se adaptar rapidamente às mudanças do mercado será crucial para a Le Lis Blanc manter sua posição de destaque no competitivo setor de moda brasileiro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.3 bi (trimestre) | R$0.9 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.2 bi (LTM) | Margem 21.7%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Dívida Líquida: R$0.1 bi\n- Capex: R$0.0 bi (trimestre) | N/D (LTM)\n- Operacional: Faturamento bruto de R$ 378,9 milhões, crescimento de 15,1% em relação ao 3T24. Same Store Sales de 13,5%. Participação das vendas digitais de 27,2%. Estoque reduzido em 9,3%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 312300000,
+      "receita_liquida_ltm": 903600000,
+      "ebitda_tri": 67700000,
+      "ebitda_ltm": 189913000,
+      "lucro_liquido_tri": 9400000,
+      "lucro_liquido_ltm": 15900000,
+      "divida_liquida": 142700000,
+      "divida_bruta": null,
+      "capex_tri": 21800000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 21.7,
+      "margem_liquida_pct": 3.0
+    },
+    "operacionais": {
+      "descricao": "Faturamento bruto de R$ 378,9 milhões, crescimento de 15,1% em relação ao 3T24. Same Store Sales de 13,5%. Participação das vendas digitais de 27,2%. Estoque reduzido em 9,3%.",
+      "metricas": {
+        "faturamento_bruto": 378900000,
+        "same_store_sales_pct": 13.5,
+        "participacao_vendas_digitais_pct": 27.2,
+        "estoque_total": 261700000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:50:36.564664Z"
+}

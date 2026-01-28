@@ -1,0 +1,35 @@
+{
+  "ticker": "VAMO3",
+  "codigo_cvm": "24716",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "24716_2025-09-30_VAMOS_LOCAÇÃO_DE_CAMINHÕES_MÁQUINAS_E_EQUIPAMENTOS.pdf",
+  "texto_contexto": "O Grupo Vamos (VAMO3) se posiciona como um player relevante no setor de locação de ativos pesados, oferecendo uma gama de soluções que abrange tanto a locação quanto a venda de seminovos. Seu modelo de negócio é estruturado para atender a uma variedade de segmentos, incluindo transporte, logística, mineração e construção, o que proporciona uma diversificação significativa em sua base de receita. Essa diversificação não apenas fortalece a resiliência da empresa em face de flutuações econômicas, mas também permite que ela capitalize sobre diferentes ciclos de demanda em setores variados.\n\nA receita do Grupo Vamos é predominantemente oriunda de serviços de locação, mas a empresa tem visto um crescimento notável na venda de seminovos, o que representa uma estratégia inteligente para maximizar a utilização de sua frota e oferecer alternativas atrativas aos clientes. A gestão eficiente da frota é um dos principais drivers de valor, com a empresa buscando constantemente expandir sua capacidade operacional e otimizar custos. A taxa de ocupação da frota é um KPI crucial, pois reflete diretamente a eficiência operacional e a capacidade de gerar receita. Outros indicadores, como EBITDA e margem EBITDA, são monitorados de perto para garantir que a empresa mantenha sua rentabilidade em um ambiente competitivo e desafiador.\n\nOs riscos enfrentados pelo Grupo Vamos são multifacetados. A volatilidade econômica pode impactar a demanda por locação de ativos pesados, enquanto flutuações nas taxas de juros podem afetar o custo do capital e, consequentemente, a estrutura de financiamento da empresa. Além disso, a inadimplência por parte dos clientes é uma preocupação constante, exigindo uma gestão de crédito rigorosa e uma análise cuidadosa do perfil de risco de cada cliente. A empresa também opera sob um regime regulatório que pode influenciar suas operações, especialmente no que diz respeito a normas de transporte e locação, exigindo uma adaptação contínua às mudanças nas legislações.\n\nA estrutura de capital do Grupo Vamos é uma combinação equilibrada de dívida e patrimônio líquido, com um foco em manter níveis de alavancagem que suportem o crescimento sem comprometer a saúde financeira. A gestão ativa dos passivos e a busca por emissões de dívida em condições favoráveis são estratégias que a empresa utiliza para otimizar sua estrutura de capital, garantindo que tenha os recursos necessários para investir em sua frota e expandir suas operações.\n\nNo que diz respeito à governança, o Grupo Vamos adota práticas que visam garantir transparência e responsabilidade em suas operações. A empresa está comprometida em manter um diálogo aberto com seus acionistas e partes interessadas, o que é fundamental para construir confiança e assegurar a sustentabilidade de suas operações a longo prazo. A governança eficaz também é essencial para navegar pelas complexidades do setor e responder rapidamente a desafios regulatórios e de mercado.\n\nA competição no setor de locação de ativos pesados é intensa, com diversos players disputando participação de mercado. O Grupo Vamos se destaca pela sua capacidade de oferecer soluções personalizadas e pela diversificação de sua base de clientes, o que reduz a dependência de grandes contas e permite uma penetração mais profunda em novos mercados. A empresa também está atenta às tendências do mercado de seminovos, que têm mostrado um crescimento significativo, contribuindo para a diversificação de sua receita e mitigando riscos associados à locação.\n\nPor fim, a sensibilidade macroeconômica é um fator que o Grupo Vamos deve monitorar constantemente. Mudanças nas políticas econômicas, como incentivos fiscais ou alterações nas taxas de juros, podem ter um impacto direto na demanda por locação de ativos pesados. A capacidade da empresa de se adaptar a essas mudanças, aliada à sua estratégia de diversificação e gestão eficiente, será crucial para garantir seu crescimento sustentável e a manutenção de sua posição de destaque no mercado. Em um cenário de incertezas, a resiliência e a capacidade de inovação do Grupo Vamos serão determinantes para seu sucesso a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.5 bi (trimestre) | R$4.3 bi (LTM)\n- EBITDA: R$0.9 bi (trimestre) | R$2.7 bi (LTM) | Margem 58.5%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.3 bi (LTM)\n- Dívida Líquida: R$12.0 bi\n- Capex: R$1.0 bi (trimestre) | R$3.3 bi (LTM)\n- Operacional: Receita líquida de R$ 1,53 bilhões, EBITDA de R$ 895 milhões e lucro líquido de R$ 50,4 milhões no trimestre. A dívida líquida é de R$ 11,96 bilhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1529000000,
+      "receita_liquida_ltm": 4272700000,
+      "ebitda_tri": 895000000,
+      "ebitda_ltm": 2692900000,
+      "lucro_liquido_tri": 50400000,
+      "lucro_liquido_ltm": 251000000,
+      "divida_liquida": 11959900000,
+      "divida_bruta": null,
+      "capex_tri": 1044800000,
+      "capex_ltm": 3291200000,
+      "margem_ebitda_pct": 58.5,
+      "margem_liquida_pct": 3.3
+    },
+    "operacionais": {
+      "descricao": "Receita líquida de R$ 1,53 bilhões, EBITDA de R$ 895 milhões e lucro líquido de R$ 50,4 milhões no trimestre. A dívida líquida é de R$ 11,96 bilhões.",
+      "metricas": {
+        "frota_locacao": 52047,
+        "capex_contratado": 954900000,
+        "taxa_ocupacao_pct": 85.8,
+        "vendas_seminovos": 394900000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:50:02.229466Z"
+}
