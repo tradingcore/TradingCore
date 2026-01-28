@@ -1,0 +1,37 @@
+{
+  "ticker": "BKBR3",
+  "codigo_cvm": "24317",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "24317_2025-09-30_ZAMP_SA.pdf",
+  "texto_contexto": "A Zamp S.A. se destaca no dinâmico setor de alimentação, operando um portfólio diversificado que inclui marcas renomadas como Burger King®, Popeyes®, Starbucks® e Subway®. O modelo de negócio da empresa é estruturado em torno da operação de restaurantes, tanto próprios quanto franqueados, o que lhe confere uma flexibilidade significativa para adaptar-se às demandas do mercado. A Zamp tem investido fortemente na digitalização, reconhecendo a importância da experiência do cliente em um ambiente cada vez mais competitivo. Essa estratégia se reflete no crescimento das vendas digitais, que se tornaram uma parte substancial da receita total, evidenciando a capacidade da empresa de se alinhar às tendências contemporâneas de consumo.\n\nOs segmentos de atuação da Zamp abrangem principalmente o fast food e o café, com um foco claro em produtos alimentícios e bebidas. Essa diversificação permite à empresa atender a uma ampla gama de preferências dos consumidores, além de mitigar riscos associados a flutuações em segmentos específicos. Os principais indicadores de desempenho, como a receita operacional líquida, EBITDA ajustado e margem bruta, são monitorados de perto para garantir que a empresa mantenha sua trajetória de crescimento. O desempenho financeiro da Zamp tem sido robusto, com um aumento significativo em sua receita e EBITDA, mesmo diante de pressões inflacionárias que impactaram a margem bruta. Isso demonstra não apenas a resiliência da empresa, mas também sua capacidade de implementar estratégias eficazes de gestão de custos e inovação.\n\nOs drivers de valor da Zamp são multifacetados, incluindo a expansão contínua do portfólio de marcas, a busca por eficiência operacional e a inovação constante em produtos. A empresa tem se mostrado ágil na adaptação às mudanças nas preferências dos consumidores, o que é crucial em um setor onde as tendências podem mudar rapidamente. No entanto, a Zamp não está isenta de riscos. A volatilidade dos preços de insumos, especialmente proteínas, representa um desafio constante, assim como a intensa concorrência no setor de alimentação, que exige inovação e diferenciação contínuas. Além disso, a dependência crescente de canais digitais para vendas pode ser um ponto vulnerável, especialmente em cenários de falhas tecnológicas ou mudanças abruptas nas preferências dos consumidores.\n\nA estrutura de capital da Zamp é caracterizada por um nível de endividamento que reflete a necessidade de financiamento para sustentar seus planos de expansão e aquisições. A empresa tem buscado equilibrar sua alavancagem com a geração de caixa, o que é essencial para manter a saúde financeira a longo prazo. A governança corporativa da Zamp é estruturada para garantir transparência e responsabilidade, com um foco em práticas que promovam a sustentabilidade e a ética nos negócios. A empresa opera sob um conjunto rigoroso de regulamentações do setor alimentício, que incluem normas de segurança alimentar e requisitos de licenciamento, essenciais para a manutenção da confiança do consumidor e a conformidade legal.\n\nEventos críticos, como aquisições recentes e a integração das operações de Subway® e Starbucks® ao portfólio da Zamp, exigiram investimentos significativos e ajustes operacionais. A capacidade da empresa de gerenciar essas transições e maximizar sinergias será fundamental para seu sucesso futuro. Em um ambiente macroeconômico que pode ser volátil, a Zamp deve permanecer atenta às condições econômicas gerais, que influenciam o poder de compra dos consumidores e, consequentemente, o desempenho das vendas. A habilidade da Zamp de navegar por esses desafios, ao mesmo tempo em que aproveita as oportunidades de crescimento, será determinante para sua trajetória no competitivo setor de alimentação.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.3 bi (trimestre) | R$5.1 bi (LTM)\n- EBITDA: R$0.2 bi (trimestre) | N/D (LTM) | Margem 13.9%\n- Lucro Líquido: R$-0.0 bi (trimestre) | N/D (LTM)\n- Dívida: R$0.8 bi (líquida) | R$1.1 bi (bruta)\n- Operacional: A Zamp alcançou uma receita operacional líquida de R$ 1,3 bilhão no 3T25, com crescimento de 16,7% em relação ao 3T24. O EBITDA ajustado foi de R$ 182,3 milhões, refletindo um aumento de 34,5% ano a ano.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1310400000,
+      "receita_liquida_ltm": 5100000000,
+      "ebitda_tri": 182300000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": -22500000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 767700000,
+      "divida_bruta": 1108800000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 13.9,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "A Zamp alcançou uma receita operacional líquida de R$ 1,3 bilhão no 3T25, com crescimento de 16,7% em relação ao 3T24. O EBITDA ajustado foi de R$ 182,3 milhões, refletindo um aumento de 34,5% ano a ano.",
+      "metricas": {
+        "vendas_comparaveis_burger_king_pct": 1.3,
+        "vendas_comparaveis_popeyes_pct": 24,
+        "vendas_comparaveis_starbucks_pct": 16,
+        "vendas_comparaveis_subway_pct": 21,
+        "numero_usuarios_clube_bk": 21000000,
+        "numero_lojas": 2665
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T05:02:05.228561Z"
+}
