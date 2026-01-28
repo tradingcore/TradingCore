@@ -1,0 +1,34 @@
+{
+  "ticker": "BEES3",
+  "codigo_cvm": "1155",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "1155_2025-09-30_BANESTES_SA_BANCO_DO_ESTADO_DO_ESPIRITO_SANTO.pdf",
+  "texto_contexto": "O Banestes, identificado pela sigla BEES3, se destaca como um banco múltiplo no cenário financeiro brasileiro, oferecendo uma ampla gama de serviços que vão desde operações de crédito até a gestão de investimentos e prestação de serviços bancários. O modelo de negócio da instituição é fundamentado na intermediação financeira, com um foco especial em atender tanto pessoas físicas quanto jurídicas, com ênfase em micro e pequenas empresas. Essa estratégia não apenas diversifica a oferta de produtos, mas também posiciona o Banestes como um agente relevante no fomento ao desenvolvimento econômico local, especialmente em um contexto onde as pequenas empresas são fundamentais para a geração de empregos e inovação.\n\nOs principais segmentos de atuação do Banestes incluem crédito comercial, cartões de crédito e serviços de seguros, refletindo uma abordagem que busca atender às diversas necessidades de seus clientes. A instituição tem se mostrado proativa na expansão de sua carteira de crédito, um dos principais drivers de valor, que, aliado a uma gestão eficiente de custos, contribui para a sustentabilidade e crescimento do negócio. A capacidade de adaptação às condições econômicas, como a variação da taxa Selic, é crucial, uma vez que essas taxas impactam diretamente as receitas de intermediação financeira e, consequentemente, a lucratividade da instituição.\n\nOs indicadores de desempenho, como o lucro líquido e o retorno sobre o patrimônio líquido (ROE), são fundamentais para avaliar a saúde financeira do Banestes. A eficiência operacional, medida pelo índice de eficiência operacional (IEO), e a margem financeira líquida são outros KPIs que refletem a capacidade da instituição em gerar resultados positivos em um ambiente competitivo. A inadimplência na carteira de crédito comercial é um aspecto crítico, e o Banestes tem conseguido manter esse índice abaixo da média do mercado, o que demonstra uma gestão de risco eficaz e uma análise criteriosa na concessão de crédito.\n\nEntretanto, o Banestes não está isento de riscos. A volatilidade econômica pode impactar a qualidade dos ativos e aumentar a inadimplência, exigindo uma vigilância constante sobre a carteira de crédito. Além disso, a instituição enfrenta riscos regulatórios, uma vez que está sujeita a normas rigorosas do Banco Central do Brasil, que incluem requisitos de capital e liquidez. A estrutura de capital do Banestes é robusta, com um patrimônio líquido que proporciona uma boa capacidade de absorção de riscos, evidenciada pelo índice de Basileia que se mantém em níveis adequados.\n\nA governança corporativa também é um aspecto relevante para o Banestes, que tem se comprometido com práticas responsáveis e alinhadas às expectativas de seus stakeholders. A adesão a iniciativas de sustentabilidade, como o GHG Protocol, demonstra uma preocupação com a responsabilidade social e ambiental, além de reforçar a imagem da instituição no mercado. A regulação do setor bancário é um fator crítico que influencia as operações do Banestes, especialmente em momentos de implementação de novas metodologias de provisão para créditos de liquidação duvidosa, que exigem ajustes nas práticas contábeis e de gestão de risco.\n\nA competição no setor bancário é intensa, com diversas instituições disputando a mesma base de clientes. O Banestes, portanto, precisa não apenas manter sua eficiência operacional, mas também investir em tecnologia e inovação para melhorar a experiência do cliente e se diferenciar no mercado. A sensibilidade a fatores macroeconômicos, como a inflação e as políticas monetárias, também é um aspecto que o Banestes deve monitorar de perto, pois essas variáveis podem impactar tanto a demanda por crédito quanto a capacidade de pagamento dos clientes.\n\nEm suma, o Banestes se posiciona como um banco sólido e comprometido com a intermediação financeira, focando em um público diversificado e buscando constantemente a eficiência e a inovação. A gestão prudente dos riscos, aliada a uma estrutura de capital robusta e a um compromisso com a governança e a sustentabilidade, coloca a instituição em uma trajetória favorável para enfrentar os desafios do mercado e continuar a contribuir para o desenvolvimento econômico da região em que atua.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.5 bi (trimestre) | R$5.0 bi (LTM)\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.3 bi (LTM)\n- Operacional: Receitas com operações de crédito totalizaram R$ 1,5 bilhão, com crescimento de 26,8% em relação ao mesmo período do ano anterior. O lucro líquido foi de R$ 111 milhões, representando um aumento de 21,6% em relação ao 3T2024.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1456000000,
+      "receita_liquida_ltm": 4980000000,
+      "ebitda_tri": null,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 111000000,
+      "lucro_liquido_ltm": 304000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": 7.62
+    },
+    "operacionais": {
+      "descricao": "Receitas com operações de crédito totalizaram R$ 1,5 bilhão, com crescimento de 26,8% em relação ao mesmo período do ano anterior. O lucro líquido foi de R$ 111 milhões, representando um aumento de 21,6% em relação ao 3T2024.",
+      "metricas": {
+        "clientes": 1400000,
+        "contas_correntes": 1100000,
+        "contas_poupanca": 656000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:15:44.441682Z"
+}

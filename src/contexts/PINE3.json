@@ -1,0 +1,37 @@
+{
+  "ticker": "PINE3",
+  "codigo_cvm": "20567",
+  "data_release": "2025-06-30",
+  "fonte_pdf": "20567_2025-06-30_BANCO_PINE_SA.pdf",
+  "texto_contexto": "O Banco Pine (PINE3) se destaca no cenário financeiro brasileiro como um banco de negócios ágil, cuja proposta é estabelecer relacionamentos duradouros e rentáveis com seus clientes. Seu modelo de negócio é estruturado de forma a integrar diversas linhas de crédito, permitindo uma atuação tanto no atacado quanto no varejo. Essa abordagem multifacetada possibilita ao banco atender a uma ampla gama de clientes, desde grandes e médias empresas até indivíduos que buscam soluções de crédito consignado, tanto no setor público quanto no privado.\n\nNo segmento de atacado, o Banco Pine se concentra em operações estruturadas e colateralizadas, oferecendo produtos financeiros que atendem às necessidades específicas de empresas de maior porte. Essa segmentação é crucial, pois permite ao banco diversificar sua carteira de crédito, que abrange setores estratégicos como agronegócio, imobiliário e logística. Por outro lado, no varejo, o foco em crédito consignado e serviços financeiros proporciona uma base sólida de clientes, contribuindo para a estabilidade e a previsibilidade das receitas.\n\nOs principais indicadores de desempenho do Banco Pine, como o Retorno sobre o Patrimônio Líquido (ROAE), a carteira de crédito expandida e o índice de Basileia, são reflexos da eficiência operacional e da capacidade de gestão de riscos. O crescimento consistente do ROAE demonstra não apenas a rentabilidade das operações, mas também a eficácia na alocação de capital. A diversificação da carteira de crédito é um driver de valor significativo, pois mitiga riscos associados a setores específicos e permite ao banco explorar oportunidades em diferentes frentes.\n\nEntretanto, o Banco Pine não está isento de riscos. A volatilidade do mercado financeiro, a inadimplência dos clientes e a necessidade de adaptação às novas regulamentações, como a Resolução CMN nº 4.966, que introduz uma abordagem de perda esperada para a provisão de créditos, são desafios constantes. A gestão proativa desses riscos é fundamental para garantir a saúde financeira da instituição e a confiança dos investidores.\n\nA estrutura de capital do Banco Pine é robusta, com índices que asseguram a solidez financeira e a capacidade de suportar o crescimento das operações. O índice de Basileia, que reflete a adequação de capital em relação aos ativos ponderados pelo risco, é um indicador crucial para a estabilidade do banco. Essa solidez é ainda mais importante em um ambiente econômico que pode ser suscetível a mudanças abruptas, como alterações nas políticas monetárias e econômicas que impactam a demanda por crédito e a capacidade de pagamento dos clientes.\n\nA governança corporativa do Banco Pine é orientada por princípios de transparência e responsabilidade, com um foco crescente em práticas ambientais, sociais e de governança (ESG). A gestão de aspectos ESG não apenas atende a uma demanda crescente por responsabilidade social, mas também se alinha com as expectativas de investidores e clientes que buscam instituições financeiras comprometidas com a sustentabilidade.\n\nA regulação do Banco Central do Brasil estabelece diretrizes que moldam a operação do Banco Pine, exigindo uma gestão rigorosa de riscos e a adequação de capital. A conformidade com essas regulamentações é vital para a operação do banco, especialmente em um cenário onde a confiança do consumidor e a estabilidade do sistema financeiro são cruciais.\n\nPor fim, a sensibilidade macroeconômica é um fator determinante para o desempenho do Banco Pine. Mudanças nas condições econômicas, como taxas de juros, inflação e crescimento econômico, podem influenciar diretamente a demanda por crédito e a capacidade de pagamento dos clientes. A capacidade do banco de se adaptar a essas condições, utilizando tecnologia avançada, como inteligência artificial, para aprimorar a eficiência operacional e a gestão de riscos, será fundamental para sua continuidade e sucesso no mercado financeiro. Assim, o Banco Pine se posiciona como uma instituição que, ao mesmo tempo em que busca rentabilidade e crescimento, se compromete com a sustentabilidade e a responsabilidade social, refletindo uma visão de longo prazo em um ambiente dinâmico e desafiador.\n\nNÚMEROS DE REFERÊNCIA (1S2025):\n- Receita Líquida: R$0.1 bi (trimestre) | R$0.4 bi (LTM)\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.2 bi (LTM)\n- Operacional: Carteira de crédito expandida totalizou R$ 15,6 bilhões, com crescimento de 24,3% em relação ao ano anterior. O lucro líquido foi de R$ 156,5 milhões, um aumento de 23% em relação ao mesmo período do ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "1S2025",
+    "financeiros": {
+      "receita_liquida_tri": 149400000,
+      "receita_liquida_ltm": 447700000,
+      "ebitda_tri": null,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 156500000,
+      "lucro_liquido_ltm": 156500000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": 26.2
+    },
+    "operacionais": {
+      "descricao": "Carteira de crédito expandida totalizou R$ 15,6 bilhões, com crescimento de 24,3% em relação ao ano anterior. O lucro líquido foi de R$ 156,5 milhões, um aumento de 23% em relação ao mesmo período do ano anterior.",
+      "metricas": {
+        "carteira_credito": 15600000000,
+        "funding": 20202000000,
+        "patrimonio_referencia": 1885000000,
+        "indice_basileia_pct": 14.1,
+        "inadimplencia_pct": 1.2,
+        "clientes_ativos": 198
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:14:22.439731Z"
+}
