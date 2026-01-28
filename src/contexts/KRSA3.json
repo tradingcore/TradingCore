@@ -1,0 +1,36 @@
+{
+  "ticker": "KRSA3",
+  "codigo_cvm": "25879",
+  "data_release": "2025-03-31",
+  "fonte_pdf": "25879_2025-03-31_KORA_SAÚDE_PARTICIPAÇÕES_SA.pdf",
+  "texto_contexto": "A Kora Saúde Participações (KRSA3) se destaca como uma das principais redes hospitalares privadas do Brasil, operando em um setor que exige não apenas excelência nos serviços prestados, mas também uma gestão eficiente e adaptável às constantes mudanças do ambiente regulatório e econômico. O modelo de negócio da Kora é fundamentado na oferta de serviços médicos de alta qualidade a preços acessíveis, priorizando um atendimento humanizado e personalizado, que busca atender às necessidades específicas de cada paciente. Essa abordagem não apenas fortalece a relação com os clientes, mas também contribui para a fidelização e a reputação da marca no mercado.\n\nA presença da Kora Saúde se estende por cinco estados brasileiros, além do Distrito Federal, com uma rede que abrange 17 hospitais e mais de 2 mil leitos. Essa capilaridade geográfica permite à empresa atender a uma ampla gama de pacientes, diversificando sua base de clientes e mitigando riscos associados a flutuações regionais na demanda por serviços de saúde. Os principais segmentos de atuação incluem assistência médica geral e especializada, com ênfase em áreas críticas como oncologia, análises clínicas, radiologia e hemodinâmica. A Kora investe continuamente em tecnologia e modernização de seus serviços, o que não apenas melhora a qualidade do atendimento, mas também aumenta a eficiência operacional.\n\nOs indicadores-chave de desempenho (KPIs) da Kora Saúde são fundamentais para medir sua performance e incluem métricas como receita líquida, EBITDA ajustado, margem EBITDA, taxa de ocupação de leitos e número de atendimentos realizados. Esses KPIs não apenas refletem a eficiência operacional da empresa, mas também sua capacidade de atender a demanda crescente por serviços de saúde, que é impulsionada por fatores demográficos e epidemiológicos. A eficiência operacional é um dos principais drivers de valor da Kora, que busca constantemente otimizar seus processos e reduzir custos, ao mesmo tempo em que mantém a qualidade assistencial.\n\nA capacidade da Kora Saúde de firmar parcerias com fontes pagadoras, como planos de saúde e seguradoras, é outro fator crucial para garantir um fluxo de receita previsível e sustentável. Essas parcerias não apenas ampliam o acesso aos serviços da empresa, mas também proporcionam uma base financeira sólida, essencial em um setor onde a volatilidade pode ser significativa. Além disso, a Kora se destaca por suas práticas de sustentabilidade e responsabilidade social, integrando cuidados assistenciais com uma gestão de saúde que considera o impacto social e ambiental de suas operações.\n\nEntretanto, a Kora Saúde não está isenta de riscos. O setor de saúde é altamente regulado, e mudanças nas políticas públicas ou na legislação podem impactar diretamente suas operações e modelos de remuneração. A volatilidade econômica, por sua vez, pode afetar a demanda por serviços médicos, especialmente em tempos de crise financeira, quando os pacientes podem adiar procedimentos não emergenciais. A estrutura de capital da Kora é composta por dívidas significativas, e embora uma recente reestruturação tenha melhorado o cronograma de amortizações, os custos financeiros ainda representam um desafio que a empresa deve gerenciar com cautela.\n\nEventos críticos, como ofertas públicas de aquisição de ações, podem impactar a estrutura acionária e a governança da Kora Saúde, exigindo uma gestão proativa para garantir a continuidade dos negócios e a confiança dos investidores. A governança corporativa é um aspecto fundamental para a Kora, que busca manter transparência e responsabilidade em suas práticas, alinhando os interesses dos acionistas com os objetivos de longo prazo da empresa.\n\nPor fim, a Kora Saúde deve estar atenta à evolução do cenário econômico e às tendências do setor de saúde, que incluem a digitalização dos serviços, a telemedicina e a crescente demanda por serviços de saúde preventivos. A capacidade de adaptação a essas mudanças será crucial para que a empresa mantenha sua posição competitiva e continue a oferecer serviços de qualidade em um mercado cada vez mais desafiador. A combinação de uma gestão eficiente, inovação constante e um compromisso com a qualidade assistencial posiciona a Kora Saúde como um player relevante no setor de saúde brasileiro, com potencial para crescimento sustentável a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (1T2025):\n- Receita Líquida: R$0.6 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.1 bi (trimestre) | N/D (LTM) | Margem 20.9%\n- Lucro Líquido: R$-0.1 bi (trimestre) | N/D (LTM)\n- Dívida: R$2.3 bi (líquida) | R$2.5 bi (bruta)\n- Operacional: No 1T25, a Kora Saúde registrou 115,6 mil pacientes-dia, 73,3% de taxa de ocupação e 258 mil atendimentos em Pronto-Socorro.",
+  "numeros_referencia": {
+    "periodo_trimestre": "1T2025",
+    "financeiros": {
+      "receita_liquida_tri": 560100000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 117000000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": -67300000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 2310000000,
+      "divida_bruta": 2529000000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 20.9,
+      "margem_liquida_pct": -12.0
+    },
+    "operacionais": {
+      "descricao": "No 1T25, a Kora Saúde registrou 115,6 mil pacientes-dia, 73,3% de taxa de ocupação e 258 mil atendimentos em Pronto-Socorro.",
+      "metricas": {
+        "pacientes_dia": 115600,
+        "taxa_ocupacao_pct": 73.3,
+        "atendimentos_pronto_socorro": 258000,
+        "exames_imagem": 193000,
+        "avisos_cirurgicos": 23000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:49:04.103632Z"
+}

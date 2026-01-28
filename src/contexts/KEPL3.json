@@ -1,0 +1,35 @@
+{
+  "ticker": "KEPL3",
+  "codigo_cvm": "7870",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "7870_2025-09-30_KEPLER_WEBER_SA.pdf",
+  "texto_contexto": "A Kepler Weber, uma das mais tradicionais empresas brasileiras, foi fundada em 1925 e se consolidou como líder na América Latina em soluções integradas para o beneficiamento, conservação, armazenamento e movimentação de sementes, grãos, biocombustíveis, rações e alimentos. O modelo de negócio da companhia é amplamente centrado na oferta de equipamentos e serviços que atendem a toda a cadeia do agronegócio, abrangendo desde a produção até a logística internacional. Com uma presença significativa em 53 países e atuação em cinco continentes, a Kepler Weber se destaca pela sua capacidade de adaptação e inovação em um setor em constante evolução.\n\nA empresa opera em diversos segmentos, que incluem Fazendas, Agroindústrias, Negócios Internacionais, Portos e Terminais, além de Reposição e Serviços. Cada um desses segmentos contribui de maneira distinta para a receita total, permitindo à Kepler Weber diversificar suas fontes de receita e mitigar riscos associados a flutuações em setores específicos. Essa diversificação é um dos principais drivers de valor da empresa, que busca constantemente inovar em seus produtos e serviços para atender à crescente demanda por soluções tecnológicas no agronegócio, especialmente em períodos de alta demanda e desafios logísticos.\n\nOs principais indicadores de desempenho da Kepler Weber, como a Receita Operacional Líquida, EBITDA e Lucro Líquido, refletem a eficiência operacional da empresa e sua capacidade de gerar lucro mesmo em um ambiente desafiador. A resiliência do modelo de negócios é evidenciada por margens que se mantêm competitivas, mesmo diante de condições macroeconômicas adversas, como juros elevados e crédito restrito. A empresa tem demonstrado uma habilidade notável em gerenciar sua estrutura de capital, que é caracterizada por um endividamento diversificado. Uma parte significativa da dívida está atrelada a financiamentos com a International Finance Corporation (IFC) e Cédulas de Produto Rural (CPR), o que proporciona uma base sólida para suas operações.\n\nEntretanto, a Kepler Weber não está isenta de riscos. A volatilidade dos preços das commodities, condições de crédito restritivas e a dependência de fatores climáticos são desafios que podem impactar a produção agrícola e, consequentemente, a demanda por seus produtos e serviços. A empresa precisa estar atenta a essas variáveis, implementando estratégias que garantam sua sustentabilidade e crescimento a longo prazo. Além disso, a regulação do setor agrícola e financeiro, que inclui normas de segurança e ambientais, exerce uma influência significativa sobre as operações da Kepler Weber. A conformidade com legislações que visam garantir a segurança e a sustentabilidade dos produtos é essencial para a manutenção da reputação da empresa e para a confiança de seus investidores e clientes.\n\nA governança corporativa da Kepler Weber é estruturada para promover a transparência e a responsabilidade, fatores que são cada vez mais valorizados por investidores e stakeholders. A celebração do centenário da empresa em 2025 não apenas reforça sua reputação no mercado, mas também destaca sua contribuição histórica ao agronegócio brasileiro. Esse marco pode impactar positivamente a percepção de investidores e clientes, criando oportunidades para a empresa expandir sua presença e fortalecer sua marca.\n\nA competição no setor é intensa, com diversas empresas buscando inovar e oferecer soluções que atendam às necessidades do agronegócio. A Kepler Weber, com sua longa trajetória e expertise, se posiciona como uma empresa robusta e adaptável, pronta para enfrentar os desafios do setor e aproveitar as oportunidades de crescimento que surgem em um cenário global em transformação. A sensibilidade macroeconômica, incluindo fatores como a demanda global por alimentos, políticas agrícolas e mudanças climáticas, também desempenha um papel crucial na estratégia da empresa, que deve estar sempre alinhada às tendências e necessidades do mercado.\n\nEm suma, a Kepler Weber é uma empresa que, ao longo de sua história, construiu uma sólida reputação e uma base financeira robusta, permitindo-lhe navegar por um ambiente complexo e dinâmico. Com um foco contínuo em inovação, diversificação e sustentabilidade, a empresa está bem posicionada para continuar sua trajetória de crescimento e contribuir significativamente para o agronegócio, tanto no Brasil quanto no exterior.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.4 bi (trimestre) | R$1.1 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.2 bi (LTM) | Margem 17.4%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.1 bi (LTM)\n- Operacional: A Receita Líquida consolidada atingiu R$423,3 milhões no 3T25, com crescimento em Negócios Internacionais (23,6%) e Portos e Terminais (97,4%). O Lucro Líquido cresceu 258,2% em relação ao 2T25.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 423300000,
+      "receita_liquida_ltm": 1091600000,
+      "ebitda_tri": 73600000,
+      "ebitda_ltm": 164400000,
+      "lucro_liquido_tri": 51600000,
+      "lucro_liquido_ltm": 91500000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 17.4,
+      "margem_liquida_pct": 12.2
+    },
+    "operacionais": {
+      "descricao": "A Receita Líquida consolidada atingiu R$423,3 milhões no 3T25, com crescimento em Negócios Internacionais (23,6%) e Portos e Terminais (97,4%). O Lucro Líquido cresceu 258,2% em relação ao 2T25.",
+      "metricas": {
+        "clientes_faturados": null,
+        "vendas_contratadas_argentina": null,
+        "crescimento_vendas_internacionais_pct": 30,
+        "crescimento_vendas_portos_terminal_pct": 97.4
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:47:27.926094Z"
+}

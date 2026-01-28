@@ -1,0 +1,35 @@
+{
+  "ticker": "LAVV3",
+  "codigo_cvm": "25062",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25062_2025-09-30_LAVVI_EMPREENDIMENTOS_IMOBILIÁRIOS_SA.pdf",
+  "texto_contexto": "A Lavvi Incorporadora (LAVV3) se destaca no cenário imobiliário brasileiro, especialmente na cidade de São Paulo, onde atua no desenvolvimento e construção de empreendimentos residenciais que abrangem uma ampla gama de segmentos, desde o econômico até o alto padrão e luxo. A empresa também opera sob a marca Novvo, voltada para o segmento econômico, o que demonstra sua estratégia de diversificação e adaptação às diferentes demandas do mercado. O modelo de negócio da Lavvi é centrado na incorporação imobiliária, onde a empresa assume a responsabilidade pela construção e venda de unidades habitacionais, gerando receita à medida que as obras avançam e as vendas são concretizadas.\n\nOs principais indicadores de desempenho da Lavvi, como receita líquida, lucro líquido, margem bruta ajustada, EBITDA ajustado e retorno sobre o patrimônio líquido (ROE), são fundamentais para avaliar sua performance no mercado. A empresa tem demonstrado um sólido desempenho financeiro, com um backlog significativo que representa a receita a ser reconhecida no futuro. Esse backlog, aliado a uma margem bruta robusta, reflete a capacidade da Lavvi de manter um fluxo de receita consistente e saudável, essencial para sustentar suas operações e financiar novos lançamentos.\n\nOs drivers de valor da Lavvi são variados e incluem a habilidade de lançar novos empreendimentos de forma eficaz, a eficiência na execução das obras e a gestão estratégica do portfólio de terrenos, conhecido como landbank. Com um landbank substancial, a empresa está bem posicionada para garantir a continuidade de lançamentos futuros, o que é crucial em um mercado imobiliário dinâmico e competitivo. A adaptação às demandas do mercado, que podem variar conforme as condições econômicas e as preferências dos consumidores, também é um fator determinante para o sucesso da Lavvi.\n\nEntretanto, a empresa não está isenta de riscos. A volatilidade do mercado imobiliário, as mudanças nas condições econômicas, o aumento das taxas de juros e a possibilidade de distratos são fatores que podem impactar negativamente suas vendas e a geração de caixa. A gestão eficaz desses riscos é vital para a continuidade do crescimento e da rentabilidade da Lavvi.\n\nA estrutura de capital da Lavvi é composta por uma combinação equilibrada de dívida e patrimônio líquido, o que permite à empresa sustentar suas operações e investimentos de forma saudável. A manutenção de um índice de dívida líquida sobre patrimônio líquido em níveis controlados é uma estratégia que visa garantir a solidez financeira e a capacidade de enfrentar eventuais adversidades no mercado.\n\nA governança corporativa da Lavvi é um aspecto importante que influencia suas operações e a confiança dos investidores. A conformidade com as regulamentações do setor imobiliário no Brasil, que incluem normas de construção e financiamento, é essencial para a operação da empresa. A Lavvi deve estar atenta às legislações locais e nacionais, garantindo que suas práticas estejam alinhadas com as exigências regulatórias, o que pode impactar diretamente sua capacidade de lançar novos projetos e operar de forma eficiente.\n\nNo que diz respeito à competição, a Lavvi enfrenta um ambiente desafiador, com diversas empresas atuando no mesmo segmento de mercado. A capacidade de se diferenciar por meio de inovações em seus produtos, qualidade na execução das obras e atendimento ao cliente é crucial para manter sua posição no mercado. A concorrência acirrada exige que a Lavvi esteja sempre atenta às tendências do setor e às necessidades dos consumidores, adaptando sua estratégia conforme necessário.\n\nA sensibilidade macroeconômica também desempenha um papel significativo nas operações da Lavvi. Fatores como a taxa de juros, a inflação e o crescimento econômico influenciam diretamente a demanda por imóveis e, consequentemente, o desempenho financeiro da empresa. A capacidade da Lavvi de navegar por essas variáveis macroeconômicas e ajustar sua estratégia de negócios em resposta a mudanças no ambiente econômico será determinante para sua sustentabilidade e crescimento a longo prazo.\n\nEm resumo, a Lavvi Incorporadora é uma empresa que combina um modelo de negócio sólido com uma gestão estratégica de seus ativos e riscos. Sua capacidade de se adaptar às demandas do mercado, aliada a uma estrutura de capital equilibrada e a uma governança eficaz, posiciona a empresa de forma competitiva no setor imobiliário. O acompanhamento das condições macroeconômicas e a resposta a desafios regulatórios e de concorrência serão fundamentais para garantir o sucesso contínuo da Lavvi no futuro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.4 bi (trimestre) | R$1.2 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.4 bi (LTM) | Margem 30.0%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.3 bi (LTM)\n- Dívida Líquida: R$0.1 bi\n- Operacional: No 3T25, a Lavvi registrou receita líquida de R$ 414,8 milhões, lucro líquido de R$ 104 milhões e um backlog de R$ 2,4 bilhões. As vendas líquidas totalizaram R$ 336 milhões no trimestre.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 414753000,
+      "receita_liquida_ltm": 1231277000,
+      "ebitda_tri": 124613000,
+      "ebitda_ltm": 370206000,
+      "lucro_liquido_tri": 103959000,
+      "lucro_liquido_ltm": 309434000,
+      "divida_liquida": 73952000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 30.0,
+      "margem_liquida_pct": 25.1
+    },
+    "operacionais": {
+      "descricao": "No 3T25, a Lavvi registrou receita líquida de R$ 414,8 milhões, lucro líquido de R$ 104 milhões e um backlog de R$ 2,4 bilhões. As vendas líquidas totalizaram R$ 336 milhões no trimestre.",
+      "metricas": {
+        "vendas_liquidas": 336274000,
+        "backlog": 2400000000,
+        "unidades_vendidas": 1104,
+        "unidades_lancadas": 1477
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:49:59.378581Z"
+}
