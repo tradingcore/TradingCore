@@ -1,0 +1,34 @@
+{
+  "ticker": "ECOR3",
+  "codigo_cvm": "19453",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "19453_2025-09-30_ECORODOVIAS_INFRAESTRUTURA_E_LOGÍSTICA_SA.pdf",
+  "texto_contexto": "A EcoRodovias Infraestrutura e Logística S.A. se posiciona como uma das principais operadoras no setor de infraestrutura e logística no Brasil, com um modelo de negócio que se concentra na concessão e operação de rodovias, além de serviços complementares relacionados a portos e logística. A empresa se destaca pela sua atuação em segmentos que incluem concessões rodoviárias, operações portuárias e serviços de holding, sendo a arrecadação de tarifas de pedágio um dos pilares fundamentais de sua receita. A EcoRodovias também opera terminais portuários, como o Ecoporto Santos, que complementa sua oferta de serviços e fortalece sua presença no mercado logístico.\n\nOs principais indicadores de desempenho da EcoRodovias, como a receita líquida ajustada, EBITDA ajustado e margem EBITDA, são reflexos diretos da eficiência operacional e da capacidade de geração de receita da empresa. O tráfego de veículos nas rodovias sob sua concessão é um dos principais drivers de valor, uma vez que o aumento desse tráfego não apenas eleva a arrecadação de pedágios, mas também indica a saúde econômica das regiões atendidas. A empresa busca constantemente expandir sua capacidade nas concessões e otimizar a gestão de custos, o que se traduz em uma maior rentabilidade e resiliência financeira.\n\nEntretanto, a EcoRodovias enfrenta uma série de riscos que podem impactar sua operação e resultados financeiros. A dependência de regulamentações governamentais é um fator crítico, uma vez que a empresa opera sob contratos de concessão que são supervisionados por agências reguladoras, como a Artesp. Mudanças nas políticas de concessão ou na legislação podem afetar a rentabilidade e a continuidade dos projetos. Além disso, as variações nas taxas de juros têm um impacto direto no custo do capital, o que pode pressionar a estrutura de capital da empresa, que é composta por uma combinação de dívida e patrimônio líquido. A EcoRodovias apresenta um nível significativo de endividamento, refletido em sua relação de dívida líquida sobre EBITDA ajustado, que, embora esteja sob controle, requer monitoramento constante.\n\nA governança corporativa da EcoRodovias é estruturada para garantir a transparência e a responsabilidade nas operações, com um foco crescente em práticas sustentáveis e diversidade, que são cada vez mais valorizadas por investidores e pela sociedade. A empresa tem se empenhado em implementar iniciativas que não apenas atendem às exigências regulatórias, mas que também promovem um impacto positivo nas comunidades onde atua. Esses esforços são fundamentais para a construção de uma imagem corporativa sólida e para a atração de investimentos.\n\nA regulação do setor de infraestrutura é um aspecto que demanda atenção constante, especialmente em um ambiente onde a modernização de contratos de concessão pode alterar prazos e condições financeiras. Eventos recentes, como a assinatura de termos aditivos, demonstram a capacidade da EcoRodovias de se adaptar às mudanças e de buscar melhorias nas condições de operação. A arrecadação de pedágio em novas praças é um exemplo de como a empresa tem se esforçado para expandir sua base de receita, impactando diretamente o tráfego e, consequentemente, a sua performance financeira.\n\nNo que diz respeito à competição, a EcoRodovias opera em um mercado que, embora tenha barreiras de entrada significativas, é caracterizado por uma concorrência acirrada entre empresas que buscam conquistar concessões e expandir suas operações. A capacidade de inovação e a eficiência operacional são diferenciais que podem determinar a posição competitiva da empresa. A sensibilidade macroeconômica também desempenha um papel importante, uma vez que fatores como crescimento econômico, inflação e políticas fiscais influenciam diretamente o tráfego nas rodovias e a demanda por serviços logísticos.\n\nEm suma, a EcoRodovias se apresenta como uma empresa robusta no setor de infraestrutura e logística, com um modelo de negócio bem definido e uma estratégia focada na eficiência e na sustentabilidade. No entanto, a empresa deve permanecer atenta aos riscos regulatórios, às condições de mercado e à dinâmica competitiva, garantindo que sua estrutura de capital e governança estejam alinhadas com as melhores práticas do setor e com as expectativas dos stakeholders.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$2.0 bi (trimestre) | R$5.5 bi (LTM)\n- EBITDA: R$1.5 bi (trimestre) | R$4.1 bi (LTM) | Margem 76.2%\n- Lucro Líquido: R$0.4 bi (trimestre) | R$0.8 bi (LTM)\n- Dívida Líquida: R$20.5 bi\n- Capex: R$1.3 bi (trimestre) | R$3.4 bi (LTM)\n- Operacional: Crescimento de 26,4% no tráfego consolidado no 3T25, com destaque para veículos pesados (+4,5%).",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1972800000,
+      "receita_liquida_ltm": 5460500000,
+      "ebitda_tri": 1504200000,
+      "ebitda_ltm": 4122300000,
+      "lucro_liquido_tri": 430000000,
+      "lucro_liquido_ltm": 780600000,
+      "divida_liquida": 20486400000,
+      "divida_bruta": null,
+      "capex_tri": 1294000000,
+      "capex_ltm": 3409500000,
+      "margem_ebitda_pct": 76.2,
+      "margem_liquida_pct": 21.8
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 26,4% no tráfego consolidado no 3T25, com destaque para veículos pesados (+4,5%).",
+      "metricas": {
+        "trafego_consolidado_pct": 26.4,
+        "trafego_comparavel_pct": 3.2,
+        "trafego_veiculos_pesados_pct": 4.5
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:53:16.196032Z"
+}

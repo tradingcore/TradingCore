@@ -1,0 +1,34 @@
+{
+  "ticker": "EALT3",
+  "codigo_cvm": "5380",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "5380_2025-09-30_ELECTRO_AÇO_ALTONA_SA.pdf",
+  "texto_contexto": "A Electro Aço Altona S/A (EALT3) se destaca como uma relevante empresa no setor de fundição de aço, operando sob a égide da Companhia Werner S/A Agricultura e Comércio. Seu modelo de negócio é estruturado em torno da produção e comercialização de produtos de aço, que são oferecidos tanto sob demanda quanto em unidades repetitivas. Essa flexibilidade permite à empresa atender a uma ampla gama de clientes, abrangendo os segmentos de infraestrutura, energia e mineração, que são fundamentais para o desenvolvimento econômico e social. A Electro Aço Altona não apenas se concentra no mercado interno, mas também possui uma expressiva participação nas exportações, o que a posiciona de maneira competitiva no cenário global.\n\nOs principais indicadores de desempenho da Electro Aço Altona, como a Receita Operacional Líquida, o Lucro Líquido e o EBITDA, são essenciais para medir a eficiência e a rentabilidade da empresa. O retorno sobre o patrimônio líquido (ROE) e o retorno sobre o capital investido (ROIC) são métricas que refletem a capacidade da companhia em gerar valor para seus acionistas. Esses KPIs são monitorados de perto pela administração, que busca constantemente otimizar operações e maximizar resultados. Os drivers de valor da empresa incluem a inovação em processos produtivos, que é crucial para manter a competitividade, além da eficiência na gestão de custos, que permite à Electro Aço Altona operar em um ambiente de margens muitas vezes pressionadas. A diversificação de clientes e mercados é outro fator que contribui para a resiliência da empresa, assim como a capacidade de adaptação às condições macroeconômicas e regulatórias, que podem impactar diretamente a demanda por seus produtos.\n\nEntretanto, a Electro Aço Altona enfrenta uma série de riscos que podem afetar seu desempenho. A volatilidade dos preços das matérias-primas é um dos principais desafios, uma vez que flutuações nos custos de insumos podem impactar a margem de lucro. Além disso, a dependência de mercados externos torna a empresa vulnerável a oscilações cambiais, que podem afetar a competitividade de seus produtos no exterior. A concorrência no setor de fundição é intensa, com diversas empresas disputando participação de mercado, o que exige da Electro Aço Altona uma constante vigilância sobre suas estratégias de preços e inovação. Os riscos regulatórios também são significativos, especialmente no que diz respeito a normas ambientais e de segurança no trabalho, que podem resultar em custos adicionais e impactos operacionais.\n\nA estrutura de capital da Electro Aço Altona é composta por uma combinação de dívida e patrimônio líquido, refletindo uma estratégia de financiamento que busca equilibrar a sustentabilidade financeira com a capacidade de investimento em ativos imobilizados. A empresa tem se esforçado para manter um endividamento controlado, o que é fundamental para garantir a flexibilidade financeira necessária para modernização e expansão. Essa abordagem permite que a Electro Aço Altona se posicione de maneira proativa em relação a oportunidades de crescimento, mesmo em um ambiente econômico desafiador.\n\nA regulação que impacta a Electro Aço Altona é complexa e multifacetada, envolvendo normas brasileiras de contabilidade e diretrizes do Comitê de Pronunciamentos Contábeis (CPC), além de legislações específicas do setor industrial. A empresa deve estar atenta a eventos críticos que podem afetar suas operações, como mudanças nas políticas fiscais e comerciais, variações nas taxas de juros e câmbio, e alterações nas condições de mercado que influenciam a demanda por seus produtos. A administração da Electro Aço Altona demonstra um compromisso em monitorar esses fatores e implementar estratégias que assegurem a continuidade e o crescimento dos negócios, buscando sempre alinhar suas operações às melhores práticas de governança e responsabilidade corporativa.\n\nEm um cenário macroeconômico em constante mudança, a Electro Aço Altona se posiciona como uma empresa resiliente, capaz de navegar por desafios e aproveitar oportunidades. Sua capacidade de adaptação, aliada a uma gestão focada em resultados e inovação, a torna uma protagonista no setor de fundição de aço, com um futuro promissor pela frente.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.1 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.0 bi (trimestre) | N/D (LTM) | Margem 9.9%\n- Lucro Líquido: R$0.0 bi (trimestre) | N/D (LTM)\n- Dívida: R$0.1 bi (líquida) | R$0.1 bi (bruta)\n- Capex: R$0.0 bi (trimestre) | R$0.2 bi (LTM)\n- Operacional: A Electro Aço Altona apresentou uma receita operacional líquida de R$ 140,2 milhões, com um lucro líquido de R$ 39 milhões e um EBITDA de R$ 13,9 milhões, refletindo desafios na produção e aumento de custos.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 140216000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 13900000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 39000000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 82500000,
+      "divida_bruta": 103300000,
+      "capex_tri": 11200000,
+      "capex_ltm": 221100000,
+      "margem_ebitda_pct": 9.9,
+      "margem_liquida_pct": 27.8
+    },
+    "operacionais": {
+      "descricao": "A Electro Aço Altona apresentou uma receita operacional líquida de R$ 140,2 milhões, com um lucro líquido de R$ 39 milhões e um EBITDA de R$ 13,9 milhões, refletindo desafios na produção e aumento de custos.",
+      "metricas": {
+        "lucro_liquido_ajustado": 6900000,
+        "roe_pct": 29.7,
+        "roic_pct": 27.6
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:54:26.750573Z"
+}

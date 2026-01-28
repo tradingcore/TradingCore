@@ -1,0 +1,35 @@
+{
+  "ticker": "DIRR3",
+  "codigo_cvm": "21350",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "21350_2025-09-30_DIRECIONAL_ENGENHARIA_SA.pdf",
+  "texto_contexto": "A Direcional Engenharia S/A se destaca como uma das principais incorporadoras e construtoras do Brasil, com um modelo de negócio que se concentra na construção e venda de imóveis, especialmente voltados para o segmento de habitação popular e de médio padrão. A empresa tem uma presença significativa em diversas regiões do país, o que a posiciona de maneira estratégica para atender a uma demanda crescente por moradia. O foco no desenvolvimento de empreendimentos populares é evidenciado pela sua atuação no programa Minha Casa, Minha Vida, que visa facilitar o acesso à habitação para famílias de baixa renda. Além disso, a Direcional opera com a marca Riva, que atende ao público de classe média, oferecendo unidades que se enquadram em um patamar de preço um pouco mais elevado, mas ainda acessível.\n\nOs segmentos de atuação da Direcional são bem definidos, com a linha Direcional voltada para empreendimentos residenciais com preços médios por unidade que não ultrapassam R$ 350 mil, enquanto a Riva se destina a clientes de média renda, com unidades que podem alcançar até R$ 500 mil. Essa segmentação permite à empresa diversificar sua oferta e atender a diferentes perfis de consumidores, o que é um diferencial importante em um mercado tão dinâmico e competitivo. Os principais indicadores de desempenho (KPIs) que a Direcional monitora incluem receita líquida, lucro líquido, margens bruta e líquida, além do valor geral de vendas (VGV) dos lançamentos e vendas contratadas. A velocidade de vendas (VSO) e a geração de caixa são também métricas cruciais, pois refletem a eficiência operacional e a liquidez da empresa, aspectos fundamentais para sua saúde financeira.\n\nOs drivers de valor da Direcional estão intimamente ligados à eficiência operacional e à capacidade de lançamento de novos empreendimentos. A gestão de custos e a adaptação às demandas do mercado imobiliário são fatores que influenciam diretamente a competitividade da empresa. A Direcional se beneficia de um cenário de crescente demanda por habitação, impulsionado pelo aumento do poder de compra das famílias e pela expansão do mercado endereçável. No entanto, a empresa não está isenta de riscos. A volatilidade econômica, as mudanças nas políticas habitacionais e a intensa concorrência no setor imobiliário são desafios que podem impactar suas operações. Além disso, a dependência de financiamentos e a exposição a variações nas taxas de juros são fatores que podem afetar sua estrutura de capital e, consequentemente, sua capacidade de investimento e crescimento.\n\nA estrutura de capital da Direcional é caracterizada por uma abordagem conservadora, com um índice de alavancagem que demonstra uma baixa dependência de dívidas em relação ao patrimônio líquido. Essa estratégia proporciona à empresa um saldo significativo de caixa e equivalentes, conferindo flexibilidade financeira para novos investimentos e expansão. A regulação do setor imobiliário no Brasil, que inclui normas relacionadas ao financiamento habitacional e à construção civil, também desempenha um papel crucial nas operações da Direcional. A conformidade com as diretrizes da Lei das Sociedades por Ações e as regulamentações da Comissão de Valores Mobiliários (CVM) é essencial para garantir a transparência e a governança corporativa da empresa.\n\nEventos críticos que podem impactar a Direcional incluem mudanças nas políticas governamentais que afetam o financiamento habitacional, flutuações nas taxas de juros e a dinâmica do mercado imobiliário, que pode ser influenciada por crises econômicas ou alterações nas preferências dos consumidores. A capacidade da empresa de se adaptar a essas variáveis será determinante para sua continuidade e crescimento no setor. Em um ambiente em constante mudança, a Direcional precisa não apenas monitorar as tendências do mercado, mas também inovar e ajustar suas estratégias para garantir sua posição de liderança no competitivo mercado imobiliário brasileiro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.2 bi (trimestre) | R$5.2 bi (LTM)\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.6 bi (LTM)\n- Dívida Líquida: R$0.1 bi\n- Operacional: Lançamentos totalizaram R$ 2,2 bilhões, com Vendas Líquidas de R$ 1,6 bilhão e VSO de 24%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1157800000,
+      "receita_liquida_ltm": 5200000000,
+      "ebitda_tri": null,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 230000000,
+      "lucro_liquido_ltm": 578000000,
+      "divida_liquida": 104000000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": 19.8
+    },
+    "operacionais": {
+      "descricao": "Lançamentos totalizaram R$ 2,2 bilhões, com Vendas Líquidas de R$ 1,6 bilhão e VSO de 24%.",
+      "metricas": {
+        "vendas_liquidas": 1641800000,
+        "lancamentos": 2151600000,
+        "unidades_lancadas": 6449,
+        "unidades_contratadas": 4857
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:51:29.691785Z"
+}

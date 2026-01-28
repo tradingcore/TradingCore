@@ -1,0 +1,37 @@
+{
+  "ticker": "EKTR3",
+  "codigo_cvm": "17485",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "17485_2025-09-30_ELEKTRO_REDES_SA.pdf",
+  "texto_contexto": "A Neoenergia Elektro, uma das principais concessionárias de distribuição de energia elétrica do Brasil, opera com um modelo de negócio robusto e diversificado, centrado na distribuição de energia para um amplo espectro de consumidores. Com sede em Campinas, São Paulo, a empresa atende a 228 municípios, sendo 223 localizados em São Paulo e 5 no Mato Grosso do Sul. Este posicionamento geográfico estratégico permite à Elektro não apenas consolidar sua presença em um dos estados mais desenvolvidos do país, mas também explorar oportunidades de crescimento em regiões adjacentes.\n\nO foco da Neoenergia Elektro abrange tanto o mercado cativo quanto o mercado livre, o que a habilita a atender uma variedade de segmentos, incluindo consumidores residenciais, industriais, comerciais e rurais. Essa diversidade é fundamental para a resiliência da empresa, pois permite que ela se adapte às flutuações da demanda e às necessidades específicas de cada grupo de clientes. A integração da geração distribuída (GD) em suas operações também representa um avanço significativo, alinhando-se às tendências globais de sustentabilidade e eficiência energética.\n\nOs principais indicadores de desempenho (KPIs) da empresa são cruciais para medir sua eficácia operacional e financeira. A energia injetada total e a energia distribuída são métricas que refletem a capacidade da Elektro de atender à demanda de seus consumidores, enquanto os indicadores de qualidade, como o DEC e o FEC, são essenciais para garantir a confiabilidade do serviço prestado. A empresa tem demonstrado um compromisso com a qualidade, mantendo suas métricas de interrupção abaixo dos limites regulatórios, o que é um diferencial competitivo em um setor onde a confiabilidade é um fator crítico para a satisfação do cliente.\n\nOs drivers de valor para a Neoenergia Elektro são multifacetados e incluem a expansão da base de clientes, a eficiência operacional e a gestão de perdas. A empresa investe continuamente em infraestrutura e tecnologia, buscando não apenas melhorar a qualidade do serviço, mas também otimizar seus processos internos. Os reajustes tarifários, como o recente aumento na parcela B, também desempenham um papel significativo na geração de receita, permitindo que a empresa mantenha sua saúde financeira em um ambiente de custos crescentes.\n\nEntretanto, a Neoenergia Elektro enfrenta uma série de riscos que podem impactar sua operação e desempenho financeiro. A volatilidade dos preços de energia é uma preocupação constante, assim como as mudanças na regulação setorial que podem afetar suas margens. A inadimplência dos consumidores, especialmente em tempos de crise econômica, e a concorrência crescente no mercado livre também representam desafios que a empresa deve gerenciar cuidadosamente.\n\nA estrutura de capital da Neoenergia Elektro reflete uma estratégia de financiamento voltada para a sustentabilidade e o crescimento a longo prazo. Com uma dívida líquida significativa, a maior parte dela de longo prazo, a empresa demonstra um compromisso com a estabilidade financeira, permitindo-lhe realizar investimentos estratégicos sem comprometer sua liquidez. Essa abordagem é fundamental em um setor onde os investimentos em infraestrutura são essenciais para atender à crescente demanda por energia.\n\nA governança da empresa é igualmente importante, uma vez que a regulação do setor elétrico no Brasil é complexa e rigorosa. A ANEEL, como órgão regulador, estabelece diretrizes que impactam diretamente a operação da Elektro, incluindo limites para perdas, qualidade do serviço e reajustes tarifários. A recente revisão tarifária e os ajustes previstos para o futuro são exemplos de como a regulação pode influenciar a estratégia e os resultados financeiros da empresa.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A Neoenergia Elektro opera em um ambiente onde as condições econômicas, políticas e sociais podem afetar tanto a demanda por energia quanto a capacidade de pagamento dos consumidores. Em um cenário de crescimento econômico, a empresa pode se beneficiar de uma maior demanda, enquanto em tempos de recessão, pode enfrentar desafios significativos. Assim, a capacidade da Elektro de navegar por essas dinâmicas será crucial para sua continuidade e sucesso no mercado de energia elétrica.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$2.5 bi (trimestre) | R$6.9 bi (LTM)\n- EBITDA: R$0.6 bi (trimestre) | R$2.0 bi (LTM) | Margem 24.4%\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.7 bi (LTM)\n- Capex: N/D (trimestre) | R$0.8 bi (LTM)\n- Operacional: Energia injetada total de 5.485 GWh e 3.018 mil clientes.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 2507000000,
+      "receita_liquida_ltm": 6925000000,
+      "ebitda_tri": 610000000,
+      "ebitda_ltm": 2010000000,
+      "lucro_liquido_tri": 196000000,
+      "lucro_liquido_ltm": 736000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": 773000000,
+      "margem_ebitda_pct": 24.4,
+      "margem_liquida_pct": 7.8
+    },
+    "operacionais": {
+      "descricao": "Energia injetada total de 5.485 GWh e 3.018 mil clientes.",
+      "metricas": {
+        "energia_injetada_total_gwh": 5485,
+        "energia_distribuida_total_gwh": 4990,
+        "numero_clientes_mil": 3018,
+        "dec_horas": 6.46,
+        "fec_interrupcoes": 3.56,
+        "perdas_percentuais": 6.29
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:55:21.455590Z"
+}
