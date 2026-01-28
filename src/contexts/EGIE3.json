@@ -1,0 +1,33 @@
+{
+  "ticker": "EGIE3",
+  "codigo_cvm": "17329",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "17329_2025-09-30_ENGIE_BRASIL_ENERGIA_SA.pdf",
+  "texto_contexto": "A ENGIE Brasil Energia S.A. se destaca como uma plataforma robusta de investimentos em infraestrutura de energia, operando em um cenário dinâmico e em constante evolução. Seu modelo de negócio é fundamentado na geração de energia 100% renovável, refletindo um compromisso com a sustentabilidade e a transição energética. A empresa possui um portfólio diversificado que abrange hidrelétricas, usinas eólicas, fotovoltaicas e de biomassa, totalizando uma capacidade instalada significativa, composta por um expressivo número de usinas. Essa diversidade não apenas fortalece a resiliência da ENGIE frente a flutuações de mercado, mas também a posiciona como uma líder em soluções energéticas sustentáveis.\n\nOs principais segmentos de atuação da ENGIE incluem a geração de energia elétrica, a transmissão e o trading de energia. A geração é o coração do negócio, onde a empresa se beneficia da crescente demanda por energia limpa e renovável. A transmissão, por sua vez, é crucial para garantir a eficiência e a confiabilidade do fornecimento, enquanto o trading permite à ENGIE otimizar sua posição no mercado, aproveitando oportunidades de arbitragem e gerenciando riscos associados à volatilidade dos preços de energia. Os KPIs que a empresa monitora, como a receita operacional líquida e o EBITDA ajustado, são indicadores fundamentais para avaliar sua performance e eficiência operacional, além de fornecerem uma visão clara sobre a saúde financeira da companhia.\n\nOs drivers de valor da ENGIE estão intimamente ligados à eficiência operacional e à expansão da capacidade instalada. A diversificação das fontes de energia é um pilar estratégico que não apenas mitiga riscos, mas também atende à crescente demanda por soluções energéticas sustentáveis, especialmente no contexto do mercado livre de energia. A empresa se beneficia de um ambiente onde a consciência ambiental e a busca por alternativas renováveis estão em ascensão, o que potencializa suas oportunidades de crescimento.\n\nEntretanto, a ENGIE enfrenta uma série de riscos que podem impactar sua operação e rentabilidade. A volatilidade dos preços de energia é um fator crítico, uma vez que flutuações abruptas podem afetar a margem de lucro. Além disso, mudanças nas regulamentações do setor elétrico, que são supervisionadas pela Agência Nacional de Energia Elétrica (ANEEL), podem influenciar diretamente a operação e a remuneração dos ativos de concessão da empresa. Os riscos hidrológicos, especialmente relevantes para a geração de energia das hidrelétricas, também representam um desafio, assim como a dependência de contratos de longo prazo com clientes e fornecedores, que podem limitar a flexibilidade da empresa em um mercado em transformação.\n\nA estrutura de capital da ENGIE é predominantemente composta por dívida, refletindo uma estratégia de alavancagem que visa financiar sua expansão e investimentos em infraestrutura. Essa estrutura, embora permita um crescimento acelerado, também exige uma gestão cuidadosa para garantir que a relação entre dívida e EBITDA se mantenha em níveis sustentáveis. A governança corporativa da empresa é um aspecto fundamental, pois garante a transparência e a responsabilidade nas decisões estratégicas, especialmente em um setor tão regulado e sujeito a mudanças.\n\nA regulação do setor elétrico no Brasil é um fator determinante para a operação da ENGIE. A ANEEL estabelece normas que impactam não apenas a rentabilidade, mas também a capacidade da empresa de realizar investimentos em novos projetos. Eventos críticos, como a conclusão de projetos de infraestrutura e a implementação de novas políticas energéticas e climáticas, são monitorados de perto pela empresa, pois podem influenciar a demanda por energia renovável e, consequentemente, a sua performance no mercado.\n\nA ENGIE também se comprometeu a reduzir suas emissões de CO2 em um percentual significativo até 2030, alinhando-se às metas globais de sustentabilidade e reforçando seu papel como agente de transformação no setor energético. Essa estratégia não apenas atende às exigências regulatórias, mas também responde a uma demanda crescente por práticas empresariais responsáveis e sustentáveis, que são cada vez mais valorizadas por investidores e consumidores. Em um cenário macroeconômico que pode ser afetado por fatores como a inflação, as taxas de juros e as políticas governamentais, a capacidade da ENGIE de se adaptar e inovar será crucial para manter sua posição de liderança e continuar a contribuir para um futuro energético mais sustentável.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$3.3 bi (trimestre) | R$9.4 bi (LTM)\n- EBITDA: R$1.9 bi (trimestre) | R$5.8 bi (LTM) | Margem 56.0%\n- Lucro Líquido: R$0.7 bi (trimestre) | R$2.1 bi (LTM)\n- Dívida Líquida: R$24.5 bi\n- Operacional: Venda de 10.308 GWh de energia, com 4.668 MW médios de energia vendida.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 3343000000,
+      "receita_liquida_ltm": 9442000000,
+      "ebitda_tri": 1871000000,
+      "ebitda_ltm": 5778000000,
+      "lucro_liquido_tri": 731000000,
+      "lucro_liquido_ltm": 2119000000,
+      "divida_liquida": 24534000000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 56.0,
+      "margem_liquida_pct": 21.9
+    },
+    "operacionais": {
+      "descricao": "Venda de 10.308 GWh de energia, com 4.668 MW médios de energia vendida.",
+      "metricas": {
+        "energia_vendida_mwh": 10308000,
+        "clientes": null
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:03:53.475656Z"
+}

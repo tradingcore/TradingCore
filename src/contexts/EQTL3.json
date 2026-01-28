@@ -1,0 +1,33 @@
+{
+  "ticker": "EQTL3",
+  "codigo_cvm": "20010",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20010_2025-09-30_EQUATORIAL_SA.pdf",
+  "texto_contexto": "A Equatorial Energia S.A. se posiciona como uma holding multi-utilities, atuando em um amplo espectro de segmentos que incluem Distribuição, Transmissão, Geração, Comercialização, Serviços, Saneamento e Telecomunicações. Este modelo de negócio é fundamentado na oferta de serviços essenciais, com um foco claro na eficiência operacional e na expansão da base de clientes. A empresa se destaca pela sua capacidade de integrar diferentes áreas de atuação, o que não apenas diversifica suas fontes de receita, mas também proporciona sinergias que podem resultar em uma operação mais eficiente e resiliente.\n\nOs principais indicadores de desempenho da Equatorial, como EBITDA ajustado, margem bruta e índices de qualidade de serviço, são cruciais para a avaliação de sua performance. A Duração Equivalente de Interrupção (DEC) e a Frequência Equivalente de Interrupção (FEC) são métricas que refletem diretamente a qualidade do serviço prestado, sendo fundamentais para a satisfação do cliente e a reputação da empresa no mercado. A gestão eficaz desses KPIs é um reflexo do compromisso da Equatorial com a excelência operacional e a busca contínua por melhorias.\n\nOs drivers de valor da Equatorial estão intimamente ligados ao crescimento da demanda por energia, que é impulsionado por fatores como urbanização e aumento da atividade econômica. A eficiência na gestão de custos é outro aspecto crítico, permitindo que a empresa mantenha margens saudáveis mesmo em um ambiente competitivo. Além disso, a capacidade de investimento em infraestrutura é vital para a expansão e a melhoria da qualidade dos serviços, permitindo que a Equatorial não apenas atenda à demanda crescente, mas também se posicione como uma líder em inovação no setor.\n\nEntretanto, a Equatorial enfrenta uma série de riscos que podem impactar sua operação e resultados financeiros. Flutuações nas tarifas regulatórias e mudanças na legislação setorial são fatores que podem afetar a previsibilidade das receitas. A dependência de financiamento para projetos de expansão também representa um risco, especialmente em um cenário de incertezas econômicas. Além disso, variações climáticas podem impactar a geração de energia, especialmente em segmentos que dependem de fontes renováveis.\n\nA estrutura de capital da Equatorial é composta por uma combinação de dívida e capital próprio, com uma relação dívida líquida/EBITDA que reflete um equilíbrio cuidadoso entre alavancagem e solidez financeira. A empresa tem se empenhado em alongar o prazo médio de sua dívida, o que contribui para uma gestão financeira mais estável e previsível. Essa estratégia é fundamental para garantir que a Equatorial possa financiar suas operações e projetos de expansão sem comprometer sua saúde financeira.\n\nA governança corporativa da Equatorial é um aspecto que merece destaque, uma vez que a empresa opera em um setor altamente regulado. A supervisão de órgãos reguladores, como a ANEEL, é um fator crítico que influencia as tarifas e a qualidade do serviço. A transparência nas operações e a conformidade com as normas regulatórias são essenciais para a manutenção da confiança dos investidores e stakeholders.\n\nA competição no setor de energia é intensa, com diversas empresas disputando participação de mercado em um ambiente regulado. A capacidade da Equatorial de se diferenciar por meio de inovações tecnológicas e melhorias na qualidade do serviço é um diferencial competitivo importante. Além disso, a empresa tem se destacado em iniciativas de sustentabilidade, refletindo seu compromisso com práticas ESG (ambientais, sociais e de governança). Essas iniciativas não apenas melhoram a imagem da empresa, mas também podem facilitar o acesso a capital, uma vez que investidores estão cada vez mais atentos a critérios de sustentabilidade em suas decisões.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A Equatorial, como muitas empresas do setor, é impactada por variáveis econômicas, como taxas de juros, inflação e crescimento do PIB. A capacidade da empresa de se adaptar a essas condições e de manter sua trajetória de crescimento será fundamental para seu sucesso a longo prazo. Em um cenário de incertezas, a resiliência e a capacidade de inovação da Equatorial Energia se destacam como elementos-chave para enfrentar os desafios e aproveitar as oportunidades que surgem no dinâmico setor de utilities.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$14.1 bi (trimestre) | R$127.8 bi (LTM)\n- EBITDA: R$3.5 bi (trimestre) | R$12.8 bi (LTM) | Margem 24.6%\n- Lucro Líquido: R$0.8 bi (trimestre) | R$8.3 bi (LTM)\n- Dívida Líquida: R$46.1 bi\n- Capex: R$3.0 bi (trimestre) | N/D (LTM)\n- Operacional: Crescimento de 2,6% no volume de energia faturada e compensada, perdas totais abaixo do nível regulatório pelo oitavo trimestre consecutivo.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 14145000000,
+      "receita_liquida_ltm": 127850000000,
+      "ebitda_tri": 3478000000,
+      "ebitda_ltm": 12785000000,
+      "lucro_liquido_tri": 830000000,
+      "lucro_liquido_ltm": 8300000000,
+      "divida_liquida": 46139000000,
+      "divida_bruta": null,
+      "capex_tri": 3031000000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 24.6,
+      "margem_liquida_pct": 5.9
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 2,6% no volume de energia faturada e compensada, perdas totais abaixo do nível regulatório pelo oitavo trimestre consecutivo.",
+      "metricas": {
+        "volume_energia_faturada": null,
+        "clientes": null
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:06:00.985222Z"
+}

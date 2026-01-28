@@ -1,0 +1,34 @@
+{
+  "ticker": "ETER3",
+  "codigo_cvm": "5762",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "5762_2025-09-30_ETERNIT_SA.pdf",
+  "texto_contexto": "A Eternit S.A. é uma proeminente empresa brasileira inserida no dinâmico setor da construção civil, destacando-se pela produção de materiais cimentícios, com foco em telhas de fibrocimento e soluções para construção industrializada. O modelo de negócio da Eternit é fundamentado na fabricação e comercialização de produtos que atendem às demandas do mercado de construção, priorizando a inovação e a eficiência operacional como pilares centrais de sua estratégia. A companhia se divide em dois segmentos principais: o de fibrocimento, que abrange telhas e placas cimentícias, e o de construção industrializada, que oferece produtos personalizados voltados para aplicações em paredes e pisos.\n\nOs drivers que impulsionam o desempenho da Eternit são variados e incluem a crescente demanda por soluções de construção sustentáveis, a eficiência na gestão de custos e a capacidade de adaptação às flutuações do mercado. O segmento de construção industrializada, em particular, tem se mostrado um motor de crescimento significativo, refletindo uma tendência de valorização de produtos que oferecem maior rapidez e eficiência na execução de obras. A empresa monitora de perto seus principais indicadores de desempenho, como receita líquida, lucro bruto, EBITDA e margem líquida, que são fundamentais para avaliar sua saúde financeira e a eficácia de suas operações.\n\nEntretanto, a Eternit não está isenta de riscos. A volatilidade do mercado de construção civil, influenciada por fatores econômicos como taxas de juros elevadas e o endividamento das famílias, pode impactar diretamente suas vendas e, consequentemente, sua rentabilidade. Além disso, a empresa enfrenta desafios regulatórios, especialmente no que diz respeito ao uso de amianto, material que tem sido objeto de crescente restrição legislativa devido a preocupações ambientais e de saúde. A recente aprovação de leis que estabelecem prazos para a descontinuação das atividades relacionadas ao amianto representa um ponto crítico que pode afetar tanto a operação quanto a estrutura de capital da companhia, exigindo uma adaptação estratégica para mitigar os impactos dessa transição.\n\nA estrutura de capital da Eternit é caracterizada por um elevado free float, com a maior parte das ações distribuídas entre diversos acionistas, sem um controlador definido. Essa configuração resulta em uma governança corporativa que busca equilibrar os interesses de um amplo espectro de investidores, promovendo práticas de transparência e responsabilidade. A gestão do endividamento líquido, embora tenha mostrado sinais de leve redução, continua a ser um aspecto a ser monitorado, especialmente em um cenário de juros altos e incertezas econômicas que permeiam o ambiente de negócios. A eficiência na gestão financeira e a busca por sinergias operacionais são cruciais para a sustentabilidade do negócio a longo prazo, permitindo que a Eternit navegue por um mercado em constante transformação.\n\nA competição no setor de construção civil é intensa, com diversas empresas disputando participação de mercado em um ambiente que exige inovação contínua e adaptação às novas demandas dos consumidores. A capacidade da Eternit de se diferenciar por meio de produtos de qualidade e soluções inovadoras será fundamental para manter sua posição competitiva. Além disso, a sensibilidade macroeconômica, incluindo a evolução da economia brasileira, políticas governamentais e tendências de mercado, desempenha um papel significativo na performance da empresa. A compreensão dessas variáveis é essencial para que a Eternit possa planejar suas estratégias futuras e garantir um crescimento sustentável em um cenário desafiador.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.3 bi (trimestre) | R$0.9 bi (LTM)\n- EBITDA: R$0.0 bi (trimestre) | R$0.1 bi (LTM) | Margem 11.0%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Dívida: R$0.1 bi (líquida) | R$0.2 bi (bruta)\n- Operacional: Vendas de telhas de fibrocimento totalizaram 171,5 mil toneladas, com queda de 3,3%. Vendas de construção industrializada cresceram 28,6%, totalizando 8,7 mil toneladas. Vendas de mineral crisotila alcançaram 53,3 mil toneladas, com aumento de 5,8%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 319320000,
+      "receita_liquida_ltm": 882858000,
+      "ebitda_tri": 34976000,
+      "ebitda_ltm": 80809000,
+      "lucro_liquido_tri": 18978000,
+      "lucro_liquido_ltm": 38842000,
+      "divida_liquida": 144305000,
+      "divida_bruta": 180024000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 11.0,
+      "margem_liquida_pct": 5.9
+    },
+    "operacionais": {
+      "descricao": "Vendas de telhas de fibrocimento totalizaram 171,5 mil toneladas, com queda de 3,3%. Vendas de construção industrializada cresceram 28,6%, totalizando 8,7 mil toneladas. Vendas de mineral crisotila alcançaram 53,3 mil toneladas, com aumento de 5,8%.",
+      "metricas": {
+        "vendas_telhas_fibrocimento_t": 171500,
+        "vendas_construcao_industrializada_t": 8700,
+        "vendas_mineral_crisotila_t": 53300
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:07:02.754455Z"
+}

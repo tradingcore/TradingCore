@@ -1,0 +1,33 @@
+{
+  "ticker": "ENEV3",
+  "codigo_cvm": "21237",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "21237_2025-09-30_ENEVA_SA.pdf",
+  "texto_contexto": "A Eneva S.A. se destaca como uma empresa integrada de energia no Brasil, operando em um setor que é fundamental para o desenvolvimento econômico e social do país. Seu modelo de negócio é diversificado, englobando a geração e comercialização de energia elétrica, além da exploração e produção de hidrocarbonetos. A companhia possui uma estrutura robusta, com usinas térmicas que utilizam gás, carvão e óleo, e atua tanto na comercialização de gás natural em malha (On-Grid) quanto fora dela (Off-Grid). Essa integração entre geração e comercialização permite à Eneva não apenas maximizar a eficiência operacional, mas também diversificar suas fontes de receita, o que é crucial em um mercado tão volátil.\n\nOs segmentos da Eneva são bem definidos, abrangendo Geração Térmica a Gás, Geração a Carvão, Geração a Óleo, Comercialização de Gás e Comercialização de Energia. Cada um desses segmentos apresenta características e desafios próprios, mas todos estão interligados pela estratégia de maximização da eficiência e pela busca de novas oportunidades de crescimento. A geração térmica a gás, por exemplo, é um dos pilares da companhia, beneficiando-se da crescente demanda por energia limpa e da transição energética em curso no Brasil e no mundo. A diversificação em carvão e óleo, embora menos alinhada com as tendências de sustentabilidade, ainda representa uma parte significativa da matriz energética da empresa.\n\nOs principais indicadores de desempenho da Eneva, como EBITDA, receita operacional líquida e margem EBITDA, são reflexos da eficácia de sua operação e da gestão estratégica de seus ativos. O EBITDA consolidado, que tem mostrado crescimento significativo, é um indicativo da robustez da performance operacional e da contribuição dos novos modelos de negócios de gás. A eficiência operacional é um dos principais drivers de valor da empresa, assim como a expansão da capacidade de liquefação de gás, que se torna cada vez mais relevante em um cenário de crescente demanda por gás natural.\n\nEntretanto, a Eneva enfrenta riscos que podem impactar seu desempenho. A volatilidade dos preços de energia e gás é uma preocupação constante, assim como a dependência de regulamentações governamentais que podem afetar a operação e a rentabilidade da empresa. Mudanças nas políticas energéticas e ambientais são fatores que exigem uma vigilância constante, uma vez que podem alterar a dinâmica do mercado e a competitividade da Eneva. Além disso, a estrutura de capital da empresa, caracterizada por um nível de alavancagem financeira, demanda uma gestão cuidadosa para garantir a sustentabilidade financeira a longo prazo. A busca por otimização da estrutura de capital, por meio de operações de liability management e captações estratégicas, é uma estratégia adotada para mitigar esses riscos.\n\nA governança corporativa da Eneva é um aspecto fundamental para sua operação, pois garante transparência e responsabilidade nas decisões estratégicas. A empresa está atenta às diretrizes regulatórias do setor elétrico brasileiro, que incluem leilões de reserva de capacidade e contratos regulados. Esses fatores são críticos para a operação da Eneva, influenciando diretamente suas receitas e a viabilidade de novos projetos. Eventos como a antecipação de contratos de reserva de capacidade e a conclusão de aquisições de ativos têm um impacto significativo no desempenho financeiro e na estratégia de crescimento da empresa.\n\nA competição no setor de energia é intensa, com diversas empresas disputando participação de mercado em um ambiente regulatório complexo. A Eneva precisa não apenas se destacar em termos de eficiência e inovação, mas também estar atenta às movimentações de seus concorrentes e às mudanças nas preferências dos consumidores. A sensibilidade macroeconômica, incluindo fatores como crescimento econômico, inflação e políticas governamentais, também desempenha um papel crucial na performance da empresa. Em um cenário de incertezas econômicas, a capacidade da Eneva de se adaptar e responder rapidamente às mudanças no ambiente externo será determinante para sua continuidade e expansão no mercado energético brasileiro. \n\nDessa forma, a Eneva se posiciona como uma empresa resiliente, com um modelo de negócio integrado que busca não apenas atender à demanda energética do Brasil, mas também se adaptar às novas realidades do setor, sempre em busca de inovação e eficiência. A combinação de uma governança sólida, uma estrutura de capital otimizada e uma estratégia de diversificação de receitas coloca a Eneva em uma posição favorável para enfrentar os desafios do futuro e aproveitar as oportunidades que surgem em um mercado em constante evolução.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$4.4 bi (trimestre) | R$12.4 bi (LTM)\n- EBITDA: R$1.8 bi (trimestre) | R$5.0 bi (LTM) | Margem 41.2%\n- Lucro Líquido: R$0.4 bi (trimestre) | R$1.1 bi (LTM)\n- Dívida Líquida: R$15.5 bi\n- Capex: R$1.6 bi (trimestre) | R$4.0 bi (LTM)\n- Operacional: Produção de 0,69 Bi m³ de gás natural no trimestre, com geração de 1.066 GWh na UTE Parnaíba I.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 4428000000,
+      "receita_liquida_ltm": 12365000000,
+      "ebitda_tri": 1822900000,
+      "ebitda_ltm": 5019100000,
+      "lucro_liquido_tri": 351700000,
+      "lucro_liquido_ltm": 1100600000,
+      "divida_liquida": 15500000000,
+      "divida_bruta": null,
+      "capex_tri": 1566600000,
+      "capex_ltm": 4028200000,
+      "margem_ebitda_pct": 41.2,
+      "margem_liquida_pct": 7.9
+    },
+    "operacionais": {
+      "descricao": "Produção de 0,69 Bi m³ de gás natural no trimestre, com geração de 1.066 GWh na UTE Parnaíba I.",
+      "metricas": {
+        "producao_gas": 690000000,
+        "geracao_gwh": 1066
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:02:32.869613Z"
+}

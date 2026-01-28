@@ -1,0 +1,36 @@
+{
+  "ticker": "ENJU3",
+  "codigo_cvm": "25259",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25259_2025-09-30_ENJOEI_SA.pdf",
+  "texto_contexto": "A Enjoei (ENJU3) se destaca no cenário do e-commerce brasileiro como uma plataforma inovadora que combina a compra e venda de produtos novos e usados, operando sob um modelo de negócio que integra marketplace e serviços de pagamento. Essa abordagem permite que a empresa atenda a um público diversificado, oferecendo uma experiência de compra e venda que vai além do simples comércio eletrônico, promovendo a sustentabilidade e a economia circular ao incentivar a reutilização de produtos.\n\nO portfólio da Enjoei é segmentado em duas plataformas principais: a primeira, Enjoei, foca na venda de produtos de segunda mão, atraindo consumidores que buscam alternativas mais acessíveis e sustentáveis. A segunda plataforma, Elo7, é voltada para produtos artesanais e personalizados, capturando um nicho de mercado que valoriza a originalidade e a exclusividade. Essa segmentação permite à Enjoei não apenas diversificar sua oferta, mas também criar comunidades em torno de interesses específicos, aumentando o engajamento dos usuários.\n\nOs principais indicadores de desempenho da Enjoei, como receita líquida, lucro bruto, margem bruta, EBITDA ajustado, GMV (Gross Merchandise Volume) e taxa de conversão de transações, são fundamentais para avaliar a saúde financeira e a eficiência operacional da empresa. O GMV, em particular, é um reflexo direto da atividade na plataforma, representando o valor total das transações realizadas, enquanto a taxa de conversão indica a eficácia das estratégias de marketing e da experiência do usuário em transformar visitantes em compradores.\n\nOs drivers de valor da Enjoei são multifacetados e incluem a eficiência na gestão de incentivos e marketing, que visa atrair tanto compradores quanto vendedores para a plataforma. A melhoria contínua da experiência do usuário é crucial, pois uma interface intuitiva e um processo de compra simplificado podem aumentar a satisfação do cliente e, consequentemente, a fidelização. A expansão da base de usuários ativos, tanto do lado da oferta quanto da demanda, é um objetivo constante, assim como a inovação em tecnologia, que se manifesta no lançamento de novos arranjos de pagamento e ferramentas de atendimento ao cliente, essenciais para manter a competitividade em um mercado em rápida evolução.\n\nEntretanto, a Enjoei enfrenta uma série de riscos que podem impactar sua operação. A dependência de um ambiente competitivo no e-commerce é um desafio constante, onde a empresa deve se diferenciar em um mercado saturado. Flutuações na demanda do consumidor, influenciadas por fatores econômicos e tendências de consumo, podem afetar diretamente as vendas. Além disso, a empresa está sujeita a riscos regulatórios relacionados a transações financeiras e à proteção do consumidor, o que exige uma vigilância contínua para garantir a conformidade com as normas vigentes. A gestão de custos operacionais e publicitários também representa um desafio, pois a necessidade de investimento em marketing e tecnologia deve ser equilibrada com a busca por rentabilidade.\n\nA estrutura de capital da Enjoei é caracterizada por um capital social robusto, mas com prejuízos acumulados significativos, o que reflete a necessidade de um equilíbrio delicado entre crescimento e rentabilidade. A empresa deve considerar cuidadosamente suas estratégias de captação de recursos, especialmente em um ambiente onde a confiança dos investidores pode ser influenciada por resultados financeiros e pela capacidade de execução de sua proposta de valor.\n\nA governança da Enjoei é um aspecto crucial para sua operação, pois a transparência e a responsabilidade são fundamentais para construir a confiança dos stakeholders. A empresa deve estar atenta às regulamentações do setor de e-commerce e serviços financeiros, que incluem normas de proteção ao consumidor e prevenção à lavagem de dinheiro, garantindo que suas práticas estejam em conformidade com as exigências legais.\n\nA competição no setor de e-commerce é intensa, com diversos players buscando capturar a atenção dos consumidores. A Enjoei deve se posicionar estrategicamente, não apenas em relação a outros marketplaces, mas também em relação a plataformas de venda direta e redes sociais que estão cada vez mais integradas ao comércio eletrônico. A sensibilidade macroeconômica também desempenha um papel importante, pois mudanças nas condições econômicas, como inflação, taxa de desemprego e confiança do consumidor, podem impactar diretamente o comportamento de compra e a disposição dos consumidores em gastar.\n\nEm suma, a Enjoei se encontra em um cenário dinâmico e desafiador, onde a inovação, a adaptação e a eficiência operacional são essenciais para garantir seu crescimento sustentável e sua relevância no mercado de e-commerce. A capacidade de navegar por esses desafios, enquanto continua a oferecer valor aos seus usuários, será determinante para seu sucesso a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.1 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.0 bi (trimestre) | N/D (LTM)\n- Operacional: A receita líquida atingiu R$ 70,1 milhões, com crescimento de 2,9% em relação ao ano anterior. O EBITDA ajustado foi de R$ 5,9 milhões, representando um aumento de 64% t/t.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 70075000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 5929000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": null,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "A receita líquida atingiu R$ 70,1 milhões, com crescimento de 2,9% em relação ao ano anterior. O EBITDA ajustado foi de R$ 5,9 milhões, representando um aumento de 64% t/t.",
+      "metricas": {
+        "gmv": 411109000,
+        "itens_transacionados": 2250000,
+        "compradores_ativos": 2100000,
+        "vendedores_ativos": null,
+        "inventario": 17100000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:05:05.719964Z"
+}
