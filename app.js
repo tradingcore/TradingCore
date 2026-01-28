@@ -1613,11 +1613,63 @@ let activeSetorFilter = "all";
 // Tickers que têm notícias disponíveis
 let tickersWithNews = new Set();
 
+// Data selecionada para notícias no heatmap
+let heatmapSelectedDate = null; // Inicializado em loadHeatmap()
+
+// Funções de navegação de data do heatmap
+const changeHeatmapDate = async (direction) => {
+  const current = new Date(heatmapSelectedDate + "T12:00:00");
+  current.setDate(current.getDate() + direction);
+  heatmapSelectedDate = current.toISOString().split("T")[0];
+  
+  // Recarregar tickers com notícias para a nova data
+  await loadTickersWithNews();
+  
+  // Re-renderizar o heatmap
+  renderHeatmap();
+};
+
+const updateHeatmapDateDisplay = () => {
+  const display = document.getElementById("heatmap-date-display");
+  const hint = document.getElementById("heatmap-date-hint");
+  const updated = document.getElementById("heatmap-updated");
+  const today = getTodayDateStr();
+  
+  if (display) {
+    if (heatmapSelectedDate === today) {
+      display.textContent = "Hoje";
+    } else {
+      const yesterday = new Date();
+      yesterday.setDate(yesterday.getDate() - 1);
+      const yesterdayStr = yesterday.toISOString().split("T")[0];
+      
+      if (heatmapSelectedDate === yesterdayStr) {
+        display.textContent = "Ontem";
+      } else {
+        display.textContent = formatDateBR(heatmapSelectedDate);
+      }
+    }
+  }
+  
+  if (hint) {
+    hint.textContent = `${tickersWithNews.size} ações com notícias`;
+  }
+  
+  // Atualizar o texto "Atualizado" para mostrar a data das notícias
+  if (updated) {
+    updated.textContent = `Notícias de: ${formatDateBR(heatmapSelectedDate)}`;
+  }
+};
+
 const loadHeatmap = async () => {
   const container = document.getElementById("heatmap-container");
   const loading = document.getElementById("heatmap-loading");
   const empty = document.getElementById("heatmap-empty");
-  const updated = document.getElementById("heatmap-updated");
+  
+  // Inicializar data selecionada como hoje (se não estiver definida)
+  if (!heatmapSelectedDate) {
+    heatmapSelectedDate = getTodayDateStr();
+  }
   
   // Mostrar loading
   if (loading) loading.classList.remove("hidden");
@@ -1636,13 +1688,7 @@ const loadHeatmap = async () => {
     const data = doc.data();
     heatmapData = data.data;
     
-    // Atualizar timestamp
-    if (updated && data.updatedAt) {
-      const date = new Date(data.updatedAt);
-      updated.textContent = `Atualizado: ${date.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}`;
-    }
-    
-    // Buscar quais tickers têm notícias hoje
+    // Buscar quais tickers têm notícias para a data selecionada
     await loadTickersWithNews();
     
     // Renderizar filtro de setores
@@ -1664,32 +1710,22 @@ const loadTickersWithNews = async () => {
   tickersWithNews.clear();
   
   try {
-    // Data de hoje
-    const hoje = new Date().toISOString().split("T")[0];
+    // Usar a data selecionada (não mais "hoje" fixo)
+    const dateStr = heatmapSelectedDate || getTodayDateStr();
     
-    // Buscar subcoleção de tickers em news_global para hoje
-    const tickersRef = db.collection("news_global").doc(hoje).collection("tickers");
+    // Buscar subcoleção de tickers em news_global para a data selecionada
+    const tickersRef = db.collection("news_global").doc(dateStr).collection("tickers");
     const snapshot = await tickersRef.get();
     
     snapshot.forEach((doc) => {
       tickersWithNews.add(doc.id);
     });
     
-    console.log(`📰 ${tickersWithNews.size} ações com notícias hoje`);
+    console.log(`📰 ${tickersWithNews.size} ações com notícias em ${dateStr}`);
     
-    // Se não tem notícias hoje, tentar ontem
-    if (tickersWithNews.size === 0) {
-      const ontem = new Date();
-      ontem.setDate(ontem.getDate() - 1);
-      const ontemStr = ontem.toISOString().split("T")[0];
-      
-      const snapshotOntem = await db.collection("news_global").doc(ontemStr).collection("tickers").get();
-      snapshotOntem.forEach((doc) => {
-        tickersWithNews.add(doc.id);
-      });
-      
-      console.log(`📰 ${tickersWithNews.size} ações com notícias ontem`);
-    }
+    // Atualizar display de data
+    updateHeatmapDateDisplay();
+    
   } catch (error) {
     console.error("Erro ao carregar tickers com notícias:", error);
   }
@@ -1896,32 +1932,20 @@ const showTickerNewsModal = async (ticker, price, change) => {
   if (emptyEl) emptyEl.classList.add("hidden");
   if (sentimentEl) sentimentEl.innerHTML = `<span class="sentiment-emoji">⏳</span><span class="sentiment-text">Carregando...</span>`;
   
-  // Buscar notícias do Firestore
+  // Buscar notícias do Firestore para a data selecionada no heatmap
   try {
-    const hoje = new Date().toLocaleDateString("en-CA"); // YYYY-MM-DD
-    const docRef = db.collection("news_global").doc(hoje).collection("tickers").doc(ticker);
+    const dateStr = heatmapSelectedDate || getTodayDateStr();
+    const docRef = db.collection("news_global").doc(dateStr).collection("tickers").doc(ticker);
     const doc = await docRef.get();
     
     if (loadingEl) loadingEl.style.display = "none";
     
     if (!doc.exists) {
-      // Tentar dia anterior
-      const ontem = new Date();
-      ontem.setDate(ontem.getDate() - 1);
-      const ontemStr = ontem.toLocaleDateString("en-CA");
-      
-      const docOntem = await db.collection("news_global").doc(ontemStr).collection("tickers").doc(ticker).get();
-      
-      if (!docOntem.exists) {
-        if (emptyEl) emptyEl.classList.remove("hidden");
-        return;
-      }
-      
-      renderTickerNewsModal(docOntem.data(), ontemStr);
+      if (emptyEl) emptyEl.classList.remove("hidden");
       return;
     }
     
-    renderTickerNewsModal(doc.data(), hoje);
+    renderTickerNewsModal(doc.data(), dateStr);
     
   } catch (error) {
     console.error("Erro ao buscar notícias do ticker:", error);
@@ -2006,6 +2030,10 @@ if (tickerNewsModalOverlay) {
 if (tickerNewsModalClose) {
   tickerNewsModalClose.addEventListener("click", hideTickerNewsModal);
 }
+
+// Event listeners para navegação de data do heatmap
+document.getElementById("heatmap-date-prev")?.addEventListener("click", () => changeHeatmapDate(-1));
+document.getElementById("heatmap-date-next")?.addEventListener("click", () => changeHeatmapDate(1));
 
 // Event listener para clique nos itens do heatmap (delegação)
 document.addEventListener("click", (e) => {

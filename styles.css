@@ -1819,6 +1819,53 @@ select:focus {
   border-top: 1px solid var(--border);
 }
 
+/* Seletor de Data do Heatmap */
+.heatmap-date-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px;
+}
+
+.heatmap-date-btn {
+  background: var(--surface-light);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.heatmap-date-btn:hover {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.heatmap-date-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.heatmap-date-display {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  min-width: 100px;
+  text-align: center;
+}
+
+.heatmap-date-hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 0 12px 12px;
+  margin: 0;
+}
+
 /* Ação sem notícias no mapa */
 .heatmap-item--no-news {
   opacity: 0.4;
