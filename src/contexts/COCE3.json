@@ -1,0 +1,33 @@
+{
+  "ticker": "COCE3",
+  "codigo_cvm": "14869",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "14869_2025-09-30_CIA_ENERG_CEARA_-_COELCE.pdf",
+  "texto_contexto": "A Enel Distribuição Ceará, conhecida como Coelce (COCE3), é uma das principais empresas do setor de distribuição de energia elétrica no Brasil, com uma atuação consolidada no Estado do Ceará. A empresa é responsável pela distribuição de energia em 184 municípios, atendendo a uma vasta base de aproximadamente 4,4 milhões de consumidores, que abrange diferentes segmentos, incluindo residenciais, comerciais, industriais e o setor público. Além disso, a Coelce tem visto um crescimento no número de clientes no mercado livre, o que demonstra sua capacidade de adaptação às novas dinâmicas do setor elétrico.\n\nO modelo de negócio da Coelce é centrado na entrega eficiente de energia elétrica, com um forte compromisso com a sustentabilidade e a melhoria contínua da qualidade do serviço prestado. A empresa investe em inovações tecnológicas e na digitalização de sua rede, buscando não apenas aumentar a eficiência operacional, mas também atender às crescentes demandas por serviços mais sustentáveis e responsivos. Os principais indicadores de desempenho, como a receita operacional líquida, EBITDA e a taxa de perdas de energia, são monitorados de perto para garantir que a empresa mantenha sua competitividade e rentabilidade em um ambiente regulatório desafiador.\n\nOs drivers de valor da Coelce são multifacetados e incluem a eficiência operacional, que é crucial para a redução de custos e aumento da margem EBITDA, além da capacidade de adaptação às mudanças regulatórias e de mercado. A empresa também se destaca na implementação de investimentos em infraestrutura, que são fundamentais para garantir a qualidade do fornecimento e a satisfação do cliente. A Duração Equivalente de Interrupção por Unidade Consumidora (DEC) e a Frequência Equivalente de Interrupção por Unidade Consumidora (FEC) são métricas que a Coelce utiliza para avaliar a qualidade do serviço, refletindo seu compromisso com a excelência no atendimento.\n\nEntretanto, a Coelce enfrenta uma série de riscos que podem impactar sua operação e desempenho financeiro. A volatilidade dos preços de energia é um fator crítico, uma vez que pode afetar tanto a receita quanto os custos operacionais. Além disso, mudanças nas regulamentações do setor elétrico, que são frequentemente influenciadas por políticas governamentais e pela atuação da Agência Nacional de Energia Elétrica (ANEEL), podem ter um impacto direto nas tarifas e na lucratividade da empresa. A estrutura de capital da Coelce é caracterizada por uma dívida bruta significativa, que, embora proporcione recursos para investimentos, também impõe desafios em termos de gestão financeira, especialmente em um cenário de altas taxas de juros.\n\nA governança corporativa da Coelce é um aspecto essencial para sua operação, refletindo um compromisso com a transparência e a responsabilidade social. A empresa está sujeita a uma regulação rigorosa, com a ANEEL supervisionando não apenas as tarifas, mas também a qualidade do serviço prestado. Os reajustes tarifários anuais são um componente crítico da estratégia financeira da empresa, impactando diretamente sua receita e, consequentemente, sua capacidade de investimento e crescimento.\n\nA competição no setor de distribuição de energia elétrica é intensa, especialmente com a migração de consumidores para o mercado livre, que representa um desafio adicional para a Coelce na manutenção de sua base de clientes. A empresa tem buscado se diferenciar por meio de programas de eficiência energética e iniciativas de sustentabilidade, alinhadas com as diretrizes da Agenda 2030 da ONU. Essas ações não apenas visam melhorar a performance em indicadores sociais e ambientais, mas também reforçam a imagem da Coelce como uma empresa responsável e comprometida com o desenvolvimento sustentável.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A economia brasileira, com suas flutuações e incertezas, pode impactar a demanda por energia e, consequentemente, a performance da Coelce. Fatores como crescimento econômico, inflação e políticas públicas são determinantes que influenciam tanto a operação quanto a estratégia de longo prazo da empresa. Em um cenário em constante mudança, a Coelce se posiciona como uma empresa resiliente, buscando não apenas atender às necessidades de seus consumidores, mas também contribuir para um futuro mais sustentável e eficiente no setor elétrico.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$2.4 bi (trimestre) | R$6.6 bi (LTM)\n- EBITDA: R$0.5 bi (trimestre) | R$1.4 bi (LTM) | Margem 19.6%\n- Lucro Líquido: R$-0.0 bi (trimestre) | R$0.9 bi (LTM)\n- Capex: R$0.5 bi (trimestre) | R$1.3 bi (LTM)\n- Operacional: Venda e transporte de energia totalizaram 3.433 GWh no trimestre, com 4.379.159 consumidores efetivos faturados.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 2350053000,
+      "receita_liquida_ltm": 6557998000,
+      "ebitda_tri": 459985000,
+      "ebitda_ltm": 1445185000,
+      "lucro_liquido_tri": -25606000,
+      "lucro_liquido_ltm": 918700000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": 516915000,
+      "capex_ltm": 1296832000,
+      "margem_ebitda_pct": 19.57,
+      "margem_liquida_pct": -1.09
+    },
+    "operacionais": {
+      "descricao": "Venda e transporte de energia totalizaram 3.433 GWh no trimestre, com 4.379.159 consumidores efetivos faturados.",
+      "metricas": {
+        "volume_energia_venda_transporte": 3433,
+        "numero_consumidores": 4379159
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:26:55.014624Z"
+}

@@ -1,0 +1,34 @@
+{
+  "ticker": "CEEB3",
+  "codigo_cvm": "14524",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "14524_2025-09-30_CIA_DE_ELETRICIDADE_DO_ESTADO_DA_BAHIA_-_COELBA.pdf",
+  "texto_contexto": "A Neoenergia Coelba, uma das principais distribuidoras de energia elétrica do Brasil, opera predominantemente na Bahia, abrangendo a vasta maioria dos municípios do estado, além de algumas localidades em Alagoas e Tocantins. O modelo de negócio da empresa é centrado na distribuição de energia elétrica, atendendo a um portfólio diversificado de aproximadamente 6,9 milhões de consumidores, que inclui residências, estabelecimentos comerciais e indústrias. Nos últimos anos, a companhia tem direcionado esforços para expandir sua atuação em geração distribuída, uma tendência crescente no setor elétrico que visa proporcionar maior autonomia e eficiência energética aos consumidores.\n\nOs principais indicadores de desempenho da Neoenergia Coelba refletem sua capacidade operacional e eficiência. A energia injetada total e a energia distribuída são métricas fundamentais que demonstram a eficácia da empresa em atender à demanda de seus clientes. Além disso, a qualidade do serviço prestado é monitorada por meio de indicadores como o DEC (Duração Equivalente de Interrupção) e o FEC (Frequência de Interrupção), que estão em conformidade com os limites regulatórios estabelecidos. O EBITDA, um driver de valor significativo, é um reflexo da eficiência operacional da empresa e de sua capacidade de gerar lucro antes de juros, impostos, depreciação e amortização, evidenciando a saúde financeira da companhia.\n\nOs principais drivers de valor da Neoenergia Coelba incluem a expansão da rede elétrica, que é essencial para atender à crescente demanda por energia na região, e a eficiência na gestão de perdas e inadimplência, que impactam diretamente a rentabilidade da empresa. A companhia tem investido substancialmente em capex, focando na melhoria da infraestrutura e na qualidade dos serviços prestados, o que é crucial para manter a competitividade em um mercado em constante evolução. A estrutura de capital da empresa é caracterizada por uma dívida líquida significativa, com a maior parte dessa dívida sendo de longo prazo, o que demonstra uma estratégia de financiamento voltada para investimentos sustentáveis e de longo prazo, alinhada com as necessidades de expansão e modernização da rede elétrica.\n\nA governança corporativa da Neoenergia Coelba é estruturada para garantir a conformidade com as normas regulatórias e a transparência nas operações. A regulação do setor elétrico é um fator crítico que influencia diretamente a operação da empresa, uma vez que ela deve cumprir normas estabelecidas pela ANEEL, incluindo limites para perdas de energia e indicadores de qualidade do serviço. A empresa também enfrenta riscos associados a variações nas tarifas de energia, mudanças nas políticas governamentais e a necessidade de investimentos contínuos para atender à demanda crescente e às exigências regulatórias. Eventos críticos, como revisões tarifárias e a implementação de programas de eletrificação rural, impactam diretamente a operação e a estratégia da companhia, refletindo sua adaptação às necessidades do mercado e à responsabilidade social.\n\nA competição no setor de distribuição de energia elétrica é intensa, com a presença de outras empresas que também buscam expandir suas operações e melhorar a qualidade do serviço. A Neoenergia Coelba, portanto, deve constantemente inovar e se adaptar para manter sua posição no mercado. Além disso, a sensibilidade macroeconômica, incluindo fatores como crescimento econômico, inflação e políticas energéticas, pode influenciar a demanda por energia e a capacidade da empresa de operar de forma eficiente. A combinação desses elementos torna a Neoenergia Coelba uma empresa dinâmica, que busca não apenas atender às necessidades de seus consumidores, mas também contribuir para o desenvolvimento sustentável da região em que atua.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$4.5 bi (trimestre) | R$12.6 bi (LTM)\n- EBITDA: R$1.1 bi (trimestre) | R$3.9 bi (LTM) | Margem 25.4%\n- Lucro Líquido: R$0.2 bi (trimestre) | R$1.5 bi (LTM)\n- Capex: N/D (trimestre) | R$2.7 bi (LTM)\n- Operacional: Energia injetada total de 7.225 GWh e energia distribuída total de 6.128 GWh, com 6.876 mil clientes.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 4494000000,
+      "receita_liquida_ltm": 12606000000,
+      "ebitda_tri": 1142000000,
+      "ebitda_ltm": 3856000000,
+      "lucro_liquido_tri": 247000000,
+      "lucro_liquido_ltm": 1456000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": 2667000000,
+      "margem_ebitda_pct": 25.4,
+      "margem_liquida_pct": 5.5
+    },
+    "operacionais": {
+      "descricao": "Energia injetada total de 7.225 GWh e energia distribuída total de 6.128 GWh, com 6.876 mil clientes.",
+      "metricas": {
+        "energia_injetada_total": 7225000000,
+        "energia_distribuida_total": 6128000000,
+        "numero_clientes": 6876000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:25:58.100346Z"
+}

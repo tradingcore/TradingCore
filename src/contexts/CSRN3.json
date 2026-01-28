@@ -1,0 +1,34 @@
+{
+  "ticker": "CSRN3",
+  "codigo_cvm": "18139",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "18139_2025-09-30_CIA_ENERGÉTICA_DO_RIO_GRANDE_DO_NORTE.pdf",
+  "texto_contexto": "A Cia Energética do Rio Grande do Norte, amplamente reconhecida como Neoenergia Cosern, é uma das principais operadoras no setor de distribuição de energia elétrica no Brasil, com uma concessão que abrange 167 municípios no Estado do Rio Grande do Norte. A empresa se destaca por sua atuação em uma área geográfica de 52.811 km², onde atende a uma base diversificada de consumidores, incluindo residenciais, comerciais e industriais. O modelo de negócio da Neoenergia Cosern é predominantemente voltado para a distribuição de energia elétrica, mas tem demonstrado um interesse crescente em Geração Distribuída (GD), refletindo uma tendência do setor em direção a soluções mais sustentáveis e descentralizadas.\n\nOs segmentos de atuação da empresa são amplos, englobando tanto o mercado cativo, onde os consumidores não têm a liberdade de escolher seu fornecedor de energia, quanto o mercado livre, que permite a negociação direta entre geradores e consumidores. Essa dualidade proporciona à Neoenergia Cosern uma flexibilidade estratégica, permitindo que a empresa se adapte às necessidades de diferentes perfis de clientes. Com um portfólio que já conta com aproximadamente 1,63 milhão de consumidores, a companhia tem registrado um crescimento contínuo, evidenciado por um aumento de 1,7% na base de clientes em relação ao período anterior.\n\nOs principais indicadores de desempenho (KPIs) da Neoenergia Cosern são fundamentais para avaliar sua eficiência operacional e a qualidade do serviço prestado. A Margem Bruta, o EBITDA e o Lucro Líquido são métricas cruciais que refletem a saúde financeira da empresa, enquanto indicadores de qualidade de serviço, como a Duração Equivalente de Interrupção (DEC) e a Frequência de Interrupção (FEC), são essenciais para medir a confiabilidade do fornecimento de energia. A eficiência na gestão de perdas de energia e a capacidade de investimento em infraestrutura são considerados drivers de valor significativos, pois a expansão da rede elétrica e a modernização dos ativos são vitais para atender à crescente demanda por energia.\n\nA estrutura de capital da Neoenergia Cosern é predominantemente composta por dívida de longo prazo, o que implica em um compromisso significativo com financiamentos que podem ser impactados pela volatilidade do mercado financeiro, especialmente em relação às taxas de juros. A empresa mantém um rating corporativo de 'AAA' pela S&P, o que atesta sua solidez financeira e capacidade de honrar suas obrigações. No entanto, a dependência de dívida pode representar um risco, especialmente em um ambiente econômico instável, onde mudanças nas condições de mercado podem afetar o custo do capital.\n\nA governança da Neoenergia Cosern é estruturada para garantir a conformidade com as regulamentações do setor elétrico, com a ANEEL (Agência Nacional de Energia Elétrica) desempenhando um papel crucial na supervisão das operações da empresa. A regulação do setor é um fator determinante que pode influenciar a rentabilidade e a operação da companhia, uma vez que revisões tarifárias e mudanças nas políticas regulatórias podem impactar diretamente a receita e os custos operacionais. A empresa deve, portanto, manter um diálogo constante com os órgãos reguladores e estar atenta às mudanças no cenário regulatório.\n\nA competição no setor de distribuição de energia elétrica é intensa, com a presença de outras empresas que também buscam expandir suas operações e conquistar novos clientes. A Neoenergia Cosern precisa estar atenta às estratégias de seus concorrentes, especialmente em um contexto onde a Geração Distribuída está ganhando espaço e pode alterar a dinâmica de consumo. A capacidade da empresa de se adaptar a essas mudanças e inovar em seus serviços será crucial para manter sua posição competitiva.\n\nAlém disso, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A economia brasileira, com suas flutuações e desafios, pode impactar diretamente a demanda por energia, bem como a capacidade de investimento da empresa. Fatores como crescimento econômico, inflação e políticas governamentais relacionadas ao setor energético são elementos que a Neoenergia Cosern deve monitorar de perto para garantir a sustentabilidade de seu modelo de negócio e a continuidade de seu crescimento.\n\nEm suma, a Neoenergia Cosern se posiciona como uma empresa robusta e em crescimento no setor de distribuição de energia elétrica, com um modelo de negócio que se adapta às demandas do mercado e um compromisso com a qualidade do serviço. No entanto, a companhia deve estar atenta aos riscos regulatórios, à volatilidade do mercado financeiro e à competição crescente, além de se preparar para as mudanças que a Geração Distribuída pode trazer para o futuro do setor. A capacidade de inovar e se adaptar será fundamental para garantir sua sustentabilidade e sucesso a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.0 bi (trimestre) | R$2.8 bi (LTM)\n- EBITDA: R$0.3 bi (trimestre) | R$0.9 bi (LTM) | Margem 29.2%\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.5 bi (LTM)\n- Capex: N/D (trimestre) | R$0.4 bi (LTM)\n- Operacional: Energia injetada total de 1.864 GWh, energia distribuída total de 1.727 GWh, e 1.630 mil clientes.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1028000000,
+      "receita_liquida_ltm": 2845000000,
+      "ebitda_tri": 300000000,
+      "ebitda_ltm": 935000000,
+      "lucro_liquido_tri": 151000000,
+      "lucro_liquido_ltm": 518000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": 385000000,
+      "margem_ebitda_pct": 29.2,
+      "margem_liquida_pct": 14.7
+    },
+    "operacionais": {
+      "descricao": "Energia injetada total de 1.864 GWh, energia distribuída total de 1.727 GWh, e 1.630 mil clientes.",
+      "metricas": {
+        "energia_injetada_total_gwh": 1864000,
+        "energia_distribuida_total_gwh": 1727000,
+        "numero_clientes_mil": 1630
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:28:10.924207Z"
+}

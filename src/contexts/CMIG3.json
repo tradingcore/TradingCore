@@ -1,0 +1,33 @@
+{
+  "ticker": "CMIG3",
+  "codigo_cvm": "2453",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "2453_2025-09-30_CIA_ENERG_MINAS_GERAIS_-_CEMIG.pdf",
+  "texto_contexto": "A Cemig, Companhia Energética de Minas Gerais, é uma das principais empresas do setor elétrico brasileiro, destacando-se por seu modelo de negócio diversificado que abrange todas as etapas da cadeia de valor da energia. Com operações que vão desde a geração até a distribuição e comercialização de energia elétrica, a Cemig também se envolve na distribuição de gás natural, o que a posiciona de maneira estratégica em um mercado em constante evolução. A empresa é amplamente reconhecida por sua matriz energética 100% renovável, um diferencial que não apenas a alinha com as tendências globais de sustentabilidade, mas também a torna a única do setor elétrico das Américas a integrar o Índice de Sustentabilidade Empresarial (ISE) desde sua criação, refletindo um compromisso de longa data com práticas de governança e responsabilidade social.\n\nOs principais segmentos de atuação da Cemig incluem a geração de energia, onde a empresa se destaca pela utilização de fontes renováveis, como hidrelétricas, parques eólicos e solares. A Cemig D, sua subsidiária responsável pela distribuição de energia elétrica, é uma das maiores do Brasil, atendendo a milhões de consumidores em Minas Gerais. A comercialização de energia no mercado livre também é um foco estratégico, permitindo à empresa diversificar suas receitas e se adaptar às demandas de um mercado em transformação.\n\nOs indicadores-chave de desempenho (KPIs) da Cemig são fundamentais para avaliar sua performance e incluem métricas como EBITDA, lucro líquido e receita líquida. Além disso, a empresa monitora indicadores de qualidade de serviço, como o DEC (Duração Equivalente de Interrupções por Consumidor) e o FEC (Frequência Equivalente de Interrupção por Unidade Consumidora), que são cruciais para garantir a satisfação do cliente e a confiabilidade do fornecimento. A alavancagem financeira é outro aspecto importante, com a Cemig mantendo um índice de dívida líquida sobre EBITDA ajustado em níveis baixos, o que demonstra uma estrutura de capital sólida e prudente, essencial para sustentar seus investimentos e operações.\n\nOs drivers de valor para a Cemig são variados e incluem a eficiência operacional, a capacidade de investimento em infraestrutura e modernização, a expansão da base de clientes e a adaptação às mudanças regulatórias e de mercado. A empresa tem se concentrado em aumentar sua participação no mercado livre, aproveitando a crescente demanda por energia renovável e soluções de geração distribuída. Essa estratégia não apenas visa atender às necessidades dos consumidores, mas também posiciona a Cemig como uma líder em inovação no setor.\n\nEntretanto, a Cemig não está isenta de riscos. A empresa enfrenta desafios relacionados a flutuações nos preços de energia, que podem impactar sua rentabilidade e a competitividade no mercado. Além disso, mudanças nas políticas regulatórias e a necessidade de investimentos contínuos em infraestrutura para manter a qualidade do serviço são fatores que exigem atenção constante. A regulação do setor elétrico, especialmente as diretrizes estabelecidas pela Agência Nacional de Energia Elétrica (ANEEL), é um elemento crítico que influencia diretamente as operações da Cemig. As tarifas e condições operacionais definidas pela ANEEL podem afetar a rentabilidade da empresa, exigindo um gerenciamento eficaz para mitigar riscos e maximizar oportunidades de crescimento.\n\nA sensibilidade macroeconômica também desempenha um papel significativo nas operações da Cemig. Fatores como a inflação, as taxas de juros e o crescimento econômico impactam não apenas a demanda por energia, mas também os custos operacionais e a capacidade de investimento da empresa. Em um cenário de incertezas econômicas, a Cemig deve ser ágil e adaptável, buscando constantemente inovações e melhorias em sua operação para garantir sua posição de destaque no setor elétrico brasileiro.\n\nEm suma, a Cemig é uma empresa robusta e bem posicionada no setor elétrico, com um modelo de negócio diversificado e um forte compromisso com a sustentabilidade. No entanto, a empresa deve navegar por um ambiente regulatório complexo e dinâmico, ao mesmo tempo em que enfrenta desafios macroeconômicos e de mercado, para continuar a prosperar e atender às crescentes demandas por energia renovável e soluções sustentáveis.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$10.6 bi (trimestre) | N/D (LTM)\n- EBITDA: R$1.5 bi (trimestre) | R$1.5 bi (LTM) | Margem 14.1%\n- Lucro Líquido: R$0.8 bi (trimestre) | R$0.8 bi (LTM)\n- Dívida Líquida: R$1.8 bi\n- Capex: R$4.7 bi (trimestre) | N/D (LTM)\n- Operacional: Cemig atendeu aproximadamente 9,55 milhões de clientes, com um crescimento de 2,2% em relação ao ano anterior. A energia distribuída totalizou 11.834 GWh, uma redução de 4,4% em relação ao 3T24.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 10619741000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 1501000000,
+      "ebitda_ltm": 1475000000,
+      "lucro_liquido_tri": 797000000,
+      "lucro_liquido_ltm": 780000000,
+      "divida_liquida": 1760000000,
+      "divida_bruta": null,
+      "capex_tri": 4700000000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 14.1,
+      "margem_liquida_pct": 7.5
+    },
+    "operacionais": {
+      "descricao": "Cemig atendeu aproximadamente 9,55 milhões de clientes, com um crescimento de 2,2% em relação ao ano anterior. A energia distribuída totalizou 11.834 GWh, uma redução de 4,4% em relação ao 3T24.",
+      "metricas": {
+        "clientes": 9550000,
+        "energia_distribuida_mwh": 11834000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:27:40.354632Z"
+}

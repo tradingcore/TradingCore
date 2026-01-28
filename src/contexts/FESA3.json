@@ -1,0 +1,33 @@
+{
+  "ticker": "FESA3",
+  "codigo_cvm": "3069",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "3069_2025-09-30_CIA_FERRO_LIGAS_BAHIA_FERBASA.pdf",
+  "texto_contexto": "A Ferbasa (FESA3) é uma empresa brasileira com uma trajetória de 64 anos, consolidando-se como a única produtora integrada de Ferrocromo nas Américas. Seu modelo de negócio é caracterizado por uma verticalização que abrange diversas etapas da cadeia produtiva, incluindo metalurgia, mineração, recursos florestais e energia renovável. Essa integração permite à Ferbasa não apenas otimizar seus processos produtivos, mas também garantir uma maior eficiência e controle sobre a qualidade dos produtos finais. A companhia se destaca na produção de ferroligas, com ênfase em ligas como Ferrocromo Alto Carbono, Ferrocromo Baixo Carbono, Ferrossilício e Ferrossilício Cromo, que são essenciais para o setor siderúrgico e para a fabricação de aços inoxidáveis e especiais.\n\nOs segmentos de atuação da Ferbasa são diversificados e incluem, além da produção de ferroligas, a geração de energia elétrica por meio do Complexo Eólico BW Guirapá e a exploração de recursos florestais. Essa diversificação não apenas amplia as fontes de receita da empresa, mas também a posiciona de maneira estratégica em um mercado que valoriza a sustentabilidade e a utilização de fontes de energia renováveis. A companhia atende tanto o mercado interno quanto o externo, o que a torna sensível às dinâmicas globais de demanda e aos preços das commodities.\n\nOs principais indicadores de desempenho (KPIs) da Ferbasa incluem volume de vendas, receita líquida, custo dos produtos vendidos, EBITDA ajustado e lucro líquido. Esses KPIs são fundamentais para avaliar a eficiência operacional da empresa e sua capacidade de gerar valor para os acionistas. Os drivers de valor da Ferbasa são diversos e incluem a eficiência operacional, a capacidade de inovação, a gestão de custos, a demanda global por ferroligas e a variação cambial, que impacta diretamente a receita em dólar. A empresa se beneficia de um mercado global em crescimento para ferroligas, impulsionado pela recuperação da indústria siderúrgica e pela demanda por aços especiais.\n\nA estrutura de capital da Ferbasa é robusta, com uma posição de caixa líquido que supera o endividamento, permitindo à empresa uma flexibilidade financeira significativa. O endividamento é controlado e concentrado principalmente em financiamentos relacionados ao complexo eólico, o que demonstra um compromisso com a sustentabilidade e a diversificação de suas fontes de receita. Essa saúde financeira é um ativo importante, especialmente em tempos de volatilidade econômica.\n\nA governança corporativa da Ferbasa é estruturada de acordo com as normas da Comissão de Valores Mobiliários (CVM) e a legislação brasileira, o que garante transparência e responsabilidade nas suas operações. A empresa está sujeita a regulamentações que afetam tanto suas operações internas quanto suas atividades de exportação, especialmente em relação a tarifas e políticas comerciais internacionais. Medidas protecionistas em mercados externos podem impactar suas vendas, tornando a adaptação a essas mudanças uma prioridade estratégica.\n\nOs riscos enfrentados pela Ferbasa são variados e incluem a volatilidade dos preços das commodities, a dependência de mercados externos, especialmente os Estados Unidos e a União Europeia, e a exposição a variações cambiais. A empresa deve estar atenta a eventos críticos que podem impactar suas operações, como mudanças nas políticas tarifárias internacionais, flutuações na demanda por ferroligas e alterações nas condições climáticas que podem afetar tanto a geração de energia quanto a produção agrícola. Além disso, a necessidade de adaptação a novas regulamentações ambientais e de sustentabilidade é cada vez mais relevante, refletindo uma tendência global que exige das empresas um compromisso com práticas mais responsáveis e sustentáveis.\n\nEm um contexto macroeconômico, a Ferbasa é sensível a fatores como crescimento econômico global, políticas comerciais e flutuações nas taxas de câmbio. A demanda por ferroligas está intimamente ligada ao desempenho da indústria siderúrgica, que, por sua vez, é influenciada por ciclos econômicos e investimentos em infraestrutura. A capacidade da Ferbasa de navegar por essas dinâmicas e se adaptar às mudanças no ambiente regulatório e de mercado será crucial para sua continuidade e crescimento no futuro. A empresa, ao se posicionar como um player estratégico em um setor vital, demonstra um potencial significativo para se beneficiar das tendências de crescimento e inovação que permeiam a indústria metalúrgica e energética.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.5 bi (trimestre) | R$1.7 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.2 bi (LTM) | Margem 9.4%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- Dívida: R$0.8 bi (líquida) | R$0.2 bi (bruta)\n- Capex: N/D (trimestre) | R$0.2 bi (LTM)\n- Operacional: Produção de 75,7 mil toneladas de ferroligas e vendas de 64,4 mil toneladas no 3T25.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 542600000,
+      "receita_liquida_ltm": 1731900000,
+      "ebitda_tri": 50800000,
+      "ebitda_ltm": 179500000,
+      "lucro_liquido_tri": 46000000,
+      "lucro_liquido_ltm": 88900000,
+      "divida_liquida": 801800000,
+      "divida_bruta": 172100000,
+      "capex_tri": null,
+      "capex_ltm": 188300000,
+      "margem_ebitda_pct": 9.4,
+      "margem_liquida_pct": 8.5
+    },
+    "operacionais": {
+      "descricao": "Produção de 75,7 mil toneladas de ferroligas e vendas de 64,4 mil toneladas no 3T25.",
+      "metricas": {
+        "producao_ferroligas_toneladas": 75700,
+        "vendas_ferroligas_toneladas": 64400
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:28:39.892201Z"
+}
