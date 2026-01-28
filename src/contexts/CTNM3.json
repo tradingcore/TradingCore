@@ -1,0 +1,35 @@
+{
+  "ticker": "CTNM3",
+  "codigo_cvm": "3158",
+  "data_release": "2024-12-31",
+  "fonte_pdf": "3158_2024-12-31_CIA_TECIDOS_NORTE_DE_MINAS_-_COTEMINAS_-_EM_RECUPE.pdf",
+  "texto_contexto": "A Companhia de Tecidos Norte de Minas - Coteminas (CTNM3) é uma empresa de destaque no setor têxtil brasileiro, com sede em Montes Claros, Minas Gerais. Seu modelo de negócio é diversificado, englobando a produção e comercialização de fios e tecidos, além de atividades de importação e exportação. A Coteminas se posiciona tanto no atacado quanto no varejo, oferecendo uma ampla gama de produtos que inclui itens para cama, mesa e banho, vestuário e acessórios de proteção individual. Essa diversidade de segmentos permite à empresa atender a diferentes demandas do mercado, ampliando sua base de clientes e potencializando suas receitas.\n\nOs principais indicadores de desempenho da Coteminas, como receita líquida, lucro bruto, EBITDA ajustado e margem bruta, são fundamentais para a avaliação de sua saúde financeira e operacional. No entanto, a companhia enfrenta um cenário desafiador, especialmente após a recuperação judicial iniciada em um período recente, que reflete a pressão financeira acumulada ao longo do tempo. Essa situação é resultado de uma combinação de fatores adversos, como a alta das taxas de juros, que impacta o custo do capital, e a redução do capital de giro, essencial para a manutenção das operações diárias.\n\nOs drivers de valor para a Coteminas estão centrados na reestruturação do passivo, na alienação de ativos não essenciais e na captação de novos recursos. A recuperação operacional é uma prioridade, e a empresa busca preservar investimentos que são cruciais para sua competitividade no mercado. A capacidade de implementar um plano de recuperação eficaz será determinante para a continuidade de suas operações e para a restauração de sua saúde financeira.\n\nEntretanto, a Coteminas não está isenta de riscos. A dependência de condições econômicas favoráveis é um fator crítico, uma vez que a volatilidade do mercado têxtil pode afetar diretamente suas vendas e margens. Além disso, a capacidade de negociação com credores durante o processo de recuperação judicial é um aspecto que requer atenção, pois a empresa precisa estabelecer um diálogo construtivo para garantir a viabilidade de suas operações. A estrutura de capital da Coteminas é marcada por dívidas significativas, incluindo debêntures e empréstimos, que foram reclassificados devido à expectativa de não cumprimento de certos índices financeiros, o que agrava ainda mais sua situação.\n\nA regulação que impacta a Coteminas está intimamente ligada à Lei de Recuperação Judicial, que estabelece as diretrizes para o processo de recuperação e reestruturação de passivos. Eventos críticos, como a notificação de vencimento antecipado de dívidas e a aprovação do plano de recuperação judicial, são momentos decisivos que podem influenciar o futuro da empresa. As assembleias gerais de credores desempenham um papel essencial nesse contexto, pois são oportunidades para discutir e aprovar estratégias que visem a continuidade das operações e a reestruturação financeira.\n\nA competição no setor têxtil é intensa, com diversas empresas disputando espaço no mercado. A Coteminas precisa não apenas se adaptar às mudanças nas preferências dos consumidores, mas também se destacar em um ambiente onde a inovação e a eficiência operacional são cruciais. A sensibilidade a fatores macroeconômicos, como flutuações na taxa de câmbio e mudanças nas políticas econômicas, também pode impactar suas operações, especialmente em um cenário de recuperação.\n\nEm suma, a Coteminas enfrenta um período desafiador, mas a sua capacidade de adaptação e a implementação de um plano de recuperação robusto serão fundamentais para sua sobrevivência e crescimento futuro. A empresa está em um processo de negociação contínua com seus credores, buscando soluções que garantam a viabilidade de suas operações e a recuperação de sua saúde financeira, enquanto navega por um ambiente regulatório complexo e uma competição acirrada.\n\nNÚMEROS DE REFERÊNCIA (4T2024):\n- Receita Líquida: R$0.4 bi (trimestre) | R$0.4 bi (LTM)\n- EBITDA: R$-0.2 bi (trimestre) | R$-0.2 bi (LTM) | Margem -56.2%\n- Lucro Líquido: R$-0.6 bi (trimestre) | R$-0.6 bi (LTM)\n- Dívida Líquida: R$0.8 bi\n- Operacional: Receita líquida de R$ 439,4 milhões, com lucro bruto de R$ 18,8 milhões e prejuízo líquido de R$ 613,4 milhões. A receita do varejo foi de R$ 202,5 milhões, com redução de 39,3% em relação ao ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "4T2024",
+    "financeiros": {
+      "receita_liquida_tri": 439400000,
+      "receita_liquida_ltm": 439400000,
+      "ebitda_tri": -246800000,
+      "ebitda_ltm": -246800000,
+      "lucro_liquido_tri": -613400000,
+      "lucro_liquido_ltm": -613400000,
+      "divida_liquida": 834000000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": -56.2,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "Receita líquida de R$ 439,4 milhões, com lucro bruto de R$ 18,8 milhões e prejuízo líquido de R$ 613,4 milhões. A receita do varejo foi de R$ 202,5 milhões, com redução de 39,3% em relação ao ano anterior.",
+      "metricas": {
+        "receita_varejo": 202500000,
+        "custo_produtos_vendidos": 295800000,
+        "lucro_bruto": 18800000,
+        "numero_lojas": 191
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:30:17.715529Z"
+}

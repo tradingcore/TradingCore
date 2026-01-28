@@ -1,0 +1,34 @@
+{
+  "ticker": "CTSA3",
+  "codigo_cvm": "4081",
+  "data_release": "2024-09-30",
+  "fonte_pdf": "4081_2024-09-30_CIA_TECIDOS_SANTANENSE_-_EM_RECUPERAÇÃO_JUDICIAL.pdf",
+  "texto_contexto": "A Companhia Tecidos Santanense (CTSA3) se destaca no setor têxtil brasileiro, com um modelo de negócio que se concentra na produção e comercialização de tecidos, especialmente voltados para vestuário e outros produtos têxteis. A empresa tem enfrentado desafios significativos, especialmente em um contexto de recuperação judicial, o que a levou a reestruturar suas operações e buscar uma eficiência operacional que permita não apenas a sobrevivência, mas também a revitalização de suas atividades. Essa reestruturação é fundamental para a manutenção de sua base de clientes e para a recuperação de sua capacidade produtiva, que foi severamente afetada nos últimos anos.\n\nOs segmentos de atuação da Santanense são variados, abrangendo desde a fabricação de tecidos para moda até produtos têxteis para diferentes aplicações. Essa diversidade permite à empresa atender a um amplo espectro de clientes, o que é crucial em um mercado que demanda flexibilidade e inovação. A busca pela eficiência operacional é um dos principais drivers de valor da companhia, que se esforça para otimizar seus processos produtivos e reduzir custos, ao mesmo tempo em que mantém a qualidade de seus produtos.\n\nOs indicadores de desempenho, como receita líquida, custo dos produtos vendidos, lucro bruto e resultado operacional, são essenciais para avaliar a saúde financeira da Santanense. Esses KPIs não apenas refletem a eficiência operacional da empresa, mas também sua capacidade de se adaptar a um ambiente econômico desafiador. A recuperação do capital de giro e a reestruturação do passivo são aspectos críticos que influenciam diretamente esses indicadores, sendo que a implementação de um plano de recuperação judicial se torna uma prioridade para a administração.\n\nEntretanto, a Santanense enfrenta riscos consideráveis que podem impactar sua trajetória de recuperação. A volatilidade das taxas de juros é um fator que pode aumentar suas despesas financeiras, complicando ainda mais a situação da empresa. Além disso, a dependência de um ambiente econômico favorável é um risco inerente, pois a recuperação das operações está atrelada à melhora das condições de mercado e ao aumento da demanda por seus produtos. Os riscos regulatórios também são uma preocupação, uma vez que a empresa deve cumprir com as obrigações legais e financeiras estabelecidas pela Lei nº 11.101/2005, que rege a recuperação judicial e falências no Brasil.\n\nA estrutura de capital da Santanense é marcada por passivos significativos, incluindo dívidas trabalhistas, quirografárias e fiscais, que foram detalhadas em seu pedido de recuperação judicial. Essa estrutura complexa exige uma gestão cuidadosa e uma abordagem estratégica para a repactuação de dívidas, que é um passo fundamental para a continuidade das operações. Eventos críticos, como a aprovação do plano de recuperação judicial e a realização de assembleias gerais de credores, são determinantes para o futuro da empresa, pois a capacidade de negociar com credores e implementar as medidas previstas no plano é essencial para garantir a sustentabilidade a longo prazo.\n\nA governança da Santanense é um aspecto que merece atenção, especialmente em um momento de reestruturação. A administração está comprometida em avançar nas negociações com credores e em implementar as medidas do plano de recuperação, buscando não apenas a recuperação financeira, mas também a construção de uma base sólida para o futuro. A transparência nas comunicações e a conformidade com as normas regulatórias são fundamentais para restaurar a confiança dos investidores e stakeholders.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A empresa está sujeita a flutuações econômicas que podem afetar a demanda por seus produtos, além de influenciar suas operações e resultados financeiros. Em um cenário de incertezas, a capacidade da Santanense de se adaptar e inovar será crucial para sua recuperação e crescimento sustentável. A combinação de uma gestão eficaz, uma estrutura de capital reestruturada e um ambiente regulatório favorável poderá proporcionar à empresa as condições necessárias para superar os desafios e retomar sua trajetória de crescimento no competitivo setor têxtil.\n\nNÚMEROS DE REFERÊNCIA (3T2024):\n- Receita Líquida: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- EBITDA: R$-0.0 bi (trimestre) | R$-0.1 bi (LTM)\n- Lucro Líquido: R$-0.0 bi (trimestre) | R$-0.1 bi (LTM)\n- Operacional: A Companhia faturou R$ 39,9 milhões no período de nove meses de 2024, com uma receita líquida de R$ 22,7 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2024",
+    "financeiros": {
+      "receita_liquida_tri": 19917000,
+      "receita_liquida_ltm": 22707000,
+      "ebitda_tri": -15410000,
+      "ebitda_ltm": -71568000,
+      "lucro_liquido_tri": -25893000,
+      "lucro_liquido_ltm": -111931000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "A Companhia faturou R$ 39,9 milhões no período de nove meses de 2024, com uma receita líquida de R$ 22,7 milhões.",
+      "metricas": {
+        "receita_bruta": 39883000,
+        "custo_produtos_vendidos": 23103000,
+        "resultado_operacional": -79095000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:30:45.284620Z"
+}

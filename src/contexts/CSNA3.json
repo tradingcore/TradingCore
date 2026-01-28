@@ -1,0 +1,35 @@
+{
+  "ticker": "CSNA3",
+  "codigo_cvm": "4030",
+  "data_release": "2025-11-04",
+  "fonte_pdf": "4030_2025-11-04_CIA_SIDERURGICA_NACIONAL.pdf",
+  "texto_contexto": "A Companhia Siderúrgica Nacional (CSN) se destaca como uma das principais empresas do setor siderúrgico brasileiro, operando com um modelo de negócio diversificado e verticalizado que abrange não apenas a siderurgia, mas também segmentos complementares como mineração, cimento e logística. Essa diversificação permite à CSN mitigar riscos e explorar sinergias entre suas operações, o que é fundamental em um mercado caracterizado por volatilidades e incertezas.\n\nNo segmento de siderurgia, a CSN é reconhecida pela produção de aço, que é utilizado em diversas aplicações, desde a construção civil até a indústria automotiva. A empresa também se destaca na mineração, onde extrai e comercializa minério de ferro, um dos principais insumos para a produção de aço. Além disso, a CSN atua na fabricação de cimento, um produto que complementa sua oferta e atende à crescente demanda do setor de construção. A logística é outro pilar importante, pois a empresa investe em infraestrutura para garantir a eficiência no transporte de seus produtos, reduzindo custos e melhorando a competitividade.\n\nOs principais drivers de valor da CSN incluem a eficiência operacional, que é constantemente aprimorada por meio de investimentos em tecnologia e inovação, e a diversificação de produtos e mercados, que permite à empresa se adaptar a diferentes condições econômicas e demandas do mercado. A capacidade de resposta a flutuações nos preços de commodities, como o minério de ferro e o carvão, é crucial para a manutenção da rentabilidade. Além disso, a empresa monitora de perto a demanda por aço e cimento, ajustando sua produção conforme as tendências do mercado.\n\nPara avaliar a performance da CSN, indicadores-chave de desempenho (KPIs) como EBITDA ajustado, receita líquida e margem EBITDA são fundamentais. Esses indicadores fornecem uma visão clara da saúde financeira e operacional da empresa, permitindo que a gestão tome decisões informadas e estratégicas. A busca por uma estrutura de capital robusta é um dos pilares da estratégia da CSN, que visa reduzir a alavancagem e otimizar a dívida. Essa abordagem reflete um compromisso com a austeridade financeira, essencial para enfrentar os desafios do mercado e garantir a sustentabilidade a longo prazo.\n\nEntretanto, a CSN não está isenta de riscos. A volatilidade nos preços das matérias-primas, especialmente do minério de ferro e do carvão, pode impactar significativamente seus custos e margens de lucro. Além disso, a concorrência com produtos importados, que muitas vezes são oferecidos a preços competitivos, representa um desafio constante. A pressão regulatória também é um fator a ser considerado, uma vez que a empresa opera sob normas contábeis brasileiras e internacionais e está sujeita à supervisão de órgãos reguladores, como a Comissão de Valores Mobiliários (CVM). Mudanças nas políticas econômicas, variações cambiais e a dinâmica do mercado global de aço são eventos críticos que podem afetar a operação da CSN, exigindo uma gestão eficaz e proativa para mitigar esses riscos.\n\nA governança corporativa da CSN é estruturada para garantir transparência e responsabilidade, com práticas que visam proteger os interesses dos acionistas e demais stakeholders. A empresa busca manter um diálogo aberto com o mercado e os investidores, promovendo a confiança e a credibilidade necessárias para sustentar seu crescimento.\n\nEm um cenário macroeconômico, a CSN é sensível a fatores como o crescimento econômico, a taxa de juros e a inflação, que influenciam a demanda por seus produtos. A dinâmica do mercado global, incluindo a demanda por aço em economias emergentes e desenvolvidas, também desempenha um papel crucial na performance da empresa. A capacidade da CSN de se adaptar a essas condições, aliada a uma gestão financeira prudente e a um portfólio diversificado, posiciona a companhia de forma competitiva no setor siderúrgico, permitindo que ela enfrente os desafios e aproveite as oportunidades que surgem no horizonte.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$11.8 bi (trimestre) | N/D (LTM)\n- EBITDA: R$3.3 bi (trimestre) | N/D (LTM) | Margem 26.8%\n- Lucro Líquido: R$0.1 bi (trimestre) | N/D (LTM)\n- Dívida Líquida: R$37.5 bi\n- Capex: R$1.4 bi (trimestre) | N/D (LTM)\n- Operacional: Vendas de 12,4 milhões de toneladas no 3T25, com recorde de produção e embarques.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 11794000000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 3319000000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 76000000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 37545000000,
+      "divida_bruta": null,
+      "capex_tri": 1435000000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 26.8,
+      "margem_liquida_pct": 0.6
+    },
+    "operacionais": {
+      "descricao": "Vendas de 12,4 milhões de toneladas no 3T25, com recorde de produção e embarques.",
+      "metricas": {
+        "vendas_toneladas": 12400000,
+        "producao_placas_toneladas": 726000,
+        "producao_laminados_toneladas": 738000,
+        "producao_acos_longos_toneladas": 55000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:29:47.792767Z"
+}

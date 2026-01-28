@@ -1,0 +1,34 @@
+{
+  "ticker": "SBSP3",
+  "codigo_cvm": "14443",
+  "data_release": "2025-12-31",
+  "fonte_pdf": "14443_2025-12-31_CIA_SANEAMENTO_BÁSICO_ESTADO_SÃO_PAULO.pdf",
+  "texto_contexto": "A Sabesp (SBSP3) é uma das principais empresas de saneamento do Brasil, com uma atuação robusta que abrange o fornecimento de serviços de água e esgoto em 371 municípios do estado de São Paulo. Seu modelo de negócio é estruturado em torno da prestação de serviços essenciais de saneamento básico, que incluem a captação, tratamento e distribuição de água, além da coleta e tratamento de esgoto. A empresa se destaca pela sua capacidade de gerar receitas por meio de tarifas cobradas pelos serviços prestados, que são ajustadas periodicamente, refletindo tanto a necessidade de manutenção da qualidade dos serviços quanto a adaptação às condições econômicas e regulatórias.\n\nOs segmentos de atuação da Sabesp são predominantemente focados em serviços de água e esgoto, mas também incluem receitas provenientes de atividades de construção, que complementam sua operação principal. Para medir seu desempenho, a empresa utiliza uma série de indicadores-chave de desempenho (KPIs), como a receita operacional líquida, EBITDA ajustado, lucro líquido, além de métricas relacionadas ao volume de água tratada e esgoto coletado. Esses KPIs são fundamentais para avaliar a eficiência operacional e a capacidade de gerar valor para os acionistas.\n\nOs principais drivers de valor para a Sabesp incluem o aumento do número de conexões de água e esgoto, que é um reflexo do crescimento populacional e da urbanização na região, bem como a eficiência operacional e a gestão de custos. A capacidade de realizar investimentos em infraestrutura é outro fator crítico, pois a modernização e expansão da rede de serviços são essenciais para atender à demanda crescente e melhorar a qualidade dos serviços prestados.\n\nEntretanto, a Sabesp enfrenta uma série de riscos que podem impactar seu desempenho. A dependência de regulamentações governamentais é um dos principais desafios, uma vez que as tarifas e as condições de operação são frequentemente influenciadas por decisões políticas e normativas. Além disso, a empresa está sujeita a variações nas tarifas de serviços, que podem afetar sua receita. Riscos associados a investimentos em infraestrutura, como atrasos e custos imprevistos, também são preocupações constantes. Eventos climáticos, como secas ou enchentes, podem impactar a captação de água, afetando diretamente a operação da empresa.\n\nA estrutura de capital da Sabesp é composta por uma combinação de dívida e patrimônio líquido, refletindo a necessidade de financiamento para suportar seus investimentos em ativos de longo prazo. A empresa possui um nível significativo de empréstimos e financiamentos, que são utilizados para viabilizar projetos de expansão e modernização da infraestrutura de saneamento.\n\nA regulação do setor de saneamento é realizada por órgãos governamentais, como a Agência Nacional de Águas e Saneamento Básico (ANA), que estabelece diretrizes e tarifas. A conformidade com essas regulamentações é crucial para a operação da Sabesp, pois qualquer mudança nas políticas públicas pode ter um impacto direto em sua capacidade de gerar receita e operar de forma eficiente. Eventos críticos, como a assinatura de novos contratos de concessão, são fundamentais para a segurança jurídica da empresa. O recente contrato com a URAE-1, que se estende até 2060, é um exemplo de como a empresa busca garantir um direito incondicional de receber indenizações ao final do período de concessão, proporcionando maior previsibilidade e estabilidade financeira.\n\nA transição para uma nova gestão e a implementação de programas de eficiência operacional são fatores que também podem impactar o desempenho futuro da Sabesp. A capacidade da empresa de se adaptar a novas exigências regulatórias e de mercado, bem como de inovar em suas operações, será determinante para sua sustentabilidade e crescimento a longo prazo. Em um cenário macroeconômico em constante mudança, a sensibilidade da Sabesp a fatores como inflação, taxas de juros e políticas públicas de saneamento será um aspecto crucial a ser monitorado por investidores e analistas. A empresa, portanto, se posiciona como um ator estratégico no setor de saneamento, enfrentando desafios significativos, mas também apresentando oportunidades de crescimento e melhoria contínua em seus serviços.\n\nNÚMEROS DE REFERÊNCIA (4T2024):\n- Receita Líquida: R$36.3 bi (trimestre) | R$361.4 bi (LTM)\n- EBITDA: R$2.3 bi (trimestre) | R$11.3 bi (LTM) | Margem 54.0%\n- Lucro Líquido: R$1.4 bi (trimestre) | R$9.6 bi (LTM)\n- Capex: R$2.8 bi (trimestre) | R$6.9 bi (LTM)\n- Operacional: Receita líquida de serviços de saneamento atingiu R$ 21,726 bilhões, com um volume faturado de 4,316 milhões de m³ e tarifa média de R$ 5,03/m³.",
+  "numeros_referencia": {
+    "periodo_trimestre": "4T2024",
+    "financeiros": {
+      "receita_liquida_tri": 36300000000,
+      "receita_liquida_ltm": 361450000000,
+      "ebitda_tri": 2294000000,
+      "ebitda_ltm": 11339000000,
+      "lucro_liquido_tri": 1435000000,
+      "lucro_liquido_ltm": 9580000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": 2750000000,
+      "capex_ltm": 6912000000,
+      "margem_ebitda_pct": 54,
+      "margem_liquida_pct": 21
+    },
+    "operacionais": {
+      "descricao": "Receita líquida de serviços de saneamento atingiu R$ 21,726 bilhões, com um volume faturado de 4,316 milhões de m³ e tarifa média de R$ 5,03/m³.",
+      "metricas": {
+        "volume_faturado_m3": 4316000000,
+        "tarifa_media": 5.03,
+        "numero_economias": 13072000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:29:18.214682Z"
+}

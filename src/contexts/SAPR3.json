@@ -1,0 +1,35 @@
+{
+  "ticker": "SAPR3",
+  "codigo_cvm": "18627",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "18627_2025-09-30_CIA_DE_SANEAMENTO_DO_PARANÁ_-_SANEPAR.pdf",
+  "texto_contexto": "A Sanepar, Companhia de Saneamento do Paraná, é uma das principais empresas do setor de saneamento básico no Brasil, desempenhando um papel crucial na gestão de recursos hídricos e na promoção da saúde pública. Seu modelo de negócio é fundamentado em concessões municipais, com uma extensa rede de contratos ativos que garantem a prestação de serviços de tratamento e distribuição de água, além da coleta e tratamento de esgoto. A empresa opera em um ambiente regulatório que exige não apenas eficiência, mas também um compromisso com a universalização e a qualidade dos serviços, refletindo a importância do saneamento na melhoria da qualidade de vida da população.\n\nOs segmentos de atuação da Sanepar são claramente definidos, com foco no fornecimento de água e na gestão de esgoto. A empresa atende a uma diversidade de clientes, que vão desde residenciais até grandes indústrias, o que a posiciona de forma estratégica para capturar diferentes fontes de receita. Os indicadores-chave de desempenho (KPIs) são fundamentais para avaliar a saúde financeira e operacional da companhia. A Sanepar monitora de perto sua receita líquida, lucro líquido, EBITDA e margem operacional, além de indicadores de cobertura de serviços, que demonstram seu compromisso com a universalização do acesso à água tratada e ao tratamento de esgoto.\n\nOs drivers de valor da Sanepar são diversos e interligados. A eficiência operacional é um dos principais motores de crescimento, permitindo à empresa otimizar seus processos e reduzir custos. A expansão da base de clientes é igualmente vital, pois cada novo cliente representa uma oportunidade de aumentar a receita e melhorar a sustentabilidade financeira. A revisão tarifária, que ocorre periodicamente sob a supervisão da Agepar, também desempenha um papel crucial, pois ajustes nas tarifas podem impactar diretamente a rentabilidade da empresa. A implementação de tecnologias inovadoras para a gestão de recursos hídricos é outro fator que pode impulsionar a eficiência e a qualidade dos serviços prestados.\n\nEntretanto, a Sanepar não está isenta de riscos. A empresa enfrenta desafios relacionados a mudanças regulatórias que podem afetar suas operações e a estrutura tarifária. Além disso, variações nos custos de insumos e energia podem impactar a margem operacional, exigindo uma gestão financeira cuidadosa. Questões ambientais e de governança também são preocupações constantes, pois a imagem da empresa e sua aceitação pela comunidade dependem de sua capacidade de operar de forma responsável e sustentável.\n\nA estrutura de capital da Sanepar é composta por um equilíbrio entre dívida e patrimônio líquido, o que proporciona uma posição financeira relativamente saudável. O grau de endividamento e a relação dívida líquida/EBITDA indicam que a empresa tem capacidade de honrar suas obrigações financeiras, o que é um aspecto positivo para investidores e stakeholders. A regulação do setor, realizada pela Agepar, é um fator determinante na operação da Sanepar, uma vez que a supervisão das tarifas e da qualidade dos serviços impacta diretamente a rentabilidade e a percepção pública da empresa.\n\nA Sanepar também deve estar atenta a eventos críticos que podem afetar sua operação. Investimentos significativos em infraestrutura são necessários para atender à demanda crescente e às exigências regulatórias, o que pode exigir um planejamento financeiro robusto. A adaptação a novas legislações ambientais e sociais é outro desafio que pode impactar os custos operacionais e a forma como a empresa se relaciona com a comunidade e os acionistas. Em um cenário macroeconômico em constante mudança, a Sanepar deve ser ágil e proativa, buscando sempre a inovação e a melhoria contínua para garantir sua posição de liderança no setor de saneamento básico.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.8 bi (trimestre) | R$5.3 bi (LTM)\n- EBITDA: R$0.6 bi (trimestre) | N/D (LTM) | Margem 30.8%\n- Lucro Líquido: R$0.2 bi (trimestre) | N/D (LTM)\n- Dívida Líquida: R$1.4 bi\n- Operacional: A Sanepar atende 4.373.368 economias com serviços de água e 3.550.868 economias com serviços de esgoto, apresentando um crescimento de 1,6% e 3,1%, respectivamente.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1804200000,
+      "receita_liquida_ltm": 5314800000,
+      "ebitda_tri": 555600000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 246400000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 1375700000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 30.8,
+      "margem_liquida_pct": 13.7
+    },
+    "operacionais": {
+      "descricao": "A Sanepar atende 4.373.368 economias com serviços de água e 3.550.868 economias com serviços de esgoto, apresentando um crescimento de 1,6% e 3,1%, respectivamente.",
+      "metricas": {
+        "economias_atendidas_agua": 4373368,
+        "economias_atendidas_esgoto": 3550868,
+        "volume_faturado_agua_m3": 144500000,
+        "volume_faturado_esgoto_m3": 118000000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:31:19.543030Z"
+}
