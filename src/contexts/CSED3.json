@@ -1,0 +1,36 @@
+{
+  "ticker": "CSED3",
+  "codigo_cvm": "25526",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25526_2025-09-30_CRUZEIRO_DO_SUL_EDUCACIONAL_SA.pdf",
+  "texto_contexto": "A Cruzeiro do Sul Educacional (CSED3) se destaca como um dos principais grupos educacionais do Brasil, consolidando-se em um setor que tem se mostrado cada vez mais competitivo e dinâmico. Com um modelo de negócio que abrange tanto a graduação presencial quanto a digital, a empresa se adapta às novas demandas do mercado, oferecendo uma ampla gama de cursos que atendem a diferentes perfis de estudantes. A companhia possui uma base robusta de mais de 575 mil alunos, distribuídos em 28 campi e cerca de 1.570 polos, o que demonstra sua capacidade de alcance e presença em diversas regiões do país.\n\nOs segmentos de atuação da Cruzeiro do Sul são variados, com ênfase na graduação presencial, na graduação digital e, especialmente, na educação em saúde, um campo que tem atraído um número crescente de interessados, em virtude da crescente demanda por profissionais qualificados nesta área. A diversificação de cursos é um dos principais drivers de valor da empresa, permitindo não apenas a atração de novos alunos, mas também a retenção dos já matriculados, uma vez que a qualidade acadêmica e a relevância dos cursos oferecidos são fatores determinantes na escolha dos estudantes.\n\nPara avaliar o desempenho da Cruzeiro do Sul, alguns KPIs se tornam essenciais. A receita líquida, o EBITDA ajustado, a margem EBITDA e o lucro líquido ajustado são métricas que refletem a saúde financeira da empresa e sua capacidade de gerar lucro em um ambiente desafiador. A base de alunos, por sua vez, é um indicador crucial, pois o crescimento dessa base está diretamente ligado à expansão da receita e à sustentabilidade do negócio. A eficiência operacional também se destaca como um fator importante, uma vez que a gestão eficaz dos recursos pode levar a uma melhoria significativa nas margens de lucro.\n\nEntretanto, a Cruzeiro do Sul enfrenta uma série de riscos que podem impactar sua operação e crescimento. A regulação do setor educacional é um dos principais desafios, uma vez que mudanças nas diretrizes do Ministério da Educação podem afetar a captação de alunos e a oferta de cursos. Além disso, a empresa deve lidar com riscos financeiros, como a inadimplência, que pode comprometer o fluxo de caixa e a rentabilidade. A gestão de custos também é um aspecto crítico, especialmente em um cenário onde a concorrência é acirrada e a necessidade de investimentos em infraestrutura e tecnologia é constante.\n\nA estrutura de capital da Cruzeiro do Sul é um ponto forte, caracterizada por uma dívida líquida que, em períodos recentes, foi mantida em níveis controlados em relação ao EBITDA, indicando uma posição financeira sólida. Essa robustez financeira é complementada por um fluxo de caixa saudável, que permite à empresa não apenas manter suas operações, mas também realizar investimentos estratégicos para expansão e inovação.\n\nA governança corporativa da Cruzeiro do Sul é um aspecto que merece destaque, pois a transparência e a responsabilidade nas decisões são fundamentais para a construção de uma reputação sólida no mercado educacional. A empresa tem se esforçado para manter altos padrões de governança, o que contribui para a confiança dos investidores e stakeholders.\n\nNo que diz respeito à competição, a Cruzeiro do Sul se posiciona em um mercado onde a concorrência é intensa, com diversas instituições de ensino buscando captar alunos e oferecer cursos de qualidade. A capacidade de se diferenciar por meio da excelência acadêmica, inovação e atendimento ao aluno é crucial para manter sua posição de destaque.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. O desempenho da Cruzeiro do Sul está atrelado a variáveis econômicas, como a taxa de desemprego, a renda disponível das famílias e as políticas públicas voltadas para a educação. Em um cenário econômico desafiador, a empresa deve estar atenta às mudanças que podem impactar a demanda por educação superior e, consequentemente, sua estratégia de negócios.\n\nEm suma, a Cruzeiro do Sul Educacional se apresenta como um player relevante no setor educacional brasileiro, com um modelo de negócio adaptável e uma estrutura financeira sólida. No entanto, a empresa deve continuar a navegar por um ambiente regulatório complexo e competitivo, ao mesmo tempo em que busca inovações e melhorias em sua oferta educacional para garantir seu crescimento sustentável no futuro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.7 bi (trimestre) | R$2.1 bi (LTM)\n- EBITDA: R$0.3 bi (trimestre) | R$0.7 bi (LTM) | Margem 40.1%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.3 bi (LTM)\n- Operacional: Base de alunos totalizou 575 mil, com crescimento de 9% em relação ao ano anterior. O ensino digital cresceu 12,7% e a graduação presencial aumentou 2,8%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 694200000,
+      "receita_liquida_ltm": 2087100000,
+      "ebitda_tri": 278300000,
+      "ebitda_ltm": 730900000,
+      "lucro_liquido_tri": 113000000,
+      "lucro_liquido_ltm": 263000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 40.1,
+      "margem_liquida_pct": 16.3
+    },
+    "operacionais": {
+      "descricao": "Base de alunos totalizou 575 mil, com crescimento de 9% em relação ao ano anterior. O ensino digital cresceu 12,7% e a graduação presencial aumentou 2,8%.",
+      "metricas": {
+        "alunos_totais": 575000,
+        "alunos_presenciais": 169000,
+        "alunos_digitais": 406000,
+        "campus": 28,
+        "polos": 1570
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:40:19.812603Z"
+}

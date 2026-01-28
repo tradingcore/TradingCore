@@ -1,0 +1,33 @@
+{
+  "ticker": "CMIN3",
+  "codigo_cvm": "25585",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25585_2025-09-30_CSN_MINERAÇÃO_SA.pdf",
+  "texto_contexto": "A CSN Mineração (CMIN3) se posiciona como uma das principais empresas do setor de mineração no Brasil, com um foco estratégico na extração e comercialização de minério de ferro. Seu modelo de negócio é robusto e orientado para a eficiência, permitindo que a companhia não apenas atenda à demanda interna, mas, principalmente, se destaque no mercado externo, com ênfase na China, que é um dos maiores consumidores globais desse recurso. A empresa tem demonstrado uma capacidade produtiva impressionante, alcançando recordes históricos em volume de vendas e produção, o que reflete sua habilidade em otimizar processos e maximizar a utilização de suas operações.\n\nOs segmentos de atuação da CSN Mineração vão além da simples extração de minério. A companhia também investe em logística de transporte e embarque, garantindo que o minério extraído chegue de forma eficiente aos seus clientes. Além disso, a empresa se envolve em atividades relacionadas ao comércio de minérios, o que a posiciona de maneira competitiva em um mercado global dinâmico. Essa diversificação de operações é crucial para mitigar riscos e maximizar oportunidades de receita.\n\nOs principais indicadores de desempenho (KPIs) da CSN Mineração incluem métricas financeiras como lucro líquido, EBITDA ajustado e margem EBITDA, que são fundamentais para avaliar a saúde financeira da empresa. Além disso, o volume de vendas e produção serve como um termômetro da eficiência operacional, enquanto indicadores de sustentabilidade e governança corporativa refletem o compromisso da empresa com práticas responsáveis e transparentes, cada vez mais valorizadas por investidores e stakeholders.\n\nOs drivers de valor da CSN Mineração são multifacetados. A eficiência operacional é um dos pilares que sustentam o crescimento da empresa, permitindo que ela mantenha uma gestão de custos eficaz e atenda à demanda global de forma competitiva. A variação dos preços do minério de ferro também desempenha um papel crucial, uma vez que esses preços são influenciados por fatores como a oferta e a demanda global, políticas comerciais e condições econômicas em países consumidores. A empresa se beneficia de uma sólida posição de caixa, que não apenas a capacita a realizar investimentos estratégicos, mas também a distribuir dividendos significativos, mesmo em períodos de expansão.\n\nEntretanto, a CSN Mineração não está isenta de riscos. A volatilidade dos preços do minério de ferro pode impactar diretamente sua receita e lucratividade, assim como as variações cambiais que afetam a competitividade no mercado internacional. Além disso, a empresa enfrenta riscos regulatórios e ambientais, que podem resultar em custos adicionais e exigências operacionais. Fatores geopolíticos também são relevantes, pois podem influenciar a demanda e os custos de operação, especialmente em um cenário global em constante mudança.\n\nA estrutura de capital da CSN Mineração é caracterizada por um baixo nível de endividamento, com uma relação Dívida Líquida/EBITDA negativa, o que indica uma posição de caixa líquida robusta. Essa solidez financeira proporciona à empresa a flexibilidade necessária para enfrentar desafios e aproveitar oportunidades de crescimento. A governança corporativa da CSN Mineração é orientada por normas contábeis brasileiras e internacionais, além de regulamentações ambientais e de segurança do trabalho, que são essenciais para garantir a conformidade e a responsabilidade social da empresa.\n\nA regulação que envolve a CSN Mineração é complexa e abrange diversas áreas, desde normas contábeis até regulamentações ambientais que impactam suas operações. Mudanças nas políticas comerciais globais e flutuações nos preços das commodities são eventos críticos que podem afetar a performance da empresa. Além disso, a evolução das iniciativas de sustentabilidade, que estão se tornando cada vez mais relevantes para investidores e stakeholders, representa um aspecto importante da estratégia da empresa. A capacidade da CSN Mineração de se adaptar a essas mudanças e de inovar em suas práticas operacionais será fundamental para garantir sua competitividade e sustentabilidade a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$4.4 bi (trimestre) | N/D (LTM)\n- EBITDA: R$2.0 bi (trimestre) | N/D (LTM) | Margem 45.2%\n- Lucro Líquido: R$0.7 bi (trimestre) | N/D (LTM)\n- Dívida Líquida: R$3.9 bi\n- Capex: R$0.6 bi (trimestre) | N/D (LTM)\n- Operacional: Produção de 11,911 milhões de toneladas de minério de ferro e vendas de 12,396 milhões de toneladas no 3T25.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 4405000000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 1991000000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 696000000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 3900000000,
+      "divida_bruta": null,
+      "capex_tri": 603000000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 45.2,
+      "margem_liquida_pct": 15.8
+    },
+    "operacionais": {
+      "descricao": "Produção de 11,911 milhões de toneladas de minério de ferro e vendas de 12,396 milhões de toneladas no 3T25.",
+      "metricas": {
+        "producao_mil_toneladas": 11911000,
+        "vendas_mil_toneladas": 12396000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:40:48.065994Z"
+}
