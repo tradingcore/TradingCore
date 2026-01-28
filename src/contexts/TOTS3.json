@@ -1,0 +1,35 @@
+{
+  "ticker": "TOTS3",
+  "codigo_cvm": "19992",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "19992_2025-09-30_TOTVS_SA.pdf",
+  "texto_contexto": "A TOTVS S.A. é uma empresa brasileira que se destaca no desenvolvimento de soluções de software para gestão empresarial, com um foco especial em atender pequenas e médias empresas. Seu modelo de negócio é centrado na oferta de sistemas ERP (Enterprise Resource Planning), que integram diversas funções de gestão em uma única plataforma, além de soluções de tecnologia financeira, conhecidas como Techfin. A empresa se organiza em três unidades de negócio principais: Gestão, RD Station e Techfin. A unidade de Gestão é responsável por fornecer soluções abrangentes que atendem a diferentes setores, permitindo que as empresas otimizem seus processos e aumentem a eficiência operacional. A RD Station, por sua vez, é voltada para o marketing digital e automação de vendas, oferecendo ferramentas que ajudam as empresas a gerenciar suas campanhas e a se relacionar melhor com seus clientes. A unidade Techfin, uma joint venture com o Itaú, desenvolve soluções financeiras digitais que se integram aos sistemas de gestão, ampliando a oferta de serviços e proporcionando uma experiência mais completa para os usuários.\n\nOs principais indicadores de desempenho da TOTVS incluem a Receita Líquida, Receita Recorrente, EBITDA Ajustado e Lucro Líquido Ajustado. A Receita Recorrente é um dos KPIs mais relevantes, pois representa uma parte significativa da receita total e reflete a capacidade da empresa de manter e expandir sua base de clientes. A TOTVS tem se empenhado em aumentar essa base e a taxa de retenção de clientes, que se mantém alta, evidenciando a eficácia de suas soluções e a satisfação dos usuários. Os drivers de valor da empresa são a escalabilidade de suas operações, a contínua inovação em seus produtos e a habilidade de se adaptar às necessidades do mercado, especialmente em um cenário competitivo e em constante evolução.\n\nEntretanto, a TOTVS não está isenta de riscos. A competitividade no setor de tecnologia e serviços de gestão é intensa, com diversas empresas disputando a atenção das pequenas e médias empresas. Além disso, a empresa deve lidar com flutuações econômicas que podem impactar a disposição das empresas em investir em soluções de software. Mudanças regulatórias também representam um desafio, especialmente em um ambiente onde a proteção de dados e a conformidade com normas são cada vez mais exigidas. A necessidade de inovação tecnológica constante é outro fator crítico, uma vez que a evolução rápida do mercado pode tornar soluções obsoletas em um curto espaço de tempo.\n\nA estrutura de capital da TOTVS é robusta, com uma dívida bruta concentrada no longo prazo e uma posição de caixa líquida que proporciona flexibilidade financeira. Essa solidez permite que a empresa invista em novos projetos e busque oportunidades de crescimento, mesmo em um ambiente desafiador. A governança corporativa da TOTVS é estruturada para garantir transparência e responsabilidade, com práticas que visam proteger os interesses dos acionistas e promover um ambiente de negócios ético.\n\nA regulação no setor de tecnologia e serviços financeiros é um aspecto crucial para a TOTVS, exigindo que a empresa esteja sempre atualizada com as normas vigentes. A conformidade com legislações relacionadas à proteção de dados, como a Lei Geral de Proteção de Dados (LGPD), é fundamental para a operação da empresa, especialmente considerando a natureza das soluções que oferece. Eventos significativos, como a joint venture com o Itaú e a aquisição da Linx, são marcos que podem impactar a trajetória de crescimento da TOTVS e sua posição competitiva no mercado. Essas iniciativas não apenas ampliam a gama de serviços oferecidos, mas também fortalecem a presença da empresa em um setor em rápida transformação.\n\nPor fim, a sensibilidade macroeconômica é um fator que a TOTVS deve monitorar de perto. O desempenho da empresa pode ser influenciado por variáveis como taxas de juros, inflação e crescimento econômico, que afetam diretamente a disposição das pequenas e médias empresas em investir em tecnologia. Em um cenário onde a digitalização se torna cada vez mais essencial, a capacidade da TOTVS de se adaptar e inovar será determinante para sua continuidade e sucesso no mercado.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.6 bi (trimestre) | R$4.5 bi (LTM)\n- EBITDA: R$0.4 bi (trimestre) | R$1.1 bi (LTM) | Margem 26.0%\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.7 bi (LTM)\n- Dívida: R$0.4 bi (líquida) | R$1.6 bi (bruta)\n- Operacional: Crescimento da Receita Líquida de 17,8% a/a, com Receita Recorrente representando 91,5% da Receita Consolidada.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1555300000,
+      "receita_liquida_ltm": 4494800000,
+      "ebitda_tri": 404800000,
+      "ebitda_ltm": 1146300000,
+      "lucro_liquido_tri": 248700000,
+      "lucro_liquido_ltm": 694600000,
+      "divida_liquida": 411200000,
+      "divida_bruta": 1594500000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 26.0,
+      "margem_liquida_pct": 16.0
+    },
+    "operacionais": {
+      "descricao": "Crescimento da Receita Líquida de 17,8% a/a, com Receita Recorrente representando 91,5% da Receita Consolidada.",
+      "metricas": {
+        "receita_recorrente_tri": 1422500000,
+        "arr": 6270600000,
+        "adicao_liquida_arr": 220200000,
+        "taxa_retencao_pct": 98.6
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:36:49.890963Z"
+}

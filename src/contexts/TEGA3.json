@@ -1,0 +1,35 @@
+{
+  "ticker": "TEGA3",
+  "codigo_cvm": "25844",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25844_2025-09-30_TEGRA_INCORPORADORA_SA.pdf",
+  "texto_contexto": "A Tegra Incorporadora S.A. se destaca no cenário do setor imobiliário brasileiro, posicionando-se como uma referência na incorporação de empreendimentos residenciais de médio e alto padrão. Com um foco estratégico nas regiões metropolitanas de São Paulo, Rio de Janeiro e Campinas, a empresa desenvolve um modelo de negócio que abrange desde a aquisição de terrenos até a entrega de unidades habitacionais, passando pelo desenvolvimento de projetos que visam não apenas atender à demanda habitacional, mas também contribuir para o desenvolvimento urbano, especialmente sob a marca Tamboré.\n\nO portfólio da Tegra é diversificado, englobando lançamentos de novos empreendimentos e a comercialização de imóveis prontos, o que permite à empresa atender a diferentes perfis de consumidores e se adaptar às dinâmicas do mercado. Os segmentos em que a Tegra atua são caracterizados por uma demanda crescente por imóveis de qualidade, impulsionada por fatores como urbanização, aumento da renda e mudanças nas preferências habitacionais. Nesse contexto, a localização dos empreendimentos, a qualidade dos projetos e a eficiência na gestão de custos emergem como drivers de valor fundamentais, que não apenas influenciam a percepção de valor dos consumidores, mas também impactam diretamente nos resultados financeiros da companhia.\n\nOs principais indicadores de desempenho (KPIs) da Tegra, como receita líquida, margem bruta, velocidade de vendas (VSO) e volume de lançamentos, são cruciais para monitorar a saúde financeira e operacional da empresa. A velocidade de vendas, por exemplo, é um reflexo direto da aceitação do mercado e da eficácia das estratégias de marketing e vendas implementadas. Além disso, a gestão do endividamento e da liquidez é vital para garantir a sustentabilidade financeira da Tegra, especialmente em um setor que pode ser sensível a flutuações econômicas e mudanças nas taxas de juros.\n\nEntretanto, a Tegra não está isenta de riscos. A volatilidade do mercado imobiliário, que pode ser influenciada por fatores econômicos, políticos e sociais, representa um desafio constante. Mudanças nas condições econômicas, como recessões ou crises financeiras, podem impactar a capacidade de compra dos consumidores e, consequentemente, as vendas da empresa. A concorrência no setor também é intensa, com diversas incorporadoras disputando a mesma fatia de mercado, o que exige da Tegra uma constante inovação em design e marketing para se destacar.\n\nA estrutura de capital da Tegra é marcada por uma gestão financeira conservadora, com uma dívida líquida que representa uma fração do patrimônio líquido. Essa abordagem reflete um compromisso com a solidez financeira e a minimização de riscos associados ao endividamento excessivo. A empresa está sujeita à regulação da Comissão de Valores Mobiliários (CVM), o que implica em um rigoroso cumprimento das normas contábeis brasileiras e internacionais (IFRS), assegurando transparência e confiabilidade nas informações financeiras divulgadas ao mercado.\n\nEventos críticos, como o lançamento de novos empreendimentos e a entrega de unidades, são momentos decisivos que podem influenciar a percepção do mercado sobre a Tegra. A captação de recursos, por meio de instrumentos como debêntures, também é um aspecto importante para financiar seus projetos e garantir a continuidade das operações. A capacidade da empresa de se adaptar às mudanças nas preferências dos consumidores e às condições do mercado será um fator determinante para seu sucesso a longo prazo. Em um ambiente em constante transformação, a Tegra deve permanecer atenta às tendências do setor e às necessidades dos clientes, buscando sempre inovar e oferecer produtos que se alinhem às expectativas do público-alvo. Assim, a Tegra Incorporadora não apenas se posiciona como uma player relevante no mercado imobiliário, mas também como uma empresa que busca constantemente a excelência em seus empreendimentos e na experiência do cliente.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.3 bi (trimestre) | R$0.8 bi (LTM)\n- Lucro Líquido: R$-0.0 bi (trimestre) | R$-0.1 bi (LTM)\n- Dívida Líquida: R$2.0 bi\n- Operacional: Vendas brutas de R$ 472 milhões, crescimento de 103% ano a ano, com VSO trimestral de 11,7%. Lançamentos totalizaram R$ 876 milhões, aumento de 431% em relação ao ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 316341000,
+      "receita_liquida_ltm": 765865000,
+      "ebitda_tri": null,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": -31696000,
+      "lucro_liquido_ltm": -85015000,
+      "divida_liquida": 1990000000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": -10.0
+    },
+    "operacionais": {
+      "descricao": "Vendas brutas de R$ 472 milhões, crescimento de 103% ano a ano, com VSO trimestral de 11,7%. Lançamentos totalizaram R$ 876 milhões, aumento de 431% em relação ao ano anterior.",
+      "metricas": {
+        "vendas_brutas": 471871000,
+        "vso_trimestral_pct": 11.7,
+        "lancamentos": 876720000,
+        "unidades_vendidas": 398
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:33:24.394227Z"
+}

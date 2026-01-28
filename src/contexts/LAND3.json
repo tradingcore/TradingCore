@@ -1,0 +1,33 @@
+{
+  "ticker": "LAND3",
+  "codigo_cvm": "26000",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "26000_2025-09-30_TERRA_SANTA_PROPRIEDADES_AGRÍCOLAS_SA.pdf",
+  "texto_contexto": "A Terra Santa Propriedades Agrícolas S.A. se destaca no cenário do mercado imobiliário rural brasileiro, adotando um modelo de negócio que se concentra na administração de terras e benfeitorias por meio de contratos de arrendamento. Essa abordagem permite à empresa gerar receitas anuais estáveis, reconhecidas de forma linear ao longo do ano, o que reflete não apenas uma gestão ativa do portfólio, mas também um compromisso com a eficiência operacional e a valorização sustentável dos ativos. A companhia tem como foco principal a exploração agrícola, com ênfase no cultivo de soja, um dos produtos mais relevantes do agronegócio brasileiro.\n\nOs segmentos de atuação da Terra Santa são amplos, abrangendo tanto a exploração agrícola quanto a gestão de propriedades rurais. A empresa se beneficia da crescente demanda por alimentos e commodities, especialmente em um cenário global onde a soja se destaca como um dos principais produtos de exportação do Brasil. Para medir seu desempenho, a Terra Santa utiliza indicadores-chave de desempenho (KPIs) que incluem a receita líquida, o lucro bruto, a margem EBITDA ajustada e a relação dívida líquida/EBITDA ajustado. Esses KPIs são fundamentais para avaliar a saúde financeira da companhia e sua eficiência operacional, permitindo uma análise detalhada de sua performance ao longo do tempo.\n\nOs principais drivers de valor para a Terra Santa são diversos e interligados. A valorização das terras, por exemplo, é um fator crucial, uma vez que o mercado imobiliário rural pode ser altamente volátil e influenciado por uma série de fatores econômicos e sociais. A eficiência na gestão dos contratos de arrendamento, que são renegociados a cada três anos, também é um elemento central, pois permite à empresa ajustar suas condições comerciais de acordo com as flutuações do mercado. Além disso, a variação dos preços das commodities agrícolas, especialmente a soja, impacta diretamente a rentabilidade da companhia. Para mitigar riscos financeiros, a Terra Santa implementa estratégias de hedge e fixação de preços, que são essenciais para proteger a empresa contra oscilações de preços e variações cambiais.\n\nEntretanto, a companhia enfrenta uma série de riscos que podem impactar sua operação e resultados financeiros. A volatilidade dos preços das commodities é um dos principais desafios, uma vez que mudanças bruscas podem afetar a rentabilidade e a capacidade de cumprir obrigações financeiras. Além disso, a Terra Santa está sujeita a mudanças nas regulamentações agrícolas e ambientais, que podem exigir adaptações em suas práticas operacionais e impactar seus custos. A dependência de condições climáticas favoráveis para a produção agrícola também representa um risco significativo, uma vez que eventos climáticos adversos podem comprometer a produtividade e, consequentemente, a geração de receitas.\n\nA estrutura de capital da Terra Santa é caracterizada por uma alavancagem prudente, com uma relação de dívida líquida que demonstra uma posição financeira sólida. Essa estrutura permite à empresa manter uma capacidade de cumprir suas obrigações financeiras, mesmo em cenários adversos. A governança corporativa da companhia é orientada por princípios de transparência e responsabilidade, com práticas que buscam alinhar os interesses dos acionistas e demais stakeholders.\n\nNo que diz respeito à regulação, a Terra Santa opera sob um conjunto de normas contábeis e diretrizes da Comissão de Valores Mobiliários (CVM), além de legislações específicas do setor agrícola e imobiliário. A conformidade com essas regulamentações é fundamental para a operação da empresa e para a manutenção da confiança dos investidores. Eventos críticos, como a renegociação de contratos de arrendamento e a regularização fundiária de suas propriedades, podem ter um impacto significativo nos resultados financeiros da companhia e na percepção de risco no mercado.\n\nA sensibilidade macroeconômica também desempenha um papel importante na operação da Terra Santa. Fatores como a taxa de câmbio, a inflação e as políticas econômicas do governo podem influenciar tanto os custos operacionais quanto a demanda por produtos agrícolas. Em um ambiente econômico dinâmico, a capacidade da empresa de se adaptar e responder a essas variáveis será crucial para sua sustentabilidade e crescimento a longo prazo. Assim, a Terra Santa Propriedades Agrícolas S.A. se posiciona como uma empresa resiliente, com um modelo de negócio que busca equilibrar a rentabilidade com a responsabilidade social e ambiental, ao mesmo tempo em que navega pelos desafios e oportunidades do setor agrícola e imobiliário.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- EBITDA: R$-0.0 bi (trimestre) | R$0.0 bi (LTM) | Margem -109.1%\n- Lucro Líquido: R$-0.0 bi (trimestre) | R$-0.0 bi (LTM)\n- Dívida Líquida: R$0.0 bi\n- Operacional: Crescimento de 22,9% na receita líquida em relação ao mesmo período do exercício anterior, totalizando R$ 22,1 milhões, impulsionado pelo aumento na quantidade de sacas de soja.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 22000000,
+      "receita_liquida_ltm": 73918000,
+      "ebitda_tri": -24067000,
+      "ebitda_ltm": 2102000,
+      "lucro_liquido_tri": -18333000,
+      "lucro_liquido_ltm": -3621000,
+      "divida_liquida": 44200000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": -109.1,
+      "margem_liquida_pct": -83.1
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 22,9% na receita líquida em relação ao mesmo período do exercício anterior, totalizando R$ 22,1 milhões, impulsionado pelo aumento na quantidade de sacas de soja.",
+      "metricas": {
+        "quantidade_sacas_soja": 20.5,
+        "preco_saca_soja": 107.52
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:34:55.365270Z"
+}
