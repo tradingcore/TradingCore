@@ -1,0 +1,33 @@
+{
+  "ticker": "MDIA3",
+  "codigo_cvm": "20338",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20338_2025-09-30_M_DIAS_BRANCO_SA_IND_E_COM_DE_ALIMENTOS.pdf",
+  "texto_contexto": "A M. Dias Branco é uma proeminente empresa brasileira no setor de alimentos, reconhecida por sua liderança nos segmentos de biscoitos, massas, granolas e cookies saudáveis. O modelo de negócio da companhia é fundamentado na produção e comercialização de uma ampla gama de produtos alimentícios, com um forte foco em qualidade e inovação. Essa abordagem visa não apenas atender ao mercado varejista, mas também o setor de food service, que abrange restaurantes, cafeterias e outros estabelecimentos que demandam produtos alimentícios em grande escala. A diversificação do portfólio é um dos principais diferenciais da M. Dias Branco, que inclui itens de maior valor agregado, como snacks saudáveis, alinhando-se às tendências de consumo contemporâneas que priorizam a saúde e o bem-estar.\n\nOs principais indicadores de desempenho da M. Dias Branco, como receita líquida, lucro líquido, EBITDA e margem EBITDA, são reflexos de sua capacidade de gerar valor em um mercado competitivo. A companhia tem demonstrado um crescimento consistente em suas receitas e lucros, impulsionado por um aumento na demanda por seus produtos e uma recuperação significativa de market share. Os drivers de valor que sustentam esse desempenho incluem a eficiência operacional, que permite à empresa otimizar seus processos produtivos e reduzir custos; a capacidade de inovação, que a posiciona na vanguarda das preferências dos consumidores; e a força da marca, que é um ativo crucial em um setor onde a confiança do consumidor é fundamental. Além disso, a M. Dias Branco tem se empenhado em expandir sua presença tanto no mercado nacional quanto internacional, buscando novas oportunidades de crescimento.\n\nEntretanto, a empresa não está isenta de riscos que podem impactar seu desempenho. Flutuações nos preços das matérias-primas, especialmente trigo e óleo de palma, representam um desafio constante, uma vez que esses insumos são fundamentais para a produção de seus produtos. Além disso, a M. Dias Branco enfrenta riscos relacionados à concorrência acirrada e à dinâmica do mercado, que exigem uma constante adaptação às mudanças nas preferências dos consumidores e às estratégias dos concorrentes. A estrutura de capital da companhia é robusta, com um perfil de endividamento que permite uma posição de caixa líquido, indicando que a empresa possui mais caixa do que dívidas. Essa solidez financeira é reforçada pela classificação de crédito AAA com perspectiva estável, atribuída pela Fitch, que atesta a confiança do mercado na saúde financeira da M. Dias Branco.\n\nA regulação do setor alimentício é um aspecto crítico para a operação da M. Dias Branco, que deve cumprir rigorosas normas de segurança alimentar e qualidade, além de regulamentações ambientais. A conformidade com essas normas não apenas garante a integridade dos produtos, mas também protege a reputação da marca. Eventos críticos que podem afetar a companhia incluem mudanças nas políticas de comércio exterior, que podem impactar a importação de insumos e a exportação de produtos, variações cambiais que influenciam os custos de produção e a necessidade de adaptação a novas tendências de consumo, como a crescente demanda por produtos saudáveis e sustentáveis. Nesse contexto, a M. Dias Branco se compromete com práticas de governança e responsabilidade social, refletindo sua estratégia de ESG (ambiental, social e de governança), que busca alinhar seus objetivos de negócios com as expectativas sociais e ambientais. Essa abordagem não apenas fortalece a imagem da empresa, mas também a posiciona como uma referência em responsabilidade corporativa no setor alimentício.\n\nEm suma, a M. Dias Branco se destaca como uma empresa resiliente e inovadora, que navega por um ambiente desafiador com uma estratégia bem definida e um compromisso com a qualidade e a sustentabilidade. A combinação de um portfólio diversificado, uma sólida estrutura de capital e uma governança responsável coloca a companhia em uma posição favorável para enfrentar os desafios do mercado e aproveitar as oportunidades de crescimento no futuro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$2.8 bi (trimestre) | R$7.7 bi (LTM)\n- EBITDA: R$0.3 bi (trimestre) | R$0.8 bi (LTM) | Margem 11.4%\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.5 bi (LTM)\n- Dívida: R$-0.7 bi (líquida) | R$1.9 bi (bruta)\n- Capex: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- Operacional: Venda de 482,9 mil toneladas no 3T25, com crescimento de 15,2% em relação ao 3T24.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 2784400000,
+      "receita_liquida_ltm": 7716700000,
+      "ebitda_tri": 318100000,
+      "ebitda_ltm": 823900000,
+      "lucro_liquido_tri": 216100000,
+      "lucro_liquido_ltm": 501900000,
+      "divida_liquida": -720600000,
+      "divida_bruta": 1867600000,
+      "capex_tri": 62700000,
+      "capex_ltm": 204400000,
+      "margem_ebitda_pct": 11.4,
+      "margem_liquida_pct": 7.8
+    },
+    "operacionais": {
+      "descricao": "Venda de 482,9 mil toneladas no 3T25, com crescimento de 15,2% em relação ao 3T24.",
+      "metricas": {
+        "volume_vendido_tri": 482900,
+        "volume_vendido_ltm": 1334400
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:59:33.422241Z"
+}

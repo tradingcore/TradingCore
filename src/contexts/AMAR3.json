@@ -1,0 +1,36 @@
+{
+  "ticker": "AMAR3",
+  "codigo_cvm": "22055",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "22055_2025-09-30_MARISA_LOJAS_SA.pdf",
+  "texto_contexto": "A Lojas Marisa (AMAR3) se destaca como uma das principais redes de moda feminina no Brasil, operando com um modelo de negócio que prioriza a acessibilidade e a qualidade em suas ofertas de roupas e acessórios. Com um foco predominante no público feminino, a empresa tem expandido seu portfólio para incluir linhas infantis e masculinas, refletindo uma estratégia de diversificação que visa atender a uma gama mais ampla de consumidores. Essa abordagem não apenas amplia o alcance da marca, mas também permite que a Lojas Marisa capitalize sobre diferentes segmentos de mercado, especialmente em um cenário onde a moda infantil tem demonstrado um crescimento significativo nas vendas.\n\nA experiência do cliente é um pilar central na operação da Lojas Marisa, que tem investido na integração de suas operações físicas e digitais. A implementação de serviços como \"Clique & Retire\" e \"Ship from Store\" exemplifica essa estratégia, permitindo que os consumidores tenham uma experiência de compra mais fluida e conveniente. Essa sinergia entre os canais de venda é um diferencial competitivo que a empresa busca explorar, especialmente em um ambiente de varejo cada vez mais digitalizado.\n\nOs principais indicadores de desempenho (KPIs) da Lojas Marisa, como receita líquida, lucro bruto, EBITDA e margem líquida, são fundamentais para avaliar a saúde financeira da empresa. A companhia tem mostrado um crescimento consistente em sua base de clientes, com um aumento notável tanto na quantidade de clientes ativos quanto na fidelização dos mesmos. Esse engajamento é um reflexo da eficácia das estratégias de marketing e da qualidade dos produtos oferecidos, que se alinham com as tendências de moda e as expectativas dos consumidores.\n\nEntretanto, a Lojas Marisa não está isenta de riscos. A volatilidade econômica, que inclui fatores como inflação e variações nas taxas de juros, pode impactar diretamente o poder de compra dos consumidores e, consequentemente, as vendas da empresa. Além disso, as mudanças nas preferências dos consumidores e a intensa concorrência no setor de varejo de moda exigem que a Lojas Marisa mantenha uma vigilância constante sobre o mercado e adapte suas estratégias de acordo. A capacidade de inovação em produtos e serviços, bem como a eficiência operacional e a gestão de custos, são drivers de valor essenciais que a empresa deve continuar a priorizar.\n\nA estrutura de capital da Lojas Marisa é caracterizada por um nível de alavancagem financeira considerado seguro, o que indica uma gestão prudente do endividamento. Essa abordagem permite à empresa ter flexibilidade financeira para enfrentar desafios e investir em oportunidades de crescimento. A regulação do setor de varejo no Brasil, que abrange normas trabalhistas e de proteção ao consumidor, também desempenha um papel importante nas operações da empresa, exigindo conformidade e adaptação contínua às mudanças legislativas.\n\nEventos críticos, como alterações nas condições econômicas e sazonais, podem impactar a demanda por produtos de moda e, portanto, as operações da Lojas Marisa. A empresa deve estar atenta a inovações tecnológicas e às mudanças nas plataformas de e-commerce, que são essenciais para manter sua competitividade no mercado. A capacidade de se adaptar rapidamente a essas mudanças e de antecipar as necessidades dos consumidores será crucial para o sucesso contínuo da Lojas Marisa em um ambiente de varejo dinâmico e desafiador. Em suma, a Lojas Marisa se posiciona como uma marca resiliente e inovadora, comprometida em oferecer moda acessível e de qualidade, ao mesmo tempo em que navega por um cenário de riscos e oportunidades que moldam o futuro do varejo no Brasil.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.3 bi (trimestre) | R$1.0 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.3 bi (LTM) | Margem 30.6%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Dívida: R$0.3 bi (líquida) | R$0.3 bi (bruta)\n- Capex: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Operacional: A Marisa registrou receita líquida de R$ 332,7 milhões no trimestre, revertendo prejuízos anteriores com lucro líquido de R$ 5,8 milhões. O EBITDA alcançou R$ 101,9 milhões, com margem de 30,6%. A base de clientes ativas cresceu 12,0% e mais de 1 milhão de cartões Marisa foram emitidos.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 332700000,
+      "receita_liquida_ltm": 1000000000,
+      "ebitda_tri": 101930000,
+      "ebitda_ltm": 299515000,
+      "lucro_liquido_tri": 5839000,
+      "lucro_liquido_ltm": 10309000,
+      "divida_liquida": 285819000,
+      "divida_bruta": 346343000,
+      "capex_tri": 6357000,
+      "capex_ltm": 16034000,
+      "margem_ebitda_pct": 30.6,
+      "margem_liquida_pct": 1.8
+    },
+    "operacionais": {
+      "descricao": "A Marisa registrou receita líquida de R$ 332,7 milhões no trimestre, revertendo prejuízos anteriores com lucro líquido de R$ 5,8 milhões. O EBITDA alcançou R$ 101,9 milhões, com margem de 30,6%. A base de clientes ativas cresceu 12,0% e mais de 1 milhão de cartões Marisa foram emitidos.",
+      "metricas": {
+        "clientes_ativos": 1027876,
+        "crescimento_clientes_recorrentes_pct": 34.1,
+        "crescimento_vendas_mesmas_lojas_infantil_pct": 46.3,
+        "quantidade_lojas": 230,
+        "peças_vendidas_milhoes": 11.3
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:02:51.387619Z"
+}

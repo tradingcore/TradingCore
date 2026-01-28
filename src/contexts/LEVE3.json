@@ -1,0 +1,35 @@
+{
+  "ticker": "LEVE3",
+  "codigo_cvm": "8575",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "8575_2025-09-30_MAHLE_METAL_LEVE_SA.pdf",
+  "texto_contexto": "A Mahle Metal Leve S.A. é uma proeminente empresa brasileira no setor de autopeças, destacando-se pela fabricação e comercialização de componentes essenciais para motores de combustão interna, além de filtros automotivos e sistemas de gerenciamento térmico. O modelo de negócio da companhia é fundamentado na entrega de produtos de alta tecnologia e qualidade, frequentemente desenvolvidos em colaboração com montadoras e distribuidores. Essa abordagem não apenas permite uma personalização significativa dos produtos, mas também fortalece a fidelização dos clientes, criando um ciclo virtuoso de inovação e satisfação.\n\nA Mahle Metal Leve opera em dois segmentos principais: Equipamento Original (OE) e Aftermarket. No segmento OE, a empresa fornece diretamente para montadoras, estabelecendo parcerias estratégicas que garantem a integração de suas soluções nas linhas de produção. Já no segmento Aftermarket, a companhia atende o mercado de reposição, oferecendo produtos que atendem às necessidades de manutenção e reparo de veículos em circulação. Essa dualidade de atuação permite à Mahle Metal Leve diversificar suas fontes de receita e mitigar riscos associados a flutuações em um único segmento.\n\nOs principais indicadores de desempenho da empresa, como receita líquida, margem bruta, margem EBITDA e lucro líquido, refletem um crescimento consistente, impulsionado por uma demanda robusta no mercado doméstico, especialmente no segmento de Equipamento Original e no Aftermarket. O crescimento das vendas é um dos principais drivers de valor, que também inclui a inovação contínua em produtos e processos, a expansão das operações, particularmente no Centro de Tecnologia em Jundiaí, e o fortalecimento de parcerias com clientes e fornecedores. Esses fatores não apenas sustentam a competitividade da Mahle Metal Leve, mas também a posicionam como uma referência em tecnologia e qualidade no setor.\n\nEntretanto, a empresa enfrenta riscos significativos, como a volatilidade do mercado automotivo, que pode ser influenciada por fatores econômicos, regulatórios e mudanças nas preferências dos consumidores. A necessidade de adaptação às novas tecnologias e tendências de sustentabilidade, como a transição para veículos elétricos e a crescente demanda por soluções ambientalmente responsáveis, também representa um desafio. Além disso, a concorrência acirrada no setor de autopeças exige que a Mahle Metal Leve mantenha um foco constante em inovação e eficiência operacional.\n\nA estrutura de capital da Mahle Metal Leve é caracterizada por um equilíbrio entre dívida e capital próprio, com uma relação de dívida líquida sobre EBITDA ajustado que indica uma posição financeira relativamente saudável. No entanto, a empresa tem enfrentado um aumento na dívida líquida em relação ao ano anterior, o que pode exigir uma gestão cuidadosa para garantir a sustentabilidade financeira a longo prazo. A governança corporativa da companhia é um aspecto crucial de sua operação, e reconhecimentos como o Troféu Transparência ANEFAC 2025 evidenciam seu compromisso com práticas éticas e transparentes, fundamentais para a construção de uma reputação sólida no mercado.\n\nA regulação do setor automotivo e de autopeças no Brasil e na Argentina é um fator crítico que a Mahle Metal Leve deve considerar em suas operações. A conformidade com normas ambientais e de segurança, bem como a adaptação a mudanças nas políticas de comércio e tarifas, são essenciais para a continuidade de suas atividades. Eventos estratégicos, como aquisições que ampliam a capacidade de produção e o portfólio de produtos, também desempenham um papel importante na trajetória de crescimento da empresa.\n\nPor fim, a sensibilidade macroeconômica é um aspecto que não pode ser ignorado. A Mahle Metal Leve está sujeita a flutuações econômicas que podem impactar a demanda por veículos e, consequentemente, por autopeças. Fatores como a taxa de juros, inflação e políticas fiscais têm um papel significativo na saúde do setor automotivo, e a empresa deve estar preparada para navegar por essas incertezas, garantindo que sua estratégia de negócios seja resiliente e adaptável às mudanças do ambiente econômico. Assim, a Mahle Metal Leve se posiciona como uma empresa robusta, com um modelo de negócio sólido e uma visão voltada para o futuro, pronta para enfrentar os desafios e aproveitar as oportunidades que o mercado apresenta.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.3 bi (trimestre) | R$4.1 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.8 bi (LTM) | Margem 21.4%\n- Operacional: Crescimento de 26,0% na receita líquida no 9M25, totalizando R$ 4.081,1 milhões. Margem EBITDA de 19,8% no 9M25.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 309800000,
+      "receita_liquida_ltm": 4081100000,
+      "ebitda_tri": 66000000,
+      "ebitda_ltm": 808000000,
+      "lucro_liquido_tri": null,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 21.4,
+      "margem_liquida_pct": 13.0
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 26,0% na receita líquida no 9M25, totalizando R$ 4.081,1 milhões. Margem EBITDA de 19,8% no 9M25.",
+      "metricas": {
+        "crescimento_receita_pct": 26.0,
+        "margem_bruta_pct": 28.7,
+        "margem_ebit_pct": 19.3,
+        "margem_liquida_pct": 13.0
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:01:09.637219Z"
+}

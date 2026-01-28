@@ -1,0 +1,33 @@
+{
+  "ticker": "MRFG3",
+  "codigo_cvm": "20788",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20788_2025-09-30_MARFRIG_GLOBAL_FOODS_SA.pdf",
+  "texto_contexto": "A Marfrig Global Foods S.A. se destaca como uma das principais empresas do setor de alimentos, operando sob um modelo de negócio multiproteína que abrange a produção e comercialização de carnes in natura e processadas, além de alimentos para pets e ingredientes. Com uma presença significativa em 120 países, a Marfrig possui uma estrutura de produção diversificada, com unidades de abate e processamento localizadas em regiões estratégicas, como América do Norte e América do Sul. Essa ampla atuação geográfica não apenas fortalece a marca, mas também permite à empresa responder de maneira ágil às demandas do mercado global.\n\nOs segmentos de atuação da Marfrig são bem definidos, com destaque para Beef América do Norte, Beef América do Sul e BRF, que se concentra em produtos processados. Cada um desses segmentos apresenta características e dinâmicas de mercado distintas, mas todos compartilham a mesma busca por eficiência operacional e inovação. A empresa tem se empenhado em aumentar seu portfólio de produtos, buscando não apenas crescimento em volume, mas também valor agregado, o que se reflete em sua estratégia de diversificação e na introdução de novos produtos que atendem às tendências de consumo.\n\nOs principais indicadores de desempenho (KPIs) da Marfrig, como receita líquida, EBITDA ajustado, margem EBITDA, lucro bruto e fluxo de caixa operacional, são fundamentais para avaliar a saúde financeira da companhia. A empresa tem se concentrado em manter uma disciplina financeira rigorosa, o que é crucial em um setor marcado por flutuações de preços e margens apertadas. O crescimento da demanda por proteínas, impulsionado por mudanças nos hábitos alimentares e pela crescente população global, é um dos principais drivers que sustentam o valor da Marfrig. Além disso, a busca por inovações em produtos e a expansão de mercado são essenciais para a captura de sinergias e a otimização de custos.\n\nEntretanto, a Marfrig não está isenta de riscos. A volatilidade dos preços das commodities, que pode impactar diretamente os custos de produção e as margens de lucro, é uma preocupação constante. Além disso, flutuações cambiais podem afetar a competitividade da empresa em mercados internacionais. Questões regulatórias e ambientais também representam desafios significativos, exigindo que a Marfrig mantenha altos padrões de conformidade com normas de segurança alimentar e práticas sustentáveis. A saúde animal é outro fator crítico, uma vez que surtos de doenças podem comprometer a produção e as exportações, afetando a reputação e a operação da empresa.\n\nA estrutura de capital da Marfrig é predominantemente atrelada ao dólar, refletindo uma dívida líquida considerável que, embora permita investimentos em expansão e inovação, requer uma gestão cuidadosa para garantir a sustentabilidade financeira a longo prazo. A empresa deve monitorar continuamente seu perfil de endividamento, especialmente em um ambiente econômico volátil.\n\nA governança corporativa da Marfrig é estruturada para garantir transparência e responsabilidade, com um conselho que supervisiona as operações e a conformidade regulatória. A empresa tem se esforçado para manter um diálogo aberto com seus stakeholders, o que é fundamental em um setor onde a reputação e a confiança são essenciais para o sucesso.\n\nA regulação do setor de alimentos é rigorosa, e a Marfrig deve estar atenta às normas que regem a segurança alimentar e as práticas ambientais. Eventos significativos, como a criação da Sadia Halal e a expansão de joint ventures, são marcos que podem influenciar a trajetória futura da empresa, assim como a necessidade de adaptação a mudanças nas políticas comerciais e de exportação em mercados estratégicos. A capacidade da Marfrig de navegar por esse complexo cenário regulatório e competitivo será determinante para seu sucesso a longo prazo.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A empresa está sujeita a variações na economia global, que podem impactar tanto a demanda por seus produtos quanto os custos de insumos. A capacidade da Marfrig de se adaptar a essas mudanças, mantendo sua competitividade e inovação, será crucial para sustentar seu crescimento e consolidar sua posição no mercado global de alimentos.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$41.8 bi (trimestre) | R$120.0 bi (LTM)\n- EBITDA: R$3.5 bi (trimestre) | R$9.6 bi (LTM) | Margem 8.4%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.3 bi (LTM)\n- Dívida: R$41.3 bi (líquida) | R$63.8 bi (bruta)\n- Capex: R$1.4 bi (trimestre) | N/D (LTM)\n- Operacional: No 3T25, a Marfrig reportou receita líquida de R$ 41,8 bilhões, com EBITDA ajustado de R$ 3,5 bilhões e lucro líquido de R$ 94 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 41766000000,
+      "receita_liquida_ltm": 120047000000,
+      "ebitda_tri": 3503000000,
+      "ebitda_ltm": 9625000000,
+      "lucro_liquido_tri": 94000000,
+      "lucro_liquido_ltm": 267000000,
+      "divida_liquida": 41349000000,
+      "divida_bruta": 63751000000,
+      "capex_tri": 1409100000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 8.4,
+      "margem_liquida_pct": 0.2
+    },
+    "operacionais": {
+      "descricao": "No 3T25, a Marfrig reportou receita líquida de R$ 41,8 bilhões, com EBITDA ajustado de R$ 3,5 bilhões e lucro líquido de R$ 94 milhões.",
+      "metricas": {
+        "volume_consolidado_tons": 2101000,
+        "clientes_atendidos": 340000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:02:05.675945Z"
+}
