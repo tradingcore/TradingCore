@@ -1,0 +1,34 @@
+{
+  "ticker": "FHER3",
+  "codigo_cvm": "20621",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20621_2025-09-30_FERTILIZANTES_HERINGER_SA.pdf",
+  "texto_contexto": "A Fertilizantes Heringer (FHER3) se posiciona como uma das principais empresas do setor de fertilizantes no Brasil, com um modelo de negócio centrado na produção e comercialização de produtos destinados à agricultura. A companhia tem se destacado na entrega de fertilizantes premium, que atendem a uma demanda crescente por soluções mais eficientes e sustentáveis no cultivo de diversas culturas. Entre os segmentos atendidos, a Fertilizantes Heringer concentra seus esforços nas principais culturas do país, como milho, cana-de-açúcar e soja, que são fundamentais para a matriz agrícola brasileira e, consequentemente, para a economia do país.\n\nOs drivers de valor da Fertilizantes Heringer são multifacetados e refletem tanto as dinâmicas internas da empresa quanto as condições do mercado externo. A evolução dos preços das matérias-primas é um fator crucial, uma vez que a empresa depende de insumos que podem sofrer variações significativas em função de fatores globais e locais. Além disso, a demanda por fertilizantes no Brasil, impulsionada pelo crescimento da produção agrícola e pela busca por maior produtividade, é um motor importante para o desempenho da companhia. A capacidade de inovação e adaptação da Fertilizantes Heringer em relação aos produtos premium também se destaca como um diferencial competitivo, permitindo que a empresa se posicione favoravelmente em um mercado cada vez mais exigente.\n\nPara medir sua performance, a Fertilizantes Heringer utiliza indicadores-chave de desempenho (KPIs) como receita líquida, margem bruta e EBITDA. Esses indicadores são fundamentais para avaliar a saúde financeira e operacional da companhia, permitindo uma análise detalhada de sua eficiência e rentabilidade. A margem bruta, por exemplo, oferece insights sobre a capacidade da empresa de controlar custos e precificar seus produtos de maneira competitiva, enquanto o EBITDA reflete a geração de caixa operacional, essencial para sustentar suas atividades e investimentos.\n\nEntretanto, a Fertilizantes Heringer não está isenta de riscos. A volatilidade dos preços das matérias-primas pode impactar diretamente suas margens e, por consequência, sua lucratividade. Além disso, flutuações cambiais, especialmente em um cenário onde a empresa possui dívidas em moeda estrangeira, podem aumentar os encargos financeiros e afetar a estrutura de capital. A concorrência no setor de fertilizantes é intensa, com diversas empresas disputando participação de mercado, o que exige da Fertilizantes Heringer um constante aprimoramento em sua oferta de produtos e serviços. Os riscos regulatórios também são significativos, uma vez que a empresa deve se adequar a normas que regulam a segurança, qualidade e comercialização de seus produtos, podendo enfrentar desafios em caso de mudanças nas legislações.\n\nA estrutura de capital da Fertilizantes Heringer é complexa, especialmente considerando sua dívida, que inclui encargos relacionados a processos de recuperação judicial. Essa situação exige uma gestão financeira cuidadosa, uma vez que a valorização do real em relação ao dólar pode impactar suas despesas financeiras e, consequentemente, sua capacidade de investimento e crescimento. A governança corporativa da empresa é um aspecto fundamental para garantir a transparência e a responsabilidade nas decisões, especialmente em um contexto de recuperação e adaptação a um mercado em constante mudança.\n\nA regulação do setor agrícola e de fertilizantes no Brasil é um fator crítico que influencia não apenas as operações da Fertilizantes Heringer, mas também a dinâmica do mercado como um todo. Normas que estabelecem padrões de segurança e qualidade são essenciais para a confiança dos consumidores e para a sustentabilidade do setor. Eventos críticos, como mudanças nas políticas agrícolas, podem afetar a demanda por fertilizantes, enquanto variações climáticas podem impactar a produção agrícola e, por consequência, a necessidade de insumos.\n\nPor fim, a sensibilidade macroeconômica é um aspecto que não pode ser negligenciado. A Fertilizantes Heringer opera em um ambiente onde fatores como a inflação, taxas de juros e políticas econômicas podem influenciar diretamente o comportamento do mercado agrícola. A empresa deve estar atenta a essas variáveis, adaptando suas estratégias para mitigar riscos e aproveitar oportunidades que possam surgir em um cenário econômico em constante evolução. Em suma, a Fertilizantes Heringer se apresenta como um player relevante no setor de fertilizantes, com um modelo de negócio robusto, mas que enfrenta desafios significativos que exigem uma gestão proativa e inovadora.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.2 bi (trimestre) | R$5.0 bi (LTM)\n- Capex: R$0.0 bi (trimestre) | N/D (LTM)\n- Operacional: A companhia apresentou uma redução de cerca de 16% nos volumes entregues, mas um aumento de 1,1% na receita líquida devido ao aumento nos preços das matérias-primas.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1245000000,
+      "receita_liquida_ltm": 4980000000,
+      "ebitda_tri": null,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": null,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": 20300000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": 2.4
+    },
+    "operacionais": {
+      "descricao": "A companhia apresentou uma redução de cerca de 16% nos volumes entregues, mas um aumento de 1,1% na receita líquida devido ao aumento nos preços das matérias-primas.",
+      "metricas": {
+        "volume_entregue": null,
+        "participacao_soja": null,
+        "participacao_milho": null
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:10:56.291428Z"
+}

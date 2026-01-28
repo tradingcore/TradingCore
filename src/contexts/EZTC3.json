@@ -1,0 +1,36 @@
+{
+  "ticker": "EZTC3",
+  "codigo_cvm": "20770",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20770_2025-09-30_EZ_TEC_EMPREEND_E_PARTICIPAÇÕES_SA.pdf",
+  "texto_contexto": "A EZTEC S.A. (EZTC3) é uma referência no setor de construção e incorporação imobiliária no Brasil, com uma trajetória de 46 anos marcada por uma sólida reputação e alta lucratividade. A empresa se destaca por seu modelo de negócio que abrange o desenvolvimento e a comercialização de empreendimentos tanto residenciais quanto comerciais, com um foco particular em segmentos de médio e alto padrão, além de iniciativas voltadas para o segmento econômico. Essa diversificação permite à EZTEC atender a diferentes perfis de clientes e se adaptar às dinâmicas do mercado imobiliário, que é notoriamente volátil.\n\nA atuação da EZTEC é concentrada principalmente em São Paulo e na região metropolitana, onde a demanda por imóveis é robusta. A empresa adota uma estratégia que combina lançamentos de novos projetos com a entrega de obras em andamento, o que não apenas maximiza sua presença no mercado, mas também garante um fluxo contínuo de receitas. Os principais indicadores de desempenho (KPIs) da EZTEC, como receita líquida, lucro bruto, margem bruta e lucro líquido, refletem a eficácia de sua operação. A empresa tem demonstrado um crescimento consistente, com margens brutas que se destacam no setor, evidenciando sua capacidade de gerar valor de forma eficiente.\n\nOs drivers de valor da EZTEC são multifacetados e incluem a eficiência na execução de obras, a habilidade em lançar novos projetos e a gestão eficaz de seu banco de terrenos, que possui um valor geral de vendas significativo. Essa gestão proativa do portfólio de terrenos é crucial, pois permite à empresa não apenas garantir um pipeline saudável de projetos, mas também responder rapidamente às mudanças nas condições de mercado. A capacidade de adaptação e inovação é um diferencial competitivo que a EZTEC mantém, permitindo que a empresa se posicione favoravelmente em um ambiente desafiador.\n\nEntretanto, a EZTEC não está isenta de riscos. A volatilidade do mercado imobiliário, as flutuações nas condições econômicas e as variações nas taxas de juros são fatores que podem impactar diretamente sua operação. A dependência de financiamento para a execução de projetos também representa um risco, especialmente em um cenário de incertezas econômicas. A estrutura de capital da empresa é robusta, com um patrimônio líquido significativo e uma dívida líquida controlada, o que demonstra uma gestão prudente e uma posição de liquidez favorável. Essa solidez financeira é um ativo importante, permitindo à EZTEC navegar por períodos de instabilidade com maior resiliência.\n\nA governança corporativa da EZTEC é um aspecto que merece destaque. A empresa opera sob a regulação da Comissão de Valores Mobiliários (CVM) e segue rigorosamente as normas contábeis brasileiras e internacionais. Além disso, a EZTEC se compromete a resolver disputas por meio de arbitragem, conforme estipulado em seu estatuto social, o que reflete um compromisso com a transparência e a ética nos negócios. Essa abordagem não apenas fortalece a confiança dos investidores, mas também contribui para a construção de uma imagem corporativa sólida.\n\nNo que diz respeito à competição, a EZTEC enfrenta um ambiente dinâmico, com diversos players atuando no mercado imobiliário. A capacidade de diferenciar seus produtos e serviços, bem como a eficiência operacional, são fundamentais para manter sua posição de destaque. A empresa deve estar atenta às tendências do setor, como a crescente demanda por sustentabilidade e inovação tecnológica, que podem influenciar as preferências dos consumidores e, consequentemente, a competitividade no mercado.\n\nA sensibilidade macroeconômica é um fator que a EZTEC deve monitorar constantemente. Mudanças nas políticas econômicas, como ajustes nas taxas de juros e nas políticas de crédito, podem afetar a demanda por imóveis e a disposição dos consumidores para investir. A empresa precisa estar preparada para ajustar suas estratégias de acordo com as condições econômicas, garantindo que continue a atender às necessidades do mercado e a maximizar seu desempenho financeiro.\n\nEm suma, a EZTEC S.A. se posiciona como uma empresa sólida e bem estruturada no setor imobiliário brasileiro, com um modelo de negócio que combina inovação, eficiência e uma gestão prudente. Apesar dos desafios inerentes ao mercado, sua capacidade de adaptação e a robustez de sua estrutura de capital a tornam uma player relevante e resiliente, pronta para enfrentar as incertezas do futuro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.5 bi (trimestre) | R$1.2 bi (LTM)\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.4 bi (LTM)\n- Dívida Líquida: R$0.2 bi\n- Operacional: Lançamentos totalizando R$ 475 milhões em VGV, com 52% vendido até a data. Vendas líquidas de R$ 529,1 milhões no trimestre.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 469356000,
+      "receita_liquida_ltm": 1229857000,
+      "ebitda_tri": null,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 183454000,
+      "lucro_liquido_ltm": 417459000,
+      "divida_liquida": 164955000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": 39.1
+    },
+    "operacionais": {
+      "descricao": "Lançamentos totalizando R$ 475 milhões em VGV, com 52% vendido até a data. Vendas líquidas de R$ 529,1 milhões no trimestre.",
+      "metricas": {
+        "vendas_brutas": 602678000,
+        "vendas_liquidas": 529142000,
+        "estoque_total": 2676457000,
+        "numero_projetos_lancados": 2,
+        "numero_canteiros_execucao": 16
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:10:08.571120Z"
+}

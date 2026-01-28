@@ -1,0 +1,33 @@
+{
+  "ticker": "FRAS3",
+  "codigo_cvm": "6211",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "6211_2025-09-30_FRASLE_MOBILITY_SA.pdf",
+  "texto_contexto": "A Fras-le S.A., operando sob a marca Frasle Mobility, é uma proeminente empresa brasileira no setor de autopeças, com um foco estratégico na fabricação e comercialização de componentes essenciais para sistemas de freio, direção e conforto, além de uma gama diversificada de produtos automotivos. O modelo de negócio da Fras-le é dual, abrangendo tanto o mercado de reposição (aftermarket) quanto o fornecimento para montadoras, o que lhe confere uma robusta presença no mercado interno e uma significativa atuação internacional, com operações notáveis na América Latina, Estados Unidos e China.\n\nA diversidade de segmentos em que a Fras-le atua é um dos pilares de sua estratégia. A empresa se destaca na produção de materiais de fricção, componentes para sistemas de freio, direção e conforto, além de peças para motores e sistemas de transmissão e powertrain. Essa ampla gama de produtos, que inclui pastilhas de freio, amortecedores e pistões, permite à Fras-le atender a diferentes necessidades do mercado automotivo, aumentando sua resiliência e capacidade de adaptação às demandas dos consumidores.\n\nOs principais indicadores de desempenho da Fras-le, como receita líquida, EBITDA, margem EBITDA e lucro líquido, são fundamentais para a avaliação de sua saúde financeira e operacional. A alavancagem financeira, que é um aspecto crítico da estrutura de capital da empresa, reflete sua estratégia de financiamento, que combina dívida e patrimônio líquido. A Fras-le tem se empenhado em fortalecer sua estrutura de capital por meio de emissões de ações e debêntures, buscando garantir liquidez e financiar suas operações e investimentos, o que é essencial para sustentar seu crescimento em um mercado competitivo.\n\nOs drivers de valor da Fras-le são multifacetados e incluem a resiliência do mercado de reposição, a eficiência operacional e a capacidade de inovação. A empresa tem demonstrado um compromisso com a sustentabilidade e a modernização de suas operações, o que não apenas melhora sua competitividade, mas também contribui para a criação de valor a longo prazo. No entanto, a Fras-le não está isenta de riscos. Flutuações econômicas, variações cambiais e a dependência de mercados específicos, como o de veículos pesados, podem impactar sua performance. A empresa precisa estar atenta a ciclos de retração que podem afetar a demanda por seus produtos.\n\nA governança corporativa da Fras-le é um aspecto que merece destaque, especialmente em um ambiente de negócios cada vez mais exigente. A empresa tem sido reconhecida em rankings de governança, o que reforça seu compromisso com a transparência e a excelência no relacionamento com investidores. Mudanças na estrutura de governança podem influenciar a estratégia e a execução das operações, e a Fras-le tem se esforçado para manter um padrão elevado de práticas de governança, o que é crucial para a confiança dos investidores e a sustentabilidade de suas operações.\n\nA regulação do setor automotivo e de capital também desempenha um papel significativo nas operações da Fras-le. A conformidade com normas locais e internacionais, especialmente em relação à segurança e qualidade dos produtos, é fundamental para garantir a competitividade da empresa em um mercado global. A Fras-le deve estar sempre atenta às mudanças regulatórias que podem impactar sua operação e estratégia de mercado.\n\nPor fim, a sensibilidade macroeconômica é um fator que a Fras-le deve considerar em sua estratégia de negócios. A empresa está sujeita a variáveis econômicas que podem influenciar a demanda por seus produtos, como taxas de juros, inflação e crescimento econômico. A capacidade da Fras-le de se adaptar a essas condições macroeconômicas será crucial para sua continuidade e expansão no mercado automotivo global. Em suma, a Fras-le S.A. se posiciona como uma empresa sólida e inovadora, com um portfólio diversificado e uma estratégia de governança robusta, pronta para enfrentar os desafios e aproveitar as oportunidades do setor automotivo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.4 bi (trimestre) | R$4.1 bi (LTM)\n- EBITDA: R$0.3 bi (trimestre) | R$0.8 bi (LTM) | Margem 19.2%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- Dívida Líquida: R$1.7 bi\n- Capex: R$0.1 bi (trimestre) | R$0.1 bi (LTM)\n- Operacional: Crescimento de 36,4% na receita líquida em relação ao 3T24, com destaque para o mercado externo que cresceu 88,1%. O lucro líquido aumentou 20,8% em relação ao mesmo período do ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1414100000,
+      "receita_liquida_ltm": 4105900000,
+      "ebitda_tri": 271800000,
+      "ebitda_ltm": 771200000,
+      "lucro_liquido_tri": 107600000,
+      "lucro_liquido_ltm": 227200000,
+      "divida_liquida": 1678200000,
+      "divida_bruta": null,
+      "capex_tri": 52200000,
+      "capex_ltm": 122900000,
+      "margem_ebitda_pct": 19.2,
+      "margem_liquida_pct": 7.6
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 36,4% na receita líquida em relação ao 3T24, com destaque para o mercado externo que cresceu 88,1%. O lucro líquido aumentou 20,8% em relação ao mesmo período do ano anterior.",
+      "metricas": {
+        "volume_vendas": null,
+        "clientes": null
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:12:54.550141Z"
+}

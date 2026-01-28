@@ -1,0 +1,36 @@
+{
+  "ticker": "EVEN3",
+  "codigo_cvm": "20524",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20524_2025-09-30_EVEN_CONSTRUTORA_E_INCORPORADORA_SA.pdf",
+  "texto_contexto": "A Even Construtora e Incorporadora S.A. é uma das principais referências no setor imobiliário brasileiro, com mais de quatro décadas de atuação, especialmente na região metropolitana de São Paulo. Seu modelo de negócio é caracterizado pela verticalização, o que significa que a empresa controla todas as etapas do desenvolvimento imobiliário, desde a prospecção de terrenos até a construção e a comercialização dos empreendimentos. Essa abordagem integrada permite à Even não apenas otimizar custos e prazos, mas também garantir a qualidade dos produtos oferecidos, um fator crucial em um mercado onde a concorrência é intensa e a expectativa dos consumidores é elevada.\n\nA empresa concentra seus esforços em empreendimentos residenciais de médio e alto padrão, destacando-se especialmente no segmento de luxo. Além dos imóveis residenciais, a Even também atua em empreendimentos comerciais e hoteleiros, diversificando sua oferta e ampliando sua presença em diferentes nichos do mercado. Essa diversificação é um dos pilares que sustentam o crescimento da empresa, permitindo que ela se adapte a diferentes demandas e condições econômicas.\n\nOs principais indicadores de desempenho da Even, como receita líquida, lucro bruto, margem bruta e retorno sobre o patrimônio líquido, são monitorados de perto para avaliar a saúde financeira da empresa. A geração de caixa operacional e a relação entre dívida líquida e patrimônio líquido são também métricas fundamentais que refletem a eficiência da gestão financeira e a capacidade de sustentar operações em um ambiente de mercado volátil. A gestão do land bank, que representa o potencial de vendas dos terrenos sob a posse da empresa, é um driver de valor significativo, pois a localização e a qualidade dos empreendimentos são determinantes para o sucesso comercial.\n\nEntretanto, a Even enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade do mercado imobiliário, frequentemente influenciada por fatores econômicos e sociais, é um desafio constante. Mudanças nas regulamentações governamentais, que podem afetar desde normas de construção até legislações ambientais, também representam um risco significativo, exigindo que a empresa mantenha uma vigilância constante sobre o ambiente regulatório. Além disso, as flutuações nas taxas de juros podem impactar a acessibilidade dos imóveis e, consequentemente, a demanda. A concorrência no setor é acirrada, com diversas empresas disputando a mesma fatia de mercado, o que exige inovação e eficiência contínuas.\n\nA estrutura de capital da Even é cuidadosamente planejada, combinando dívida e patrimônio líquido de forma a manter uma alavancagem controlada. Essa abordagem é essencial para garantir a sustentabilidade financeira da empresa, permitindo que ela navegue por períodos de incerteza econômica sem comprometer sua capacidade de investimento e crescimento. A governança corporativa da Even é estruturada para promover transparência e responsabilidade, fatores que são cada vez mais valorizados por investidores e stakeholders.\n\nA regulação do setor imobiliário no Brasil é complexa e multifacetada, envolvendo uma série de normas que podem impactar diretamente as operações da empresa. Desde a obtenção de licenças até a conformidade com legislações ambientais, a Even deve estar sempre atenta às mudanças que possam afetar seus projetos. A capacidade de se adaptar rapidamente a essas mudanças é um diferencial competitivo importante.\n\nEventos críticos, como lançamentos de novos empreendimentos e a entrega de unidades, são momentos-chave que podem influenciar a percepção do mercado sobre a empresa. A evolução das vendas e a capacidade de financiar projetos são igualmente cruciais, especialmente em um cenário econômico que pode ser volátil. Fatores macroeconômicos, como a taxa de desemprego, a inflação e o crescimento do PIB, têm um impacto direto na demanda por imóveis, tornando a sensibilidade a essas variáveis um aspecto importante da estratégia da Even.\n\nEm suma, a Even Construtora e Incorporadora S.A. se posiciona como uma empresa robusta e adaptável no setor imobiliário, com um modelo de negócio verticalizado que lhe confere vantagens competitivas. A busca contínua por oportunidades de investimento e a capacidade de se ajustar às dinâmicas do mercado são fundamentais para garantir seu crescimento e maximização do valor para os acionistas, mesmo diante dos desafios e riscos inerentes ao setor.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.5 bi (trimestre) | R$1.5 bi (LTM)\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- Dívida Líquida: R$0.3 bi\n- Operacional: No 3T25, a Even registrou vendas líquidas de R$ 866 milhões, com um VSO consolidado de 19%. O estoque totalizou R$ 3,6 bilhões, representando 23 meses de vendas.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 528822000,
+      "receita_liquida_ltm": 1500000000,
+      "ebitda_tri": null,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 90039000,
+      "lucro_liquido_ltm": 220000000,
+      "divida_liquida": 298108000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": 18.8
+    },
+    "operacionais": {
+      "descricao": "No 3T25, a Even registrou vendas líquidas de R$ 866 milhões, com um VSO consolidado de 19%. O estoque totalizou R$ 3,6 bilhões, representando 23 meses de vendas.",
+      "metricas": {
+        "vendas_liquidas": 866884000,
+        "vso_consolidada_pct": 19,
+        "estoque_total": 3600000000,
+        "unidades_vendidas": 194,
+        "unidades_entregues": 275
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:08:32.158558Z"
+}

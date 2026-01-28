@@ -1,0 +1,34 @@
+{
+  "ticker": "FLRY3",
+  "codigo_cvm": "21881",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "21881_2025-09-30_FLEURY_SA.pdf",
+  "texto_contexto": "O Grupo Fleury (FLRY3) se destaca no setor de medicina diagnóstica, apresentando um modelo de negócio diversificado que se estrutura em três unidades principais. A primeira, Medicina Diagnóstica B2C, é voltada diretamente ao consumidor, oferecendo serviços em unidades de atendimento físicas e por meio de serviços móveis, que facilitam o acesso dos pacientes a exames e diagnósticos. A segunda unidade, Medicina Diagnóstica B2B, foca na prestação de serviços para laboratórios e hospitais, estabelecendo parcerias que ampliam a capacidade de atendimento e a eficiência operacional. Por fim, a unidade Novos Elos representa uma inovação no portfólio da empresa, incluindo clínicas de infusão de medicamentos e plataformas digitais que visam integrar e modernizar a experiência do paciente.\n\nOs principais indicadores de desempenho (KPIs) do Grupo Fleury, como receita bruta, EBITDA, lucro líquido e margem EBITDA, são fundamentais para avaliar a eficiência operacional e a capacidade de geração de caixa da empresa. Esses KPIs não apenas refletem a saúde financeira da companhia, mas também sua habilidade em se adaptar às dinâmicas do mercado e às necessidades dos consumidores. Os drivers de valor que impulsionam o crescimento do Fleury incluem a expansão orgânica e inorgânica, que se traduz em novas unidades de atendimento e aquisições estratégicas, além da inovação em serviços e tecnologia, que são essenciais para manter a competitividade em um setor em constante evolução. A construção de uma marca forte, que gera confiança tanto entre os clientes quanto entre os profissionais de saúde, é outro fator crucial que contribui para a fidelização e atração de novos pacientes.\n\nEntretanto, o Grupo Fleury enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade nas taxas de juros, por exemplo, pode afetar o custo da dívida e, consequentemente, a estrutura de capital da empresa. Além disso, a concorrência no setor de saúde é intensa, com diversas empresas disputando participação de mercado, o que pode pressionar margens e exigir investimentos contínuos em marketing e inovação. A estrutura de capital do Grupo Fleury é considerada confortável, com uma alavancagem que permite a realização de investimentos estratégicos e aquisições, além de uma gestão disciplinada de passivos, refletindo um custo médio da dívida reduzido que favorece a sustentabilidade financeira.\n\nA governança corporativa do Grupo Fleury é um aspecto fundamental que garante a transparência e a responsabilidade nas operações da empresa. A companhia se compromete a seguir normas rigorosas de qualidade e segurança, em conformidade com a regulação do setor de saúde, que é um fator crítico para a operação. O cumprimento dessas normas não apenas assegura a qualidade dos serviços prestados, mas também protege a reputação da marca e a confiança dos consumidores.\n\nNo que diz respeito à competição, o Grupo Fleury se posiciona em um mercado que, embora desafiador, oferece oportunidades significativas para crescimento e inovação. A empresa deve constantemente monitorar as tendências do setor e as ações de seus concorrentes para se manter relevante e competitiva. A sensibilidade macroeconômica também desempenha um papel importante, uma vez que fatores como a inflação, o desemprego e as políticas de saúde pública podem influenciar a demanda por serviços de saúde e diagnósticos. Em um ambiente econômico volátil, a capacidade do Grupo Fleury de se adaptar e inovar será crucial para garantir sua posição de liderança no setor de medicina diagnóstica. \n\nEm suma, o Grupo Fleury é uma empresa robusta e bem posicionada, com um modelo de negócio diversificado e uma forte ênfase na inovação e na qualidade dos serviços. No entanto, a companhia deve estar atenta aos riscos e desafios do mercado, mantendo uma gestão financeira sólida e uma governança eficaz para continuar a prosperar em um setor em constante transformação.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$2.2 bi (trimestre) | R$6.2 bi (LTM)\n- EBITDA: R$0.6 bi (trimestre) | R$1.7 bi (LTM) | Margem 27.4%\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.5 bi (LTM)\n- Operacional: Receita bruta de R$ 2,4 bilhões, crescimento de 11,5% em relação ao 3T24. Realização de 44,3 milhões de exames, aumento de 15,6%. Atendimento móvel representando 7,8% da receita total.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 2191000000,
+      "receita_liquida_ltm": 6230600000,
+      "ebitda_tri": 599400000,
+      "ebitda_ltm": 1679100000,
+      "lucro_liquido_tri": 184900000,
+      "lucro_liquido_ltm": 516500000,
+      "divida_liquida": null,
+      "divida_bruta": 4660700000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 27.4,
+      "margem_liquida_pct": 8.4
+    },
+    "operacionais": {
+      "descricao": "Receita bruta de R$ 2,4 bilhões, crescimento de 11,5% em relação ao 3T24. Realização de 44,3 milhões de exames, aumento de 15,6%. Atendimento móvel representando 7,8% da receita total.",
+      "metricas": {
+        "exames_realizados": 44300000,
+        "crescimento_exames_pct": 15.6,
+        "atendimentos_movel_pct": 7.8
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:11:46.945964Z"
+}
