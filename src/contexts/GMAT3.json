@@ -1,0 +1,34 @@
+{
+  "ticker": "GMAT3",
+  "codigo_cvm": "25186",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25186_2025-09-30_GRUPO_MATEUS_SA.pdf",
+  "texto_contexto": "O Grupo Mateus, uma das principais referências no varejo alimentar brasileiro, destaca-se como a terceira maior empresa do setor no país. Sua atuação abrange uma vasta gama de segmentos, incluindo supermercados, atacarejo, atacado voltado para o B2B, móveis e eletrodomésticos, além de uma presença significativa no e-commerce e na indústria de panificação. O modelo de negócio do Grupo Mateus é caracterizado pela integração de suas operações, o que não apenas permite uma ampla cobertura geográfica, mas também proporciona uma oferta diversificada de produtos. Essa estratégia fortalece sua presença no mercado e a torna uma opção atrativa para diferentes perfis de consumidores.\n\nOs principais segmentos de atuação do Grupo Mateus são o Atacarejo, representado pela bandeira Mix Mateus, e o Varejo, que inclui os supermercados Mateus e Camino. Essa segmentação permite à empresa atender tanto o consumidor final quanto clientes B2B, ampliando seu alcance e potencial de vendas. A divisão de Eletro também contribui para a diversificação da oferta, enquanto o e-commerce se torna cada vez mais relevante em um cenário de digitalização crescente. Os KPIs que orientam a performance da companhia incluem receita líquida, lucro bruto, margem bruta, EBITDA e crescimento de vendas nas mesmas lojas (SSS). Esses indicadores são cruciais para a avaliação da saúde financeira e operacional da empresa, permitindo uma análise detalhada de sua evolução ao longo do tempo.\n\nOs drivers de valor do Grupo Mateus são multifacetados, com a expansão de sua rede de lojas sendo um dos principais motores de crescimento. A eficiência na gestão de estoques e a capacidade de adaptação às condições de mercado, como variações na demanda e na concorrência, também desempenham papéis fundamentais. A recente consolidação com o Novo Atacarejo, que ampliou a presença da empresa em estados do Nordeste, é um exemplo claro de como a companhia busca fortalecer sua participação de mercado e explorar novas oportunidades de crescimento.\n\nEntretanto, o Grupo Mateus não está isento de riscos. A volatilidade econômica, que pode impactar o consumo e a disponibilidade de crédito, representa um desafio constante. Além disso, a empresa enfrenta um ambiente regulatório complexo, com desafios tributários que podem afetar suas operações. A estrutura de capital do Grupo Mateus é composta por uma combinação de dívida bruta e capital próprio, com um índice de dívida líquida ajustada em relação ao EBITDA mantido em níveis controláveis. Essa gestão financeira prudente é essencial para garantir a sustentabilidade e o crescimento da empresa em um cenário de incertezas.\n\nA governança corporativa do Grupo Mateus é um aspecto crítico que influencia suas operações e decisões estratégicas. A conformidade com as regulamentações do setor de varejo e as leis tributárias brasileiras exige uma adaptação constante às mudanças legislativas, o que pode impactar diretamente a operação da empresa. Eventos significativos, como a combinação de negócios com o Novo Atacarejo, não apenas representam marcos estratégicos, mas também têm o potencial de alterar a trajetória de crescimento da empresa, impactando sua estrutura operacional e financeira.\n\nA competição no setor de varejo alimentar é intensa, com diversos players disputando participação de mercado. O Grupo Mateus precisa constantemente inovar e se adaptar para manter sua relevância e competitividade. A sensibilidade a fatores macroeconômicos, como inflação, taxa de desemprego e variações na renda disponível, também é um aspecto que a empresa deve monitorar de perto, uma vez que esses elementos podem influenciar diretamente o comportamento do consumidor e, consequentemente, suas vendas.\n\nEm suma, o Grupo Mateus se posiciona como um protagonista no varejo alimentar brasileiro, com um modelo de negócio robusto e diversificado. Sua capacidade de adaptação às dinâmicas de mercado, aliada a uma gestão financeira prudente e uma governança sólida, são fatores que sustentam sua trajetória de crescimento, mesmo diante dos desafios e riscos inerentes ao setor. A busca por expansão e inovação, especialmente em um ambiente competitivo e regulatório complexo, será fundamental para que a empresa continue a se destacar e a prosperar no futuro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$10.8 bi (trimestre) | R$27.9 bi (LTM)\n- EBITDA: R$0.9 bi (trimestre) | R$2.1 bi (LTM) | Margem 7.9%\n- Lucro Líquido: R$0.5 bi (trimestre) | R$1.2 bi (LTM)\n- Operacional: Grupo Mateus encerrou o 3T25 com 306 lojas, incluindo 36 do Novo Atacarejo, e um crescimento de 29,1% na receita líquida em relação ao 3T24.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 10763000000,
+      "receita_liquida_ltm": 27874000000,
+      "ebitda_tri": 855000000,
+      "ebitda_ltm": 2147000000,
+      "lucro_liquido_tri": 509000000,
+      "lucro_liquido_ltm": 1246000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 7.9,
+      "margem_liquida_pct": 4.7
+    },
+    "operacionais": {
+      "descricao": "Grupo Mateus encerrou o 3T25 com 306 lojas, incluindo 36 do Novo Atacarejo, e um crescimento de 29,1% na receita líquida em relação ao 3T24.",
+      "metricas": {
+        "numero_de_lojas": 306,
+        "crescimento_sss_pct": 2.8,
+        "clientes_atendidos_por_mes": 48000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:21:21.914770Z"
+}

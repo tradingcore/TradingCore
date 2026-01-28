@@ -1,0 +1,34 @@
+{
+  "ticker": "CGRA3",
+  "codigo_cvm": "4537",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "4537_2025-09-30_GRAZZIOTIN_SA.pdf",
+  "texto_contexto": "A Grazziotin (CGRA3) se destaca no cenário do comércio varejista brasileiro, especialmente nas regiões do Rio Grande do Sul, Santa Catarina e Paraná, onde opera com um foco claro em vestuário e utilidades domésticas. O modelo de negócio da empresa é fundamentado na criação de uma experiência de compra diferenciada, que prioriza a ambientação e o layout das lojas. Essa abordagem não apenas visa maximizar a eficiência do espaço de venda, mas também proporcionar um ambiente agradável que estimule a permanência dos clientes e, consequentemente, a conversão de visitas em vendas.\n\nAlém de sua atuação no varejo, a Grazziotin diversifica suas operações por meio da Grazziotin Financeira, que oferece soluções de crédito aos consumidores. Essa vertical financeira não apenas complementa a experiência de compra, mas também serve como um motor de crescimento, permitindo que a empresa amplie suas vendas ao facilitar o acesso a produtos por meio de financiamento. Essa estratégia é particularmente relevante em um cenário econômico onde o crédito pode ser um fator decisivo para a aquisição de bens de consumo.\n\nOs segmentos de atuação da Grazziotin são bem definidos, abrangendo tanto a venda de produtos de vestuário quanto de utilidades domésticas, além dos serviços financeiros. Para medir seu desempenho, a empresa acompanha indicadores-chave de performance (KPIs) como receita líquida, lucro bruto, margem EBITDA e o número de lojas em operação. A gestão eficiente do capital de giro e a disponibilidade de caixa são considerados drivers de valor essenciais, pois sustentam a operação diária e possibilitam investimentos em expansão e modernização das lojas.\n\nEntretanto, a Grazziotin enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade econômica é um dos principais desafios, uma vez que flutuações no poder de compra das famílias podem afetar diretamente a demanda por seus produtos. Além disso, fatores climáticos podem influenciar a venda de itens sazonais, como roupas de inverno ou produtos para o lar que dependem de determinadas condições climáticas. A empresa, portanto, deve estar atenta a essas variáveis e desenvolver estratégias para mitigar esses riscos.\n\nA estrutura de capital da Grazziotin é robusta, com uma capacidade de geração de caixa operacional que se reflete em um aumento significativo na disponibilidade de caixa. Essa solidez financeira permite que a empresa não apenas mantenha suas operações, mas também busque oportunidades de crescimento, seja por meio da abertura de novas lojas ou pela modernização das existentes. A governança corporativa da empresa é um aspecto crucial, especialmente em suas operações financeiras, onde a conformidade com as normas regulatórias é fundamental. A Grazziotin deve seguir rigorosamente as diretrizes do setor financeiro, garantindo práticas de compliance que protejam tanto a empresa quanto seus consumidores.\n\nEventos críticos, como a inauguração de novas lojas e a implementação de estratégias de marketing inovadoras, são determinantes para o desempenho da Grazziotin. Essas iniciativas podem ter um impacto direto em suas vendas e na percepção da marca no mercado. A empresa também demonstra uma capacidade de adaptação às mudanças nas preferências dos consumidores e nas dinâmicas do mercado, o que é vital para manter sua competitividade e relevância no setor varejista.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A Grazziotin opera em um ambiente onde as condições econômicas gerais, como taxas de juros, inflação e desemprego, influenciam diretamente o comportamento do consumidor. A empresa deve, portanto, estar preparada para ajustar suas estratégias de acordo com as flutuações do cenário econômico, garantindo que continue a atender às necessidades de seus clientes e a prosperar em um mercado competitivo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.1 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.0 bi (trimestre) | N/D (LTM) | Margem 9.7%\n- Lucro Líquido: R$0.0 bi (trimestre) | N/D (LTM)\n- Operacional: A empresa possui 340 lojas e uma área de vendas de 131395 m², com um crescimento de 2,29 p.p. na margem bruta em relação ao trimestre anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 148964000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 14388000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 826000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 9.66,
+      "margem_liquida_pct": 5.54
+    },
+    "operacionais": {
+      "descricao": "A empresa possui 340 lojas e uma área de vendas de 131395 m², com um crescimento de 2,29 p.p. na margem bruta em relação ao trimestre anterior.",
+      "metricas": {
+        "numero_lojas": 340,
+        "area_vendas_m2": 131395,
+        "numero_colaboradores_total": 2803
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:18:31.603852Z"
+}

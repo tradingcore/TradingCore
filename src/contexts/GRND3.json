@@ -1,0 +1,33 @@
+{
+  "ticker": "GRND3",
+  "codigo_cvm": "19615",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "19615_2025-09-30_GRENDENE_SA.pdf",
+  "texto_contexto": "A Grendene é uma proeminente empresa brasileira que se destaca no setor de calçados, com um modelo de negócio que prioriza a produção e comercialização de produtos de moda acessíveis e sustentáveis. A companhia opera em diversos segmentos, abrangendo calçados femininos, masculinos e infantis, e é amplamente reconhecida por suas marcas icônicas, como Melissa e Ipanema. Essas marcas não apenas se destacam pelo design inovador, mas também pelo forte apelo emocional que exercem sobre os consumidores, refletindo uma estratégia de branding que combina estética e funcionalidade.\n\nUm dos principais diferenciais da Grendene é sua capacidade de adaptação às dinâmicas do mercado, o que se traduz em uma diversificação significativa de seu portfólio. A empresa não se limita a produtos de baixo custo; ela também investe em itens de maior valor agregado, buscando atender a um público mais amplo e exigente. Essa abordagem permite à Grendene não apenas capturar uma fatia maior do mercado, mas também mitigar riscos associados a flutuações na demanda por produtos de moda mais acessíveis.\n\nOs principais indicadores de desempenho da Grendene, como receita líquida, margem bruta, volume de pares vendidos e receita líquida por par, são reflexos da eficácia de sua estratégia. A empresa tem conseguido manter um crescimento consistente em sua receita líquida, mesmo diante de um ambiente econômico desafiador. Essa resiliência é atribuída à sua ênfase em margens e valor agregado, além de uma gestão eficiente que busca otimizar operações e reduzir custos.\n\nOs drivers de valor para a Grendene são multifacetados e incluem a inovação constante em produtos, a eficiência operacional e a expansão em mercados internacionais. A empresa tem se mostrado ágil em responder às mudanças nas preferências dos consumidores, o que é crucial em um setor tão dinâmico quanto o de moda. A capacidade de antecipar tendências e lançar produtos que ressoam com o público é um ativo valioso que a Grendene possui.\n\nEntretanto, a Grendene não está isenta de riscos. A volatilidade cambial é um fator que pode impactar significativamente seus resultados, especialmente considerando sua presença em mercados internacionais. A concorrência, tanto de marcas nacionais quanto de players internacionais, tem se intensificado, exigindo que a Grendene mantenha sua proposta de valor e continue a inovar. Além disso, as pressões inflacionárias podem afetar o poder de compra dos consumidores, o que representa um desafio adicional para a empresa.\n\nA estrutura de capital da Grendene é robusta, com um caixa líquido considerável que proporciona flexibilidade financeira. Essa solidez permite que a empresa enfrente desafios de forma mais tranquila e realize investimentos estratégicos que podem impulsionar seu crescimento a longo prazo. A governança corporativa da Grendene é orientada por princípios de transparência e responsabilidade, o que é fundamental para manter a confiança dos investidores e stakeholders.\n\nO ambiente regulatório no qual a Grendene opera favorece a produção local e a sustentabilidade, com iniciativas que visam a redução de impactos ambientais e a promoção da responsabilidade social. Isso não apenas alinha a empresa com as expectativas crescentes dos consumidores em relação à sustentabilidade, mas também a posiciona favoravelmente em um mercado que valoriza práticas empresariais éticas.\n\nEventos críticos, como mudanças nas políticas comerciais internacionais e tarifas impostas por países como os Estados Unidos, podem impactar a competitividade das exportações da Grendene. A empresa precisa estar atenta a essas questões, assim como às incertezas econômicas e políticas que podem influenciar o consumo no mercado interno. Essa vigilância constante é essencial para garantir a continuidade do crescimento sustentável e a adaptação às novas realidades do mercado.\n\nEm suma, a Grendene é uma empresa que combina inovação, eficiência e responsabilidade social em seu modelo de negócio. Com um portfólio diversificado e uma forte presença no mercado, a companhia está bem posicionada para enfrentar os desafios do setor e continuar a crescer em um ambiente competitivo e em constante mudança.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.8 bi (trimestre) | R$1.9 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.2 bi (LTM) | Margem 13.2%\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.5 bi (LTM)\n- Operacional: Volume de pares vendidos totalizou 36,3 milhões, com receita líquida por par de R$ 20,93.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 760103000,
+      "receita_liquida_ltm": 1879203000,
+      "ebitda_tri": 100303000,
+      "ebitda_ltm": 244808000,
+      "lucro_liquido_tri": 184489000,
+      "lucro_liquido_ltm": 529821000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 13.2,
+      "margem_liquida_pct": 24.3
+    },
+    "operacionais": {
+      "descricao": "Volume de pares vendidos totalizou 36,3 milhões, com receita líquida por par de R$ 20,93.",
+      "metricas": {
+        "volume_pares_tri": 36321000,
+        "volume_pares_ltm": 88643000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:19:22.398639Z"
+}

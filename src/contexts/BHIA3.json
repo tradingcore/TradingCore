@@ -1,0 +1,36 @@
+{
+  "ticker": "BHIA3",
+  "codigo_cvm": "6505",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "6505_2025-09-30_GRUPO_CASAS_BAHIA_SA.pdf",
+  "texto_contexto": "A Casas Bahia (BHIA3) se destaca no cenário do varejo brasileiro, operando com um modelo de negócios que combina a venda de eletrodomésticos, eletrônicos e móveis, tanto em lojas físicas quanto por meio de uma plataforma de e-commerce robusta. Essa dualidade é uma característica central da sua estratégia de omnicanalidade, que visa proporcionar uma experiência de compra integrada e fluida para os consumidores. A empresa tem se adaptado às novas dinâmicas de consumo, onde a presença digital se torna cada vez mais relevante, refletindo um crescimento contínuo no volume de mercadorias vendidas online, além de um desempenho positivo nas lojas físicas.\n\nOs segmentos de atuação da Casas Bahia são amplos, com um foco particular em produtos que atendem às necessidades do dia a dia dos consumidores brasileiros. O varejo físico continua a ser um pilar importante, mas a evolução do e-commerce tem sido notável, com a empresa investindo em tecnologia e inovação para melhorar a experiência do cliente. Entre os principais indicadores de desempenho (KPIs) utilizados para medir a saúde financeira e a eficiência operacional da companhia, destacam-se o crescimento do Gross Merchandise Volume (GMV), a margem bruta, o EBITDA ajustado e o fluxo de caixa livre. Esses KPIs são fundamentais para a avaliação do desempenho da empresa e para a tomada de decisões estratégicas.\n\nOs drivers de valor que impulsionam o crescimento da Casas Bahia incluem a expansão da base de clientes, que é crucial em um mercado competitivo, e a melhoria contínua na experiência de compra, tanto online quanto nas lojas físicas. A empresa tem se empenhado em otimizar sua estrutura de custos, o que se reflete em uma redução das despesas gerais e administrativas em relação à receita líquida. Além disso, parcerias estratégicas, como a colaboração com o Mercado Livre, têm potencializado suas vendas online, permitindo que a empresa alcance um público mais amplo e diversificado.\n\nEntretanto, a Casas Bahia enfrenta uma série de riscos que podem impactar seu desempenho. A concorrência intensa no setor de varejo, que inclui tanto grandes redes quanto pequenos varejistas, exige uma constante adaptação e inovação. Além disso, variações econômicas, como mudanças na taxa de desemprego e na renda disponível dos consumidores, podem afetar o consumo e, consequentemente, as vendas da empresa. Outro desafio significativo é a gestão da carteira de crédito, que apresenta níveis de inadimplência que precisam ser monitorados de perto para evitar impactos negativos na liquidez e na rentabilidade.\n\nA estrutura de capital da Casas Bahia é composta por um mix equilibrado de dívida e patrimônio líquido, o que proporciona uma base sólida para sustentar suas operações e investimentos. A empresa mantém um saldo de liquidez significativo, permitindo-lhe enfrentar desafios financeiros e aproveitar oportunidades de crescimento. A governança corporativa é um aspecto importante para a empresa, que busca assegurar transparência e responsabilidade em suas operações, alinhando-se às melhores práticas do mercado.\n\nA regulação do setor de varejo no Brasil, que abrange normas de proteção ao consumidor e regulamentações fiscais, também desempenha um papel crucial nas operações da Casas Bahia. A conformidade com essas regulamentações é essencial para evitar penalidades e garantir a confiança dos consumidores. Eventos críticos, como mudanças nas políticas econômicas, flutuações no mercado de crédito e a evolução das preferências dos consumidores em relação às compras online e físicas, podem influenciar significativamente o desempenho da empresa. A capacidade da Casas Bahia de se adaptar a essas mudanças e de inovar continuamente será determinante para sua posição no mercado e para a sustentabilidade de seu crescimento a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$6.9 bi (trimestre) | R$20.7 bi (LTM)\n- EBITDA: R$0.6 bi (trimestre) | R$1.7 bi (LTM) | Margem 8.5%\n- Lucro Líquido: R$-0.5 bi (trimestre) | R$-1.5 bi (LTM)\n- Operacional: Crescimento do GMV consolidado de R$ 10,5 bilhões, com crescimento de 8,5% em relação ao 3T24. GMV de lojas físicas cresceu 5,9% e e-commerce 12,7%. Margem bruta de 30,0%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 6868000000,
+      "receita_liquida_ltm": 20726000000,
+      "ebitda_tri": 587000000,
+      "ebitda_ltm": 1729000000,
+      "lucro_liquido_tri": -496000000,
+      "lucro_liquido_ltm": -1459000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 8.5,
+      "margem_liquida_pct": -7.2
+    },
+    "operacionais": {
+      "descricao": "Crescimento do GMV consolidado de R$ 10,5 bilhões, com crescimento de 8,5% em relação ao 3T24. GMV de lojas físicas cresceu 5,9% e e-commerce 12,7%. Margem bruta de 30,0%.",
+      "metricas": {
+        "gmv_consolidado": 10500000000,
+        "crescimento_gmv": 8.5,
+        "crescimento_gmv_lojas_fisicas": 5.9,
+        "crescimento_gmv_ecommerce": 12.7,
+        "margem_bruta_pct": 30.0
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:20:39.273857Z"
+}
