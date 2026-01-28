@@ -1,0 +1,33 @@
+{
+  "ticker": "ENGI3",
+  "codigo_cvm": "15253",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "15253_2025-09-30_ENERGISA_SA.pdf",
+  "texto_contexto": "A Energisa S/A se destaca como uma das principais empresas do setor de energia no Brasil, operando em um modelo de negócios diversificado que abrange a distribuição e transmissão de energia elétrica, geração distribuída, comercialização de energia e gás natural, além de oferecer serviços de valor agregado. Com um foco em soluções energéticas integradas, a companhia atende tanto o mercado cativo quanto o livre, buscando sempre inovar e promover a sustentabilidade em suas operações. A Energisa controla nove distribuidoras de energia elétrica em diferentes estados do Brasil, abrangendo uma vasta área de concessão que representa uma significativa parcela do território nacional e atendendo milhões de clientes.\n\nOs principais indicadores de desempenho da Energisa, como EBITDA, lucro líquido, receita operacional líquida e margem EBITDA, são fundamentais para avaliar a eficiência operacional e a rentabilidade da empresa. Esses KPIs são impulsionados por uma série de drivers de valor, que incluem a crescente demanda por energia, a eficiência na gestão de custos, a expansão da base de clientes e a inovação em serviços. Em um cenário de transição energética, a Energisa tem se adaptado às novas exigências do mercado, especialmente no que diz respeito à adoção de fontes renováveis e à busca por soluções que promovam a eficiência energética.\n\nA estrutura de capital da Energisa é caracterizada por uma combinação equilibrada de dívida e patrimônio líquido, com um endividamento líquido ajustado que se mantém estável em relação ao EBITDA. Essa gestão financeira prudente é refletida nos ratings de crédito que a empresa recebe de agências como Standard & Poor’s e Fitch Ratings, que atestam sua solidez financeira e capacidade de honrar compromissos. A empresa, portanto, se posiciona de maneira a garantir a continuidade de suas operações e a viabilidade de seus projetos de expansão.\n\nA regulação do setor elétrico no Brasil é um aspecto crucial para a Energisa, uma vez que as tarifas e a operação das distribuidoras estão sob a supervisão da Agência Nacional de Energia Elétrica (ANEEL). A companhia está sujeita a revisões tarifárias periódicas e a um conjunto de regras que impactam diretamente sua receita e custos operacionais. Nesse contexto, eventos críticos como mudanças na legislação, variações nos preços de energia e gás, e condições climáticas que afetam a geração de energia podem ter um impacto significativo na performance da empresa. Além disso, a capacidade da Energisa de se adaptar às novas demandas do mercado, especialmente em relação à sustentabilidade e à eficiência energética, é um fator determinante para seu sucesso a longo prazo.\n\nA empresa também enfrenta riscos associados à inadimplência de clientes, que podem afetar sua liquidez e resultados financeiros. A volatilidade dos custos de insumos e serviços, por sua vez, representa um desafio adicional, exigindo uma gestão eficaz para mitigar impactos negativos. A competição no setor de energia é intensa, com diversas empresas buscando capturar participação de mercado, o que torna essencial para a Energisa manter sua proposta de valor e diferenciar-se por meio da inovação e da qualidade dos serviços prestados.\n\nEm um ambiente macroeconômico em constante mudança, a sensibilidade da Energisa a fatores como a inflação, as taxas de juros e o crescimento econômico é evidente. A empresa deve estar atenta a essas variáveis, pois elas podem influenciar tanto a demanda por energia quanto os custos operacionais. A capacidade de navegar por esse cenário desafiador, mantendo um foco em práticas sustentáveis e na inovação, será fundamental para a Energisa continuar a se destacar no setor de energia e a garantir seu crescimento e rentabilidade no futuro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$7.6 bi (trimestre) | R$21.5 bi (LTM)\n- EBITDA: R$2.2 bi (trimestre) | R$6.8 bi (LTM) | Margem 23.9%\n- Lucro Líquido: R$0.6 bi (trimestre) | R$2.2 bi (LTM)\n- Dívida Líquida: R$29.2 bi\n- Capex: R$1.8 bi (trimestre) | R$4.8 bi (LTM)\n- Operacional: Venda de energia atingiu 10.515,7 GWh, com crescimento de 2,0% em relação ao 3T24.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 7631400000,
+      "receita_liquida_ltm": 21463900000,
+      "ebitda_tri": 2192300000,
+      "ebitda_ltm": 6765800000,
+      "lucro_liquido_tri": 648400000,
+      "lucro_liquido_ltm": 2164900000,
+      "divida_liquida": 29199500000,
+      "divida_bruta": null,
+      "capex_tri": 1819500000,
+      "capex_ltm": 4751500000,
+      "margem_ebitda_pct": 23.9,
+      "margem_liquida_pct": 5.1
+    },
+    "operacionais": {
+      "descricao": "Venda de energia atingiu 10.515,7 GWh, com crescimento de 2,0% em relação ao 3T24.",
+      "metricas": {
+        "vendas_energia": 10515700000,
+        "clientes": 9300000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:01:02.075821Z"
+}

@@ -1,0 +1,36 @@
+{
+  "ticker": "PGMN3",
+  "codigo_cvm": "22608",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "22608_2025-09-30_EMPREENDIMENTOS_PAGUE_MENOS_SA.pdf",
+  "texto_contexto": "A Pague Menos (PGMN3) se destaca no setor de varejo farmacêutico brasileiro, apresentando um modelo de negócio robusto que abrange a venda de medicamentos, produtos de saúde e bem-estar, além de serviços de saúde por meio de suas clínicas farmacêuticas. Com uma rede de 1.667 lojas, a empresa consolidou uma presença significativa, especialmente nas regiões Nordeste e Norte do Brasil, onde detém uma participação de mercado de 6,7%. Essa capilaridade geográfica é um dos pilares que sustentam seu crescimento, permitindo que a Pague Menos atenda a uma ampla base de clientes e se beneficie das particularidades regionais.\n\nOs principais segmentos de atuação da Pague Menos incluem a comercialização de medicamentos prescritos, genéricos e produtos de marca, com uma crescente ênfase nas vendas digitais, que já representam uma parcela considerável do faturamento total. O crescimento das vendas em canais digitais, que atingiu 19,8% das vendas totais, reflete uma tendência de digitalização que vem se intensificando no varejo, especialmente em um contexto onde a conveniência e a acessibilidade são cada vez mais valorizadas pelos consumidores. Essa transformação digital não apenas amplia o alcance da empresa, mas também melhora a experiência do cliente, um dos drivers de valor mais importantes para a Pague Menos.\n\nOs indicadores-chave de desempenho (KPIs) da companhia revelam um panorama positivo. O crescimento das vendas em mesmas lojas, que alcançou 17,6%, e a margem EBITDA de 6,3% demonstram a eficácia das estratégias de vendas e gestão de custos. Além disso, o crescimento do lucro líquido ajustado, que aumentou significativamente em relação ao ano anterior, é um indicativo da saúde financeira da empresa. A eficiência na gestão de estoques e contas a receber é evidenciada pelo ciclo de caixa operacional de 58 dias, um fator que contribui para a liquidez e a capacidade de investimento da companhia.\n\nEntretanto, a Pague Menos não está isenta de riscos. A alta concorrência no setor de varejo farmacêutico, que inclui tanto grandes redes quanto farmácias independentes, representa um desafio constante. A empresa também deve navegar por flutuações nas taxas de juros, que podem impactar sua estrutura de capital e, consequentemente, sua capacidade de financiamento e expansão. A dependência de regulamentações governamentais é outro fator crítico, uma vez que mudanças nas políticas de saúde e nas normas de comercialização de medicamentos podem afetar diretamente a operação e a rentabilidade da empresa. A regulação do setor farmacêutico é complexa e sujeita a alterações, o que exige da Pague Menos uma vigilância constante e uma capacidade de adaptação rápida.\n\nA estrutura de capital da Pague Menos tem mostrado um processo de desalavancagem, com um índice de dívida líquida sobre EBITDA que reflete um compromisso com a redução da alavancagem financeira. Essa estratégia é fundamental para garantir a sustentabilidade a longo prazo da empresa, especialmente em um ambiente econômico volátil. A gestão financeira prudente, aliada a uma estratégia de crescimento focada na expansão da rede de lojas e na otimização do portfólio de produtos, posiciona a Pague Menos de maneira favorável para enfrentar os desafios do mercado.\n\nAlém disso, eventos críticos, como a integração de aquisições e a expansão de sua rede de clínicas, são fundamentais para o crescimento sustentável da Pague Menos. A capacidade de integrar novas operações e maximizar sinergias pode impulsionar a eficiência e a rentabilidade, enquanto a expansão das clínicas farmacêuticas pode diversificar ainda mais a oferta de serviços e atender a uma demanda crescente por cuidados de saúde acessíveis.\n\nA sensibilidade macroeconômica também desempenha um papel importante na performance da Pague Menos. Fatores como a inflação, o desemprego e a renda disponível da população influenciam diretamente o comportamento do consumidor e, por consequência, as vendas da empresa. Em um cenário de incerteza econômica, a capacidade da Pague Menos de se adaptar e inovar será crucial para manter sua trajetória de crescimento e fortalecer sua posição no mercado. A combinação de uma gestão eficiente, uma estratégia de expansão bem definida e a capacidade de se adaptar às mudanças regulatórias e macroeconômicas será determinante para o futuro da Pague Menos no competitivo setor de varejo farmacêutico.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$4.1 bi (trimestre) | R$11.7 bi (LTM)\n- EBITDA: R$0.3 bi (trimestre) | R$0.8 bi (LTM) | Margem 6.3%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- Operacional: A Pague Menos alcançou R$ 4,1 bilhões em receita bruta no 3T25, com crescimento de 18,0% ano a ano. O lucro líquido ajustado cresceu 49,6%, atingindo R$ 80,6 milhões. A margem EBITDA foi de 6,3%. O número de lojas chegou a 1.667, com vendas médias mensais por loja de R$ 831 mil.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 4144600000,
+      "receita_liquida_ltm": 11743000000,
+      "ebitda_tri": 260100000,
+      "ebitda_ltm": 818500000,
+      "lucro_liquido_tri": 80600000,
+      "lucro_liquido_ltm": 231000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 6.3,
+      "margem_liquida_pct": 1.9
+    },
+    "operacionais": {
+      "descricao": "A Pague Menos alcançou R$ 4,1 bilhões em receita bruta no 3T25, com crescimento de 18,0% ano a ano. O lucro líquido ajustado cresceu 49,6%, atingindo R$ 80,6 milhões. A margem EBITDA foi de 6,3%. O número de lojas chegou a 1.667, com vendas médias mensais por loja de R$ 831 mil.",
+      "metricas": {
+        "numero_lojas": 1667,
+        "vendas_media_por_loja": 831000,
+        "clientes_ativos": 22200000,
+        "crescimento_vendas_mesmes_lojas_pct": 17.6,
+        "participacao_canais_digitais_pct": 19.8
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:59:54.295818Z"
+}

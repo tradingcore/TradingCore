@@ -1,0 +1,33 @@
+{
+  "ticker": "EMBR3",
+  "codigo_cvm": "20087",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20087_2025-09-30_EMBRAER_SA.pdf",
+  "texto_contexto": "A Embraer, uma das principais empresas do setor de aviação global, tem sua sede no Brasil e se destaca por sua atuação diversificada em segmentos que vão da aviação comercial à executiva, passando pela defesa e segurança, além da aviação agrícola. O modelo de negócio da Embraer é robusto e multifacetado, englobando não apenas o design e desenvolvimento de aeronaves, mas também sua fabricação e comercialização, complementados por uma gama de serviços de pós-venda e suporte técnico que garantem a satisfação e a fidelização dos clientes. Essa abordagem integrada permite à empresa não apenas atender a demanda por aeronaves, mas também estabelecer relações duradouras com seus clientes, o que é fundamental em um setor onde a confiança e a segurança são primordiais.\n\nA Embraer é reconhecida como a principal fabricante de jatos comerciais com capacidade para até 150 assentos, o que a posiciona de maneira competitiva em um mercado que busca eficiência e inovação. Além disso, a empresa se destaca como o maior exportador de bens de alto valor agregado do Brasil, refletindo sua importância não apenas no contexto econômico nacional, mas também em sua presença global, com operações em diversas regiões, incluindo as Américas, África, Ásia e Europa. Essa presença internacional é um dos principais drivers de valor para a Embraer, que busca constantemente expandir sua participação em mercados emergentes e consolidados.\n\nOs principais indicadores de desempenho da Embraer, como entregas de aeronaves, receita total, margem EBIT ajustada e fluxo de caixa livre ajustado, são fundamentais para avaliar sua saúde financeira e operacional. A empresa projeta um número significativo de entregas tanto no segmento de aviação comercial quanto no de aviação executiva, o que demonstra sua capacidade de atender a demanda crescente por transporte aéreo. A inovação tecnológica e a eficiência operacional são outros fatores críticos que impulsionam o desempenho da Embraer, permitindo que a empresa se mantenha competitiva em um ambiente de negócios em constante evolução.\n\nEntretanto, a Embraer enfrenta uma série de riscos que podem impactar suas operações e resultados financeiros. A volatilidade econômica global, por exemplo, pode afetar a demanda por aeronaves, enquanto flutuações nas taxas de câmbio podem impactar a rentabilidade, dado que a empresa opera em um mercado internacional. Além disso, mudanças nas regulamentações governamentais, que podem variar significativamente entre os países onde a Embraer atua, exigem que a empresa se mantenha ágil e adaptável. A concorrência intensa no setor de aviação, com players globais disputando participação de mercado, também representa um desafio constante.\n\nA estrutura de capital da Embraer é composta por uma combinação de dívida e patrimônio líquido, com um foco claro em gerenciar a alavancagem financeira e otimizar o custo do capital. Recentemente, a empresa recebeu um upgrade em sua classificação de crédito, o que reflete uma melhoria em sua posição financeira e a confiança do mercado em sua capacidade de gerar valor a longo prazo. Essa solidez financeira é crucial para sustentar os investimentos necessários em pesquisa e desenvolvimento, que são vitais para a inovação e a competitividade da empresa.\n\nA regulação do setor de aviação é um aspecto crítico que a Embraer deve considerar em suas operações. A empresa está sujeita a normas rigorosas de segurança e ambientais estabelecidas por autoridades de aviação civil em diferentes países, o que exige um compromisso constante com a conformidade e a excelência operacional. Eventos críticos, como mudanças nas políticas comerciais, inovações tecnológicas disruptivas e a evolução da demanda por transporte aéreo, podem impactar tanto a produção quanto a entrega de aeronaves. A Embraer, portanto, continua a monitorar esses fatores de perto, buscando não apenas mitigar riscos, mas também identificar oportunidades que possam fortalecer sua posição competitiva no mercado global de aviação.\n\nEm suma, a Embraer se destaca como uma empresa inovadora e resiliente, com um modelo de negócio sólido e uma presença global significativa. A capacidade de adaptação às mudanças do mercado, aliada a um forte compromisso com a qualidade e a segurança, posiciona a Embraer como um player fundamental no setor de aviação, pronta para enfrentar os desafios e aproveitar as oportunidades que surgem em um ambiente dinâmico e competitivo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$2.0 bi (trimestre) | R$4.9 bi (LTM)\n- EBITDA: R$0.2 bi (trimestre) | R$0.6 bi (LTM) | Margem 11.8%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.1 bi (LTM)\n- Dívida: R$-0.4 bi (líquida) | R$2.1 bi (bruta)\n- Capex: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- Operacional: Entregas de 62 aeronaves, incluindo 20 jatos comerciais e 41 jatos executivos.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 2004000000,
+      "receita_liquida_ltm": 4925700000,
+      "ebitda_tri": 236300000,
+      "ebitda_ltm": 590300000,
+      "lucro_liquido_tri": 116600000,
+      "lucro_liquido_ltm": 99700000,
+      "divida_liquida": -439300000,
+      "divida_bruta": 2109200000,
+      "capex_tri": 98600000,
+      "capex_ltm": 153400000,
+      "margem_ebitda_pct": 11.8,
+      "margem_liquida_pct": 5.8
+    },
+    "operacionais": {
+      "descricao": "Entregas de 62 aeronaves, incluindo 20 jatos comerciais e 41 jatos executivos.",
+      "metricas": {
+        "entregas_aeronaves": 62,
+        "backlog": 31300000000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:58:49.520717Z"
+}

@@ -1,0 +1,33 @@
+{
+  "ticker": "EMAE3",
+  "codigo_cvm": "16993",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "16993_2025-09-30_EMAE_-_EMPRESA_METROPAGUAS_ENERGIA_SA.pdf",
+  "texto_contexto": "A EMAE – Empresa Metropolitana de Águas e Energia S.A. é uma companhia que se destaca no setor de geração e comercialização de energia elétrica, com um forte compromisso com a eficiência operacional e a sustentabilidade. Sua atuação é centrada na gestão de usinas hidrelétricas e termelétricas, onde a modernização das operações e a implementação de práticas rigorosas de governança e gestão financeira são pilares fundamentais. A EMAE não apenas gera energia, mas também se envolve na comercialização de certificados de energia renovável, como os certificados I-REC, que garantem a origem sustentável da energia produzida, alinhando-se às crescentes demandas por práticas ambientalmente responsáveis.\n\nOs principais segmentos de atuação da EMAE incluem a geração de energia elétrica, que é a sua atividade central, e a comercialização de produtos relacionados à sustentabilidade, como os certificados de energia renovável. A empresa tem se posicionado de forma estratégica para aproveitar as oportunidades no mercado de energia renovável, que está em expansão, impulsionado por uma crescente conscientização ambiental e por políticas públicas que favorecem a transição energética. A eficiência na gestão de custos, a modernização das instalações e a transformação digital são considerados drivers de valor essenciais, permitindo que a EMAE não apenas mantenha sua competitividade, mas também se destaque em um mercado cada vez mais dinâmico e desafiador.\n\nOs indicadores-chave de desempenho (KPIs) da EMAE, como a receita líquida, o lucro líquido, o EBITDA ajustado e a disponibilidade das usinas, são fundamentais para avaliar a eficiência operacional e a capacidade de geração de energia da empresa. Esses KPIs refletem não apenas a saúde financeira da companhia, mas também sua capacidade de se adaptar e prosperar em um ambiente de negócios em constante mudança. A disponibilidade das usinas, em particular, é um indicador crítico, pois está diretamente relacionada à capacidade da empresa de atender à demanda de energia e maximizar sua receita.\n\nEntretanto, a EMAE enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade do mercado de energia, influenciada por fatores econômicos e climáticos, representa um desafio constante. Mudanças regulatórias também podem afetar a operação da empresa, uma vez que o setor elétrico brasileiro é altamente regulado pela ANEEL, que estabelece normas e indicadores de desempenho que a EMAE deve cumprir. Além disso, a dependência de condições climáticas favoráveis para a geração de energia hidrelétrica pode resultar em variações significativas na produção, impactando diretamente a receita e a lucratividade.\n\nA estrutura de capital da EMAE é composta por uma combinação de recursos próprios e dívidas, com um foco claro em manter uma gestão financeira sólida e disciplinada. Essa abordagem visa a redução de custos e a maximização do retorno sobre o investimento, permitindo à empresa sustentar seu crescimento e financiar suas iniciativas de modernização e sustentabilidade. A recente privatização da empresa trouxe mudanças significativas na gestão e na estrutura organizacional, o que pode ter implicações importantes para a governança e a estratégia futura da companhia. A negociação de ações e a possibilidade de mudança de controle acionário são fatores que também devem ser monitorados, pois podem impactar a direção estratégica da EMAE.\n\nNo que diz respeito à competição, a EMAE se posiciona em um mercado que, embora desafiador, oferece oportunidades significativas, especialmente no segmento de energia renovável. A crescente demanda por energia limpa e sustentável, impulsionada por políticas governamentais e pela conscientização ambiental, coloca a EMAE em uma posição favorável para expandir sua participação de mercado. A empresa se destaca por sua capacidade de inovar e se adaptar às novas demandas do setor, o que é crucial em um ambiente competitivo.\n\nPor fim, a sensibilidade macroeconômica é um fator a ser considerado, uma vez que a economia brasileira e as condições globais podem impactar a demanda por energia e os preços no mercado. A EMAE, ao se comprometer com a eficiência e a sustentabilidade, não apenas busca mitigar esses riscos, mas também se posiciona como uma líder no setor energético, pronta para enfrentar os desafios do futuro e contribuir para um ambiente energético mais sustentável. A combinação de uma gestão financeira rigorosa, práticas de governança sólidas e um foco em inovação e sustentabilidade coloca a EMAE em uma trajetória promissora, alinhada com as tendências globais de transição energética.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.2 bi (trimestre) | R$0.5 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.2 bi (LTM) | Margem 62.5%\n- Lucro Líquido: R$0.3 bi (trimestre) | R$0.4 bi (LTM)\n- Operacional: A EMAE registrou uma receita líquida de R$ 154,3 milhões no 3T25, com um EBITDA ajustado de R$ 83,8 milhões e lucro líquido de R$ 287,5 milhões, refletindo um forte desempenho operacional.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 154300000,
+      "receita_liquida_ltm": 462300000,
+      "ebitda_tri": 83800000,
+      "ebitda_ltm": 167200000,
+      "lucro_liquido_tri": 287500000,
+      "lucro_liquido_ltm": 353500000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 62.5,
+      "margem_liquida_pct": 186.4
+    },
+    "operacionais": {
+      "descricao": "A EMAE registrou uma receita líquida de R$ 154,3 milhões no 3T25, com um EBITDA ajustado de R$ 83,8 milhões e lucro líquido de R$ 287,5 milhões, refletindo um forte desempenho operacional.",
+      "metricas": {
+        "potencia_instalada_mw": 960.8,
+        "energia_gerada_mwh": 142.4
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:57:41.974222Z"
+}
