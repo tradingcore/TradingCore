@@ -1,0 +1,34 @@
+{
+  "ticker": "OIBR3",
+  "codigo_cvm": "11312",
+  "data_release": "2025-06-30",
+  "fonte_pdf": "11312_2025-06-30_OI_SA_-_EM_RECUPERAÇÃO_JUDICIAL.pdf",
+  "texto_contexto": "A Oi S.A. é uma das principais operadoras de telecomunicações e tecnologia da informação no Brasil, com um modelo de negócio que se concentra na oferta de soluções de conectividade e serviços digitais. A empresa se destaca pela sua divisão em segmentos principais, sendo o mais relevante o Oi Soluções, que atende o mercado corporativo com um foco especial em tecnologia da informação e comunicação (TIC). Este segmento tem se transformado nos últimos anos, redirecionando seu portfólio para incluir serviços de maior valor agregado, como cloud computing e comunicação unificada. Essa mudança reflete uma adaptação às novas demandas do mercado e uma tentativa de diversificação das fontes de receita, que se tornaram essenciais em um ambiente competitivo e em constante evolução.\n\nOs principais indicadores de desempenho da Oi, como receita líquida, EBITDA e margem EBITDA, são fundamentais para avaliar a saúde financeira da empresa. A evolução das receitas das subsidiárias também é um KPI relevante, uma vez que a Oi busca ampliar sua presença no mercado por meio de uma oferta diversificada de serviços. O crescimento nas receitas de TIC, que já representam uma parte significativa do total da Oi Soluções, é um sinal positivo e indica que a empresa está conseguindo se posicionar em um setor que demanda inovação e eficiência.\n\nOs drivers de valor para a Oi incluem a eficiência operacional, a migração para soluções digitais e a otimização de custos. A redução de OPEX e CAPEX tem sido uma estratégia central para melhorar a sustentabilidade financeira da empresa, permitindo que a Oi se mantenha competitiva em um mercado que exige investimentos constantes em tecnologia e infraestrutura. A busca por eficiência também está alinhada com a necessidade de atender às expectativas dos clientes, que cada vez mais demandam serviços rápidos, confiáveis e integrados.\n\nEntretanto, a Oi enfrenta riscos significativos que podem impactar sua trajetória. A elevada dívida bruta, que se mantém em torno de R$ 11,2 bilhões, é uma preocupação constante, especialmente em um cenário onde a reestruturação financeira se torna necessária. A empresa tem se esforçado para se adaptar a essa realidade, especialmente após a venda de ativos não essenciais e a migração de clientes para soluções digitais. A regulação do setor de telecomunicações no Brasil, supervisionada pela ANATEL, também representa um fator crítico, uma vez que mudanças nas políticas regulatórias podem afetar diretamente a operação e a rentabilidade da Oi.\n\nEventos recentes, como a conclusão da venda de operações não essenciais, como a UPI ClientCo e a TV, alteraram a estrutura de receitas da companhia e exigem uma reavaliação contínua de sua estratégia de negócios. A Oi está atualmente em processo de recuperação judicial, o que implica um ambiente de incerteza e a necessidade de ajustes constantes em sua abordagem. Medidas como a capitalização dos juros de dívidas e a proposta de grupamento de ações são tentativas de preservar a liquidez e atender às exigências regulatórias, refletindo a busca da empresa por estabilidade e recuperação em um cenário desafiador.\n\nA estrutura de capital da Oi, marcada por um elevado nível de endividamento, exige uma gestão cuidadosa e uma estratégia clara para a recuperação. A governança corporativa da empresa também é um aspecto importante, pois a transparência e a responsabilidade são fundamentais para restaurar a confiança dos investidores e stakeholders. A competição no setor de telecomunicações é intensa, com diversas operadoras disputando a preferência dos consumidores, o que torna a inovação e a qualidade dos serviços ainda mais cruciais.\n\nAlém disso, a sensibilidade macroeconômica é um fator que não pode ser ignorado. O desempenho da Oi está intrinsecamente ligado ao ambiente econômico do Brasil, que pode influenciar tanto a demanda por serviços de telecomunicações quanto a capacidade da empresa de investir em novas tecnologias e expandir sua oferta. Em suma, a Oi S.A. está em um momento crítico de sua trajetória, onde a adaptação às novas realidades do mercado e a busca por eficiência e inovação são essenciais para garantir sua sustentabilidade e crescimento a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (2T2025):\n- Receita Líquida: R$0.7 bi (trimestre) | N/D (LTM)\n- EBITDA: R$-0.1 bi (trimestre) | N/D (LTM) | Margem -14.3%\n- Dívida: R$10.0 bi (líquida) | R$11.2 bi (bruta)\n- Capex: R$0.0 bi (trimestre) | N/D (LTM)\n- Operacional: A Oi registrou receita líquida de R$684 milhões no 2T25, com destaque para Oi Soluções contribuindo com R$342 milhões. As subsidiárias nacionais apresentaram crescimento de 66,8% A/A, totalizando R$267 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "2T2025",
+    "financeiros": {
+      "receita_liquida_tri": 684000000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": -98000000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": null,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 10034000000,
+      "divida_bruta": 11189000000,
+      "capex_tri": 41000000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": -14.3,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "A Oi registrou receita líquida de R$684 milhões no 2T25, com destaque para Oi Soluções contribuindo com R$342 milhões. As subsidiárias nacionais apresentaram crescimento de 66,8% A/A, totalizando R$267 milhões.",
+      "metricas": {
+        "clientes_oi_solucoes": null,
+        "crescimento_subs_nacionais_pct": 66.8,
+        "receita_tic": 116000000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:21:49.997709Z"
+}

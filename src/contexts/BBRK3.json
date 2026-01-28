@@ -1,0 +1,34 @@
+{
+  "ticker": "BBRK3",
+  "codigo_cvm": "21180",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "21180_2025-09-30_NEXPE_PARTICIPAÇÕES_SA_-_EM_RECUPERAÇÃO_JUDICIAL.pdf",
+  "texto_contexto": "A Brasil Brokers, atualmente conhecida como Nexpe Participações S.A., passou por uma transformação significativa em seu modelo de negócio, abandonando a intermediação e administração de imóveis para se concentrar na gestão de contratos de licenciamento de marcas e na administração financeira de recebíveis. Essa mudança foi impulsionada por desafios financeiros e operacionais que a empresa enfrentou, levando-a a reavaliar sua estratégia e a buscar novas oportunidades de crescimento e sustentabilidade.\n\nO novo foco da Brasil Brokers em gestão de marcas e administração de recebíveis reflete uma tentativa de se reposicionar em um mercado em constante evolução. A empresa agora busca maximizar a eficiência na gestão de custos e na recuperação de ativos, o que é crucial para a geração de fluxo de caixa. Os principais indicadores de desempenho, como a receita líquida e o EBITDA ajustado, são monitorados de perto, pois fornecem uma visão clara da saúde financeira da empresa e de sua capacidade de se recuperar após um período de dificuldades.\n\nOs drivers de valor para a Brasil Brokers estão intimamente ligados à sua habilidade de navegar por um ambiente desafiador, especialmente em relação à recuperação judicial em que se encontra. A volatilidade do mercado imobiliário, que historicamente impactou a empresa, continua a ser um fator de risco, assim como a dependência de negociações com credores. A capacidade de alongar prazos de pagamento e realizar deságios em suas dívidas é fundamental para garantir a liquidez e a viabilidade financeira da companhia.\n\nA estrutura de capital da Brasil Brokers é um reflexo direto de sua trajetória recente, apresentando um patrimônio líquido negativo que resulta de prejuízos acumulados ao longo do tempo. A empresa está em um processo de reestruturação de passivos, o que implica em um esforço contínuo para renegociar suas obrigações financeiras e estabilizar sua posição no mercado. Essa reestruturação é vital não apenas para a recuperação da empresa, mas também para a confiança dos investidores e stakeholders.\n\nA governança corporativa da Brasil Brokers é um aspecto crucial em sua jornada de recuperação. A empresa precisa garantir que suas práticas estejam alinhadas com as normas regulatórias e contábeis, especialmente no que diz respeito à recuperação judicial. A transparência nas operações e a comunicação clara com os investidores são essenciais para restaurar a credibilidade da empresa e facilitar o acesso a novas fontes de capital.\n\nA competição no setor em que a Brasil Brokers atua é intensa, com diversas empresas buscando se destacar na gestão de marcas e na administração de recebíveis. A capacidade da Brasil Brokers de se diferenciar e oferecer valor agregado aos seus clientes será um fator determinante para seu sucesso a longo prazo. Além disso, a empresa deve estar atenta às tendências do mercado e às mudanças nas preferências dos consumidores, que podem impactar diretamente sua estratégia.\n\nPor fim, a sensibilidade macroeconômica é um elemento que não pode ser ignorado. Fatores como a taxa de juros, a inflação e a dinâmica do mercado imobiliário têm um impacto direto nas operações da Brasil Brokers. A empresa deve estar preparada para se adaptar a essas condições, buscando sempre alternativas que garantam sua sustentabilidade e crescimento em um ambiente econômico desafiador. A continuidade das operações e a recuperação do valor para os stakeholders dependem da execução bem-sucedida de seu plano de recuperação e da capacidade de se adaptar às condições do mercado, garantindo assim um futuro mais promissor para a companhia.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.0 bi (trimestre) | N/D (LTM)\n- EBITDA: R$-0.0 bi (trimestre) | N/D (LTM)\n- Lucro Líquido: R$-0.0 bi (trimestre) | N/D (LTM)\n- Capex: R$-0.0 bi (trimestre) | N/D (LTM)\n- Operacional: A Companhia registrou receita líquida de R$ 196 mil no 3T25, refletindo uma queda significativa em relação ao mesmo período do ano anterior devido à alienação de suas Unidades Produtivas Isoladas.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 196000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": -2424000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": -28640000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": -200000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "A Companhia registrou receita líquida de R$ 196 mil no 3T25, refletindo uma queda significativa em relação ao mesmo período do ano anterior devido à alienação de suas Unidades Produtivas Isoladas.",
+      "metricas": {
+        "estoque_processos_trabalhistas": 146,
+        "despesas_administrativas": 1900000,
+        "despesas_juridicas": 700000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:19:42.440057Z"
+}

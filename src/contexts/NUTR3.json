@@ -1,0 +1,35 @@
+{
+  "ticker": "NUTR3",
+  "codigo_cvm": "21334",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "21334_2025-09-30_NUTRIPLANT_INDUSTRIA_E_COMÉRCIO_SA.pdf",
+  "texto_contexto": "A Nutriplant Indústria e Comércio S.A. (NUTR3) se destaca no dinâmico setor de agronegócio, onde sua atuação é centrada no desenvolvimento e comercialização de soluções que visam maximizar a produtividade das atividades agrícolas de seus clientes. A empresa se posiciona como um agente de transformação, utilizando tecnologia agronômica avançada para oferecer produtos que não apenas atendem às demandas do mercado, mas que também promovem a eficiência operacional dos seus usuários. Essa abordagem inovadora permite à Nutriplant explorar um mercado em constante crescimento, onde a busca por soluções que aumentem a produtividade e a sustentabilidade é cada vez mais premente.\n\nO modelo de negócio da Nutriplant é fundamentado na oferta de produtos diferenciados que se destacam pela sua capacidade de agregar valor às operações agrícolas. A empresa investe continuamente em pesquisa e desenvolvimento, buscando inovações que possam atender às necessidades específicas de seus clientes, desde pequenos produtores até grandes empresas do setor. Essa estratégia não apenas fortalece a posição competitiva da Nutriplant, mas também a torna uma referência em tecnologia agronômica, um dos principais drivers de valor da companhia.\n\nOs principais indicadores de desempenho da Nutriplant, como receita líquida, lucro bruto, EBITDA e prejuízo líquido, são fundamentais para avaliar sua saúde financeira e operacional. A receita líquida, em particular, é um reflexo da capacidade da empresa de gerar vendas e expandir sua base de clientes. O EBITDA e o lucro bruto, por sua vez, são essenciais para medir a rentabilidade e a eficiência operacional, permitindo que a empresa identifique áreas de melhoria e ajuste suas estratégias conforme necessário.\n\nEntretanto, a Nutriplant não está isenta de riscos. O aumento das despesas operacionais e os custos com matérias-primas podem impactar negativamente suas margens de lucro e EBITDA, exigindo uma gestão financeira rigorosa e a busca por eficiência em todos os níveis da operação. Além disso, a volatilidade do mercado de agronegócio, influenciada por fatores como mudanças climáticas, flutuações nos preços de commodities e condições econômicas gerais, pode afetar o desempenho da empresa. A capacidade de adaptação a essas variáveis é crucial para a sustentabilidade a longo prazo da Nutriplant.\n\nA estrutura de capital da Nutriplant é predominantemente composta por ações ordinárias, com uma significativa participação de controladores e membros da diretoria. Essa configuração acionária, onde 75,3% das ações estão nas mãos de insiders, pode proporcionar uma estabilidade maior em momentos de volatilidade do mercado, mas também implica em uma menor liquidez em comparação com empresas que possuem uma distribuição mais ampla de suas ações. A listagem da Nutriplant na B3 S.A. – Brasil, Bolsa, Balcão, e a atuação do BTG Pactual como formador de mercado desde setembro de 2023, são fatores que podem influenciar positivamente a liquidez de suas ações, facilitando o acesso a capital e a atração de investidores.\n\nA governança da Nutriplant é um aspecto fundamental para sua operação, especialmente em um setor tão regulado como o agronegócio. A empresa deve estar atenta às mudanças nas regulamentações que afetam o setor agrícola, garantindo que suas práticas estejam em conformidade com as exigências legais e normativas. A capacidade de inovar em seus produtos e serviços, aliada a uma gestão eficaz de despesas e custos, é vital para manter a competitividade e a sustentabilidade da empresa no longo prazo.\n\nNo contexto macroeconômico, a Nutriplant é sensível a uma série de fatores que podem impactar seu desempenho. A economia brasileira, as políticas agrícolas, as taxas de juros e a inflação são elementos que podem influenciar tanto a demanda por seus produtos quanto os custos de operação. A empresa deve, portanto, monitorar atentamente essas variáveis e ajustar suas estratégias conforme necessário para mitigar riscos e aproveitar oportunidades que possam surgir em um ambiente econômico em constante mudança.\n\nEm suma, a Nutriplant se posiciona como uma empresa inovadora e adaptável no setor de agronegócio, com um modelo de negócio focado em tecnologia agronômica e eficiência operacional. Embora enfrente desafios significativos, sua estrutura de capital, governança e capacidade de inovação a colocam em uma posição favorável para navegar pelas complexidades do mercado e continuar a crescer em um ambiente competitivo.\n\nNÚMEROS DE REFERÊNCIA (9M2025):\n- Receita Líquida: R$0.2 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.0 bi (trimestre) | N/D (LTM) | Margem 3.7%\n- Lucro Líquido: R$-0.0 bi (trimestre) | N/D (LTM)\n- Dívida Líquida: R$0.0 bi\n- Operacional: Receita líquida de R$ 166,6 milhões, EBITDA de R$ 6,1 milhões e prejuízo líquido de R$ 1,9 milhão no período de nove meses encerrado em setembro de 2025.",
+  "numeros_referencia": {
+    "periodo_trimestre": "9M2025",
+    "financeiros": {
+      "receita_liquida_tri": 166600000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 6100000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": -1936000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 19600000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 3.7,
+      "margem_liquida_pct": -1.2
+    },
+    "operacionais": {
+      "descricao": "Receita líquida de R$ 166,6 milhões, EBITDA de R$ 6,1 milhões e prejuízo líquido de R$ 1,9 milhão no período de nove meses encerrado em setembro de 2025.",
+      "metricas": {
+        "lucro_bruto": 21579000,
+        "margem_bruta_pct": 13.0,
+        "despesas_gerais": 22358000,
+        "custo_produtos_vendidos": 145029000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:20:17.608901Z"
+}

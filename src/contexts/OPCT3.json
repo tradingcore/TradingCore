@@ -1,0 +1,34 @@
+{
+  "ticker": "OPCT3",
+  "codigo_cvm": "25534",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25534_2025-09-30_OCEANPACT_SERVIÇOS_MARÍTIMOS_SA.pdf",
+  "texto_contexto": "A OceanPact Serviços Marítimos S.A. se posiciona como uma referência no Brasil no desenvolvimento e implementação de soluções inovadoras voltadas para o meio ambiente, serviços submarinos, apoio logístico e engenharia. Seu modelo de negócio é robusto e diversificado, centrando-se na prestação de serviços para setores cruciais da economia, como energia, mineração, telecomunicações, portuário e navegação, com uma ênfase particular no setor de óleo e gás. Essa abordagem multifacetada permite à empresa não apenas atender a uma ampla gama de necessidades do mercado, mas também mitigar riscos associados à dependência de um único setor.\n\nAs operações da OceanPact são organizadas em dois segmentos principais: Embarcações e Serviços. O segmento de Embarcações é responsável por oferecer suporte marítimo, essencial para operações em alto-mar, enquanto o segmento de Serviços abrange uma variedade de atividades, incluindo operações submarinas, resposta a derramamentos de óleo e consultoria especializada. Essa divisão permite à empresa otimizar seus recursos e atender de maneira mais eficaz às demandas específicas de seus clientes.\n\nOs principais indicadores de desempenho da OceanPact, como receita líquida, EBITDA ajustado, margem EBITDA, taxa de ocupação da frota e o número de embarcações e ROVs (veículos operados remotamente), são fundamentais para avaliar a saúde financeira e operacional da companhia. A taxa de ocupação da frota, por exemplo, é um reflexo direto da eficiência operacional e da demanda por seus serviços, enquanto o EBITDA ajustado fornece uma visão clara da rentabilidade das operações. O crescimento do backlog, que representa contratos futuros a serem executados, é um indicativo da capacidade da empresa de garantir receitas futuras, reforçando sua posição competitiva no mercado.\n\nOs drivers de valor da OceanPact são amplamente influenciados pela capacidade de firmar contratos de longo prazo com clientes estratégicos, como a Petrobras, e pela diversificação de serviços que possibilitam à empresa atender a diferentes necessidades do mercado. A assinatura de novos contratos e a expansão do backlog são fatores que não apenas fortalecem a previsibilidade de receita, mas também contribuem para a construção de relacionamentos duradouros com os clientes, essenciais em um setor onde a confiança e a reputação são cruciais.\n\nEntretanto, a OceanPact não está isenta de riscos. A volatilidade do mercado de petróleo e gás pode impactar diretamente a demanda por seus serviços, uma vez que flutuações nos preços do petróleo podem levar a cortes de gastos por parte dos clientes. Além disso, a empresa enfrenta riscos operacionais associados à execução de projetos complexos e à manutenção de sua frota, que exigem investimentos contínuos e gestão eficiente para garantir a segurança e a eficácia das operações.\n\nA estrutura de capital da OceanPact é composta por uma combinação de dívida e patrimônio líquido, o que proporciona uma posição de liquidez que suporta suas operações e investimentos. A gestão eficaz da dívida é crucial, especialmente em um setor que pode ser suscetível a ciclos econômicos. A empresa mantém um equilíbrio entre a necessidade de financiar suas operações e a preservação de sua saúde financeira, o que é vital para sustentar seu crescimento a longo prazo.\n\nA governança corporativa da OceanPact é um aspecto fundamental para sua operação, especialmente em um setor onde a conformidade com normas ambientais e de segurança é essencial. A empresa deve estar atenta às regulamentações do setor marítimo e ambiental, que são rigorosas e em constante evolução. A capacidade de se adaptar a mudanças regulatórias e de mercado será crucial para o sucesso contínuo da OceanPact, pois a conformidade não só afeta a operação, mas também a reputação da empresa no mercado.\n\nA competição no setor de serviços marítimos é intensa, com diversas empresas disputando contratos em um ambiente onde a inovação e a eficiência operacional são diferenciais significativos. A OceanPact deve continuamente investir em tecnologia e capacitação de sua equipe para se manter competitiva e atender às expectativas crescentes de seus clientes.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A saúde da economia global, as políticas energéticas e as tendências ambientais influenciam diretamente a demanda por serviços marítimos e submarinos. A OceanPact, ao operar em um setor tão interligado a variáveis econômicas e ambientais, precisa estar atenta a essas dinâmicas para ajustar sua estratégia e garantir sua sustentabilidade e crescimento no longo prazo. A capacidade de inovar e se adaptar a um cenário em constante mudança será determinante para a continuidade de seu sucesso no mercado.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.6 bi (trimestre) | R$1.6 bi (LTM)\n- EBITDA: R$0.2 bi (trimestre) | R$0.5 bi (LTM) | Margem 34.7%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.1 bi (LTM)\n- Dívida: R$1.1 bi (líquida) | R$1.8 bi (bruta)\n- Capex: R$0.1 bi (trimestre) | R$0.3 bi (LTM)\n- Operacional: Taxa de ocupação da frota de 88%, com 28 embarcações e 9 ROVs operacionais.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 614000000,
+      "receita_liquida_ltm": 1581000000,
+      "ebitda_tri": 213000000,
+      "ebitda_ltm": 478000000,
+      "lucro_liquido_tri": 58000000,
+      "lucro_liquido_ltm": 81000000,
+      "divida_liquida": 1116000000,
+      "divida_bruta": 1776000000,
+      "capex_tri": 122000000,
+      "capex_ltm": 294000000,
+      "margem_ebitda_pct": 34.7,
+      "margem_liquida_pct": 9.4
+    },
+    "operacionais": {
+      "descricao": "Taxa de ocupação da frota de 88%, com 28 embarcações e 9 ROVs operacionais.",
+      "metricas": {
+        "taxa_ocupacao_pct": 88,
+        "quantidade_embarcacoes": 28,
+        "quantidade_ROVs": 9
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:21:12.692134Z"
+}
