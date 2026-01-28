@@ -1,0 +1,35 @@
+{
+  "ticker": "FIQE3",
+  "codigo_cvm": "26050",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "26050_2025-09-30_UNIFIQUE_TELECOMUNICAÇÕES_SA.pdf",
+  "texto_contexto": "A Unifique (FIQE3) se destaca no cenário das telecomunicações brasileiras como uma operadora que não apenas oferece serviços de internet banda larga e telefonia móvel, mas também se posiciona como uma referência em qualidade, sendo reconhecida como a Melhor Internet Banda Larga do Sul do Brasil por seis anos consecutivos, segundo a Anatel. O modelo de negócio da empresa é diversificado, abrangendo tanto o segmento B2C (Business to Consumer) quanto o B2B (Business to Business). Essa abordagem permite à Unifique atender a uma ampla gama de clientes, desde consumidores residenciais até empresas que buscam soluções integradas de comunicação.\n\nO portfólio da Unifique é robusto e inclui não apenas internet e telefonia fixa e móvel, mas também serviços de TV e mídia, além de inovações como telemedicina e soluções financeiras. Essa diversidade de serviços não apenas amplia as fontes de receita, mas também proporciona uma experiência mais integrada ao cliente, incentivando a fidelização e a redução da taxa de churn. Os principais indicadores de desempenho (KPIs) da empresa, como receita líquida, lucro líquido e margem EBITDA, refletem um crescimento consistente, especialmente na telefonia móvel, que se beneficiou da portabilidade de clientes de outras operadoras e da introdução de planos combinados que atraem novos usuários.\n\nOs drivers de valor da Unifique são multifacetados. A expansão da base de clientes é um dos principais motores de crescimento, impulsionada pela melhoria contínua na qualidade dos serviços e pela eficiência operacional. A capacidade de inovação em produtos e serviços também é crucial, permitindo que a empresa se adapte rapidamente às mudanças nas demandas do mercado e às novas tecnologias. O ambiente regulatório, favorável à Unifique, é um fator que contribui para sua estabilidade e crescimento. A empresa opera no Novo Mercado da B3, que impõe altos padrões de governança corporativa e transparência, reforçando a confiança dos investidores e do mercado.\n\nEntretanto, a Unifique não está isenta de riscos. A concorrência no setor de telecomunicações é intensa, com diversas operadoras disputando a mesma base de clientes. Além disso, a volatilidade econômica pode impactar a demanda por serviços de telecomunicações, uma vez que consumidores e empresas podem adotar uma postura mais conservadora em tempos de incerteza. A necessidade de investimentos contínuos em infraestrutura é outro desafio, pois a manutenção da qualidade dos serviços e a competitividade exigem recursos significativos.\n\nA estrutura de capital da Unifique é sólida, caracterizada por um baixo nível de alavancagem, com uma relação dívida líquida/EBITDA que proporciona segurança financeira. Essa posição permite que a empresa realize novos investimentos sem comprometer sua saúde financeira. A regulação do setor, supervisionada pela Anatel, é um aspecto crítico para as operações da Unifique. A agência não apenas concede licenças para a operação de serviços móveis, mas também impõe compromissos de investimento em infraestrutura, o que pode influenciar diretamente a estratégia de crescimento da empresa.\n\nRecentemente, a Unifique tem se envolvido em aquisições de carteiras de clientes e ativos de rede, uma estratégia que visa expandir sua presença em novas regiões e fortalecer sua posição no mercado. Essas aquisições são parte de um plano mais amplo de crescimento e diversificação, permitindo que a empresa não apenas amplie sua base de clientes, mas também ofereça uma gama mais ampla de serviços. A sensibilidade macroeconômica, portanto, se torna um fator a ser monitorado, pois mudanças nas condições econômicas podem afetar tanto a capacidade de investimento da empresa quanto a disposição dos consumidores em adquirir seus serviços.\n\nEm suma, a Unifique se posiciona como uma operadora de telecomunicações com um modelo de negócio sólido e diversificado, enfrentando desafios típicos do setor, mas com uma estrutura de capital que lhe confere resiliência. Sua capacidade de inovação, aliada a um ambiente regulatório favorável e a um compromisso com a qualidade, coloca a empresa em uma trajetória promissora, embora a vigilância sobre os riscos e a concorrência permaneça essencial para garantir seu sucesso a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.3 bi (trimestre) | R$0.9 bi (LTM)\n- EBITDA: R$0.2 bi (trimestre) | R$0.4 bi (LTM) | Margem 50.9%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.1 bi (LTM)\n- Dívida Líquida: R$0.3 bi\n- Capex: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- Operacional: A Unifique encerrou o 3T25 com 823.491 acessos em banda larga e 211.204 acessos em telefonia móvel, apresentando um churn de 1,42% na banda larga.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 306200000,
+      "receita_liquida_ltm": 862100000,
+      "ebitda_tri": 155900000,
+      "ebitda_ltm": 433100000,
+      "lucro_liquido_tri": 64800000,
+      "lucro_liquido_ltm": 146900000,
+      "divida_liquida": 343000000,
+      "divida_bruta": null,
+      "capex_tri": 75600000,
+      "capex_ltm": 225200000,
+      "margem_ebitda_pct": 50.9,
+      "margem_liquida_pct": 21.2
+    },
+    "operacionais": {
+      "descricao": "A Unifique encerrou o 3T25 com 823.491 acessos em banda larga e 211.204 acessos em telefonia móvel, apresentando um churn de 1,42% na banda larga.",
+      "metricas": {
+        "acessos_banda_larga": 823491,
+        "acessos_telefonia_movel": 211204,
+        "churn_banda_larga_pct": 1.42,
+        "cidades_atendidas": 91
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:45:41.335641Z"
+}

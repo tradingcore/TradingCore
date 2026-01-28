@@ -1,0 +1,35 @@
+{
+  "ticker": "UGPA3",
+  "codigo_cvm": "18465",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "18465_2025-09-30_ULTRAPAR_PARTICIPAÇÕES_SA.pdf",
+  "texto_contexto": "A Ultrapar Participações S.A. é uma das principais empresas brasileiras atuando em setores estratégicos, como energia, mobilidade e infraestrutura logística. Com um modelo de negócio diversificado, a Ultrapar opera por meio de subsidiárias que abrangem diferentes segmentos do mercado, incluindo a distribuição de combustíveis, a comercialização de gás liquefeito de petróleo (GLP), serviços de logística e transporte hidroviário. Entre suas subsidiárias mais conhecidas estão a Ipiranga, Ultragaz, Ultracargo e Hidrovias do Brasil, que juntas posicionam a Ultrapar como um player relevante e influente no cenário nacional.\n\nO segmento de distribuição de combustíveis, representado pela Ipiranga, é um dos pilares da empresa, oferecendo uma ampla gama de produtos e serviços que atendem tanto o consumidor final quanto o mercado corporativo. A Ultragaz, por sua vez, é responsável pela comercialização de GLP, um produto essencial para diversas aplicações residenciais e industriais. A Ultracargo se destaca na prestação de serviços de logística e armazenagem, enquanto a Hidrovias do Brasil atua no transporte hidroviário, uma alternativa eficiente e sustentável para a movimentação de cargas. Essa diversificação permite à Ultrapar não apenas mitigar riscos, mas também explorar sinergias entre suas operações, aumentando sua competitividade.\n\nOs principais indicadores de desempenho da Ultrapar incluem receita líquida, EBITDA ajustado, lucro líquido e geração de caixa operacional. Esses KPIs são fundamentais para a avaliação do desempenho financeiro e operacional da empresa, permitindo que a gestão tome decisões informadas sobre investimentos e estratégias de crescimento. A eficiência operacional é um dos principais drivers de valor, assim como a capacidade de inovação e adaptação às mudanças do mercado. A expansão da infraestrutura, especialmente após a aquisição da Hidrovias, e a consolidação das operações são fatores que contribuem para a geração de receita e a manutenção de uma base de clientes sólida.\n\nEntretanto, a Ultrapar não está isenta de riscos. A volatilidade dos preços dos combustíveis é um dos principais desafios enfrentados pela empresa, impactando diretamente suas margens de lucro. Além disso, a concorrência no setor de distribuição é intensa, exigindo que a Ultrapar mantenha sua competitividade por meio de estratégias eficazes de marketing e atendimento ao cliente. Questões regulatórias também representam um risco significativo, uma vez que a empresa depende de legislações que afetam suas operações. A regulação do setor de energia e combustíveis no Brasil, especialmente as normas estabelecidas pela Agência Nacional do Petróleo (ANP), é um fator crítico que influencia diretamente as atividades da Ultrapar. Eventos como a Operação Carbono Oculto, que visa combater irregularidades no setor, exigem que a empresa se adapte rapidamente a novas exigências legais e de conformidade.\n\nA estrutura de capital da Ultrapar é composta por uma combinação de dívida e patrimônio líquido, com um foco em manter uma alavancagem financeira controlada. A gestão prudente da alavancagem é fundamental para garantir a sustentabilidade financeira da empresa, permitindo-lhe investir em novas oportunidades e enfrentar os desafios do mercado. A capacidade da Ultrapar de navegar por um ambiente regulatório complexo e de se adaptar a mudanças no mercado será crucial para seu sucesso futuro.\n\nAlém disso, a empresa está cada vez mais atenta às questões relacionadas à sustentabilidade e à transição energética. A pressão por investimentos em tecnologias mais limpas e eficientes está crescendo, e a Ultrapar reconhece a importância de se posicionar como uma empresa responsável e inovadora nesse contexto. A sensibilidade macroeconômica também desempenha um papel importante nas operações da Ultrapar, uma vez que fatores como a inflação, as taxas de juros e o crescimento econômico impactam diretamente a demanda por seus produtos e serviços.\n\nEm suma, a Ultrapar Participações S.A. é uma empresa com um modelo de negócio robusto e diversificado, que enfrenta desafios significativos em um ambiente competitivo e regulatório complexo. Sua capacidade de adaptação, inovação e gestão prudente de recursos será fundamental para garantir seu crescimento e sustentabilidade a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$37.1 bi (trimestre) | R$104.5 bi (LTM)\n- EBITDA: R$1.9 bi (trimestre) | R$5.2 bi (LTM) | Margem 5.2%\n- Lucro Líquido: R$0.8 bi (trimestre) | R$2.3 bi (LTM)\n- Capex: R$0.8 bi (trimestre) | R$1.7 bi (LTM)\n- Operacional: Crescimento de 1% no volume total de vendas em relação ao 3T24, com destaque para a Ipiranga e Ultragaz.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 37088000000,
+      "receita_liquida_ltm": 104505000000,
+      "ebitda_tri": 1946000000,
+      "ebitda_ltm": 5205000000,
+      "lucro_liquido_tri": 772000000,
+      "lucro_liquido_ltm": 2286000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": 756000000,
+      "capex_ltm": 1716000000,
+      "margem_ebitda_pct": 5.2,
+      "margem_liquida_pct": 2.1
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 1% no volume total de vendas em relação ao 3T24, com destaque para a Ipiranga e Ultragaz.",
+      "metricas": {
+        "volume_total_vendas": 6170000,
+        "volume_ipiranga": 6170000,
+        "volume_ultragaz": 446000,
+        "investimentos": 756000000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:43:39.550676Z"
+}

@@ -1,0 +1,33 @@
+{
+  "ticker": "UCAS3",
+  "codigo_cvm": "22780",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "22780_2025-09-30_UNICASA_INDÚSTRIA_DE_MÓVEIS_SA.pdf",
+  "texto_contexto": "A Unicasa Indústria de Móveis S.A. (UCAS3) se destaca como uma das principais empresas do setor de móveis planejados no Brasil, sendo a única de seu segmento listada em bolsa. Seu modelo de negócio é centrado na produção e comercialização de móveis sob medida, o que permite à empresa atender a uma ampla gama de clientes, tanto no mercado interno quanto no externo. A Unicasa se diferencia pela sua capacidade de adaptação às demandas dos consumidores, oferecendo produtos que aliam design inovador e funcionalidade, além de contar com uma diversificada rede de canais de distribuição. Essa rede inclui revendas exclusivas, lojas multimarcas e operações corporativas, o que proporciona uma cobertura abrangente e flexível no mercado.\n\nOs segmentos de atuação da Unicasa são variados, com destaque para as revendas exclusivas, que representam uma parte significativa de sua receita, e o segmento corporativo, que tem mostrado um crescimento expressivo nos últimos anos. A empresa também tem ampliado sua presença no mercado internacional, especialmente nos Estados Unidos, onde as vendas têm crescido de forma substancial. Essa diversificação geográfica não apenas aumenta a base de clientes, mas também dilui riscos associados a flutuações econômicas em mercados específicos.\n\nOs principais indicadores de desempenho (KPIs) da Unicasa incluem receita líquida, margem bruta e EBITDA, além do crescimento nas vendas em lojas comparáveis, que são fundamentais para avaliar a eficiência operacional e a aceitação dos produtos no mercado. A capacidade de inovação em design e funcionalidade, aliada à eficiência na produção e distribuição, são considerados drivers de valor essenciais para a empresa. A Unicasa também se beneficia de parcerias estratégicas que potencializam sua presença no mercado, especialmente em um cenário onde a demanda por móveis planejados está em ascensão, impulsionada por tendências de personalização e design de interiores.\n\nEntretanto, a Unicasa enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade nas taxas de câmbio é um fator crítico, uma vez que afeta diretamente os custos de importação e exportação, impactando as margens de lucro. Além disso, a concorrência no setor de móveis é intensa, especialmente no mercado americano, onde a empresa deve se destacar não apenas pela qualidade de seus produtos, mas também pela capacidade de se adaptar rapidamente às preferências dos consumidores. A empresa também está sujeita a riscos regulatórios, como mudanças nas políticas de importação e tarifas, que podem afetar seus custos operacionais e, consequentemente, sua rentabilidade.\n\nA estrutura de capital da Unicasa é composta por um mix de dívida de curto e longo prazo, o que pode impactar sua flexibilidade financeira. A empresa tem buscado alternativas de financiamento, incluindo programas governamentais, como o Brasil Soberano do BNDES, para apoiar suas operações e expansão. Essa busca por financiamento é crucial, especialmente em um ambiente econômico que pode ser volátil e desafiador.\n\nEventos críticos que podem afetar a Unicasa incluem mudanças nas condições econômicas, que podem influenciar a demanda por móveis, e as políticas de tarifas internacionais, que podem impactar seus custos. A capacidade da empresa de manter a eficiência operacional em face de desafios de mercado será fundamental para sua sustentabilidade e crescimento a longo prazo. Em um cenário macroeconômico que pode ser afetado por incertezas políticas e econômicas, a Unicasa precisará continuar a inovar e a se adaptar para garantir sua posição de liderança no setor de móveis planejados.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- EBITDA: R$0.0 bi (trimestre) | R$0.0 bi (LTM) | Margem 6.2%\n- Lucro Líquido: R$-0.0 bi (trimestre) | R$-0.0 bi (LTM)\n- Dívida: R$0.0 bi (líquida) | R$0.1 bi (bruta)\n- Operacional: Crescimento de 13,6% na receita líquida, com prejuízo operacional de R$ 0,5 milhão e EBITDA de R$ 4,1 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 66643000,
+      "receita_liquida_ltm": 173298000,
+      "ebitda_tri": 4105000,
+      "ebitda_ltm": 42760000,
+      "lucro_liquido_tri": -947000,
+      "lucro_liquido_ltm": -8566000,
+      "divida_liquida": 46882000,
+      "divida_bruta": 87087000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 6.2,
+      "margem_liquida_pct": -1.4
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 13,6% na receita líquida, com prejuízo operacional de R$ 0,5 milhão e EBITDA de R$ 4,1 milhões.",
+      "metricas": {
+        "crescimento_vendas_sss_pct": 15.0,
+        "crescimento_vendas_eua_pct": 48.0
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:44:34.139821Z"
+}

@@ -1,0 +1,33 @@
+{
+  "ticker": "UNIP3",
+  "codigo_cvm": "11592",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "11592_2025-09-30_UNIPAR_CARBOCLORO_SA.pdf",
+  "texto_contexto": "A Unipar é uma empresa brasileira de destaque no setor químico e petroquímico, reconhecida como a maior produtora de cloro e soda cáustica e a segunda maior na produção de PVC na América do Sul. Seu modelo de negócio é centrado na produção e comercialização de produtos químicos essenciais, com uma forte presença nos mercados locais do Brasil e da Argentina, que representam a maior parte de sua receita. A empresa opera quatro unidades produtivas, localizadas em Cubatão e Santo André, no Brasil, e em Bahia Blanca, na Argentina, além de uma unidade na Bahia. Essa estrutura geográfica permite à Unipar atender de forma eficiente a demanda regional, otimizando sua logística e reduzindo custos de transporte.\n\nOs principais segmentos de atuação da Unipar incluem a produção de cloro, soda cáustica, PVC, hipoclorito de sódio e ácido clorídrico, além de produtos intermediários da cadeia produtiva do PVC. Esses produtos são fundamentais para diversas indústrias, como a de construção civil, tratamento de água, e fabricação de produtos plásticos, o que confere à Unipar uma posição estratégica em um mercado em constante crescimento. A empresa também se destaca por sua capacidade de autoprodução de energia elétrica, investindo em fontes renováveis, como eólica e solar, o que não apenas reduz seus custos operacionais, mas também alinha suas operações com as crescentes demandas por sustentabilidade.\n\nOs principais indicadores de desempenho (KPIs) da Unipar, como EBITDA, margem EBITDA, receita líquida e lucro líquido, são cruciais para avaliar sua performance financeira e operacional. A eficiência na utilização da capacidade instalada e a competitividade dos custos de produção são drivers de valor essenciais, assim como a capacidade de inovação e modernização tecnológica. A gestão de riscos, especialmente em relação à volatilidade dos preços das matérias-primas e à dinâmica do mercado, é uma prioridade para a empresa, que busca mitigar impactos negativos em sua operação.\n\nEntretanto, a Unipar enfrenta uma série de riscos que podem afetar sua performance. A exposição a flutuações nos preços internacionais de produtos químicos e variações cambiais, especialmente em relação ao peso argentino, são preocupações constantes. Além disso, a dependência de contratos de fornecimento de matérias-primas pode representar um desafio em um ambiente de mercado volátil. A empresa também está sujeita a riscos regulatórios, operando em um setor altamente regulado, onde normas ambientais e de segurança impactam suas operações e investimentos. Mudanças nas políticas econômicas e fiscais nos países onde atua, bem como a evolução do cenário macroeconômico global e local, são fatores que podem influenciar diretamente seus resultados.\n\nA estrutura de capital da Unipar é composta por uma combinação de dívida e patrimônio líquido, com um perfil de dívida que foi recentemente alongado por meio da emissão de debêntures, proporcionando maior flexibilidade financeira. A empresa mantém uma posição de caixa robusta, o que contribui para a cobertura de suas obrigações financeiras e para a realização de investimentos estratégicos. Essa estrutura financeira sólida permite à Unipar não apenas enfrentar os desafios do mercado, mas também aproveitar oportunidades de crescimento.\n\nA governança corporativa da Unipar é orientada por práticas de transparência e responsabilidade, alinhando suas operações às expectativas de stakeholders e à legislação vigente. A empresa demonstra um compromisso com a sustentabilidade e a responsabilidade social, buscando minimizar seu impacto ambiental e contribuir positivamente para as comunidades onde opera. Essa abordagem não apenas fortalece sua imagem institucional, mas também a posiciona favoravelmente em um mercado cada vez mais exigente em relação a práticas sustentáveis.\n\nA competição no setor químico é intensa, e a Unipar deve se manter atenta às dinâmicas do mercado, que podem ser influenciadas por medidas antidumping e políticas de proteção à indústria nacional. A capacidade de adaptação e inovação será crucial para a empresa se destacar em um ambiente competitivo, onde a eficiência operacional e a sustentabilidade são cada vez mais valorizadas. A sensibilidade macroeconômica, incluindo fatores como crescimento econômico, inflação e políticas monetárias, também desempenha um papel significativo na performance da Unipar, exigindo uma gestão proativa e estratégica para navegar por um cenário em constante mudança.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.3 bi (trimestre) | R$3.9 bi (LTM)\n- EBITDA: R$0.3 bi (trimestre) | R$1.0 bi (LTM) | Margem 20.0%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.5 bi (LTM)\n- Dívida: R$1.6 bi (líquida) | R$3.3 bi (bruta)\n- Operacional: Utilização média de eletrólise de 77%, 84% do volume de vendas composto por produtos químicos.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1261000000,
+      "receita_liquida_ltm": 3904000000,
+      "ebitda_tri": 260000000,
+      "ebitda_ltm": 984000000,
+      "lucro_liquido_tri": 107000000,
+      "lucro_liquido_ltm": 489000000,
+      "divida_liquida": 1587000000,
+      "divida_bruta": 3307000000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 20,
+      "margem_liquida_pct": 8.5
+    },
+    "operacionais": {
+      "descricao": "Utilização média de eletrólise de 77%, 84% do volume de vendas composto por produtos químicos.",
+      "metricas": {
+        "utilizacao_eletrólise_pct": 77,
+        "volume_vendas_pct_quimicos": 84
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:46:36.326793Z"
+}
