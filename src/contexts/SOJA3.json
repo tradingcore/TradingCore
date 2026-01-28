@@ -1,0 +1,34 @@
+{
+  "ticker": "SOJA3",
+  "codigo_cvm": "25704",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25704_2025-09-30_BOA_SAFRA_SEMENTES_SA.pdf",
+  "texto_contexto": "A Boa Safra Sementes (SOJA3) se destaca no dinâmico setor de agronegócio brasileiro, com um foco estratégico na produção e comercialização de sementes de soja e outras culturas, além de insumos agrícolas. Seu modelo de negócio é construído em torno da proposta de ser uma plataforma \"one-stop shop\", que oferece soluções integradas para agricultores. Essa abordagem permite que a empresa não apenas forneça sementes, mas também serviços e insumos, abrangendo uma ampla gama de culturas, como milho, sorgo, trigo e feijão. A diversificação do portfólio é um dos pilares que sustentam a Boa Safra, com 98 cultivares adaptadas a diferentes regiões e perfis de produtores, o que a posiciona de forma competitiva em um mercado que exige flexibilidade e inovação.\n\nOs principais indicadores de desempenho (KPIs) da Boa Safra, como receita operacional líquida, lucro bruto, EBITDA ajustado e margem líquida, são fundamentais para avaliar a eficiência operacional e a capacidade de geração de receita da empresa. A taxa de germinação das sementes, que se mantém acima de 94%, é um indicador crucial que não apenas reflete a qualidade dos produtos, mas também reforça a confiança dos agricultores e do mercado em geral. A empresa se beneficia de drivers de valor que incluem a expansão da capacidade produtiva, a diversificação contínua do portfólio, a eficiência logística e a capacidade de adaptação às demandas do mercado. Além disso, a Boa Safra adota uma sólida estratégia financeira que garante a previsibilidade e a sustentabilidade de suas operações, permitindo enfrentar os desafios do setor.\n\nEntretanto, a Boa Safra não está isenta de riscos. A volatilidade climática é um dos principais fatores que podem impactar a produção de sementes, uma vez que condições climáticas adversas podem afetar tanto a qualidade quanto a quantidade da produção. A dependência de condições de mercado favoráveis para a venda de seus produtos também representa um risco significativo, especialmente em um setor tão suscetível a flutuações de preços e demanda. Ademais, a empresa opera sob um complexo arcabouço regulatório que inclui normas da Comissão de Valores Mobiliários (CVM) e padrões internacionais de contabilidade, os quais influenciam diretamente a elaboração de suas demonstrações financeiras e a transparência de suas operações.\n\nA estrutura de capital da Boa Safra é predominantemente de longo prazo, com uma significativa parte de sua dívida com vencimentos superiores a um ano, o que proporciona maior previsibilidade financeira e estabilidade nas operações. A empresa mantém uma posição de liquidez confortável, com um montante considerável em caixa e aplicações financeiras, permitindo que enfrente os desafios do ciclo operacional e aproveite oportunidades de investimento. A captação de recursos através de Certificados de Recebíveis do Agronegócio (CRA) tem sido uma estratégia importante para financiar suas operações e expandir sua infraestrutura, refletindo uma gestão financeira proativa.\n\nNo que diz respeito à governança, a Boa Safra adota práticas que visam garantir a transparência e a responsabilidade em suas operações, fundamentais para a construção de confiança com investidores e stakeholders. A empresa está atenta às mudanças nas políticas agrícolas e às flutuações nos preços das commodities, fatores externos que podem impactar sua performance. A sensibilidade macroeconômica, incluindo variações nas taxas de juros, inflação e políticas governamentais, também desempenha um papel crucial na estratégia da Boa Safra, exigindo uma constante vigilância e adaptação às condições do mercado.\n\nEm suma, a Boa Safra Sementes se posiciona como uma empresa robusta e inovadora no setor de agronegócio, com um modelo de negócio que integra soluções completas para agricultores. Sua capacidade de adaptação, diversificação de produtos e uma gestão financeira sólida são elementos que a diferenciam em um mercado competitivo, ao mesmo tempo em que enfrenta desafios significativos relacionados a riscos climáticos, condições de mercado e regulamentações. A empresa continua a buscar oportunidades de crescimento e expansão, sempre com um olhar atento às dinâmicas do setor e às necessidades de seus clientes.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.1 bi (trimestre) | R$2.3 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.2 bi (LTM) | Margem 10.0%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- Capex: R$0.0 bi (trimestre) | N/D (LTM)\n- Operacional: A receita operacional bruta atingiu R$ 1,2 bilhão, com crescimento de 58% em relação ao 3T24. A carteira de pedidos totalizou R$ 861 milhões, com um aumento de 18% em relação ao ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1131096000,
+      "receita_liquida_ltm": 2344435000,
+      "ebitda_tri": 107972000,
+      "ebitda_ltm": 224791000,
+      "lucro_liquido_tri": 67879000,
+      "lucro_liquido_ltm": 189806000,
+      "divida_liquida": null,
+      "divida_bruta": 1300000000,
+      "capex_tri": 39000000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 10,
+      "margem_liquida_pct": 6
+    },
+    "operacionais": {
+      "descricao": "A receita operacional bruta atingiu R$ 1,2 bilhão, com crescimento de 58% em relação ao 3T24. A carteira de pedidos totalizou R$ 861 milhões, com um aumento de 18% em relação ao ano anterior.",
+      "metricas": {
+        "carteira_pedidos": 861000000,
+        "crescimento_receita_pct": 58,
+        "crescimento_carteira_pedidos_pct": 18
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:18:49.061530Z"
+}

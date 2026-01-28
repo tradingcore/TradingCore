@@ -1,0 +1,33 @@
+{
+  "ticker": "BOBR3",
+  "codigo_cvm": "12190",
+  "data_release": "2025-11-26",
+  "fonte_pdf": "12190_2025-11-26_BOMBRIL_SA_-_EM_RECUPERAÇÃO_JUDICIAL.pdf",
+  "texto_contexto": "A Bombril, uma das marcas mais icônicas do Brasil, possui uma trajetória de 77 anos que a posiciona como uma referência na indústria de higiene e limpeza. Com um modelo de negócio robusto, a empresa se dedica à pesquisa, desenvolvimento, produção e comercialização de uma ampla gama de produtos, que incluem esponjas de aço, detergentes, amaciantes e desinfetantes. Seu portfólio é composto por 15 marcas reconhecidas, totalizando cerca de 245 itens, o que demonstra sua capacidade de inovação e adaptação às necessidades do consumidor. A Bombril se destaca por sua presença em mais de 97% dos varejos alimentares do Brasil, o que não apenas solidifica sua posição no mercado interno, mas também a torna um player relevante no cenário internacional, com exportações para 13 países.\n\nOs principais indicadores de desempenho da Bombril, como volume de vendas, receita operacional bruta e EBITDA ajustado, são fundamentais para avaliar sua performance financeira e eficiência operacional. Esses KPIs são monitorados de perto, pois refletem não apenas a saúde financeira da empresa, mas também sua capacidade de se adaptar às dinâmicas do mercado. Os drivers de valor que impulsionam o crescimento da Bombril incluem a inovação constante em produtos, a adequação do posicionamento de preços, a eficiência na gestão de custos e a expansão de market share. Esses fatores são essenciais para garantir um crescimento sustentável e a manutenção da competitividade em um setor que é altamente dinâmico e sensível às mudanças nas preferências dos consumidores.\n\nEntretanto, a Bombril não está isenta de desafios. A empresa enfrenta riscos significativos, como contingências tributárias relevantes que podem impactar sua saúde financeira. A necessidade de recuperação judicial, solicitada em fevereiro de 2025, é um reflexo de dificuldades financeiras que exigem uma reavaliação de seus processos e estratégias. A aprovação do plano de recuperação judicial em agosto de 2025 representa um passo crucial para a reestruturação da empresa, permitindo que ela busque um novo ciclo de crescimento e investimentos. Esses eventos críticos ressaltam a importância de uma gestão proativa e de uma governança corporativa sólida, que é essencial para navegar em tempos de incerteza.\n\nA estrutura de capital da Bombril é composta por ações ordinárias e preferenciais, com um capital social que reflete a confiança dos investidores na empresa, apesar dos desafios enfrentados. A companhia é regulada pela Comissão de Valores Mobiliários (CVM) e suas ações estão listadas na B3 sob o ticker BOBR4, o que a obriga a seguir normas e diretrizes rigorosas, garantindo transparência e responsabilidade em suas operações.\n\nNo que diz respeito à competição, a Bombril atua em um mercado que é caracterizado por uma forte presença de concorrentes, tanto locais quanto internacionais. A capacidade de diferenciar seus produtos e manter uma forte conexão com os consumidores é vital para a sua sobrevivência e crescimento. Além disso, a sensibilidade macroeconômica, incluindo fatores como inflação, variações cambiais e mudanças nas políticas fiscais, pode impactar diretamente os custos de produção e a demanda por seus produtos. A empresa deve estar atenta a essas variáveis, adaptando suas estratégias para mitigar riscos e aproveitar oportunidades que possam surgir em um ambiente econômico em constante mudança.\n\nEm suma, a Bombril é uma empresa com uma rica história e um modelo de negócio que, apesar dos desafios, continua a se reinventar. A combinação de um portfólio diversificado, uma forte presença no mercado e um compromisso com a inovação são elementos que, se bem geridos, podem levar a empresa a um futuro promissor, mesmo em meio a um cenário econômico desafiador. A capacidade de adaptação e a resiliência diante das adversidades serão cruciais para que a Bombril mantenha sua posição de destaque na indústria de higiene e limpeza.\n\nNÚMEROS DE REFERÊNCIA (4T2024):\n- Receita Líquida: R$2.3 bi (trimestre) | R$2.3 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.2 bi (LTM) | Margem 14.4%\n- Dívida Líquida: R$0.1 bi\n- Operacional: Vendas de 432,2 mil toneladas em 2024, crescimento de 17,5% em relação a 2023.",
+  "numeros_referencia": {
+    "periodo_trimestre": "4T2024",
+    "financeiros": {
+      "receita_liquida_tri": 2307200000,
+      "receita_liquida_ltm": 2307200000,
+      "ebitda_tri": 58600000,
+      "ebitda_ltm": 239800000,
+      "lucro_liquido_tri": null,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 150000000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 14.4,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "Vendas de 432,2 mil toneladas em 2024, crescimento de 17,5% em relação a 2023.",
+      "metricas": {
+        "vendas_toneladas": 432200,
+        "crescimento_vendas_pct": 17.5
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:19:15.238601Z"
+}

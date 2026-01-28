@@ -1,0 +1,35 @@
+{
+  "ticker": "BMOB3",
+  "codigo_cvm": "25500",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25500_2025-09-30_BEMOBI_MOBILE_TECH_SA.pdf",
+  "texto_contexto": "A Bemobi (BMOB3) se destaca no cenário empresarial brasileiro por operar sob um modelo de negócio B2B2C, que visa simplificar a jornada digital de clientes em setores essenciais como telecomunicações, energia elétrica, educação e saúde. Este modelo permite que a empresa ofereça soluções tecnológicas que não apenas atendem às necessidades de seus clientes diretos, mas também melhoram a experiência final do consumidor. A Bemobi se posiciona como uma facilitadora na transformação digital, utilizando plataformas integradas de Software as a Service (SaaS) que promovem uma conexão fluida entre empresas e seus usuários finais.\n\nOs segmentos de atuação da Bemobi são variados e incluem Pagamentos, Software as a Service, Microfinanças e Assinaturas Digitais. Cada um desses segmentos é projetado para atender a demandas específicas do mercado, com um foco especial em serviços que envolvem cobranças recorrentes. A empresa tem se destacado na implementação de soluções inovadoras, como o smart checkout e o orquestrador de pix, que não apenas ampliam sua oferta de produtos, mas também respondem à crescente demanda por soluções de pagamento digital. Essa diversificação de produtos e serviços é um dos principais motores do crescimento da receita, que é acompanhada de perto por indicadores de desempenho como receita líquida ajustada, EBITDA ajustado, margem EBITDA e volume financeiro de pagamentos (TPV).\n\nA alavancagem operacional é um aspecto que favorece a Bemobi, pois à medida que a receita cresce, suas margens tendem a melhorar, permitindo que a empresa maximize seus lucros. No entanto, essa trajetória de crescimento não está isenta de riscos. A Bemobi enfrenta um ambiente regulatório em constante mudança, que exige adaptação e conformidade com as normas estabelecidas pela Comissão de Valores Mobiliários (CVM) e pelo Banco Central do Brasil. Além disso, a competição no setor de tecnologia e pagamentos é intensa, com a necessidade de inovação contínua sendo crucial para manter a relevância no mercado. A empresa deve estar sempre atenta às tendências e inovações do setor para não perder espaço para concorrentes que possam oferecer soluções mais atrativas ou eficientes.\n\nA estrutura de capital da Bemobi é equilibrada, combinando dívida e capital próprio de maneira a proporcionar flexibilidade para investimentos em crescimento e aquisições estratégicas. Essa abordagem permite que a empresa não apenas sustente suas operações, mas também busque oportunidades que possam agregar valor ao seu portfólio. A governança corporativa da Bemobi é um aspecto que merece destaque, pois a transparência e a responsabilidade são fundamentais para a construção de uma relação de confiança com investidores e stakeholders.\n\nNo que diz respeito à regulação, a Bemobi deve navegar por um cenário que pode ser impactado por mudanças na legislação tributária e pela evolução das tecnologias de pagamento. A dinâmica do mercado de serviços essenciais também pode influenciar a demanda por suas soluções, tornando a empresa sensível a fatores macroeconômicos que afetam o comportamento do consumidor e a disposição das empresas em investir em tecnologia. A capacidade da Bemobi de se adaptar a essas mudanças e de inovar continuamente será determinante para sua posição competitiva e para a sustentabilidade de seu crescimento no longo prazo. Assim, a empresa não apenas busca se consolidar como um player relevante no mercado, mas também como uma referência em soluções que promovem a digitalização e a eficiência nos serviços essenciais.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.2 bi (trimestre) | R$0.5 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.2 bi (LTM) | Margem 33.4%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- Operacional: Crescimento de 22% na receita líquida, com EBITDA ajustado de R$62,7 milhões e lucro líquido ajustado de R$46,8 milhões. Volume financeiro de pagamentos atingiu R$2,9 bilhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 187500000,
+      "receita_liquida_ltm": 529600000,
+      "ebitda_tri": 62700000,
+      "ebitda_ltm": 179100000,
+      "lucro_liquido_tri": 46800000,
+      "lucro_liquido_ltm": 120500000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 33.4,
+      "margem_liquida_pct": 25.0
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 22% na receita líquida, com EBITDA ajustado de R$62,7 milhões e lucro líquido ajustado de R$46,8 milhões. Volume financeiro de pagamentos atingiu R$2,9 bilhões.",
+      "metricas": {
+        "volume_financeiro_pagamentos": 2900000000,
+        "licencas_ativas_saas": 8600000,
+        "total_transacoes_microfinancas": 58800000,
+        "media_assinaturas_pagadas": 27000000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:17:25.397780Z"
+}
