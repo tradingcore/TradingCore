@@ -1,0 +1,36 @@
+{
+  "ticker": "CVCB3",
+  "codigo_cvm": "23310",
+  "data_release": "2025-11-11",
+  "fonte_pdf": "23310_2025-11-11_CVC_BRASIL_OPERADORA_E_AGÊNCIA_DE_VIAGENS_SA.pdf",
+  "texto_contexto": "A CVC Corp se destaca como uma das principais operadoras do setor de turismo e viagens no Brasil, oferecendo uma gama diversificada de produtos e serviços que vão desde pacotes de viagens até reservas de hotéis e passagens aéreas. O modelo de negócio da empresa é fundamentado em uma plataforma digital que conecta consumidores e fornecedores, permitindo uma experiência de compra mais ágil e eficiente. Essa abordagem digital é complementada por uma forte ênfase em soluções B2B, especialmente através da plataforma Conectaas, que facilita a interação com agências de viagens e operadores turísticos, ampliando a rede de distribuição e potencializando as vendas.\n\nA atuação da CVC se divide em dois segmentos principais: o B2B, que abrange as vendas para agências de viagens e operadores turísticos, e o B2C, que se dirige diretamente aos consumidores finais. Essa dualidade permite à empresa capturar uma ampla base de clientes, atendendo tanto o mercado corporativo quanto o de lazer. A robustez do modelo de negócios é evidenciada pela sua extensa rede de lojas, que conta com milhares de unidades em operação, proporcionando uma capilaridade significativa e uma presença marcante no mercado nacional.\n\nOs principais indicadores de desempenho da CVC, como reservas confirmadas, receita líquida, EBITDA ajustado e lucro líquido ajustado, são fundamentais para avaliar a saúde financeira e operacional da empresa. O crescimento das reservas confirmadas, em particular, é um driver de valor crucial, pois reflete não apenas a demanda por viagens, mas também a eficácia das estratégias de marketing e vendas implementadas pela companhia. A capacidade de gerar receita em um setor tão dinâmico e competitivo depende da habilidade da CVC em se adaptar às mudanças nas preferências dos consumidores e nas condições de mercado.\n\nEntretanto, a CVC enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade econômica é um fator significativo, uma vez que crises financeiras podem reduzir a disposição dos consumidores em viajar. Além disso, a empresa está sujeita a riscos regulatórios, que incluem mudanças nas políticas de vistos e restrições de viagem, que podem afetar diretamente a demanda por seus serviços. A estrutura de capital da CVC, por sua vez, tem se mostrado sólida, com um nível de endividamento que foi reduzido ao longo do tempo, refletindo uma gestão eficaz de passivos e um compromisso com a redução da alavancagem financeira.\n\nA governança da CVC é supervisionada pela Comissão de Valores Mobiliários (CVM), que estabelece normas contábeis e regulamentações específicas para o setor de turismo. A conformidade com essas diretrizes é essencial para garantir a transparência e a confiança dos investidores. A empresa também precisa estar atenta a eventos críticos que podem impactar suas operações, como crises econômicas e pandemias, que demonstraram ter um efeito devastador na indústria de viagens. A COVID-19, por exemplo, trouxe desafios sem precedentes, forçando a CVC a reavaliar suas estratégias e a se adaptar rapidamente a um novo cenário.\n\nEm um ambiente de constante evolução, a CVC continua a focar em inovação e digitalização, buscando maneiras de aprimorar sua oferta e atender às necessidades de seus clientes de forma mais eficaz. A sensibilidade macroeconômica é um aspecto que a empresa deve monitorar de perto, uma vez que fatores como inflação, taxa de câmbio e políticas governamentais podem influenciar diretamente o comportamento do consumidor e, consequentemente, a demanda por viagens. A capacidade da CVC de navegar por esses desafios e aproveitar as oportunidades que surgem em um mercado em transformação será fundamental para seu sucesso a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.4 bi (trimestre) | R$1.1 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.3 bi (LTM) | Margem 34.6%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.1 bi (LTM)\n- Operacional: CVC Corp alcançou R$ 4,3 bilhões em reservas confirmadas, com crescimento de 15,4% em relação ao ano anterior. A receita líquida foi de R$ 376,8 milhões, com um EBITDA ajustado de R$ 130,5 milhões e margem EBITDA de 34,6%. A geração operacional de caixa foi de R$ 146 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 376800000,
+      "receita_liquida_ltm": 1080800000,
+      "ebitda_tri": 130500000,
+      "ebitda_ltm": 327500000,
+      "lucro_liquido_tri": 62500000,
+      "lucro_liquido_ltm": 70600000,
+      "divida_liquida": 0,
+      "divida_bruta": 0,
+      "capex_tri": 0,
+      "capex_ltm": 0,
+      "margem_ebitda_pct": 34.6,
+      "margem_liquida_pct": 16.5
+    },
+    "operacionais": {
+      "descricao": "CVC Corp alcançou R$ 4,3 bilhões em reservas confirmadas, com crescimento de 15,4% em relação ao ano anterior. A receita líquida foi de R$ 376,8 milhões, com um EBITDA ajustado de R$ 130,5 milhões e margem EBITDA de 34,6%. A geração operacional de caixa foi de R$ 146 milhões.",
+      "metricas": {
+        "reservas_confirmadas": 4252700000,
+        "reservas_consumidas": 4398600000,
+        "novas_lojas_abertas": 42,
+        "total_lojas": 1597,
+        "clientes": null
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:44:10.576297Z"
+}

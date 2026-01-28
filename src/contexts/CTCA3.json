@@ -1,0 +1,34 @@
+{
+  "ticker": "CTCA3",
+  "codigo_cvm": "23981",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "23981_2025-09-30_CTC_-_CENTRO_DE_TECNOLOGIA_CANAVIEIRA_SA.pdf",
+  "texto_contexto": "O CTC - Centro de Tecnologia Canavieira se posiciona como uma referência no setor de biotecnologia e melhoramento genético, com foco na cana-de-açúcar, uma cultura de grande relevância econômica e social. O modelo de negócio da empresa é estruturado em torno da cobrança de royalties pelo uso de suas variedades de cana-de-açúcar e tecnologias proprietárias. Essa abordagem proporciona um fluxo de receita recorrente e previsível, alinhado ao ciclo semiperene da cultura, o que confere à companhia uma estabilidade financeira que é fundamental para sustentar suas operações e investimentos em inovação.\n\nA atuação do CTC abrange diversos segmentos, incluindo o melhoramento genético, a biotecnologia e o desenvolvimento de sementes sintéticas. A empresa se destaca por oferecer soluções personalizadas que atendem às necessidades específicas dos produtores, levando em consideração as particularidades regionais e as demandas do mercado. Essa segmentação permite ao CTC não apenas diversificar suas fontes de receita, mas também se adaptar rapidamente às mudanças nas condições de mercado e nas preferências dos consumidores.\n\nOs principais indicadores de desempenho da empresa, como receita líquida, EBITDA, margem EBITDA e lucro líquido, são reflexos diretos de sua eficiência operacional e da capacidade de crescimento. A inovação contínua em pesquisa e desenvolvimento (P&D) é um dos principais drivers de valor para o CTC, pois a empresa investe constantemente em novas tecnologias e variedades que aumentam a produtividade e a resistência das plantações. A expansão do market share de plantio e a adoção de novas variedades são impulsionadas pela confiança dos clientes, que reconhecem a qualidade das soluções oferecidas.\n\nEntretanto, o CTC enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade do mercado sucroenergético, influenciada por fatores como preços internacionais, demanda por biocombustíveis e políticas governamentais, é uma preocupação constante. Além disso, as mudanças climáticas representam um desafio significativo, uma vez que podem afetar a produção e a qualidade da cana-de-açúcar. A concorrência no setor também é intensa, com outras empresas buscando inovações e melhorias que podem ameaçar a posição de mercado do CTC.\n\nA estrutura de capital da empresa é robusta, com uma posição de caixa líquido que permite não apenas a manutenção de suas operações, mas também a realização de investimentos estratégicos em P&D. Essa solidez financeira é um ativo importante, pois garante a liquidez necessária para enfrentar períodos de incerteza e para aproveitar oportunidades de crescimento.\n\nA governança corporativa do CTC é orientada por princípios de transparência e responsabilidade, fundamentais para a construção de relacionamentos de confiança com seus stakeholders. A empresa opera sob um rigoroso arcabouço regulatório, incluindo a Lei de Proteção de Cultivares e a Lei de Propriedade Industrial, que asseguram a proteção de suas inovações e garantem um ambiente competitivo justo.\n\nEventos críticos, como o lançamento de novas variedades de cana-de-açúcar e a construção de plantas demonstrativas para sementes sintéticas, são marcos importantes na trajetória do CTC. A participação em iniciativas colaborativas, como a Esfera, que visa conectar diferentes agentes da cadeia produtiva, é uma estratégia que reforça o compromisso da empresa em enfrentar os desafios do setor de forma integrada e inovadora.\n\nAlém disso, o CTC se destaca por suas iniciativas de sustentabilidade, refletindo um compromisso com a descarbonização e a responsabilidade social. A empresa busca não apenas aumentar a produtividade, mas também contribuir para a preservação ambiental e o desenvolvimento sustentável das comunidades onde atua. Essa abordagem não apenas fortalece a imagem da empresa, mas também a posiciona favoravelmente diante de um mercado cada vez mais exigente em relação a práticas sustentáveis.\n\nEm suma, o CTC - Centro de Tecnologia Canavieira é uma empresa que combina inovação, solidez financeira e compromisso com a sustentabilidade, posicionando-se de forma estratégica em um setor dinâmico e desafiador. A capacidade de adaptação às mudanças do mercado e a busca constante por melhorias tecnológicas são fatores que, sem dúvida, contribuirão para o seu sucesso a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (1S2026):\n- Receita Líquida: R$0.2 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.1 bi (trimestre) | N/D (LTM) | Margem 51.2%\n- Lucro Líquido: R$0.1 bi (trimestre) | N/D (LTM)\n- Capex: R$0.0 bi (trimestre) | N/D (LTM)\n- Operacional: Crescimento de 16,7% na receita líquida e lucro líquido recorde de R$ 117,0 milhões, com market share de plantio atingindo 30%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "1S2026",
+    "financeiros": {
+      "receita_liquida_tri": 227809000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 116687000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 117013000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": 43300000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 51.2,
+      "margem_liquida_pct": 51.4
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 16,7% na receita líquida e lucro líquido recorde de R$ 117,0 milhões, com market share de plantio atingindo 30%.",
+      "metricas": {
+        "market_share": 30,
+        "investimentos_em_PD": 119400000,
+        "capex": 43300000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:42:40.283210Z"
+}

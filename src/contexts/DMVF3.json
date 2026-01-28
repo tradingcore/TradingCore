@@ -1,0 +1,38 @@
+{
+  "ticker": "DMVF3",
+  "codigo_cvm": "25046",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25046_2025-09-30_D1000_VAREJO_FARMA_PARTICIPAÇÕES_SA.pdf",
+  "texto_contexto": "A D1000 Varejo Farma S.A. se destaca no cenário do varejo farmacêutico brasileiro, operando uma rede de drogarias que se consolidou por meio da aquisição de marcas reconhecidas, como Drogasmil, Farmalife, Drogarias Tamoio e Drogaria Rosário. Com uma presença significativa em regiões estratégicas, como o Rio de Janeiro, o Distrito Federal e Mato Grosso, a empresa possui um modelo de negócio que se fundamenta na integração de canais físicos e digitais, caracterizando uma abordagem omnichannel. Essa estratégia permite à D1000 atender a um público diversificado, adaptando-se às necessidades de diferentes perfis de consumidores, desde aqueles que buscam produtos a preços acessíveis até os que preferem opções premium.\n\nO portfólio da D1000 é segmentado em lojas \"Padrão\", \"Popular\" e \"Premium\", o que não apenas amplia seu alcance de mercado, mas também a posiciona de forma competitiva em um setor onde a personalização da experiência de compra é cada vez mais valorizada. A empresa tem se beneficiado de um crescimento robusto, evidenciado por indicadores de desempenho que refletem sua saúde financeira e operacional. Entre os principais KPIs, destacam-se a receita bruta, o lucro bruto, o EBITDA ajustado e a margem de lucro, que, juntos, sinalizam a eficácia de suas estratégias de expansão e eficiência operacional. O crescimento da venda média por loja também é um indicador relevante, demonstrando a capacidade da D1000 de maximizar o potencial de cada unidade.\n\nOs drivers de valor que impulsionam a D1000 incluem a contínua expansão de sua rede de lojas, a modernização do portfólio de produtos e a busca incessante por eficiência operacional. A demanda crescente por produtos farmacêuticos, especialmente medicamentos de marca e genéricos, tem sido um fator crucial para a empresa, que se posiciona para capturar essa oportunidade de mercado. No entanto, a D1000 enfrenta riscos significativos, como a intensa concorrência no setor de varejo farmacêutico, que exige inovação constante e adaptação às preferências dos consumidores. Além disso, a dependência de fornecedores para a oferta de produtos e as flutuações nas regulamentações do setor podem impactar sua operação e rentabilidade.\n\nA estrutura de capital da D1000 revela um aumento na dívida líquida, que reflete os investimentos necessários para financiar suas expansões e atender à demanda por capital de giro. Essa dinâmica de capital deve ser monitorada de perto, pois pode influenciar a flexibilidade financeira da empresa e sua capacidade de investir em novas oportunidades. A governança corporativa da D1000 é regida pela Comissão de Valores Mobiliários (CVM) e segue normas contábeis brasileiras, além de estar sujeita a regulamentações específicas do setor farmacêutico. A conformidade com essas normas é fundamental para garantir a transparência e a confiança dos investidores.\n\nA regulação do setor farmacêutico é um aspecto crítico que pode impactar a D1000, especialmente em um ambiente onde mudanças nas políticas de saúde pública e regulamentações de medicamentos podem alterar a dinâmica de mercado. A evolução do e-commerce também representa um desafio e uma oportunidade, à medida que o comportamento do consumidor se transforma e a demanda por compras online cresce. A D1000 tem se mostrado atenta a essas mudanças, buscando integrar suas operações digitais de forma a complementar sua presença física.\n\nAlém disso, a empresa demonstra um compromisso com práticas de sustentabilidade e responsabilidade social, integrando princípios ESG (ambientais, sociais e de governança) em suas operações. Essa abordagem não apenas fortalece a imagem da marca, mas também responde a uma demanda crescente por responsabilidade corporativa entre os consumidores. Em um cenário macroeconômico que pode ser volátil, a D1000 precisa estar preparada para se adaptar a mudanças nas condições econômicas, como flutuações na renda dos consumidores e alterações nas políticas fiscais e monetárias, que podem impactar o consumo e, consequentemente, suas vendas.\n\nEm suma, a D1000 Varejo Farma S.A. apresenta um modelo de negócio robusto e adaptável, com uma estratégia bem definida que busca capturar a demanda em um mercado competitivo. No entanto, a empresa deve continuar a monitorar os riscos associados à sua operação e a dinâmica do setor, garantindo que sua estrutura de capital e governança estejam alinhadas com suas ambições de crescimento e sustentabilidade a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.7 bi (trimestre) | R$2.4 bi (LTM)\n- EBITDA: R$0.0 bi (trimestre) | R$0.7 bi (LTM) | Margem 4.5%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Operacional: A Rede d1000 alcançou R$ 680,9 milhões em receita bruta, crescimento de 18,4% em relação ao ano anterior. O EBITDA ajustado foi de R$ 30,6 milhões, com margem de 4,5%. O lucro líquido foi de R$ 12,4 milhões, representando uma margem de 1,8%. A venda média por loja foi de R$ 798,1 mil, com 283 lojas no total.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 680900000,
+      "receita_liquida_ltm": 2390000000,
+      "ebitda_tri": 30600000,
+      "ebitda_ltm": 722000000,
+      "lucro_liquido_tri": 12400000,
+      "lucro_liquido_ltm": 25000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 4.5,
+      "margem_liquida_pct": 1.8
+    },
+    "operacionais": {
+      "descricao": "A Rede d1000 alcançou R$ 680,9 milhões em receita bruta, crescimento de 18,4% em relação ao ano anterior. O EBITDA ajustado foi de R$ 30,6 milhões, com margem de 4,5%. O lucro líquido foi de R$ 12,4 milhões, representando uma margem de 1,8%. A venda média por loja foi de R$ 798,1 mil, com 283 lojas no total.",
+      "metricas": {
+        "numero_de_lojas": 283,
+        "venda_media_por_loja": 798100,
+        "lucro_bruto": 195700000,
+        "margem_bruta_pct": 28.7,
+        "clientes_totais": 8000000,
+        "clientes_ativos": 5300000,
+        "clientes_fieis": 1300000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:45:48.939026Z"
+}
