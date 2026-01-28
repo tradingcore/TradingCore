@@ -1,0 +1,34 @@
+{
+  "ticker": "TGMA3",
+  "codigo_cvm": "20800",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20800_2025-09-30_TEGMA_GESTÃO_LOGÍSTICA_SA.pdf",
+  "texto_contexto": "A Tegma Gestão Logística S.A. se destaca como uma das principais empresas de logística no Brasil, com um foco acentuado em soluções logísticas integradas, especialmente no setor automotivo. Seu modelo de negócio é estruturado em torno de serviços que abrangem o transporte de veículos, armazenagem e uma gama de serviços logísticos correlatos, atendendo tanto ao mercado interno quanto às demandas de exportação. A empresa opera em dois segmentos principais: Logística Automotiva e Logística Integrada. O primeiro é responsável pela movimentação e armazenagem de veículos novos e usados, enquanto o segundo se concentra na logística de granéis e produtos químicos, diversificando assim suas operações e mitigando riscos associados a um único setor.\n\nOs principais indicadores de desempenho (KPIs) da Tegma, como receita líquida, EBITDA, margem bruta e lucro líquido, são fundamentais para avaliar sua saúde financeira e eficiência operacional. O market share da empresa no segmento de transporte de veículos, que é de 24%, reflete sua posição competitiva e a capacidade de atender às necessidades de grandes montadoras. Os drivers de valor que impulsionam o crescimento da Tegma incluem o aumento da demanda por serviços logísticos, a eficiência operacional e a capacidade de adaptação às dinâmicas do mercado automotivo. A recente aquisição de terrenos para a ampliação de suas operações é um exemplo de como a empresa busca se posicionar estrategicamente para atender a um mercado em constante evolução.\n\nEntretanto, a Tegma enfrenta riscos significativos que podem impactar seu desempenho. A volatilidade do mercado automotivo, influenciada por fatores econômicos como taxas de juros e variações na demanda, é uma preocupação constante. A dependência de grandes clientes, como montadoras, também representa um risco considerável, pois a perda de contratos ou a redução de volumes pode afetar substancialmente a receita da empresa. A estrutura de capital da Tegma, caracterizada por uma posição de caixa líquida e uma estrutura desalavancada, proporciona uma flexibilidade financeira que pode ser crucial em tempos de incerteza econômica.\n\nA governança da Tegma é estruturada para garantir a conformidade com as normas regulatórias que regem o setor de transporte e logística, além de legislações ambientais que podem impactar suas operações. A empresa está atenta às exigências de sustentabilidade e eficiência energética, investindo em iniciativas de descarbonização, como a conversão de sua frota de caminhões para tecnologia híbrida. Essas ações não apenas atendem às demandas regulatórias, mas também alinham a empresa às tendências globais de sustentabilidade, que estão se tornando cada vez mais relevantes para consumidores e investidores.\n\nA competição no setor de logística é intensa, com diversas empresas buscando capturar participação de mercado. A Tegma, no entanto, se diferencia por sua especialização no setor automotivo e pela capacidade de oferecer soluções logísticas integradas que atendem às necessidades específicas de seus clientes. A empresa deve continuar a monitorar as mudanças nas políticas de importação e exportação, que podem influenciar a dinâmica do mercado automotivo e, consequentemente, suas operações.\n\nAlém disso, a sensibilidade macroeconômica é um fator que não pode ser ignorado. Eventos críticos, como desastres naturais ou crises econômicas, podem interromper a produção de clientes relevantes, como a Toyota, impactando diretamente a demanda por serviços logísticos. A Tegma, portanto, deve estar preparada para navegar por essas incertezas, utilizando sua estrutura de capital sólida e sua capacidade de adaptação para mitigar riscos e aproveitar oportunidades em um ambiente em constante mudança. A combinação de uma governança robusta, uma estrutura de capital saudável e um foco em inovação e sustentabilidade posiciona a Tegma como uma empresa resiliente e preparada para enfrentar os desafios do futuro no setor logístico.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.6 bi (trimestre) | R$1.6 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.3 bi (LTM) | Margem 18.4%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- Capex: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Operacional: Transportou 197,5 mil veículos no trimestre, com market share de 24,0%. A distância média por veículo foi de 1.116 km.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 634200000,
+      "receita_liquida_ltm": 1615100000,
+      "ebitda_tri": 116800000,
+      "ebitda_ltm": 280400000,
+      "lucro_liquido_tri": 79900000,
+      "lucro_liquido_ltm": 190700000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": 18200000,
+      "capex_ltm": 39600000,
+      "margem_ebitda_pct": 18.4,
+      "margem_liquida_pct": 12.6
+    },
+    "operacionais": {
+      "descricao": "Transportou 197,5 mil veículos no trimestre, com market share de 24,0%. A distância média por veículo foi de 1.116 km.",
+      "metricas": {
+        "veiculos_transportados": 197500,
+        "market_share_pct": 24.0,
+        "distancia_media_km": 1116
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:32:08.322967Z"
+}
