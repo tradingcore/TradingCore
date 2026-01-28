@@ -1,0 +1,33 @@
+{
+  "ticker": "NEOE3",
+  "codigo_cvm": "15539",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "15539_2025-09-30_NEOENERGIA_SA.pdf",
+  "texto_contexto": "A Neoenergia se destaca como uma das principais empresas do setor elétrico brasileiro, operando em um ambiente dinâmico e desafiador que abrange diversas áreas, como geração, distribuição e comercialização de energia. Seu modelo de negócio é fundamentado na exploração de ativos de energia renovável, com um portfólio que inclui parques eólicos, hidrelétricas e uma usina térmica. Essa diversificação não apenas alinha a empresa às tendências globais de sustentabilidade, mas também a posiciona favoravelmente em um mercado que cada vez mais valoriza fontes de energia limpas e renováveis.\n\nA estrutura organizacional da Neoenergia é dividida em duas divisões principais: Redes e Geração e Clientes. A divisão de Redes é responsável pela distribuição e transmissão de energia, enquanto a Geração e Clientes abrange a produção de energia e a comercialização para consumidores finais. Essa segmentação permite à empresa otimizar suas operações e atender de maneira mais eficaz às demandas de um mercado em constante evolução. A Neoenergia tem se concentrado em expandir sua base de clientes, o que é um dos principais drivers de valor, além de buscar eficiência operacional e a ampliação de seus ativos de geração renovável.\n\nOs indicadores de desempenho da Neoenergia são cruciais para avaliar sua saúde financeira e operacional. A receita operacional líquida, a margem bruta, o EBITDA e o lucro líquido são métricas fundamentais que refletem a capacidade da empresa de gerar lucro e administrar seus custos. Além disso, a quantidade de clientes atendidos e a energia injetada e distribuída são indicadores que demonstram o alcance e a eficiência das operações. A qualidade do serviço prestado também é monitorada por meio de métricas como a Duração Equivalente de Interrupção por Consumidor (DEC) e a Frequência Equivalente de Interrupção por Consumidor (FEC), que são essenciais para garantir a satisfação do cliente e a conformidade com os padrões regulatórios.\n\nEntretanto, a Neoenergia não está isenta de riscos. A regulação do setor elétrico é um fator crítico que pode impactar diretamente as tarifas e a rentabilidade da empresa. As decisões da Agência Nacional de Energia Elétrica (ANEEL) são fundamentais, pois determinam as condições operacionais das distribuidoras, e essas decisões podem ser influenciadas por mudanças políticas e econômicas. Além disso, a empresa enfrenta riscos operacionais associados à manutenção e operação de suas instalações, que são essenciais para garantir a continuidade do fornecimento de energia.\n\nA estrutura de capital da Neoenergia é predominantemente composta por dívida de longo prazo, o que pode ser uma espada de dois gumes. Embora essa estrutura permita financiar investimentos em expansão e modernização de ativos, a dependência de dívidas atreladas a índices como o CDI torna a empresa vulnerável a variações nas taxas de juros. Essa sensibilidade pode impactar a rentabilidade e a capacidade de investimento da companhia, especialmente em um cenário de aumento das taxas de juros.\n\nA governança corporativa da Neoenergia é um aspecto que merece destaque, pois a empresa busca manter altos padrões de transparência e responsabilidade. A governança eficaz é fundamental para a construção de confiança com investidores e stakeholders, além de ser um fator que pode influenciar a percepção de risco da empresa no mercado. A recente prorrogação da concessão da Neoenergia Pernambuco até 2060 e a aquisição de uma maior participação na UHE Corumbá são exemplos de iniciativas que reforçam a estratégia de crescimento e consolidação da empresa no setor, demonstrando sua capacidade de adaptação e resiliência em um ambiente regulatório complexo.\n\nPor fim, a Neoenergia opera em um contexto macroeconômico que pode influenciar suas operações e resultados. Fatores como a inflação, o crescimento econômico e as políticas energéticas do governo são elementos que afetam a demanda por energia e, consequentemente, a performance da empresa. A capacidade da Neoenergia de navegar por essas variáveis macroeconômicas, mantendo sua estratégia de crescimento e inovação, será crucial para seu sucesso a longo prazo. Em suma, a Neoenergia se posiciona como uma empresa robusta e resiliente, com um modelo de negócio alinhado às demandas contemporâneas por energia sustentável, mas que deve permanecer atenta aos desafios regulatórios e macroeconômicos que permeiam o setor elétrico brasileiro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$13.0 bi (trimestre) | R$36.6 bi (LTM)\n- EBITDA: R$3.4 bi (trimestre) | R$10.3 bi (LTM) | Margem 26.1%\n- Lucro Líquido: R$0.9 bi (trimestre) | R$3.6 bi (LTM)\n- Capex: N/D (trimestre) | R$7.6 bi (LTM)\n- Operacional: Crescimento de 2,3% na energia injetada, totalizando 21.283 GWh no 3T25. Número de clientes ativos alcançou 16.917 mil.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 12972000000,
+      "receita_liquida_ltm": 36591000000,
+      "ebitda_tri": 3388000000,
+      "ebitda_ltm": 10316000000,
+      "lucro_liquido_tri": 924000000,
+      "lucro_liquido_ltm": 3556000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": 7600000000,
+      "margem_ebitda_pct": 26.1,
+      "margem_liquida_pct": 7.1
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 2,3% na energia injetada, totalizando 21.283 GWh no 3T25. Número de clientes ativos alcançou 16.917 mil.",
+      "metricas": {
+        "energia_injetada_gwh": 21283,
+        "numero_clientes": 16917
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:18:02.372016Z"
+}

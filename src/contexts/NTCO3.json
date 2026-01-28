@@ -1,0 +1,37 @@
+{
+  "ticker": "NTCO3",
+  "codigo_cvm": "24783",
+  "data_release": "2025-06-30",
+  "fonte_pdf": "24783_2025-06-30_NATURA_CO_HOLDING_SA.pdf",
+  "texto_contexto": "A Natura &Co Holding (NTCO3) se destaca no setor de beleza e cuidados pessoais por meio de um modelo de negócio inovador, que combina a venda direta com canais digitais, permitindo uma interação mais próxima com os consumidores e uma experiência de compra personalizada. A empresa, que abriga marcas renomadas como Natura, Avon, The Body Shop e Aesop, opera predominantemente na América Latina, mas também possui uma presença significativa em mercados internacionais. Essa diversidade de marcas e canais de distribuição não apenas amplia o alcance da empresa, mas também fortalece sua posição competitiva em um mercado em constante evolução.\n\nOs segmentos de atuação da Natura &Co são amplos, englobando cosméticos, fragrâncias, cuidados pessoais e produtos para o lar. Essa variedade permite à empresa atender a diferentes perfis de consumidores e se adaptar às tendências de mercado. A estratégia de vendas diretas, aliada à crescente digitalização, tem se mostrado um motor de crescimento, especialmente com a aceleração das vendas online, que têm apresentado um desempenho robusto. A marca Natura, em particular, tem se destacado no Brasil, impulsionando a receita líquida e contribuindo para a consolidação da empresa no mercado.\n\nOs principais indicadores de desempenho da Natura &Co, como receita líquida, margem bruta e margem EBITDA recorrente, são reflexos de sua estratégia focada em inovação e eficiência operacional. A empresa tem se esforçado para manter uma margem EBITDA saudável, o que é crucial para sustentar seus investimentos em pesquisa e desenvolvimento, bem como para financiar sua expansão. A classificação \"A\" em sustentabilidade é um diferencial competitivo que não apenas atrai consumidores conscientes, mas também reforça o compromisso da empresa com práticas ambientais responsáveis, um aspecto cada vez mais valorizado no mercado atual.\n\nOs drivers de valor para a Natura &Co são multifacetados. A inovação em produtos é um pilar central, com a empresa constantemente buscando novas formulações e soluções que atendam às necessidades dos consumidores. A digitalização das vendas, por sua vez, tem sido um fator crucial para a expansão do alcance da marca e para a melhoria da experiência do cliente. A eficiência operacional, que inclui a otimização de custos e a integração das operações da Avon e Natura, é fundamental para garantir a competitividade em um ambiente desafiador. A estratégia conhecida como \"Onda 2\" visa precisamente essa integração, buscando não apenas reduzir despesas, mas também aprimorar a experiência do consumidor.\n\nEntretanto, a Natura &Co não está isenta de riscos. A volatilidade cambial, especialmente em mercados como a Argentina, representa um desafio significativo, uma vez que pode impactar diretamente os resultados financeiros da empresa. Além disso, a desaceleração econômica em algumas regiões da América Latina pode afetar o consumo, exigindo que a empresa se adapte rapidamente às novas condições de mercado. A estrutura de capital da Natura &Co, caracterizada por uma dívida líquida considerável, também requer atenção. A empresa tem buscado reduzir suas despesas e melhorar sua posição de caixa, mas a reclassificação de ativos e o consumo de caixa em operações descontinuadas têm contribuído para um aumento na dívida.\n\nA governança corporativa da Natura &Co é um aspecto que merece destaque, especialmente em um contexto de crescente demanda por transparência e responsabilidade. A empresa tem se esforçado para atender às normas regulatórias, particularmente aquelas relacionadas a práticas ambientais e de sustentabilidade. A conformidade com essas regulamentações não apenas minimiza riscos legais, mas também fortalece a reputação da marca e a confiança dos consumidores.\n\nA competição no setor de beleza e cuidados pessoais é intensa, com diversas marcas disputando a atenção dos consumidores. A Natura &Co, com sua proposta de valor centrada na sustentabilidade e na inovação, busca se diferenciar em um mercado saturado. A fusão com a Natura Cosméticos e a reclassificação da Avon Internacional como ativo mantido para venda são movimentos estratégicos que refletem a busca da empresa por operações mais rentáveis e a reestruturação de seu portfólio.\n\nEm um cenário macroeconômico desafiador, a capacidade da Natura &Co de se adaptar às condições econômicas da América Latina será crucial para seu desempenho futuro. A continuidade da implementação da \"Onda 2\" e a busca por novas oportunidades de crescimento em mercados emergentes são fatores que podem determinar o sucesso da empresa nos próximos anos. A combinação de um modelo de negócio inovador, um portfólio diversificado e um compromisso com a sustentabilidade coloca a Natura &Co em uma posição favorável para enfrentar os desafios do mercado e capitalizar sobre as oportunidades que surgem.\n\nNÚMEROS DE REFERÊNCIA (2T2025):\n- Receita Líquida: R$5.7 bi (trimestre) | R$10.8 bi (LTM)\n- EBITDA: R$0.8 bi (trimestre) | R$1.6 bi (LTM) | Margem 14.0%\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.0 bi (LTM)\n- Dívida Líquida: R$4.0 bi\n- Operacional: Receita líquida de R$ 5,7 bilhões, com crescimento de 5,5% em moeda constante. Lucro líquido de R$ 195 milhões, revertendo prejuízo do ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "2T2025",
+    "financeiros": {
+      "receita_liquida_tri": 5687400000,
+      "receita_liquida_ltm": 10830400000,
+      "ebitda_tri": 795600000,
+      "ebitda_ltm": 1577100000,
+      "lucro_liquido_tri": 195100000,
+      "lucro_liquido_ltm": 44440000,
+      "divida_liquida": 4000000000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 14.0,
+      "margem_liquida_pct": 3.4
+    },
+    "operacionais": {
+      "descricao": "Receita líquida de R$ 5,7 bilhões, com crescimento de 5,5% em moeda constante. Lucro líquido de R$ 195 milhões, revertendo prejuízo do ano anterior.",
+      "metricas": {
+        "crescimento_natura_brasil_pct": 10.3,
+        "crescimento_natura_hispana_pct": 17.8,
+        "queda_avon_brasil_pct": -12.9,
+        "queda_avon_hispana_pct": -13.6,
+        "margem_bruta_pct": 66.4,
+        "margem_ebitda_recorrente_pct": 14.0
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:17:07.265598Z"
+}
