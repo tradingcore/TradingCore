@@ -1,0 +1,34 @@
+{
+  "ticker": "ALOS3",
+  "codigo_cvm": "22357",
+  "data_release": "2025-11-12",
+  "fonte_pdf": "22357_2025-11-12_ALLOS_SA.pdf",
+  "texto_contexto": "A Allos S.A. (B3: ALOS3) se destaca como uma plataforma integrada que oferece uma ampla gama de experiências, entretenimento, serviços e opções de compras, com um foco particular em shoppings centers na América Latina. O modelo de negócio da empresa é multifacetado, englobando a propriedade e gestão de shopping centers, além de fornecer serviços de planejamento, administração e comercialização para terceiros. Com uma presença significativa no mercado, a Allos opera 45 shoppings, totalizando uma vasta Área Bruta Locável (ABL), e também presta serviços a shoppings de terceiros, ampliando sua influência e alcance no setor.\n\nOs segmentos de atuação da Allos são diversificados, incluindo o aluguel de lojas, receitas provenientes de estacionamentos e serviços, além de uma linha de negócios de mídia que vem crescendo de forma consistente. Essa diversificação é um dos principais motores de crescimento da empresa, permitindo que ela se adapte às dinâmicas do mercado e às preferências dos consumidores. Os indicadores-chave de desempenho (KPIs) que a Allos monitora, como receita líquida, NOI (Net Operating Income), EBITDA ajustado, lucro líquido e FFO (Funds From Operations), refletem a saúde financeira e a eficiência operacional da companhia. A Allos tem demonstrado um crescimento sólido em vendas e aluguéis, evidenciado por aumentos significativos nas vendas totais e no SSR (Same-Store Rent), o que indica uma boa performance em suas operações existentes.\n\nOs drivers de valor da Allos são diversos e incluem a eficiência operacional, a capacidade de atrair e reter inquilinos, e a diversificação de receitas. A empresa tem se concentrado na otimização de seu portfólio, realizando desinvestimentos estratégicos e investindo em ativos com maior potencial de retorno. Além disso, a Allos se beneficia de um ambiente de mercado favorável, onde a demanda por espaços de varejo e experiências de consumo continua a crescer, impulsionada por mudanças nas preferências dos consumidores e pela evolução do comércio eletrônico.\n\nEntretanto, a Allos não está isenta de riscos. A empresa enfrenta desafios relacionados a flutuações econômicas, que podem impactar o consumo e, consequentemente, as vendas em seus shoppings. Mudanças nas preferências dos consumidores, especialmente em um cenário de rápida transformação digital, também representam um risco significativo. A concorrência no setor de varejo e entretenimento é intensa, exigindo que a Allos permaneça ágil e inovadora para manter sua posição no mercado.\n\nA estrutura de capital da Allos é robusta, com um custo médio de dívida que proporciona flexibilidade financeira. A relação de dívida líquida/EBITDA indica uma gestão prudente da alavancagem, permitindo à empresa investir em novos projetos e distribuir dividendos aos acionistas. Essa solidez financeira é crucial para a realização de investimentos em expansão e revitalização de shoppings, que são eventos críticos para o crescimento da empresa.\n\nA governança corporativa da Allos é estruturada para garantir transparência e responsabilidade, com práticas que visam alinhar os interesses dos acionistas e a sustentabilidade a longo prazo da empresa. A regulação do setor de shopping centers no Brasil é complexa, influenciada por normas municipais e estaduais que podem impactar diretamente as operações e a expansão da Allos. A empresa está atenta a essas regulamentações e busca se adaptar a elas de forma proativa.\n\nA sensibilidade macroeconômica também desempenha um papel importante na estratégia da Allos. Mudanças nas taxas de juros, políticas fiscais e condições econômicas gerais podem afetar tanto a demanda por espaços de varejo quanto o custo de financiamento. A empresa está comprometida com a sustentabilidade, buscando atender a metas ambientais e sociais, o que não apenas melhora sua reputação, mas também pode influenciar sua aceitação no mercado e atratividade para investidores.\n\nEm suma, a Allos S.A. se posiciona como uma player relevante no setor de shopping centers na América Latina, com um modelo de negócio diversificado e uma estratégia focada em eficiência e crescimento sustentável. A capacidade de navegar por um ambiente regulatório complexo, enfrentar riscos econômicos e se adaptar às mudanças nas preferências dos consumidores será fundamental para o sucesso contínuo da empresa.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.7 bi (trimestre) | R$2.0 bi (LTM)\n- EBITDA: R$0.5 bi (trimestre) | R$1.4 bi (LTM) | Margem 73.9%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.6 bi (LTM)\n- Operacional: Vendas totais de R$ 9,9 bilhões, crescimento de 5,5% em relação ao 3T24. Taxa de ocupação de 96,5%. SSR de 6,5%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 679888000,
+      "receita_liquida_ltm": 1981799000,
+      "ebitda_tri": 502438000,
+      "ebitda_ltm": 1448566000,
+      "lucro_liquido_tri": 125865000,
+      "lucro_liquido_ltm": 581937000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 73.9,
+      "margem_liquida_pct": 18.5
+    },
+    "operacionais": {
+      "descricao": "Vendas totais de R$ 9,9 bilhões, crescimento de 5,5% em relação ao 3T24. Taxa de ocupação de 96,5%. SSR de 6,5%.",
+      "metricas": {
+        "vendas_totais": 9860879000,
+        "taxa_ocupacao_pct": 96.5,
+        "ssr_pct": 6.5
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T00:53:07.700914Z"
+}

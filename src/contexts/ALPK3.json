@@ -1,0 +1,35 @@
+{
+  "ticker": "ALPK3",
+  "codigo_cvm": "24953",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "24953_2025-09-30_ALLPARK_EMPREENDIMENTOS_PARTICIPAÇÕES_E_SERVIÇOS_S.pdf",
+  "texto_contexto": "A Estapar, também conhecida como Allpark Empreendimentos e Participações S.A., se destaca como uma das principais empresas do Brasil no setor de soluções de mobilidade e estacionamento. Seu modelo de negócio é robusto e diversificado, centrado na gestão de operações de estacionamento que abrangem tanto garagens alugadas e administradas quanto concessões em áreas urbanas, tanto on-street quanto off-street. A empresa também se destaca pela sua plataforma digital, que não apenas facilita a gestão de estacionamentos, mas também oferece uma gama de serviços relacionados à mobilidade, refletindo uma adaptação às novas demandas do mercado.\n\nA atuação da Estapar se estende por diversos segmentos, incluindo saúde, edifícios comerciais, shoppings e lazer, o que a posiciona de forma estratégica em um mercado que busca soluções práticas e eficientes para o estacionamento. Com operações em 105 cidades de 19 estados brasileiros, a empresa tem conseguido expandir sua presença geográfica, o que é um dos principais motores de crescimento. A digitalização dos serviços, através da plataforma Zul+, e a diversificação da oferta, especialmente com a introdução de soluções para veículos elétricos por meio da Zletric, são exemplos de como a Estapar está se adaptando às tendências de mobilidade sustentável e às necessidades dos consumidores modernos.\n\nOs principais indicadores de desempenho da Estapar, como receita líquida, EBITDA ajustado, EBIT ajustado e lucro líquido, têm mostrado um crescimento consistente, impulsionado pela eficiência na gestão de custos e pela expansão orgânica das operações. Essa performance é um reflexo direto da capacidade da empresa de se adaptar e inovar em um setor que está em constante evolução. Os drivers de valor, portanto, são multifacetados, envolvendo não apenas a expansão das operações, mas também a capacidade de oferecer serviços que atendam às novas demandas do mercado.\n\nEntretanto, a Estapar não está isenta de riscos. A dependência de contratos de concessão pode ser uma vulnerabilidade, especialmente em um ambiente regulatório que pode mudar rapidamente. A variação na demanda por serviços de estacionamento, influenciada por fatores econômicos e sociais, também representa um desafio. A estrutura de capital da empresa, embora tenha mostrado sinais de melhoria com a redução do endividamento, ainda exige vigilância, especialmente em relação ao custo médio da dívida e ao cronograma de amortização. A gestão financeira cuidadosa será crucial para garantir a sustentabilidade a longo prazo da companhia.\n\nA governança corporativa da Estapar é um aspecto que merece destaque, pois a empresa tem se esforçado para manter altos padrões de transparência e responsabilidade. O reconhecimento como um bom lugar para trabalhar, evidenciado pelo selo Great Place To Work, reflete um compromisso com o desenvolvimento e bem-estar dos colaboradores, que são fundamentais para a cultura organizacional e para a retenção de talentos. Essa abordagem não apenas melhora o ambiente de trabalho, mas também contribui para a produtividade e a inovação.\n\nA regulação do setor de estacionamento e mobilidade é um fator crítico que a Estapar deve monitorar de perto. A empresa opera sob concessões que estão sujeitas a normas e legislações municipais e estaduais, e a renovação desses contratos pode impactar diretamente suas operações. Além disso, a implementação de novas regulamentações que afetem a operação de estacionamentos e a evolução do mercado de mobilidade, especialmente com a crescente demanda por soluções sustentáveis e digitais, são aspectos que podem influenciar a estratégia da empresa.\n\nA competição no setor de estacionamento e mobilidade é intensa, com diversos players buscando capturar a atenção dos consumidores. A Estapar, ao se posicionar como líder, deve continuar a inovar e a oferecer serviços diferenciados para manter sua vantagem competitiva. A sensibilidade a fatores macroeconômicos, como a variação na renda disponível da população e as mudanças nos padrões de mobilidade urbana, também deve ser considerada, pois podem impactar a demanda por serviços de estacionamento.\n\nEm suma, a Estapar se apresenta como uma empresa sólida e inovadora, com um modelo de negócio que se adapta às novas demandas do mercado de mobilidade. Com uma governança forte e um compromisso com a sustentabilidade, a empresa está bem posicionada para enfrentar os desafios e aproveitar as oportunidades que surgem em um setor em constante transformação.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.5 bi (trimestre) | R$1.4 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | N/D (LTM) | Margem 19.9%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Operacional: 804 operações ativas em 105 cidades, 520 mil vagas, 30 novas operações inauguradas no trimestre.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 486200000,
+      "receita_liquida_ltm": 1372843000,
+      "ebitda_tri": 96700000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 7800000,
+      "lucro_liquido_ltm": 11300000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 19.9,
+      "margem_liquida_pct": 1.6
+    },
+    "operacionais": {
+      "descricao": "804 operações ativas em 105 cidades, 520 mil vagas, 30 novas operações inauguradas no trimestre.",
+      "metricas": {
+        "operacoes": 804,
+        "vagas": 520000,
+        "inauguracoes": 30,
+        "churn_pct": 0.3
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T00:53:45.356200Z"
+}

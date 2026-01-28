@@ -1,0 +1,34 @@
+{
+  "ticker": "ALPA3",
+  "codigo_cvm": "10456",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "10456_2025-09-30_ALPARGATAS_SA.pdf",
+  "texto_contexto": "A Alpargatas S.A. é uma das empresas mais emblemáticas do setor de calçados e acessórios no Brasil, sendo amplamente reconhecida pela sua marca Havaianas, que se tornou um símbolo de estilo e conforto. O modelo de negócio da Alpargatas é fundamentado na produção e comercialização de sandálias, com foco especial nas Havaianas, mas também abrange outras marcas, como Rothy's, que refletem uma estratégia de diversificação e inovação. A empresa opera em dois segmentos principais: o mercado nacional, onde a Havaianas se destaca como uma marca icônica, e o mercado internacional, onde a Alpargatas busca expandir sua presença, especialmente em regiões como Europa e Estados Unidos, onde a demanda por produtos de moda e conforto está em crescimento.\n\nOs principais indicadores de desempenho (KPIs) da Alpargatas são fundamentais para avaliar sua saúde financeira e operacional. A receita líquida, o lucro bruto, o EBITDA ajustado e a margem EBITDA são métricas que refletem a eficiência operacional e a rentabilidade da empresa. Além disso, o volume de pares vendidos é um indicador direto da demanda por seus produtos, permitindo que a companhia monitore a aceitação do mercado e ajuste suas estratégias de produção e marketing conforme necessário. Os drivers de valor para a Alpargatas incluem a força da marca Havaianas, que é reconhecida globalmente, a capacidade de inovação em produtos que atendem às novas tendências de consumo, a eficiência na gestão de custos e a expansão em mercados internacionais, que são essenciais para garantir um crescimento sustentável e robusto.\n\nEntretanto, a Alpargatas enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade dos preços das matérias-primas, por exemplo, pode afetar diretamente os custos de produção e, consequentemente, as margens de lucro. A concorrência acirrada no setor de calçados, tanto de marcas estabelecidas quanto de novos entrantes, também representa um desafio constante, exigindo que a Alpargatas mantenha sua proposta de valor e continue a inovar. Além disso, as flutuações cambiais podem impactar suas operações internacionais, especialmente em um cenário de globalização crescente. A dependência de canais de distribuição específicos também é um risco, pois qualquer alteração na dinâmica desses canais pode afetar a disponibilidade e a visibilidade dos produtos da empresa.\n\nA estrutura de capital da Alpargatas é considerada sólida, com uma posição de caixa líquida que proporciona flexibilidade para realizar investimentos estratégicos e manter uma alavancagem financeira controlada. A empresa tem demonstrado um compromisso com a disciplina na alocação de capital, evidenciado pela recente aprovação de uma redução de capital, que visa otimizar sua estrutura financeira e melhorar a eficiência do uso de recursos. Essa abordagem prudente é crucial para sustentar o crescimento e a competitividade da Alpargatas em um mercado dinâmico.\n\nA governança corporativa da Alpargatas é um aspecto importante que garante a transparência e a responsabilidade nas suas operações. A empresa está sujeita a regulamentações que regem o setor de calçados no Brasil e em outros mercados onde atua, o que pode impactar suas operações e a conformidade com as normas locais e internacionais. Mudanças nas preferências dos consumidores, a introdução de novas legislações ambientais e comerciais, e a dinâmica econômica global são eventos críticos que podem influenciar a performance da Alpargatas. A companhia demonstra um compromisso contínuo com a sustentabilidade e a inovação, buscando se adaptar às tendências do mercado e às expectativas dos consumidores, o que é essencial para manter sua relevância e competitividade em um ambiente em constante mudança.\n\nEm um contexto macroeconômico, a Alpargatas é sensível a fatores como a inflação, as taxas de juros e o crescimento econômico, que podem afetar o poder de compra dos consumidores e, por consequência, a demanda por seus produtos. A empresa precisa estar atenta a essas variáveis, ajustando suas estratégias de marketing e distribuição para se alinhar às condições econômicas e às expectativas dos consumidores. A capacidade de adaptação e inovação, aliada a uma gestão financeira prudente e a uma forte governança, são elementos cruciais para que a Alpargatas continue a prosperar e a se destacar em um mercado competitivo e em constante evolução.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.1 bi (trimestre) | R$3.3 bi (LTM)\n- EBITDA: R$0.3 bi (trimestre) | R$0.7 bi (LTM) | Margem 22.9%\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.5 bi (LTM)\n- Capex: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- Operacional: Vendas de 56,6 milhões de pares de Havaianas, com receita líquida de R$ 1,1 bilhão e EBITDA ajustado de R$ 256 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1115800000,
+      "receita_liquida_ltm": 3309600000,
+      "ebitda_tri": 256000000,
+      "ebitda_ltm": 654300000,
+      "lucro_liquido_tri": 171000000,
+      "lucro_liquido_ltm": 512000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": 55000000,
+      "capex_ltm": 220000000,
+      "margem_ebitda_pct": 22.9,
+      "margem_liquida_pct": 15.3
+    },
+    "operacionais": {
+      "descricao": "Vendas de 56,6 milhões de pares de Havaianas, com receita líquida de R$ 1,1 bilhão e EBITDA ajustado de R$ 256 milhões.",
+      "metricas": {
+        "volume_total_pares_vendidos": 56600000,
+        "volume_havaianas_brasil": 51600000,
+        "volume_havaianas_internacional": 4900000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T00:54:35.407563Z"
+}

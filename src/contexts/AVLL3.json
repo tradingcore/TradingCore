@@ -1,0 +1,35 @@
+{
+  "ticker": "AVLL3",
+  "codigo_cvm": "25275",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25275_2025-09-30_ALPHAVILLE_SA.pdf",
+  "texto_contexto": "A Alphaville é uma empresa brasileira que se destaca no desenvolvimento de empreendimentos imobiliários, com um enfoque particular na criação de bairros planejados, loteamentos e condomínios fechados. Seu modelo de negócio é inovador e eficiente, baseado em parcerias estratégicas com proprietários de terrenos. Essa abordagem permite que a Alphaville não precise realizar desembolsos significativos para a aquisição de áreas, assumindo, em vez disso, a responsabilidade pelo desenvolvimento, construção e comercialização dos projetos. Essa estratégia não apenas minimiza os custos de carregamento de terrenos, mas também possibilita à empresa manter uma estrutura de capital leve, o que é um diferencial importante em um setor frequentemente marcado por altos investimentos iniciais.\n\nA atuação da Alphaville abrange diversas regiões do Brasil, incluindo o Nordeste, Sudeste, Centro-Oeste e Sul, o que a posiciona de forma estratégica para atender a uma ampla gama de demandas habitacionais e comerciais. Os segmentos em que a empresa opera são variados, englobando tanto empreendimentos residenciais quanto comerciais, sempre com um foco na qualidade da habitação e na infraestrutura urbana. Essa diversidade permite à Alphaville se adaptar a diferentes perfis de consumidores e a dinâmicas de mercado, ampliando suas oportunidades de crescimento.\n\nOs principais indicadores de desempenho (KPIs) utilizados pela Alphaville incluem receita líquida, EBITDA, margem bruta, volume de vendas, velocidade de vendas (VSO) e a posição de landbank, que representa o valor total dos terrenos disponíveis para desenvolvimento. Esses KPIs são fundamentais para a avaliação da saúde financeira da empresa e para a tomada de decisões estratégicas. A eficiência operacional é um dos principais drivers de valor da Alphaville, que busca constantemente otimizar seus processos e reduzir despesas gerais e administrativas. A capacidade de lançar novos empreendimentos e a aceitação do mercado também são fatores cruciais que influenciam o desempenho da empresa.\n\nEntretanto, a Alphaville enfrenta uma série de riscos que podem impactar suas operações e resultados financeiros. A volatilidade do mercado imobiliário é um dos principais desafios, uma vez que flutuações na demanda podem afetar diretamente as vendas e a rentabilidade. Além disso, a possibilidade de distratos por parte dos clientes, mudanças na legislação e regulamentação do setor, e riscos financeiros associados à sua estrutura de capital, que inclui tanto dívida bruta quanto líquida, são fatores que exigem uma gestão cuidadosa e proativa.\n\nA estrutura de capital da Alphaville é composta por dívida bruta e uma posição de caixa que proporciona uma certa flexibilidade financeira. A empresa mantém um foco constante em liquidez e gestão de caixa, o que é crucial para financiar suas operações e novos lançamentos. Essa abordagem é particularmente importante em um setor onde a capacidade de investimento e a gestão de fluxo de caixa podem determinar o sucesso ou o fracasso de um projeto.\n\nA regulação do setor imobiliário no Brasil é um aspecto que impacta diretamente as operações da Alphaville. As leis que regem contratos de compra e venda, alienação fiduciária e normas de urbanismo exigem conformidade rigorosa, o que pode representar um desafio adicional para a empresa. A capacidade de navegar por esse ambiente regulatório e adaptar-se a mudanças nas normas é fundamental para garantir a continuidade dos negócios e a mitigação de riscos legais.\n\nEventos críticos, como a entrega de novos empreendimentos e lançamentos de projetos, são momentos-chave que podem influenciar diretamente as vendas e receitas da Alphaville. A resposta do mercado a esses lançamentos é um indicador importante da aceitação dos produtos da empresa e da eficácia de suas estratégias de marketing e vendas. A capacidade de adaptação da Alphaville às mudanças nas condições de mercado, bem como a eficiência na execução de seus projetos, são fatores determinantes para seu sucesso a longo prazo.\n\nEm um contexto macroeconômico, a sensibilidade da Alphaville a fatores como taxas de juros, inflação e crescimento econômico é evidente. A saúde da economia brasileira, as políticas monetárias e fiscais, e as tendências demográficas influenciam diretamente a demanda por habitação e, consequentemente, o desempenho da empresa. A capacidade da Alphaville de se posicionar estrategicamente em um ambiente dinâmico e desafiador será crucial para sua sustentabilidade e crescimento no futuro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.1 bi (trimestre) | R$0.4 bi (LTM)\n- EBITDA: R$0.0 bi (trimestre) | R$0.1 bi (LTM) | Margem 28.0%\n- Lucro Líquido: R$-0.1 bi (trimestre) | R$-0.1 bi (LTM)\n- Dívida: R$0.5 bi (líquida) | R$0.7 bi (bruta)\n- Operacional: Vendas brutas totais de R$ 146 milhões no trimestre, com um VSO de 19%. Estoque total de R$ 615 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 149000000,
+      "receita_liquida_ltm": 417000000,
+      "ebitda_tri": 42000000,
+      "ebitda_ltm": 104000000,
+      "lucro_liquido_tri": -50000000,
+      "lucro_liquido_ltm": -115000000,
+      "divida_liquida": 542000000,
+      "divida_bruta": 730000000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 28,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "Vendas brutas totais de R$ 146 milhões no trimestre, com um VSO de 19%. Estoque total de R$ 615 milhões.",
+      "metricas": {
+        "vendas_totais": 320000000,
+        "vso_pct": 30,
+        "lotes_vendidos": 856,
+        "estoque": 615000000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T00:55:29.667380Z"
+}

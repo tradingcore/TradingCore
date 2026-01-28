@@ -1,0 +1,35 @@
+{
+  "ticker": "ABEV3",
+  "codigo_cvm": "23264",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "23264_2025-09-30_AMBEV_SA.pdf",
+  "texto_contexto": "A Ambev, uma das principais empresas do setor de bebidas na América Latina, opera com um modelo de negócio robusto e diversificado, centrado na produção e comercialização de cervejas, refrigerantes e outras bebidas não alcoólicas. Com uma forte presença no Brasil, Canadá e na América Central e Caribe, a companhia se destaca pela sua capacidade de adaptação às dinâmicas de mercado e pela inovação constante em seu portfólio. A Ambev é reconhecida por sua liderança em segmentos que vão desde cervejas tradicionais até opções premium e super premium, além de uma crescente oferta de produtos sem álcool, alinhando-se às tendências de consumo que priorizam saúde e bem-estar.\n\nOs principais segmentos de atuação da Ambev incluem Cerveja, Não Alcoólicos e Bebidas Alcoólicas, cada um contribuindo de maneira significativa para a receita total da empresa. A diversificação do portfólio é um dos pilares que sustentam o crescimento da Ambev, permitindo que a empresa atenda a diferentes perfis de consumidores e se posicione de forma competitiva em um mercado em constante evolução. A premiumização de produtos, por exemplo, tem se mostrado um driver de valor essencial, atraindo consumidores dispostos a pagar mais por experiências diferenciadas e de qualidade superior.\n\nPara medir seu desempenho, a Ambev utiliza uma série de KPIs que refletem sua eficiência operacional e rentabilidade. Indicadores como receita líquida, EBITDA ajustado e lucro líquido ajustado são fundamentais para a análise de resultados, assim como métricas operacionais como volume de vendas por hectolitro e custo dos produtos vendidos (CPV) por hectolitro. Esses KPIs não apenas ajudam a empresa a monitorar sua performance, mas também a identificar áreas de melhoria e oportunidades de crescimento.\n\nEntretanto, a Ambev não está isenta de riscos. A volatilidade das condições macroeconômicas, que pode afetar a demanda por seus produtos, é uma preocupação constante. A concorrência no setor de bebidas é intensa, com players locais e internacionais disputando participação de mercado. Além disso, a empresa enfrenta riscos regulatórios, especialmente em relação a políticas de preços e impostos, que podem impactar sua rentabilidade e estratégia de mercado. A capacidade de navegar por essas incertezas é crucial para a manutenção de sua posição de liderança.\n\nA estrutura de capital da Ambev é composta por um equilíbrio entre dívida e patrimônio líquido, com um foco estratégico em manter uma posição financeira sólida. Isso permite à empresa sustentar seus investimentos em inovação e expansão, além de garantir retornos consistentes aos acionistas. A gestão eficaz de custos e despesas é um componente vital para a expansão de margens, especialmente em um ambiente econômico desafiador.\n\nEventos críticos, como mudanças nas regulamentações do setor e flutuações nos preços de matérias-primas, como alumínio e cevada, podem impactar diretamente a operação da Ambev. A empresa deve estar atenta à capacidade de adaptação a tendências de consumo, que incluem uma crescente demanda por produtos mais saudáveis e sustentáveis. A inflação em mercados-chave, como a Argentina, também representa um desafio, exigindo uma gestão cuidadosa da estratégia de preços e custos para preservar a margem de lucro.\n\nA digitalização das operações, através de plataformas como BEES e Zé Delivery, representa uma oportunidade significativa para a Ambev. Essas iniciativas não apenas melhoram a eficiência operacional, mas também ampliam o alcance da empresa no mercado, permitindo uma interação mais direta com os consumidores e uma melhor compreensão de suas preferências. A combinação de inovação, gestão de riscos e adaptação às condições de mercado será fundamental para que a Ambev continue a prosperar em um setor cada vez mais competitivo e dinâmico.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$20.8 bi (trimestre) | R$63.4 bi (LTM)\n- EBITDA: R$7.1 bi (trimestre) | R$20.7 bi (LTM) | Margem 33.9%\n- Lucro Líquido: R$4.8 bi (trimestre) | R$10.5 bi (LTM)\n- Operacional: Volume consolidado de 42.419,2 mil hectolitros, com queda de 5,8% em relação ao ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 20847300000,
+      "receita_liquida_ltm": 63434800000,
+      "ebitda_tri": 7059100000,
+      "ebitda_ltm": 20656500000,
+      "lucro_liquido_tri": 4843700000,
+      "lucro_liquido_ltm": 10496000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 33.9,
+      "margem_liquida_pct": 23.2
+    },
+    "operacionais": {
+      "descricao": "Volume consolidado de 42.419,2 mil hectolitros, com queda de 5,8% em relação ao ano anterior.",
+      "metricas": {
+        "volume": 42419200,
+        "lucro_bruto": 10727300000,
+        "margem_bruta_pct": 51.5,
+        "lpa_ajustado": 0.24
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T00:56:35.793736Z"
+}

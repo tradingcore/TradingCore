@@ -1,0 +1,32 @@
+{
+  "ticker": "AFLT3",
+  "codigo_cvm": "22179",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "22179_2025-09-30_AFLUENTE_TRANSMISSÃO_DE_ENERGIA_ELETRICA_SA.pdf",
+  "texto_contexto": "A Afluente Transmissão de Energia Elétrica S.A., uma empresa de capital aberto, foi constituída em 2008 como parte do processo de desverticalização da Coelba, refletindo uma tendência no setor elétrico brasileiro de promover maior eficiência e especialização. O modelo de negócio da Afluente T é centrado na transmissão de energia elétrica, um segmento crucial para garantir a entrega de eletricidade de forma confiável e eficiente. Com uma potência instalada de 600 MVA, a empresa opera linhas de transmissão e subestações, priorizando a qualidade do serviço e a eficiência operacional. A Afluente T é regulada pela Agência Nacional de Energia Elétrica (ANEEL), que desempenha um papel fundamental na supervisão das operações da companhia, avaliando a qualidade do serviço prestado por meio de indicadores como a taxa de disponibilidade, que, em um recente período, alcançou impressionantes 99,98%, superando as exigências do Operador Nacional do Sistema (ONS).\n\nOs principais segmentos de atuação da Afluente T são a operação de linhas de transmissão e subestações, onde a empresa se destaca pela busca constante de eficiência e pela qualidade dos serviços prestados. O desempenho financeiro da companhia é monitorado por KPIs relevantes, como margem bruta, EBITDA e lucro líquido, que fornecem uma visão clara sobre a saúde financeira e a eficácia operacional da empresa. A recente 4ª Revisão Tarifária, que resultou em um reposicionamento significativo da Receita Anual Permitida (RAP), evidenciou a importância das revisões tarifárias como um driver de valor. Essa revisão tarifária, com um aumento de 14,2% em relação ao ciclo anterior, ilustra como as políticas regulatórias podem impactar diretamente a rentabilidade da empresa.\n\nEntretanto, a Afluente T enfrenta uma série de riscos inerentes ao seu modelo de negócio. A dependência de regulamentações governamentais e a possibilidade de variações nas tarifas de energia são fatores que podem afetar sua estabilidade financeira. Além disso, mudanças nas políticas energéticas podem introduzir incertezas que impactam a operação e a estratégia da empresa. A estrutura de capital da Afluente T é caracterizada por uma dívida líquida negativa, o que indica uma posição de caixa superior à dívida bruta. Essa situação financeira, com uma dívida bruta de R$ 32,9 milhões, sugere uma gestão conservadora e uma capacidade robusta de investimento em melhorias operacionais e expansão.\n\nEventos críticos, como as revisões tarifárias periódicas e a implementação de novas regulamentações pela ANEEL, são fatores que podem influenciar diretamente a receita e a rentabilidade da Afluente T. A empresa demonstra um compromisso com a transparência e a governança corporativa, buscando alinhar suas práticas aos padrões internacionais de demonstrações financeiras (IFRS). Essa abordagem não apenas reforça a confiança dos investidores, mas também posiciona a Afluente T como uma empresa responsável e comprometida com as melhores práticas do mercado.\n\nNo contexto competitivo, a Afluente T opera em um setor onde a concorrência é intensa, com outras empresas de transmissão de energia buscando constantemente melhorar suas operações e oferecer serviços de qualidade. A capacidade da Afluente T de se diferenciar por meio da eficiência operacional e da qualidade do serviço será fundamental para manter sua posição no mercado. Além disso, a sensibilidade a fatores macroeconômicos, como flutuações na demanda por energia e mudanças nas condições econômicas gerais, pode impactar a performance da empresa. A Afluente T, portanto, deve permanecer atenta a essas dinâmicas, adaptando sua estratégia conforme necessário para garantir um crescimento sustentável e a criação de valor a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- EBITDA: R$0.0 bi (trimestre) | R$0.0 bi (LTM) | Margem 85.3%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Dívida: R$-0.0 bi (líquida) | R$0.0 bi (bruta)\n- Operacional: Margem bruta de R$ 26,4 milhões no 3T25, EBITDA de R$ 22,5 milhões e lucro líquido de R$ 14,8 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 26400000,
+      "receita_liquida_ltm": 47800000,
+      "ebitda_tri": 22500000,
+      "ebitda_ltm": 36400000,
+      "lucro_liquido_tri": 14800000,
+      "lucro_liquido_ltm": 23700000,
+      "divida_liquida": -5200000,
+      "divida_bruta": 32900000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 85.3,
+      "margem_liquida_pct": 56.1
+    },
+    "operacionais": {
+      "descricao": "Margem bruta de R$ 26,4 milhões no 3T25, EBITDA de R$ 22,5 milhões e lucro líquido de R$ 14,8 milhões.",
+      "metricas": {
+        "taxa_disponibilidade_pct": 99.98
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T00:49:59.846295Z"
+}

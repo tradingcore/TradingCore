@@ -1,0 +1,36 @@
+{
+  "ticker": "AGXY3",
+  "codigo_cvm": "25658",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25658_2025-09-30_AGROGALAXY_PARTICIPAÇÕES_SA_-_EM_RECUPERAÇÃO_JUDIC.pdf",
+  "texto_contexto": "A AgroGalaxy Participações S.A. se destaca no dinâmico setor de agronegócio brasileiro, com um foco estratégico na comercialização de insumos agrícolas e grãos, especialmente soja. O modelo de negócio da empresa é estruturado para atender às necessidades dos produtores rurais, priorizando a eficiência operacional e a sustentabilidade em suas práticas. Essa abordagem não apenas busca maximizar a rentabilidade, mas também garantir que a empresa se alinhe às crescentes demandas por práticas agrícolas responsáveis e ambientalmente sustentáveis.\n\nAs operações da AgroGalaxy são segmentadas em duas áreas principais: insumos e grãos. Na área de insumos, a empresa oferece uma gama de produtos, incluindo fertilizantes e sementes, que são essenciais para a produtividade agrícola. A segmentação em grãos, com ênfase na soja, reflete a relevância desse produto no mercado interno e externo, onde a demanda por soja continua a crescer, impulsionada por fatores como a alimentação animal e a produção de biocombustíveis. Essa diversificação de produtos é um dos principais drivers de valor da companhia, permitindo que ela se adapte às flutuações do mercado e às necessidades dos agricultores.\n\nOs principais indicadores de desempenho da AgroGalaxy, como receita líquida, lucro bruto ajustado, EBITDA ajustado e margem de lucro ajustada, são cruciais para a avaliação da saúde financeira da empresa. Esses KPIs não apenas refletem a capacidade da AgroGalaxy de gerar lucro, mas também sua resiliência em um ambiente de negócios que pode ser desafiador, marcado por volatilidade nos preços das commodities e mudanças nas condições climáticas. A eficiência na gestão de custos e a habilidade de adaptação às dinâmicas do mercado são fundamentais para a manutenção de uma posição competitiva.\n\nEntretanto, a AgroGalaxy enfrenta riscos significativos que podem impactar sua operação e desempenho financeiro. A volatilidade dos preços das commodities é uma preocupação constante, uma vez que a variação nos preços pode afetar diretamente a margem de lucro da empresa. Além disso, a dependência de crédito para financiar suas operações representa um risco adicional, especialmente em tempos de incerteza econômica. A necessidade de adaptação às mudanças climáticas, que podem afetar a produção agrícola, também é um fator que a empresa deve considerar em sua estratégia de longo prazo. A situação de recuperação judicial em que a AgroGalaxy se encontra atualmente impõe desafios adicionais, tanto em termos de estrutura de capital quanto na confiança dos investidores, exigindo uma gestão cuidadosa e proativa.\n\nA estrutura de capital da AgroGalaxy é composta por um mix de dívida e patrimônio líquido, com um foco recente na reestruturação financeira. A emissão de debêntures é uma das estratégias adotadas para fortalecer sua posição de capital e garantir a liquidez necessária para suas operações. A regulação do setor agrícola no Brasil, que inclui normas da Comissão de Valores Mobiliários (CVM) e do Comitê de Pronunciamentos Contábeis (CPC), também desempenha um papel importante nas operações da empresa, exigindo conformidade com padrões contábeis e de governança que podem impactar a transparência e a confiança do mercado.\n\nA competição no setor de agronegócio é intensa, com diversas empresas disputando participação de mercado. A AgroGalaxy precisa se diferenciar por meio de sua oferta de produtos, serviços e suporte ao cliente, além de manter um portfólio diversificado que atenda às necessidades dos agricultores. A capacidade de inovar e se adaptar rapidamente às mudanças nas preferências dos consumidores e nas condições de mercado será crucial para a sua competitividade.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A AgroGalaxy está sujeita a influências externas, como políticas agrícolas, flutuações cambiais e condições econômicas globais, que podem impactar tanto a demanda por seus produtos quanto os custos de operação. A empresa deve estar atenta a esses fatores e desenvolver estratégias que a tornem mais resiliente a choques externos, garantindo assim sua sustentabilidade e crescimento a longo prazo, mesmo em um cenário desafiador. A trajetória futura da AgroGalaxy dependerá de sua capacidade de navegar por esses desafios, reposicionando-se de forma a garantir não apenas a recuperação, mas também um crescimento sustentável em um ambiente em constante mudança.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.4 bi (trimestre) | R$1.0 bi (LTM)\n- EBITDA: R$-0.1 bi (trimestre) | R$-0.3 bi (LTM) | Margem -32.2%\n- Lucro Líquido: R$-0.6 bi (trimestre) | R$-0.9 bi (LTM)\n- Dívida: R$1.9 bi (líquida) | R$2.4 bi (bruta)\n- Operacional: A receita líquida totalizou R$ 417,9 milhões, uma queda de 65,7% em relação ao 3T24, refletindo o processo de recuperação judicial e a redução das operações.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 417855000,
+      "receita_liquida_ltm": 1010234000,
+      "ebitda_tri": -134388000,
+      "ebitda_ltm": -290151000,
+      "lucro_liquido_tri": -611839000,
+      "lucro_liquido_ltm": -900711000,
+      "divida_liquida": 1900000000,
+      "divida_bruta": 2400810000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": -32.2,
+      "margem_liquida_pct": -146.4
+    },
+    "operacionais": {
+      "descricao": "A receita líquida totalizou R$ 417,9 milhões, uma queda de 65,7% em relação ao 3T24, refletindo o processo de recuperação judicial e a redução das operações.",
+      "metricas": {
+        "receita_insumos": 247220000,
+        "receita_graos": 170635000,
+        "lucro_bruto_ajustado": 2586000,
+        "margem_bruta_insumos_pct": 7.0,
+        "margem_bruta_graos_pct": -8.6
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T00:50:53.633396Z"
+}

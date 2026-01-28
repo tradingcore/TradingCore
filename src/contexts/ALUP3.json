@@ -1,0 +1,33 @@
+{
+  "ticker": "ALUP3",
+  "codigo_cvm": "21490",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "21490_2025-09-30_ALUPAR_INVESTIMENTO_SA.pdf",
+  "texto_contexto": "A Alupar Investimento S.A. se destaca como uma holding de controle privado que atua de maneira robusta nos segmentos de transmissão e geração de energia elétrica, com um foco estratégico na construção e operação de projetos de infraestrutura tanto no Brasil quanto em países selecionados da América Latina. O modelo de negócio da empresa é fundamentado na maximização do retorno aos acionistas, o que é alcançado por meio de uma estrutura de capital sólida, caracterizada por uma alavancagem financeira moderada e uma forte geração de caixa operacional. Essa abordagem permite à Alupar uma previsibilidade nas receitas, essencial para a sustentabilidade de suas operações e para a confiança dos investidores.\n\nOs segmentos principais da Alupar incluem a transmissão de energia elétrica, onde a empresa se posiciona como uma das maiores em termos de Receita Anual Permitida (RAP), e a geração de energia, que abrange uma diversificada gama de fontes, incluindo usinas hidrelétricas, parques eólicos e solares. Essa diversificação não apenas amplia a capacidade instalada da companhia, mas também a torna menos vulnerável a flutuações específicas de mercado, permitindo uma gestão de riscos mais eficaz. Os indicadores-chave de desempenho (KPIs) da Alupar, como Receita Líquida, EBITDA, Lucro Líquido e a relação Dívida Líquida/EBITDA, são fundamentais para avaliar a saúde financeira e a eficiência operacional da empresa, refletindo sua capacidade de gerar valor ao longo do tempo.\n\nOs principais drivers de valor para a Alupar incluem a expansão contínua de sua capacidade instalada, a eficiência na operação de seus ativos e a gestão eficaz de custos. A capacidade da empresa de captar recursos para novos projetos é igualmente crucial, especialmente em um setor que demanda investimentos significativos em infraestrutura. A Alupar se beneficia de um ambiente regulatório estável, que é um fator crítico para a operação de concessões de energia, proporcionando um cenário favorável para o crescimento e a continuidade de suas operações.\n\nEntretanto, a Alupar não está isenta de riscos. A variação de tarifas, mudanças na regulação do setor elétrico, flutuações nas taxas de juros e câmbio, além de riscos operacionais associados à construção e operação de suas instalações, são fatores que podem impactar sua performance. A estrutura de capital da empresa é caracterizada por um perfil de dívida alongado, com uma significativa parte atrelada a debêntures, o que proporciona maior previsibilidade nos pagamentos e contribui para a estabilidade financeira.\n\nA governança corporativa da Alupar é um aspecto que merece destaque, pois a empresa busca manter altos padrões de transparência e responsabilidade, fatores que são cada vez mais valorizados por investidores e stakeholders. A regulação do setor elétrico, por sua vez, é um elemento crítico que influencia diretamente as operações da empresa, uma vez que as concessões determinam suas receitas e condições operacionais. Eventos críticos, como a aprovação de novos projetos, mudanças na legislação do setor elétrico e a performance de seus ativos em operação, têm um impacto direto na capacidade da Alupar de gerar receita e lucro.\n\nAlém disso, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A Alupar opera em um ambiente onde as condições econômicas gerais, como crescimento do PIB, inflação e políticas governamentais, podem influenciar a demanda por energia e, consequentemente, a performance da empresa. A capacidade da Alupar de se adaptar a essas variáveis macroeconômicas será fundamental para sua resiliência e crescimento a longo prazo.\n\nEm suma, a Alupar Investimento S.A. se posiciona como uma empresa sólida e bem estruturada no setor elétrico, com um modelo de negócio que prioriza a eficiência operacional e a geração de valor para os acionistas. No entanto, a empresa deve continuar a navegar por um ambiente regulatório dinâmico e por riscos inerentes ao setor, enquanto busca expandir sua presença e capacidade em um mercado em constante evolução.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.7 bi (trimestre) | R$2.2 bi (LTM)\n- EBITDA: R$0.7 bi (trimestre) | R$1.8 bi (LTM) | Margem 96.3%\n- Lucro Líquido: R$0.4 bi (trimestre) | R$0.9 bi (LTM)\n- Dívida Líquida: R$9.2 bi\n- Operacional: Receita líquida de R$ 690,5 milhões, EBITDA de R$ 665 milhões e lucro líquido de R$ 363,4 milhões no trimestre.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 690549000,
+      "receita_liquida_ltm": 2190647000,
+      "ebitda_tri": 665000000,
+      "ebitda_ltm": 1820400000,
+      "lucro_liquido_tri": 363400000,
+      "lucro_liquido_ltm": 897800000,
+      "divida_liquida": 9211100000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 96.3,
+      "margem_liquida_pct": 52.7
+    },
+    "operacionais": {
+      "descricao": "Receita líquida de R$ 690,5 milhões, EBITDA de R$ 665 milhões e lucro líquido de R$ 363,4 milhões no trimestre.",
+      "metricas": {
+        "disponibilidade_fisica_transmissao_pct": 100.0,
+        "energia_gerada_contratos_venda_gwh": 185.9
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T00:56:05.163757Z"
+}

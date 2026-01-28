@@ -1,0 +1,34 @@
+{
+  "ticker": "ALLD3",
+  "codigo_cvm": "25330",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25330_2025-09-30_ALLIED_TECNOLOGIA_SA.pdf",
+  "texto_contexto": "A Allied (ALLD3) se destaca no setor de eletrônicos, operando com um modelo de negócio que combina a distribuição e o varejo de produtos, com uma ênfase crescente na venda de itens recondicionados. A empresa tem se posicionado de forma estratégica no mercado, aproveitando parcerias significativas, como o programa \"iPhone pra Sempre\" em colaboração com o Banco Itaú e a Apple, que não apenas diversificam sua oferta, mas também fortalecem sua marca e presença no mercado. A estrutura de negócios da Allied é dividida em dois segmentos principais: a distribuição, que abrange tanto o mercado interno brasileiro quanto o internacional, e o varejo, que inclui operações de vendas tanto físicas quanto digitais.\n\nOs principais indicadores de desempenho da Allied, como receita líquida de vendas, lucro bruto, EBITDA recorrente e lucro líquido recorrente, refletem a saúde financeira da empresa e seu potencial de crescimento. A Allied tem demonstrado um desempenho robusto, especialmente no segmento de produtos recondicionados, que tem se tornado um motor de crescimento significativo. A expansão internacional também se destaca como um driver de valor, permitindo à empresa explorar novos mercados e diversificar suas fontes de receita. Além disso, a capacidade de formar parcerias estratégicas é um diferencial competitivo que amplia sua presença e potencializa suas vendas.\n\nEntretanto, a Allied enfrenta uma série de riscos que podem impactar sua operação e resultados. A volatilidade do mercado de eletrônicos é um fator constante, assim como a concorrência acirrada que caracteriza o setor. A dependência de parcerias estratégicas, embora benéfica, também representa um risco, pois mudanças nas condições de mercado ou nas políticas das empresas parceiras podem afetar diretamente a Allied. Além disso, a empresa está exposta a mudanças regulatórias, especialmente no que diz respeito a tributações e créditos fiscais, que podem impactar sua estrutura de custos e rentabilidade.\n\nA estrutura de capital da Allied é robusta, com uma posição de caixa sólida e uma dívida líquida negativa, o que indica uma baixa alavancagem financeira e uma capacidade de investimento em crescimento e inovação. Essa solidez financeira é um ativo importante, especialmente em um ambiente de negócios que pode ser volátil. A governança corporativa da empresa é um aspecto que merece destaque, pois a capacidade de tomar decisões estratégicas em um ambiente regulatório complexo é fundamental para a continuidade e o crescimento da Allied.\n\nA regulação é um aspecto crítico para a Allied, uma vez que a legislação tributária e as normas de comércio internacional podem impactar diretamente suas operações. Mudanças na legislação fiscal, como a recente decisão sobre a não tributação do DIFAL, podem ter efeitos significativos na contabilidade e no fluxo de caixa da empresa. A habilidade da Allied em navegar por esses desafios regulatórios e de mercado será essencial para sua sustentabilidade a longo prazo.\n\nAlém disso, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A demanda por eletrônicos pode ser influenciada por variáveis econômicas, como a taxa de desemprego, a inflação e a confiança do consumidor. Em um cenário de incerteza econômica, a Allied deve estar preparada para ajustar suas estratégias e operações para mitigar os impactos negativos e aproveitar oportunidades que possam surgir. A resiliência da empresa em face dessas variáveis será um indicativo de sua capacidade de se manter competitiva e relevante no mercado de eletrônicos. \n\nEm suma, a Allied (ALLD3) apresenta um modelo de negócio dinâmico e adaptável, que combina a distribuição e o varejo de eletrônicos com uma forte ênfase em produtos recondicionados e parcerias estratégicas. A empresa, embora enfrente riscos e desafios significativos, possui uma estrutura de capital sólida e uma governança que a posiciona bem para enfrentar as incertezas do mercado e as mudanças regulatórias, buscando sempre a inovação e a expansão em um setor em constante evolução.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.4 bi (trimestre) | R$4.0 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.2 bi (LTM) | Margem 3.6%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- Dívida: R$-0.2 bi (líquida) | R$0.5 bi (bruta)\n- Operacional: Recorde histórico de vendas do programa Iphone pra Sempre, com crescimento de 21%. Vendas de produtos recondicionados cresceram 121%. A posição de caixa atingiu R$ 617,7 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1412900000,
+      "receita_liquida_ltm": 4002900000,
+      "ebitda_tri": 50900000,
+      "ebitda_ltm": 155300000,
+      "lucro_liquido_tri": 37400000,
+      "lucro_liquido_ltm": 68300000,
+      "divida_liquida": -152200000,
+      "divida_bruta": 457500000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 3.6,
+      "margem_liquida_pct": 2.6
+    },
+    "operacionais": {
+      "descricao": "Recorde histórico de vendas do programa Iphone pra Sempre, com crescimento de 21%. Vendas de produtos recondicionados cresceram 121%. A posição de caixa atingiu R$ 617,7 milhões.",
+      "metricas": {
+        "vendas_recondicionados": 121,
+        "crescimento_vendas_iphone": 21,
+        "posicao_caixa": 617700000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T00:52:27.447894Z"
+}

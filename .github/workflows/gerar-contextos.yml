@@ -2,16 +2,27 @@ name: Gerar Contextos das Ações
 
 on:
   workflow_dispatch:  # Rodar manualmente
+    inputs:
+      force:
+        description: 'Regenerar todos os contextos (mesmo os já existentes)'
+        required: false
+        default: 'false'
+        type: boolean
 
 jobs:
   gerar-contextos:
     runs-on: ubuntu-latest
+    timeout-minutes: 180  # 3 horas max
+    
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: gpt-4o-mini
     
     steps:
       - uses: actions/checkout@v4
       
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       
@@ -19,13 +30,18 @@ jobs:
         run: pip install -r requirements.txt
       
       - name: Gerar contextos via releases CVM
-        run: python src/scripts/gerar_contextos_releases.py
+        run: |
+          if [ "${{ github.event.inputs.force }}" == "true" ]; then
+            python src/scripts/gerar_contextos_releases.py --force
+          else
+            python src/scripts/gerar_contextos_releases.py
+          fi
       
       - name: Commit e Push
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add src/contexts/*.json
-          git diff --staged --quiet || git commit -m "feat: Contextos das ações via releases CVM"
+          git diff --staged --quiet || git commit -m "feat: Atualiza contextos das ações via releases CVM"
           git pull --rebase origin main
           git push

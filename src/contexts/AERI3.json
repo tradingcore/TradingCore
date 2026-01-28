@@ -1,0 +1,35 @@
+{
+  "ticker": "AERI3",
+  "codigo_cvm": "25283",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25283_2025-09-30_AERIS_IND_E_COM_DE_EQUIP_PARA_GER_DE_ENG_SA.pdf",
+  "texto_contexto": "Aeris Energy (AERI3) é uma empresa que se destaca no setor de energia renovável, com um foco específico na fabricação de pás para turbinas eólicas e na prestação de serviços complementares, como manutenção, inspeção e operação de equipamentos. O modelo de negócio da Aeris é estruturado em torno da produção e comercialização de componentes essenciais para o setor eólico, o que a posiciona como um player estratégico em um mercado em crescimento. Além disso, a empresa tem buscado diversificar suas fontes de receita, ampliando sua atuação em serviços, o que é uma estratégia inteligente para mitigar a volatilidade da demanda por novos projetos, que pode ser influenciada por fatores econômicos e regulatórios.\n\nOs segmentos de atuação da Aeris abrangem tanto o mercado interno quanto o externo, com uma ênfase crescente nas exportações. Essa diversificação geográfica é crucial, pois permite à empresa não apenas aumentar sua base de clientes, mas também reduzir a dependência do mercado local, que pode ser suscetível a flutuações econômicas e políticas. Os principais indicadores de desempenho da Aeris, como receita operacional líquida, EBITDA ajustado e margem EBITDA, são fundamentais para avaliar a saúde financeira da empresa e sua capacidade de gerar lucros em um ambiente competitivo. A quantidade de linhas de produção ativas também é um KPI relevante, pois reflete a capacidade produtiva e a eficiência operacional da empresa.\n\nOs drivers de valor para a Aeris incluem sua habilidade de adaptação às condições de mercado, que é essencial em um setor em constante evolução. A eficiência operacional é outro fator crítico, pois impacta diretamente a margem de lucro e a competitividade da empresa. A diversificação de receitas, por meio da oferta de serviços além da fabricação de pás, e a expansão internacional são estratégias que visam fortalecer a posição da Aeris no mercado global de energia renovável.\n\nEntretanto, a Aeris enfrenta riscos significativos que podem impactar sua performance. A redução da demanda por novos projetos, impulsionada por um ambiente regulatório incerto, é uma preocupação constante. Além disso, a pressão do curtailment no setor eólico, que se refere à limitação da geração de energia em função de restrições na rede elétrica, pode afetar tanto a receita quanto a margem da empresa. Esses riscos exigem uma gestão proativa e uma capacidade de resposta ágil às mudanças no cenário regulatório e de mercado.\n\nA estrutura de capital da Aeris é marcada por um alto nível de endividamento, o que pode ser um fator limitante para sua expansão e investimentos futuros. No entanto, a recente renegociação de cerca de 90% de sua dívida permitiu um alongamento dos prazos de vencimento, além de eliminar a obrigação de monitorar covenants financeiros, proporcionando maior flexibilidade financeira. Essa reestruturação é um passo importante para a sustentabilidade financeira da empresa e para a implementação de suas estratégias de crescimento.\n\nA governança corporativa da Aeris é um aspecto fundamental que influencia suas operações e a confiança dos investidores. A empresa busca manter altos padrões de transparência e responsabilidade, o que é essencial em um setor que demanda credibilidade e comprometimento com práticas sustentáveis. A regulação do setor de energia renovável, tanto no Brasil quanto em mercados internacionais, é um fator crítico que pode impactar a operação da Aeris. Incentivos fiscais e políticas de apoio à energia limpa são elementos que podem favorecer o crescimento da empresa, mas também podem ser suscetíveis a mudanças políticas e econômicas.\n\nA competição no setor de energia renovável é intensa, com diversas empresas buscando capturar participação de mercado. A Aeris precisa se diferenciar por meio da inovação, qualidade de seus produtos e serviços, e pela capacidade de oferecer soluções que atendam às necessidades específicas de seus clientes. A sensibilidade macroeconômica também é um fator a ser considerado, uma vez que a demanda por energia renovável pode ser influenciada por variáveis como crescimento econômico, políticas ambientais e flutuações nos preços de energia.\n\nEm suma, a Aeris Energy está posicionada em um setor promissor, mas enfrenta desafios significativos que exigem uma gestão estratégica e adaptativa. A capacidade de navegar por um ambiente regulatório complexo, a eficiência operacional e a diversificação de receitas serão cruciais para seu sucesso a longo prazo. A empresa busca se preparar para aproveitar as oportunidades que surgirão no próximo ciclo de expansão do setor, previsto para um futuro próximo, o que poderá consolidar sua posição como um líder no mercado de energia renovável.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.2 bi (trimestre) | R$0.6 bi (LTM)\n- EBITDA: R$-0.0 bi (trimestre) | R$-0.1 bi (LTM) | Margem -27.1%\n- Lucro Líquido: R$-0.1 bi (trimestre) | R$-0.4 bi (LTM)\n- Dívida: R$1.7 bi (líquida) | R$1.8 bi (bruta)\n- Capex: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Operacional: Quatro linhas de produção ativas, produção de 111 MW equivalentes, receita com vendas de pás para exportação representou 51,6% da receita total.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 179000000,
+      "receita_liquida_ltm": 631485000,
+      "ebitda_tri": -48443000,
+      "ebitda_ltm": -55090000,
+      "lucro_liquido_tri": -144360000,
+      "lucro_liquido_ltm": -412921000,
+      "divida_liquida": 1721400000,
+      "divida_bruta": 1750800000,
+      "capex_tri": 5800000,
+      "capex_ltm": 5800000,
+      "margem_ebitda_pct": -27.1,
+      "margem_liquida_pct": -80.6
+    },
+    "operacionais": {
+      "descricao": "Quatro linhas de produção ativas, produção de 111 MW equivalentes, receita com vendas de pás para exportação representou 51,6% da receita total.",
+      "metricas": {
+        "producoes_mw_equivalentes": 111,
+        "linhas_producao_ativas": 4,
+        "linhas_producao_desativadas": 4,
+        "vendas_exportacao_pct": 51.6
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T00:49:34.310373Z"
+}
