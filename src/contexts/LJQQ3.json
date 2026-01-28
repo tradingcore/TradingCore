@@ -1,0 +1,33 @@
+{
+  "ticker": "LJQQ3",
+  "codigo_cvm": "25038",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25038_2025-09-30_LOJAS_QUERO_QUERO_SA.pdf",
+  "texto_contexto": "A Lojas Quero-Quero S.A. se destaca como a maior varejista especializada em materiais de construção no Brasil, consolidando-se em um mercado competitivo e dinâmico. Seu modelo de negócio é multifacetado, englobando não apenas a venda de produtos de construção, mas também a comercialização de eletrodomésticos e móveis, além de oferecer serviços financeiros por meio do cartão de crédito \"VerdeCard\". Essa diversificação permite à empresa não apenas atender a uma ampla gama de necessidades dos consumidores, mas também mitigar riscos associados a flutuações em segmentos específicos do mercado.\n\nCom uma presença significativa em 584 lojas, predominantemente nas regiões Sul e Centro-Oeste do Brasil, a Lojas Quero-Quero adota uma estratégia de expansão moderada. Essa abordagem visa fortalecer suas operações existentes enquanto busca oportunidades de crescimento em novas localidades. O varejo de materiais de construção representa uma parcela substancial das receitas da companhia, refletindo a importância desse segmento em sua estrutura de negócios. A empresa se destaca pela eficiência operacional e pela capacidade de adaptação às condições macroeconômicas, fatores que são cruciais para a manutenção de sua competitividade.\n\nOs principais indicadores de desempenho, como a Receita Bruta Líquida de Devoluções (RBLD), o crescimento das Vendas Mesmas Lojas (SSS), a margem bruta e o EBITDA, são utilizados para monitorar a saúde financeira da empresa e a eficácia de suas estratégias. Esses KPIs não apenas fornecem uma visão clara do desempenho atual, mas também ajudam a identificar tendências e áreas que necessitam de atenção. Os drivers de valor da Lojas Quero-Quero incluem a expansão da rede de lojas, a eficiência nas operações, a gestão de crédito e cobrança, além da capacidade de se adaptar rapidamente às condições econômicas em constante mudança.\n\nEntretanto, a empresa enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade do consumo, impulsionada por fatores econômicos e sociais, representa um desafio significativo. Além disso, a concorrência acirrada no setor de varejo exige que a Lojas Quero-Quero mantenha um diferencial competitivo, seja por meio de preços, variedade de produtos ou serviços adicionais. A inadimplência dos clientes é outro risco relevante, especialmente considerando a oferta de crédito, que pode afetar a liquidez e a rentabilidade da empresa. A pressão sobre as margens, decorrente de custos de capital elevados e da necessidade de investimentos contínuos em infraestrutura e tecnologia, também é uma preocupação constante.\n\nA estrutura de capital da Lojas Quero-Quero é caracterizada por uma combinação de dívida e capital próprio, com a recente emissão de debêntures sendo uma estratégia para alongar o perfil do passivo e manter spreads financeiros em níveis sustentáveis. Essa abordagem visa garantir a flexibilidade financeira necessária para enfrentar desafios e aproveitar oportunidades de crescimento. A empresa está sujeita a regulação do setor financeiro, especialmente no que diz respeito à concessão de crédito e à gestão de riscos associados, o que exige uma governança robusta e uma gestão proativa.\n\nA sensibilidade a fatores macroeconômicos é um aspecto crucial para a Lojas Quero-Quero. Mudanças nas taxas de juros podem impactar diretamente o custo de capital e a demanda por crédito, influenciando, por sua vez, o consumo no varejo. Em um ambiente econômico desafiador, a companhia tem demonstrado resiliência, mantendo um foco na disciplina financeira e na geração de fluxo de caixa. Essa abordagem é fundamental para sua estratégia de longo prazo, permitindo que a Lojas Quero-Quero não apenas sobreviva, mas também prospere em um mercado em constante evolução. A capacidade de adaptação e a busca por eficiência operacional são pilares que sustentam a trajetória de crescimento da empresa, posicionando-a como uma referência no setor de varejo de materiais de construção no Brasil.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.7 bi (trimestre) | R$2.0 bi (LTM)\n- EBITDA: R$0.0 bi (trimestre) | R$0.1 bi (LTM) | Margem 5.1%\n- Lucro Líquido: R$-0.0 bi (trimestre) | R$-0.1 bi (LTM)\n- Dívida Líquida: R$0.4 bi\n- Capex: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Operacional: A Companhia encerrou o trimestre com 584 lojas, inaugurando 5 novas lojas no período. As Vendas Mesmas Lojas (SSS) apresentaram queda de 11,6% em relação ao mesmo período do ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 695400000,
+      "receita_liquida_ltm": 2034300000,
+      "ebitda_tri": 35400000,
+      "ebitda_ltm": 107200000,
+      "lucro_liquido_tri": -42100000,
+      "lucro_liquido_ltm": -119300000,
+      "divida_liquida": 427400000,
+      "divida_bruta": null,
+      "capex_tri": 12900000,
+      "capex_ltm": 38900000,
+      "margem_ebitda_pct": 5.1,
+      "margem_liquida_pct": -6.1
+    },
+    "operacionais": {
+      "descricao": "A Companhia encerrou o trimestre com 584 lojas, inaugurando 5 novas lojas no período. As Vendas Mesmas Lojas (SSS) apresentaram queda de 11,6% em relação ao mesmo período do ano anterior.",
+      "metricas": {
+        "total_lojas": 584,
+        "vendas_mesmas_lojas_pct": -11.6
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:54:54.060933Z"
+}

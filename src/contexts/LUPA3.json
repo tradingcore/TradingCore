@@ -1,0 +1,34 @@
+{
+  "ticker": "LUPA3",
+  "codigo_cvm": "20060",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20060_2025-09-30_LUPATECH_SA.pdf",
+  "texto_contexto": "A Lupatech S.A. é uma empresa brasileira que se destaca no setor de petróleo e gás, com um foco particular na manufatura de produtos de alto valor agregado. Seu portfólio inclui uma variedade de itens essenciais, como válvulas industriais, válvulas específicas para o segmento de óleo e gás, cabos para ancoragem de plataformas de petróleo e artefatos de materiais compósitos, que abrangem desde postes de energia até tubos utilizados no revestimento de tubulações petroleiras. O modelo de negócio da Lupatech é centrado na produção e comercialização desses produtos, além de oferecer serviços relacionados ao setor, embora a empresa esteja atualmente em um processo de desmobilização de algumas de suas operações nesse segmento.\n\nOs principais indicadores de desempenho da Lupatech, como a receita líquida, o EBITDA ajustado e a margem bruta, são fundamentais para avaliar a eficiência operacional e a rentabilidade da companhia. A receita líquida é um reflexo da capacidade da empresa em gerar vendas, enquanto o EBITDA ajustado oferece uma visão mais clara sobre a lucratividade operacional, excluindo itens que não são recorrentes. A margem bruta, por sua vez, é um indicador crucial da eficiência na produção e na gestão de custos, permitindo que a empresa identifique áreas de melhoria e potencial de crescimento.\n\nOs drivers de valor que impulsionam o desempenho da Lupatech incluem a capacidade de inovação em seus produtos, que é vital em um setor tão dinâmico e competitivo. A eficiência na gestão de custos também é um fator determinante, especialmente em um ambiente onde a volatilidade dos preços do petróleo e gás pode impactar significativamente a margem de lucro. A expansão da presença da empresa no mercado de óleo e gás é outro aspecto crítico, assim como a habilidade de captar recursos financeiros para sustentar suas operações e projetos. Essa captação é particularmente desafiadora em um cenário de juros altos, que pode restringir o acesso ao capital necessário para investimentos e crescimento.\n\nA estrutura de capital da Lupatech é caracterizada por uma combinação de dívida e patrimônio líquido, com um nível de endividamento que inclui créditos sujeitos à recuperação judicial. A empresa tem se empenhado em reestruturar sua dívida e melhorar sua liquidez, um passo essencial para garantir sua sustentabilidade financeira a longo prazo. A regulação do setor de petróleo e gás no Brasil também exerce um impacto significativo sobre as operações da Lupatech, exigindo conformidade com normas ambientais e de segurança, além de influenciar a dinâmica de mercado e as oportunidades de negócios.\n\nOs riscos que a Lupatech enfrenta são variados e incluem a volatilidade do mercado de petróleo e gás, flutuações cambiais e a dependência de financiamento externo. Esses fatores podem afetar diretamente a capacidade da empresa de operar de maneira eficiente e lucrativa. Além disso, eventos críticos, como a conclusão de processos de recuperação judicial e a capacidade de desmobilizar ativos não operacionais, são fundamentais para a saúde financeira da empresa. A resposta da Lupatech a mudanças nas condições econômicas e de mercado também é crucial, pois essas variáveis podem impactar a demanda por seus produtos e serviços.\n\nA empresa está atenta a grandes projetos de investimento no setor de petróleo e gás, que podem representar oportunidades de crescimento nos próximos anos. No entanto, a Lupatech deve navegar por um cenário desafiador, que exige não apenas uma gestão financeira rigorosa, mas também uma estratégia clara de inovação e adaptação às mudanças do mercado. A capacidade de se reposicionar e responder rapidamente às demandas do setor será determinante para garantir sua recuperação e expansão, permitindo que a Lupatech mantenha sua relevância em um mercado em constante evolução.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- EBITDA: R$-0.0 bi (trimestre) | R$-0.0 bi (LTM) | Margem -21.7%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$-0.0 bi (LTM)\n- Dívida: R$0.2 bi (líquida) | R$0.2 bi (bruta)\n- Operacional: A receita líquida total consolidada alcançou R$ 13,4 milhões, com um lucro líquido positivo de R$ 5,1 milhões no 3T25, influenciado por ajustes de dívidas e recuperação de créditos.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 13380000,
+      "receita_liquida_ltm": 45438000,
+      "ebitda_tri": -2899000,
+      "ebitda_ltm": -12110000,
+      "lucro_liquido_tri": 5120000,
+      "lucro_liquido_ltm": -18909000,
+      "divida_liquida": 171430000,
+      "divida_bruta": 172815000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": -21.7,
+      "margem_liquida_pct": 38.3
+    },
+    "operacionais": {
+      "descricao": "A receita líquida total consolidada alcançou R$ 13,4 milhões, com um lucro líquido positivo de R$ 5,1 milhões no 3T25, influenciado por ajustes de dívidas e recuperação de créditos.",
+      "metricas": {
+        "carteira_pedidos": 50300000,
+        "estoques": 21464000,
+        "contas_a_receber": 17078000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:57:25.504476Z"
+}

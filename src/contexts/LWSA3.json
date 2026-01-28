@@ -1,0 +1,34 @@
+{
+  "ticker": "LWSA3",
+  "codigo_cvm": "24910",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "24910_2025-09-30_LWSA_SA.pdf",
+  "texto_contexto": "A Locaweb (LWSA3) se destaca como uma das principais referências em transformação digital no Brasil, oferecendo um portfólio diversificado de serviços que são fundamentais para a digitalização de negócios de diferentes tamanhos e setores. Com uma proposta de valor centrada na integração de soluções, a empresa atende a mais de 700 mil clientes, que variam desde pequenas e médias empresas (PMEs) até grandes corporações, refletindo sua capacidade de adaptação e personalização de serviços conforme as necessidades de cada segmento.\n\nO modelo de negócio da Locaweb é estruturado em torno de dois principais segmentos: o Commerce, que abrange a comercialização de produtos e serviços online, e o BeOnline/SaaS, que oferece soluções de software como serviço. Essa divisão permite à empresa não apenas diversificar suas fontes de receita, mas também criar sinergias operacionais que potencializam a eficiência e a rentabilidade. A Locaweb tem se beneficiado de um crescimento robusto em seu segmento de Commerce, impulsionado pela crescente adoção do e-commerce no Brasil e pela digitalização acelerada de negócios, especialmente em um cenário pós-pandemia.\n\nOs principais indicadores de desempenho (KPIs) da Locaweb, como o Gross Merchandise Volume (GMV) e o Total Payment Volume (TPV), são reflexos diretos do sucesso de suas operações e da aceitação de suas soluções no mercado. O crescimento da receita líquida consolidada, que tem mostrado um desempenho positivo, é um sinal de que a empresa está não apenas expandindo sua base de clientes, mas também aumentando o Average Revenue Per User (ARPU), o que indica uma maior monetização de sua base existente.\n\nEntretanto, a Locaweb não está isenta de riscos. A volatilidade do mercado, a intensa concorrência no setor de tecnologia e a dependência de um ambiente regulatório que pode ser alterado a qualquer momento são fatores que podem impactar suas operações. A estrutura de capital da empresa é robusta, com um saldo de caixa significativo e uma dívida bruta que permanece em zero, o que proporciona uma posição financeira sólida e flexibilidade para investimentos futuros. Essa saúde financeira é crucial para enfrentar os desafios do mercado e explorar novas oportunidades de crescimento.\n\nA governança da Locaweb é um aspecto importante que contribui para sua resiliência e capacidade de adaptação. A empresa tem se mostrado proativa em relação à conformidade regulatória, especialmente em um setor onde as normas podem mudar rapidamente. A regulação do setor de tecnologia e serviços financeiros no Brasil é um fator crítico, e a Locaweb precisa estar atenta às mudanças nas políticas governamentais e nas normas de compliance, que podem afetar suas operações e estratégias de mercado.\n\nAlém disso, a Locaweb tem tomado decisões estratégicas, como a venda de unidades de negócios menos rentáveis, como a Wake Creators e a carteira da Nextios, para se concentrar em operações mais lucrativas. Essas movimentações visam não apenas melhorar as margens consolidadas da empresa, mas também fortalecer sua posição no mercado de transformação digital, permitindo que a Locaweb se mantenha competitiva em um ambiente dinâmico e em constante evolução.\n\nA sensibilidade macroeconômica também desempenha um papel significativo nas operações da Locaweb. Fatores como a inflação, as taxas de juros e o crescimento econômico podem influenciar a disposição das empresas em investir em soluções digitais. Em um cenário de incerteza econômica, a capacidade da Locaweb de se adaptar e inovar será crucial para manter sua trajetória de crescimento e continuar a oferecer valor aos seus clientes.\n\nEm suma, a Locaweb se posiciona como uma empresa resiliente e inovadora, com um modelo de negócio que se adapta às necessidades do mercado em constante mudança. Sua capacidade de oferecer soluções integradas, aliada a uma estrutura de capital sólida e uma governança eficaz, coloca a empresa em uma posição favorável para enfrentar os desafios e aproveitar as oportunidades que surgem no cenário da transformação digital.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.4 bi (trimestre) | R$1.1 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.2 bi (LTM) | Margem 22.5%\n- Lucro Líquido: R$-0.3 bi (trimestre) | R$-0.3 bi (LTM)\n- Operacional: Crescimento de 16,8% no GMV do Ecossistema, totalizando R$ 20,3 bilhões; 204,7 mil assinantes de plataforma, com crescimento de 7,0%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 387400000,
+      "receita_liquida_ltm": 1107100000,
+      "ebitda_tri": 87000000,
+      "ebitda_ltm": 233100000,
+      "lucro_liquido_tri": -287800000,
+      "lucro_liquido_ltm": -257200000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 22.5,
+      "margem_liquida_pct": -74.3
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 16,8% no GMV do Ecossistema, totalizando R$ 20,3 bilhões; 204,7 mil assinantes de plataforma, com crescimento de 7,0%.",
+      "metricas": {
+        "gmv_ecossistema": 20292600000,
+        "assinantes_plataforma": 204700,
+        "tpv": 2278300000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:58:24.035345Z"
+}

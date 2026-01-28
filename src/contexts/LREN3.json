@@ -1,0 +1,34 @@
+{
+  "ticker": "LREN3",
+  "codigo_cvm": "8133",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "8133_2025-09-30_LOJAS_RENNER_SA.pdf",
+  "texto_contexto": "A Lojas Renner S.A. se destaca como um dos principais players no setor de varejo de moda e lifestyle na América Latina, operando em um ecossistema que combina a venda de produtos e serviços de qualidade através de uma experiência omnichannel. Com presença no Brasil, Argentina e Uruguai, a empresa se posiciona de forma estratégica para atender um público diversificado, especialmente as classes média e alta, por meio de suas diversas marcas, que incluem Renner, Camicado, Youcom, Realize CFI e Repassa. Este modelo de negócio é fundamentado na integração das operações de varejo físico e digital, permitindo que os consumidores transitem entre as plataformas de maneira fluida, o que é cada vez mais valorizado em um cenário de consumo que prioriza a conveniência e a personalização.\n\nOs segmentos de atuação da Lojas Renner são amplos, abrangendo vestuário, decoração e serviços financeiros. Essa diversificação não apenas amplia o portfólio da empresa, mas também a protege contra flutuações em setores específicos, permitindo uma melhor gestão de riscos. A companhia tem se concentrado em inovações constantes em seus produtos e na experiência do cliente, o que se reflete em seus principais indicadores de desempenho (KPIs). A receita líquida de varejo, a margem bruta, o EBITDA ajustado, o lucro líquido e o fluxo de caixa livre são métricas que evidenciam a saúde financeira da empresa e sua capacidade de gerar valor. Além disso, a penetração do GMV digital e o crescimento das vendas em mesmas lojas são indicadores cruciais que demonstram a eficácia das estratégias de vendas e marketing implementadas.\n\nOs drivers de valor da Lojas Renner são variados e incluem a capacidade de inovação em produtos, a eficiência na gestão de estoques e a experiência do cliente. A expansão da rede de lojas também é um fator determinante para o aumento da participação de mercado e da rentabilidade. No entanto, a empresa enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade econômica, as mudanças nas preferências dos consumidores e a intensa concorrência no setor de varejo são desafios constantes. Além disso, a dependência de condições climáticas, que pode afetar as vendas sazonais, é um fator que a Lojas Renner deve monitorar de perto.\n\nA estrutura de capital da Lojas Renner é robusta, com uma posição de caixa líquida significativa que proporciona flexibilidade para investimentos estratégicos e distribuição de dividendos aos acionistas. Essa solidez financeira é um ativo valioso em um ambiente de negócios dinâmico, permitindo que a empresa se adapte rapidamente a novas oportunidades e desafios. A governança corporativa da companhia é de alto nível, seguindo as normas do Banco Central do Brasil e sendo listada no Novo Mercado da B3, o que reforça seu compromisso com a transparência e a responsabilidade.\n\nEventos críticos, como a abertura de novas lojas, reformas de unidades existentes, lançamentos de produtos e mudanças nas políticas de crédito e financiamento, especialmente relacionadas à Realize CFI, podem impactar significativamente a operação da Lojas Renner. A capacidade de adaptação a essas dinâmicas e a manutenção de um portfólio de produtos atrativo são essenciais para sustentar o crescimento e a competitividade da empresa no mercado. Além disso, a sensibilidade a fatores macroeconômicos, como taxas de juros, inflação e variações cambiais, pode influenciar o comportamento do consumidor e, consequentemente, as vendas. Em um cenário em constante mudança, a Lojas Renner deve continuar a inovar e a se adaptar para garantir sua posição de destaque no setor de varejo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$3.1 bi (trimestre) | R$9.5 bi (LTM)\n- EBITDA: R$0.6 bi (trimestre) | R$2.1 bi (LTM) | Margem 19.3%\n- Lucro Líquido: R$0.3 bi (trimestre) | R$0.9 bi (LTM)\n- Dívida Líquida: R$1.3 bi\n- Operacional: Receita líquida de varejo de R$ 3,08 bilhões, crescimento de 4,2% em relação ao ano anterior. Lucro líquido de R$ 279,4 milhões, aumento de 9,4%. Geração de fluxo de caixa livre de R$ 473,1 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 3079100000,
+      "receita_liquida_ltm": 9485700000,
+      "ebitda_tri": 593800000,
+      "ebitda_ltm": 2070900000,
+      "lucro_liquido_tri": 279400000,
+      "lucro_liquido_ltm": 904900000,
+      "divida_liquida": 1300000000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 19.3,
+      "margem_liquida_pct": 9.1
+    },
+    "operacionais": {
+      "descricao": "Receita líquida de varejo de R$ 3,08 bilhões, crescimento de 4,2% em relação ao ano anterior. Lucro líquido de R$ 279,4 milhões, aumento de 9,4%. Geração de fluxo de caixa livre de R$ 473,1 milhões.",
+      "metricas": {
+        "vendas_em_mesmas_lojas_pct": 3.1,
+        "gmv_digital": 679800000,
+        "clientes_ativos": 4700000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:55:53.357105Z"
+}
