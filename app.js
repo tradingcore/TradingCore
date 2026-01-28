@@ -273,6 +273,7 @@ const showSection = (sectionName) => {
   } else if (sectionName === "mapa" && sectionMapa) {
     sectionMapa.classList.remove("hidden");
     loadHeatmap();
+  }
   
   // Update nav active state
   document.querySelectorAll(".nav-dashboard-item").forEach((item) => {

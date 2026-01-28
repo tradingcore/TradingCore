@@ -1,0 +1,33 @@
+{
+  "ticker": "PETR4",
+  "codigo_cvm": "9512",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "9512_2025-09-30_PETRÓLEO_BRASILEIRO_SA_-_PETROBRAS.pdf",
+  "texto_contexto": "A Petrobras (PETR4) é uma das principais empresas do setor de petróleo e gás no Brasil, operando como uma estatal com um modelo de negócio que busca maximizar a eficiência operacional e gerar valor para seus acionistas. A companhia se destaca em diversas atividades que vão desde a exploração e produção de petróleo e gás natural até o refino, transporte e comercialização de seus derivados. Nos últimos anos, a Petrobras tem se empenhado em diversificar suas operações, investindo também em energias de baixo carbono, refletindo uma tendência global de transição energética e sustentabilidade.\n\nO modelo de negócios da Petrobras é estruturado em segmentos distintos que permitem uma abordagem integrada e sinérgica. O segmento de Exploração e Produção (E&P) é o coração da empresa, responsável pela descoberta e extração de petróleo e gás em diversas bacias sedimentares do Brasil. Este segmento é crucial, pois a capacidade de produção e a eficiência na gestão de custos são fatores determinantes para a rentabilidade da companhia. O segmento de Refino, Transporte e Comercialização (RTC) complementa a cadeia produtiva ao transformar o petróleo bruto em produtos acabados e garantir sua distribuição. Por fim, o segmento de Gás e Energias de Baixo Carbono (G&EBC) representa um esforço da Petrobras em se adaptar às novas demandas do mercado, focando na logística e comercialização de gás natural, bem como na geração de eletricidade a partir de fontes renováveis.\n\nOs principais indicadores de desempenho da Petrobras, como EBITDA Ajustado, lucro líquido, fluxo de caixa livre e dívida líquida, são fundamentais para a avaliação da saúde financeira da empresa. O EBITDA Ajustado, por exemplo, fornece uma visão clara da capacidade da companhia de gerar lucro antes de deduzir juros, impostos, depreciação e amortização, enquanto o fluxo de caixa livre é um indicador vital da capacidade da empresa de financiar suas operações e investimentos. A relação entre dívida líquida e EBITDA é um reflexo da alavancagem da empresa, que deve ser monitorada de perto, especialmente em um setor tão volátil quanto o de petróleo e gás.\n\nOs drivers de valor da Petrobras são influenciados por diversos fatores, incluindo a capacidade de produção, a eficiência na gestão de custos, a evolução dos preços do petróleo e a habilidade de realizar investimentos estratégicos em novos projetos e tecnologias. A volatilidade dos preços do petróleo, por sua vez, é um risco significativo que a empresa enfrenta, uma vez que flutuações nos preços podem impactar diretamente sua receita e lucratividade. Além disso, a Petrobras está sujeita a riscos cambiais, dado que parte de suas operações e receitas é atrelada a moedas estrangeiras, o que pode afetar sua competitividade e margem de lucro.\n\nA estrutura de capital da Petrobras é composta por uma combinação de dívida bruta e patrimônio líquido, refletindo a necessidade de financiamento para suas operações e investimentos. A empresa deve equilibrar sua alavancagem com a necessidade de manter uma posição financeira saudável, especialmente em um ambiente de incertezas econômicas e regulatórias. A governança corporativa é outro aspecto crítico, pois a percepção do mercado sobre a gestão da empresa e sua transparência pode influenciar diretamente sua valorização e capacidade de atrair investidores.\n\nA regulação do setor de petróleo e gás no Brasil é complexa e está sujeita a mudanças frequentes, influenciada por políticas governamentais e pela supervisão da Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP). A conformidade com as normas regulatórias é essencial para a operação da Petrobras, que deve se adaptar continuamente às exigências do governo e às expectativas da sociedade em relação à sustentabilidade e responsabilidade ambiental.\n\nA competição no setor é intensa, com a Petrobras enfrentando desafios tanto de empresas estatais quanto de privadas, que buscam expandir suas operações e conquistar participação de mercado. A capacidade da Petrobras de inovar e se adaptar às novas realidades do mercado será crucial para sua sustentabilidade a longo prazo. Eventos críticos, como a implementação de novos projetos de exploração e produção, a modernização de suas refinarias e a adaptação às exigências de sustentabilidade, são fundamentais para o futuro da empresa. A Petrobras deve, portanto, navegar por um cenário complexo, onde a governança corporativa, a percepção do mercado e a adaptação às mudanças regulatórias e ambientais desempenham papéis essenciais em sua trajetória.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$23.5 bi (trimestre) | R$65.6 bi (LTM)\n- EBITDA: R$12.0 bi (trimestre) | R$32.8 bi (LTM) | Margem 51.1%\n- Lucro Líquido: R$6.0 bi (trimestre) | R$16.7 bi (LTM)\n- Dívida: R$59.1 bi (líquida) | R$70.7 bi (bruta)\n- Capex: R$5.5 bi (trimestre) | R$14.0 bi (LTM)\n- Operacional: Produção média de 3,14 milhões de boe/d, recorde de exportações de 814 mil bpd.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 23477000000,
+      "receita_liquida_ltm": 65587000000,
+      "ebitda_tri": 12000000000,
+      "ebitda_ltm": 32838000000,
+      "lucro_liquido_tri": 6027000000,
+      "lucro_liquido_ltm": 16735000000,
+      "divida_liquida": 59053000000,
+      "divida_bruta": 70711000000,
+      "capex_tri": 5510000000,
+      "capex_ltm": 14006000000,
+      "margem_ebitda_pct": 51.1,
+      "margem_liquida_pct": 25.7
+    },
+    "operacionais": {
+      "descricao": "Produção média de 3,14 milhões de boe/d, recorde de exportações de 814 mil bpd.",
+      "metricas": {
+        "producao_media": 3140000,
+        "exportacoes": 814000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T00:36:30.325555Z"
+}
