@@ -1,0 +1,34 @@
+{
+  "ticker": "MBLY3",
+  "codigo_cvm": "25461",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25461_2025-09-30_GRUPO_TOKY_SA.pdf",
+  "texto_contexto": "O Grupo Toky (MBLY3) se posiciona de maneira estratégica no dinâmico setor de e-commerce e varejo, destacando-se pela integração de suas operações online e físicas. Com um portfólio diversificado que abrange principalmente móveis e itens de decoração, a empresa opera através de marcas reconhecidas como Mobly e Tok&Stok, que não apenas oferecem produtos de qualidade, mas também proporcionam uma experiência de compra diferenciada. Essa sinergia entre as marcas permite ao Grupo Toky maximizar a eficiência operacional e a rentabilidade, criando um modelo de negócio que se adapta às demandas do mercado contemporâneo.\n\nOs segmentos de atuação do Grupo são variados, englobando vendas diretas por meio de plataformas de e-commerce, um marketplace robusto e lojas físicas que complementam a experiência do consumidor. A empresa tem se concentrado em otimizar custos e aprimorar a experiência do cliente, reconhecendo que a satisfação do consumidor é um dos principais motores de crescimento. A crescente digitalização das compras e a mudança nas preferências dos consumidores, que cada vez mais optam por canais online, têm impulsionado a estratégia do Grupo Toky, que busca não apenas acompanhar, mas liderar essas tendências.\n\nOs principais indicadores de desempenho (KPIs) do Grupo Toky são fundamentais para avaliar sua saúde financeira e operacional. O Gross Merchandise Value (GMV) e a Receita Operacional Líquida são métricas cruciais que refletem o volume de vendas e a eficiência das operações. A margem bruta consolidada, que demonstra a eficácia nas negociações com fornecedores, é um indicativo da capacidade da empresa de manter a rentabilidade, especialmente com a contribuição significativa da Tok&Stok, que opera com margens superiores. O EBITDA, por sua vez, é um reflexo da recuperação e da eficiência operacional, evidenciando a trajetória positiva da empresa em um ambiente competitivo.\n\nOs drivers de valor do Grupo Toky são amplos e incluem a integração das operações das marcas, a captura de sinergias operacionais e a eficiência na gestão de custos logísticos. A capacidade de se adaptar rapidamente às mudanças nas preferências dos consumidores, especialmente com o aumento das vendas online, é um diferencial competitivo que a empresa busca explorar continuamente. Além disso, estratégias de marketing mais eficientes e a otimização da estrutura de distribuição são fundamentais para sustentar o crescimento e a rentabilidade.\n\nEntretanto, o Grupo Toky não está isento de riscos. A dependência de fornecedores e a volatilidade do mercado podem impactar a disponibilidade de produtos e a capacidade de atender à demanda, criando desafios que precisam ser geridos com cautela. A empresa também enfrenta riscos regulatórios e fiscais, que podem afetar sua operação e a conformidade com as normas do setor. A gestão proativa desses riscos é essencial para garantir a continuidade do crescimento e a estabilidade financeira.\n\nA estrutura de capital do Grupo Toky tem sido fortalecida por meio de ações estratégicas, como a emissão de debêntures e um aumento de capital, que visam reduzir a alavancagem e melhorar a posição financeira da empresa. Essas iniciativas são fundamentais para a sustentabilidade a longo prazo, permitindo uma redução significativa do endividamento bruto e proporcionando maior flexibilidade financeira para investimentos futuros.\n\nEventos críticos, como a aprovação de aditamentos relacionados às debêntures e a continuidade da integração das operações, são fatores que podem impactar diretamente o desempenho do Grupo. A capacidade de capturar as sinergias esperadas e a adaptação às condições de mercado são essenciais, especialmente em períodos de alta sazonalidade, como datas festivas e promoções significativas. A vigilância constante sobre as tendências de consumo e as condições de mercado permitirá ao Grupo Toky não apenas reagir, mas também antecipar-se às mudanças, garantindo sua posição de destaque no setor de e-commerce e varejo. \n\nEm um cenário macroeconômico em constante evolução, a sensibilidade a fatores externos, como variações na economia, mudanças nas políticas fiscais e monetárias, e a concorrência crescente, exigem que o Grupo Toky mantenha uma abordagem ágil e inovadora. A capacidade de se adaptar rapidamente a essas condições será crucial para o sucesso contínuo da empresa, permitindo que ela não apenas sobreviva, mas prospere em um ambiente competitivo e desafiador.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.3 bi (trimestre) | R$1.1 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.1 bi (LTM) | Margem 20.9%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Operacional: GMV consolidado de R$ 494,4 milhões, crescimento de 150% em relação ao 3T24. Receita líquida de R$ 339,8 milhões, crescimento de 125,2% em relação ao ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 339800000,
+      "receita_liquida_ltm": 1051500000,
+      "ebitda_tri": 70900000,
+      "ebitda_ltm": 148900000,
+      "lucro_liquido_tri": 15400000,
+      "lucro_liquido_ltm": 15700000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 20.9,
+      "margem_liquida_pct": 4.5
+    },
+    "operacionais": {
+      "descricao": "GMV consolidado de R$ 494,4 milhões, crescimento de 150% em relação ao 3T24. Receita líquida de R$ 339,8 milhões, crescimento de 125,2% em relação ao ano anterior.",
+      "metricas": {
+        "gmv": 494400000,
+        "crescimento_gmv_pct": 150,
+        "crescimento_receita_pct": 125.2
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:24:07.701236Z"
+}

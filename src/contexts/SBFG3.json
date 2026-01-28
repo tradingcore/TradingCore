@@ -1,0 +1,37 @@
+{
+  "ticker": "SBFG3",
+  "codigo_cvm": "24694",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "24694_2025-09-30_GRUPO_SBF_SA.pdf",
+  "texto_contexto": "O Grupo SBF se destaca como uma das principais referências no varejo de artigos esportivos no Brasil, operando sob um modelo de negócios que combina a tradição das lojas físicas com a modernidade das plataformas digitais. Com suas duas unidades de negócio, Centauro e Fisia, a empresa não apenas lidera o mercado, mas também inova ao adotar um modelo omnichannel que proporciona uma experiência de compra integrada e fluida para os consumidores. A Centauro, como a maior varejista de artigos esportivos do país, tem se mostrado uma força significativa no varejo, enquanto a Fisia, como representante exclusiva da Nike, fortalece a presença da marca no Brasil, ampliando o portfólio de produtos disponíveis para os consumidores.\n\nO modelo de negócios do Grupo SBF é fundamentado na sinergia entre suas operações físicas e digitais, permitindo que os clientes transitem entre diferentes canais de compra com facilidade. Essa abordagem não apenas melhora a experiência do consumidor, mas também maximiza as oportunidades de vendas, uma vez que a empresa pode atender a uma base de clientes diversificada, que busca conveniência e variedade. Os segmentos de atuação abrangem o varejo de produtos esportivos, tanto em lojas físicas quanto online, além de um canal de atacado que complementa a estratégia de distribuição.\n\nOs principais indicadores de desempenho da empresa, como receita líquida, lucro bruto, margem bruta, EBITDA e lucro líquido, são reflexos diretos da eficácia de sua estratégia. O crescimento contínuo da receita líquida e do lucro bruto é impulsionado por uma combinação de fatores, incluindo o aumento das vendas em ambas as frentes – física e digital – a expansão da rede de lojas e a implementação de melhorias na gestão de estoques. A capacidade de inovação em produtos, a eficiência operacional e a experiência do cliente são considerados drivers de valor essenciais, especialmente em um mercado competitivo como o de artigos esportivos, onde a força da marca, particularmente em segmentos como calçados e vestuário esportivo, desempenha um papel crucial.\n\nEntretanto, o Grupo SBF enfrenta uma série de riscos que podem impactar sua performance. A volatilidade cambial é um fator significativo, uma vez que pode afetar os custos de produtos importados, especialmente aqueles vinculados à marca Nike. Além disso, a concorrência acirrada no setor de varejo esportivo exige que a empresa mantenha um diferencial competitivo constante, o que pode ser desafiador em um ambiente de mercado em rápida evolução. A dependência de marcas como a Nike, embora traga prestígio e reconhecimento, também implica riscos, pois qualquer alteração na relação comercial pode impactar diretamente a performance da Fisia.\n\nA estrutura de capital do Grupo SBF é caracterizada por um nível de endividamento controlado, refletindo um compromisso com a manutenção de uma base financeira saudável. A alavancagem moderada sugere que a empresa está bem posicionada para suportar investimentos necessários para sustentar seu crescimento, mesmo em um cenário econômico desafiador. A governança corporativa da empresa é estruturada para garantir transparência e responsabilidade, fatores que são cada vez mais valorizados por investidores e consumidores.\n\nNo que diz respeito à regulação, o setor de varejo no Brasil enfrenta um ambiente complexo, com questões tributárias e de compliance que podem impactar as operações do Grupo SBF. Mudanças na legislação fiscal e flutuações econômicas que afetam o consumo são eventos críticos que a empresa deve monitorar de perto. A capacidade de adaptação às tendências de mercado, como a crescente demanda por canais digitais e experiências de compra personalizadas, é fundamental para a sustentabilidade do negócio.\n\nEm um cenário macroeconômico, a sensibilidade do Grupo SBF a fatores como a inflação, taxas de juros e o comportamento do consumidor é evidente. A empresa deve estar atenta às mudanças nas condições econômicas que podem influenciar o poder de compra dos consumidores e, consequentemente, suas vendas. A execução eficaz de seu ciclo estratégico, que visa gerar valor sustentável para acionistas, colaboradores e clientes, será crucial para que o Grupo SBF continue a prosperar em um mercado dinâmico e competitivo. A busca por inovação, eficiência e uma experiência do cliente diferenciada será o que permitirá à empresa não apenas sobreviver, mas também se destacar em um setor em constante transformação.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.9 bi (trimestre) | R$5.3 bi (LTM)\n- EBITDA: R$0.2 bi (trimestre) | R$0.7 bi (LTM) | Margem 12.5%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- Dívida Líquida: R$0.7 bi\n- Operacional: Crescimento de 9% na receita líquida em relação ao 3T24, totalizando R$ 1,9 bilhão. Lucro bruto de R$ 917,7 milhões com margem bruta de 47,4%. A Centauro teve receita líquida de R$ 1,0 bilhão e a Fisia R$ 1,1 bilhão.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1936522000,
+      "receita_liquida_ltm": 5308581000,
+      "ebitda_tri": 242677000,
+      "ebitda_ltm": 680420000,
+      "lucro_liquido_tri": 85854000,
+      "lucro_liquido_ltm": 199637000,
+      "divida_liquida": 674400000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 12.5,
+      "margem_liquida_pct": 4.4
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 9% na receita líquida em relação ao 3T24, totalizando R$ 1,9 bilhão. Lucro bruto de R$ 917,7 milhões com margem bruta de 47,4%. A Centauro teve receita líquida de R$ 1,0 bilhão e a Fisia R$ 1,1 bilhão.",
+      "metricas": {
+        "crescimento_receita_centauro_pct": 14.6,
+        "crescimento_receita_fisia_pct": 9.2,
+        "lucro_bruto_centauro": 510500000,
+        "lucro_bruto_fisia": 424800000,
+        "n_lojas_centauro": 228,
+        "n_lojas_fisia": 48
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:23:15.919662Z"
+}
