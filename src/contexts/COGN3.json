@@ -1,0 +1,33 @@
+{
+  "ticker": "COGN3",
+  "codigo_cvm": "17973",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "17973_2025-09-30_COGNA_EDUCAÇÃO_SA.pdf",
+  "texto_contexto": "A Cogna Educação S.A. se destaca como uma das principais empresas do setor educacional brasileiro, operando com um modelo de negócio diversificado que abrange três segmentos principais: Kroton, Vasta e Saber. O segmento Kroton é voltado para a educação superior, oferecendo uma ampla gama de cursos de graduação e pós-graduação, enquanto a Vasta se concentra em soluções de conteúdo e tecnologia para escolas, promovendo a inovação no ambiente educacional. Por sua vez, o Saber é responsável pela produção de materiais didáticos e soluções educacionais, complementando a oferta da empresa e reforçando seu compromisso com a qualidade do ensino.\n\nO modelo de negócio da Cogna é fundamentado na captação e retenção de alunos, o que exige um foco constante na qualidade do ensino e na inovação tecnológica. A empresa busca atender às demandas de um mercado educacional em constante evolução, onde a adaptação às novas tecnologias e metodologias de ensino é crucial. Nesse contexto, a Cogna investe em plataformas digitais e ferramentas que facilitam o aprendizado, além de promover uma experiência educacional que se alinha às expectativas dos estudantes e do mercado de trabalho.\n\nOs principais indicadores de desempenho da Cogna, como receita líquida, EBITDA recorrente, margem EBITDA, lucro líquido e geração de caixa livre, são essenciais para avaliar a eficiência operacional e a rentabilidade da companhia. O crescimento da base de alunos é um dos principais drivers de valor, refletindo a capacidade da empresa de atrair e manter estudantes em um ambiente competitivo. A diversificação do portfólio de produtos e serviços também se mostra fundamental, permitindo que a Cogna se posicione de maneira estratégica em diferentes nichos do mercado educacional. A eficiência na gestão de custos e a capacidade de adaptação às mudanças regulatórias e de mercado são fatores que contribuem para a sustentabilidade e o crescimento da empresa.\n\nEntretanto, a Cogna enfrenta uma série de riscos que podem impactar seu desempenho. A concorrência acirrada no setor educacional exige que a empresa esteja sempre atenta às estratégias de seus concorrentes e às tendências do mercado. Além disso, mudanças nas regulamentações governamentais podem afetar a operação da empresa, exigindo adaptações rápidas e eficazes. A flutuação na demanda por cursos e serviços educacionais, influenciada por fatores econômicos e sociais, também representa um desafio constante. Riscos financeiros relacionados à gestão de dívidas e à geração de caixa são aspectos que a empresa precisa monitorar de perto, especialmente em um cenário de incertezas econômicas.\n\nA estrutura de capital da Cogna é caracterizada por um nível de endividamento que tem sido gerido de forma a garantir a saúde financeira da empresa. A redução da dívida líquida ao longo do tempo reflete uma estratégia de gestão de passivos que visa melhorar a geração de caixa e fortalecer a posição da empresa no mercado. Essa abordagem permite que a Cogna mantenha uma flexibilidade financeira que é crucial para enfrentar os desafios do setor.\n\nA governança corporativa da Cogna é um aspecto importante que contribui para a transparência e a confiança dos investidores. A empresa adota práticas que visam garantir a conformidade com as regulamentações e a ética nos negócios, promovendo um ambiente de responsabilidade e integridade. A regulação do setor educacional no Brasil é um fator crítico, uma vez que a Cogna deve se adaptar às normas do Ministério da Educação e às diretrizes de qualidade estabelecidas. Eventos críticos, como aquisições estratégicas e mudanças nas políticas educacionais, podem impactar a operação e o desempenho financeiro da empresa. A aquisição da Faculdade de Medicina de Dourados e a oferta pública de ações da Vasta são exemplos de iniciativas que visam fortalecer a posição da Cogna no mercado e expandir suas operações.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. O desempenho da Cogna pode ser influenciado por variáveis como a taxa de desemprego, a renda disponível das famílias e a disposição dos estudantes em investir em educação. Em um cenário econômico desafiador, a demanda por cursos e serviços educacionais pode ser afetada, exigindo que a empresa desenvolva estratégias para mitigar esses impactos e continuar a crescer. A capacidade da Cogna de se adaptar a essas condições e de inovar em suas ofertas será fundamental para sua sustentabilidade e sucesso a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.5 bi (trimestre) | R$4.8 bi (LTM)\n- EBITDA: R$0.4 bi (trimestre) | R$1.5 bi (LTM) | Margem 27.7%\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.4 bi (LTM)\n- Dívida Líquida: R$2.6 bi\n- Operacional: Crescimento de 18,9% na receita líquida em relação ao 3T24, com EBITDA recorrente de R$ 422,7 milhões e lucro líquido de R$ 191,6 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1523400000,
+      "receita_liquida_ltm": 4815600000,
+      "ebitda_tri": 422700000,
+      "ebitda_ltm": 1530400000,
+      "lucro_liquido_tri": 191600000,
+      "lucro_liquido_ltm": 405500000,
+      "divida_liquida": 2600000000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 27.7,
+      "margem_liquida_pct": 12.6
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 18,9% na receita líquida em relação ao 3T24, com EBITDA recorrente de R$ 422,7 milhões e lucro líquido de R$ 191,6 milhões.",
+      "metricas": {
+        "crescimento_base_alunos_pct": 2.7,
+        "ticket_medio_pct": 11.7
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:33:28.324769Z"
+}

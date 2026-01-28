@@ -1,0 +1,33 @@
+{
+  "ticker": "CBAV3",
+  "codigo_cvm": "25984",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25984_2025-09-30_COMPANHIA_BRASILEIRA_DE_ALUMINIO.pdf",
+  "texto_contexto": "A Companhia Brasileira de Alumínio (CBA) é uma das principais players do setor de alumínio no Brasil, operando com um modelo de negócio que integra a produção e comercialização de alumínio primário, produtos transformados e energia elétrica. A empresa se divide em dois segmentos principais: alumínio e energia. No segmento de alumínio, a CBA se destaca pela produção de alumínio líquido e pela fabricação de produtos transformados, que atendem a uma ampla gama de indústrias, incluindo automotiva, construção civil e embalagens. No segmento de energia, a companhia não apenas gera, mas também comercializa energia elétrica, com um foco crescente em fontes renováveis, refletindo uma tendência global de transição energética.\n\nOs principais indicadores de desempenho da CBA são fundamentais para avaliar sua saúde financeira e operacional. O volume de vendas de alumínio, a receita líquida e o EBITDA ajustado são métricas cruciais que a empresa monitora para entender sua performance no mercado. A margem EBITDA, por sua vez, fornece insights sobre a eficiência operacional e a rentabilidade da companhia. A alavancagem financeira, que é um indicador da relação entre a dívida líquida e o EBITDA ajustado, é um aspecto que a CBA observa de perto, especialmente em um ambiente de volatilidade econômica.\n\nOs drivers de valor da CBA são diversos e refletem a complexidade do setor em que opera. A eficiência operacional é um fator-chave, pois a capacidade de otimizar processos e reduzir custos pode impactar significativamente a margem de lucro. A diversificação das fontes de energia é outro driver importante, especialmente considerando a crescente demanda por soluções sustentáveis e a necessidade de mitigar riscos associados a variações climáticas. A resiliência da demanda nos setores consumidores, como o automotivo e a construção civil, também é um fator que impulsiona o crescimento da CBA. Além disso, a empresa precisa ser ágil na adaptação às flutuações dos preços de commodities e às variações cambiais, que podem afetar tanto os custos de produção quanto a receita.\n\nEntretanto, a CBA enfrenta uma série de riscos que podem impactar sua operação e resultados financeiros. A volatilidade dos preços do alumínio e da energia é um desafio constante, assim como as variações cambiais que podem afetar sua estrutura de capital, uma vez que a maior parte de sua dívida é denominada em dólares. Além disso, a empresa deve navegar por um ambiente regulatório complexo, que inclui riscos regulatórios e ambientais, especialmente no que diz respeito à sustentabilidade e ao cumprimento de normas ambientais. A eficiência operacional também é um desafio contínuo, uma vez que a empresa precisa manter altos padrões de produção enquanto busca inovações e melhorias.\n\nA estrutura de capital da CBA é predominantemente composta por dívida em dólares, representando uma parte significativa de seu endividamento bruto. Essa estrutura está alinhada com suas receitas, que são influenciadas pelo câmbio, o que pode criar uma exposição adicional a riscos cambiais. A empresa tem buscado diversificar suas fontes de financiamento, com uma parte considerável de sua dívida vinculada a financiamentos sustentáveis, o que não apenas melhora sua posição financeira, mas também reforça seu compromisso com práticas de responsabilidade social e ambiental.\n\nA governança corporativa da CBA é um aspecto que merece destaque, especialmente em um contexto onde as práticas ESG (ambientais, sociais e de governança) estão se tornando cada vez mais relevantes para investidores e stakeholders. A empresa tem avançado em suas metas de sustentabilidade, refletindo um compromisso com a redução de sua pegada ambiental e a promoção de práticas responsáveis. A inclusão da CBA no índice IDIVERSA da B3 é um reconhecimento de seus esforços nesse sentido, demonstrando que a companhia está alinhada com as expectativas do mercado em relação à transparência e à responsabilidade corporativa.\n\nA regulação do setor de energia e as políticas ambientais são fatores críticos que impactam a operação da CBA. A empresa tem se adaptado a um cenário regulatório em constante evolução, especialmente no que diz respeito à geração de energia renovável e ao cumprimento de metas de sustentabilidade. Recentemente, a CBA concluiu a aquisição de ativos de autoprodução de energia eólica, um movimento estratégico que não apenas diversifica suas fontes de energia, mas também ajuda a mitigar riscos hidrológicos, que são particularmente relevantes em um país como o Brasil, onde a geração de energia é fortemente dependente de recursos hídricos.\n\nA competição no setor de alumínio é intensa, com diversos players nacionais e internacionais disputando participação de mercado. A CBA, portanto, precisa se diferenciar por meio da inovação, da qualidade de seus produtos e da eficiência operacional. A sensibilidade macroeconômica também é um fator a ser considerado, uma vez que a demanda por alumínio e energia pode ser impactada por ciclos econômicos, políticas governamentais e tendências globais. Em um cenário de incertezas econômicas, a capacidade da CBA de se adaptar e responder rapidamente às mudanças no ambiente de negócios será crucial para sua sustentabilidade e crescimento a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$2.3 bi (trimestre) | R$6.6 bi (LTM)\n- EBITDA: R$0.2 bi (trimestre) | R$0.9 bi (LTM) | Margem 10.0%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.3 bi (LTM)\n- Dívida Líquida: R$3.3 bi\n- Operacional: Produção de 93 mil toneladas de alumínio líquido, volume de vendas de 132 mil toneladas de alumínio.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 2300000000,
+      "receita_liquida_ltm": 6596000000,
+      "ebitda_tri": 234000000,
+      "ebitda_ltm": 854000000,
+      "lucro_liquido_tri": 131000000,
+      "lucro_liquido_ltm": 320000000,
+      "divida_liquida": 3300000000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 10,
+      "margem_liquida_pct": 5.7
+    },
+    "operacionais": {
+      "descricao": "Produção de 93 mil toneladas de alumínio líquido, volume de vendas de 132 mil toneladas de alumínio.",
+      "metricas": {
+        "volume_vendas_aluminio": 132000,
+        "volume_producao_aluminio": 93000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:34:30.874550Z"
+}

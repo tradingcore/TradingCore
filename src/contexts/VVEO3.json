@@ -1,0 +1,35 @@
+{
+  "ticker": "VVEO3",
+  "codigo_cvm": "25682",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25682_2025-09-30_CM_HOSPITALAR_SA.pdf",
+  "texto_contexto": "A Viveo (VVEO3) se destaca como um importante player no ecossistema de saúde no Brasil, operando com um modelo de negócio que integra a fabricação e distribuição de materiais e medicamentos. A empresa se posiciona como uma solução abrangente para as diversas demandas do setor, oferecendo produtos e serviços que se caracterizam pela agilidade, confiabilidade e inovação. Essa abordagem permite à Viveo atender a um amplo espectro de clientes, que inclui hospitais, clínicas, laboratórios, serviços de vacinação e o varejo, refletindo a diversidade e a complexidade do mercado de saúde.\n\nOs segmentos em que a Viveo atua são fundamentais para sua estratégia de crescimento e diversificação. No setor de Hospitais e Clínicas, a empresa fornece uma gama de produtos que vão desde insumos médicos até equipamentos de alta tecnologia, essenciais para o funcionamento das instituições de saúde. No segmento de Laboratórios e Vacinas, a Viveo se destaca pela oferta de medicamentos e vacinas, áreas que têm ganhado relevância crescente, especialmente em contextos de saúde pública. O varejo, por sua vez, representa uma oportunidade de expansão, permitindo que a empresa alcance diretamente os consumidores finais. Por fim, os serviços complementares agregam valor à proposta da Viveo, proporcionando soluções que vão além da simples venda de produtos.\n\nOs principais indicadores de desempenho da Viveo, como Receita Líquida, Lucro Bruto, Margem Bruta, EBITDA Ajustado e Margem EBITDA Ajustada, são cruciais para a avaliação da eficiência operacional e da rentabilidade da empresa. Esses KPIs não apenas refletem a saúde financeira da companhia, mas também indicam sua capacidade de adaptação e resposta às dinâmicas do mercado. A gestão eficiente de estoques e fretes, a habilidade de renegociar contratos e a busca constante pela melhoria das margens são drivers de valor que sustentam o crescimento da Viveo. A empresa também se beneficia de um mix de produtos que prioriza categorias com maior rentabilidade, o que contribui para a sua solidez financeira.\n\nEntretanto, a Viveo não está isenta de riscos. A volatilidade do mercado, as mudanças regulatórias e a dependência de contratos com instituições de saúde são fatores que podem impactar suas operações. A estrutura de capital da empresa, que combina dívida e capital próprio, é um aspecto crítico a ser monitorado. A alavancagem, que se mantém em níveis gerenciáveis, é predominantemente de longo prazo e em moeda nacional, o que ajuda a mitigar os riscos associados a flutuações cambiais. Essa gestão cuidadosa do endividamento é essencial para garantir a sustentabilidade financeira da Viveo em um ambiente de incertezas.\n\nA regulação do setor de saúde no Brasil, especialmente sob a supervisão da Câmara de Regulação do Mercado de Medicamentos (CMED), exerce uma influência significativa sobre as operações da Viveo. As normas estabelecidas por essa entidade definem limites de preços e regras que impactam diretamente a concorrência, exigindo que a empresa se mantenha atenta às mudanças legislativas e regulatórias. Eventos como a recente decisão do STF sobre a modulação do DIFAL também têm implicações relevantes para a segurança jurídica da empresa, podendo afetar sua capacidade de gerar caixa e manter a rentabilidade.\n\nNo contexto competitivo, a Viveo enfrenta desafios de empresas que atuam em nichos semelhantes, o que exige uma constante inovação e aprimoramento de suas ofertas. A capacidade de se diferenciar por meio de serviços de qualidade e um atendimento ao cliente excepcional é um diferencial que a Viveo busca cultivar. Além disso, a sensibilidade macroeconômica, que inclui fatores como inflação, taxa de juros e crescimento econômico, pode influenciar a demanda por produtos e serviços de saúde, impactando diretamente as operações da empresa.\n\nDiante desse cenário, a Viveo se compromete a aprimorar suas operações e fortalecer suas parcerias, buscando um crescimento sustentável e a excelência no atendimento ao cliente. A empresa está ciente de que a adaptação às mudanças do mercado e a antecipação de tendências são essenciais para garantir sua posição de destaque no setor de saúde, permitindo que continue a oferecer soluções que atendam às necessidades de seus clientes e contribuam para a melhoria da saúde pública no Brasil.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$2.8 bi (trimestre) | R$8.4 bi (LTM)\n- EBITDA: R$0.2 bi (trimestre) | R$0.5 bi (LTM) | Margem 6.1%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$-0.0 bi (LTM)\n- Operacional: Receita líquida de R$ 2.833,7 milhões, com crescimento no Lucro Bruto de 6,5% em relação ao 3T24. Margem Bruta de 14,7%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 2833653000,
+      "receita_liquida_ltm": 8434055000,
+      "ebitda_tri": 172877000,
+      "ebitda_ltm": 510291000,
+      "lucro_liquido_tri": 42414000,
+      "lucro_liquido_ltm": -22742000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 6.1,
+      "margem_liquida_pct": 1.5
+    },
+    "operacionais": {
+      "descricao": "Receita líquida de R$ 2.833,7 milhões, com crescimento no Lucro Bruto de 6,5% em relação ao 3T24. Margem Bruta de 14,7%.",
+      "metricas": {
+        "lucro_bruto": 415630000,
+        "margem_bruta_pct": 14.7,
+        "ciclo_caixa_dias": 55,
+        "geracao_caixa": 166900000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:32:35.995614Z"
+}

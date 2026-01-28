@@ -1,0 +1,36 @@
+{
+  "ticker": "CLSA3",
+  "codigo_cvm": "26093",
+  "data_release": "2025-03-31",
+  "fonte_pdf": "26093_2025-03-31_CLEAR_SALE_SA.pdf",
+  "texto_contexto": "A Clear Sale S.A. se destaca como uma referência no setor de soluções antifraude digital, com uma atuação robusta tanto no Brasil quanto em mercados internacionais. Seu modelo de negócio é centrado na análise de autenticidade transacional, oferecendo uma gama de serviços que vão desde a autenticação de identidade até a análise do comportamento do consumidor digital. Essa abordagem permite que a empresa atenda a um público diversificado, especialmente no segmento de e-commerce, onde a segurança das transações é uma prioridade crescente.\n\nA Clear Sale opera em diferentes segmentos, incluindo Transacional Brasil, Transacional Internacional e Application Fraud. Essa segmentação permite à empresa adaptar suas soluções às necessidades específicas de cada mercado, aumentando sua relevância e competitividade. A companhia tem se beneficiado da crescente demanda por soluções de segurança cibernética, impulsionada pela digitalização acelerada de negócios e pelo aumento das fraudes online. A capacidade de inovação em tecnologia antifraude é um dos principais drivers de valor da Clear Sale, permitindo que a empresa não apenas se mantenha à frente da concorrência, mas também amplie sua base de clientes.\n\nOs principais indicadores de desempenho (KPIs) da Clear Sale, como receita líquida, lucro bruto, EBITDA, churn rate e número de clientes ativos, são fundamentais para avaliar sua saúde financeira e operacional. A receita líquida, por exemplo, reflete o sucesso da empresa em expandir sua base de clientes e diversificar seus serviços. O churn rate, que se mantém em níveis controlados, é um indicativo da satisfação dos clientes e da eficácia das soluções oferecidas. A margem bruta e o EBITDA, por sua vez, são essenciais para medir a eficiência operacional e a rentabilidade, aspectos críticos em um setor tão dinâmico.\n\nEntretanto, a Clear Sale não está isenta de riscos. A sazonalidade das vendas pode impactar a receita em determinados períodos, enquanto a concorrência crescente no setor de soluções digitais representa um desafio constante. A dependência de grandes clientes também é um fator de risco, pois a perda de um ou mais desses contratos pode ter um efeito significativo na estabilidade financeira da empresa. Para mitigar esses riscos, a Clear Sale tem buscado diversificar sua base de clientes e expandir suas ofertas de serviços.\n\nA estrutura de capital da Clear Sale é sólida, composta por capital social, reservas de capital e lucros acumulados. A empresa se destaca por não possuir dívidas, o que lhe confere uma flexibilidade financeira considerável para realizar investimentos e expandir suas operações. Essa posição financeira robusta é um ativo valioso, especialmente em um ambiente de negócios que pode ser volátil e desafiador.\n\nNo que diz respeito à governança, a Clear Sale opera em um ambiente regulatório que exige conformidade com normas de proteção de dados e segurança cibernética. A conformidade com essas normas é essencial não apenas para a confiança do consumidor, mas também para a integridade dos serviços prestados. A empresa tem demonstrado um compromisso com as melhores práticas de governança, o que é fundamental para sua reputação e sustentabilidade a longo prazo.\n\nEventos críticos, como a combinação de negócios com a Serasa Experian, têm o potencial de alterar a dinâmica de operação e mercado da Clear Sale. Essa fusão pode criar sinergias significativas, ampliando as oportunidades de mercado e fortalecendo a posição competitiva da empresa. No entanto, a adaptação contínua às mudanças regulatórias e tecnológicas no setor de antifraude será crucial para que a Clear Sale mantenha sua competitividade e continue a crescer.\n\nA sensibilidade macroeconômica também desempenha um papel importante nas operações da Clear Sale. Fatores como a saúde econômica geral, o nível de confiança do consumidor e as tendências de consumo digital podem influenciar a demanda por suas soluções. Em um cenário de incertezas econômicas, a capacidade da empresa de se adaptar e inovar será determinante para seu sucesso futuro. Assim, a Clear Sale se posiciona como uma empresa resiliente, pronta para enfrentar os desafios do mercado e aproveitar as oportunidades que surgem em um ambiente digital em constante evolução.\n\nNÚMEROS DE REFERÊNCIA (1T2025):\n- Receita Líquida: R$0.1 bi (trimestre) | N/D (LTM)\n- EBITDA: R$-0.0 bi (trimestre) | N/D (LTM) | Margem -9.9%\n- Lucro Líquido: R$-0.1 bi (trimestre) | N/D (LTM)\n- Capex: R$0.0 bi (trimestre) | N/D (LTM)\n- Operacional: A Clear Sale apresentou receita líquida de R$ 113,2 milhões no 1T25, com um crescimento de 1,4% em relação ao ano anterior. O total de clientes ativos foi de 7.076, com um churn rate anualizado de 8,6%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "1T2025",
+    "financeiros": {
+      "receita_liquida_tri": 113200000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": -11200000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": -60800000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": 20500000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": -9.9,
+      "margem_liquida_pct": -53.7
+    },
+    "operacionais": {
+      "descricao": "A Clear Sale apresentou receita líquida de R$ 113,2 milhões no 1T25, com um crescimento de 1,4% em relação ao ano anterior. O total de clientes ativos foi de 7.076, com um churn rate anualizado de 8,6%.",
+      "metricas": {
+        "clientes_transacional_brasil": 5515,
+        "clientes_transacional_internacional": 1289,
+        "clientes_application_fraud": 272,
+        "total_clientes": 7076,
+        "churn_rate_total_pct": 8.6
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:32:03.782717Z"
+}
