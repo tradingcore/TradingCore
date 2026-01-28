@@ -1,22 +1,11 @@
 """
 Módulo para busca de notícias usando Event Registry API.
 Otimizado com busca em batch para reduzir chamadas de API.
-Usa nomes curtos das empresas do CSV para melhorar resultados.
+Usa o código do ticker diretamente como keyword de busca.
 """
 import re
 from eventregistry import EventRegistry, QueryArticlesIter
 from .config import EVENT_REGISTRY_API_KEY, MAX_NOTICIAS_POR_TICKER
-from .ticker_loader import carregar_catalogo_empresas
-
-# Catálogo de empresas (ticker -> nome_curto) - carregado do CSV
-_CATALOGO_EMPRESAS = None
-
-def _get_catalogo():
-    """Retorna catálogo de empresas (com cache)."""
-    global _CATALOGO_EMPRESAS
-    if _CATALOGO_EMPRESAS is None:
-        _CATALOGO_EMPRESAS = carregar_catalogo_empresas()
-    return _CATALOGO_EMPRESAS
 
 # Tamanho do batch para busca (limitado pelo plano da API Event Registry - max 15)
 BATCH_SIZE = 10
@@ -73,7 +62,7 @@ def buscar_noticias(ticker, data_inicio, data_fim, max_items=None):
 
 def buscar_noticias_batch(tickers, data_inicio, data_fim, max_items_total=200):
     """
-    Busca notícias de múltiplos tickers usando nomes de empresas.
+    Busca notícias de múltiplos tickers usando o código do ticker como keyword.
     Usa sintaxe correta do Event Registry com $or.
     
     Ref: https://newsapi.ai/blog/how-to-make-complex-queries/
@@ -93,16 +82,14 @@ def buscar_noticias_batch(tickers, data_inicio, data_fim, max_items_total=200):
     try:
         er = EventRegistry(apiKey=EVENT_REGISTRY_API_KEY)
 
-        # Construir lista de keywords (nomes curtos das empresas)
-        catalogo = _get_catalogo()
+        # Construir lista de keywords usando o ticker diretamente
         keywords_list = []
         ticker_to_keyword = {}
         
         for ticker in tickers:
-            # Usar nome curto da empresa se disponível, senão usar o ticker
-            nome = catalogo.get(ticker, ticker)
-            keywords_list.append(nome)
-            ticker_to_keyword[ticker] = nome.upper()
+            # Usar o ticker diretamente como keyword de busca
+            keywords_list.append(ticker)
+            ticker_to_keyword[ticker] = ticker.upper()
         
         # Construir query com $or corretamente
         # Ref: https://newsapi.ai/blog/how-to-make-complex-queries/

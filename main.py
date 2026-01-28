@@ -8,7 +8,12 @@ OTIMIZADO:
 - Análise de notícias em batch (5 notícias por chamada)
 - Armazenamento global (não duplica por usuário)
 - Usa apenas empresas listadas (1 ticker por empresa)
+
+FLAGS:
+- --only-with-context: Processa apenas tickers que têm contexto em src/contexts/
 """
+import argparse
+from pathlib import Path
 from src.config import validar_configuracoes
 from src.utils import calcular_periodo_24h, parsear_tickers
 from src.firebase_client import (
@@ -29,6 +34,27 @@ def carregar_tickers_b3():
     """Carrega tickers de empresas listadas (1 por empresa, priorizando final 3)."""
     tickers = carregar_tickers_listados()
     print(f"✓ {len(tickers)} tickers carregados (empresas listadas)")
+    return tickers
+
+
+def carregar_tickers_com_contexto():
+    """
+    Carrega apenas tickers que têm contexto gerado em src/contexts/.
+    Útil para rodar o pipeline apenas para empresas já analisadas.
+    """
+    contexts_dir = Path(__file__).parent / "src" / "contexts"
+    
+    if not contexts_dir.exists():
+        print(f"⚠ Diretório de contextos não encontrado: {contexts_dir}")
+        return []
+    
+    tickers = []
+    for f in contexts_dir.glob("*.json"):
+        ticker = f.stem  # PETR4.json -> PETR4
+        tickers.append(ticker)
+    
+    tickers = sorted(tickers)
+    print(f"✓ {len(tickers)} tickers com contexto disponível")
     return tickers
 
 
@@ -249,8 +275,19 @@ def enviar_emails_usuarios(data_referencia, periodo_noticias):
 
 def main():
     """Função principal que executa o processamento completo."""
+    # Parse de argumentos
+    parser = argparse.ArgumentParser(description='TradingCore - Processamento de Notícias')
+    parser.add_argument(
+        '--only-with-context',
+        action='store_true',
+        help='Processa apenas tickers que têm contexto em src/contexts/'
+    )
+    args = parser.parse_args()
+
     print("\n" + "="*60)
     print("🚀 TRADINGCORE - PROCESSAMENTO GLOBAL")
+    if args.only_with_context:
+        print("   (Modo: apenas tickers com contexto)")
     print("="*60)
 
     # Validar configurações
@@ -274,10 +311,13 @@ def main():
     # =========================================================
     # FASE 1-2: Carregar tickers e processar notícias globais
     # =========================================================
-    tickers_b3 = carregar_tickers_b3()
+    if args.only_with_context:
+        tickers_b3 = carregar_tickers_com_contexto()
+    else:
+        tickers_b3 = carregar_tickers_b3()
     
     if not tickers_b3:
-        print("✗ Nenhum ticker B3 encontrado!")
+        print("✗ Nenhum ticker encontrado!")
         return
     
     # Processar todas as notícias e salvar globalmente
