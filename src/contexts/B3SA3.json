@@ -1,0 +1,36 @@
+{
+  "ticker": "B3SA3",
+  "codigo_cvm": "21610",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "21610_2025-09-30_B3_SA_-_BRASIL_BOLSA_BALCÃO.pdf",
+  "texto_contexto": "A B3 (B3SA3) se destaca como uma das principais bolsas de valores e infraestrutura de mercado financeiro do Brasil, desempenhando um papel crucial na intermediação de operações financeiras e na promoção da liquidez no mercado. Seu modelo de negócio é estruturado em torno da eficiência e resiliência, permitindo à empresa oferecer uma ampla gama de produtos e serviços que vão desde a negociação de ações e derivativos até soluções de mercado de capitais e renda fixa. Essa diversificação não apenas enriquece a oferta da B3, mas também ajuda a mitigar riscos associados a flutuações em segmentos específicos, garantindo uma base de receita mais estável.\n\nOs principais segmentos de atuação da B3 incluem Derivativos, Ações, Renda Fixa e Crédito, além de Soluções de Mercado de Capitais. Cada um desses segmentos apresenta características distintas e contribui de maneira única para a geração de receita. A B3 se beneficia de um ambiente de crescente interesse por parte de investidores, refletido em KPIs como receita total, receita líquida, EBITDA recorrente e lucro líquido, que são indicadores fundamentais de seu desempenho financeiro e operacional. Os drivers de valor da empresa são variados e incluem a diversificação de produtos, o aumento no número de investidores, e a expansão de serviços tecnológicos e de análise de dados, que se tornam cada vez mais relevantes em um mercado em constante evolução.\n\nA estrutura de capital da B3 é robusta, caracterizada por um equilíbrio saudável entre ativos e passivos. A empresa mantém um compromisso com a disciplina financeira, o que se reflete em sua estratégia de otimização da estrutura de capital. A emissão de debêntures e programas de recompra de ações são exemplos de como a B3 busca maximizar o valor para seus acionistas, ao mesmo tempo em que garante a liquidez necessária para suas operações. Essa abordagem prudente é fundamental em um ambiente de mercado que pode ser volátil e sujeito a mudanças rápidas.\n\nA governança corporativa da B3 é estruturada para garantir a transparência e a integridade das operações, com supervisão rigorosa por órgãos reguladores como a Comissão de Valores Mobiliários (CVM) e o Banco Central do Brasil. Essa regulação não apenas protege os investidores, mas também fortalece a confiança no mercado, um aspecto vital para o crescimento sustentável da empresa. Recentemente, a B3 tem buscado expandir sua presença no mercado por meio de aquisições estratégicas, como a da Shipay e da Central de Registro de Direitos Creditórios (CRDC), que visam consolidar sua posição na cadeia de valor do crédito e diversificar ainda mais suas ofertas.\n\nEntretanto, a B3 não está isenta de riscos. A empresa enfrenta desafios associados a condições econômicas adversas, como altas taxas de juros, que podem impactar negativamente os volumes de negociação e a demanda por produtos financeiros. Além disso, a competição no setor financeiro é intensa, com a presença de novas plataformas e fintechs que buscam capturar a atenção de investidores, especialmente os mais jovens e tecnológicos. Essa dinâmica competitiva exige que a B3 permaneça inovadora e adaptável, investindo continuamente em tecnologia e em novos produtos que atendam às necessidades em constante mudança do mercado.\n\nA sensibilidade macroeconômica também desempenha um papel significativo nas operações da B3. Fatores como inflação, crescimento econômico, e políticas monetárias têm um impacto direto sobre o comportamento dos investidores e, consequentemente, sobre os volumes de negociação e a performance dos produtos oferecidos. Em um cenário de incertezas econômicas, a capacidade da B3 de se adaptar e responder rapidamente às mudanças nas condições de mercado será crucial para sua continuidade e crescimento.\n\nEm suma, a B3 se posiciona como um ator fundamental no ecossistema financeiro brasileiro, com um modelo de negócio diversificado e uma estrutura de governança sólida. Sua capacidade de inovar e se adaptar às mudanças do mercado, aliada a uma gestão financeira prudente, a coloca em uma posição favorável para enfrentar os desafios e aproveitar as oportunidades que surgem em um ambiente dinâmico e competitivo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$2.5 bi (trimestre) | N/D (LTM)\n- EBITDA: R$1.7 bi (trimestre) | N/D (LTM) | Margem 69.5%\n- Lucro Líquido: R$1.2 bi (trimestre) | N/D (LTM)\n- Operacional: Receita total de R$ 2,8 bilhões, lucro líquido de R$ 1,2 bilhões, e volume médio diário de contratos de derivativos de 9,3 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 2485900000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 1727000000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 1246100000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 69.5,
+      "margem_liquida_pct": 45.0
+    },
+    "operacionais": {
+      "descricao": "Receita total de R$ 2,8 bilhões, lucro líquido de R$ 1,2 bilhões, e volume médio diário de contratos de derivativos de 9,3 milhões.",
+      "metricas": {
+        "volume_medio_diario_derivativos": 9300000,
+        "volume_medio_diario_acoes": 21800000,
+        "numero_investidores_tesouro_direto": 3153000,
+        "saldo_medio_tesouro_direto": 179000000,
+        "numero_acoes_recompradas": 125000000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:11:11.417222Z"
+}
