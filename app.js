@@ -974,11 +974,11 @@ const getTodayDateStr = () => {
 const loadTodayNews = async () => {
   const today = getTodayDateStr();
   
-  // Carregar datas disponíveis para o calendário
-  await loadAvailableNewsDates();
-  
-  // Carregar notícias de hoje
+  // Carregar notícias de hoje PRIMEIRO (prioridade)
   loadNewsForDate(today);
+  
+  // Carregar datas disponíveis para o calendário em BACKGROUND (não bloqueia)
+  loadAvailableNewsDates();
 };
 
 const loadNewsForDate = async (dateStr, isRetry = false) => {
