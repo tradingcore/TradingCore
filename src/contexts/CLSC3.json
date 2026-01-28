@@ -1,0 +1,34 @@
+{
+  "ticker": "CLSC3",
+  "codigo_cvm": "2461",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "2461_2025-09-30_CENTRAIS_ELETRICAS_DE_SANTA_CATARINA_SA.pdf",
+  "texto_contexto": "A Celesc, ou Centrais Elétricas de Santa Catarina S.A., é uma das principais empresas do setor elétrico brasileiro, com um modelo de negócio que se divide em duas frentes principais: a geração e a distribuição de energia elétrica. Através de suas subsidiárias, Celesc Distribuição S.A. e Celesc Geração S.A., a companhia não apenas fornece energia para um vasto mercado de aproximadamente 3,5 milhões de consumidores, que inclui residências, indústrias e comércio, mas também se destaca na geração de energia, especialmente a partir de fontes renováveis, como a hídrica e a solar.\n\nO desempenho da Celesc é medido por uma série de indicadores-chave, que incluem a receita operacional líquida, EBITDA, lucro líquido e margem líquida. Além disso, a empresa monitora a qualidade do fornecimento de energia por meio de métricas como a Duração Equivalente de Interrupção por Consumidor (DEC) e a Frequência Equivalente de Interrupção por Consumidor (FEC). Esses KPIs não apenas refletem a eficiência operacional da empresa, mas também sua capacidade de atender às demandas de um mercado em constante evolução, onde a gestão de custos e a inovação tecnológica se tornam cada vez mais cruciais.\n\nOs drivers de valor para a Celesc são multifacetados. A eficiência operacional é um dos principais motores de crescimento, permitindo à empresa maximizar sua rentabilidade em um ambiente competitivo. A capacidade de investimento em infraestrutura é igualmente vital, uma vez que a expansão e a modernização das redes de distribuição e geração são essenciais para atender à crescente demanda por energia. Além disso, a adaptação às mudanças regulatórias, que podem impactar diretamente a estrutura tarifária e as políticas de incentivos à energia renovável, é um fator determinante para a sustentabilidade do negócio.\n\nEntretanto, a Celesc enfrenta uma série de riscos que podem afetar sua operação e desempenho financeiro. A volatilidade dos preços de energia é uma preocupação constante, assim como a dependência de condições climáticas favoráveis para a geração hídrica, que representa uma parte significativa de sua matriz energética. A inadimplência dos consumidores também é um risco relevante, especialmente em períodos de crise econômica, onde a capacidade de pagamento das famílias e empresas pode ser comprometida. Além disso, a empresa deve navegar por um ambiente regulatório complexo, onde as decisões da ANEEL (Agência Nacional de Energia Elétrica) podem ter um impacto substancial sobre suas operações e rentabilidade.\n\nA estrutura de capital da Celesc é composta por uma combinação de dívida e patrimônio líquido, com uma parte significativa do endividamento concentrada no longo prazo. Essa estrutura reflete a necessidade de financiamento para os investimentos necessários em infraestrutura e expansão, que são cruciais para a manutenção da competitividade da empresa. A gestão adequada dessa estrutura de capital é fundamental para garantir a saúde financeira da companhia e sua capacidade de realizar os investimentos necessários para o futuro.\n\nA governança da Celesc também desempenha um papel importante em sua operação. A empresa adota práticas que buscam garantir transparência e responsabilidade, o que é essencial para a construção de uma relação de confiança com seus acionistas e consumidores. Além disso, a política de responsabilidade socioambiental da Celesc é um diferencial que a posiciona favoravelmente no mercado, alinhando suas operações com práticas sustentáveis e inovadoras, o que pode influenciar positivamente sua imagem e aceitação junto ao público.\n\nO ambiente competitivo em que a Celesc opera é caracterizado por uma crescente demanda por energia, impulsionada por fatores como o crescimento populacional e a industrialização. A concorrência no setor elétrico brasileiro é intensa, com diversas empresas disputando participação de mercado. Nesse contexto, a capacidade da Celesc de se adaptar e inovar se torna um diferencial competitivo crucial.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A economia brasileira, com suas flutuações e desafios, impacta diretamente a demanda por energia e a capacidade de pagamento dos consumidores. Mudanças nas políticas econômicas, taxas de juros e inflação podem influenciar o desempenho da Celesc, tornando a análise do cenário macroeconômico uma parte essencial da avaliação de sua performance e perspectivas futuras. Assim, a Celesc se posiciona como uma empresa resiliente, que busca não apenas atender às demandas atuais, mas também se preparar para os desafios e oportunidades que o futuro reserva no setor elétrico.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$3.0 bi (trimestre) | R$8.8 bi (LTM)\n- EBITDA: R$0.4 bi (trimestre) | R$1.4 bi (LTM) | Margem 14.2%\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.6 bi (LTM)\n- Dívida Líquida: R$4.2 bi\n- Capex: R$0.4 bi (trimestre) | R$1.0 bi (LTM)\n- Operacional: Energia faturada total de 7.131 GWh no trimestre, com crescimento de 3,7% em relação ao mesmo período do ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 2963000000,
+      "receita_liquida_ltm": 8840000000,
+      "ebitda_tri": 420500000,
+      "ebitda_ltm": 1413900000,
+      "lucro_liquido_tri": 170100000,
+      "lucro_liquido_ltm": 571300000,
+      "divida_liquida": 4154600000,
+      "divida_bruta": null,
+      "capex_tri": 385700000,
+      "capex_ltm": 1047700000,
+      "margem_ebitda_pct": 14.2,
+      "margem_liquida_pct": 5.7
+    },
+    "operacionais": {
+      "descricao": "Energia faturada total de 7.131 GWh no trimestre, com crescimento de 3,7% em relação ao mesmo período do ano anterior.",
+      "metricas": {
+        "energia_faturada_gwh": 7131,
+        "clientes_atendidos": 28500000,
+        "investimentos_realizados": 385700000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:25:18.126265Z"
+}

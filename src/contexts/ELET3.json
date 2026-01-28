@@ -1,0 +1,34 @@
+{
+  "ticker": "ELET3",
+  "codigo_cvm": "2437",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "2437_2025-09-30_CENTRAIS_ELETRICAS_BRASILEIRAS_SA.pdf",
+  "texto_contexto": "A Centrais Elétricas Brasileiras S.A. (ELET3), também conhecida como AXIA Energia, é uma das principais empresas do setor elétrico brasileiro, destacando-se pela sua atuação na geração e transmissão de energia. O modelo de negócio da empresa é robusto e diversificado, com um portfólio que abrange 82 usinas, sendo 47 hidrelétricas, 33 eólicas, uma térmica e uma solar. Essa diversidade permite à AXIA Energia não apenas atender à demanda de energia de diferentes regiões do Brasil, mas também mitigar riscos associados a flutuações climáticas e variações de mercado, uma vez que 99% da sua capacidade instalada provém de fontes renováveis.\n\nOs principais segmentos de atuação da AXIA Energia incluem a geração de energia, que abrange tanto a comercialização em mercados regulados quanto em mercados livres, e a transmissão, que é beneficiada pelas receitas anuais permitidas (RAP) estabelecidas pela Agência Nacional de Energia Elétrica (ANEEL). A empresa se destaca pela sua capacidade de adaptação às dinâmicas do setor, buscando sempre otimizar a eficiência operacional e a rentabilidade. Os indicadores-chave de desempenho (KPIs) que refletem essa eficiência incluem a capacidade instalada, a geração líquida de energia, a receita líquida regulatória, o EBITDA e o lucro líquido ajustado. A margem de contribuição da geração e a receita de transmissão são fundamentais para avaliar a saúde financeira da empresa e sua capacidade de gerar valor para os acionistas.\n\nOs drivers de valor da AXIA Energia são diversos e incluem a eficiência na operação das usinas, a gestão de custos, a capacidade de investimento em novos projetos e a habilidade de se adaptar às mudanças regulatórias e de mercado. A empresa enfrenta, no entanto, uma série de riscos que podem impactar seu desempenho. A volatilidade dos preços de energia, a dependência de condições climáticas favoráveis para a geração hidrelétrica, riscos regulatórios e jurídicos, além de questões relacionadas ao endividamento e à gestão de passivos, são desafios constantes que a empresa deve gerenciar com cautela.\n\nA estrutura de capital da AXIA Energia é composta por uma combinação de dívida e patrimônio líquido, refletindo um equilíbrio que busca sustentar seus investimentos e operações. A empresa tem enfrentado um aumento na dívida líquida, que se eleva em resposta a um custo médio da dívida que também aumentou, em grande parte devido ao cenário de elevação da taxa Selic. Essa dinâmica exige uma gestão financeira rigorosa e uma estratégia clara para garantir a sustentabilidade financeira a longo prazo.\n\nA governança corporativa da AXIA Energia é um aspecto crucial para sua operação, especialmente em um setor tão regulado quanto o elétrico. A ANEEL desempenha um papel fundamental na definição de tarifas e na supervisão das operações da empresa, impondo regras que impactam diretamente seus resultados financeiros. A regulação do setor elétrico brasileiro é complexa e está em constante evolução, o que exige da AXIA Energia uma vigilância contínua e uma capacidade de adaptação rápida às novas exigências.\n\nRecentemente, a empresa tem se concentrado em eventos críticos que incluem a alienação de ativos, como a venda de sua participação na Eletronuclear e na EMAE, além da aquisição de novos ativos. Essas movimentações visam simplificar a estrutura da empresa e mitigar riscos associados à sua operação. A busca por um portfólio 100% renovável e o compromisso com a sustentabilidade até 2030 são parte da estratégia de longo prazo da AXIA Energia, alinhando-se às tendências globais de descarbonização e eficiência energética. Essa orientação não apenas reforça a imagem da empresa como um agente responsável no combate às mudanças climáticas, mas também a posiciona favoravelmente em um mercado cada vez mais exigente em relação à sustentabilidade.\n\nA sensibilidade macroeconômica é outro fator que influencia diretamente a AXIA Energia. O desempenho da empresa está atrelado a variáveis como a inflação, as taxas de juros e o crescimento econômico do Brasil. Em um cenário de instabilidade econômica, a demanda por energia pode ser afetada, assim como os custos de operação e financiamento. Portanto, a capacidade da AXIA Energia de navegar por essas variáveis macroeconômicas, mantendo sua eficiência operacional e sua estratégia de crescimento, será fundamental para garantir sua posição de liderança no setor elétrico brasileiro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$10.0 bi (trimestre) | R$30.8 bi (LTM)\n- EBITDA: R$6.4 bi (trimestre) | R$17.3 bi (LTM) | Margem 63.7%\n- Lucro Líquido: R$2.2 bi (trimestre) | R$1.8 bi (LTM)\n- Dívida: R$42.6 bi (líquida) | R$72.0 bi (bruta)\n- Capex: R$2.7 bi (trimestre) | R$7.2 bi (LTM)\n- Operacional: Capacidade instalada de geração de 44.368 MW, geração líquida de 24,5 TWh e 813 clientes no 3T25.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 10003000000,
+      "receita_liquida_ltm": 30751000000,
+      "ebitda_tri": 6382000000,
+      "ebitda_ltm": 17260000000,
+      "lucro_liquido_tri": 2176000000,
+      "lucro_liquido_ltm": 1766000000,
+      "divida_liquida": 42577000000,
+      "divida_bruta": 72005000000,
+      "capex_tri": 2701000000,
+      "capex_ltm": 7200000000,
+      "margem_ebitda_pct": 63.7,
+      "margem_liquida_pct": 21.8
+    },
+    "operacionais": {
+      "descricao": "Capacidade instalada de geração de 44.368 MW, geração líquida de 24,5 TWh e 813 clientes no 3T25.",
+      "metricas": {
+        "capacidade_instalada_geracao_mw": 44368,
+        "geracao_liquida_twh": 24.5,
+        "clientes": 813
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:24:42.140780Z"
+}

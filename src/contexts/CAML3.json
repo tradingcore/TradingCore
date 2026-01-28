@@ -1,0 +1,34 @@
+{
+  "ticker": "CAML3",
+  "codigo_cvm": "24228",
+  "data_release": "2025-08-31",
+  "fonte_pdf": "24228_2025-08-31_CAMIL_ALIMENTOS_SA.pdf",
+  "texto_contexto": "A Camil Alimentos S.A. é uma das principais plataformas de marcas alimentícias no Brasil e na América Latina, destacando-se por seu modelo de negócio diversificado que abrange a produção e comercialização de uma ampla gama de produtos, incluindo grãos, açúcar, pescados, massas, café e biscoitos. Essa diversidade permite à empresa não apenas atender a diferentes segmentos de mercado, mas também mitigar riscos associados à volatilidade de preços e mudanças nas preferências dos consumidores. A Camil possui uma forte presença em diversos países da América do Sul, como Brasil, Uruguai, Chile, Peru, Equador e Paraguai, o que a posiciona estrategicamente para aproveitar oportunidades de crescimento em mercados emergentes.\n\nOs principais indicadores de desempenho da Camil, como receita líquida, EBITDA, margem bruta e lucro líquido, são fundamentais para avaliar a saúde financeira da empresa. O crescimento de volumes, especialmente no segmento internacional, e a recuperação de preços em categorias de alto valor são considerados drivers de valor significativos. Esses fatores não apenas impulsionam a receita, mas também contribuem para a melhoria das margens, refletindo a eficiência operacional da companhia. A capacidade de adaptação às condições de mercado e a busca por inovações em produtos são essenciais para manter a competitividade e a relevância da marca.\n\nEntretanto, a Camil enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade nos preços das matérias-primas, que pode ser influenciada por fatores climáticos e geopolíticos, representa um desafio constante. Além disso, mudanças nas preferências dos consumidores, que estão cada vez mais voltadas para produtos saudáveis e sustentáveis, exigem que a empresa esteja atenta às tendências do mercado e pronta para se adaptar. Condições econômicas adversas nos países onde a Camil opera também podem afetar a demanda por seus produtos, tornando a gestão de riscos uma parte crítica da estratégia da empresa.\n\nA estrutura de capital da Camil é um aspecto importante a ser considerado, com um montante significativo de dívida que reflete a busca por crescimento e expansão. O índice de endividamento líquido/EBITDA indica um equilíbrio entre a alavancagem financeira e a capacidade de geração de caixa, essencial para sustentar investimentos e garantir a continuidade das operações. A gestão financeira da empresa tem se mostrado prudente, buscando sempre um equilíbrio entre crescimento e sustentabilidade.\n\nA governança corporativa é outro pilar fundamental para a Camil, especialmente por sua listagem no Novo Mercado da B3, que exige altos padrões de transparência e práticas de governança. A empresa tem se destacado em rankings de governança, o que reforça sua reputação no mercado e a confiança dos investidores. A conformidade com as normas de segurança alimentar e as práticas de responsabilidade social são essenciais para a manutenção da licença para operar, especialmente em um setor tão regulado como o alimentício.\n\nRecentemente, a Camil concluiu a aquisição da Villa Oliva Rice S.A. no Paraguai, uma estratégia que não apenas expande sua presença na América do Sul, mas também diversifica seu portfólio de produtos. Essa movimentação é um exemplo claro da busca da empresa por crescimento através de aquisições estratégicas, que podem agregar valor e fortalecer sua posição competitiva. Além disso, a publicação de relatórios de sustentabilidade demonstra o compromisso da Camil com práticas ESG, que são cada vez mais valorizadas por consumidores e investidores.\n\nA sensibilidade macroeconômica é um fator que não pode ser ignorado na análise da Camil. A empresa está sujeita a flutuações econômicas que podem impactar tanto a demanda quanto os custos de produção. Fatores como inflação, taxa de câmbio e políticas governamentais têm um papel significativo na operação da companhia, exigindo uma gestão ágil e adaptativa. A capacidade da Camil de navegar por esse ambiente dinâmico e desafiador será crucial para seu sucesso a longo prazo.\n\nEm suma, a Camil Alimentos S.A. se posiciona como uma empresa robusta e diversificada no setor alimentício, com um modelo de negócio que permite a exploração de diferentes segmentos de mercado. Apesar dos desafios e riscos que enfrenta, sua sólida estrutura de governança, compromisso com a sustentabilidade e estratégias de crescimento, como aquisições, a colocam em uma trajetória promissora para o futuro.\n\nNÚMEROS DE REFERÊNCIA (2T2025):\n- Receita Líquida: R$3.0 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.3 bi (trimestre) | N/D (LTM) | Margem 8.4%\n- Lucro Líquido: R$0.1 bi (trimestre) | N/D (LTM)\n- Capex: R$0.2 bi (trimestre) | N/D (LTM)\n- Operacional: Volume consolidado de 634,2 mil toneladas, crescimento de 6,8% YoY e 24,9% QoQ, impulsionado pelo segmento internacional.",
+  "numeros_referencia": {
+    "periodo_trimestre": "2T2025",
+    "financeiros": {
+      "receita_liquida_tri": 2979700000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 250600000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 78700000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": 155300000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 8.4,
+      "margem_liquida_pct": 2.6
+    },
+    "operacionais": {
+      "descricao": "Volume consolidado de 634,2 mil toneladas, crescimento de 6,8% YoY e 24,9% QoQ, impulsionado pelo segmento internacional.",
+      "metricas": {
+        "volume_consolidado_tons": 634200,
+        "volume_brasil_tons": 397400,
+        "volume_internacional_tons": 236800
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:23:47.555309Z"
+}
