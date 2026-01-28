@@ -1,0 +1,34 @@
+{
+  "ticker": "SYNE3",
+  "codigo_cvm": "21040",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "21040_2025-09-30_SYN_PROP_TECH_SA.pdf",
+  "texto_contexto": "A SYN Prop e Tech S.A. é uma proeminente empresa brasileira que se destaca no setor imobiliário, com um foco claro em investimentos, locação e venda de propriedades comerciais. Seu modelo de negócio é estruturado em torno da gestão de ativos imobiliários, abrangendo uma variedade de tipos de propriedades, como shopping centers, edifícios corporativos e galpões logísticos. Essa diversificação não apenas fortalece a posição da empresa no mercado, mas também permite que ela ofereça soluções integradas que atendem às necessidades operacionais de seus clientes, criando um valor agregado significativo.\n\nOs segmentos principais da SYN são cruciais para sua estratégia de crescimento e rentabilidade. Os shopping centers, por exemplo, são ativos que atraem um grande fluxo de consumidores e, portanto, oferecem oportunidades de receita robustas através de locações e vendas. Os edifícios corporativos, por sua vez, atendem a uma demanda crescente por espaços de trabalho modernos e bem localizados, enquanto os galpões logísticos se beneficiam do aumento do comércio eletrônico e da necessidade de infraestrutura de distribuição eficiente. A empresa possui um portfólio diversificado, com ativos classificados como Triple A e Classe A, o que não apenas reforça sua competitividade, mas também a posiciona favoravelmente em um mercado que valoriza a qualidade e a localização dos imóveis.\n\nOs principais indicadores de desempenho (KPIs) da SYN, como a receita líquida, o NOI (Net Operating Income), a taxa de ocupação física e financeira, e o FFO (Funds From Operations), são fundamentais para avaliar a eficiência operacional e a rentabilidade dos ativos. A capacidade da empresa de manter altos índices de ocupação é um driver de valor essencial, pois a ocupação plena dos imóveis é diretamente proporcional à geração de receita. Além disso, a qualidade dos ativos sob gestão e a eficiência na administração de custos são fatores que contribuem para a sustentabilidade financeira da companhia.\n\nEntretanto, a SYN não está isenta de riscos. A volatilidade econômica e as mudanças nas condições de mercado podem impactar a demanda por imóveis comerciais, resultando em vacância e, consequentemente, na diminuição da geração de receita. A empresa deve estar atenta a esses riscos, implementando estratégias que visem a mitigação de impactos adversos, como a diversificação de seu portfólio e a adaptação às novas tendências do mercado.\n\nA estrutura de capital da SYN é predominantemente de longo prazo, com uma significativa proporção de sua dívida atrelada ao IPCA. Essa característica a torna vulnerável a variações nas taxas de juros e na inflação, exigindo uma gestão prudente de sua dívida. A companhia tem se mostrado comprometida em manter a liquidez e a capacidade de honrar seus compromissos financeiros, o que é essencial para sua estabilidade e crescimento a longo prazo.\n\nA governança corporativa da SYN é um aspecto que merece destaque, uma vez que a conformidade com as normas regulatórias do setor imobiliário no Brasil é fundamental para suas operações. A empresa deve seguir rigorosamente as legislações locais e nacionais relacionadas à construção e locação, o que não apenas garante a legalidade de suas operações, mas também fortalece a confiança dos investidores e stakeholders.\n\nEventos críticos, como a conclusão de vendas de ativos, como a venda do Edifício Brasílio Machado, e a implementação de novas estratégias de expansão ou reestruturação de portfólio, podem ter um impacto significativo na performance da SYN. A empresa deve estar atenta a essas oportunidades e desafios, monitorando constantemente o ambiente econômico e regulatório para mitigar riscos e aproveitar as oportunidades de crescimento no setor imobiliário.\n\nAlém disso, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A performance da SYN pode ser influenciada por variáveis como a taxa de desemprego, o crescimento do PIB e a confiança do consumidor, que afetam diretamente a demanda por imóveis comerciais. Em um cenário de recuperação econômica, a empresa pode se beneficiar de um aumento na demanda por espaços comerciais, enquanto em tempos de recessão, pode enfrentar desafios significativos.\n\nEm suma, a SYN Prop e Tech S.A. é uma empresa que, com um modelo de negócio sólido e diversificado, está bem posicionada para navegar pelos desafios e oportunidades do setor imobiliário brasileiro. Sua capacidade de adaptação e resiliência em face das mudanças do mercado será crucial para seu sucesso contínuo e para a geração de valor para seus acionistas.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- EBITDA: R$0.0 bi (trimestre) | N/D (LTM) | Margem 54.0%\n- Lucro Líquido: R$0.0 bi (trimestre) | N/D (LTM)\n- Operacional: A SYN registrou uma receita líquida de R$ 56,0 milhões no 3T25, com um lucro líquido de R$ 23,1 milhões. A ocupação física do portfólio foi de 95,1%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 56046000,
+      "receita_liquida_ltm": 170059000,
+      "ebitda_tri": 18000000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 23105000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 54.0,
+      "margem_liquida_pct": 29.0
+    },
+    "operacionais": {
+      "descricao": "A SYN registrou uma receita líquida de R$ 56,0 milhões no 3T25, com um lucro líquido de R$ 23,1 milhões. A ocupação física do portfólio foi de 95,1%.",
+      "metricas": {
+        "ocupacao_fisica_pct": 95.1,
+        "ffo_ajustado": 9100000,
+        "nois": 24006000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:57:42.673559Z"
+}

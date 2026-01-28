@@ -1,0 +1,35 @@
+{
+  "ticker": "SGPS3",
+  "codigo_cvm": "20966",
+  "data_release": "2024-12-31",
+  "fonte_pdf": "20966_2024-12-31_SPRINGS_GLOBAL_PARTICIPAÇÕES_SA_-_EM_RECUPERAÇÃO_J.pdf",
+  "texto_contexto": "A Springs Global Participações S.A. é uma empresa consolidada no setor de Lar & Decoração, com uma forte especialização em produtos de cama, mesa e banho. Seu modelo de negócio é dual, abrangendo tanto o atacado quanto o varejo, o que permite uma diversificação nas fontes de receita e uma maior resiliência frente às flutuações do mercado. No segmento de atacado, a companhia se destaca ao fornecer produtos a uma ampla gama de pequenos e médios varejistas, enquanto no varejo, opera lojas físicas e um e-commerce robusto, que se tornou cada vez mais relevante nas dinâmicas de consumo contemporâneas.\n\nA Springs Global é reconhecida como líder em seu setor, embora tenha enfrentado desafios financeiros significativos, culminando em um pedido de recuperação judicial em um período recente. Essa situação reflete não apenas as dificuldades internas, mas também a pressão externa de um ambiente econômico volátil e competitivo. A empresa tem se esforçado para manter sua posição de destaque, focando em inovações de produtos e na eficiência operacional, fatores que são cruciais para sua sustentabilidade a longo prazo.\n\nOs principais segmentos de atuação da Springs Global, atacado e varejo, são interdependentes e se complementam, permitindo que a empresa maximize sua presença no mercado. No atacado, a capacidade de atender a uma rede diversificada de clientes é um diferencial competitivo, enquanto no varejo, a experiência do consumidor e a oferta de produtos de qualidade são fundamentais. Os indicadores-chave de desempenho (KPIs) que a companhia monitora, como receita líquida, lucro bruto, EBITDA ajustado e margem bruta, são essenciais para avaliar sua eficiência operacional e saúde financeira, especialmente em tempos de reestruturação.\n\nOs drivers de valor para a Springs Global incluem a capacidade de inovação em produtos, que é vital para atrair e reter consumidores em um mercado em constante evolução. A gestão eficiente de custos e a adaptação às tendências de consumo, particularmente no que diz respeito ao crescimento do e-commerce, são igualmente importantes. A empresa também depende de uma rede de distribuição eficaz e de parcerias estratégicas, que são fundamentais para otimizar sua operação e expandir sua presença no mercado.\n\nEntretanto, a companhia enfrenta riscos consideráveis. A volatilidade das condições econômicas, que pode afetar o poder de compra dos consumidores, e a intensa concorrência no setor de varejo são desafios constantes. Além disso, as dificuldades financeiras decorrentes de sua recuperação judicial impõem uma pressão adicional sobre a gestão da empresa. A estrutura de capital da Springs Global é marcada por um elevado nível de endividamento, refletindo a necessidade urgente de reestruturação financeira e renegociação de suas obrigações. Essa situação exige uma atenção especial à gestão de dívidas e à busca por soluções que garantam a continuidade das operações.\n\nA regulação que impacta a empresa é complexa e inclui normas contábeis brasileiras e internacionais, além das legislações específicas relacionadas à recuperação judicial, que impõem a necessidade de conformidade com a Lei nº 11.101/2005. Eventos críticos, como a aprovação do plano de recuperação judicial e as assembleias gerais de credores, são fundamentais para a reestruturação da dívida da companhia e para a preservação de seus ativos. A Springs Global está atualmente em um processo de negociação com seus credores, buscando garantir a viabilidade de suas atividades e a continuidade de sua operação no mercado.\n\nA sensibilidade macroeconômica também desempenha um papel significativo nas operações da Springs Global. Fatores como a inflação, as taxas de juros e as políticas econômicas do governo podem influenciar diretamente o comportamento do consumidor e, consequentemente, o desempenho da empresa. Em um cenário de incertezas econômicas, a capacidade da Springs Global de se adaptar e responder rapidamente às mudanças nas condições de mercado será crucial para sua recuperação e crescimento futuro. A empresa, portanto, precisa não apenas focar em sua reestruturação interna, mas também estar atenta às dinâmicas macroeconômicas que podem impactar sua trajetória.\n\nNÚMEROS DE REFERÊNCIA (4T2024):\n- Receita Líquida: R$0.4 bi (trimestre) | R$0.4 bi (LTM)\n- EBITDA: R$-0.2 bi (trimestre) | R$-0.2 bi (LTM) | Margem -56.2%\n- Lucro Líquido: R$-0.2 bi (trimestre) | R$-0.6 bi (LTM)\n- Dívida Líquida: R$0.8 bi\n- Operacional: Receita líquida de R$ 439,4 milhões, com redução de 36,0% em relação ao ano anterior. Lucro bruto de R$ 18,8 milhões, margem bruta de 4,3%. Resultado operacional negativo de R$ 380,6 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "4T2024",
+    "financeiros": {
+      "receita_liquida_tri": 439400000,
+      "receita_liquida_ltm": 439400000,
+      "ebitda_tri": -246800000,
+      "ebitda_ltm": -246800000,
+      "lucro_liquido_tri": -209400000,
+      "lucro_liquido_ltm": -613400000,
+      "divida_liquida": 834000000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": -56.2,
+      "margem_liquida_pct": -47.6
+    },
+    "operacionais": {
+      "descricao": "Receita líquida de R$ 439,4 milhões, com redução de 36,0% em relação ao ano anterior. Lucro bruto de R$ 18,8 milhões, margem bruta de 4,3%. Resultado operacional negativo de R$ 380,6 milhões.",
+      "metricas": {
+        "vendas_varejo": 202500000,
+        "vendas_atacado": 236900000,
+        "receita_sell_out": 428200000,
+        "numero_lojas": 191
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:55:51.236999Z"
+}

@@ -1,0 +1,33 @@
+{
+  "ticker": "SUZB3",
+  "codigo_cvm": "13986",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "13986_2025-09-30_SUZANO_SA.pdf",
+  "texto_contexto": "A Suzano S.A. se destaca como uma das principais produtoras integradas de celulose e papel no cenário global, consolidando-se como uma referência no setor por meio de um modelo de negócio robusto que abrange toda a cadeia produtiva, desde a extração de madeira até a fabricação de produtos finais, como papel e embalagens. A empresa é estruturada em dois segmentos principais: celulose e papel, sendo a celulose a principal fonte de receita, refletindo a forte demanda global por este insumo, que é essencial para diversas indústrias, incluindo a de embalagens e a de produtos de consumo.\n\nOs principais indicadores de desempenho da Suzano, como receita líquida, EBITDA ajustado e margem EBITDA, são fundamentais para avaliar a saúde financeira da empresa e sua capacidade de gerar valor. O volume de vendas e o custo de bens vendidos (COGS) também são métricas cruciais que ajudam a entender a eficiência operacional e a competitividade da Suzano no mercado. A empresa se beneficia de drivers de valor que incluem a crescente demanda por celulose e papel, impulsionada por tendências de consumo e pela necessidade de produtos sustentáveis, além da eficiência operacional e da gestão de custos, que são essenciais em um ambiente de negócios cada vez mais competitivo e desafiador.\n\nEntretanto, a Suzano enfrenta uma série de riscos que podem impactar suas operações e resultados financeiros. A volatilidade dos preços das commodities, por exemplo, pode afetar a rentabilidade, assim como as flutuações cambiais, especialmente considerando que uma parte significativa de sua dívida é denominada em moeda estrangeira. Além disso, a empresa está sujeita a mudanças nas regulamentações ambientais e de mercado, que exigem constante adaptação e inovação. A cadeia de suprimentos também representa um risco, uma vez que a dependência de mercados externos pode ser afetada por eventos geopolíticos ou econômicos.\n\nA estrutura de capital da Suzano é predominantemente composta por dívida de longo prazo, o que proporciona uma certa estabilidade financeira, mas também implica em desafios relacionados ao gerenciamento dessa dívida, especialmente em um cenário de taxas de juros variáveis. A receita da empresa, majoritariamente em dólares, ajuda a mitigar os riscos cambiais, mas a exposição a flutuações nas taxas de câmbio ainda é uma preocupação relevante.\n\nA governança da Suzano é estruturada para garantir a conformidade com as regulamentações e a sustentabilidade das operações, refletindo um compromisso com práticas ambientais responsáveis e com a transparência nas relações com stakeholders. A empresa enfrenta um ambiente regulatório rigoroso, que impacta suas operações e investimentos, especialmente no que diz respeito a práticas de sustentabilidade e responsabilidade social.\n\nA competição no setor de celulose e papel é intensa, com diversos players globais disputando participação de mercado. A capacidade da Suzano de se diferenciar por meio da inovação em produtos sustentáveis e da eficiência operacional é crucial para manter sua posição de liderança. Além disso, a empresa deve estar atenta a eventos críticos que podem afetar suas operações, como mudanças nas políticas comerciais internacionais, que podem introduzir tarifas e barreiras comerciais, além de eventos climáticos que podem impactar a produção de madeira e a logística.\n\nPor fim, a Suzano opera em um ambiente dinâmico e desafiador, onde a capacidade de adaptação e inovação é essencial para enfrentar os desafios do mercado e aproveitar as oportunidades que surgem. A integração de aquisições recentes, como a Suzano Packaging, exige um foco contínuo na busca por sinergias e eficiência operacional, o que pode ser um diferencial competitivo em um setor em constante evolução. A habilidade da Suzano em navegar por essas complexidades será determinante para sua sustentabilidade e crescimento a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$12.2 bi (trimestre) | R$51.2 bi (LTM)\n- EBITDA: R$5.2 bi (trimestre) | R$22.6 bi (LTM) | Margem 43.0%\n- Lucro Líquido: R$2.0 bi (trimestre) | R$6.6 bi (LTM)\n- Dívida Líquida: R$13.0 bi\n- Operacional: Vendas de celulose totalizaram 3,165 mil toneladas e vendas de papel foram de 436 mil toneladas no trimestre.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 12153000000,
+      "receita_liquida_ltm": 51179000000,
+      "ebitda_tri": 5200000000,
+      "ebitda_ltm": 22634000000,
+      "lucro_liquido_tri": 1961000000,
+      "lucro_liquido_ltm": 6585000000,
+      "divida_liquida": 13000000000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 43,
+      "margem_liquida_pct": 16.2
+    },
+    "operacionais": {
+      "descricao": "Vendas de celulose totalizaram 3,165 mil toneladas e vendas de papel foram de 436 mil toneladas no trimestre.",
+      "metricas": {
+        "vendas_celulose_t": 3165000,
+        "vendas_papel_t": 436000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:56:44.620140Z"
+}

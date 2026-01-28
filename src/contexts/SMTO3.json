@@ -1,0 +1,34 @@
+{
+  "ticker": "SMTO3",
+  "codigo_cvm": "20516",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20516_2025-09-30_SÃO_MARTINHO_SA.pdf",
+  "texto_contexto": "A São Martinho (SMTO3) se destaca como uma das principais empresas do setor sucroenergético brasileiro, com um modelo de negócio que integra verticalmente todas as etapas da cadeia produtiva, desde o cultivo da cana-de-açúcar até a comercialização de produtos finais, como açúcar, etanol e energia elétrica. Essa abordagem permite à companhia não apenas otimizar seus processos, mas também garantir maior controle sobre a qualidade e a eficiência de suas operações. A produção de açúcar e etanol é complementada pela cogeração de energia, que utiliza a biomassa da cana-de-açúcar e do milho, além de coprodutos como levedura e grãos secos destilados (DDGS), ampliando a diversificação de receitas e a sustentabilidade do negócio.\n\nOs principais segmentos de atuação da São Martinho são fundamentais para entender sua estratégia e posicionamento no mercado. A produção de açúcar é tradicionalmente uma das atividades mais relevantes, mas a crescente demanda por biocombustíveis, especialmente etanol, tem impulsionado investimentos e inovações na área. A cogeração de energia, por sua vez, não apenas contribui para a matriz energética do país, mas também representa uma fonte adicional de receita, aproveitando a biomassa gerada durante o processo de produção.\n\nOs indicadores de desempenho (KPIs) da empresa são cruciais para avaliar sua eficiência e rentabilidade. A quantidade de cana processada, a produção de açúcar e etanol, o Açúcar Total Recuperável (ATR), a receita líquida e a margem EBITDA são métricas que refletem a saúde financeira e operacional da companhia. A eficiência operacional e a produtividade agrícola são drivers de valor essenciais, pois impactam diretamente a capacidade da empresa de se adaptar às flutuações de mercado, como as variações nos preços de commodities e a demanda por biocombustíveis.\n\nEntretanto, a São Martinho enfrenta uma série de riscos que podem afetar seu desempenho. A volatilidade dos preços de açúcar e etanol é uma preocupação constante, assim como as condições climáticas adversas que podem comprometer a produtividade das lavouras. Além disso, a dependência de insumos e serviços, que podem ser influenciados por variações de mercado, representa um desafio adicional. A estrutura de capital da companhia, que combina dívida e patrimônio líquido, é um fator importante a ser considerado, especialmente em um contexto de endividamento que pode impactar a flexibilidade financeira e a capacidade de investimento em novos projetos.\n\nA governança da São Martinho é estruturada para garantir a transparência e a responsabilidade nas decisões empresariais, refletindo a necessidade de conformidade com as normas regulatórias que regem o setor sucroenergético no Brasil. A regulação é complexa e abrange aspectos ambientais, de segurança alimentar e de comercialização de biocombustíveis, exigindo que a empresa esteja sempre atenta às mudanças nas políticas governamentais. Eventos críticos, como alterações nas regulamentações ou flutuações nos preços internacionais de açúcar e etanol, podem ter um impacto significativo nas operações e na estratégia da companhia.\n\nA competição no setor sucroenergético é intensa, com diversas empresas disputando participação de mercado em um ambiente que exige inovação e eficiência. A capacidade da São Martinho de se diferenciar por meio de práticas sustentáveis e de uma gestão eficiente de recursos é um fator que pode proporcionar vantagens competitivas. Além disso, a sensibilidade macroeconômica, incluindo fatores como inflação, taxa de câmbio e políticas econômicas, pode influenciar tanto os custos de produção quanto a demanda por seus produtos.\n\nEm suma, a São Martinho é uma empresa que opera em um setor dinâmico e desafiador, onde a integração vertical, a eficiência operacional e a adaptação às condições de mercado são fundamentais para seu sucesso. A companhia deve continuar a monitorar os riscos e as oportunidades que surgem em um ambiente regulatório e competitivo em constante evolução, garantindo assim sua sustentabilidade e crescimento no longo prazo.\n\nNÚMEROS DE REFERÊNCIA (2T2026):\n- Receita Líquida: R$1.7 bi (trimestre) | R$3.6 bi (LTM)\n- EBITDA: R$0.8 bi (trimestre) | R$1.6 bi (LTM) | Margem 47.0%\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.2 bi (LTM)\n- Dívida Líquida: R$5.4 bi\n- Capex: R$0.4 bi (trimestre) | R$0.7 bi (LTM)\n- Operacional: Processamento de 17,6 milhões de toneladas de cana-de-açúcar, produção de 1,2 milhões de toneladas de açúcar e 817,3 mil metros cúbicos de etanol.",
+  "numeros_referencia": {
+    "periodo_trimestre": "2T2026",
+    "financeiros": {
+      "receita_liquida_tri": 1739700000,
+      "receita_liquida_ltm": 3597200000,
+      "ebitda_tri": 816900000,
+      "ebitda_ltm": 1621900000,
+      "lucro_liquido_tri": 176400000,
+      "lucro_liquido_ltm": 239200000,
+      "divida_liquida": 5400000000,
+      "divida_bruta": null,
+      "capex_tri": 381000000,
+      "capex_ltm": 738000000,
+      "margem_ebitda_pct": 47.0,
+      "margem_liquida_pct": 10.1
+    },
+    "operacionais": {
+      "descricao": "Processamento de 17,6 milhões de toneladas de cana-de-açúcar, produção de 1,2 milhões de toneladas de açúcar e 817,3 mil metros cúbicos de etanol.",
+      "metricas": {
+        "toneladas_cana_processada": 17600000,
+        "toneladas_acucar_produzida": 1200000,
+        "metros_cubicos_etanol_produzido": 817300
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:58:37.298720Z"
+}

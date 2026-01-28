@@ -1,0 +1,34 @@
+{
+  "ticker": "SHOW3",
+  "codigo_cvm": "22454",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "22454_2025-09-30_T4F_ENTRETENIMENTO_SA.pdf",
+  "texto_contexto": "A Time For Fun (SHOW3) se destaca no dinâmico setor de entretenimento ao vivo, operando com um modelo de negócio que prioriza a promoção de eventos diversificados, como shows de música, peças teatrais e festivais. A empresa tem se consolidado como uma das principais players do mercado, não apenas pela qualidade dos eventos que produz, mas também pela gestão de importantes venues, como o renomado Teatro Renault em São Paulo. Essa atuação multifacetada permite à Time For Fun explorar diferentes segmentos do entretenimento, abrangendo desde a música ao vivo até eventos familiares, o que a posiciona de forma estratégica em um mercado que busca constantemente inovação e experiências únicas para o público.\n\nOs principais indicadores de desempenho (KPIs) da Time For Fun, como receita líquida, lucro bruto, margem bruta, EBITDA e número de ingressos vendidos, são fundamentais para avaliar a saúde financeira e a eficiência operacional da empresa. A receita líquida, por exemplo, reflete não apenas a capacidade de gerar vendas, mas também a eficácia nas estratégias de marketing e na gestão de eventos. O lucro bruto e a margem bruta são indicativos da rentabilidade das operações, enquanto o EBITDA fornece uma visão clara sobre a geração de caixa antes de considerações financeiras e de depreciação. O número de ingressos vendidos é um KPI crucial, pois está diretamente ligado à aceitação do público e à capacidade da empresa de atrair artistas e produções de renome.\n\nOs drivers de valor da Time For Fun são diversos e interligados. A capacidade de atrair grandes artistas e produções é um dos pilares que sustentam o sucesso da empresa, pois eventos com nomes de peso tendem a gerar maior interesse e, consequentemente, vendas de ingressos. A gestão eficiente de custos é outro fator crítico, permitindo que a empresa maximize sua margem de lucro em um ambiente onde os custos operacionais podem ser elevados. Além disso, a ampliação da presença no mercado de entretenimento, seja por meio da diversificação de eventos ou da expansão geográfica, é uma estratégia que pode impulsionar o crescimento da companhia. A venda antecipada de ingressos e as parcerias estratégicas com patrocinadores também são importantes fontes de receita, contribuindo para a diversificação das fontes de receita e a mitigação de riscos associados à sazonalidade dos eventos.\n\nEntretanto, a Time For Fun não está isenta de riscos. A volatilidade da demanda por eventos é uma preocupação constante, especialmente em um setor que pode ser afetado por mudanças nas preferências do consumidor e por fatores externos, como crises econômicas. A concorrência no setor de entretenimento é intensa, com diversas empresas disputando a atenção do público e a preferência dos artistas. Além disso, a sensibilidade a fatores macroeconômicos, como variações na renda disponível e mudanças nas condições econômicas, pode impactar diretamente o consumo de entretenimento, afetando a performance da empresa.\n\nA estrutura de capital da Time For Fun é composta por um mix equilibrado de dívida e patrimônio líquido, refletindo uma gestão financeira que busca eficiência e sustentabilidade. A tendência de redução do endividamento total é um sinal positivo, indicando que a empresa está comprometida em manter uma posição financeira saudável, o que é crucial para enfrentar períodos de incerteza e para financiar novos projetos. A governança corporativa da empresa também desempenha um papel vital, garantindo que as decisões sejam tomadas de forma transparente e alinhadas com os interesses dos acionistas e demais stakeholders.\n\nA regulação do setor de entretenimento é um aspecto que não pode ser negligenciado. Normas de segurança, licenciamento de eventos e regulamentações locais são fatores que podem impactar diretamente a operação e a programação da Time For Fun. A empresa precisa estar atenta a essas questões, adaptando-se às exigências legais e garantindo a segurança e a satisfação do público. Eventos críticos, como a pandemia de COVID-19, evidenciaram a vulnerabilidade do setor, levando a ajustes significativos na programação e na estratégia de negócios. No entanto, a capacidade de adaptação e a busca por novas oportunidades demonstram a resiliência da Time For Fun em um ambiente em constante mudança.\n\nEm suma, a Time For Fun é uma empresa que, apesar dos desafios e riscos inerentes ao setor de entretenimento, tem se mostrado capaz de se reinventar e se adaptar às demandas do mercado. Com um modelo de negócio sólido, uma gestão financeira eficiente e uma governança robusta, a empresa está bem posicionada para continuar a oferecer experiências memoráveis ao público e a expandir sua presença no competitivo cenário do entretenimento ao vivo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- EBITDA: R$-0.0 bi (trimestre) | R$-0.0 bi (LTM)\n- Lucro Líquido: R$-0.0 bi (trimestre) | R$-0.0 bi (LTM)\n- Dívida: R$0.1 bi (líquida) | R$0.1 bi (bruta)\n- Operacional: Realização de 11 eventos com 20 mil ingressos vendidos, refletindo uma queda significativa em relação ao ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 33000000,
+      "receita_liquida_ltm": 110400000,
+      "ebitda_tri": -19500000,
+      "ebitda_ltm": -19900000,
+      "lucro_liquido_tri": -25900000,
+      "lucro_liquido_ltm": -37900000,
+      "divida_liquida": 52700000,
+      "divida_bruta": 62000000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": -78.8
+    },
+    "operacionais": {
+      "descricao": "Realização de 11 eventos com 20 mil ingressos vendidos, refletindo uma queda significativa em relação ao ano anterior.",
+      "metricas": {
+        "eventos_realizados": 11,
+        "ingressos_vendidos": 20000,
+        "preco_medio_ingresso": 373
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:59:24.583998Z"
+}
