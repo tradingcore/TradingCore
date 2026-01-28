@@ -8,7 +8,8 @@ from .config import (
     OPENAI_API_KEY,
     OPENAI_MODEL,
     OPENAI_TEMPERATURE,
-    TOP_N_RELEVANTES
+    TOP_N_RELEVANTES,
+    FILTRO_ESPECIFICIDADE_BATCH_SIZE
 )
 
 # Tamanho do batch para análise
@@ -26,6 +27,120 @@ def _limpar_json_response(conteudo):
                 conteudo = conteudo[4:]
             conteudo = conteudo.strip()
     return conteudo
+
+
+def filtrar_noticias_especificas(artigos, ticker, nome_empresa=None):
+    """
+    Filtro 1: Descarta notícias genéricas de mercado antes da análise complexa.
+    
+    Este filtro é BARATO e RÁPIDO - usa prompt simples sem contexto estratégico.
+    Objetivo: remover ruído como "Ibovespa sobe e beneficia bancos" antes de
+    gastar tokens com análise profunda.
+    
+    Args:
+        artigos: Lista de dicionários de artigos
+        ticker: Ticker sendo analisado (ex: "BBDC4")
+        nome_empresa: Nome da empresa (opcional, ex: "Bradesco")
+    
+    Returns:
+        Lista de artigos que são específicos sobre a empresa/setor
+    """
+    if not artigos:
+        return []
+    
+    url = "https://api.openai.com/v1/chat/completions"
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {OPENAI_API_KEY}",
+    }
+    
+    batch_size = FILTRO_ESPECIFICIDADE_BATCH_SIZE
+    artigos_especificos = []
+    
+    # Nome para usar no prompt
+    empresa_str = f" ({nome_empresa})" if nome_empresa else ""
+    
+    for i in range(0, len(artigos), batch_size):
+        batch = artigos[i:i + batch_size]
+        
+        # Preparar notícias do batch (texto resumido para economizar tokens)
+        noticias_formatadas = []
+        artigos_batch = []
+        
+        for idx, artigo in enumerate(batch):
+            titulo = artigo.get('title', 'Sem título')
+            body = artigo.get('body', '')[:500]  # Apenas 500 chars para filtro rápido
+            
+            if not titulo and not body:
+                continue
+            
+            artigos_batch.append(artigo)
+            noticias_formatadas.append(f"""
+NOTÍCIA {idx + 1}:
+Título: {titulo}
+Texto: {body}...
+""")
+        
+        if not noticias_formatadas:
+            continue
+        
+        noticias_texto = "\n---\n".join(noticias_formatadas)
+        
+        prompt = f"""Classifique cada notícia como ESPECIFICA ou GENERICA para {ticker}{empresa_str}:
+
+ESPECIFICA: A notícia trata diretamente da empresa, seus produtos, executivos, resultados financeiros, operações, ou eventos que afetam especificamente seu setor de atuação.
+
+GENERICA: A notícia fala do mercado como um todo, índices (Ibovespa, S&P500), macroeconomia, ou apenas menciona a empresa/setor como exemplo em uma lista de várias empresas.
+
+Exemplos de classificação:
+- "Petrobras anuncia novo CEO" → ESPECIFICA (sobre a empresa)
+- "Bradesco lucra R$5bi no trimestre" → ESPECIFICA (resultado da empresa)
+- "Setor de energia sofre com apagão" → ESPECIFICA (setor específico)
+- "Ibovespa sobe e bancos se beneficiam" → GENERICA (mercado geral)
+- "Dólar sobe e impacta bolsa brasileira" → GENERICA (macro)
+- "Analistas recomendam 10 ações para investir" → GENERICA (lista genérica)
+
+{noticias_texto}
+
+Responda EXCLUSIVAMENTE em JSON:
+{{
+  "classificacoes": [
+    {{"noticia_idx": 1, "especifica": true ou false, "motivo": "breve explicação"}},
+    ...
+  ]
+}}
+
+Retorne exatamente {len(noticias_formatadas)} classificações."""
+
+        try:
+            data = {
+                "model": OPENAI_MODEL,
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.1,  # Baixa temperatura para classificação consistente
+            }
+            
+            response = requests.post(url, headers=headers, json=data)
+            response.raise_for_status()
+            response_json = response.json()
+            
+            conteudo = response_json["choices"][0]["message"]["content"]
+            conteudo = _limpar_json_response(conteudo)
+            
+            resultado = json.loads(conteudo)
+            classificacoes = resultado.get('classificacoes', [])
+            
+            # Filtrar apenas específicas
+            for classif in classificacoes:
+                idx = classif.get('noticia_idx', 1) - 1
+                if classif.get('especifica', False) and 0 <= idx < len(artigos_batch):
+                    artigos_especificos.append(artigos_batch[idx])
+        
+        except Exception as e:
+            print(f"  ⚠ Erro no filtro de especificidade: {e}")
+            # Em caso de erro, passa todos os artigos do batch (fail-safe)
+            artigos_especificos.extend(artigos_batch)
+    
+    return artigos_especificos
 
 
 def analisar_com_gpt(artigos, ticker, contexto=None):
@@ -457,8 +572,9 @@ Responda apenas com o texto consolidado, sem título ou formatação."""
 def gerar_analise_ticker_global(artigos, ticker, contexto=None):
     """
     Gera análise completa de um ticker para armazenamento global.
-    Otimizado para processar todas as notícias de uma vez.
-    Usa contexto estratégico quando disponível.
+    Usa filtro duplo:
+    1. Filtro de especificidade (barato, sem contexto) - descarta notícias genéricas
+    2. Análise completa (com contexto estratégico) - analisa notícias específicas
     
     Args:
         artigos: Lista de artigos do ticker
@@ -471,8 +587,19 @@ def gerar_analise_ticker_global(artigos, ticker, contexto=None):
     if not artigos:
         return None
     
-    # Analisar todas as notícias em batch (com contexto se disponível)
-    analises = analisar_noticias_batch(artigos, ticker, contexto)
+    # FILTRO 1: Descartar notícias genéricas de mercado (barato, sem contexto)
+    artigos_especificos = filtrar_noticias_especificas(artigos, ticker)
+    
+    descartadas = len(artigos) - len(artigos_especificos)
+    if descartadas > 0:
+        print(f"  🔍 Filtro especificidade: {len(artigos)} → {len(artigos_especificos)} ({descartadas} genéricas descartadas)")
+    
+    if not artigos_especificos:
+        print(f"  ⚠ {ticker}: Todas as notícias eram genéricas de mercado")
+        return None
+    
+    # FILTRO 2: Análise completa com contexto estratégico (caro)
+    analises = analisar_noticias_batch(artigos_especificos, ticker, contexto)
     
     if not analises:
         return None

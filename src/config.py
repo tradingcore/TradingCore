@@ -31,6 +31,9 @@ TOP_N_RELEVANTES = int(os.getenv("TOP_N_RELEVANTES", "5"))
 RELEVANCIA_MIN = float(os.getenv("RELEVANCIA_MIN", "0.0"))
 HORAS_RETROATIVAS = int(os.getenv("HORAS_RETROATIVAS", "24"))
 
+# Filtro de Especificidade (pré-filtro barato antes da análise completa)
+FILTRO_ESPECIFICIDADE_BATCH_SIZE = int(os.getenv("FILTRO_ESPECIFICIDADE_BATCH_SIZE", "10"))
+
 
 def validar_configuracoes():
     """Valida se todas as configurações obrigatórias estão presentes."""
