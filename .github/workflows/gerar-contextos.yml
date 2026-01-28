@@ -1,18 +1,23 @@
 name: Gerar Contextos das Ações
 
 on:
-  workflow_dispatch:  # Rodar manualmente
+  workflow_dispatch:
     inputs:
       force:
         description: 'Regenerar todos os contextos (mesmo os já existentes)'
         required: false
         default: 'false'
         type: boolean
+      batch_size:
+        description: 'Quantos contextos processar por batch antes de commit'
+        required: false
+        default: '50'
+        type: string
 
 jobs:
   gerar-contextos:
     runs-on: ubuntu-latest
-    timeout-minutes: 180  # 3 horas max
+    timeout-minutes: 180
     
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -29,19 +34,53 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       
-      - name: Gerar contextos via releases CVM
-        run: |
-          if [ "${{ github.event.inputs.force }}" == "true" ]; then
-            python src/scripts/gerar_contextos_releases.py --force
-          else
-            python src/scripts/gerar_contextos_releases.py
-          fi
-      
-      - name: Commit e Push
+      - name: Configurar Git
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add src/contexts/*.json
-          git diff --staged --quiet || git commit -m "feat: Atualiza contextos das ações via releases CVM"
-          git pull --rebase origin main
-          git push
+      
+      - name: Gerar contextos em batches (com commits parciais)
+        run: |
+          BATCH_SIZE=${{ github.event.inputs.batch_size || '50' }}
+          FORCE_FLAG=""
+          if [ "${{ github.event.inputs.force }}" == "true" ]; then
+            FORCE_FLAG="--force"
+          fi
+          
+          TOTAL_GENERATED=0
+          BATCH_COUNT=0
+          
+          while true; do
+            echo "=========================================="
+            echo "BATCH $((BATCH_COUNT + 1)) - Gerando até $BATCH_SIZE contextos..."
+            echo "=========================================="
+            
+            # Gerar batch de contextos
+            python src/scripts/gerar_contextos_releases.py --limit $BATCH_SIZE $FORCE_FLAG
+            
+            # Verificar se há novos arquivos para commitar
+            NEW_FILES=$(git status --porcelain src/contexts/*.json 2>/dev/null | wc -l | tr -d ' ')
+            
+            if [ "$NEW_FILES" -gt "0" ]; then
+              echo "Commitando $NEW_FILES novos contextos..."
+              git add src/contexts/*.json
+              git commit -m "feat: Contextos batch $((BATCH_COUNT + 1)) - $NEW_FILES arquivos"
+              git pull --rebase origin main
+              git push
+              TOTAL_GENERATED=$((TOTAL_GENERATED + NEW_FILES))
+              BATCH_COUNT=$((BATCH_COUNT + 1))
+              echo "✓ Commit realizado. Total gerado até agora: $TOTAL_GENERATED"
+            else
+              echo "Nenhum novo contexto neste batch. Finalizando..."
+              break
+            fi
+            
+            # Pequena pausa entre batches
+            sleep 5
+          done
+          
+          echo "=========================================="
+          echo "FINALIZADO!"
+          echo "Total de contextos gerados: $TOTAL_GENERATED"
+          echo "Total de batches: $BATCH_COUNT"
+          echo "=========================================="
