@@ -1,0 +1,34 @@
+{
+  "ticker": "PMAM3",
+  "codigo_cvm": "9393",
+  "data_release": "2025-06-30",
+  "fonte_pdf": "9393_2025-06-30_PARANAPANEMA_SA_-_EM_RECUPERAÇÃO_JUDICIAL.pdf",
+  "texto_contexto": "A Paranapanema S.A. se destaca como a maior produtora brasileira não integrada de cobre refinado, operando em um setor estratégico que abrange a produção e comercialização de uma ampla gama de produtos de cobre, como vergalhões, fios trefilados, laminados, barras, tubos e conexões. O modelo de negócio da empresa é centrado na capacidade de atender tanto o mercado interno quanto o externo, o que a posiciona de forma competitiva em um cenário global em constante evolução. A companhia tem se concentrado em dois segmentos principais: produtos de cobre e coprodutos, com um foco crescente em parcerias comerciais que visam expandir sua capacidade de vendas e melhorar sua presença no mercado.\n\nOs principais indicadores de desempenho da Paranapanema refletem um crescimento significativo, com a receita líquida apresentando um aumento considerável em relação ao período anterior, e o volume de vendas mostrando um crescimento robusto. Apesar de um EBITDA negativo, a empresa tem demonstrado uma melhoria em sua eficiência operacional, evidenciada pela geração de fluxo de caixa operacional positivo ao longo de vários trimestres. Esses indicadores são cruciais para avaliar a saúde financeira da companhia e sua capacidade de enfrentar os desafios do mercado.\n\nOs drivers de valor para a Paranapanema são multifacetados, incluindo a eficiência na gestão de custos, a inovação em produtos e a habilidade de estabelecer parcerias estratégicas. A empresa busca constantemente melhorar seu acesso a linhas de financiamento para capital de giro, uma necessidade premente para sustentar suas operações e expandir sua produção em um ambiente competitivo. A capacidade de adaptação e inovação é fundamental, especialmente em um setor onde as demandas e as tecnologias estão em constante mudança.\n\nEntretanto, a companhia enfrenta riscos significativos que podem impactar sua performance. A dependência de condições de mercado favoráveis para o cobre e a volatilidade dos preços das commodities são fatores que exigem uma gestão cuidadosa. Além disso, a empresa está sob a égide de um Plano de Recuperação Judicial, que implica a reestruturação de sua dívida e a negociação com credores, um processo que demanda atenção e estratégia para garantir a continuidade das operações. A estrutura de capital da Paranapanema é marcada por um alto nível de endividamento, com uma parte significativa de suas dívidas vencendo no curto prazo, o que aumenta a pressão sobre sua liquidez e exige um gerenciamento financeiro rigoroso.\n\nA governança corporativa da Paranapanema é influenciada pela legislação brasileira, que estabelece normas para a transparência e a responsabilidade nas operações da empresa. A Lei das S.A. é um marco regulatório que orienta as práticas de governança, e a companhia tem se esforçado para se alinhar a essas diretrizes, especialmente em um contexto de recuperação. Eventos recentes, como a abertura de janelas para a conversão de créditos em ações e a aprovação de aumentos de capital, são parte integrante do processo de reestruturação financeira e são fundamentais para a continuidade das operações em um ambiente desafiador.\n\nA competição no setor de cobre é intensa, com diversas empresas buscando capturar participação de mercado. A Paranapanema precisa não apenas se destacar pela qualidade de seus produtos, mas também pela eficiência de suas operações e pela capacidade de se adaptar às mudanças nas demandas do mercado. A sensibilidade macroeconômica é um fator que não pode ser ignorado, uma vez que as condições econômicas globais, as políticas comerciais e as flutuações nas taxas de câmbio podem impactar diretamente os resultados da empresa. Em suma, a Paranapanema S.A. está em um momento crucial de sua trajetória, onde a combinação de inovação, eficiência operacional e uma gestão financeira sólida será determinante para sua recuperação e crescimento sustentável no futuro.\n\nNÚMEROS DE REFERÊNCIA (2T2025):\n- Receita Líquida: R$0.1 bi (trimestre) | N/D (LTM)\n- EBITDA: R$-0.1 bi (trimestre) | N/D (LTM) | Margem -58.7%\n- Lucro Líquido: R$-0.3 bi (trimestre) | N/D (LTM)\n- Dívida: R$5.3 bi (líquida) | R$5.3 bi (bruta)\n- Operacional: Volume de vendas de produtos de cobre totalizou 10.462 toneladas, 33% maior em relação ao mesmo período do ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "2T2025",
+    "financeiros": {
+      "receita_liquida_tri": 142677000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": -84000000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": -257487000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 5268376000,
+      "divida_bruta": 5305615000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": -58.7,
+      "margem_liquida_pct": -180.5
+    },
+    "operacionais": {
+      "descricao": "Volume de vendas de produtos de cobre totalizou 10.462 toneladas, 33% maior em relação ao mesmo período do ano anterior.",
+      "metricas": {
+        "volume_vendas_toneladas": 10462,
+        "custo_produtos_vendidos": 177677000,
+        "prejuizo_bruto": 35000000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:25:57.347305Z"
+}

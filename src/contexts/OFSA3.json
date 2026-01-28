@@ -1,0 +1,34 @@
+{
+  "ticker": "OFSA3",
+  "codigo_cvm": "23507",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "23507_2025-09-30_OUROFINO_SA.pdf",
+  "texto_contexto": "A Ourofino Saúde Animal (OFSA3) se destaca como uma das principais empresas brasileiras no setor de saúde animal, com um modelo de negócio que se fundamenta na pesquisa, desenvolvimento, produção e comercialização de uma ampla gama de produtos veterinários. A companhia se dedica tanto a animais de produção, como suínos e bovinos, quanto a animais de companhia, como cães e gatos, refletindo uma estratégia de diversificação que busca atender a diferentes necessidades do mercado. Essa abordagem não apenas amplia o portfólio da empresa, mas também a posiciona de forma competitiva em um setor que exige constante inovação e adaptação.\n\nOs segmentos de atuação da Ourofino são claramente delineados, permitindo uma especialização que favorece a criação de produtos direcionados e eficazes. No segmento de Animais de Produção, a empresa oferece soluções que vão desde medicamentos para o controle de parasitas até vacinas, essenciais para a saúde e produtividade dos rebanhos. Já no segmento de Animais de Companhia, a oferta inclui produtos que visam melhorar a qualidade de vida dos pets, um mercado que tem crescido significativamente com a humanização dos animais de estimação. Essa segmentação não apenas facilita a identificação de oportunidades de mercado, mas também permite que a empresa desenvolva estratégias de marketing e vendas mais eficazes.\n\nOs principais indicadores de desempenho da Ourofino, como receita líquida, lucro bruto, EBITDA ajustado e margem líquida, são fundamentais para avaliar a saúde financeira e operacional da empresa. A análise desses KPIs revela a capacidade da companhia de gerar valor e sustentar seu crescimento em um ambiente competitivo. Os drivers de valor da Ourofino são impulsionados por uma combinação de fatores, incluindo a inovação contínua em produtos, a expansão para novos mercados, parcerias estratégicas e a busca incessante por eficiência operacional. Esses elementos são cruciais para garantir a competitividade da empresa e sua adaptação às dinâmicas do setor.\n\nEntretanto, a Ourofino não está isenta de riscos. A dependência de regulamentações rigorosas do setor veterinário é um desafio constante, uma vez que a conformidade com normas de segurança e eficácia pode impactar o tempo de lançamento de novos produtos e os custos operacionais. Além disso, a empresa enfrenta flutuações nos preços de insumos, que podem afetar suas margens de lucro. A concorrência acirrada no mercado de saúde animal exige que a Ourofino mantenha um ritmo constante de inovação para atender às crescentes demandas dos consumidores e se diferenciar de seus concorrentes.\n\nA estrutura de capital da Ourofino é caracterizada por uma combinação equilibrada de dívida de longo prazo e capital próprio, o que proporciona uma alavancagem financeira em níveis adequados. Essa estrutura permite à empresa continuar investindo em pesquisa e desenvolvimento, essencial para a introdução de novos produtos e a manutenção de sua posição de liderança no mercado. A capacidade de financiar inovações e expandir suas operações é um dos pilares que sustentam o crescimento sustentável da companhia.\n\nA governança corporativa da Ourofino é outro aspecto relevante, pois a empresa busca assegurar transparência e responsabilidade em suas operações. A conformidade com as regulamentações do setor é um fator crítico que influencia não apenas a reputação da empresa, mas também sua capacidade de operar de forma eficiente e lucrativa. A regulação do setor de saúde animal é complexa e exige que a Ourofino esteja sempre atenta às mudanças nas legislações, o que pode impactar diretamente suas operações e estratégias de mercado.\n\nNo que diz respeito à competição, a Ourofino se posiciona em um mercado onde a inovação e a qualidade dos produtos são diferenciais fundamentais. A presença de concorrentes locais e internacionais exige que a empresa esteja constantemente atenta às tendências do setor e às necessidades dos clientes. A capacidade de introduzir novos produtos, como vacinas e ectoparasiticidas, e o reconhecimento da empresa por prêmios de inovação são fatores que consolidam sua posição no mercado e garantem a sustentabilidade de seu crescimento a longo prazo.\n\nPor fim, a sensibilidade macroeconômica também desempenha um papel importante nas operações da Ourofino. Fatores como a variação nas taxas de câmbio, a inflação e as condições econômicas gerais podem impactar tanto os custos de produção quanto a demanda por produtos veterinários. A empresa deve estar preparada para navegar por essas incertezas, ajustando suas estratégias conforme necessário para mitigar riscos e aproveitar oportunidades que possam surgir em um ambiente econômico em constante mudança. Assim, a Ourofino Saúde Animal se posiciona como uma empresa resiliente e inovadora, comprometida com a saúde animal e com o desenvolvimento sustentável de suas operações.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.4 bi (trimestre) | R$0.8 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.2 bi (LTM) | Margem 27.4%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.1 bi (LTM)\n- Dívida: R$0.3 bi (líquida) | R$0.5 bi (bruta)\n- Operacional: A receita líquida consolidada totalizou R$ 356,5 milhões, crescimento de 26,2% em relação ao 3T24. O lucro bruto atingiu R$ 188,3 milhões, com EBITDA ajustado de R$ 97,6 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 356500000,
+      "receita_liquida_ltm": 805300000,
+      "ebitda_tri": 97600000,
+      "ebitda_ltm": 166000000,
+      "lucro_liquido_tri": 54800000,
+      "lucro_liquido_ltm": 80700000,
+      "divida_liquida": 290100000,
+      "divida_bruta": 496600000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 27.4,
+      "margem_liquida_pct": 15.4
+    },
+    "operacionais": {
+      "descricao": "A receita líquida consolidada totalizou R$ 356,5 milhões, crescimento de 26,2% em relação ao 3T24. O lucro bruto atingiu R$ 188,3 milhões, com EBITDA ajustado de R$ 97,6 milhões.",
+      "metricas": {
+        "vendas_animais_producao": 272200000,
+        "vendas_animais_companhia": 45200000,
+        "vendas_internacionais": 39100000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:24:40.380337Z"
+}

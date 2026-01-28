@@ -1,0 +1,33 @@
+{
+  "ticker": "ONCO3",
+  "codigo_cvm": "26123",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "26123_2025-09-30_ONCOCLÍNICAS_DO_BRASIL_SERVIÇOS_MÉDICOS_SA.pdf",
+  "texto_contexto": "A Oncoclínicas se destaca como a maior provedora de tratamento oncológico no setor privado do Brasil, consolidando sua posição em um mercado que demanda cada vez mais serviços especializados e de qualidade. Com uma rede abrangente de 144 unidades espalhadas por 47 cidades, a empresa oferece uma gama diversificada de serviços que vão além do tratamento convencional, incluindo clínicas, laboratórios de genômica e patologia, unidades de prevenção e diagnóstico, além de centros integrados de tratamento ao câncer. Essa estrutura multifacetada permite à Oncoclínicas atender a diferentes necessidades dos pacientes, desde a prevenção até o tratamento e acompanhamento, sempre com foco no bem-estar do paciente e na aplicação de protocolos clínicos reconhecidos internacionalmente.\n\nO modelo de negócio da Oncoclínicas é centrado na prestação de serviços de saúde oncológica, com uma abordagem que prioriza a experiência do paciente e a eficácia dos tratamentos. Os principais segmentos de atuação incluem tratamentos ambulatoriais, como quimioterapia e imunoterapia, além de procedimentos realizados em regime de internação. Essa diversidade de serviços não apenas amplia a base de clientes, mas também fortalece a posição da empresa em um mercado competitivo, onde a qualidade e a inovação são diferenciais cruciais.\n\nOs indicadores de desempenho da Oncoclínicas, como receita líquida, EBITDA ajustado e margem EBITDA, são fundamentais para avaliar a saúde financeira da empresa. O número de tratamentos realizados e a participação de mercado, que representa cerca de 9% do mercado privado de oncologia no Brasil, são KPIs que refletem a capacidade da empresa de crescer e se adaptar às demandas do setor. Os principais drivers de valor incluem a expansão da rede de unidades, que permite maior alcance geográfico e acesso a novos pacientes, a eficiência operacional, que busca otimizar custos e melhorar a rentabilidade, e a qualidade dos serviços prestados, que é essencial para manter a confiança dos pacientes e das operadoras de saúde.\n\nEntretanto, a Oncoclínicas enfrenta riscos significativos que podem impactar sua operação e crescimento. A dependência de contratos com operadoras de saúde é um fator crítico, uma vez que mudanças nas políticas de reembolso podem afetar diretamente a receita da empresa. Além disso, a concorrência crescente no setor de saúde, com a entrada de novos players e a intensificação da competição por pacientes e contratos, exige que a Oncoclínicas mantenha um alto padrão de qualidade e inovação em seus serviços.\n\nA estrutura de capital da Oncoclínicas é marcada por dívidas financeiras significativas, com uma alavancagem que, após um recente aumento de capital, pode ser ajustada para níveis mais sustentáveis. Essa estrutura financeira requer uma gestão cuidadosa, especialmente em um ambiente regulatório que é rigoroso e exige conformidade com normas estabelecidas pela ANS e pela CVM. A regulação do setor de saúde no Brasil impacta diretamente as operações da Oncoclínicas, exigindo que a empresa mantenha altos padrões de qualidade e segurança em todos os seus serviços.\n\nEventos críticos, como a descontinuação de serviços a clientes com dinâmicas de pagamento desfavoráveis, podem afetar a performance da empresa, assim como a venda de ativos não essenciais, que faz parte de uma estratégia de otimização operacional. Nesse contexto, a Oncoclínicas está em um processo de reestruturação e reposicionamento, buscando melhorar sua rentabilidade e eficiência. Essa estratégia é fundamental para garantir a sustentabilidade da empresa a longo prazo, especialmente em um mercado que está em constante evolução e que exige adaptação rápida às novas realidades.\n\nA sensibilidade macroeconômica também desempenha um papel importante nas operações da Oncoclínicas. Fatores como a inflação, as taxas de juros e a situação econômica geral do Brasil podem impactar a capacidade de investimento da empresa, bem como a disposição dos pacientes em buscar tratamentos oncológicos. Em um cenário de incerteza econômica, a Oncoclínicas deve estar preparada para ajustar sua estratégia e operações, garantindo que continue a oferecer serviços de qualidade enquanto navega pelos desafios do mercado. A combinação desses elementos torna a Oncoclínicas uma empresa em constante evolução, que busca não apenas manter sua liderança no setor, mas também inovar e se adaptar às necessidades de um mercado em transformação.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.4 bi (trimestre) | R$4.4 bi (LTM)\n- EBITDA: N/D (trimestre) | R$1.0 bi (LTM)\n- Dívida Líquida: R$2.9 bi\n- Operacional: A Oncoclínicas prestou aproximadamente 670 mil tratamentos nos últimos 12 meses e possui 2.240 profissionais médicos dedicados exclusivamente à oncologia.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1413000000,
+      "receita_liquida_ltm": 4370500000,
+      "ebitda_tri": null,
+      "ebitda_ltm": 965400000,
+      "lucro_liquido_tri": null,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 2888000000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "A Oncoclínicas prestou aproximadamente 670 mil tratamentos nos últimos 12 meses e possui 2.240 profissionais médicos dedicados exclusivamente à oncologia.",
+      "metricas": {
+        "numero_procedimentos": 151600,
+        "ticket_medio": 9599
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:22:58.367046Z"
+}

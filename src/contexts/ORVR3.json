@@ -1,0 +1,34 @@
+{
+  "ticker": "ORVR3",
+  "codigo_cvm": "25550",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25550_2025-09-30_ORIZON_VALORIZAÇÃO_DE_RESÍDUOS_SA.pdf",
+  "texto_contexto": "A Orizon Valorização de Resíduos S.A. se destaca como uma empresa inovadora no setor de gestão de resíduos e geração de energia renovável, operando com um modelo de negócios que se alinha às demandas contemporâneas por soluções sustentáveis. A companhia atua em três segmentos principais: Destinação Final de Resíduos, Transição Energética e Economia Circular, cada um deles contribuindo de maneira significativa para a sua proposta de valor e para a mitigação dos impactos ambientais.\n\nNo segmento de Destinação Final de Resíduos, a Orizon se dedica ao tratamento e à destinação adequada de resíduos, o que inclui a operação de ecoparques que funcionam como centros de gestão integrada de resíduos. Além disso, a empresa se destaca na comercialização de créditos de carbono, uma prática que não apenas gera receita, mas também contribui para a redução das emissões de gases de efeito estufa, alinhando-se às metas globais de sustentabilidade. A Transição Energética, por sua vez, é um pilar fundamental da estratégia da Orizon, com foco na geração de energia a partir de biogás e biomethano, recursos que representam uma alternativa viável e limpa em um cenário de crescente demanda por fontes de energia renováveis.\n\nA Economia Circular, outro segmento em que a Orizon atua, enfatiza a reciclagem e o beneficiamento de resíduos, promovendo a reutilização de materiais e a redução do desperdício. Essa abordagem não apenas melhora a eficiência dos processos, mas também fortalece a imagem da empresa como um agente ativo na promoção de práticas sustentáveis. Os principais indicadores de desempenho da Orizon, como receita líquida, EBITDA e lucro líquido, refletem a eficácia de suas operações e a capacidade de gerar valor em um mercado em transformação.\n\nOs drivers de valor da Orizon são diversos e incluem a eficiência operacional, que é crucial para manter a competitividade em um setor marcado pela volatilidade de preços e pela necessidade de inovação constante. A maturação dos ativos e a capacidade de precificação são igualmente importantes, especialmente em um contexto onde a demanda por soluções sustentáveis cresce exponencialmente. A diversificação das fontes de receita, impulsionada pela busca por alternativas energéticas e pela valorização de resíduos, também se configura como um fator determinante para o sucesso da empresa.\n\nEntretanto, a Orizon enfrenta riscos significativos que podem impactar sua operação e desempenho financeiro. A volatilidade nos preços de mercado, especialmente no que diz respeito a commodities e créditos de carbono, pode afetar a rentabilidade. Além disso, a dependência de regulamentações ambientais e a necessidade de conformidade com normas rigorosas impõem desafios adicionais. A concorrência no setor de gestão de resíduos é intensa, exigindo que a Orizon mantenha um foco constante em inovação e eficiência. A necessidade de investimentos contínuos em infraestrutura e tecnologia também representa um risco, pois a empresa deve garantir que suas operações estejam sempre alinhadas com as melhores práticas do setor.\n\nA estrutura de capital da Orizon é predominantemente de longo prazo, com uma alavancagem que reflete um perfil de dívida alongado e diversificado. A empresa utiliza emissões de debêntures e financiamentos com bancos para sustentar seu crescimento e expansão, o que lhe proporciona uma base financeira sólida para enfrentar os desafios do mercado. A governança corporativa da Orizon é estruturada para garantir transparência e responsabilidade, aspectos fundamentais em um setor que lida com questões ambientais e sociais.\n\nA regulação é um fator crítico para a Orizon, especialmente em um contexto de crescente pressão por descarbonização e políticas de sustentabilidade. A participação da empresa em eventos como a COP30 demonstra seu compromisso com a conformidade e a promoção de práticas sustentáveis. A conclusão de aquisições estratégicas, como a do Ecoparque Oeste Paulista, e o início da produção de biomethano no Ecoparque Jaboatão dos Guararapes são marcos importantes que não apenas ampliam a capacidade operacional da empresa, mas também consolidam sua posição no mercado de energia renovável e gestão de resíduos.\n\nPor fim, a sensibilidade macroeconômica é um aspecto que a Orizon deve monitorar atentamente. Fatores como a evolução das políticas ambientais, as flutuações nos preços de energia e a demanda por soluções sustentáveis podem impactar diretamente suas operações e resultados. Em um cenário global que valoriza cada vez mais a sustentabilidade, a Orizon se posiciona como uma empresa com potencial significativo para contribuir para a transição energética e a economia circular, ao mesmo tempo em que busca maximizar seu valor para os acionistas e a sociedade.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.3 bi (trimestre) | R$0.8 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.4 bi (LTM) | Margem 46.5%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- Operacional: Volume total de resíduos de 2.227 mil toneladas, receita de créditos de carbono de R$ 14 milhões, e produção de biogás média mensal de 57.361 Nm³/hora.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 281050000,
+      "receita_liquida_ltm": 786031000,
+      "ebitda_tri": 130804000,
+      "ebitda_ltm": 366430000,
+      "lucro_liquido_tri": 27342000,
+      "lucro_liquido_ltm": 50542000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 46.5,
+      "margem_liquida_pct": 9.7
+    },
+    "operacionais": {
+      "descricao": "Volume total de resíduos de 2.227 mil toneladas, receita de créditos de carbono de R$ 14 milhões, e produção de biogás média mensal de 57.361 Nm³/hora.",
+      "metricas": {
+        "volume_residuos_kton": 2227,
+        "vendas_creditos_carbono": 14000000,
+        "biogas_media_nm3_hora": 57361
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:23:48.216939Z"
+}
