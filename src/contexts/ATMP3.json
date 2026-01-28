@@ -1,0 +1,32 @@
+{
+  "ticker": "ATMP3",
+  "codigo_cvm": "19100",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "19100_2025-09-30_CONTAX_PARTICIPAÇÕES_SA_-_EM_RECUPERAÇÃO_JUDICIAL.pdf",
+  "texto_contexto": "A Contax Participações S.A. se posiciona como uma holding robusta no cenário empresarial brasileiro, operando sob o código CTAX3 na B3. A companhia é um dos principais grupos de prestação de serviços no país, com um modelo de negócio que se destaca pela diversificação e pela busca incessante pela melhoria da performance operacional. A empresa concentra suas atividades em segmentos estratégicos, como atendimento ao cliente, que abrange serviços de contact center e trade marketing, além de manutenção industrial, realizada por meio da sua subsidiária Elfe. Essa diversificação não apenas amplia a base de clientes, mas também permite à Contax mitigar riscos associados a flutuações em setores específicos.\n\nOs principais indicadores de desempenho da Contax, como Receita Líquida, Resultado Operacional e EBITDA recorrente, são fundamentais para avaliar a eficiência operacional e a capacidade de geração de lucro da empresa. A gestão eficaz desses KPIs é crucial, especialmente em um ambiente competitivo e desafiador. Os drivers de valor da companhia incluem a diversificação do portfólio de clientes, a otimização de processos internos e a construção de uma infraestrutura sólida, que são essenciais para a recuperação e sustentabilidade financeira da empresa, especialmente em um contexto de recuperação judicial.\n\nEntretanto, a Contax enfrenta riscos significativos, principalmente relacionados à sua recuperação judicial, que pode impactar sua estabilidade financeira e suas operações. A estrutura de capital da empresa é complexa, composta por passivos circulantes e não circulantes, que incluem empréstimos, financiamentos e debêntures, além de um patrimônio líquido que sofreu uma redução considerável. Essa situação exige uma gestão financeira cuidadosa e uma estratégia clara para a reestruturação e recuperação.\n\nA governança da Contax é regida por normas e práticas contábeis brasileiras e internacionais, além da supervisão da Comissão de Valores Mobiliários (CVM), o que garante um nível de transparência e conformidade que é essencial para a confiança dos investidores e stakeholders. A recente aprovação do aditamento ao plano de recuperação judicial, respaldada por uma assembleia geral de credores, representa um marco importante para a empresa, proporcionando segurança e estabilidade financeira para as próximas etapas de sua trajetória.\n\nNo que diz respeito à competição, a Contax opera em um mercado dinâmico, onde a inovação e a qualidade do serviço são cruciais para a manutenção de sua posição de destaque. A empresa tem se esforçado para se diferenciar por meio da excelência no atendimento e da oferta de soluções personalizadas, o que a torna um player relevante em um setor marcado por constantes mudanças e desafios.\n\nAlém disso, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A Contax está sujeita a variações econômicas que podem influenciar a demanda por seus serviços, como mudanças nas taxas de desemprego, flutuações na renda disponível dos consumidores e alterações nas políticas econômicas do governo. A capacidade da empresa de se adaptar a essas condições e de responder de forma ágil às necessidades do mercado será determinante para seu sucesso a longo prazo.\n\nPor fim, a Contax também se destaca pelo seu compromisso com o desenvolvimento de talentos, tendo implementado iniciativas que visam a contratação de jovens profissionais. Essa estratégia não apenas reforça a responsabilidade social da empresa, mas também contribui para a criação de um ambiente de trabalho diversificado e inclusivo, essencial para a inovação e a competitividade no mercado. A combinação desses fatores posiciona a Contax como uma empresa resiliente, com potencial para superar desafios e aproveitar oportunidades em um cenário econômico em constante evolução.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.3 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.0 bi (trimestre) | N/D (LTM) | Margem 6.7%\n- Lucro Líquido: R$-0.1 bi (trimestre) | N/D (LTM)\n- Operacional: Resultado operacional positivo de R$ 61,4 milhões com 12.402 colaboradores.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 334100000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 22300000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": -60200000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 6.7,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "Resultado operacional positivo de R$ 61,4 milhões com 12.402 colaboradores.",
+      "metricas": {
+        "quantidade_colaboradores": 12402
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:38:04.984233Z"
+}

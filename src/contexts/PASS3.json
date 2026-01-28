@@ -1,0 +1,34 @@
+{
+  "ticker": "PASS3",
+  "codigo_cvm": "25127",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25127_2025-09-30_COMPASS_GÁS_E_ENERGIA_SA.pdf",
+  "texto_contexto": "A Compass Gás e Energia S.A. se destaca no cenário energético brasileiro como uma empresa estratégica na ampliação e diversificação do mercado de gás natural. Com um modelo de negócio robusto, a companhia se dedica à distribuição de gás natural e à oferta de serviços de marketing e suprimento de energia, posicionando-se como um player essencial na transição energética do país. A Compass opera em dois segmentos principais: a Distribuição, que é representada pela Comgás, a maior distribuidora de gás natural do Brasil, e o segmento de Marketing & Serviços, que busca oferecer alternativas de suprimento de gás, promovendo segurança e flexibilidade para seus clientes.\n\nA empresa atende a uma base significativa de clientes, refletindo sua capacidade de expandir a rede de distribuição, que abrange milhares de quilômetros de gasodutos. Os principais indicadores de desempenho (KPIs) da Compass incluem o número de clientes atendidos, a extensão da rede de distribuição e o volume de gás distribuído. Esses KPIs são cruciais para medir a eficiência operacional e a capacidade de atender à crescente demanda por gás natural, que se torna cada vez mais relevante como uma alternativa sustentável em comparação com combustíveis fósseis. A introdução de biometano como uma fonte diversificada de suprimento é um dos principais drivers de valor para a empresa, alinhando-se com as tendências globais de sustentabilidade e inovação no setor energético.\n\nEntretanto, a Compass enfrenta uma série de riscos que podem impactar suas operações e resultados financeiros. A volatilidade dos preços do gás natural é um fator crítico, uma vez que pode afetar tanto a margem de lucro quanto a competitividade da empresa em relação a outras fontes de energia. Além disso, a dependência de um ambiente regulatório que pode ser suscetível a mudanças políticas e econômicas representa um desafio constante. A estrutura de capital da Compass, que combina dívida e patrimônio líquido, reflete um nível moderado de alavancagem financeira, permitindo à empresa manter uma flexibilidade operacional enquanto busca expandir suas operações.\n\nA governança corporativa da Compass é um aspecto fundamental para sua operação, uma vez que a empresa deve se alinhar às normas estabelecidas pela ANP (Agência Nacional do Petróleo, Gás Natural e Biocombustíveis) e outras entidades reguladoras. A conformidade com as regulamentações do setor de gás natural é essencial para garantir a continuidade das operações e a confiança dos investidores. Além disso, a empresa demonstra um compromisso com práticas de ESG (ambientais, sociais e de governança), buscando alinhar suas operações com os Objetivos de Desenvolvimento Sustentável da ONU. Essa abordagem não apenas fortalece a reputação da Compass, mas também pode influenciar positivamente sua aceitação no mercado e sua capacidade de atrair investimentos.\n\nNo que diz respeito à competição, a Compass atua em um mercado dinâmico, onde a concorrência com outras fontes de energia, como energia elétrica e biocombustíveis, é intensa. A empresa deve constantemente inovar e adaptar suas estratégias para se manter competitiva, especialmente em um cenário onde a demanda por soluções energéticas sustentáveis está em ascensão. A sensibilidade macroeconômica também desempenha um papel importante nas operações da Compass, uma vez que fatores como crescimento econômico, políticas governamentais e flutuações nos preços das commodities podem impactar diretamente a demanda por gás natural e, consequentemente, os resultados financeiros da empresa.\n\nEm suma, a Compass Gás e Energia S.A. se posiciona como uma empresa fundamental na transição energética do Brasil, com um modelo de negócio que combina distribuição de gás natural e serviços de suprimento. Apesar dos desafios e riscos inerentes ao setor, a empresa demonstra um compromisso com a inovação, a sustentabilidade e a governança, fatores que são essenciais para seu crescimento e sucesso a longo prazo. A capacidade de navegar em um ambiente regulatório complexo e de se adaptar às mudanças nas demandas do mercado será crucial para a Compass consolidar sua posição de liderança no setor energético brasileiro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$4.3 bi (trimestre) | R$12.8 bi (LTM)\n- EBITDA: R$1.3 bi (trimestre) | R$3.9 bi (LTM) | Margem 31.6%\n- Lucro Líquido: R$0.4 bi (trimestre) | R$1.2 bi (LTM)\n- Dívida: R$9.9 bi (líquida) | R$14.4 bi (bruta)\n- Capex: R$0.6 bi (trimestre) | R$1.5 bi (LTM)\n- Operacional: Atendimento a 3,0 milhões de clientes, com 28 mil km de extensão da rede e volume distribuído de 15,5 MMm³/d.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 4261222900,
+      "receita_liquida_ltm": 12806167000,
+      "ebitda_tri": 1345762000,
+      "ebitda_ltm": 3858726000,
+      "lucro_liquido_tri": 432074000,
+      "lucro_liquido_ltm": 1205111000,
+      "divida_liquida": 9889312000,
+      "divida_bruta": 14364924000,
+      "capex_tri": 642030000,
+      "capex_ltm": 1545889000,
+      "margem_ebitda_pct": 31.6,
+      "margem_liquida_pct": 10.1
+    },
+    "operacionais": {
+      "descricao": "Atendimento a 3,0 milhões de clientes, com 28 mil km de extensão da rede e volume distribuído de 15,5 MMm³/d.",
+      "metricas": {
+        "clientes_atendidos": 3000000,
+        "extensao_rede_km": 28000,
+        "volume_distribuido_m3_dia": 15500000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:37:05.445729Z"
+}

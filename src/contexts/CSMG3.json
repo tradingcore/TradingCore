@@ -1,0 +1,36 @@
+{
+  "ticker": "CSMG3",
+  "codigo_cvm": "19445",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "19445_2025-09-30_COMPANHIA_DE_SANEAMENTO_DE_MINAS_GERAIS.pdf",
+  "texto_contexto": "A COPASA MG, Companhia de Saneamento de Minas Gerais, é uma entidade de economia mista que desempenha um papel fundamental na prestação de serviços de saneamento básico no estado de Minas Gerais. Controlada pelo governo estadual, a empresa se destaca por sua abrangência, operando em cerca de 75% dos municípios mineiros e atendendo a uma população significativa, que inclui milhões de habitantes em serviços de abastecimento de água e esgotamento sanitário. A atuação da COPASA não se limita apenas ao fornecimento de água e tratamento de esgoto, mas também se estende à gestão de resíduos sólidos, refletindo uma abordagem integrada e abrangente em relação ao saneamento.\n\nO modelo de negócio da COPASA é estruturado em torno da prestação de serviços essenciais, cuja eficiência e qualidade são cruciais para a saúde pública e o bem-estar da população. Os segmentos de atuação da companhia são interligados, com o abastecimento de água e o esgotamento sanitário sendo os pilares centrais. A empresa busca constantemente expandir sua base de clientes e melhorar a qualidade dos serviços prestados, o que é vital para a geração de receita e a sustentabilidade do negócio. Os principais indicadores de desempenho, como receita líquida, EBITDA e lucro líquido, são monitorados de perto, permitindo à empresa avaliar sua performance e tomar decisões estratégicas informadas.\n\nOs drivers de valor da COPASA são diversos e incluem a eficiência operacional, que se traduz em custos reduzidos e maior rentabilidade, e a capacidade de investimento em infraestrutura, essencial para atender à crescente demanda por serviços de saneamento. A melhoria na qualidade dos serviços é um fator que não apenas impacta a satisfação do cliente, mas também está intimamente ligado à reputação da empresa e à sua capacidade de atrair novos usuários. A relação dívida líquida/EBITDA é um KPI crucial que reflete a alavancagem da empresa e sua capacidade de honrar compromissos financeiros, sendo um aspecto que a gestão deve monitorar com atenção.\n\nEntretanto, a COPASA enfrenta uma série de riscos que podem impactar sua operação e desempenho financeiro. A variação nas tarifas regulatórias, que são ajustadas pela Agência Reguladora de Serviços de Abastecimento de Água e Esgotamento Sanitário do Estado de Minas Gerais (Arsae-MG), pode afetar diretamente a receita da empresa. Além disso, a inadimplência dos clientes representa um desafio significativo, especialmente em um cenário econômico instável. A dependência de recursos hídricos é outro risco, uma vez que a escassez de água pode comprometer a capacidade de abastecimento e, consequentemente, a satisfação do cliente. A necessidade de investimentos contínuos para atender às exigências regulatórias e de expansão é uma constante na agenda da empresa, exigindo planejamento e alocação de recursos adequados.\n\nA estrutura de capital da COPASA é composta por uma combinação de dívida bruta, que inclui empréstimos e debêntures, e um patrimônio líquido que reflete a capitalização e os lucros acumulados ao longo do tempo. A gestão da dívida é um aspecto crítico, especialmente em um setor que exige investimentos pesados em infraestrutura. A relação dívida líquida/EBITDA, que deve ser monitorada de perto, é um indicador que fornece insights sobre a saúde financeira da empresa e sua capacidade de financiar novos projetos.\n\nA governança da COPASA é estruturada para garantir a transparência e a responsabilidade na gestão dos recursos públicos. A supervisão regulatória é um fator crítico, com a Arsae-MG desempenhando um papel fundamental na definição das tarifas e na supervisão da qualidade dos serviços prestados. Mudanças na legislação ambiental e regulatória podem impactar a operação da empresa, exigindo adaptações rápidas e eficientes. Além disso, a COPASA deve estar atenta às metas de universalização dos serviços de saneamento, que são uma prioridade nacional e exigem um esforço conjunto entre o setor público e privado.\n\nA competição no setor de saneamento é um aspecto que a COPASA deve considerar, especialmente em um ambiente onde a privatização e a concessão de serviços estão em pauta. A empresa deve se posicionar de forma a garantir sua relevância e competitividade, investindo em inovação e melhoria contínua dos serviços. A sensibilidade macroeconômica também é um fator a ser considerado, uma vez que a saúde econômica do estado e do país impacta diretamente a capacidade de pagamento dos clientes e a demanda por serviços de saneamento.\n\nEm um contexto onde a sustentabilidade e a gestão eficiente dos recursos hídricos são cada vez mais relevantes, a COPASA se vê diante de desafios e oportunidades que exigem uma abordagem proativa e estratégica. A empresa deve continuar a se adaptar às mudanças no cenário regulatório e às expectativas da sociedade, buscando não apenas atender às demandas atuais, mas também se preparar para um futuro onde a sustentabilidade e a eficiência serão fundamentais para o sucesso no setor de saneamento.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.8 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.7 bi (trimestre) | N/D (LTM) | Margem 39.3%\n- Lucro Líquido: R$0.4 bi (trimestre) | N/D (LTM)\n- Dívida Líquida: R$6.1 bi\n- Capex: R$2.0 bi (trimestre) | N/D (LTM)\n- Operacional: A COPASA atendeu 11,844 milhões de habitantes, com 5,759 milhões de economias de água e 4,241 milhões de economias de esgoto. O volume medido de água foi de 172,573 milhões de m³ e de esgoto foi de 119,549 milhões de m³.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1840000000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 726900000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 360800000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 6060000000,
+      "divida_bruta": null,
+      "capex_tri": 2000000000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 39.3,
+      "margem_liquida_pct": 19.6
+    },
+    "operacionais": {
+      "descricao": "A COPASA atendeu 11,844 milhões de habitantes, com 5,759 milhões de economias de água e 4,241 milhões de economias de esgoto. O volume medido de água foi de 172,573 milhões de m³ e de esgoto foi de 119,549 milhões de m³.",
+      "metricas": {
+        "economias_agua": 5759000,
+        "economias_esgoto": 4241000,
+        "volume_medido_agua_m3": 172573000,
+        "volume_medido_esgoto_m3": 119549000,
+        "populacao_atendida": 11844000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:35:48.107643Z"
+}

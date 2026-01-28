@@ -1,0 +1,30 @@
+{
+  "ticker": "CPLE3",
+  "codigo_cvm": "14311",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "14311_2025-09-30_COMPANHIA_PARANAENSE_DE_ENERGIA_COPEL.pdf",
+  "texto_contexto": "A Copel, ou Companhia Paranaense de Energia, é uma das principais empresas do setor elétrico brasileiro, com um modelo de negócio robusto e diversificado que abrange todas as etapas da cadeia de valor da energia elétrica. Sua atuação se estende pela geração, transmissão, distribuição e comercialização de energia, permitindo à companhia não apenas atender a uma ampla gama de consumidores, mas também se posicionar como um player estratégico no mercado energético nacional.\n\nNo segmento de geração, a Copel se destaca pela sua capacidade de produzir energia a partir de fontes renováveis, com um portfólio que inclui usinas hidrelétricas e eólicas. Essa diversificação é um dos principais drivers de valor da empresa, pois não apenas garante uma oferta estável de energia, mas também alinha a companhia às crescentes demandas por práticas sustentáveis e redução de emissões de carbono. A Copel Geração e Transmissão (GeT) é responsável por essa parte do negócio, operando uma extensa malha de linhas de transmissão que conecta suas usinas aos centros de consumo.\n\nA Copel Distribuição (DIS) é o segmento que se encarrega de levar a energia até os consumidores finais, abrangendo residências, comércios e indústrias. Este segmento é crucial, pois representa a interface direta da empresa com o mercado e, portanto, é fundamental para a construção de relacionamentos duradouros com os clientes. A eficiência operacional neste segmento é um KPI vital, pois impacta diretamente a satisfação do cliente e a rentabilidade da empresa.\n\nPor sua vez, a Copel Comercialização (COM) atua na compra e venda de energia, tanto no mercado regulado quanto no mercado livre. Este segmento permite à empresa explorar oportunidades de arbitragem de preços e atender a clientes que buscam maior flexibilidade e competitividade em suas tarifas de energia. A capacidade de gerenciar riscos de mercado e de preços é um aspecto crítico para o sucesso dessa operação.\n\nOs principais indicadores de desempenho da Copel, como EBITDA, lucro líquido recorrente e margem EBITDA, são reflexos da saúde financeira da empresa e de sua capacidade de gerar valor para os acionistas. A relação dívida líquida/EBITDA é um indicador importante que ajuda a avaliar a alavancagem da companhia, que, embora tenha aumentado em decorrência de aquisições e investimentos, ainda se mantém dentro de parâmetros considerados saudáveis.\n\nEntretanto, a Copel não está isenta de riscos. A complexidade da regulação do setor elétrico brasileiro é um desafio constante, uma vez que mudanças nas políticas e nas tarifas podem impactar a rentabilidade e a operação da empresa. Além disso, a volatilidade nos preços de energia e a dependência de condições climáticas para a geração hidrelétrica são fatores que podem afetar a previsibilidade dos resultados. A empresa também enfrenta riscos operacionais, que podem incluir falhas em sua infraestrutura ou interrupções no fornecimento de energia.\n\nA estrutura de capital da Copel é composta por uma combinação de dívida e patrimônio líquido, refletindo uma estratégia de financiamento que busca equilibrar o crescimento e a sustentabilidade financeira. A empresa tem se empenhado em manter sua alavancagem em níveis adequados, mesmo diante de um cenário de investimentos significativos em expansão e modernização de suas operações.\n\nA governança corporativa da Copel tem se tornado um foco crescente, especialmente com a migração para o Novo Mercado da B3, que visa aumentar a transparência e a responsabilidade nas práticas de gestão. A empresa tem buscado alinhar suas operações aos princípios ESG (Ambiental, Social e Governança), o que não apenas melhora sua imagem perante investidores e consumidores, mas também pode agregar valor a longo prazo, em um cenário onde a sustentabilidade é cada vez mais valorizada.\n\nA competição no setor elétrico é intensa, com a presença de outras empresas que também buscam expandir suas operações e oferecer serviços diferenciados. A Copel, no entanto, se destaca por sua experiência e pela diversificação de suas fontes de energia, o que lhe confere uma vantagem competitiva em um mercado em constante evolução.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A demanda por energia está intimamente ligada ao crescimento econômico, e flutuações na economia podem impactar diretamente o consumo de energia. A Copel, portanto, deve estar atenta às tendências macroeconômicas e às mudanças no comportamento do consumidor, adaptando suas estratégias para garantir a continuidade de seu crescimento e a manutenção de sua posição de destaque no setor elétrico brasileiro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$6.8 bi (trimestre) | N/D (LTM)\n- EBITDA: R$1.3 bi (trimestre) | R$4.2 bi (LTM) | Margem 19.6%\n- Lucro Líquido: R$0.4 bi (trimestre) | R$1.4 bi (LTM)\n- Operacional: Receita operacional líquida de R$ 6,81 bilhões no 3T25, com EBITDA recorrente de R$ 1,34 bilhões e lucro líquido recorrente de R$ 374,8 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 6810500000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 1337400000,
+      "ebitda_ltm": 4175600000,
+      "lucro_liquido_tri": 374800000,
+      "lucro_liquido_ltm": 1404100000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 19.6,
+      "margem_liquida_pct": 5.5
+    },
+    "operacionais": {
+      "descricao": "Receita operacional líquida de R$ 6,81 bilhões no 3T25, com EBITDA recorrente de R$ 1,34 bilhões e lucro líquido recorrente de R$ 374,8 milhões.",
+      "metricas": {}
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:36:37.626448Z"
+}

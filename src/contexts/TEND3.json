@@ -1,0 +1,35 @@
+{
+  "ticker": "TEND3",
+  "codigo_cvm": "21148",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "21148_2025-09-30_CONSTRUTORA_TENDA_SA.pdf",
+  "texto_contexto": "A Construtora Tenda S.A. (TEND3) se posiciona como uma das principais referências no setor de construção civil no Brasil, com um foco claro na oferta de habitações acessíveis, especialmente nos segmentos 1 e 2 do programa Minha Casa Minha Vida (MCMV). Este modelo de negócio é fundamentado na produção de unidades habitacionais a preços competitivos, o que se torna um diferencial em um mercado onde a demanda por moradias acessíveis é crescente. A Tenda opera em nove áreas metropolitanas do Brasil, o que a permite captar uma ampla gama de clientes e atender a diferentes perfis de consumidores que buscam a realização do sonho da casa própria.\n\nUm dos pilares da operação da Tenda é a gestão de sua força de trabalho. A empresa opta por manter a maioria de seus funcionários diretamente contratados, o que proporciona um controle mais rigoroso sobre a qualidade e a eficiência dos processos de construção. Essa abordagem não apenas melhora a produtividade, mas também assegura que os padrões de qualidade sejam mantidos, refletindo diretamente na satisfação do cliente e na reputação da marca.\n\nOs principais indicadores de desempenho da Tenda, como receita líquida, lucro bruto, margem bruta, EBITDA ajustado e lucro líquido, são monitorados de forma contínua para garantir a saúde financeira da empresa. Além disso, a análise do volume de lançamentos, vendas líquidas e a margem do backlog são fundamentais para avaliar a capacidade de execução de projetos e a sustentabilidade do crescimento da empresa. A eficiência operacional, a capacidade de lançamento de novos projetos e a gestão de custos são considerados drivers de valor que influenciam diretamente o desempenho da Tenda no mercado.\n\nEntretanto, a operação da Tenda não está isenta de riscos. A volatilidade do mercado imobiliário pode impactar significativamente a demanda por novos empreendimentos, enquanto mudanças nas políticas governamentais relacionadas ao financiamento habitacional podem alterar o cenário competitivo. Além disso, a empresa enfrenta desafios relacionados a variações nos custos de materiais e mão de obra, que podem afetar suas margens de lucro. A dependência de financiamentos para a execução de projetos também representa um risco, especialmente em um ambiente econômico instável.\n\nA estrutura de capital da Tenda é um reflexo de sua gestão financeira prudente, caracterizada por um baixo nível de endividamento. A relação de dívida líquida sobre o patrimônio líquido, que se apresenta em níveis negativos, indica uma posição financeira sólida e uma geração de caixa robusta, permitindo à empresa investir em novos projetos e enfrentar eventuais adversidades do mercado.\n\nNo que diz respeito à governança, a Tenda adota práticas que visam garantir a transparência e a responsabilidade em suas operações. A empresa está sujeita a regulamentações específicas do setor de construção civil e do programa MCMV, que podem influenciar sua estratégia de negócios e a execução de seus projetos. Mudanças nas taxas de juros e nas políticas de habitação do governo são eventos críticos que podem impactar a operação da Tenda, assim como a evolução da demanda por imóveis, que é afetada por fatores econômicos, sociais e demográficos.\n\nAlém disso, a Tenda se destaca por suas iniciativas de sustentabilidade, refletindo um compromisso com práticas de construção responsáveis. A empresa busca constantemente a melhoria de seus processos operacionais, alinhando-se às expectativas de um mercado cada vez mais consciente da importância da sustentabilidade. Essa abordagem não apenas contribui para a preservação ambiental, mas também agrega valor à marca, atraindo consumidores que valorizam práticas responsáveis.\n\nEm suma, a Construtora Tenda S.A. se posiciona de maneira estratégica em um mercado desafiador, com um modelo de negócio focado na acessibilidade e na qualidade. Sua capacidade de adaptação às condições do mercado, aliada a uma gestão financeira sólida e a um compromisso com a sustentabilidade, coloca a empresa em uma posição favorável para enfrentar os desafios do setor e continuar a atender a uma demanda crescente por habitações acessíveis no Brasil.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.1 bi (trimestre) | R$0.4 bi (LTM)\n- EBITDA: R$0.2 bi (trimestre) | R$0.5 bi (LTM) | Margem 16.5%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.4 bi (LTM)\n- Dívida: R$0.2 bi (líquida) | R$1.1 bi (bruta)\n- Operacional: Lançamentos de 14 projetos totalizando R$ 1.562,9 milhões em PSV, com 6.231 unidades transferidas no trimestre.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1135400000,
+      "receita_liquida_ltm": 422400000,
+      "ebitda_tri": 187000000,
+      "ebitda_ltm": 506800000,
+      "lucro_liquido_tri": 111700000,
+      "lucro_liquido_ltm": 422400000,
+      "divida_liquida": 200900000,
+      "divida_bruta": 1117800000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 16.5,
+      "margem_liquida_pct": 9.8
+    },
+    "operacionais": {
+      "descricao": "Lançamentos de 14 projetos totalizando R$ 1.562,9 milhões em PSV, com 6.231 unidades transferidas no trimestre.",
+      "metricas": {
+        "unidades_lancadas": 1486,
+        "unidades_transferidas": 6231,
+        "preco_medio_venda": 216900,
+        "landbank": 26192300000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:37:44.434062Z"
+}
