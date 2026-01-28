@@ -86,26 +86,35 @@ Texto: {body}...
         
         noticias_texto = "\n---\n".join(noticias_formatadas)
         
-        prompt = f"""Classifique cada notícia como ESPECIFICA ou GENERICA para {ticker}{empresa_str}:
+        prompt = f"""Para cada notícia, RACIOCINE PASSO A PASSO antes de classificar para {ticker}{empresa_str}:
 
-ESPECIFICA: A notícia trata diretamente da empresa, seus produtos, executivos, resultados financeiros, operações, ou eventos que afetam especificamente seu setor de atuação.
+PERGUNTAS A RESPONDER PARA CADA NOTÍCIA:
+1. Qual o FOCO PRINCIPAL da notícia? (qual empresa/tema é o assunto central?)
+2. {ticker} é o ASSUNTO PRINCIPAL ou apenas MENCIONADA de passagem/em lista?
+3. A notícia traz informação ESPECÍFICA sobre {ticker} (resultados, eventos, decisões, operações)?
 
-GENERICA: A notícia fala do mercado como um todo, índices (Ibovespa, S&P500), macroeconomia, ou apenas menciona a empresa/setor como exemplo em uma lista de várias empresas.
+REGRAS DE CLASSIFICAÇÃO:
+- ESPECIFICA: {ticker} é o foco principal OU tem informação específica dela (resultados, CEO, operações, contratos)
+- GENERICA: {ticker} só aparece em lista/ranking, é mencionada como exemplo, ou a notícia é sobre mercado/índices em geral
 
-Exemplos de classificação:
-- "Petrobras anuncia novo CEO" → ESPECIFICA (sobre a empresa)
-- "Bradesco lucra R$5bi no trimestre" → ESPECIFICA (resultado da empresa)
-- "Setor de energia sofre com apagão" → ESPECIFICA (setor específico)
-- "Ibovespa sobe e bancos se beneficiam" → GENERICA (mercado geral)
-- "Dólar sobe e impacta bolsa brasileira" → GENERICA (macro)
-- "Analistas recomendam 10 ações para investir" → GENERICA (lista genérica)
+EXEMPLO DE RACIOCÍNIO:
+Título: "Vale avança, enquanto Hapvida cai: veja os destaques do dia"
+Analisando para DIRR3:
+1. Foco: Vale e Hapvida são os assuntos principais do título
+2. DIRR3: apenas mencionada numa lista de ações pressionadas no meio do texto
+3. Informação específica: NÃO, só diz que "está pressionada" sem detalhes
+→ GENERICA (mencionada em lista, sem informação específica sobre a empresa)
 
 {noticias_texto}
 
 Responda EXCLUSIVAMENTE em JSON:
 {{
   "classificacoes": [
-    {{"noticia_idx": 1, "especifica": true ou false, "motivo": "breve explicação"}},
+    {{
+      "noticia_idx": 1,
+      "raciocinio": "1. Foco: [tema central]. 2. {ticker}: [assunto principal/mencionada em lista]. 3. Info específica: [sim/não, qual]",
+      "especifica": true ou false
+    }},
     ...
   ]
 }}
