@@ -1,0 +1,35 @@
+{
+  "ticker": "GOLL3",
+  "codigo_cvm": "19569",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "19569_2025-09-30_GOL_LINHAS_AEREAS_INTELIGENTES_SA.pdf",
+  "texto_contexto": "A GOL Linhas Aéreas Inteligentes S.A. se destaca como uma das principais companhias aéreas do Brasil, operando com um modelo de negócios que visa democratizar o transporte aéreo. A empresa tem como missão tornar as viagens aéreas acessíveis a um público mais amplo, oferecendo tarifas competitivas e uma experiência de viagem que prioriza a satisfação do cliente. Parte do Grupo Abra, a GOL mantém alianças estratégicas com grandes players internacionais, como a American Airlines e a Air France-KLM, além de contar com uma rede de 18 acordos de codeshare e interline, que ampliam significativamente a conectividade para seus passageiros.\n\nO foco da GOL está predominantemente no transporte de passageiros, embora a companhia também tenha uma unidade dedicada ao transporte de cargas, a GOLLOG. Essa diversificação permite que a empresa não apenas maximize sua receita, mas também se posicione de forma mais resiliente em um mercado que pode ser volátil. Os principais indicadores de desempenho da GOL, como receita líquida, EBITDA e taxa de ocupação, são fundamentais para avaliar sua saúde financeira e eficiência operacional. A companhia se destaca por ter o menor custo unitário na América Latina, um diferencial competitivo que a ajuda a se manter relevante em um setor caracterizado por margens apertadas e intensa concorrência.\n\nOs drivers de valor para a GOL incluem não apenas a eficiência operacional, mas também a experiência do cliente, que é um foco central da estratégia da empresa. A companhia tem sido reconhecida por sua pontualidade e pela lembrança de marca entre os brasileiros, o que reforça sua posição no mercado. A capacidade de oferecer um serviço de qualidade, aliado a tarifas acessíveis, é um fator que contribui para a fidelização dos clientes e para a atração de novos passageiros.\n\nEntretanto, a GOL enfrenta uma série de riscos que podem impactar suas operações e resultados financeiros. A volatilidade dos preços do combustível é um dos principais desafios, uma vez que os custos de combustível representam uma parte significativa das despesas operacionais. Além disso, a intensa concorrência no setor aéreo, tanto de companhias nacionais quanto internacionais, exige que a GOL esteja sempre atenta às tendências de mercado e às necessidades dos consumidores. A exposição a flutuações cambiais também é uma preocupação, especialmente em relação às operações internacionais, que podem ser afetadas por variações nas taxas de câmbio.\n\nA estrutura de capital da GOL é composta por uma combinação de dívida e capital próprio, refletindo um esforço contínuo da companhia para desalavancar sua posição financeira após um período de reestruturação. A gestão da dívida é crucial para garantir a sustentabilidade financeira a longo prazo, especialmente em um setor que pode ser suscetível a crises econômicas e mudanças nas condições de mercado. A regulação do setor aéreo, tanto no Brasil quanto nos países onde a GOL opera, também desempenha um papel importante, exigindo conformidade com normas de segurança e tarifas que podem impactar a competitividade da empresa.\n\nEventos críticos para a GOL incluem a recuperação pós-pandemia, que trouxe desafios e oportunidades para o setor aéreo. A expansão da malha aérea e a introdução de novas rotas internacionais são estratégias que a companhia está adotando para capturar a demanda crescente por viagens. Além disso, a modernização da frota, com a introdução de aeronaves mais eficientes, não apenas melhora a eficiência operacional, mas também contribui para a sustentabilidade financeira a longo prazo, alinhando-se às tendências globais de redução de emissões e eficiência energética.\n\nEm um ambiente de mercado em constante mudança, a capacidade da GOL de manter a eficiência operacional e a satisfação do cliente será fundamental para sua continuidade e crescimento. A empresa está posicionada para enfrentar os desafios do setor, aproveitando suas fortalezas e se adaptando às novas realidades do mercado aéreo, sempre com o objetivo de oferecer uma experiência de viagem que atenda às expectativas de seus clientes.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$5.5 bi (trimestre) | R$16.0 bi (LTM)\n- EBITDA: R$1.6 bi (trimestre) | R$4.3 bi (LTM) | Margem 29.7%\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.1 bi (LTM)\n- Dívida: R$19.7 bi (líquida) | R$25.5 bi (bruta)\n- Capex: R$0.3 bi (trimestre) | R$1.0 bi (LTM)\n- Operacional: A GOL transportou 8,8 milhões de passageiros no 3T25, com um aumento de 10,7% em relação ao 3T24. A capacidade total aumentou 8,9%, e a margem EBITDA alcançou 29,7%. A companhia operou com um Load Factor de 84,1%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 5537000000,
+      "receita_liquida_ltm": 16002000000,
+      "ebitda_tri": 1643000000,
+      "ebitda_ltm": 4315000000,
+      "lucro_liquido_tri": 248000000,
+      "lucro_liquido_ltm": 92000000,
+      "divida_liquida": 19697000000,
+      "divida_bruta": 25494000000,
+      "capex_tri": 305000000,
+      "capex_ltm": 1001000000,
+      "margem_ebitda_pct": 29.7,
+      "margem_liquida_pct": 4.5
+    },
+    "operacionais": {
+      "descricao": "A GOL transportou 8,8 milhões de passageiros no 3T25, com um aumento de 10,7% em relação ao 3T24. A capacidade total aumentou 8,9%, e a margem EBITDA alcançou 29,7%. A companhia operou com um Load Factor de 84,1%.",
+      "metricas": {
+        "passageiros_transportados": 8800000,
+        "load_factor_pct": 84.1,
+        "ask_total_bilhoes": 12600000000,
+        "decolagens_mil": 60600
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:16:59.024680Z"
+}
