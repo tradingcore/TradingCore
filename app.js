@@ -248,8 +248,8 @@ const showDashboard = () => {
   // Atualizar ticker tape com ativos do usuário
   loadTickerTape();
   
-  // Show carteira section by default
-  showSection("carteira");
+  // Show noticias section by default (já que rodamos 1x ao dia, é mais útil)
+  showSection("noticias");
 };
 
 const showSection = (sectionName) => {
@@ -270,6 +270,8 @@ const showSection = (sectionName) => {
     updateMarketStatus();
     renderTickerFilter();
     loadTodayNews();
+    // Garantir que o calendário está expandido no desktop
+    ensureCalendarExpanded();
   } else if (sectionName === "mapa" && sectionMapa) {
     sectionMapa.classList.remove("hidden");
     loadHeatmap();
@@ -1315,6 +1317,8 @@ const loadAvailableNewsDates = async () => {
     }
     
     renderCalendar();
+    // Garantir que o calendário está expandido após carregar os dados
+    ensureCalendarExpanded();
   } catch (error) {
     console.error("Erro ao carregar datas disponíveis:", error);
   }
@@ -1426,6 +1430,20 @@ const nextMonth = () => {
     currentCalendarYear++;
   }
   renderCalendar();
+};
+
+// Garantir que o calendário está expandido (principalmente no desktop)
+const ensureCalendarExpanded = () => {
+  const isMobile = window.innerWidth <= 900;
+  const calendarHeader = document.getElementById("calendar-toggle");
+  const calendarContent = document.getElementById("calendar-container");
+  
+  if (!isMobile && calendarContent) {
+    // No desktop, sempre expandir o calendário
+    calendarContent.classList.remove("collapsed");
+    calendarContent.classList.add("expanded");
+    calendarHeader?.classList.add("expanded");
+  }
 };
 
 const formatDateRef = (dateStr) => {
@@ -2587,8 +2605,8 @@ const boot = async () => {
   // Carregar ticker tape imediatamente
   loadTickerTape();
   
-  // Atualizar ticker tape a cada 5 minutos
-  setInterval(loadTickerTape, 5 * 60 * 1000);
+  // Atualizar ticker tape a cada 10 minutos (rodamos 1x ao dia, não precisa mais frequente)
+  setInterval(loadTickerTape, 10 * 60 * 1000);
   
   await loadTickers();
 
