@@ -1,0 +1,34 @@
+{
+  "ticker": "DESK3",
+  "codigo_cvm": "26026",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "26026_2025-09-30_DESKTOP_SA.pdf",
+  "texto_contexto": "A Desktop S.A. se destaca como uma das principais provedoras de serviços de internet no Brasil, com uma forte presença no estado de São Paulo, onde se posiciona como líder no segmento de fibra óptica. O modelo de negócio da empresa é caracterizado por uma abordagem híbrida de crescimento, que combina a expansão orgânica com aquisições estratégicas de ativos adjacentes. Essa estratégia permite à Desktop não apenas aumentar sua base de clientes, mas também diversificar sua oferta de serviços, garantindo uma posição competitiva robusta em um mercado em constante evolução.\n\nOs principais segmentos de atuação da Desktop incluem a oferta de serviços de internet banda larga e soluções de conectividade, tanto para residências quanto para empresas. Essa segmentação é fundamental, pois permite à empresa atender a diferentes perfis de clientes, desde usuários residenciais que buscam alta velocidade e estabilidade na conexão até empresas que necessitam de soluções personalizadas e escaláveis. A capacidade de inovar e adaptar seus serviços às necessidades do mercado é um dos principais drivers de valor da empresa, que se reflete em indicadores de desempenho (KPIs) como receita líquida, EBITDA ajustado, margem EBITDA, número de casas conectadas e passadas, além do crescimento da base de assinantes.\n\nA eficiência operacional é um fator crucial para a Desktop, pois impacta diretamente sua rentabilidade e capacidade de investimento em infraestrutura. A expansão da rede de fibra óptica é um dos pilares dessa eficiência, permitindo à empresa não apenas aumentar sua cobertura geográfica, mas também melhorar a qualidade do serviço oferecido. A experiência do cliente, que inclui suporte técnico e atendimento ao consumidor, é outro aspecto vital que influencia a retenção de assinantes e a atração de novos clientes. Em um mercado competitivo, onde a fidelização é desafiadora, a capacidade de oferecer um serviço superior pode ser um diferencial significativo.\n\nEntretanto, a Desktop enfrenta uma série de riscos que podem impactar seu desempenho. A concorrência no setor de telecomunicações é intensa, com diversas empresas disputando a mesma base de clientes. Além disso, a empresa está sujeita a flutuações nas taxas de juros, que podem afetar sua estrutura de capital, especialmente considerando que a empresa possui um nível significativo de endividamento, com dívidas que incluem empréstimos e debêntures. A gestão do perfil de endividamento é, portanto, uma prioridade, e a recente emissão de debêntures com vencimento em 2032 é um exemplo de como a empresa busca otimizar sua estrutura financeira.\n\nA governança corporativa da Desktop é um aspecto que merece destaque, uma vez que a transparência e a responsabilidade na gestão são fundamentais para a confiança dos investidores e stakeholders. A empresa opera sob a supervisão da Anatel, que estabelece normas e diretrizes para o setor de telecomunicações no Brasil. A conformidade com essas regulamentações é essencial para a operação da empresa e pode influenciar suas estratégias de crescimento e expansão.\n\nA competição no setor de telecomunicações é multifacetada, com a presença de grandes players e novos entrantes que buscam capturar participação de mercado. A Desktop deve estar atenta às inovações tecnológicas e às mudanças nas preferências dos consumidores, que podem alterar rapidamente o cenário competitivo. A capacidade de se adaptar e inovar será crucial para manter sua posição de liderança.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A saúde da economia, as taxas de desemprego e a renda disponível das famílias influenciam diretamente a demanda por serviços de internet. Em tempos de crise econômica, a disposição dos consumidores em investir em serviços de conectividade pode ser afetada, impactando o crescimento da base de assinantes e, consequentemente, a receita da empresa. A Desktop, portanto, deve monitorar atentamente esses indicadores macroeconômicos para ajustar suas estratégias e garantir a sustentabilidade de seu crescimento a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.3 bi (trimestre) | R$0.9 bi (LTM)\n- EBITDA: R$0.2 bi (trimestre) | R$0.5 bi (LTM) | Margem 53.0%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- Dívida: R$1.5 bi (líquida) | R$1.9 bi (bruta)\n- Capex: R$0.1 bi (trimestre) | R$0.3 bi (LTM)\n- Operacional: 1.198 mil assinantes, 4,8 milhões de casas passadas, 200 cidades atendidas.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 310581000,
+      "receita_liquida_ltm": 902574000,
+      "ebitda_tri": 163897000,
+      "ebitda_ltm": 471097000,
+      "lucro_liquido_tri": 35323000,
+      "lucro_liquido_ltm": 111516000,
+      "divida_liquida": 1539628000,
+      "divida_bruta": 1892330000,
+      "capex_tri": 88000000,
+      "capex_ltm": 325236000,
+      "margem_ebitda_pct": 53,
+      "margem_liquida_pct": 11
+    },
+    "operacionais": {
+      "descricao": "1.198 mil assinantes, 4,8 milhões de casas passadas, 200 cidades atendidas.",
+      "metricas": {
+        "casas_conectadas": 1198000,
+        "casas_passadas": 4800000,
+        "cidades_atendidas": 200
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:46:46.417450Z"
+}

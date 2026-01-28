@@ -1,0 +1,36 @@
+{
+  "ticker": "PNVL3",
+  "codigo_cvm": "9342",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "9342_2025-09-30_DIMED_SA_DISTRIBUIDORA_DE_MEDICAMENTOS.pdf",
+  "texto_contexto": "A Dimed S.A. Distribuidora de Medicamentos, listada na B3 sob o código PNVL3, se posiciona como uma das principais varejistas do setor farmacêutico no Brasil, com uma presença marcante, especialmente na Região Sul do país. Seu modelo de negócio é diversificado, englobando a venda de medicamentos, produtos de higiene e beleza, além de oferecer serviços de saúde, como vacinação e atendimentos em clínicas. Essa abordagem integrada permite à Dimed não apenas atender às necessidades básicas de saúde da população, mas também se destacar em um mercado competitivo, onde a experiência do cliente e a conveniência são cada vez mais valorizadas.\n\nOs segmentos de atuação da Dimed são amplos e incluem o varejo de medicamentos, que é o núcleo de suas operações, e uma linha crescente de produtos de marca própria, que tem se mostrado um diferencial importante na estratégia da empresa. A marca própria não apenas contribui para a diversificação da oferta, mas também melhora as margens de lucro, uma vez que permite à empresa controlar melhor os custos e a precificação. Além disso, a Dimed tem investido em serviços de saúde, o que a posiciona como uma fornecedora completa de soluções para o bem-estar dos consumidores.\n\nOs principais indicadores de desempenho (KPIs) da Dimed, como receita bruta, lucro bruto, EBITDA ajustado e lucro líquido ajustado, refletem a saúde financeira da empresa e sua capacidade de gerar valor. O crescimento contínuo da receita bruta, aliado ao aumento do número de clientes ativos e ao ticket médio, demonstra a eficácia das estratégias de marketing e a fidelização da clientela. A expansão da rede de lojas e o crescimento das vendas digitais são drivers fundamentais que impulsionam o desempenho da empresa, especialmente em um cenário onde a digitalização se torna cada vez mais relevante. A Dimed tem conseguido capturar uma parcela significativa de suas vendas por meio de canais digitais, o que representa uma adaptação bem-sucedida às novas tendências de consumo.\n\nEntretanto, a Dimed não está isenta de riscos. A concorrência no setor de varejo farmacêutico é intensa, com diversas redes competindo pela atenção dos consumidores. Além disso, flutuações nas taxas de juros podem impactar suas despesas financeiras, especialmente em um ambiente econômico volátil. A dependência de regulamentações governamentais também representa um desafio, uma vez que mudanças nas leis podem afetar tanto a operação quanto a precificação dos produtos. A estrutura de capital da Dimed é considerada saudável, com uma relação dívida líquida/EBITDA que sugere uma gestão financeira equilibrada e um acesso a linhas de crédito com custos competitivos, permitindo à empresa investir em crescimento e inovação.\n\nA regulação do setor farmacêutico no Brasil é rigorosa, exigindo que as empresas cumpram normas de segurança e eficácia de produtos, além de regulamentações fiscais e trabalhistas que impactam diretamente as operações. A conformidade com essas normas é crucial para a manutenção da reputação da Dimed e para a confiança dos consumidores. Eventos críticos, como mudanças na legislação, crises econômicas que possam afetar o consumo e desastres naturais que impactem a logística e a operação das lojas, são fatores que a empresa deve monitorar de perto. No entanto, a Dimed tem demonstrado resiliência e uma capacidade notável de adaptação a esses desafios, mantendo um crescimento consistente ao longo dos anos.\n\nEm um cenário macroeconômico, a sensibilidade da Dimed a fatores como a inflação, o desemprego e a confiança do consumidor é evidente. A empresa deve estar atenta às mudanças nas condições econômicas que podem influenciar o comportamento de compra dos consumidores. A capacidade de se adaptar rapidamente a essas mudanças, seja por meio de ajustes na estratégia de preços, promoções ou inovação em produtos e serviços, será fundamental para a continuidade do seu crescimento e sucesso no mercado. A Dimed, com sua sólida estrutura de governança e foco em eficiência operacional, está bem posicionada para enfrentar os desafios do setor e aproveitar as oportunidades que surgem em um ambiente dinâmico e em constante evolução.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.5 bi (trimestre) | R$4.2 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.2 bi (LTM) | Margem 5.4%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- Operacional: No 3T25, a Panvel registrou uma Receita Bruta do Varejo de R$ 1,474 bilhões, com um EBITDA Ajustado de R$ 79,9 milhões e Lucro Líquido Ajustado de R$ 34,3 milhões. A companhia encerrou o trimestre com 651 lojas em operação e um ticket médio de R$ 93,92.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1479487000,
+      "receita_liquida_ltm": 4249910000,
+      "ebitda_tri": 79896000,
+      "ebitda_ltm": 214619000,
+      "lucro_liquido_tri": 34258000,
+      "lucro_liquido_ltm": 90096000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 5.4,
+      "margem_liquida_pct": 2.3
+    },
+    "operacionais": {
+      "descricao": "No 3T25, a Panvel registrou uma Receita Bruta do Varejo de R$ 1,474 bilhões, com um EBITDA Ajustado de R$ 79,9 milhões e Lucro Líquido Ajustado de R$ 34,3 milhões. A companhia encerrou o trimestre com 651 lojas em operação e um ticket médio de R$ 93,92.",
+      "metricas": {
+        "numero_de_lojas": 651,
+        "numero_de_funcionarios": 11282,
+        "ticket_medio": 93.92,
+        "clientes_ativos": 7200000,
+        "clientes_fieis": 1676000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:50:08.546881Z"
+}

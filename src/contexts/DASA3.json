@@ -1,0 +1,34 @@
+{
+  "ticker": "DASA3",
+  "codigo_cvm": "19623",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "19623_2025-09-30_DIAGNOSTICOS_DA_AMERICA_SA.pdf",
+  "texto_contexto": "A Dasa (DASA3) se destaca como uma das principais operadoras no setor de saúde no Brasil, com um foco acentuado em medicina diagnóstica. Seu modelo de negócio é estruturado em torno da oferta de serviços de diagnóstico, que são disponibilizados por meio de uma ampla rede de unidades de atendimento, incluindo laboratórios e centros de imagem. Além disso, a empresa possui uma vertical voltada para hospitais e oncologia, o que a posiciona de forma estratégica em um mercado que demanda serviços de saúde cada vez mais especializados e acessíveis.\n\nA Dasa segmenta suas operações em duas áreas principais: Diagnósticos e Hospitais e Oncologia Nordeste. Essa segmentação permite à empresa atender a diferentes necessidades do mercado, diversificando suas fontes de receita e mitigando riscos associados a flutuações em segmentos específicos. Os principais indicadores de desempenho (KPIs) utilizados pela Dasa incluem o crescimento da receita, a margem EBITDA, a geração de caixa operacional e a satisfação do cliente, que é medida pelo Net Promoter Score (NPS). Esses KPIs são fundamentais para avaliar a eficiência e a eficácia das operações da empresa, além de fornecer insights sobre a experiência do paciente.\n\nOs drivers de valor da Dasa são multifacetados e incluem a expansão da capacidade de atendimento, a inovação em produtos e serviços, a digitalização dos processos e a busca por eficiência operacional. A empresa tem investido significativamente em tecnologia e inteligência artificial, visando não apenas melhorar a experiência do paciente, mas também elevar a qualidade dos serviços prestados. Essas iniciativas são cruciais em um setor onde a competitividade é intensa e a expectativa dos consumidores por serviços rápidos e de qualidade é alta.\n\nEntretanto, a Dasa enfrenta uma série de riscos que podem impactar seu desempenho. A concorrência no setor de saúde é feroz, com diversas empresas buscando capturar participação de mercado. Além disso, variações econômicas podem influenciar a demanda por serviços de saúde, uma vez que em períodos de crise, os consumidores podem optar por adiar exames e tratamentos. A regulação do setor é outro fator crítico, uma vez que as normas estabelecidas pela Agência Nacional de Saúde Suplementar (ANS) e pela Comissão de Valores Mobiliários (CVM) são rigorosas e estão sujeitas a mudanças que podem afetar tanto a operação quanto a rentabilidade da Dasa.\n\nA estrutura de capital da Dasa é composta por uma combinação equilibrada de dívida e patrimônio líquido, com um foco recente na redução da alavancagem financeira. A empresa tem demonstrado uma trajetória de desalavancagem, com um índice de 2,38x EBITDA, o que reflete sua solidez financeira e capacidade de gerar caixa. Os ratings de crédito positivos que a Dasa possui são um indicativo de sua robustez no mercado, permitindo-lhe acessar recursos financeiros de forma mais favorável.\n\nA governança da Dasa é estruturada para atender às exigências regulatórias e garantir a transparência nas operações. A complexidade da regulação do setor de saúde no Brasil exige que a empresa mantenha um alto padrão de conformidade, o que é essencial para a sua reputação e sustentabilidade a longo prazo. Eventos críticos recentes, como a formação da joint venture Rede Américas, resultaram na desconsolidação de ativos hospitalares, enquanto a venda de operações não essenciais, como as na Argentina e o negócio de medicina ocupacional, visam fortalecer a posição financeira e operacional da Dasa. Essas decisões estratégicas refletem um foco em otimizar a estrutura de capital e concentrar esforços em áreas com maior potencial de crescimento.\n\nPor fim, a sensibilidade macroeconômica é um aspecto que não pode ser ignorado. A Dasa opera em um ambiente onde fatores como inflação, taxas de juros e políticas de saúde pública podem influenciar diretamente a demanda por seus serviços. A capacidade da empresa de se adaptar a essas condições e de inovar continuamente será fundamental para manter sua posição de liderança no setor de saúde e garantir um crescimento sustentável no futuro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$2.1 bi (trimestre) | R$6.0 bi (LTM)\n- EBITDA: R$0.7 bi (trimestre) | R$2.1 bi (LTM) | Margem 26.5%\n- Dívida Líquida: R$6.7 bi\n- Operacional: Receita bruta de R$ 2,3 bilhões em Diagnósticos, crescimento de 11,7% em relação ao 3T24. Geração operacional de caixa de R$ 481 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 2115000000,
+      "receita_liquida_ltm": 5961000000,
+      "ebitda_tri": 691000000,
+      "ebitda_ltm": 2137000000,
+      "lucro_liquido_tri": null,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 6657000000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 26.5,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "Receita bruta de R$ 2,3 bilhões em Diagnósticos, crescimento de 11,7% em relação ao 3T24. Geração operacional de caixa de R$ 481 milhões.",
+      "metricas": {
+        "numero_exames": null,
+        "clientes_atendidos": 8000,
+        "unidades_atendimento": null
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:48:56.704454Z"
+}
