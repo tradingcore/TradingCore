@@ -1,0 +1,34 @@
+{
+  "ticker": "RAIL3",
+  "codigo_cvm": "17450",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "17450_2025-09-30_RUMO_SA.pdf",
+  "texto_contexto": "A Rumo S.A. é uma das principais empresas do setor de logística no Brasil, destacando-se especialmente no transporte ferroviário e na oferta de soluções logísticas integradas. Com um foco predominante no agronegócio e na indústria, a empresa desempenha um papel crucial na movimentação de cargas, principalmente produtos agrícolas, industriais e contêineres. A extensa malha ferroviária da Rumo conecta regiões produtoras a portos e centros de consumo, facilitando o escoamento de produtos e contribuindo para a eficiência da cadeia logística nacional.\n\nO modelo de negócio da Rumo é estruturado em três operações principais. A Operação Norte abrange as malhas Norte, Paulista, Central e Oeste, enquanto a Operação Sul se concentra na Malha Sul. Além disso, a empresa possui uma operação dedicada a contêineres, que envolve atividades logísticas intermodais, permitindo uma integração eficiente entre diferentes modos de transporte. Essa segmentação permite à Rumo atender a uma ampla gama de clientes e adaptar suas operações às necessidades específicas de cada segmento de mercado.\n\nOs principais indicadores de desempenho da Rumo, como volume transportado em RTK (toneladas por quilômetro), receita líquida, EBITDA ajustado e margem EBITDA, são fundamentais para avaliar a saúde financeira e operacional da empresa. O crescimento do volume transportado é impulsionado por diversos fatores, incluindo a crescente demanda por exportação de grãos, a recuperação da produção agrícola e a busca constante por eficiência operacional. A Rumo se beneficia de sua posição de mercado, especialmente em relação às exportações de grãos, com destaque para o Porto de Santos, um dos principais pontos de escoamento do país.\n\nOs drivers de valor para a Rumo são variados e incluem a expansão da capacidade de transporte, a modernização da infraestrutura ferroviária e a diversificação dos serviços logísticos oferecidos. A empresa tem investido em melhorias em sua malha ferroviária e na adoção de tecnologias que visam aumentar a eficiência e a segurança das operações. No entanto, a Rumo também enfrenta riscos significativos, como a volatilidade dos preços das commodities, que pode impactar a demanda por transporte, e as condições climáticas adversas que afetam a produção agrícola. Além disso, a concorrência no setor de transporte é intensa, exigindo que a Rumo mantenha sua competitividade por meio de inovações e melhorias contínuas.\n\nA estrutura de capital da Rumo é composta por uma combinação de dívida e patrimônio líquido, com um nível de alavancagem financeira que, conforme reportado, é de 1,9x em relação ao EBITDA ajustado. A empresa tem buscado otimizar sua estrutura de capital por meio de emissões de debêntures e financiamentos, com o objetivo de reduzir custos financeiros e alongar os prazos de vencimento de suas obrigações. Essa gestão cuidadosa da estrutura de capital é essencial para garantir a sustentabilidade financeira da empresa e sua capacidade de investir em projetos de expansão.\n\nA governança da Rumo é estruturada para garantir transparência e responsabilidade nas suas operações. A empresa está sujeita a regulamentações governamentais que impactam suas operações e tarifas, o que exige um acompanhamento constante das mudanças regulatórias e uma adaptação rápida às novas exigências. A conformidade com essas regulamentações é crucial para a manutenção da licença para operar e para a proteção dos interesses dos acionistas.\n\nNo que diz respeito à competição, a Rumo se destaca em um setor onde a eficiência e a capacidade de inovação são determinantes para o sucesso. A empresa enfrenta concorrência não apenas de outras operadoras ferroviárias, mas também de modais alternativos de transporte, como o rodoviário e o marítimo. A capacidade de oferecer serviços integrados e soluções logísticas completas é um diferencial competitivo que a Rumo busca continuamente aprimorar.\n\nA sensibilidade macroeconômica é um fator relevante para a Rumo, uma vez que a demanda por transporte está intimamente ligada ao desempenho da economia, especialmente do agronegócio. Fatores como crescimento econômico, políticas agrícolas e flutuações nos preços das commodities podem impactar diretamente a operação da empresa. Assim, a Rumo deve estar atenta às tendências macroeconômicas e às mudanças no ambiente regulatório, adaptando suas estratégias para mitigar riscos e aproveitar oportunidades de crescimento.\n\nEm suma, a Rumo S.A. é uma empresa robusta e estratégica no setor de logística brasileiro, com um modelo de negócio bem definido e uma estrutura que permite a adaptação às dinâmicas do mercado. Com uma governança sólida e um foco na eficiência operacional, a Rumo está posicionada para enfrentar os desafios do setor e continuar a desempenhar um papel vital na logística do agronegócio e da indústria no Brasil.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$3.8 bi (trimestre) | R$10.5 bi (LTM)\n- EBITDA: R$2.0 bi (trimestre) | R$5.2 bi (LTM) | Margem 52.3%\n- Lucro Líquido: R$0.7 bi (trimestre) | R$1.7 bi (LTM)\n- Capex: R$1.5 bi (trimestre) | R$4.6 bi (LTM)\n- Operacional: Transportou 23,4 bilhões RTK, um aumento de 8% em relação ao ano anterior. O volume foi impulsionado pela operação no Norte, com aumento no transporte de carga geral, especialmente celulose, bauxita e combustíveis líquidos.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 3819000000,
+      "receita_liquida_ltm": 10497000000,
+      "ebitda_tri": 1996000000,
+      "ebitda_ltm": 5228000000,
+      "lucro_liquido_tri": 733000000,
+      "lucro_liquido_ltm": 1652000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": 1474000000,
+      "capex_ltm": 4634000000,
+      "margem_ebitda_pct": 52.3,
+      "margem_liquida_pct": 19.2
+    },
+    "operacionais": {
+      "descricao": "Transportou 23,4 bilhões RTK, um aumento de 8% em relação ao ano anterior. O volume foi impulsionado pela operação no Norte, com aumento no transporte de carga geral, especialmente celulose, bauxita e combustíveis líquidos.",
+      "metricas": {
+        "volume_transportado_rtks": 23428000000,
+        "volume_logistica_tu": 1079000000,
+        "investimentos_capex": 1474000000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:46:19.201727Z"
+}

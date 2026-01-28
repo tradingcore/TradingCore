@@ -1,0 +1,35 @@
+{
+  "ticker": "STBP3",
+  "codigo_cvm": "17892",
+  "data_release": "2025-06-30",
+  "fonte_pdf": "17892_2025-06-30_SANTOS_BRASIL_PARTICIPAÇÕES_SA.pdf",
+  "texto_contexto": "A Santos Brasil Participações (STBP3) se destaca no setor de logística e transporte, especialmente na operação de terminais portuários, onde sua atuação é centrada na movimentação de contêineres, carga geral, veículos e granéis líquidos. O modelo de negócio da empresa é estruturado em torno da prestação de serviços de operação portuária e logística integrada, que abrange desde a movimentação de cargas até a armazenagem e distribuição. Essa abordagem permite à Santos Brasil oferecer soluções completas para seus clientes, otimizando a cadeia logística e garantindo eficiência na entrega de produtos.\n\nA empresa é segmentada em quatro unidades principais, cada uma com características e demandas específicas. Os Terminais de Contêiner e Carga Geral são fundamentais para a movimentação de mercadorias, enquanto a Santos Brasil Logística foca na integração de serviços logísticos. O Terminal de Veículos (TEV) é especializado na movimentação de automóveis, um segmento que tem visto crescimento com a recuperação das exportações de veículos leves para a América Latina. Por fim, os Terminais de Granéis Líquidos atendem a um nicho importante, lidando com produtos químicos e combustíveis, que requerem cuidados especiais em sua manipulação.\n\nOs principais indicadores de desempenho da Santos Brasil, como receita líquida, EBITDA, margem EBITDA e lucro líquido, refletem a saúde financeira e a eficiência operacional da empresa. O crescimento consistente desses indicadores é impulsionado por diversos drivers de valor, incluindo a eficiência operacional, a capacidade de expansão dos terminais, a diversificação de serviços e a modernização de equipamentos. A demanda crescente por serviços de cabotagem, impulsionada pela necessidade de soluções logísticas mais ágeis e pela recuperação econômica, também contribui para o desempenho positivo da empresa.\n\nEntretanto, a Santos Brasil não está isenta de riscos. A volatilidade do mercado, as mudanças nas regulamentações e a concorrência acirrada são desafios constantes que podem impactar suas operações. A dependência de contratos com clientes-chave também representa um risco, pois a perda de um cliente significativo pode afetar substancialmente a receita da empresa. A estrutura de capital da Santos Brasil é composta por um mix de dívida e patrimônio líquido, com uma dívida líquida que, embora significativa, é gerenciável em relação ao EBITDA. A empresa mantém uma posição de caixa robusta, o que proporciona liquidez suficiente para financiar suas operações e investimentos, permitindo que ela navegue por períodos de incerteza econômica.\n\nA governança corporativa da Santos Brasil é um aspecto crucial para sua operação, especialmente em um setor tão regulado quanto o portuário. A empresa deve cumprir rigorosamente as normas estabelecidas pela Agência Nacional de Transportes Aquaviários (ANTAQ) e outras entidades reguladoras. Além disso, mudanças nas políticas de comércio exterior e tarifas podem impactar diretamente suas operações, exigindo uma adaptação constante às novas realidades do mercado.\n\nRecentemente, a aquisição do controle da Santos Brasil pelo Grupo CMA CGM, que detém uma participação significativa na empresa, trouxe novas perspectivas e desafios. Essa mudança acionária pode influenciar a estratégia de longo prazo da Santos Brasil, especialmente em termos de expansão e inovação. A proposta de oferta pública de aquisição (OPA) para a totalidade das ações ordinárias da empresa também levanta questões sobre o futuro da governança e a direção estratégica que a companhia tomará.\n\nA sensibilidade macroeconômica é um fator que não pode ser ignorado. A Santos Brasil está sujeita a flutuações econômicas que podem afetar a demanda por seus serviços. Fatores como crescimento econômico, taxas de câmbio, políticas de comércio exterior e até mesmo questões ambientais podem influenciar a operação da empresa. Em um cenário global cada vez mais interconectado, a capacidade da Santos Brasil de se adaptar a essas mudanças será fundamental para sua sustentabilidade e crescimento a longo prazo. Assim, a empresa se posiciona como um player estratégico no setor de logística e transporte, com um olhar atento às oportunidades e desafios que o mercado apresenta.\n\nNÚMEROS DE REFERÊNCIA (2T2025):\n- Receita Líquida: R$0.9 bi (trimestre) | R$1.8 bi (LTM)\n- EBITDA: R$0.5 bi (trimestre) | R$1.0 bi (LTM) | Margem 51.8%\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.4 bi (LTM)\n- Dívida Líquida: R$2.1 bi\n- Capex: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- Operacional: Movimentação de 382.398 contêineres, crescimento de 3,5% YoY. EBITDA de R$ 456,7 milhões com margem de 51,8%. Lucro líquido de R$ 193,4 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "2T2025",
+    "financeiros": {
+      "receita_liquida_tri": 880900000,
+      "receita_liquida_ltm": 1764600000,
+      "ebitda_tri": 456700000,
+      "ebitda_ltm": 952800000,
+      "lucro_liquido_tri": 193400000,
+      "lucro_liquido_ltm": 391800000,
+      "divida_liquida": 2112700000,
+      "divida_bruta": null,
+      "capex_tri": 120900000,
+      "capex_ltm": 244000000,
+      "margem_ebitda_pct": 51.8,
+      "margem_liquida_pct": 22.0
+    },
+    "operacionais": {
+      "descricao": "Movimentação de 382.398 contêineres, crescimento de 3,5% YoY. EBITDA de R$ 456,7 milhões com margem de 51,8%. Lucro líquido de R$ 193,4 milhões.",
+      "metricas": {
+        "contêineres_movimentados": 382398,
+        "crescimo_contêineres_pct": 3.5,
+        "ebitda": 456700000,
+        "lucro_liquido": 193400000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:47:13.481208Z"
+}

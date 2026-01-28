@@ -1,0 +1,35 @@
+{
+  "ticker": "SEQL3",
+  "codigo_cvm": "25160",
+  "data_release": "2024-12-31",
+  "fonte_pdf": "25160_2024-12-31_SEQUOIA_LOGÍSTICA_E_TRANSPORTES_SA.pdf",
+  "texto_contexto": "A Sequoia Logística e Transportes S.A. se destaca no competitivo setor de intermediação e operação logística, onde sua atuação é marcada por um modelo de negócio \"asset light\". Essa abordagem permite à empresa priorizar a eficiência operacional e a rentabilidade, minimizando a necessidade de investimentos pesados em ativos físicos. A Sequoia tem se posicionado estrategicamente para atender a uma ampla gama de segmentos, incluindo e-commerce, B2B, serviços expressos, cartões bancários e tecnologia, o que a torna uma player versátil e adaptável às dinâmicas do mercado.\n\nO portfólio diversificado da Sequoia abrange serviços de entrega de documentos e encomendas, logística indoor e operações dedicadas, refletindo sua capacidade de atender diferentes necessidades dos clientes. No segmento de cartões, a empresa se destaca ao atender bancos e fintechs, utilizando uma vasta rede de entregadores para garantir a eficiência na entrega de produtos financeiros. A área de encomendas e roteirização é suportada por uma esteira de separação de alta capacidade, que otimiza o fluxo de operações. Além disso, a Sequoia opera no segmento expresso, que combina transporte aéreo e rodoviário, e no full-truck-load, conectando armazéns e centros de distribuição, ampliando sua abrangência e capacidade de atendimento.\n\nOs principais indicadores de desempenho (KPIs) da Sequoia incluem receita líquida, margem bruta, EBITDA ajustado e a eficiência na gestão de contas a receber. Esses KPIs são fundamentais para monitorar a saúde financeira da empresa e sua capacidade de gerar valor. Os drivers de valor são centrados na otimização de custos operacionais e na eficiência logística, além da habilidade de se adaptar rapidamente às demandas do mercado, especialmente no crescente segmento de e-commerce, que continua a apresentar um potencial significativo de crescimento.\n\nEntretanto, a Sequoia enfrenta uma série de riscos que podem impactar sua operação e desempenho financeiro. A volatilidade econômica é um fator crítico, uma vez que pode afetar a demanda por serviços logísticos. A dependência de contratos com grandes clientes também representa um risco, pois a perda de um ou mais desses contratos pode ter um impacto substancial na receita. Além disso, a concorrência acirrada no setor logístico exige que a Sequoia mantenha um alto nível de eficiência e inovação para se destacar. A necessidade de reestruturações financeiras e operacionais, que podem ser necessárias em tempos de crise, também pode impactar a liquidez e a rentabilidade da empresa.\n\nA estrutura de capital da Sequoia é complexa, marcada por um acordo global com bancos e debenturistas que permitiu a reestruturação de suas dívidas. Essa reestruturação incluiu a conversão de parte das dívidas em debêntures conversíveis em ações, o que pode oferecer uma solução para a pressão financeira enfrentada pela empresa. Apesar de um endividamento significativo, a Sequoia também possui créditos fiscais que podem ser utilizados para compensar passivos tributários, proporcionando uma margem de manobra financeira.\n\nA governança da Sequoia é um aspecto crucial, especialmente em um ambiente regulatório que exige conformidade com normas de transporte e segurança, além das legislações fiscais e trabalhistas. A empresa deve garantir que suas operações estejam em conformidade com essas regulamentações para evitar penalidades e garantir a continuidade dos negócios.\n\nEventos críticos, como a aquisição da MOVE3, tiveram um impacto significativo no perfil operacional e financeiro da Sequoia, alterando sua dinâmica de mercado e potencial de crescimento. A homologação do Plano de Recuperação Extrajudicial também foi um marco importante, afetando suas obrigações financeiras e estrutura de capital. A reestruturação das operações, que incluiu o fechamento de centros de distribuição e a redução do quadro de colaboradores, representa uma mudança significativa que moldará a trajetória futura da empresa.\n\nEm um cenário macroeconômico, a Sequoia é sensível a fatores como flutuações na demanda do consumidor, mudanças nas políticas fiscais e monetárias, e a evolução do comércio eletrônico. A capacidade da empresa de se adaptar a essas condições será fundamental para sua sustentabilidade e crescimento a longo prazo. Assim, a Sequoia Logística se posiciona como uma empresa resiliente, com um modelo de negócio flexível e uma abordagem focada na eficiência, mas que deve navegar cuidadosamente pelos desafios e oportunidades que o mercado apresenta.\n\nNÚMEROS DE REFERÊNCIA (4T2024):\n- Receita Líquida: R$0.2 bi (trimestre) | R$0.9 bi (LTM)\n- EBITDA: R$-0.5 bi (trimestre) | R$-0.7 bi (LTM) | Margem -260.0%\n- Lucro Líquido: R$-0.6 bi (trimestre) | R$-1.1 bi (LTM)\n- Dívida: R$0.3 bi (líquida) | R$0.4 bi (bruta)\n- Operacional: Receita líquida de R$ 194,6 milhões no 4T24, com EBITDA negativo de R$ 506,0 milhões. A companhia encerrou operações deficitárias e reduziu o número de colaboradores em 2.275.",
+  "numeros_referencia": {
+    "periodo_trimestre": "4T2024",
+    "financeiros": {
+      "receita_liquida_tri": 194622000,
+      "receita_liquida_ltm": 930735000,
+      "ebitda_tri": -505998000,
+      "ebitda_ltm": -736348000,
+      "lucro_liquido_tri": -578500000,
+      "lucro_liquido_ltm": -1099200000,
+      "divida_liquida": 340977000,
+      "divida_bruta": 362830000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": -260.0,
+      "margem_liquida_pct": -297.5
+    },
+    "operacionais": {
+      "descricao": "Receita líquida de R$ 194,6 milhões no 4T24, com EBITDA negativo de R$ 506,0 milhões. A companhia encerrou operações deficitárias e reduziu o número de colaboradores em 2.275.",
+      "metricas": {
+        "clientes": 450,
+        "entregas_mensais": 10000000,
+        "centros_distribuicao": 105,
+        "colaboradores_ativos": 2250
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:49:53.245615Z"
+}

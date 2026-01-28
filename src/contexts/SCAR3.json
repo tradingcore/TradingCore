@@ -1,0 +1,35 @@
+{
+  "ticker": "SCAR3",
+  "codigo_cvm": "13781",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "13781_2025-09-30_SAO_CARLOS_EMPREEND_E_PARTICIPACOES_SA.pdf",
+  "texto_contexto": "A São Carlos Empreendimentos e Participações S.A. (SCAR3) se destaca no setor imobiliário brasileiro, adotando um modelo de negócio que não apenas se concentra na aquisição e desenvolvimento de ativos, mas também na gestão integrada de propriedades e na oferta de serviços correlatos. Essa abordagem permite à empresa maximizar a eficiência operacional e a rentabilidade de seus investimentos, refletindo uma visão estratégica que busca não apenas a valorização dos ativos, mas também a geração de receita estável e previsível através de aluguéis.\n\nOs segmentos de atuação da São Carlos são bem definidos, com um foco significativo em propriedades corporativas e no varejo, especialmente através da rede Best Center, que abrange strip malls e lojas de rua. Essa diversificação de segmentos é um dos principais drivers de valor da empresa, pois permite que ela se beneficie de diferentes dinâmicas de mercado e atenda a uma variedade de necessidades dos consumidores e empresas. A capacidade de gerar receita por meio de aluguéis é um dos pilares do seu desempenho, e a empresa monitora de perto indicadores-chave como a taxa de ocupação, que reflete a demanda por seus espaços, e a receita líquida de aluguéis, que é fundamental para a saúde financeira.\n\nA eficiência na gestão de custos é outro fator crítico que impulsiona o desempenho da São Carlos. A empresa busca constantemente otimizar suas operações, o que se traduz em um EBITDA robusto e um FFO que proporciona uma visão clara da geração de caixa operacional. O NAV, ou valor líquido dos ativos, é um indicador que também é monitorado de perto, pois reflete a valorização dos imóveis e a eficácia das estratégias de investimento da empresa.\n\nEntretanto, a São Carlos não está isenta de riscos. O mercado imobiliário é intrinsecamente volátil, e a empresa enfrenta desafios como flutuações na demanda por espaço comercial e variações nas taxas de vacância, que podem impactar diretamente sua receita. A concorrência no setor é intensa, com diversos players disputando espaço no mercado, o que exige da São Carlos uma gestão proativa e inovadora para se destacar. Além disso, a empresa opera em um ambiente regulatório que pode influenciar suas operações e práticas contábeis, exigindo conformidade com normas que podem variar ao longo do tempo.\n\nA estrutura de capital da São Carlos é um aspecto que merece destaque. A empresa combina dívida e patrimônio líquido de forma a manter um nível de endividamento controlado em relação ao valor de seu portfólio. Essa estratégia proporciona flexibilidade financeira, permitindo que a empresa aproveite oportunidades de crescimento e se adapte a mudanças nas condições de mercado. A gestão de sua estrutura de capital é fundamental para garantir a sustentabilidade a longo prazo e a capacidade de investimento em novos projetos.\n\nA governança corporativa da São Carlos também é um elemento crucial em sua operação. A empresa adota práticas que visam assegurar transparência e responsabilidade, fundamentais para a confiança dos investidores e stakeholders. A boa governança é um diferencial em um setor onde a reputação e a credibilidade são essenciais para a atração de novos negócios e parcerias.\n\nEm termos de sensibilidade macroeconômica, a São Carlos está atenta às condições econômicas gerais, que podem influenciar o mercado imobiliário. Fatores como taxas de juros, inflação e crescimento econômico têm um impacto direto na demanda por imóveis comerciais e na disposição dos consumidores para gastar. A empresa precisa estar preparada para se adaptar a essas condições, ajustando suas estratégias de investimento e gestão de ativos conforme necessário.\n\nEm resumo, a São Carlos Empreendimentos e Participações S.A. é uma empresa que opera em um ambiente dinâmico e desafiador, onde a integração de suas operações, a gestão eficiente de custos e a atenção às condições de mercado são fundamentais para seu sucesso. Com uma estrutura de capital sólida e uma governança robusta, a empresa se posiciona para enfrentar os riscos do setor e aproveitar as oportunidades que surgem em um mercado imobiliário em constante evolução.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- EBITDA: R$0.0 bi (trimestre) | R$0.1 bi (LTM) | Margem 61.8%\n- Lucro Líquido: R$-0.0 bi (trimestre) | R$-0.0 bi (LTM)\n- Dívida Líquida: R$0.4 bi\n- Operacional: A empresa apresentou receita líquida de R$ 41,5 milhões no 3T25, com EBITDA de R$ 25,6 milhões, e um lucro líquido negativo de R$ 22,8 milhões. A taxa de vacância consolidada foi de 23,1%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 41500000,
+      "receita_liquida_ltm": 131100000,
+      "ebitda_tri": 25600000,
+      "ebitda_ltm": 89600000,
+      "lucro_liquido_tri": -22800000,
+      "lucro_liquido_ltm": -32900000,
+      "divida_liquida": 380400000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 61.8,
+      "margem_liquida_pct": -54.8
+    },
+    "operacionais": {
+      "descricao": "A empresa apresentou receita líquida de R$ 41,5 milhões no 3T25, com EBITDA de R$ 25,6 milhões, e um lucro líquido negativo de R$ 22,8 milhões. A taxa de vacância consolidada foi de 23,1%.",
+      "metricas": {
+        "total_vendas_best_center": 97200000,
+        "vacancia_rate": 23.1,
+        "no_of_new_leases": 13,
+        "total_gla_new_leases": 13800
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:48:12.067173Z"
+}
