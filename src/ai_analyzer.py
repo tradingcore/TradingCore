@@ -69,7 +69,11 @@ def analisar_noticias_batch(artigos, ticker, contexto=None, batch_size=None):
         "Authorization": f"Bearer {OPENAI_API_KEY}",
     }
 
-    contexto_str = f"\nCONTEXTO ESTRATÉGICO DA EMPRESA:\n{contexto}\n" if contexto else ""
+    contexto_str = f"""
+SEU CONHECIMENTO PRÉVIO SOBRE A EMPRESA (use apenas como referência interna, NÃO inclua no output):
+{contexto}
+--- FIM DO CONHECIMENTO PRÉVIO ---
+""" if contexto else ""
     todas_analises = []
 
     # Processar em batches
@@ -100,9 +104,12 @@ Texto: {body}
         noticias_texto = "\n---\n".join(noticias_formatadas)
 
         prompt = f"""Você é um analista sênior de ações da B3.
-Sua tarefa é analisar as {len(noticias_formatadas)} notícias abaixo e determinar sua relevância para investidores de {ticker}.
 {contexto_str}
-Analise cada notícia considerando se ela impacta os KPIs ou a tese de investimento.
+REGRA CRÍTICA: Seu output deve ser EXCLUSIVAMENTE sobre o conteúdo das notícias abaixo.
+O conhecimento prévio serve apenas para você entender a relevância - NÃO copie, resuma ou mencione dados do conhecimento prévio no seu output.
+Analise APENAS o que está escrito nas notícias.
+
+Sua tarefa é analisar as {len(noticias_formatadas)} notícias abaixo e determinar sua relevância para investidores de {ticker}.
 
 {noticias_texto}
 
@@ -114,7 +121,7 @@ Responda EXCLUSIVAMENTE em JSON, com um array de análises na mesma ordem das no
       "noticia_idx": 1,
       "relevante": true ou false,
       "relevancia_score": número de 0 a 10 (10 = impacto crítico, 0 = ruído),
-      "resumo": "resuma em 1-2 frases o impacto real para {ticker}",
+      "resumo": "resuma em 1-2 frases o que A NOTÍCIA diz e seu impacto para {ticker} (baseado APENAS no texto da notícia)",
       "sentimento": número entre -1 e 1 (-1=muito negativo, 0=neutro, 1=muito positivo)
     }},
     ...
@@ -178,13 +185,19 @@ def _analisar_artigo_individual(artigo, ticker, contexto=None):
         if not body:
             return None
 
-        contexto_str = f"\nCONTEXTO ESTRATÉGICO DA EMPRESA:\n{contexto}\n" if contexto else ""
+        contexto_str = f"""
+SEU CONHECIMENTO PRÉVIO SOBRE A EMPRESA (use apenas como referência interna, NÃO inclua no output):
+{contexto}
+--- FIM DO CONHECIMENTO PRÉVIO ---
+""" if contexto else ""
 
         prompt = f"""
 Você é um analista sênior de ações da B3.
-Sua tarefa é analisar se a notícia abaixo é relevante para um investidor de {ticker}.
 {contexto_str}
-Analise a notícia considerando se ela impacta os KPIs ou a tese de investimento citada no contexto.
+REGRA CRÍTICA: Seu output deve ser EXCLUSIVAMENTE sobre o conteúdo da notícia abaixo.
+O conhecimento prévio serve apenas para você entender a relevância - NÃO copie, resuma ou mencione dados do conhecimento prévio no seu output.
+
+Sua tarefa é analisar se a notícia abaixo é relevante para um investidor de {ticker}.
 
 Notícia:
 \"\"\"{body}\"\"\"
@@ -192,9 +205,9 @@ Notícia:
 Responda EXCLUSIVAMENTE em JSON, no seguinte formato:
 
 {{
-  "relevante": true ou false (se é realmente impactante para a tese de {ticker}),
-  "relevancia_score": número de 0 a 10 (onde 10 é impacto crítico na tese e 0 é ruído),
-  "resumo": "resuma em 1-2 frases o impacto real para {ticker} baseado no contexto",
+  "relevante": true ou false (se é realmente impactante para {ticker}),
+  "relevancia_score": número de 0 a 10 (onde 10 é impacto crítico e 0 é ruído),
+  "resumo": "resuma em 1-2 frases o que A NOTÍCIA diz e seu impacto (baseado APENAS no texto da notícia)",
   "sentimento": número entre -1 e 1 (-1=muito negativo, 0=neutro, 1=muito positivo)
 }}
 
@@ -281,12 +294,19 @@ def gerar_resumo_executivo(analises_agrupadas, contexto=None):
                 continue
 
             ctx_ticker = contexto.get(ticker, "") if contexto else ""
-            ctx_str = f"\nConsidere este contexto da empresa:\n{ctx_ticker}\n" if ctx_ticker else ""
+            ctx_str = f"""
+SEU CONHECIMENTO PRÉVIO (use apenas como referência, NÃO inclua no output):
+{ctx_ticker}
+--- FIM DO CONHECIMENTO PRÉVIO ---
+""" if ctx_ticker else ""
 
-            prompt = f"""Você é um analista sênior de ações. 
-Compile as notícias abaixo sobre {ticker} em um resumo executivo MUITO compacto de no máximo 2 linhas.
+            prompt = f"""Você é um analista sênior de ações.
 {ctx_str}
-Foque no que é realmente estrutural para a tese de investimento, ignorando ruídos passageiros.
+REGRA CRÍTICA: O resumo deve conter APENAS informações das notícias abaixo.
+NÃO inclua números, dados ou informações do seu conhecimento prévio.
+
+Compile as notícias abaixo sobre {ticker} em um resumo executivo MUITO compacto de no máximo 2 linhas.
+Use APENAS o conteúdo das notícias.
 
 Notícias:
 {noticias_texto}
@@ -347,7 +367,11 @@ def gerar_analise_consolidada(analises_por_ticker, contexto=None):
             negativas = [a for a in analises if a.get('sentimento', 0) < 0]
             
             ctx_ticker = contexto.get(ticker, "") if contexto else ""
-            ctx_str = f"\nContexto da empresa:\n{ctx_ticker}\n" if ctx_ticker else ""
+            ctx_str = f"""
+SEU CONHECIMENTO PRÉVIO (use apenas como referência, NÃO inclua no output):
+{ctx_ticker}
+--- FIM DO CONHECIMENTO PRÉVIO ---
+""" if ctx_ticker else ""
             
             resultado = {'positivo': '', 'negativo': ''}
             
@@ -359,12 +383,16 @@ def gerar_analise_consolidada(analises_por_ticker, contexto=None):
                 ])
                 
                 prompt = f"""Você é um analista sênior de ações.
-Consolide as notícias POSITIVAS abaixo sobre {ticker} em um único bloco coeso.
 {ctx_str}
+REGRA CRÍTICA: Escreva APENAS sobre o que está nas notícias abaixo.
+NÃO inclua números, dados ou informações do seu conhecimento prévio no texto.
+O conhecimento prévio serve apenas para você entender a relevância, não para ser incluído.
+
+Consolide as notícias POSITIVAS abaixo sobre {ticker} em um único bloco coeso.
 Crie uma narrativa fluida (não liste bullet points) de até 10 linhas que:
-- Integre os pontos principais sem repetir informações similares
-- Destaque o impacto real para a tese de investimento
+- Integre os pontos principais DAS NOTÍCIAS sem repetir informações similares
 - Seja direta e informativa
+- Use APENAS informações que estão nas notícias
 
 Notícias:
 {noticias_texto}
@@ -389,12 +417,16 @@ Responda apenas com o texto consolidado, sem título ou formatação."""
                 ])
                 
                 prompt = f"""Você é um analista sênior de ações.
-Consolide as notícias NEGATIVAS abaixo sobre {ticker} em um único bloco coeso.
 {ctx_str}
+REGRA CRÍTICA: Escreva APENAS sobre o que está nas notícias abaixo.
+NÃO inclua números, dados ou informações do seu conhecimento prévio no texto.
+O conhecimento prévio serve apenas para você entender a relevância, não para ser incluído.
+
+Consolide as notícias NEGATIVAS abaixo sobre {ticker} em um único bloco coeso.
 Crie uma narrativa fluida (não liste bullet points) de até 10 linhas que:
-- Integre os pontos principais sem repetir informações similares
-- Destaque os riscos reais para a tese de investimento
+- Integre os pontos principais DAS NOTÍCIAS sem repetir informações similares
 - Seja direta e informativa
+- Use APENAS informações que estão nas notícias
 
 Notícias:
 {noticias_texto}
