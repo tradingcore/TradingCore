@@ -1,0 +1,34 @@
+{
+  "ticker": "RECV3",
+  "codigo_cvm": "25780",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25780_2025-09-30_PETRORECÔNCAVO_SA.pdf",
+  "texto_contexto": "A PetroRecôncavo S.A. (RECV3) se destaca no setor de exploração e produção de petróleo e gás natural, com uma atuação focada na extração de recursos em campos terrestres no Brasil, especialmente nas bacias Potiguar e Bahia. O modelo de negócio da empresa é estruturado em torno da extração e comercialização de petróleo e gás, além da prestação de serviços complementares, como perfuração e manutenção de poços. Essa abordagem integrada permite à PetroRecôncavo não apenas maximizar a eficiência operacional, mas também diversificar suas fontes de receita, criando um ecossistema que abrange desde a exploração até a entrega final dos produtos.\n\nOs principais segmentos de atuação da PetroRecôncavo incluem a produção de petróleo e gás natural, que são os pilares de sua receita, e os serviços de perfuração, que complementam sua oferta e garantem uma operação mais robusta e autossuficiente. A empresa se beneficia de um portfólio de ativos que, além de garantir a produção contínua, possibilita a exploração de novas oportunidades de crescimento. Os indicadores-chave de desempenho (KPIs) que a empresa monitora, como a produção média diária de petróleo e gás, receita líquida e EBITDA, são fundamentais para avaliar sua saúde financeira e operacional. A margem EBITDA e a relação dívida líquida/EBITDA são métricas que refletem a eficiência na gestão de custos e a capacidade de geração de caixa, essenciais para sustentar suas operações e investimentos.\n\nOs drivers de valor da PetroRecôncavo são amplamente influenciados pela eficiência operacional e pela capacidade de inovação. A adoção de novas tecnologias e métodos de perfuração é crucial para aumentar a produção e reduzir custos, permitindo que a empresa se mantenha competitiva em um mercado volátil. Além disso, a gestão de custos e a otimização da estrutura de capital são estratégias que a empresa implementa para mitigar riscos associados à volatilidade dos preços do petróleo e gás, flutuações cambiais e desafios operacionais que podem impactar sua lucratividade.\n\nA estrutura de capital da PetroRecôncavo é composta por uma combinação de dívida e capital próprio, com um nível moderado de alavancagem, o que proporciona uma flexibilidade financeira adequada para enfrentar os desafios do setor. A empresa utiliza instrumentos financeiros, como swaps de câmbio, para gerenciar riscos cambiais, uma vez que sua receita é predominantemente em dólares. Essa estratégia é fundamental para proteger a empresa contra as oscilações do mercado cambial, que podem afetar significativamente sua rentabilidade.\n\nA regulação do setor de petróleo e gás no Brasil é complexa e rigorosa, com a Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP) desempenhando um papel central na supervisão das atividades de exploração e produção. A PetroRecôncavo deve navegar por um ambiente regulatório que pode ser suscetível a mudanças nas políticas governamentais e na legislação ambiental, o que representa um risco significativo. A conformidade com as normas de segurança e ambientais é não apenas uma obrigação legal, mas também uma responsabilidade social que a empresa leva a sério, buscando minimizar seu impacto ambiental e promover práticas sustentáveis.\n\nEventos críticos, como a conclusão de aquisições estratégicas e a emissão de debêntures para financiar suas operações, são fundamentais para o crescimento da PetroRecôncavo. A aquisição de 50% dos ativos de midstream da Brava Energia, por exemplo, representa uma oportunidade de expandir sua presença no mercado e diversificar suas operações. Além disso, a empresa está comprometida com a sustentabilidade e a responsabilidade social, implementando projetos que visam melhorar a qualidade de vida nas comunidades onde opera. Essa abordagem não apenas fortalece sua reputação, mas também melhora suas relações com stakeholders, criando um ambiente favorável para o desenvolvimento de negócios.\n\nA sensibilidade macroeconômica é um fator que não pode ser ignorado na análise da PetroRecôncavo. O desempenho da empresa está intrinsecamente ligado às condições econômicas globais, especialmente no que diz respeito aos preços do petróleo e gás, que são influenciados por uma série de fatores, incluindo a oferta e demanda global, políticas de produção da OPEC, e eventos geopolíticos. A capacidade da PetroRecôncavo de se adaptar a essas condições, mantendo sua eficiência operacional e buscando novas oportunidades de crescimento, será crucial para sua sustentabilidade e sucesso a longo prazo. Em um cenário de incertezas, a resiliência da empresa e sua capacidade de inovar e se ajustar às mudanças do mercado serão determinantes para sua trajetória futura.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.8 bi (trimestre) | R$2.5 bi (LTM)\n- EBITDA: R$0.3 bi (trimestre) | R$1.1 bi (LTM) | Margem 44.5%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.6 bi (LTM)\n- Dívida Líquida: R$1.5 bi\n- Capex: R$0.6 bi (trimestre) | R$1.2 bi (LTM)\n- Operacional: Produção média de 26,4 mil boe/d, com uma redução de 3% em relação ao trimestre anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 786385000,
+      "receita_liquida_ltm": 2453439000,
+      "ebitda_tri": 349954000,
+      "ebitda_ltm": 1147573000,
+      "lucro_liquido_tri": 121937000,
+      "lucro_liquido_ltm": 587605000,
+      "divida_liquida": 1500000000,
+      "divida_bruta": null,
+      "capex_tri": 568631000,
+      "capex_ltm": 1183920000,
+      "margem_ebitda_pct": 44.5,
+      "margem_liquida_pct": 15.5
+    },
+    "operacionais": {
+      "descricao": "Produção média de 26,4 mil boe/d, com uma redução de 3% em relação ao trimestre anterior.",
+      "metricas": {
+        "producao_media_boe_dia": 26426,
+        "lifting_cost_usd_per_boe": 15.52,
+        "royalties": null
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:30:02.262578Z"
+}

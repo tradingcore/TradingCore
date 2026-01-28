@@ -1,0 +1,35 @@
+{
+  "ticker": "PTBL3",
+  "codigo_cvm": "13773",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "13773_2025-09-30_PBG_SA.pdf",
+  "texto_contexto": "A Portobello S.A. (B3: PTBL3) se destaca como uma das principais empresas brasileiras no setor de revestimentos cerâmicos, consolidando-se como uma referência tanto no mercado interno quanto no externo. Seu modelo de negócio é multifacetado, abrangendo a produção e comercialização de uma ampla gama de produtos cerâmicos, que incluem revestimentos para pisos e paredes. A companhia opera através de diferentes unidades de negócios, cada uma com foco específico: a unidade Portobello, que se dedica aos revestimentos cerâmicos de maior valor agregado; a Portobello Shop, que atua no varejo especializado, oferecendo uma experiência diferenciada ao consumidor; e a Pointer, que se concentra em produtos de menor valor agregado, ampliando o alcance da marca a diferentes segmentos de mercado. Além disso, a Portobello America representa uma estratégia de expansão voltada para o mercado norte-americano, buscando aumentar a presença da marca em um dos maiores mercados do mundo.\n\nOs principais indicadores de desempenho (KPIs) da Portobello refletem sua saúde financeira e operacional. A receita líquida, a margem bruta, o EBITDA e o fluxo de caixa livre são métricas cruciais que a empresa monitora para avaliar seu desempenho em um ambiente competitivo. O crescimento da receita líquida, por exemplo, é um sinal positivo da capacidade da empresa de se adaptar e prosperar em um mercado desafiador. A margem bruta e o EBITDA ajustado são indicadores de eficiência operacional, enquanto o fluxo de caixa livre demonstra a habilidade da Portobello em gerar caixa, essencial para financiar suas operações e investimentos.\n\nOs drivers de valor da Portobello são diversos e incluem a inovação constante em design e produtos, a eficiência operacional, a diversificação geográfica e a força da marca. A empresa investe significativamente em pesquisa e desenvolvimento, buscando não apenas aprimorar seu portfólio, mas também antecipar as tendências do mercado e as necessidades dos consumidores. Essa abordagem proativa é fundamental para manter a competitividade em um setor onde a diferenciação é crucial.\n\nEntretanto, a Portobello não está isenta de riscos. A volatilidade nas tarifas de importação, especialmente em um cenário de mudanças nas políticas comerciais, pode impactar suas operações, assim como a pressão competitiva tanto no mercado interno quanto no externo. Além disso, a flutuação nas taxas de juros pode afetar suas despesas financeiras, exigindo uma gestão financeira cuidadosa para mitigar esses riscos.\n\nA estrutura de capital da Portobello é caracterizada por uma dívida líquida que, embora significativa, é gerida de forma prudente. A relação dívida líquida/EBITDA indica um foco na preservação da liquidez e na sustentabilidade financeira a longo prazo. A maior parte da dívida é de longo prazo e denominada em moeda local, o que ajuda a minimizar a exposição cambial e a volatilidade associada a flutuações de moeda.\n\nA governança corporativa da Portobello é orientada por princípios de transparência e responsabilidade, com a empresa sujeita a regulamentações do Comitê de Pronunciamentos Contábeis (CPC) e das Normas Internacionais de Relatório Financeiro (IFRS). Essas diretrizes são fundamentais para garantir a integridade das demonstrações financeiras e a confiança dos investidores.\n\nNo contexto competitivo, a Portobello enfrenta desafios significativos, especialmente com a recente elevação das tarifas de importação de produtos brasileiros nos Estados Unidos, que impactou suas operações e resultados. A empresa está atenta a essas mudanças e busca constantemente se adaptar às novas realidades econômicas e regulatórias, com o objetivo de fortalecer sua posição no mercado e garantir a criação de valor sustentável para seus acionistas.\n\nAlém disso, a sensibilidade da Portobello a fatores macroeconômicos, como a inflação, o crescimento econômico e as políticas monetárias, é um aspecto que requer monitoramento constante. A capacidade da empresa de navegar por essas variáveis e se adaptar rapidamente às condições de mercado será crucial para seu sucesso a longo prazo. Em suma, a Portobello S.A. se apresenta como uma empresa robusta, com um modelo de negócio bem estruturado e uma visão clara de crescimento, mas que deve permanecer vigilante frente aos desafios e oportunidades que o mercado global oferece.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.7 bi (trimestre) | R$2.0 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.3 bi (LTM) | Margem 14.4%\n- Lucro Líquido: R$-0.0 bi (trimestre) | R$-0.1 bi (LTM)\n- Dívida Líquida: R$0.9 bi\n- Operacional: Crescimento de 3,5% na receita líquida em relação ao 3T24, com avanço nas exportações de 5,0%. A margem EBITDA foi de 14,4%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 685100000,
+      "receita_liquida_ltm": 1963700000,
+      "ebitda_tri": 103900000,
+      "ebitda_ltm": 309500000,
+      "lucro_liquido_tri": -34700000,
+      "lucro_liquido_ltm": -105800000,
+      "divida_liquida": 933500000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 14.4,
+      "margem_liquida_pct": -4.8
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 3,5% na receita líquida em relação ao 3T24, com avanço nas exportações de 5,0%. A margem EBITDA foi de 14,4%.",
+      "metricas": {
+        "crescimento_receita_pct": 3.5,
+        "crescimento_exportacoes_pct": 5.0,
+        "margem_ebitda_pct": 14.4,
+        "divida_liquida_ebitda_ratio": 2.42
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:27:16.943998Z"
+}
