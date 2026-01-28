@@ -1,0 +1,34 @@
+{
+  "ticker": "JALL3",
+  "codigo_cvm": "25496",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25496_2025-09-30_JALLES_MACHADO_SA.pdf",
+  "texto_contexto": "A Jalles Machado S.A. (JALL3) se destaca como uma das principais forças no setor sucroenergético, especialmente na produção e exportação de açúcar orgânico, além de ser uma relevante produtora de açúcar convencional e etanol na região Centro-Oeste do Brasil. O modelo de negócio da empresa é centrado na produção e comercialização de açúcar, etanol e energia elétrica, todos derivados da cana-de-açúcar, o que a posiciona de maneira estratégica em um mercado que valoriza a sustentabilidade e a eficiência energética.\n\nA Jalles opera em diversos segmentos, abrangendo desde o açúcar convencional até o açúcar orgânico, que tem visto um aumento significativo na demanda global, refletindo uma tendência crescente por produtos sustentáveis e de qualidade superior. Além disso, a empresa produz etanol anidro e hidratado, que são essenciais para o mercado de biocombustíveis, e oferece produtos relacionados, como leveduras e saneantes, que complementam sua linha de produção e ampliam suas fontes de receita.\n\nOs principais indicadores de desempenho da Jalles, como a receita bruta e o EBITDA ajustado, são reflexos diretos de sua eficiência operacional e da capacidade de maximizar a produtividade em suas plantações. A empresa monitora de perto o volume de produção de açúcar e etanol, a área colhida e a produtividade, utilizando métricas como TCH (Toneladas de Cana por Hectare) e ATR (Açúcar Total Recuperável) para avaliar seu desempenho. A eficiência operacional é um dos principais drivers de valor, permitindo que a Jalles se mantenha competitiva em um mercado volátil, onde a capacidade de fixação de preços através de hedge se torna crucial.\n\nEntretanto, a Jalles Machado não está isenta de riscos. A volatilidade dos preços das commodities, que pode ser influenciada por fatores globais e locais, representa um desafio constante. Além disso, as variações climáticas, que afetam diretamente a produtividade das lavouras, e a concorrência acirrada no setor sucroenergético são fatores que exigem uma gestão proativa e adaptativa. A empresa tem se mostrado resiliente, com uma estrutura de capital robusta que inclui uma significativa disponibilidade de caixa, permitindo que suas obrigações de dívida sejam cobertas até a safra 2029/30. A dívida líquida controlada em relação ao EBITDA reflete uma gestão financeira prudente, que busca equilibrar crescimento e sustentabilidade financeira.\n\nA governança da Jalles Machado é um aspecto fundamental para sua operação, especialmente em um setor que é fortemente regulado. A empresa opera em um ambiente onde políticas governamentais podem impactar diretamente a tributação e os incentivos fiscais, como os programas Produzir e Fomentar em Goiás, que visam estimular a produção agrícola e a sustentabilidade. Mudanças nas políticas de preços de combustíveis, alterações nas tarifas de exportação e novas regulamentações ambientais são eventos críticos que podem influenciar a produção e comercialização de biocombustíveis, exigindo que a Jalles mantenha uma vigilância constante sobre o cenário regulatório.\n\nA sensibilidade macroeconômica também desempenha um papel importante na operação da Jalles. Fatores como a demanda global por biocombustíveis, as flutuações nas taxas de câmbio e as condições econômicas gerais podem afetar tanto a competitividade da empresa quanto sua capacidade de expandir suas operações. A adaptação a essas dinâmicas de mercado e regulatórias será essencial para a continuidade e o crescimento da Jalles Machado no setor sucroenergético, permitindo que a empresa não apenas mantenha sua posição de destaque, mas também capitalize sobre as oportunidades emergentes em um mercado em constante evolução.\n\nNÚMEROS DE REFERÊNCIA (2T2026):\n- Receita Líquida: R$0.6 bi (trimestre) | R$1.1 bi (LTM)\n- EBITDA: R$0.4 bi (trimestre) | R$0.7 bi (LTM) | Margem 63.7%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- Dívida Líquida: R$1.9 bi\n- Capex: R$0.1 bi (trimestre) | R$0.3 bi (LTM)\n- Operacional: Moagem de 3,269 milhões de toneladas de cana, produção de 232,9 mil toneladas de açúcar e 146,3 mil m³ de etanol.",
+  "numeros_referencia": {
+    "periodo_trimestre": "2T2026",
+    "financeiros": {
+      "receita_liquida_tri": 640700000,
+      "receita_liquida_ltm": 1145800000,
+      "ebitda_tri": 408000000,
+      "ebitda_ltm": 677500000,
+      "lucro_liquido_tri": 18900000,
+      "lucro_liquido_ltm": 50000000,
+      "divida_liquida": 1850800000,
+      "divida_bruta": null,
+      "capex_tri": 142200000,
+      "capex_ltm": 273100000,
+      "margem_ebitda_pct": 63.7,
+      "margem_liquida_pct": 3.0
+    },
+    "operacionais": {
+      "descricao": "Moagem de 3,269 milhões de toneladas de cana, produção de 232,9 mil toneladas de açúcar e 146,3 mil m³ de etanol.",
+      "metricas": {
+        "moagem_toneladas": 3269100,
+        "producao_acucar_toneladas": 232900,
+        "producao_etanol_m3": 146300
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:42:51.323993Z"
+}

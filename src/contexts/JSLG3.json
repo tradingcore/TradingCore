@@ -1,0 +1,34 @@
+{
+  "ticker": "JSLG3",
+  "codigo_cvm": "22020",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "22020_2025-09-30_JSL_SA.pdf",
+  "texto_contexto": "A JSL S.A. se destaca no setor de logística brasileiro, apresentando um modelo de negócio diversificado que abrange uma gama de serviços essenciais para o transporte e a gestão de cargas. A empresa é estruturada em três segmentos principais que refletem sua estratégia de atuação e a busca por eficiência e inovação. O primeiro segmento, JSL Serviços Dedicados, é o carro-chefe da companhia, representando a maior parte de sua receita líquida. Este segmento é focado em operações de transporte especializado, onde a JSL estabelece contratos de médio e longo prazo com seus clientes, garantindo uma receita estável e previsível. A especialização nesse tipo de serviço permite à empresa atender a demandas específicas de setores variados, como e-commerce, alimentos e bebidas, e papel e celulose, ampliando sua base de clientes e solidificando sua posição no mercado.\n\nO segundo segmento, Intralog, complementa a oferta da JSL ao fornecer serviços de armazenagem e gestão logística. Este braço da empresa é crucial para a otimização da cadeia de suprimentos de seus clientes, permitindo uma gestão mais eficiente dos estoques e uma melhor integração entre as etapas de transporte e armazenamento. Por fim, o segmento JSL Digital, embora represente uma parcela menor da receita, é uma área em crescimento que se dedica à gestão digital de transportes. Através de soluções tecnológicas, a JSL promove a integração entre cargas e motoristas autônomos, o que não apenas melhora a eficiência operacional, mas também se alinha com as tendências de digitalização e inovação no setor.\n\nOs principais indicadores de desempenho da JSL, como receita líquida, EBITDA, margem EBITDA e lucro líquido ajustado, refletem a saúde financeira da empresa e sua capacidade de gerar valor. A companhia tem demonstrado um crescimento consistente, impulsionado pela implementação de novos contratos e pela diversificação de serviços. A eficiência operacional, a capacidade de execução e a especialização técnica são drivers fundamentais que permitem à JSL capturar oportunidades de mercado e se adaptar às demandas em constante evolução dos clientes.\n\nEntretanto, a JSL não está isenta de riscos. A empresa enfrenta desafios relacionados a flutuações econômicas, aumento das taxas de juros e pressões inflacionárias que podem impactar seus custos operacionais e, consequentemente, suas margens. A estrutura de capital da JSL é caracterizada por uma alavancagem financeira que, embora controlada, requer atenção contínua. A empresa tem se empenhado em reduzir essa alavancagem por meio da otimização de custos e da conversão de capex em aluguel, o que pode proporcionar maior flexibilidade financeira. Além disso, a JSL mantém uma posição de liquidez robusta, com recursos suficientes para cobrir suas obrigações de curto prazo, o que é um ponto positivo em um ambiente econômico incerto.\n\nA governança corporativa da JSL é um aspecto que merece destaque, uma vez que a empresa busca manter altos padrões de transparência e responsabilidade. A regulação do setor logístico no Brasil, que inclui normas de transporte e segurança, é um fator crítico que a JSL deve considerar em suas operações. A conformidade com essas regulamentações é essencial para evitar penalidades e garantir a continuidade dos negócios. Eventos significativos, como a relistagem das ações na B3 e a aquisição de empresas, têm sido marcos importantes na trajetória da companhia, contribuindo para sua expansão e consolidação no mercado.\n\nA competição no setor de logística é intensa, com diversos players disputando participação de mercado. A JSL, no entanto, se diferencia por sua capacidade de oferecer soluções integradas e especializadas, além de sua ênfase na transformação digital. A empresa está atenta às tendências do mercado e busca constantemente inovar para se manter competitiva. A sensibilidade macroeconômica também é um fator que a JSL deve monitorar, uma vez que mudanças nas condições econômicas podem afetar a demanda por seus serviços. Em suma, a JSL S.A. é uma empresa que, através de um modelo de negócio robusto e diversificado, busca não apenas se adaptar às mudanças do mercado, mas também liderar a transformação no setor de logística brasileiro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$2.5 bi (trimestre) | R$7.2 bi (LTM)\n- EBITDA: R$0.5 bi (trimestre) | R$1.5 bi (LTM) | Margem 20.9%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- Capex: R$0.1 bi (trimestre) | R$0.1 bi (LTM)\n- Operacional: Receita líquida de R$ 2,5 bilhões, crescimento de 5,6% em relação ao 3T24. EBITDA ajustado de R$ 526 milhões com margem de 21,2%. Lucro líquido de R$ 18,1 milhões, queda de 58,7% em relação ao ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 2484900000,
+      "receita_liquida_ltm": 7186600000,
+      "ebitda_tri": 518900000,
+      "ebitda_ltm": 1461100000,
+      "lucro_liquido_tri": 18100000,
+      "lucro_liquido_ltm": 71400000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": 62800000,
+      "capex_ltm": 145100000,
+      "margem_ebitda_pct": 20.9,
+      "margem_liquida_pct": 0.7
+    },
+    "operacionais": {
+      "descricao": "Receita líquida de R$ 2,5 bilhões, crescimento de 5,6% em relação ao 3T24. EBITDA ajustado de R$ 526 milhões com margem de 21,2%. Lucro líquido de R$ 18,1 milhões, queda de 58,7% em relação ao ano anterior.",
+      "metricas": {
+        "novos_contratos": 854000000,
+        "prazo_medio_contratos_meses": 62,
+        "clientes_novos": 80
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:45:43.818653Z"
+}

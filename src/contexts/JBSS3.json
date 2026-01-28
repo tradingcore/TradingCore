@@ -1,0 +1,36 @@
+{
+  "ticker": "JBSS3",
+  "codigo_cvm": "20575",
+  "data_release": "2025-03-31",
+  "fonte_pdf": "20575_2025-03-31_JBS_SA.pdf",
+  "texto_contexto": "A JBS S.A. se destaca como uma das maiores empresas do setor alimentício global, com uma forte presença no segmento de proteína animal. Seu modelo de negócio é amplamente baseado na produção e comercialização de carnes bovina, suína e de aves, além de uma gama de produtos processados que atendem a diferentes demandas do mercado. A companhia opera em diversas regiões, segmentando suas atividades em unidades como JBS Brasil, JBS Beef North America, JBS USA Pork, JBS Australia e Seara. Cada um desses segmentos desempenha um papel crucial na composição da receita total da empresa, refletindo sua estratégia de diversificação geográfica e de produtos.\n\nOs principais indicadores de desempenho da JBS, como receita líquida, EBITDA ajustado, margem EBITDA e lucro líquido, são fundamentais para avaliar a eficiência operacional e a rentabilidade da companhia. Esses KPIs não apenas medem o desempenho financeiro, mas também oferecem insights sobre a capacidade da empresa de gerar valor em um ambiente competitivo. Os drivers de valor da JBS incluem a inovação em produtos de valor agregado, que busca atender às crescentes demandas dos consumidores por opções mais saudáveis e sustentáveis, além da excelência operacional e da gestão eficiente de custos, que são essenciais para manter a competitividade em um mercado volátil.\n\nEntretanto, a JBS enfrenta uma série de riscos que podem impactar suas operações e resultados financeiros. A volatilidade dos preços das commodities, por exemplo, é um fator crítico, uma vez que a empresa depende fortemente de insumos que podem sofrer flutuações significativas. Além disso, a dependência de mercados externos e a exposição a variações cambiais, especialmente nas operações na América do Norte e na Austrália, representam desafios adicionais que a companhia deve gerenciar com eficácia. A estrutura de capital da JBS é marcada por um nível considerável de endividamento, refletindo a necessidade de financiamento para sustentar suas operações e investimentos. A alavancagem, que se aproxima de 1,99x em dólares, indica a importância de uma gestão financeira prudente, especialmente em tempos de incerteza econômica.\n\nA empresa mantém um portfólio diversificado de dívidas, que inclui empréstimos e financiamentos, e apresenta uma posição de liquidez robusta, com um montante significativo em caixa e linhas de crédito disponíveis. Essa estrutura financeira permite à JBS não apenas enfrentar os desafios do mercado, mas também aproveitar oportunidades de crescimento e expansão. A governança corporativa da JBS é um aspecto crítico que influencia sua operação, especialmente em um setor tão regulado quanto o de alimentos. A conformidade com normas de segurança alimentar e regulatórias é essencial, e a empresa deve atender a rigorosos padrões tanto no Brasil quanto nos mercados internacionais onde atua.\n\nEventos significativos, como a aprovação da dupla listagem de suas ações nos Estados Unidos e no Brasil, podem impactar a visibilidade e a atratividade da JBS para investidores, além de influenciar sua estratégia de crescimento. A capacidade da empresa de navegar por esses desafios regulatórios e de mercado será fundamental para sua sustentabilidade e crescimento a longo prazo. A competição no setor de alimentos é intensa, com diversos players buscando capturar participação de mercado, o que exige da JBS uma constante adaptação e inovação em suas práticas e produtos.\n\nPor fim, a sensibilidade macroeconômica também desempenha um papel importante nas operações da JBS. Fatores como a inflação, as taxas de juros e as políticas comerciais podem afetar tanto a demanda por produtos quanto os custos de produção. A habilidade da JBS em se adaptar a essas condições macroeconômicas, aliada à sua estratégia de diversificação e inovação, será determinante para sua resiliência e sucesso contínuo no dinâmico mercado global de alimentos.\n\nNÚMEROS DE REFERÊNCIA (1T2025):\n- Receita Líquida: R$114.1 bi (trimestre) | R$441.9 bi (LTM)\n- EBITDA: R$8.9 bi (trimestre) | R$41.5 bi (LTM) | Margem 7.8%\n- Lucro Líquido: R$2.9 bi (trimestre) | R$10.9 bi (LTM)\n- Dívida: R$84.7 bi (líquida) | R$114.4 bi (bruta)\n- Capex: R$1.4 bi (trimestre) | N/D (LTM)\n- Operacional: A JBS registrou um crescimento de 28% na receita líquida em relação ao ano anterior, com destaque para os negócios de aves e suínos, que apresentaram margens EBITDA recordes.",
+  "numeros_referencia": {
+    "periodo_trimestre": "1T2025",
+    "financeiros": {
+      "receita_liquida_tri": 114127500000,
+      "receita_liquida_ltm": 441932300000,
+      "ebitda_tri": 8929200000,
+      "ebitda_ltm": 41540300000,
+      "lucro_liquido_tri": 2923700000,
+      "lucro_liquido_ltm": 10893600000,
+      "divida_liquida": 84710700000,
+      "divida_bruta": 114415400000,
+      "capex_tri": 1400000000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 7.8,
+      "margem_liquida_pct": 2.6
+    },
+    "operacionais": {
+      "descricao": "A JBS registrou um crescimento de 28% na receita líquida em relação ao ano anterior, com destaque para os negócios de aves e suínos, que apresentaram margens EBITDA recordes.",
+      "metricas": {
+        "vendas_aves": 12568900000,
+        "vendas_suinos": 11699200000,
+        "vendas_bovinos": 37532700000,
+        "vendas_australia": 9477400000,
+        "vendas_pork": 11699200000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:43:42.477573Z"
+}
