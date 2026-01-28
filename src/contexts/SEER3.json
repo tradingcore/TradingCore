@@ -1,0 +1,35 @@
+{
+  "ticker": "SEER3",
+  "codigo_cvm": "23221",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "23221_2025-09-30_SER_EDUCACIONAL_SA.pdf",
+  "texto_contexto": "A Ser Educacional S.A. (B3 SEER3) se destaca como um dos principais grupos privados de educação no Brasil, com sede em Recife e uma forte presença nas regiões Nordeste e Norte do país. O modelo de negócio da empresa é diversificado e abrange a oferta de cursos de graduação, pós-graduação, técnicos e ensino a distância, o que permite atender a uma ampla base de alunos, que ultrapassa 354 mil em 26 estados e no Distrito Federal. A Ser Educacional opera sob várias marcas reconhecidas, como UNINASSAU, UNINABUCO e UNAMA, cada uma delas com características específicas que atendem diferentes nichos de mercado e preferências dos estudantes.\n\nOs segmentos em que a Ser Educacional atua refletem as tendências atuais do setor educacional, com um foco crescente em ensino híbrido e digital. A empresa tem investido especialmente na área da saúde, onde a demanda por cursos de medicina e outras formações correlatas tem se mostrado robusta. Essa estratégia não apenas amplia a oferta de cursos, mas também posiciona a Ser Educacional como uma referência em um dos segmentos mais competitivos e valorizados do mercado educacional.\n\nOs principais indicadores de desempenho (KPIs) da empresa, como a base de alunos, receita líquida, EBITDA e lucro líquido ajustado, são fundamentais para medir a saúde financeira e operacional da companhia. A capacidade de crescimento da base de alunos é um driver essencial para a geração de valor, assim como a eficiência operacional e a redução da evasão. A melhoria na geração de caixa também é um aspecto crítico, pois permite à empresa reinvestir em suas operações e expandir sua oferta educacional.\n\nEntretanto, a Ser Educacional enfrenta uma série de riscos que podem impactar seu desempenho. A concorrência no setor educacional é intensa, com a presença de diversas instituições que buscam captar a mesma base de alunos. Além disso, mudanças nas regulamentações governamentais, especialmente aquelas impostas pelo Ministério da Educação (MEC), podem afetar a operação da empresa, exigindo adaptações rápidas e eficazes. A dependência de programas de financiamento estudantil, como FIES e PROUNI, também representa um risco, uma vez que alterações nas políticas de financiamento podem impactar a capacidade de captação de novos alunos.\n\nA estrutura de capital da Ser Educacional é marcada por um nível significativo de endividamento, embora a empresa tenha demonstrado uma tendência de desalavancagem. A redução da relação dívida líquida/EBITDA ajustado é um sinal positivo, indicando que a companhia está trabalhando para melhorar sua saúde financeira e reduzir sua dependência de capital de terceiros. Essa estratégia é crucial para garantir a sustentabilidade a longo prazo e a capacidade de enfrentar os desafios do mercado.\n\nA governança corporativa da Ser Educacional é um aspecto que merece destaque, pois a empresa busca manter altos padrões de transparência e responsabilidade. A conformidade com as normas do MEC e a manutenção do credenciamento são fundamentais para a operação da empresa, e a governança eficaz é essencial para garantir que a Ser Educacional atenda a todas as exigências regulatórias.\n\nNo que diz respeito à regulação, o setor educacional no Brasil é altamente regulado, e a Ser Educacional deve estar atenta às mudanças nas diretrizes do MEC. A capacidade de adaptação às novas demandas do mercado educacional, especialmente em um cenário de crescente digitalização, é vital para a competitividade da empresa. A concorrência não se limita apenas a outras instituições de ensino, mas também inclui plataformas de ensino online que têm ganhado espaço e atraído alunos em busca de flexibilidade e inovação.\n\nPor fim, a sensibilidade macroeconômica também desempenha um papel importante no desempenho da Ser Educacional. Fatores como a taxa de desemprego, a renda disponível das famílias e as políticas de financiamento estudantil influenciam diretamente a demanda por educação. Em tempos de crise econômica, a procura por cursos pode ser afetada, o que exige que a empresa esteja preparada para ajustar sua estratégia e oferta de cursos de acordo com as condições do mercado.\n\nEm suma, a Ser Educacional é uma empresa robusta e bem posicionada no setor educacional brasileiro, mas enfrenta desafios significativos que exigem uma gestão proativa e adaptativa. A combinação de um modelo de negócio diversificado, uma governança sólida e a capacidade de se adaptar às mudanças regulatórias e de mercado será crucial para o sucesso contínuo da empresa.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.5 bi (trimestre) | R$1.6 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.5 bi (LTM) | Margem 25.0%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- Dívida Líquida: R$-0.6 bi\n- Operacional: A base de alunos de graduação de Ensino Híbrido atingiu 182.244, com crescimento de 11,8%. A receita líquida foi de R$514,5 milhões, um aumento de 8,4% em relação ao ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 514451000,
+      "receita_liquida_ltm": 1643677000,
+      "ebitda_tri": 128622000,
+      "ebitda_ltm": 484089000,
+      "lucro_liquido_tri": 14919000,
+      "lucro_liquido_ltm": 139878000,
+      "divida_liquida": -576523000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 25.0,
+      "margem_liquida_pct": 2.9
+    },
+    "operacionais": {
+      "descricao": "A base de alunos de graduação de Ensino Híbrido atingiu 182.244, com crescimento de 11,8%. A receita líquida foi de R$514,5 milhões, um aumento de 8,4% em relação ao ano anterior.",
+      "metricas": {
+        "alunos_graducao": 182244,
+        "ebitda_ajustado_tri": 102301000,
+        "lucro_liquido_ajustado_tri": 24169000,
+        "geracao_caixa_pos_capex_tri": 104635000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:51:14.939767Z"
+}

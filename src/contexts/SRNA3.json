@@ -1,0 +1,34 @@
+{
+  "ticker": "SRNA3",
+  "codigo_cvm": "26441",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "26441_2025-09-30_SERENA_ENERGIA_SA.pdf",
+  "texto_contexto": "A Serena Energia (SRNA3) se destaca no setor de geração de energia, posicionando-se como uma das principais empresas focadas em fontes renováveis, com ênfase em energia eólica e solar. O modelo de negócio da companhia é estruturado em torno da produção e venda de energia elétrica, priorizando contratos de longo prazo que asseguram receitas estáveis e previsíveis. Essa abordagem não apenas proporciona uma base sólida de fluxo de caixa, mas também minimiza a exposição a flutuações de mercado, permitindo que a empresa mantenha um planejamento financeiro mais eficaz.\n\nO portfólio da Serena é diversificado, abrangendo ativos de geração distribuída e complexos eólicos localizados em regiões estratégicas, como a Bahia e o Piauí. Essa diversificação geográfica e tecnológica é um dos pilares que sustentam a resiliência da empresa, permitindo que ela aproveite diferentes condições climáticas e de mercado. A capacidade instalada da companhia, que gira em torno de 7.303 MW, é um reflexo de sua estratégia de expansão e otimização, com a empresa constantemente buscando aumentar sua eficiência operacional e firmar novos contratos de fornecimento de energia.\n\nOs principais indicadores de desempenho da Serena, como EBITDA, lucro bruto de energia e produção de energia em GWh, são fundamentais para avaliar a saúde financeira da empresa. A relação dívida líquida/EBITDA é um KPI crucial que reflete a capacidade da companhia de gerar caixa em relação ao seu nível de endividamento. A gestão eficaz da estrutura de capital é um dos drivers de valor para a Serena, que busca maximizar seu EBITDA através da otimização de custos operacionais e da expansão de sua capacidade instalada.\n\nEntretanto, a empresa enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade das condições climáticas é um fator crítico, pois pode afetar diretamente a produção de energia, especialmente em um setor onde a dependência de fontes renováveis é alta. Além disso, a Serena está exposta a mudanças regulatórias que podem influenciar o setor elétrico, afetando tarifas e políticas governamentais que impactam sua rentabilidade. Riscos financeiros, como variações nas taxas de juros e na taxa de câmbio, também são relevantes, uma vez que podem influenciar a dívida e os custos operacionais da empresa.\n\nA estrutura de capital da Serena é composta por uma combinação de dívida e capital próprio, com uma dívida líquida ajustada significativa que a empresa monitora de perto. A relação dívida líquida/EBITDA, que se encontra em um nível elevado, indica a necessidade de uma gestão prudente da alavancagem, especialmente em um ambiente econômico que pode ser volátil. A regulação do setor elétrico no Brasil é um fator crítico que a empresa deve considerar em sua estratégia, uma vez que as políticas governamentais e as tarifas de energia podem impactar diretamente sua rentabilidade e operações.\n\nRecentemente, a conclusão de uma oferta pública que resultou na privatização da companhia trouxe novas oportunidades e desafios. Essa mudança na estrutura acionária permite à Serena uma maior flexibilidade na gestão e na execução de sua estratégia de negócios, possibilitando uma resposta mais ágil às dinâmicas do mercado e às exigências regulatórias. Em um cenário macroeconômico que pode ser sensível a fatores como a inflação, as taxas de juros e as políticas energéticas, a capacidade da Serena de se adaptar e inovar será fundamental para garantir sua posição de destaque no setor de energia renovável. A empresa, portanto, se encontra em uma trajetória de crescimento, mas deve permanecer atenta aos riscos e oportunidades que o ambiente regulatório e econômico apresenta.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- EBITDA: R$0.5 bi (trimestre) | R$1.2 bi (LTM)\n- Lucro Líquido: R$0.0 bi (trimestre) | N/D (LTM)\n- Dívida Líquida: R$8.7 bi\n- Operacional: Produção de energia totalizou 2.891,2 GWh, 5% inferior ao mesmo período do ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": null,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 483500000,
+      "ebitda_ltm": 1200000000,
+      "lucro_liquido_tri": 16800000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 8650000000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "Produção de energia totalizou 2.891,2 GWh, 5% inferior ao mesmo período do ano anterior.",
+      "metricas": {
+        "producao_energia": 2891200000,
+        "lucro_bruto_unitario": 238900,
+        "fluxo_caixa_recorrente": 341600000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:52:22.596038Z"
+}

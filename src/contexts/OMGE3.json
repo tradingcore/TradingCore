@@ -1,0 +1,32 @@
+{
+  "ticker": "OMGE3",
+  "codigo_cvm": "23426",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "23426_2025-09-30_SERENA_GERAÇÃO_SA.pdf",
+  "texto_contexto": "A Serena Geração S.A. se destaca no setor de geração de energia, com uma forte ênfase em fontes renováveis, especialmente a energia eólica. Este foco não apenas alinha a empresa às tendências globais de sustentabilidade e redução de emissões de carbono, mas também a posiciona favoravelmente em um mercado cada vez mais exigente em relação à responsabilidade ambiental. O portfólio da Serena é diversificado, incluindo complexos eólicos como Ventos da Bahia, Delta e Bahia, além de outras instalações de geração que complementam sua capacidade produtiva. Essa diversificação é um pilar fundamental do modelo de negócio da empresa, permitindo-lhe mitigar riscos associados a flutuações em fontes de energia específicas e garantir uma oferta estável e confiável.\n\nOs principais indicadores de desempenho da Serena Geração, como Lucro Bruto de Energia, EBITDA e Lucro Líquido, são reflexos diretos da eficiência operacional e da rentabilidade da companhia. A capacidade de geração de energia é um dos drivers mais significativos de valor, pois determina a quantidade de energia que a empresa pode comercializar. Além disso, a gestão de custos e despesas é crucial para manter margens adequadas, especialmente em um ambiente competitivo. A negociação de contratos de comercialização é outro aspecto vital, pois contratos bem estruturados podem garantir receitas previsíveis e proteger a empresa contra a volatilidade dos preços de energia.\n\nEntretanto, a Serena Geração enfrenta uma série de riscos que podem impactar sua operação e desempenho financeiro. A volatilidade nos preços de energia é uma preocupação constante, uma vez que oscilações bruscas podem afetar a rentabilidade. Além disso, a dependência de condições climáticas favoráveis para a geração de energia eólica torna a empresa vulnerável a eventos climáticos adversos, que podem reduzir a produção e, consequentemente, a receita. Outro risco significativo é a exposição a mudanças regulatórias, que podem impactar não apenas a operação, mas também a viabilidade de novos projetos e a estrutura de preços praticados no mercado.\n\nA estrutura de capital da Serena Geração é caracterizada por um nível considerável de endividamento, que, embora mantenha-se em linha com os resultados do ano anterior, exige uma gestão financeira cautelosa. A Dívida Líquida Ajustada é um indicador importante nesse contexto, pois reflete a capacidade da empresa de honrar suas obrigações financeiras enquanto investe em crescimento e expansão. A governança corporativa da empresa é igualmente relevante, pois uma estrutura de governança sólida pode contribuir para a mitigação de riscos e a maximização de oportunidades, assegurando que as decisões estratégicas sejam tomadas de forma transparente e alinhadas aos interesses dos acionistas.\n\nA regulação do setor elétrico no Brasil é um fator crítico que molda o ambiente de negócios da Serena Geração. As normas e diretrizes estabelecidas pelos órgãos reguladores influenciam diretamente as condições de operação, os preços praticados e a viabilidade de novos projetos. A capacidade da empresa de se adaptar a essas mudanças regulatórias é essencial para sua sustentabilidade a longo prazo. Eventos significativos, como a conclusão da permuta de ativos com a EDFR, podem ter um impacto profundo na estrutura de controle da empresa e na consolidação de ativos, alterando sua estratégia e posição competitiva no mercado.\n\nA competição no setor de energia renovável é intensa, com diversas empresas buscando expandir suas operações e aumentar sua participação de mercado. A Serena Geração precisa não apenas se destacar em termos de eficiência operacional, mas também inovar em suas práticas de gestão e comercialização para se manter competitiva. A sensibilidade macroeconômica também desempenha um papel importante, uma vez que fatores como taxas de juros, inflação e políticas governamentais podem influenciar a demanda por energia e a capacidade da empresa de financiar novos projetos.\n\nEm suma, a Serena Geração S.A. opera em um ambiente dinâmico e desafiador, onde a combinação de um portfólio diversificado, uma gestão financeira prudente e uma governança robusta são fundamentais para navegar pelos riscos e aproveitar as oportunidades que surgem no setor de energia renovável. A capacidade de adaptação às mudanças regulatórias e a resposta às condições de mercado serão determinantes para o sucesso contínuo da empresa.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.8 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.3 bi (trimestre) | N/D (LTM) | Margem 19.8%\n- Lucro Líquido: R$0.0 bi (trimestre) | N/D (LTM)\n- Dívida: R$5.4 bi (líquida) | R$6.5 bi (bruta)\n- Operacional: Produção de 2.098,3 GWh no trimestre, com um aumento de 28% em relação ao trimestre anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1750800000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 346700000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 48800000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 5412000000,
+      "divida_bruta": 6496900000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 19.8,
+      "margem_liquida_pct": 2.8
+    },
+    "operacionais": {
+      "descricao": "Produção de 2.098,3 GWh no trimestre, com um aumento de 28% em relação ao trimestre anterior.",
+      "metricas": {
+        "producao_energia_gwh": 2098.3
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:52:54.176697Z"
+}

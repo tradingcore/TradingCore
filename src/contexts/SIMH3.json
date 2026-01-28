@@ -1,0 +1,34 @@
+{
+  "ticker": "SIMH3",
+  "codigo_cvm": "25003",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25003_2025-09-30_SIMPAR_SA.pdf",
+  "texto_contexto": "A Simpar S.A. se destaca como uma holding multifacetada, operando em um amplo espectro de segmentos que incluem logística, mobilidade, infraestrutura e gestão ambiental. Através de suas subsidiárias, como JSL, Movida, VAMOS, Automob, CS Infra, Ciclus Ambiental e CS Brasil, a empresa adota um modelo de negócio que prioriza a gestão ativa de um portfólio diversificado. Essa abordagem não apenas busca sinergias operacionais, mas também visa a maximização de ganhos de escala, permitindo à Simpar se posicionar de maneira competitiva em um mercado dinâmico.\n\nOs principais indicadores de desempenho da Simpar, como EBITDA ajustado, margem EBITDA, receita líquida e a relação entre dívida líquida e EBITDA, são fundamentais para a avaliação da eficiência operacional e da saúde financeira da companhia. Esses KPIs oferecem uma visão clara sobre a capacidade da empresa de gerar lucro e administrar suas obrigações financeiras, refletindo a eficácia de suas estratégias operacionais e financeiras.\n\nOs drivers de valor da Simpar são diversos e interligados. A eficiência operacional é um pilar central, permitindo à empresa não apenas reduzir custos, mas também otimizar a utilização de seus ativos. A geração de receita recorrente, especialmente por meio de contratos de longo prazo, é outro fator crucial que contribui para a estabilidade financeira da companhia. A gestão eficaz de ativos, aliada a um forte acesso a fontes de capital, proporciona à Simpar a flexibilidade necessária para financiar suas operações e realizar investimentos estratégicos que podem impulsionar seu crescimento a longo prazo.\n\nEntretanto, a Simpar não está isenta de riscos. A volatilidade econômica, as flutuações nas taxas de juros e as mudanças regulatórias são fatores que podem impactar significativamente suas operações e estrutura de capital. A empresa precisa estar atenta a esses riscos, implementando estratégias que visem mitigar seus efeitos e garantir a continuidade de suas operações. A estrutura de capital da Simpar, que combina dívida e patrimônio líquido, é cuidadosamente gerida com o objetivo de manter uma alavancagem financeira saudável, refletida em índices que monitoram a relação entre dívida líquida e EBITDA.\n\nA regulação é um aspecto crítico do ambiente em que a Simpar opera, especialmente nas áreas de transporte e infraestrutura, onde as concessões e contratos governamentais desempenham um papel significativo. A conformidade com as normas regulatórias é essencial para a operação das subsidiárias da empresa, e qualquer mudança nesse cenário pode ter repercussões diretas sobre a viabilidade de seus projetos e contratos. A empresa também se dedica a eventos críticos, como a venda de ativos não estratégicos e a reestruturação de dívidas, que fazem parte de seu planejamento estratégico para maximizar a geração de valor e garantir a sustentabilidade a longo prazo.\n\nA Simpar continua a focar na execução de seu planejamento estratégico, que visa não apenas fortalecer sua posição de mercado, mas também assegurar resultados consistentes para seus acionistas e stakeholders. Em um ambiente competitivo e em constante evolução, a capacidade da empresa de se adaptar e inovar será fundamental para manter sua relevância e crescimento. A interação com o macroambiente, incluindo fatores econômicos, sociais e tecnológicos, também desempenha um papel importante na definição das estratégias da Simpar, que busca não apenas sobreviver, mas prosperar em um cenário desafiador.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$11.4 bi (trimestre) | R$0.0 bi (LTM)\n- EBITDA: R$3.1 bi (trimestre) | R$0.0 bi (LTM) | Margem 27.5%\n- Lucro Líquido: R$-0.1 bi (trimestre) | R$0.0 bi (LTM)\n- Dívida Líquida: R$41.4 bi\n- Capex: R$1.1 bi (trimestre) | R$0.0 bi (LTM)\n- Operacional: Receita líquida total de R$ 11,3 bilhões, EBITDA ajustado de R$ 3,1 bilhões com margem de 27,5%. Lucro líquido ajustado foi de -R$ 119 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 11390000000,
+      "receita_liquida_ltm": 0,
+      "ebitda_tri": 3105000000,
+      "ebitda_ltm": 0,
+      "lucro_liquido_tri": -119300000,
+      "lucro_liquido_ltm": 0,
+      "divida_liquida": 41428000000,
+      "divida_bruta": 0,
+      "capex_tri": 1100000000,
+      "capex_ltm": 0,
+      "margem_ebitda_pct": 27.5,
+      "margem_liquida_pct": -1.1
+    },
+    "operacionais": {
+      "descricao": "Receita líquida total de R$ 11,3 bilhões, EBITDA ajustado de R$ 3,1 bilhões com margem de 27,5%. Lucro líquido ajustado foi de -R$ 119 milhões.",
+      "metricas": {
+        "receita_bruta_servicos": 10200000000,
+        "venda_ativos": 2150100000,
+        "ebitda_por_colaborador": 207000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:53:45.932056Z"
+}

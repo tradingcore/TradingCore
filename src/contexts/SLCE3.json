@@ -1,0 +1,35 @@
+{
+  "ticker": "SLCE3",
+  "codigo_cvm": "20745",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20745_2025-09-30_SLC_AGRICOLA_SA.pdf",
+  "texto_contexto": "A SLC Agrícola S.A. se posiciona como uma das principais protagonistas do setor agrícola brasileiro, com um foco claro na produção e comercialização de grãos e fibras, destacando-se especialmente na produção de algodão, soja e milho. O modelo de negócio da empresa é fundamentado na agricultura em larga escala, onde a adoção de práticas de cultivo modernas e tecnologias avançadas se traduz em uma maximização da produtividade e eficiência operacional. Essa abordagem não apenas permite que a SLC Agrícola mantenha uma posição competitiva no mercado, mas também a capacita a responder rapidamente às demandas dinâmicas do setor.\n\nA empresa opera em diversos segmentos, abrangendo a produção de algodão, soja, milho e até mesmo pecuária, com uma vasta área plantada que se estende por centenas de milhares de hectares. Essa diversificação não apenas dilui riscos, mas também proporciona uma flexibilidade que é crucial em um ambiente agrícola frequentemente volátil. Os principais indicadores de desempenho, como receita líquida, margem bruta, EBITDA ajustado e lucro líquido, refletem o crescimento consistente da SLC Agrícola, evidenciado por um aumento significativo na receita em períodos recentes. Esses KPIs são fundamentais para avaliar a saúde financeira da empresa e sua capacidade de gerar valor para os acionistas.\n\nOs drivers de valor da SLC Agrícola são multifacetados e incluem a eficiência na gestão de custos, a capacidade de expandir a área plantada e a adoção de tecnologias de irrigação que não apenas aumentam a produtividade, mas também promovem práticas agrícolas sustentáveis. A diversificação de produtos e mercados é outro fator crítico que contribui para a resiliência da empresa em face de flutuações nos preços das commodities agrícolas e nas condições climáticas. No entanto, a SLC Agrícola não está isenta de riscos. Fatores climáticos adversos, variações cambiais e a dependência de insumos importados podem impactar significativamente suas operações e resultados financeiros.\n\nA estrutura de capital da SLC Agrícola é composta por uma combinação de dívida e patrimônio líquido, com um aumento notável na dívida líquida ajustada, refletindo investimentos estratégicos e aquisições que visam fortalecer sua posição no mercado. A gestão prudente do perfil de vencimento da dívida, com uma proporção significativa de sua dívida em longo prazo, demonstra um compromisso com a sustentabilidade financeira e a mitigação de riscos associados ao endividamento.\n\nNo que diz respeito à governança, a SLC Agrícola opera em um ambiente regulatório que abrange normas ambientais e de segurança alimentar. A conformidade com legislações que visam a sustentabilidade e a proteção dos recursos naturais é essencial para a operação da empresa, especialmente em um cenário onde a pressão por práticas agrícolas responsáveis e sustentáveis está em ascensão. A empresa tem se destacado em suas iniciativas de sustentabilidade, buscando não apenas reduzir a emissão de gases de efeito estufa, mas também promover práticas agrícolas regenerativas que beneficiem o meio ambiente e a sociedade.\n\nA competição no setor agrícola é intensa, com a SLC Agrícola enfrentando desafios de outros grandes players e pequenos produtores. A capacidade de inovação e adaptação às novas tecnologias e práticas de mercado será crucial para manter sua vantagem competitiva. Além disso, a sensibilidade macroeconômica, incluindo fatores como políticas agrícolas, variações nas taxas de juros e condições econômicas globais, pode influenciar diretamente o desempenho da empresa. A SLC Agrícola, portanto, deve continuar a monitorar esses fatores e ajustar suas estratégias conforme necessário para garantir um crescimento sustentável e a criação de valor a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- EBITDA: R$0.0 bi (trimestre) | R$0.0 bi (LTM) | Margem 25.5%\n- Lucro Líquido: R$-0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Dívida Líquida: R$6.2 bi\n- Operacional: Vendas de 75.416 toneladas de algodão, 177.148 toneladas de soja e 709.174 toneladas de milho no 3T2025.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 2087705,
+      "receita_liquida_ltm": 62808882,
+      "ebitda_tri": 531381,
+      "ebitda_ltm": 2031606,
+      "lucro_liquido_tri": -14525,
+      "lucro_liquido_ltm": 636012,
+      "divida_liquida": 6200000000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 25.5,
+      "margem_liquida_pct": -0.7
+    },
+    "operacionais": {
+      "descricao": "Vendas de 75.416 toneladas de algodão, 177.148 toneladas de soja e 709.174 toneladas de milho no 3T2025.",
+      "metricas": {
+        "vendas_algodao_t": 75416,
+        "vendas_soja_t": 177148,
+        "vendas_milho_t": 709174,
+        "cabeças_gado": 20086
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:54:37.192141Z"
+}
