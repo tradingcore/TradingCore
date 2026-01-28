@@ -1,0 +1,35 @@
+{
+  "ticker": "MOVI3",
+  "codigo_cvm": "23825",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "23825_2025-09-30_MOVIDA_PARTICIPAÇÕES_SA.pdf",
+  "texto_contexto": "A Movida (MOVI3) se destaca no setor de locação de veículos, apresentando um modelo de negócio diversificado que abrange não apenas o aluguel de carros, mas também a gestão e terceirização de frotas (GTF) e a comercialização de seminovos. Essa abordagem multifacetada permite à empresa gerar receitas de diferentes fontes, o que é fundamental para sua resiliência em um mercado competitivo e volátil. O segmento Rent-A-Car (RAC) é um dos pilares da Movida, focando na locação de veículos para uso temporário, tanto para clientes corporativos quanto individuais. Por outro lado, a GTF se concentra na gestão de frotas para empresas, oferecendo soluções que visam otimizar a operação e reduzir custos para seus clientes.\n\nOs principais indicadores de desempenho (KPIs) da Movida, como receita líquida, EBITDA, margem EBITDA, lucro líquido e retorno sobre capital investido (ROIC), são reflexos da eficiência operacional e da capacidade da empresa de gerar valor. A Movida tem demonstrado um crescimento consistente em sua receita líquida e EBITDA, o que indica uma gestão eficaz e uma estratégia bem-sucedida de expansão e otimização de processos. A empresa tem se concentrado em drivers de valor que incluem a otimização da precificação, a expansão da frota, a melhoria na experiência do cliente e a digitalização de processos. Essas iniciativas visam não apenas aumentar a satisfação e a fidelização dos clientes, mas também posicionar a Movida como uma líder em inovação no setor.\n\nEntretanto, a operação da Movida não está isenta de riscos. A volatilidade econômica é um fator crítico que pode impactar a demanda por locação de veículos, especialmente em períodos de recessão ou incerteza. Além disso, a concorrência acirrada no setor pode pressionar as margens de lucro, exigindo que a empresa mantenha um foco constante em eficiência e diferenciação. A Movida também enfrenta riscos associados a flutuações nas taxas de juros, que podem afetar seus custos de financiamento, e à regulamentação do setor automotivo, que pode impactar suas operações e custos operacionais.\n\nA estrutura de capital da Movida é caracterizada por uma dívida líquida significativa, que, embora represente um desafio, também pode ser vista como uma oportunidade para alavancar o crescimento. A empresa tem buscado melhorar seu cronograma de vencimento da dívida, alongando prazos e reduzindo spreads médios, o que pode proporcionar maior flexibilidade financeira e estabilidade. Essa gestão cuidadosa da dívida é essencial para garantir que a Movida possa continuar investindo em sua frota e em inovações tecnológicas.\n\nA governança corporativa da Movida é um aspecto fundamental para sua operação, uma vez que a transparência e a responsabilidade são cruciais em um setor que lida com regulamentações rigorosas e expectativas crescentes de stakeholders. A empresa deve monitorar de perto as mudanças na regulação do setor de locação de veículos e na legislação relacionada ao transporte e à segurança veicular, pois essas alterações podem ter um impacto direto em suas operações e custos. Eventos críticos, como crises econômicas ou mudanças nas políticas governamentais, também podem afetar a demanda por serviços de locação, desafiando a capacidade da empresa de manter sua rentabilidade.\n\nA sensibilidade macroeconômica é um fator que a Movida deve considerar em sua estratégia de longo prazo. A empresa está exposta a variáveis como o crescimento econômico, a taxa de desemprego e a confiança do consumidor, que podem influenciar diretamente a demanda por locação de veículos. Em um cenário de crescimento econômico robusto, a demanda tende a aumentar, beneficiando a Movida. Por outro lado, em tempos de recessão, a empresa pode enfrentar desafios significativos.\n\nEm suma, a Movida opera em um ambiente dinâmico e desafiador, onde a capacidade de adaptação e inovação é crucial para o sucesso. Com um modelo de negócio diversificado, uma gestão focada em eficiência e uma governança sólida, a empresa está bem posicionada para enfrentar os desafios do setor e aproveitar as oportunidades que surgem em um mercado em constante evolução.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$3.8 bi (trimestre) | R$11.0 bi (LTM)\n- EBITDA: R$1.5 bi (trimestre) | R$4.2 bi (LTM) | Margem 72.6%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- Dívida Líquida: R$15.5 bi\n- Capex: R$-0.1 bi (trimestre) | R$0.6 bi (LTM)\n- Operacional: Frota total de 115.498 veículos, 262 pontos de atendimento, taxa de ocupação de 71,8%, e 6.085 diárias em milhares.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 3765800000,
+      "receita_liquida_ltm": 11013000000,
+      "ebitda_tri": 1478700000,
+      "ebitda_ltm": 4196100000,
+      "lucro_liquido_tri": 70000000,
+      "lucro_liquido_ltm": 216000000,
+      "divida_liquida": 15500000000,
+      "divida_bruta": null,
+      "capex_tri": -123000000,
+      "capex_ltm": 564000000,
+      "margem_ebitda_pct": 72.6,
+      "margem_liquida_pct": 3.5
+    },
+    "operacionais": {
+      "descricao": "Frota total de 115.498 veículos, 262 pontos de atendimento, taxa de ocupação de 71,8%, e 6.085 diárias em milhares.",
+      "metricas": {
+        "frota_final_periodo": 115498,
+        "numero_pontos_atendimento": 262,
+        "taxa_ocupacao_pct": 71.8,
+        "numero_diarias_mil": 6085
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:13:10.732163Z"
+}

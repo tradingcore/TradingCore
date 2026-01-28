@@ -1,0 +1,33 @@
+{
+  "ticker": "BEEF3",
+  "codigo_cvm": "20931",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20931_2025-09-30_MINERVA_SA.pdf",
+  "texto_contexto": "A Minerva S.A. se destaca como uma das principais protagonistas no setor de proteína animal na América do Sul, consolidando-se como líder na exportação de carne bovina. Seu modelo de negócio é robusto e diversificado, centrado na produção e comercialização de carne bovina e seus derivados, com uma forte presença em mercados internacionais que abrange mais de 100 países. A empresa opera um extenso portfólio de 43 plantas de abate e desossa, além de 3 unidades de processamento, distribuídas em países como Brasil, Argentina, Uruguai, Paraguai, Colômbia, Chile e Austrália. Essa ampla rede de operações não apenas fortalece sua capacidade produtiva, mas também permite à Minerva explorar diferentes mercados e atender a uma demanda crescente por carne bovina em regiões como Ásia e América do Norte.\n\nOs principais indicadores de desempenho da Minerva, como receita líquida, EBITDA e geração de caixa livre, refletem a saúde financeira da companhia e sua capacidade de gerar valor. A eficiência operacional é um dos principais drivers que impulsionam o desempenho da empresa, permitindo que ela capture sinergias por meio da integração de novos ativos e da otimização de processos. A forte demanda internacional por carne bovina, impulsionada por tendências de consumo e pela crescente classe média em mercados emergentes, também desempenha um papel crucial na geração de receita. Além disso, a Minerva tem investido em iniciativas de sustentabilidade, que não apenas atendem às exigências regulatórias, mas também agregam valor à sua marca, tornando-a mais atrativa para consumidores e parceiros comerciais.\n\nEntretanto, a Minerva não está isenta de riscos. A volatilidade dos preços das commodities, as flutuações cambiais e os desafios regulatórios em diferentes mercados são fatores que podem impactar sua operação. A dependência de mercados externos torna a empresa vulnerável a mudanças nas políticas comerciais, como tarifas e restrições de importação, além de questões relacionadas ao bem-estar animal e à sustentabilidade, que estão se tornando cada vez mais relevantes nas regulamentações globais. A capacidade da Minerva de navegar por esse ambiente regulatório complexo será fundamental para sua continuidade e crescimento.\n\nA estrutura de capital da Minerva é equilibrada, composta por um mix de dívida e capital próprio. A gestão ativa de passivos é uma prioridade, com a empresa adotando estratégias como a recompra de bonds para reduzir a alavancagem e os custos financeiros. A companhia mantém uma posição de caixa robusta, o que lhe confere flexibilidade para atender ao cronograma de amortização da dívida e para realizar investimentos estratégicos. A adoção de políticas de hedge também é uma prática comum, visando mitigar riscos cambiais que podem impactar sua rentabilidade.\n\nEventos críticos que podem influenciar o futuro da Minerva incluem a conclusão da integração de novos ativos, que pode afetar a eficiência operacional e a rentabilidade, além da evolução das regulamentações relacionadas à sustentabilidade e ao comércio internacional. A capacidade da empresa de se adaptar a essas mudanças e de manter sua posição competitiva será determinante para seu sucesso no dinâmico setor de proteína animal. A Minerva, portanto, se posiciona não apenas como uma fornecedora de carne bovina, mas como uma empresa que busca inovar e se adaptar às demandas de um mercado em constante transformação, sempre atenta às oportunidades e desafios que surgem no horizonte.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$15.5 bi (trimestre) | R$51.3 bi (LTM)\n- EBITDA: R$1.4 bi (trimestre) | R$4.6 bi (LTM) | Margem 8.9%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.8 bi (LTM)\n- Operacional: Volume total de vendas de 556,6 mil toneladas e abate total de 1,6 milhão de cabeças de bovinos.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 15512200000,
+      "receita_liquida_ltm": 51340500000,
+      "ebitda_tri": 1388300000,
+      "ebitda_ltm": 4597000000,
+      "lucro_liquido_tri": 120000000,
+      "lucro_liquido_ltm": 763300000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 8.9,
+      "margem_liquida_pct": 0.8
+    },
+    "operacionais": {
+      "descricao": "Volume total de vendas de 556,6 mil toneladas e abate total de 1,6 milhão de cabeças de bovinos.",
+      "metricas": {
+        "volume_vendas_ton": 556600,
+        "abate_total_bovinos": 1561600
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:09:06.300516Z"
+}

@@ -1,0 +1,35 @@
+{
+  "ticker": "MTRE3",
+  "codigo_cvm": "24902",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "24902_2025-09-30_MITRE_REALTY_EMPREENDIMENTOS_E_PARTICIPAÇÕES_SA.pdf",
+  "texto_contexto": "A Mitre Realty Empreendimentos e Participações S.A. (MTRE3) se destaca no cenário imobiliário brasileiro, especialmente na dinâmica e competitiva cidade de São Paulo. Como uma construtora e incorporadora, a empresa tem como foco principal o desenvolvimento de empreendimentos residenciais, com uma abordagem que prioriza a identificação de oportunidades de lançamentos imobiliários. Essa estratégia é fundamentada na qualidade dos projetos e na adequação às demandas específicas do mercado local, permitindo à Mitre se posicionar de forma assertiva em um setor que exige constante adaptação e inovação.\n\nO modelo de negócio da Mitre é centrado em segmentos de habitação de médio e alto padrão, onde a empresa busca realizar lançamentos seletivos em regiões com potencial de valorização. Essa escolha não é aleatória; a Mitre investe em estudos de mercado que identificam áreas com crescimento demográfico e econômico, o que potencializa a aceitação de seus produtos e, consequentemente, a velocidade de vendas. Os principais indicadores de desempenho (KPIs) da companhia, como receita líquida, lucro líquido e margens bruta e ajustada, são monitorados de perto, assim como a velocidade de vendas sobre a oferta (VSO), que fornece uma visão clara da eficiência de suas operações e da aceitação de seus lançamentos.\n\nOs drivers de valor da Mitre são diversos e incluem a eficiência operacional, a capacidade de lançamento de novos empreendimentos e a gestão de custos. A empresa busca constantemente otimizar seus processos para garantir que as margens de lucro sejam mantidas, mesmo em um ambiente de custos crescentes. A aceitação do mercado é um fator crítico, uma vez que a demanda por imóveis pode ser influenciada por uma série de variáveis econômicas e sociais. Assim, a Mitre se empenha em entender as necessidades dos consumidores e adaptar seus projetos para atender a essas expectativas.\n\nEntretanto, a Mitre não está isenta de riscos. O ciclo econômico é um fator preponderante que pode impactar diretamente a demanda por imóveis. A variação nas taxas de juros, por exemplo, pode afetar a capacidade de financiamento dos potenciais compradores, tornando-se um elemento crucial a ser monitorado. Além disso, a escassez de mão de obra qualificada no setor da construção civil pode atrasar projetos e aumentar custos, o que exige uma gestão proativa e eficiente. A regulação do setor imobiliário também representa um desafio, uma vez que mudanças nas políticas de financiamento habitacional podem alterar as condições de crédito disponíveis para os consumidores, afetando a demanda por imóveis da Mitre.\n\nA estrutura de capital da empresa é composta por uma combinação de dívida e patrimônio líquido, com um nível de alavancagem que, embora controlado, exige atenção constante. A Mitre tem demonstrado um compromisso com a redução de despesas gerais e administrativas, buscando melhorar sua eficiência financeira e garantir que sua estrutura de capital suporte os desafios do mercado. Essa abordagem é fundamental para a sustentabilidade a longo prazo da empresa, especialmente em um setor que pode ser volátil.\n\nA governança corporativa da Mitre também é um aspecto relevante, pois a empresa busca manter altos padrões de transparência e responsabilidade. A gestão proativa das operações e a adaptação às condições de mercado são essenciais para mitigar riscos e aproveitar oportunidades. A Mitre se posiciona de forma a enfrentar os desafios impostos pela regulação e pela concorrência, mantendo um foco na melhoria contínua e na inovação em seus projetos.\n\nA competição no setor imobiliário é intensa, com diversas empresas disputando espaço em um mercado que, embora promissor, é marcado por desafios significativos. A Mitre, portanto, deve se diferenciar não apenas pela qualidade de seus produtos, mas também pela capacidade de entender e antecipar as necessidades do mercado. A sensibilidade macroeconômica é um fator que não pode ser ignorado, uma vez que eventos como crises econômicas, mudanças nas políticas fiscais e monetárias, e flutuações no mercado de trabalho podem impactar diretamente a performance da empresa.\n\nEm suma, a Mitre Realty se posiciona como uma empresa resiliente e adaptável, que busca constantemente aprimorar suas operações e se alinhar às demandas do mercado. Com uma estrutura de capital sólida, uma governança responsável e uma estratégia focada na qualidade e na inovação, a Mitre está preparada para enfrentar os desafios do setor imobiliário e continuar a crescer em um ambiente dinâmico e competitivo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.2 bi (trimestre) | R$0.7 bi (LTM)\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Dívida Líquida: R$0.5 bi\n- Operacional: No 3T25, a Mitre Realty registrou receita líquida de R$ 243,2 milhões, com lucro líquido de R$ 8,7 milhões. Foram entregues 1.077 unidades, totalizando R$ 655 milhões em VGV.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 243215000,
+      "receita_liquida_ltm": 739384000,
+      "ebitda_tri": null,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 8658000,
+      "lucro_liquido_ltm": 30386000,
+      "divida_liquida": 499200000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": null,
+      "margem_liquida_pct": 3.57
+    },
+    "operacionais": {
+      "descricao": "No 3T25, a Mitre Realty registrou receita líquida de R$ 243,2 milhões, com lucro líquido de R$ 8,7 milhões. Foram entregues 1.077 unidades, totalizando R$ 655 milhões em VGV.",
+      "metricas": {
+        "vendas_liquidas": 279745000,
+        "entregas_unidades": 1077,
+        "vendas_sobre_oferta_pct": 13.3,
+        "vendas_liquidas_acumuladas": 895464000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:10:06.958185Z"
+}

@@ -1,0 +1,35 @@
+{
+  "ticker": "MDNE3",
+  "codigo_cvm": "21067",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "21067_2025-09-30_MOURA_DUBEUX_ENGENHARIA_SA.pdf",
+  "texto_contexto": "A Moura Dubeux (MDNE3) se destaca como uma das principais empresas do setor imobiliário no Brasil, com uma trajetória de mais de 40 anos que a consolidou como líder no Nordeste. Seu modelo de negócios é multifacetado, englobando a incorporação imobiliária e a administração de obras, com um foco particular em empreendimentos residenciais, comerciais e hoteleiros. Essa diversidade permite à empresa atender a diferentes segmentos de mercado, com ênfase em produtos de alto padrão, luxo e Beach Class, que são especialmente valorizados em regiões turísticas.\n\nOs principais drivers de valor da Moura Dubeux incluem a diversificação de seu portfólio, que não apenas abrange diferentes tipos de imóveis, mas também se estende a várias localizações estratégicas, aproveitando o potencial de mercados turísticos relevantes. A empresa possui um landbank robusto, com um valor geral de vendas (VGV) significativo, o que proporciona uma base sólida para expansão controlada e sustentável. Essa característica é particularmente importante em um cenário de juros elevados, onde a capacidade de manter uma liquidez estrutural se torna um diferencial competitivo. A Moura Dubeux tem se mostrado capaz de operar sem depender excessivamente de promoções ou descontos, o que reforça sua posição no mercado.\n\nOs indicadores de desempenho, como receita líquida, lucro bruto, margem bruta, EBITDA ajustado e retorno sobre o patrimônio líquido (ROAE), são fundamentais para avaliar a saúde financeira da empresa. A companhia tem demonstrado resultados consistentes, refletindo sua eficiência operacional e a eficácia de sua estratégia de negócios. A margem líquida, em particular, é um indicador que evidencia a capacidade da Moura Dubeux de gerar lucro em relação à sua receita, um aspecto crucial em um setor onde a concorrência é acirrada.\n\nEntretanto, a empresa não está isenta de riscos. A volatilidade do mercado imobiliário pode impactar a demanda por seus produtos, especialmente em períodos de instabilidade econômica. Além disso, a dependência de financiamento externo para a realização de projetos pode representar um desafio, especialmente em um ambiente de altas taxas de juros. Mudanças nas condições econômicas, como flutuações na taxa de desemprego ou alterações nas políticas de crédito, também podem afetar a capacidade da Moura Dubeux de manter seu desempenho.\n\nA estrutura de capital da Moura Dubeux é caracterizada por uma baixa alavancagem, o que é um ponto positivo em um cenário de juros elevados. Com uma dívida líquida que representa uma fração do patrimônio líquido, a empresa se posiciona de forma competitiva, permitindo-lhe enfrentar adversidades financeiras com maior resiliência. Essa solidez financeira é um ativo valioso, especialmente em tempos de incerteza econômica.\n\nNo que diz respeito à governança, a Moura Dubeux está sujeita à regulação da Comissão de Valores Mobiliários (CVM), o que implica em uma série de obrigações de transparência e conformidade. A empresa deve seguir normas contábeis brasileiras e internacionais, o que contribui para a confiança dos investidores e stakeholders em sua gestão. A governança corporativa é um aspecto que pode influenciar a percepção de risco da empresa e, consequentemente, seu valor de mercado.\n\nA competição no setor imobiliário é intensa, com diversas empresas disputando participação de mercado em um ambiente que exige inovação e adaptação constante. A capacidade da Moura Dubeux de se diferenciar por meio da qualidade de seus produtos e serviços, bem como pela experiência acumulada ao longo de sua história, é um fator que pode garantir sua posição de destaque frente aos concorrentes.\n\nPor fim, a sensibilidade macroeconômica é um aspecto que não pode ser ignorado. Fatores como a taxa de juros, a inflação e o crescimento econômico têm um impacto direto sobre a demanda por imóveis e, consequentemente, sobre o desempenho da Moura Dubeux. A empresa precisa estar atenta a essas variáveis e adaptar suas estratégias conforme necessário para mitigar riscos e aproveitar oportunidades que possam surgir em um cenário econômico em constante mudança. A habilidade de navegar por essas complexidades será fundamental para a continuidade de seu sucesso e crescimento no futuro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.5 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.1 bi (trimestre) | N/D (LTM) | Margem 23.7%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.3 bi (LTM)\n- Dívida Líquida: R$0.2 bi\n- Operacional: Lançamentos de R$ 1,3 bilhão em VGV Líquido, vendas líquidas de R$ 1,1 bilhão, estoque de R$ 3,2 bilhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 548000000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 130000000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 118000000,
+      "lucro_liquido_ltm": 350000000,
+      "divida_liquida": 246000000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 23.7,
+      "margem_liquida_pct": 21.4
+    },
+    "operacionais": {
+      "descricao": "Lançamentos de R$ 1,3 bilhão em VGV Líquido, vendas líquidas de R$ 1,1 bilhão, estoque de R$ 3,2 bilhões.",
+      "metricas": {
+        "vendas_liquidas": 1100000000,
+        "lancamentos": 1300000000,
+        "estoque": 3200000000,
+        "vso_liquido_pct": 53.2
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:12:15.877480Z"
+}

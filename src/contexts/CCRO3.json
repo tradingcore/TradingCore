@@ -1,0 +1,34 @@
+{
+  "ticker": "CCRO3",
+  "codigo_cvm": "18821",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "18821_2025-09-30_MOTIVA_INFRAESTRUTURA_DE_MOBILIDADE_SA.pdf",
+  "texto_contexto": "A Motiva Infraestrutura de Mobilidade se destaca como a maior empresa de infraestrutura de mobilidade no Brasil, consolidando sua posição em um setor essencial para o desenvolvimento econômico e social do país. Seu modelo de negócio é fundamentado na gestão e manutenção de ativos de transporte, abrangendo três segmentos principais: rodovias, trilhos e aeroportos. Essa diversificação permite à Motiva não apenas otimizar suas operações, mas também oferecer uma experiência aprimorada aos usuários, refletindo um compromisso com a qualidade e a eficiência.\n\nA empresa opera uma vasta rede de 37 ativos em 13 estados brasileiros, gerenciando uma extensa malha de 4.475 quilômetros de rodovias. Além disso, a Motiva é responsável pelo transporte de aproximadamente 750 milhões de passageiros anualmente em sua plataforma de trilhos e atende cerca de 45 milhões de clientes em 17 aeroportos no Brasil e três no exterior. Essa abrangência geográfica e operacional é um dos principais diferenciais competitivos da Motiva, permitindo-lhe capturar uma ampla base de clientes e explorar sinergias entre os diferentes segmentos de atuação.\n\nOs principais indicadores de desempenho da Motiva, como a receita líquida ajustada, EBITDA ajustado e lucro líquido ajustado, são fundamentais para avaliar sua eficiência operacional e rentabilidade. A margem EBITDA ajustada, em particular, é um KPI crucial, pois indica a capacidade da empresa de gerar lucro em relação à sua receita, refletindo a eficácia de suas estratégias de gestão de custos e otimização de operações. Os drivers de valor para a Motiva incluem a expansão de sua base de ativos, a implementação de tarifas ajustadas, a otimização de custos e a melhoria contínua da eficiência operacional. Esses fatores são essenciais para garantir um crescimento sustentável e a geração de valor para os acionistas, especialmente em um ambiente competitivo e em constante evolução.\n\nEntretanto, a Motiva não está isenta de riscos. A empresa enfrenta desafios associados a mudanças regulatórias, flutuações econômicas e variações nas tarifas de pedágio, que podem impactar diretamente sua receita e rentabilidade. Além disso, a segurança e a manutenção de seus ativos são questões críticas que demandam atenção constante, uma vez que qualquer falha nesse aspecto pode resultar em prejuízos financeiros e danos à reputação da empresa. A estrutura de capital da Motiva é composta por uma combinação de dívida e patrimônio líquido, com um nível de endividamento que tem aumentado devido à aquisição de novos ativos. Essa alavancagem, embora possa impulsionar o crescimento, também representa um risco, pois pode impactar a flexibilidade financeira da empresa em momentos de adversidade econômica.\n\nA regulação é um aspecto crítico para a Motiva, dado que suas operações estão sujeitas a contratos de concessão que determinam tarifas, prazos e obrigações de investimento. A assinatura de aditivos contratuais para a extensão de concessões é um evento crucial que pode influenciar a continuidade e a expansão das operações da empresa, além de afetar diretamente sua capacidade de investimento e crescimento futuro. Nesse contexto, a Motiva tem demonstrado um compromisso com a sustentabilidade e a responsabilidade social, integrando essas práticas em sua estratégia de negócios. A adoção de iniciativas sustentáveis não apenas atende às exigências regulatórias, mas também fortalece a imagem da empresa perante a sociedade e os investidores.\n\nA competição no setor de infraestrutura de mobilidade é intensa, com diversas empresas disputando participação de mercado. A Motiva, no entanto, se diferencia por sua ampla experiência e pela qualidade de seus serviços, o que lhe confere uma vantagem competitiva significativa. A sensibilidade macroeconômica também desempenha um papel importante nas operações da empresa, uma vez que fatores como crescimento econômico, inflação e políticas governamentais podem impactar a demanda por transporte e, consequentemente, a performance financeira da Motiva.\n\nEm suma, a Motiva Infraestrutura de Mobilidade é uma empresa robusta e bem posicionada no setor de transporte, com um modelo de negócio diversificado e uma estratégia focada na eficiência operacional e na experiência do cliente. Apesar dos desafios e riscos que enfrenta, sua capacidade de adaptação e inovação, aliada a um compromisso com a sustentabilidade, a coloca em uma trajetória promissora para o futuro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$4.0 bi (trimestre) | R$11.2 bi (LTM)\n- EBITDA: R$2.5 bi (trimestre) | R$7.0 bi (LTM) | Margem 64.4%\n- Lucro Líquido: R$0.7 bi (trimestre) | R$1.6 bi (LTM)\n- Capex: R$2.3 bi (trimestre) | R$5.5 bi (LTM)\n- Operacional: Crescimento de 4,6% na receita líquida, EBITDA ajustado de R$ 2,5 bilhões com margem de 64,4%. Lucro líquido ajustado de R$ 683 milhões, aumento de 22,0%. Investimentos de R$ 2,3 bilhões no trimestre.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 3957000000,
+      "receita_liquida_ltm": 11249000000,
+      "ebitda_tri": 2547000000,
+      "ebitda_ltm": 6997000000,
+      "lucro_liquido_tri": 683000000,
+      "lucro_liquido_ltm": 1620000000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": 2334000000,
+      "capex_ltm": 5471000000,
+      "margem_ebitda_pct": 64.4,
+      "margem_liquida_pct": 17.2
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 4,6% na receita líquida, EBITDA ajustado de R$ 2,5 bilhões com margem de 64,4%. Lucro líquido ajustado de R$ 683 milhões, aumento de 22,0%. Investimentos de R$ 2,3 bilhões no trimestre.",
+      "metricas": {
+        "veiculos_equivalentes": 283600000,
+        "passageiros_transportados": 194700000,
+        "passageiros_embarcados": 11000000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:11:15.238881Z"
+}
