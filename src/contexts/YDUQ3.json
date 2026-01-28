@@ -1,0 +1,35 @@
+{
+  "ticker": "YDUQ3",
+  "codigo_cvm": "21016",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "21016_2025-09-30_YDUQS_PARTICIPACOES_SA.pdf",
+  "texto_contexto": "A YDUQS Participações S.A. se destaca como uma das principais organizações privadas no setor de ensino superior no Brasil, operando em um ambiente educacional dinâmico e competitivo. Seu modelo de negócio é diversificado, abrangendo uma ampla gama de modalidades de ensino, que incluem cursos presenciais, digitais e semipresenciais. Essa abordagem multifacetada permite à YDUQS atender a diferentes perfis de estudantes e se adaptar às demandas do mercado, que têm se mostrado cada vez mais exigentes em relação à flexibilidade e à qualidade do ensino.\n\nA estrutura organizacional da YDUQS é dividida em três segmentos principais: o Premium, que abriga instituições de ensino de alta qualidade, como o Idomed e o Ibmec, reconhecidas por sua excelência acadêmica e forte reputação no mercado; o Digital Learning, que se concentra na oferta de cursos online, aproveitando a crescente demanda por educação a distância; e o On-Campus, que engloba os cursos presenciais, proporcionando uma experiência educacional tradicional. Essa segmentação permite à empresa não apenas diversificar suas fontes de receita, mas também otimizar sua estratégia de captação de alunos, um dos principais drivers de valor.\n\nOs indicadores-chave de desempenho (KPIs) da YDUQS são fundamentais para avaliar sua saúde financeira e operacional. A receita líquida, o EBITDA ajustado e a margem EBITDA são métricas que refletem a eficiência operacional da empresa, enquanto a taxa de renovação de alunos e a captação de novos estudantes são essenciais para medir a atratividade de seus cursos e a satisfação dos alunos. A disciplina na execução das estratégias de captação e a alocação eficiente de capital são cruciais para a geração de retornos sustentáveis aos acionistas, evidenciando a importância de uma gestão focada em resultados.\n\nEntretanto, a YDUQS não está isenta de riscos. O setor educacional é altamente regulado e sujeito a mudanças legislativas que podem impactar diretamente a operação da empresa. A flutuação na demanda por cursos, impulsionada por fatores econômicos e sociais, também representa um desafio constante. Além disso, a concorrência no setor de educação tem se intensificado, com novas instituições e plataformas digitais emergindo, o que pode pressionar as margens e exigir uma constante inovação por parte da YDUQS para manter sua posição de mercado.\n\nA estrutura de capital da YDUQS é caracterizada por uma combinação equilibrada de dívida e patrimônio líquido, com um nível de alavancagem que reflete uma gestão prudente de passivos. A empresa mantém uma posição de caixa robusta, que supera suas obrigações de curto prazo, proporcionando uma margem de segurança financeira que é essencial em tempos de incerteza econômica. Essa solidez financeira permite à YDUQS explorar oportunidades de crescimento, como aquisições de instituições de ensino e investimentos em inovação, sem comprometer sua estabilidade.\n\nA governança corporativa da YDUQS é um aspecto crítico de sua operação, uma vez que a transparência e a responsabilidade são fundamentais para construir a confiança dos investidores e stakeholders. A empresa se empenha em seguir as melhores práticas de governança, o que inclui a adoção de políticas que garantem a conformidade regulatória e a ética nos negócios. A regulação do setor educacional, por sua vez, é um fator determinante que pode influenciar a trajetória de crescimento da YDUQS. Mudanças nas políticas governamentais, especialmente aquelas relacionadas à qualidade do ensino e à presencialidade, podem criar tanto desafios quanto oportunidades estratégicas.\n\nPor fim, a sensibilidade macroeconômica é um elemento que não pode ser ignorado na análise da YDUQS. Fatores como a taxa de desemprego, a renda disponível das famílias e as políticas educacionais do governo têm um impacto direto na demanda por educação superior. Em um cenário econômico favorável, a tendência é que mais estudantes busquem qualificação, o que beneficia a YDUQS. Contudo, em tempos de crise, a empresa pode enfrentar desafios significativos, exigindo uma adaptação rápida e eficaz às novas realidades do mercado. Assim, a YDUQS se posiciona como uma entidade resiliente, pronta para navegar pelas complexidades do setor educacional brasileiro, sempre em busca de inovação e excelência.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.4 bi (trimestre) | R$4.2 bi (LTM)\n- EBITDA: R$0.5 bi (trimestre) | R$1.3 bi (LTM) | Margem 34.2%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- Operacional: A base total de alunos atingiu 1.380,7 mil, com crescimento de 2,7% em relação ao ano anterior. O segmento Semipresencial teve um aumento de 54% na captação, totalizando 106 mil alunos.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1351600000,
+      "receita_liquida_ltm": 4217000000,
+      "ebitda_tri": 462100000,
+      "ebitda_ltm": 1341200000,
+      "lucro_liquido_tri": 97900000,
+      "lucro_liquido_ltm": 229700000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 34.2,
+      "margem_liquida_pct": 7.2
+    },
+    "operacionais": {
+      "descricao": "A base total de alunos atingiu 1.380,7 mil, com crescimento de 2,7% em relação ao ano anterior. O segmento Semipresencial teve um aumento de 54% na captação, totalizando 106 mil alunos.",
+      "metricas": {
+        "base_total_alunos": 1380700,
+        "captação_semipresencial": 106000,
+        "crescimento_rol": 23,
+        "margem_ajustada_ebitda": 48
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T05:00:24.769670Z"
+}

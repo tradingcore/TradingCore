@@ -1,0 +1,34 @@
+{
+  "ticker": "WEGE3",
+  "codigo_cvm": "5410",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "5410_2025-09-30_WEG_SA.pdf",
+  "texto_contexto": "A WEG é uma proeminente empresa brasileira que se destaca no setor de equipamentos eletroeletrônicos, oferecendo uma ampla gama de soluções voltadas para a geração, transmissão e distribuição de energia, além de motores comerciais e eletrodomésticos. O modelo de negócio da WEG é fundamentado na diversificação de produtos e serviços, permitindo à empresa não apenas atender às demandas do mercado interno, mas também expandir sua presença global. Essa estratégia de diversificação é crucial, pois a empresa opera em segmentos variados, incluindo Equipamentos Eletroeletrônicos Industriais, Geração, Transmissão e Distribuição de Energia, Motores Comerciais e Appliance, além de Tintas e Vernizes. Essa amplitude de atuação proporciona à WEG uma resiliência maior frente a flutuações em setores específicos da economia.\n\nOs principais indicadores de desempenho da WEG, como a Receita Operacional Líquida, EBITDA e Retorno Sobre o Capital Investido (ROIC), são reflexos da eficiência e da saúde financeira da empresa. A WEG tem conseguido manter margens operacionais saudáveis, o que demonstra sua capacidade de gerar lucro em um ambiente competitivo. Os drivers de valor que impulsionam o crescimento da empresa incluem a crescente demanda por produtos em setores industriais, a capacidade de inovação e a adaptação às mudanças do mercado, além da eficiência operacional que a empresa tem demonstrado ao longo dos anos. Essa combinação de fatores é essencial para a manutenção de sua posição de destaque no mercado.\n\nEntretanto, a WEG enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade do comércio internacional e as incertezas geopolíticas são desafios constantes, especialmente em um cenário global em que as relações comerciais podem ser afetadas por tensões políticas e econômicas. Além disso, a dependência de investimentos em infraestrutura elétrica torna a empresa vulnerável a mudanças regulatórias e econômicas que podem afetar a demanda por seus produtos e serviços. A estrutura de capital da WEG é robusta, com um patrimônio líquido significativo e uma gestão prudente da dívida, que inclui tanto obrigações de curto quanto de longo prazo. Essa solidez financeira, aliada a um caixa líquido considerável, proporciona à empresa a flexibilidade necessária para enfrentar adversidades e investir em oportunidades de crescimento.\n\nA governança corporativa da WEG é um aspecto fundamental para sua operação, pois a empresa busca manter altos padrões de transparência e responsabilidade. A regulação do setor elétrico e de equipamentos industriais é um fator crítico que influencia diretamente as operações da WEG. Mudanças nas legislações tarifárias e ambientais podem ter um impacto significativo em seus resultados financeiros, exigindo que a empresa esteja sempre atenta às novas diretrizes e se adapte rapidamente a elas. Recentemente, a aquisição de controle da Tupinambá Energia representa um passo estratégico para a WEG, fortalecendo sua posição na transformação do setor de mobilidade elétrica e ampliando suas capacidades em um mercado em rápida evolução.\n\nA WEG também se destaca por sua contínua busca por modernização e expansão da capacidade produtiva, tanto em suas unidades no Brasil quanto no exterior. Essa estratégia de investimento é crucial para a empresa, pois permite que ela capitalize sobre as oportunidades de crescimento, especialmente em mercados internacionais que estão se expandindo rapidamente. A sensibilidade da WEG ao ambiente macroeconômico é evidente, uma vez que fatores como taxas de juros, inflação e políticas econômicas podem influenciar a demanda por seus produtos e serviços. A empresa, portanto, se mantém vigilante e proativa, buscando mitigar os riscos associados a esse ambiente dinâmico enquanto continua a explorar novas oportunidades de crescimento e inovação.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$10.3 bi (trimestre) | R$0.0 bi (LTM)\n- EBITDA: R$2.3 bi (trimestre) | R$0.0 bi (LTM) | Margem 22.2%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Capex: R$0.7 bi (trimestre) | N/D (LTM)\n- Operacional: Crescimento da receita operacional líquida de 4,2% em relação ao 3T24, com destaque para o mercado externo que apresentou aumento de 4,9%. O lucro líquido foi de R$ 1,65 bilhões, com margem líquida de 16,1%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 10271522522,
+      "receita_liquida_ltm": 30557320,
+      "ebitda_tri": 2275498498,
+      "ebitda_ltm": 6708031,
+      "lucro_liquido_tri": 1650469,
+      "lucro_liquido_ltm": 4788457,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": 672600000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 22.2,
+      "margem_liquida_pct": 16.1
+    },
+    "operacionais": {
+      "descricao": "Crescimento da receita operacional líquida de 4,2% em relação ao 3T24, com destaque para o mercado externo que apresentou aumento de 4,9%. O lucro líquido foi de R$ 1,65 bilhões, com margem líquida de 16,1%.",
+      "metricas": {
+        "vendas_mercado_interno": 4002839,
+        "vendas_mercado_externo": 6268683,
+        "lucro_por_acao": 0.39337
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:56:33.267798Z"
+}

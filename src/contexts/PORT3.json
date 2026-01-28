@@ -1,0 +1,34 @@
+{
+  "ticker": "PORT3",
+  "codigo_cvm": "26247",
+  "data_release": "2025-06-30",
+  "fonte_pdf": "26247_2025-06-30_WILSON_SONS_SA.pdf",
+  "texto_contexto": "A Wilson Sons S.A. se destaca como a maior operadora integrada de logística portuária e marítima do Brasil, desempenhando um papel crucial na movimentação de cargas e na operação de embarcações, tanto no mercado interno quanto no internacional. O modelo de negócio da empresa é estruturado em torno da oferta de serviços logísticos completos, que vão desde a operação de terminais de contêiner até serviços de logística, rebocagem, agência marítima e bases de apoio offshore. Essa integração permite à Wilson Sons otimizar a cadeia de suprimentos, garantindo eficiência e agilidade na movimentação de mercadorias.\n\nOs segmentos de atuação da Wilson Sons são diversos e interconectados. Os terminais de contêiner, por exemplo, têm se destacado pelo crescimento no volume de movimentação, impulsionado pela demanda crescente por serviços logísticos e pela oferta de serviços acessórios que agregam valor ao cliente. A logística, por sua vez, abrange operações de centros logísticos e logística internacional, permitindo à empresa atender a uma ampla gama de necessidades dos clientes, desde o armazenamento até a distribuição. A área de rebocagem, que se beneficia de um mix de cargas favorável e do aumento das manobras portuárias, complementa a oferta de serviços, garantindo que a Wilson Sons mantenha uma posição competitiva no mercado.\n\nOs principais drivers de valor para a Wilson Sons incluem o crescimento orgânico em seus segmentos, a eficiência operacional e a expansão da capacidade dos terminais. A melhoria na utilização da frota de embarcações também é um fator crítico, pois impacta diretamente a rentabilidade da empresa. A companhia monitora KPIs relevantes, como receita líquida, EBITDA, margem EBITDA, volume de contêineres movimentados, manobras portuárias e dias em operação das embarcações de apoio offshore, que fornecem uma visão clara do desempenho operacional e financeiro.\n\nEntretanto, a Wilson Sons não está isenta de riscos. A volatilidade cambial e as flutuações nos preços de combustíveis são fatores que podem impactar significativamente os custos operacionais e, consequentemente, a margem de lucro. Além disso, mudanças nas políticas de regulação do setor portuário e marítimo podem criar incertezas que afetam a operação da empresa. A estrutura de capital da Wilson Sons é composta por uma combinação de dívida e capital próprio, com uma parte significativa da dívida sendo de longo prazo. Essa configuração proporciona um perfil de vencimento alongado, permitindo uma gestão de risco de liquidez mais eficiente e refletindo uma posição financeira sólida, com níveis de alavancagem que são considerados saudáveis.\n\nA governança da Wilson Sons é um aspecto fundamental para a sua operação, especialmente em um setor tão regulado e dinâmico. A empresa deve estar atenta a eventos críticos que podem impactar sua operação, como mudanças de controle acionário, que podem influenciar a estratégia e a governança, além de fatores externos, como crises econômicas e desastres naturais que possam afetar a operação dos terminais. A segurança do trabalho é um pilar essencial nas operações da empresa, e a manutenção de padrões elevados nesse aspecto é crucial para a continuidade dos negócios e a reputação da companhia.\n\nA competição no setor de logística portuária e marítima é intensa, com diversos players disputando participação de mercado. A capacidade da Wilson Sons de se diferenciar através da qualidade de seus serviços e da eficiência operacional é vital para manter sua posição de liderança. Além disso, a sensibilidade macroeconômica, incluindo o crescimento econômico, as taxas de câmbio e as políticas comerciais, pode influenciar a demanda por serviços logísticos, tornando a empresa vulnerável a oscilações no ambiente econômico.\n\nEm suma, a Wilson Sons S.A. é uma empresa robusta e bem posicionada no setor de logística portuária e marítima, com um modelo de negócio integrado que permite a oferta de serviços completos. Apesar dos desafios e riscos inerentes ao setor, sua estrutura de capital sólida, governança eficaz e foco na segurança e eficiência operacional são fatores que contribuem para sua resiliência e potencial de crescimento a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (2T2025):\n- Receita Líquida: R$0.8 bi (trimestre) | R$1.5 bi (LTM)\n- EBITDA: R$0.4 bi (trimestre) | R$0.7 bi (LTM) | Margem 47.0%\n- Lucro Líquido: R$0.2 bi (trimestre) | R$0.4 bi (LTM)\n- Dívida: R$1.2 bi (líquida) | R$1.5 bi (bruta)\n- Capex: R$0.2 bi (trimestre) | R$0.2 bi (LTM)\n- Operacional: Terminais de contêiner movimentaram 370,3 mil TEUs no trimestre, com crescimento de 16,6% em relação ao ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "2T2025",
+    "financeiros": {
+      "receita_liquida_tri": 770400000,
+      "receita_liquida_ltm": 1537700000,
+      "ebitda_tri": 362200000,
+      "ebitda_ltm": 728600000,
+      "lucro_liquido_tri": 168000000,
+      "lucro_liquido_ltm": 362700000,
+      "divida_liquida": 1231600000,
+      "divida_bruta": 1515700000,
+      "capex_tri": 170500000,
+      "capex_ltm": 236200000,
+      "margem_ebitda_pct": 47.0,
+      "margem_liquida_pct": 21.8
+    },
+    "operacionais": {
+      "descricao": "Terminais de contêiner movimentaram 370,3 mil TEUs no trimestre, com crescimento de 16,6% em relação ao ano anterior.",
+      "metricas": {
+        "terminais_container_teus": 370300,
+        "rebocadores_manobras": 15124,
+        "osvs_dias_em_operacao": 2107
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:58:24.953413Z"
+}

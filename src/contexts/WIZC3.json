@@ -1,0 +1,33 @@
+{
+  "ticker": "WIZC3",
+  "codigo_cvm": "23590",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "23590_2025-09-30_WIZ_CO_PARTICIPAÇÕES_E_CORRETAGEM_DE_SEGUROS_SA.pdf",
+  "texto_contexto": "A Wiz Soluções (WIZC3) se posiciona como uma corretora de seguros e serviços financeiros, operando em um ambiente dinâmico e competitivo. Seu modelo de negócio é centrado na intermediação de produtos de seguros, crédito e consórcios, o que permite à empresa atender a uma ampla gama de necessidades dos consumidores. A Wiz se destaca pela utilização de uma plataforma tecnológica proprietária, a Wiz Pro, que integra de forma eficaz as áreas de vendas, operações, gestão e engajamento. Essa abordagem não apenas melhora a experiência do usuário, mas também otimiza a eficiência operacional, permitindo à empresa se adaptar rapidamente às mudanças nas demandas do mercado.\n\nOs segmentos de atuação da Wiz são diversificados, abrangendo seguros, crédito e consórcios, além de serviços complementares que fortalecem sua proposta de valor. A empresa tem demonstrado um crescimento significativo em sua receita líquida e EBITDA, o que reflete sua capacidade de se ajustar a diferentes cenários econômicos e de aproveitar oportunidades emergentes. Os principais indicadores de desempenho, como receita líquida, EBITDA, margem EBITDA e lucro líquido, são fundamentais para avaliar a saúde financeira da empresa e sua eficiência operacional. Esses KPIs não apenas fornecem uma visão clara do desempenho passado, mas também ajudam a projetar o potencial de crescimento futuro.\n\nOs drivers de valor da Wiz são impulsionados por uma combinação de fatores, incluindo a diversificação de produtos, parcerias estratégicas e a capacidade de inovação tecnológica. A colaboração recente com o Banrisul, por exemplo, exemplifica como a empresa busca fortalecer sua posição no mercado por meio de alianças que ampliam seu alcance e potencial de vendas. A inovação contínua é um pilar central da estratégia da Wiz, permitindo que a empresa se mantenha relevante em um setor que está em constante evolução e que exige adaptações rápidas às novas tecnologias e preferências dos consumidores.\n\nEntretanto, a Wiz enfrenta riscos significativos que podem impactar seu desempenho. O ambiente macroeconômico desafiador, caracterizado por incertezas econômicas e flutuações nas taxas de juros, pode afetar a distribuição de crédito e a demanda por produtos de seguros. Além disso, a concorrência intensa no setor de seguros e serviços financeiros representa um desafio constante, exigindo que a empresa mantenha sua proposta de valor diferenciada e sua capacidade de inovação.\n\nA estrutura de capital da Wiz é composta por uma combinação equilibrada de dívida e patrimônio líquido, com um foco em manter uma gestão financeira disciplinada. A redução da dívida líquida em relação ao ano anterior é um indicativo da estratégia da empresa em fortalecer sua posição financeira e garantir a sustentabilidade de suas operações. Essa abordagem prudente é essencial para enfrentar os desafios do mercado e para financiar futuras iniciativas de crescimento.\n\nA regulação do setor de seguros e serviços financeiros é um aspecto crítico que a Wiz deve considerar em suas operações. A conformidade com normas regulatórias é fundamental para garantir a proteção dos consumidores e a estabilidade do mercado. A empresa tem demonstrado um compromisso com práticas de governança corporativa e sustentabilidade, buscando não apenas atender às exigências regulatórias, mas também construir um futuro mais sólido e responsável para todos os seus stakeholders.\n\nEventos estratégicos, como a alienação da Wiz Concept e a aquisição da Promo Serviços de Intermediação, refletem a visão da empresa em simplificar sua estrutura e concentrar-se em ativos centrais que suportem seu crescimento futuro. Essas decisões são parte de uma estratégia mais ampla que visa fortalecer a posição da Wiz no mercado e garantir que ela continue a ser uma referência em inovação e eficiência no setor de seguros e serviços financeiros.\n\nEm suma, a Wiz Soluções se destaca em um setor desafiador, impulsionada por um modelo de negócio robusto, uma plataforma tecnológica avançada e uma estratégia focada em inovação e parcerias. No entanto, a empresa deve permanecer atenta aos riscos macroeconômicos, à concorrência e às exigências regulatórias, enquanto continua a buscar oportunidades de crescimento e a fortalecer sua posição no mercado.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.3 bi (trimestre) | R$0.8 bi (LTM)\n- EBITDA: R$0.2 bi (trimestre) | R$0.6 bi (LTM) | Margem 67.1%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.3 bi (LTM)\n- Operacional: A empresa registrou R$ 1,0 bilhão em prêmios de seguros no trimestre, com crescimento de 9,2% em relação ao 3T24. O total de contratos ativos atingiu 10,7 milhões, alta de 214,1% vs. 3T24.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 289500000,
+      "receita_liquida_ltm": 835500000,
+      "ebitda_tri": 194300000,
+      "ebitda_ltm": 562900000,
+      "lucro_liquido_tri": 101700000,
+      "lucro_liquido_ltm": 278900000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 67.1,
+      "margem_liquida_pct": 35.1
+    },
+    "operacionais": {
+      "descricao": "A empresa registrou R$ 1,0 bilhão em prêmios de seguros no trimestre, com crescimento de 9,2% em relação ao 3T24. O total de contratos ativos atingiu 10,7 milhões, alta de 214,1% vs. 3T24.",
+      "metricas": {
+        "premios_emitidos": 1000000000,
+        "contratos_ativos": 10700000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:59:20.007735Z"
+}
