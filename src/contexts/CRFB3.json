@@ -1,0 +1,35 @@
+{
+  "ticker": "CRFB3",
+  "codigo_cvm": "24171",
+  "data_release": "2025-03-31",
+  "fonte_pdf": "24171_2025-03-31_ATACADÃO_SA.pdf",
+  "texto_contexto": "O Atacadão, uma das principais bandeiras do Grupo Carrefour Brasil, se destaca no cenário do varejo alimentar por seu modelo de negócios voltado para a venda em grandes volumes a preços competitivos, especialmente no formato Cash & Carry. Este modelo permite que a empresa atenda tanto consumidores finais quanto pequenos e médios comerciantes, oferecendo uma ampla gama de produtos que vão desde alimentos até itens de higiene e limpeza. A operação do Atacadão é segmentada em três áreas principais: Cash & Carry, que representa o núcleo do negócio, o Varejo, que abrange lojas de menor formato, e o Clube, que oferece uma experiência de compra diferenciada e fidelização ao cliente.\n\nOs principais indicadores de desempenho (KPIs) utilizados para medir o sucesso da empresa incluem vendas brutas, lucro líquido ajustado, margem EBITDA e crescimento de vendas em bases comparáveis (LfL). Esses KPIs são fundamentais para avaliar a eficiência operacional e a saúde financeira do Atacadão, permitindo que a gestão tome decisões informadas sobre expansão e investimentos. Os drivers de valor que impulsionam o desempenho da empresa são variados, mas a expansão da rede de lojas é um dos mais significativos, pois permite aumentar a presença de mercado e a capilaridade. Além disso, a eficiência na gestão de custos e a capacidade de adaptação às mudanças no comportamento do consumidor, especialmente em um ambiente inflacionário, são cruciais para manter a competitividade e a rentabilidade.\n\nEntretanto, o Atacadão enfrenta uma série de riscos que podem impactar suas operações e resultados financeiros. A volatilidade dos preços de alimentos, por exemplo, pode afetar as margens de lucro, enquanto mudanças nas regulamentações fiscais e de consumo podem exigir adaptações rápidas na estratégia de negócios. A concorrência no setor de varejo é intensa, com players tradicionais e novos entrantes disputando a preferência dos consumidores, o que exige uma constante inovação e aprimoramento na oferta de produtos e serviços.\n\nA estrutura de capital do Atacadão é caracterizada por uma combinação equilibrada de dívida e capital próprio, com um foco em manter um nível saudável de alavancagem financeira. Essa abordagem permite à empresa financiar sua expansão e operações sem comprometer sua estabilidade financeira. A governança corporativa do Atacadão, inserida no contexto do Grupo Carrefour Brasil, é estruturada para garantir transparência e responsabilidade, com práticas que buscam alinhar os interesses dos acionistas e stakeholders.\n\nA regulação do setor de varejo, especialmente em relação a práticas de crédito e taxas de juros, tem um impacto direto nas operações do Banco Carrefour, que é a unidade financeira do grupo. A recente aprovação da oferta do Carrefour para aquisição do free float do Grupo Carrefour Brasil é um evento crítico que visa aumentar a agilidade nas decisões e simplificar a estrutura organizacional, permitindo uma resposta mais rápida às demandas do mercado e às mudanças regulatórias. Além disso, a adaptação às novas regulamentações do Banco Central, que afetam a cobrança de juros e a gestão de riscos de crédito, é um desafio que a empresa deve enfrentar para garantir a conformidade e a sustentabilidade de suas operações financeiras.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. O desempenho do Atacadão está intrinsecamente ligado ao cenário econômico do Brasil, incluindo fatores como inflação, taxa de desemprego e poder de compra dos consumidores. Em um ambiente econômico desafiador, a capacidade da empresa de se adaptar e inovar será fundamental para manter sua posição de destaque no mercado de varejo alimentar. A combinação desses elementos – modelo de negócio, segmentos, drivers, KPIs, riscos, estrutura de capital, governança, regulação, competição e sensibilidade macro – forma um contexto complexo e dinâmico que molda o futuro do Atacadão e suas estratégias de crescimento.\n\nNÚMEROS DE REFERÊNCIA (1T2025):\n- Receita Líquida: R$26.1 bi (trimestre) | N/D (LTM)\n- EBITDA: R$1.5 bi (trimestre) | N/D (LTM) | Margem 5.6%\n- Lucro Líquido: R$0.2 bi (trimestre) | N/D (LTM)\n- Operacional: Vendas brutas totalizaram R$ 28,8 bilhões, com crescimento de 3,6% a/a. O lucro líquido ajustado foi de R$ 282 milhões, 5,5x maior que o 1T 24.",
+  "numeros_referencia": {
+    "periodo_trimestre": "1T2025",
+    "financeiros": {
+      "receita_liquida_tri": 26105000000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 1470000000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 225000000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 5.6,
+      "margem_liquida_pct": 0.9
+    },
+    "operacionais": {
+      "descricao": "Vendas brutas totalizaram R$ 28,8 bilhões, com crescimento de 3,6% a/a. O lucro líquido ajustado foi de R$ 282 milhões, 5,5x maior que o 1T 24.",
+      "metricas": {
+        "vendas_brutas": 28876000000,
+        "n_lojas": 380,
+        "crescimento_lfl": 5.4,
+        "gmv": 3100000000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:07:29.425183Z"
+}

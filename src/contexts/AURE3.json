@@ -1,0 +1,34 @@
+{
+  "ticker": "AURE3",
+  "codigo_cvm": "26620",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "26620_2025-09-30_AUREN_ENERGIA_SA.pdf",
+  "texto_contexto": "A Auren Energia (AURE3) se destaca no cenário brasileiro de geração e comercialização de energia elétrica, operando com um modelo de negócios que prioriza a diversificação de suas fontes de geração. A empresa combina a produção de energia a partir de hidrelétricas, parques eólicos e solares, o que não apenas amplia sua capacidade de geração, mas também a torna menos vulnerável a flutuações em qualquer uma dessas fontes. Com uma capacidade instalada de 8.800 MW, a Auren se posiciona como a maior comercializadora de energia do Brasil, o que lhe confere uma vantagem competitiva significativa ao permitir uma gestão eficiente de sua carteira de clientes e a otimização na alocação de energia.\n\nOs principais segmentos de atuação da Auren incluem a geração de energia, onde a empresa se destaca pela robustez de sua infraestrutura, e a comercialização, que tem demonstrado um desempenho notável ao negociar 6.207 MW médios de energia. Essa diversificação não apenas garante uma base sólida de receitas, mas também permite à companhia explorar sinergias operacionais que são cruciais para a maximização de sua eficiência. Os indicadores-chave de desempenho (KPIs) da Auren, como a disponibilidade média dos ativos, que se mantém em níveis elevados, e o EBITDA ajustado, refletem a eficácia de sua gestão e a resiliência de suas operações.\n\nOs drivers de valor da Auren estão intimamente ligados à sua capacidade de adaptação às dinâmicas do mercado de energia. A empresa tem se mostrado ágil na captura de sinergias operacionais e na gestão de custos, o que é essencial em um setor marcado pela volatilidade dos preços e pela crescente demanda por fontes de energia renováveis. Essa adaptabilidade é um ativo valioso, especialmente em um ambiente onde as condições climáticas podem impactar significativamente a geração de energia, particularmente nas fontes renováveis.\n\nEntretanto, a Auren não está isenta de riscos. A dependência de condições climáticas favoráveis para a geração de energia renovável é um fator que pode afetar sua performance. Além disso, a exposição a flutuações nos preços de energia no mercado pode impactar suas margens e, consequentemente, seus resultados financeiros. A regulação do setor elétrico, supervisionada pela ANEEL, também representa um desafio, especialmente em relação a indenizações por investimentos prudentes e à definição de tarifas, que podem influenciar diretamente a rentabilidade da empresa.\n\nA estrutura de capital da Auren é projetada para suportar suas operações e investimentos em expansão, mas a empresa deve estar atenta às condições de mercado e à necessidade de financiamento para novos projetos. A governança corporativa é um aspecto fundamental para a Auren, que busca manter altos padrões de transparência e responsabilidade, essenciais para a confiança dos investidores e para a sustentabilidade de suas operações a longo prazo.\n\nA Auren também está em um momento estratégico importante, com eventos críticos como a conclusão da aquisição da AES Brasil e a potencial reorganização societária prevista para 2027. Essas iniciativas visam simplificar a estrutura corporativa e maximizar sinergias, o que pode resultar em uma posição ainda mais competitiva no setor. A empresa está comprometida em manter sua liderança, focando em inovações e práticas sustentáveis que não apenas atendam às demandas do mercado, mas que também contribuam para a geração de valor consistente para seus acionistas.\n\nEm um contexto macroeconômico desafiador, a Auren deve estar atenta às variáveis que podem impactar seu desempenho, como a evolução das políticas energéticas, as tendências de consumo e as mudanças climáticas. A capacidade da empresa de navegar por esses desafios, mantendo sua estratégia de diversificação e inovação, será crucial para sua continuidade como um dos principais players do setor elétrico brasileiro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$3.5 bi (trimestre) | R$13.0 bi (LTM)\n- EBITDA: R$0.8 bi (trimestre) | R$3.8 bi (LTM) | Margem 21.8%\n- Lucro Líquido: R$-0.4 bi (trimestre) | R$-1.3 bi (LTM)\n- Dívida Líquida: R$19.0 bi\n- Operacional: Produção total de energia de 3,3 GW médios, com 1,5 GW médios de geração eólica.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 3537400000,
+      "receita_liquida_ltm": 12974000000,
+      "ebitda_tri": 772700000,
+      "ebitda_ltm": 3848500000,
+      "lucro_liquido_tri": -403700000,
+      "lucro_liquido_ltm": -1276100000,
+      "divida_liquida": 19023400000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 21.8,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "Produção total de energia de 3,3 GW médios, com 1,5 GW médios de geração eólica.",
+      "metricas": {
+        "geracao_total_mw": 3300000,
+        "geracao_eolica_mw": 1510500,
+        "disponibilidade_media_pct": 93.3
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:08:42.197239Z"
+}

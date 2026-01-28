@@ -1,0 +1,33 @@
+{
+  "ticker": "AURA33",
+  "codigo_cvm": "80187",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "80187_2025-09-30_AURA_MINERALS_INC.pdf",
+  "texto_contexto": "A Aura Minerals Inc. se destaca como uma empresa voltada para o desenvolvimento e operação de projetos de mineração, com um foco particular em ouro e metais básicos nas Américas. Seu modelo de negócio é estruturado em torno da exploração, extração e comercialização de recursos minerais, o que a posiciona como um player relevante no setor. Com um portfólio diversificado que inclui cinco minas em operação no Brasil — Minosa, Apoena, Almas e Borborema — e a mina Aranzazu no México, a Aura demonstra uma presença significativa em regiões estratégicas para a mineração. Além disso, a empresa está engajada em projetos em diferentes estágios de desenvolvimento e exploração, como Era Dorada na Guatemala e Tolda Fria na Colômbia, o que evidencia sua ambição de expansão e diversificação geográfica.\n\nOs segmentos de atuação da Aura são predominantemente a mineração de ouro e cobre, com uma crescente ênfase em práticas sustentáveis e responsabilidade social. Essa abordagem é refletida em sua filosofia de \"Mineração 360º\", que considera o impacto de suas operações em todos os stakeholders, incluindo comunidades locais, investidores e o meio ambiente. Essa visão holística não apenas fortalece a reputação da empresa, mas também a posiciona favoravelmente em um mercado cada vez mais exigente em termos de responsabilidade ambiental e social.\n\nOs principais indicadores de desempenho (KPIs) da Aura, como a produção total em onças equivalentes de ouro (GEO), a receita líquida, o EBITDA ajustado, o custo caixa por GEO e o All-in Sustaining Cost (AISC), são fundamentais para a avaliação da eficiência operacional e da rentabilidade da empresa. Esses KPIs permitem que a Aura monitore seu desempenho em relação a metas estratégicas e operacionais, além de fornecerem uma visão clara sobre a saúde financeira da companhia.\n\nOs drivers de valor da Aura são influenciados por uma série de fatores, incluindo a volatilidade dos preços dos metais, a eficiência operacional nas minas e a capacidade de controle de custos. A gestão eficaz dos riscos associados a flutuações de mercado é crucial para a sustentabilidade do negócio. A empresa se beneficia de uma posição de caixa robusta, resultado de um IPO na Nasdaq, que não apenas fortaleceu sua estrutura de capital, mas também possibilitou uma significativa redução da dívida líquida, permitindo maior flexibilidade financeira para investimentos futuros.\n\nEntretanto, a Aura Minerals enfrenta uma série de riscos que podem impactar suas operações e resultados financeiros. A volatilidade dos preços de ouro e cobre é um dos principais desafios, uma vez que flutuações acentuadas podem afetar diretamente a rentabilidade. Além disso, mudanças nas regulamentações ambientais e a necessidade de obter licenças e aprovações regulatórias para suas operações representam riscos adicionais que a empresa deve gerenciar com diligência. A estrutura de capital da Aura, composta por dívida bruta e capital próprio, é robusta, com um índice de dívida líquida/EBITDA ajustado que demonstra uma sólida desalavancagem financeira, o que proporciona uma base estável para enfrentar esses desafios.\n\nEventos críticos, como o início da produção comercial na mina Borborema, são marcos significativos que podem impulsionar a capacidade produtiva da empresa e, consequentemente, sua posição no mercado. A deslistagem da Toronto Stock Exchange (TSX) para consolidar suas operações na Nasdaq também é um movimento estratégico que pode impactar a liquidez das ações e a percepção do mercado sobre a empresa. Essa decisão reflete uma estratégia de foco e eficiência que pode ser benéfica a longo prazo, mas que também exige uma gestão cuidadosa das expectativas dos investidores.\n\nA combinação desses fatores molda a trajetória futura da Aura Minerals, influenciando suas operações e estratégias de crescimento. Em um ambiente de negócios que é sensível a variáveis macroeconômicas, como taxas de juros, inflação e políticas comerciais, a capacidade da empresa de se adaptar e inovar será crucial para garantir sua competitividade e sustentabilidade no setor de mineração. A Aura Minerals, portanto, não apenas busca maximizar seu valor para os acionistas, mas também se compromete a operar de maneira responsável e sustentável, alinhando seus objetivos de negócios com as expectativas sociais e ambientais contemporâneas.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.2 bi (trimestre) | R$0.6 bi (LTM)\n- EBITDA: R$0.2 bi (trimestre) | R$0.3 bi (LTM) | Margem 61.0%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$-0.1 bi (LTM)\n- Dívida Líquida: R$0.1 bi\n- Capex: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- Operacional: Produção de 74.227 GEO e vendas de 74.907 GEO no 3T25, com forte desempenho operacional.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 247832000,
+      "receita_liquida_ltm": 600072000,
+      "ebitda_tri": 152105000,
+      "ebitda_ltm": 339808000,
+      "lucro_liquido_tri": 5626000,
+      "lucro_liquido_ltm": -59476000,
+      "divida_liquida": 63800000,
+      "divida_bruta": null,
+      "capex_tri": 31605000,
+      "capex_ltm": 133655000,
+      "margem_ebitda_pct": 61,
+      "margem_liquida_pct": 2
+    },
+    "operacionais": {
+      "descricao": "Produção de 74.227 GEO e vendas de 74.907 GEO no 3T25, com forte desempenho operacional.",
+      "metricas": {
+        "producao_total": 74227,
+        "vendas_total": 74907
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:08:06.877991Z"
+}

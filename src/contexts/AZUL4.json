@@ -1,0 +1,35 @@
+{
+  "ticker": "AZUL4",
+  "codigo_cvm": "24112",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "24112_2025-09-30_AZUL_SA.pdf",
+  "texto_contexto": "A Azul S.A. é reconhecida como a maior companhia aérea do Brasil em termos de número de cidades atendidas, refletindo um modelo de negócio que prioriza a conectividade e a acessibilidade. Com uma frota de aproximadamente 185 aeronaves e uma equipe de mais de 14 mil tripulantes, a empresa se destaca por sua malha aérea diversificada, que abrange tanto operações domésticas quanto internacionais. Essa estratégia permite à Azul não apenas atender a um amplo espectro de clientes, mas também explorar oportunidades em diferentes mercados, adaptando-se às necessidades regionais e às demandas sazonais.\n\nUm dos pilares do modelo de negócio da Azul é a diversificação de suas unidades de negócios auxiliares, como o programa de fidelidade Azul Fidelidade e a operadora de turismo Azul Viagens. Essas iniciativas não apenas ampliam as fontes de receita da companhia, mas também fortalecem o relacionamento com os clientes, incentivando a lealdade e a repetição de viagens. A empresa tem se mostrado eficaz em integrar essas operações, criando sinergias que potencializam sua proposta de valor.\n\nOs principais indicadores de desempenho da Azul, como a receita líquida, EBITDA, margem operacional e taxa de ocupação, são fundamentais para avaliar a saúde financeira e a eficiência operacional da companhia. A taxa de ocupação, que atingiu níveis elevados, é um reflexo da capacidade da empresa de maximizar a utilização de sua frota, enquanto métricas como RASK e CASK são cruciais para entender a dinâmica de receita e custos, permitindo à Azul monitorar sua competitividade em um setor caracterizado por margens apertadas.\n\nOs drivers de valor da Azul são influenciados por uma série de fatores, incluindo a demanda por viagens aéreas, a eficiência operacional e a gestão de custos. A capacidade da empresa de se adaptar a condições de mercado, como flutuações nos preços do combustível e mudanças regulatórias, é vital para sua sustentabilidade a longo prazo. A volatilidade dos preços do combustível, em particular, representa um risco significativo, uma vez que impacta diretamente os custos operacionais e, consequentemente, a rentabilidade.\n\nAlém disso, a Azul enfrenta uma concorrência intensa no setor aéreo, tanto de companhias tradicionais quanto de novas entrantes. Essa competição exige uma constante inovação e aprimoramento dos serviços oferecidos, além de uma gestão eficiente dos recursos. A dependência de condições econômicas e políticas também é um fator de risco, uma vez que crises econômicas podem reduzir a demanda por viagens, afetando diretamente a receita da companhia. Eventos externos, como pandemias, demonstraram ser disruptivos, levando a uma reavaliação das operações e estratégias de negócios.\n\nA estrutura de capital da Azul foi significativamente impactada pela pandemia de COVID-19, resultando em uma reestruturação financeira sob o processo de Chapter 11 nos Estados Unidos. Essa reestruturação visa otimizar a dívida e melhorar a liquidez, permitindo que a empresa se recupere e se posicione para o crescimento futuro. O acesso a financiamentos, como o DIP de US$ 1,6 bilhão, foi crucial para sustentar as operações durante esse período desafiador, com um foco em reduzir passivos e melhorar a alavancagem.\n\nNo que diz respeito à regulação, o setor aéreo no Brasil é supervisionado pela Agência Nacional de Aviação Civil (ANAC), que garante a segurança e a concorrência justa. A conformidade com as normas regulatórias é essencial para a operação da Azul, e a empresa deve estar atenta a quaisquer mudanças que possam impactar suas operações. A conclusão bem-sucedida de seu plano de reestruturação, a recuperação da demanda por viagens aéreas e a manutenção de sua posição competitiva são eventos críticos que a companhia deve monitorar.\n\nPor fim, a Azul também se destaca por suas iniciativas de responsabilidade ambiental, social e de governança (ESG). A empresa busca não apenas a rentabilidade, mas também a sustentabilidade em suas operações, reconhecendo a importância de práticas responsáveis em um mundo cada vez mais consciente das questões ambientais e sociais. Essa abordagem não apenas melhora a imagem da companhia, mas também pode se traduzir em vantagens competitivas em um mercado que valoriza a responsabilidade corporativa. A combinação de um modelo de negócio robusto, uma gestão proativa e um compromisso com a sustentabilidade posiciona a Azul como uma das principais players do setor aéreo brasileiro, pronta para enfrentar os desafios e aproveitar as oportunidades que surgem em um ambiente dinâmico e em constante evolução.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$5.7 bi (trimestre) | R$16.1 bi (LTM)\n- EBITDA: R$2.0 bi (trimestre) | R$4.5 bi (LTM) | Margem 34.6%\n- Lucro Líquido: R$-0.6 bi (trimestre) | R$1.4 bi (LTM)\n- Operacional: A Azul transportou 8,1 milhões de passageiros, com uma taxa de ocupação recorde de 84,6%. A capacidade aumentou 7,1% em relação ao ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 5737000000,
+      "receita_liquida_ltm": 16073800000,
+      "ebitda_tri": 1987800000,
+      "ebitda_ltm": 4516300000,
+      "lucro_liquido_tri": -644200000,
+      "lucro_liquido_ltm": 1432300000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 34.6,
+      "margem_liquida_pct": -11.2
+    },
+    "operacionais": {
+      "descricao": "A Azul transportou 8,1 milhões de passageiros, com uma taxa de ocupação recorde de 84,6%. A capacidade aumentou 7,1% em relação ao ano anterior.",
+      "metricas": {
+        "passageiros_transportados": 8100000,
+        "taxa_ocupacao_pct": 84.6,
+        "capacidade_ask_milhoes": 12818,
+        "rpk_milhoes": 10846
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T01:09:50.524454Z"
+}
