@@ -1,0 +1,34 @@
+{
+  "ticker": "VIVR3",
+  "codigo_cvm": "20702",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20702_2025-09-30_VIVER_INCORPORADORA_E_CONSTRUTORA_SA.pdf",
+  "texto_contexto": "A Viver Incorporadora e Construtora S.A. se destaca no setor de desenvolvimento imobiliário, com um foco claro na construção e comercialização de empreendimentos residenciais. O modelo de negócio da empresa é fundamentado na identificação e desenvolvimento de terrenos localizados em áreas de alta liquidez, o que permite a maximização do retorno sobre os investimentos realizados. A Viver adota uma abordagem disciplinada em relação ao capital, priorizando projetos que atendem a critérios objetivos de viabilidade econômica e que se alinham com as demandas do mercado.\n\nA atuação da Viver se concentra principalmente no segmento de médio padrão, onde a empresa busca atender a um público que valoriza a qualidade e a acessibilidade. Os projetos são classificados em duas categorias principais: \"resumo de obras paradas\", que se referem a empreendimentos que necessitam de revitalização ou conclusão, e \"greenfield\", que envolve o desenvolvimento de novos projetos em terrenos ainda não utilizados. Essa diversidade de segmentos permite à Viver adaptar sua oferta às necessidades do mercado e explorar diferentes oportunidades de crescimento.\n\nOs principais indicadores de desempenho (KPIs) da Viver incluem a receita líquida, o lucro bruto e a margem bruta, que são fundamentais para avaliar a saúde financeira da empresa. A evolução da dívida líquida também é um KPI crítico, especialmente considerando a redução significativa observada nos últimos períodos. Essa diminuição da dívida reflete a eficiência da gestão de custos e o controle rigoroso das despesas, que são essenciais para a sustentabilidade do negócio. Além disso, a capacidade da Viver de entregar projetos dentro dos prazos e orçamentos estabelecidos, assim como a otimização do ciclo de vendas e a gestão do inventário, são fatores que impulsionam a criação de valor para a empresa.\n\nEntretanto, a Viver enfrenta uma série de riscos que podem impactar sua operação e desempenho financeiro. A volatilidade do mercado imobiliário é um dos principais desafios, uma vez que flutuações na demanda podem afetar diretamente as vendas e a liquidez da empresa. A dependência de financiamento para a continuidade dos projetos é outro risco significativo, pois a disponibilidade de crédito e as condições de financiamento podem variar conforme o cenário econômico. Além disso, a possibilidade de cancelamentos de vendas representa um risco adicional, uma vez que isso pode comprometer a receita projetada e a estabilidade financeira da empresa.\n\nA estrutura de capital da Viver é caracterizada por uma dívida líquida que, em períodos recentes, foi mantida em níveis saudáveis, com a maior parte vinculada a Certificados de Recebíveis Imobiliários (CRI). Essa estrutura reflete um perfil de dívida que é concentrado em ativos performáticos, o que proporciona uma base sólida para o financiamento das operações e o desenvolvimento de novos projetos. A gestão da empresa tem se comprometido a manter essa estrutura de capital saudável, buscando sempre a otimização dos recursos e a minimização dos riscos associados ao endividamento.\n\nNo que diz respeito à governança, a Viver opera sob regulamentações rigorosas do setor imobiliário brasileiro, que incluem normas estabelecidas pela Comissão de Valores Mobiliários (CVM) e práticas contábeis específicas para o reconhecimento de receitas em projetos imobiliários. A transparência nas operações e a responsabilidade na gestão são pilares fundamentais da governança da empresa, que busca sempre alinhar os interesses dos acionistas e demais stakeholders.\n\nEventos críticos, como a conclusão de ciclos de projetos emblemáticos, como o Domum Home Resort, têm um impacto direto na geração de receita e na percepção do mercado sobre a capacidade de execução da Viver. A gestão da empresa se compromete a manter uma trajetória de crescimento sustentável, focando na entrega de resultados consistentes e na criação de valor para os acionistas. A busca pela otimização dos processos e pela eficiência operacional é uma constante na estratégia da Viver, que visa não apenas a expansão de suas operações, mas também a consolidação de sua reputação como uma das principais incorporadoras do setor.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado na análise da Viver. O desempenho da empresa está intrinsecamente ligado a variáveis econômicas, como taxas de juros, inflação e crescimento econômico. Mudanças nessas variáveis podem influenciar a demanda por imóveis, as condições de financiamento e, consequentemente, a performance financeira da empresa. A capacidade da Viver de se adaptar a essas condições e de implementar estratégias eficazes em resposta a um ambiente econômico dinâmico será crucial para sua continuidade e sucesso no mercado imobiliário.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- EBITDA: R$-0.0 bi (trimestre) | R$-0.0 bi (LTM) | Margem -161.5%\n- Lucro Líquido: R$-0.0 bi (trimestre) | R$-0.0 bi (LTM)\n- Dívida Líquida: R$0.0 bi\n- Operacional: Vendas contratadas totalizaram R$ 2,3 milhões, com 8 unidades vendidas no trimestre, refletindo uma queda significativa em relação ao ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 3300000,
+      "receita_liquida_ltm": 22000000,
+      "ebitda_tri": -5297000,
+      "ebitda_ltm": -7829000,
+      "lucro_liquido_tri": -5100000,
+      "lucro_liquido_ltm": -10400000,
+      "divida_liquida": 25300000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": -161.5,
+      "margem_liquida_pct": -174.9
+    },
+    "operacionais": {
+      "descricao": "Vendas contratadas totalizaram R$ 2,3 milhões, com 8 unidades vendidas no trimestre, refletindo uma queda significativa em relação ao ano anterior.",
+      "metricas": {
+        "vendas_contratadas_unidades": 8,
+        "preco_medio_venda": 329045,
+        "gastos_administrativos": 3700000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:54:30.476310Z"
+}

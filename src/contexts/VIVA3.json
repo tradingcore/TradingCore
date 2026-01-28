@@ -1,0 +1,36 @@
+{
+  "ticker": "VIVA3",
+  "codigo_cvm": "24805",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "24805_2025-09-30_VIVARA_PARTICIPAÇÕES_SA.pdf",
+  "texto_contexto": "A Vivara Participações S.A., listada na B3 sob o código VIVA3, se destaca como a maior rede de joalherias da América Latina, consolidando-se em um mercado altamente competitivo e dinâmico. O modelo de negócio da Vivara é estruturado em uma combinação estratégica de lojas físicas e um canal digital robusto, permitindo à empresa atender a uma ampla gama de consumidores e maximizar sua presença no mercado. Essa abordagem multicanal não apenas facilita a acessibilidade dos produtos, mas também proporciona uma experiência de compra integrada, essencial para fidelizar clientes em um setor onde a personalização e o atendimento ao cliente são cruciais.\n\nAs operações da Vivara são segmentadas em duas marcas principais: Vivara e Life. A marca Vivara é sinônimo de joias de alta qualidade, voltadas para um público que busca sofisticação e exclusividade. Por outro lado, a marca Life se posiciona como uma alternativa mais acessível, focando em produtos que atraem um público jovem e que valoriza tanto a estética quanto a relação custo-benefício. Essa segmentação permite à Vivara capturar diferentes nichos de mercado, ampliando sua base de clientes e aumentando a participação de mercado, que já alcançou expressivos 23,2% no setor de joias brasileiro.\n\nOs principais indicadores de desempenho (KPIs) da Vivara, como receita bruta, margem bruta, margem EBITDA e crescimento de vendas em mesmas lojas (SSS), são fundamentais para avaliar a eficiência operacional e a aceitação dos produtos no mercado. A inovação constante em design e a gestão eficaz de preços são drivers essenciais que impulsionam o valor da companhia. A expansão da rede de lojas, especialmente em regiões estratégicas como o Sudeste, onde a concentração de lojas é maior, também contribui significativamente para o crescimento da empresa.\n\nEntretanto, a Vivara não está isenta de riscos. A volatilidade econômica, que pode impactar o poder de compra dos consumidores, e as mudanças nas preferências do público são fatores que exigem uma adaptação contínua da estratégia de marketing e de produto. Além disso, a concorrência crescente no setor de varejo de joias, com a entrada de novos players e a diversificação de ofertas, representa um desafio constante para a manutenção da liderança de mercado.\n\nA estrutura de capital da Vivara é um aspecto crucial para sua operação. A empresa possui uma dívida líquida que, embora significativa, é gerida de forma a manter uma relação saudável entre dívida e EBITDA. Essa gestão cuidadosa é fundamental para garantir a liquidez necessária para investimentos futuros e para a expansão da rede de lojas. A capacidade de investimento é ainda mais relevante em um setor onde a inovação e a atualização de produtos são essenciais para manter a competitividade.\n\nA governança da Vivara é estruturada para garantir a conformidade com as normas regulatórias e fiscais, que são particularmente rigorosas no setor de varejo e na tributação de produtos de luxo. A empresa precisa estar atenta a essas regulamentações, que podem impactar diretamente suas operações e resultados financeiros. A governança corporativa também desempenha um papel importante na transparência das operações e na construção de uma imagem de marca sólida, essencial para a fidelização dos clientes.\n\nEm um contexto macroeconômico, a Vivara é sensível a fatores como a inflação, as taxas de juros e a confiança do consumidor. A saúde econômica geral do Brasil influencia diretamente o comportamento de compra dos consumidores, especialmente em um segmento que lida com produtos considerados de luxo. Assim, a capacidade da Vivara de se adaptar a essas condições, por meio de estratégias de marketing e de produto, será determinante para seu desempenho futuro.\n\nEm suma, a Vivara Participações S.A. se posiciona como uma líder no setor de joias na América Latina, com um modelo de negócio que combina inovação, segmentação de mercado e uma gestão financeira prudente. No entanto, a empresa deve permanecer vigilante em relação aos riscos e desafios que enfrenta, garantindo que sua estrutura de capital e governança estejam alinhadas com as exigências do mercado e as expectativas dos consumidores.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.7 bi (trimestre) | R$2.0 bi (LTM)\n- EBITDA: R$0.2 bi (trimestre) | N/D (LTM) | Margem 26.3%\n- Operacional: A Vivara registrou receita bruta de R$ 805,4 milhões, com crescimento de 15,5% em relação ao 3T24. O canal de lojas físicas teve faturamento de R$ 690,7 milhões, enquanto as vendas digitais somaram R$ 112,3 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 664503000,
+      "receita_liquida_ltm": 1962605000,
+      "ebitda_tri": 174500000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": null,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 26.3,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "A Vivara registrou receita bruta de R$ 805,4 milhões, com crescimento de 15,5% em relação ao 3T24. O canal de lojas físicas teve faturamento de R$ 690,7 milhões, enquanto as vendas digitais somaram R$ 112,3 milhões.",
+      "metricas": {
+        "vendas_mesmas_lojas_pct": 10.4,
+        "crescimento_receita_bruta_pct": 15.5,
+        "crescimento_vendas_digitais_pct": 11.6,
+        "margem_bruta_pct": 71.4,
+        "margem_ebitda_pct": 26.3
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:53:43.837384Z"
+}

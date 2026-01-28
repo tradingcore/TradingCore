@@ -1,0 +1,34 @@
+{
+  "ticker": "VITT3",
+  "codigo_cvm": "25763",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25763_2025-09-30_VITTIA_SA.pdf",
+  "texto_contexto": "A Vittia S.A. se destaca como uma empresa brasileira de biotecnologia, com um foco claro em defensivos biológicos e inoculantes, além de soluções de nutrição especial para plantas. Seu modelo de negócio é fundamentado na inovação contínua e no desenvolvimento de produtos que atendem às crescentes demandas do agronegócio, sempre com um forte compromisso com a sustentabilidade e práticas de governança ambiental, social e corporativa (ESG). Essa abordagem não apenas posiciona a Vittia como uma líder em seu setor, mas também a torna uma opção atraente para investidores que buscam empresas alinhadas com as tendências globais de responsabilidade social e ambiental.\n\nA estrutura operacional da Vittia é organizada em três segmentos principais: Fertilizantes de Solo, Fertilizantes Foliares e Produtos Industriais, e Soluções Biológicas e Naturais. Essa segmentação reflete uma reorganização estratégica que visa alinhar a empresa às tendências internacionais de mercado, permitindo uma resposta mais ágil e eficaz às necessidades dos agricultores e às exigências do mercado. A empresa tem se mostrado capaz de diversificar seu portfólio, o que é um driver essencial de valor, pois permite não apenas a mitigação de riscos, mas também a exploração de novas oportunidades de crescimento.\n\nOs indicadores-chave de desempenho (KPIs) da Vittia, como receita líquida, EBITDA ajustado, margem bruta e a relação entre dívida líquida e EBITDA ajustado, são fundamentais para avaliar a saúde financeira e operacional da empresa. A capacidade de inovação em produtos biológicos, aliada à eficiência na gestão de capital de giro, são fatores que impulsionam o desempenho da companhia. A Vittia investe continuamente em pesquisa e desenvolvimento, buscando soluções que não apenas aumentem a produtividade das culturas agrícolas, mas que também promovam práticas agrícolas mais sustentáveis.\n\nEntretanto, a empresa não está isenta de riscos. O ambiente de mercado apresenta desafios significativos, como a pressão sobre margens e a restrição de crédito, que podem impactar suas operações e resultados financeiros. A volatilidade nos preços das commodities agrícolas e as mudanças nas regulamentações do setor também são fatores que exigem uma gestão proativa e estratégica. A estrutura de capital da Vittia, composta por uma combinação de dívida e capital próprio, é um reflexo de sua abordagem cautelosa em relação ao endividamento. Com um nível de alavancagem controlado, a empresa busca equilibrar suas necessidades de financiamento com a manutenção de uma base sólida de capital.\n\nA governança da Vittia é estruturada para garantir que as decisões sejam tomadas de forma transparente e responsável, respeitando as regulamentações específicas do setor agrícola e de biotecnologia. Essas regulamentações influenciam diretamente suas operações e a introdução de novos produtos no mercado, exigindo que a empresa mantenha um rigoroso controle de qualidade e conformidade.\n\nEventos críticos, como a desmobilização de unidades fabris que não atingiram o desempenho esperado, como a unidade Vittia Organo, e a expansão internacional, como a entrada no mercado mexicano com um portfólio de registros ativos, são exemplos de como a empresa está se adaptando às condições do mercado. Essas decisões estratégicas visam otimizar a estrutura produtiva, concentrando operações em ativos com maior potencial de crescimento e rentabilidade. A expansão para novos mercados não apenas diversifica as fontes de receita, mas também posiciona a Vittia como uma competidora relevante em um cenário global cada vez mais competitivo.\n\nA competição no setor de biotecnologia agrícola é intensa, com diversas empresas buscando inovações que atendam às necessidades dos agricultores. A Vittia, ao focar em soluções biológicas e sustentáveis, se diferencia de concorrentes que ainda dependem fortemente de produtos químicos tradicionais. Essa diferenciação é um fator crucial em um ambiente onde a demanda por práticas agrícolas sustentáveis está crescendo rapidamente.\n\nPor fim, a sensibilidade macroeconômica é um aspecto que a Vittia deve monitorar atentamente. Fatores como a inflação, as taxas de juros e as políticas agrícolas governamentais podem impactar diretamente a demanda por seus produtos. A capacidade da empresa de se adaptar a essas condições macroeconômicas será fundamental para garantir seu crescimento e sustentabilidade a longo prazo. Em suma, a Vittia S.A. se posiciona como uma empresa inovadora e responsável, pronta para enfrentar os desafios do agronegócio moderno, enquanto busca contribuir para um futuro mais sustentável.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.3 bi (trimestre) | R$0.6 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.1 bi (LTM) | Margem 25.7%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Dívida Líquida: R$0.1 bi\n- Capex: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Operacional: Crescimento de 5,0% na receita líquida, totalizando R$ 324,9 milhões no 3T25. O EBITDA ajustado foi de R$ 83,5 milhões, com margem EBITDA de 25,7%. A dívida líquida foi de R$ 116,3 milhões.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 324954000,
+      "receita_liquida_ltm": 561834000,
+      "ebitda_tri": 83503000,
+      "ebitda_ltm": 69584000,
+      "lucro_liquido_tri": 39434000,
+      "lucro_liquido_ltm": 16292000,
+      "divida_liquida": 116300000,
+      "divida_bruta": null,
+      "capex_tri": 9552000,
+      "capex_ltm": 24522000,
+      "margem_ebitda_pct": 25.7,
+      "margem_liquida_pct": 12.1
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 5,0% na receita líquida, totalizando R$ 324,9 milhões no 3T25. O EBITDA ajustado foi de R$ 83,5 milhões, com margem EBITDA de 25,7%. A dívida líquida foi de R$ 116,3 milhões.",
+      "metricas": {
+        "crescimento_fertilizantes_solo_pct": 35.1,
+        "crescimento_sol_biologicas_pct": 12.6,
+        "divida_liquida_ebitda": 0.89
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:52:39.522785Z"
+}

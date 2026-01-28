@@ -1,0 +1,33 @@
+{
+  "ticker": "VULC3",
+  "codigo_cvm": "11762",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "11762_2025-09-30_VULCABRAS_SA.pdf",
+  "texto_contexto": "A Vulcabras S.A. se destaca como a maior indústria de calçados esportivos do Brasil, consolidando sua posição em um mercado altamente competitivo e dinâmico. O modelo de negócio da empresa é fundamentado na gestão de marcas reconhecidas, como Olympikus, Under Armour e Mizuno, que não apenas representam produtos de alta qualidade, mas também simbolizam um compromisso com a democratização da performance esportiva. Essa abordagem visa tornar o acesso a calçados e vestuário esportivo de qualidade mais amplo, permitindo que um número crescente de consumidores se beneficie de inovações tecnológicas que melhoram a experiência esportiva.\n\nA atuação da Vulcabras abrange diversos segmentos, incluindo calçados esportivos, vestuário e acessórios, com um portfólio diversificado que atende a diferentes perfis de consumidores. O centro de tecnologia e desenvolvimento localizado em Parobé, no Rio Grande do Sul, é um pilar fundamental para a inovação da empresa, permitindo o lançamento contínuo de produtos que atendem às necessidades e preferências em constante evolução dos consumidores. Essa capacidade de inovação é um dos principais drivers de valor da Vulcabras, que busca não apenas fortalecer suas marcas, mas também expandir seu portfólio de produtos de forma a capturar novas oportunidades de mercado.\n\nOs indicadores de desempenho, como receita líquida, lucro líquido, margem bruta e EBITDA, são cruciais para avaliar a eficiência operacional e a rentabilidade da Vulcabras. A empresa tem se beneficiado de um ambiente de consumo favorável, que, aliado ao crescimento do e-commerce, tem se tornado uma parte significativa de suas vendas. A capacidade de adaptação às novas demandas do mercado e a eficiência operacional são fatores que contribuem para a resiliência da Vulcabras em um cenário econômico desafiador.\n\nEntretanto, a Vulcabras não está isenta de riscos. A volatilidade econômica, as mudanças nas preferências dos consumidores e a intensa concorrência são desafios constantes que a empresa deve enfrentar. Além disso, a gestão de custos e a eficiência produtiva são áreas que demandam atenção, especialmente em um contexto onde as margens podem ser pressionadas por fatores externos, como flutuações nos preços de matérias-primas e custos logísticos.\n\nA estrutura de capital da Vulcabras é composta por uma combinação de capital próprio e dívida, com um aumento significativo na dívida líquida nos últimos anos. Essa elevação se deve, em grande parte, à captação de recursos por meio de debêntures, que visam financiar o crescimento e os investimentos em capital. A gestão disciplinada do capital é um aspecto central da estratégia da empresa, que busca equilibrar a alocação de recursos com a necessidade de gerar retorno para os acionistas.\n\nA Vulcabras também opera em um ambiente regulatório que impõe normas contábeis e fiscais que impactam suas operações e relatórios financeiros. Mudanças na legislação tributária, frequentemente discutidas no Brasil, podem ter implicações significativas para a empresa, exigindo uma vigilância constante sobre o cenário regulatório. A necessidade de manter um balanço saudável em um contexto de altas taxas de juros é outro desafio que a Vulcabras deve gerenciar com cuidado.\n\nEm termos de governança, a empresa demonstra um compromisso com a geração de valor para os acionistas, adotando práticas que visam a transparência e a responsabilidade na gestão. A estrutura de governança é projetada para garantir que as decisões estratégicas sejam tomadas com base em análises rigorosas e em alinhamento com os interesses dos investidores.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A Vulcabras está sujeita a variações na economia brasileira, que podem afetar o poder de compra dos consumidores e, consequentemente, suas vendas. A empresa deve estar atenta a indicadores econômicos, como taxa de desemprego, inflação e crescimento do PIB, que influenciam diretamente o comportamento do consumidor e as dinâmicas de mercado. Em suma, a Vulcabras se posiciona como uma líder no setor calçadista, com um modelo de negócio robusto e uma estratégia focada na inovação e na adaptação às demandas do mercado, mas enfrenta desafios que exigem uma gestão proativa e estratégica para garantir seu crescimento sustentável a longo prazo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.0 bi (trimestre) | R$2.6 bi (LTM)\n- EBITDA: R$0.2 bi (trimestre) | R$0.7 bi (LTM) | Margem 23.7%\n- Lucro Líquido: R$0.5 bi (trimestre) | R$1.0 bi (LTM)\n- Operacional: Vulcabras registrou 9,0 milhões de pares/peças vendidos no 3T25, com crescimento de 7,7% em relação ao 3T24. A receita operacional bruta atingiu R$ 1,1 bilhão, o maior faturamento trimestral da história da empresa.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 955700000,
+      "receita_liquida_ltm": 2551700000,
+      "ebitda_tri": 226500000,
+      "ebitda_ltm": 663300000,
+      "lucro_liquido_tri": 547200000,
+      "lucro_liquido_ltm": 1006500000,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 23.7,
+      "margem_liquida_pct": 57.3
+    },
+    "operacionais": {
+      "descricao": "Vulcabras registrou 9,0 milhões de pares/peças vendidos no 3T25, com crescimento de 7,7% em relação ao 3T24. A receita operacional bruta atingiu R$ 1,1 bilhão, o maior faturamento trimestral da história da empresa.",
+      "metricas": {
+        "volume_vendas": 9000000,
+        "crescimento_volume_pct": 7.7
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T04:55:30.231204Z"
+}
