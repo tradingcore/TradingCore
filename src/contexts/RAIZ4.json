@@ -1,0 +1,35 @@
+{
+  "ticker": "RAIZ4",
+  "codigo_cvm": "25917",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25917_2025-09-30_RAÍZEN_SA.pdf",
+  "texto_contexto": "A Raízen (RAIZ4) se destaca como uma das principais empresas do setor de energia e bioenergia, operando com um modelo de negócio diversificado que abrange a produção e comercialização de etanol, açúcar e energia elétrica, além da distribuição de combustíveis. Formada a partir de uma joint venture entre a Shell e a Cosan, a companhia se beneficia da sinergia entre essas duas grandes corporações, o que não apenas fortalece sua posição competitiva, mas também amplia seu acesso a tecnologias avançadas e práticas de gestão eficientes.\n\nOs segmentos de operação da Raízen são amplos e incluem a produção de Etanol, Açúcar e Bioenergia (EAB), que representa o núcleo de suas atividades, e a Distribuição de Combustíveis, que abrange tanto o mercado brasileiro quanto o argentino. Além disso, a empresa explora outros segmentos que, embora não estejam diretamente relacionados ao seu core business, contribuem para a diversificação de receitas e mitigação de riscos. A atuação em diferentes mercados e produtos permite à Raízen não apenas atender à demanda crescente por energias renováveis, mas também se posicionar como uma referência em sustentabilidade e inovação.\n\nOs principais indicadores de desempenho (KPIs) da Raízen, como EBITDA ajustado, margem EBITDA, volume de vendas de açúcar e etanol, e a relação dívida líquida/EBITDA ajustado, são fundamentais para a avaliação de sua eficiência operacional e rentabilidade. A gestão eficaz desses indicadores é crucial para a tomada de decisões estratégicas e para a identificação de oportunidades de melhoria. Os drivers de valor da companhia incluem a otimização da estrutura de capital, que busca equilibrar a dívida e o capital próprio, a eficiência operacional, que se traduz em redução de custos e aumento de produtividade, e a capacidade de inovação, especialmente em processos e produtos que atendem às demandas por sustentabilidade e transição energética.\n\nEntretanto, a Raízen enfrenta uma série de riscos que podem impactar suas operações e resultados financeiros. A volatilidade dos preços das commodities, especialmente do açúcar e do etanol, representa um desafio constante, assim como as flutuações cambiais que podem afetar a competitividade da empresa em mercados internacionais. Além disso, a companhia deve lidar com riscos regulatórios e ambientais, que exigem conformidade com normas rigorosas e podem resultar em custos adicionais. A sazonalidade da produção agrícola também é um fator a ser considerado, uma vez que variações climáticas podem impactar a oferta de matéria-prima e, consequentemente, a produção.\n\nA estrutura de capital da Raízen é composta por uma combinação de dívida de longo prazo e capital próprio, com um foco claro na otimização do perfil de endividamento e na manutenção de uma liquidez adequada. Essa abordagem permite à empresa financiar suas operações e investimentos estratégicos, ao mesmo tempo em que busca garantir a sustentabilidade financeira a longo prazo.\n\nA governança corporativa da Raízen é estruturada para assegurar transparência e responsabilidade nas suas operações, com um conselho de administração que supervisiona as atividades da empresa e garante que as melhores práticas sejam seguidas. A regulação do setor de energia e bioenergia, tanto no Brasil quanto na Argentina, é um aspecto crítico que pode impactar as operações da Raízen, exigindo conformidade com normas ambientais e de segurança. Mudanças nas políticas governamentais relacionadas a biocombustíveis, por exemplo, podem afetar diretamente a viabilidade econômica de suas operações.\n\nAlém disso, a empresa deve estar atenta a eventos críticos que podem influenciar seu desempenho, como variações climáticas que impactem a produção agrícola e a conclusão de desinvestimentos estratégicos que visam simplificar o portfólio e melhorar a eficiência operacional. A Raízen continua a se concentrar na execução de seu plano de transformação, buscando não apenas fortalecer sua posição no mercado, mas também garantir a sustentabilidade a longo prazo em um cenário energético em constante evolução. A capacidade de adaptação às mudanças do ambiente macroeconômico e regulatório será um fator determinante para o sucesso contínuo da empresa, à medida que o mundo avança em direção a fontes de energia mais limpas e sustentáveis.\n\nNÚMEROS DE REFERÊNCIA (2T2025):\n- Receita Líquida: R$59.9 bi (trimestre) | R$114.1 bi (LTM)\n- EBITDA: R$2.8 bi (trimestre) | R$5.0 bi (LTM) | Margem 4.7%\n- Lucro Líquido: R$-2.3 bi (trimestre) | R$-4.2 bi (LTM)\n- Dívida Líquida: R$53.4 bi\n- Capex: R$1.7 bi (trimestre) | R$3.4 bi (LTM)\n- Operacional: Produção de 2,7 MM ton de açúcar e 1,2 MM m³ de etanol no trimestre, com aumento na eficiência operacional.",
+  "numeros_referencia": {
+    "periodo_trimestre": "2T2025",
+    "financeiros": {
+      "receita_liquida_tri": 59910600000,
+      "receita_liquida_ltm": 114128200000,
+      "ebitda_tri": 2787800000,
+      "ebitda_ltm": 4986900000,
+      "lucro_liquido_tri": -2312000000,
+      "lucro_liquido_ltm": -4156000000,
+      "divida_liquida": 53437000000,
+      "divida_bruta": null,
+      "capex_tri": 1692400000,
+      "capex_ltm": 3396800000,
+      "margem_ebitda_pct": 4.65,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "Produção de 2,7 MM ton de açúcar e 1,2 MM m³ de etanol no trimestre, com aumento na eficiência operacional.",
+      "metricas": {
+        "açúcar_produzido_ton": 2697000,
+        "etanol_produzido_m3": 1240000,
+        "cana_moída_ton": 35100000,
+        "volume_vendas_combustiveis_m3": 7400000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:39:58.074200Z"
+}

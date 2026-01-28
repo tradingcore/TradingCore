@@ -1,0 +1,30 @@
+{
+  "ticker": "QUSW3",
+  "codigo_cvm": "23302",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "23302_2025-09-30_QUALITY_SOFTWARE_SA.pdf",
+  "texto_contexto": "A Quality Software S.A. (QUSW3) é uma referência no setor de tecnologia e aceleração digital no Brasil, tendo sido fundada em 1989. Desde sua criação, a empresa se especializou em oferecer soluções inovadoras que visam apoiar a transformação digital dos negócios de seus clientes. O modelo de negócio da Quality Software é multifacetado, centrando-se no desenvolvimento de soluções digitais que abrangem e-commerce, estratégias de crescimento e plataformas de automação. Além disso, a empresa se destaca na prestação de serviços de auditoria, governança, risco e compliance (ESGRC), bem como na otimização de TI, o que a posiciona como um parceiro estratégico para empresas que buscam modernizar suas operações e aumentar sua eficiência.\n\nOs segmentos de atuação da Quality Software são divididos em duas áreas principais: Digital Business e IT Optimization. O primeiro segmento, Digital Business, engloba soluções de Commerce, Business e Platforms, focando na criação de experiências digitais que impulsionam o engajamento e a conversão de clientes. Por outro lado, o segmento de IT Optimization concentra-se em serviços que visam melhorar a infraestrutura de TI das empresas, otimizando processos operacionais e garantindo que as tecnologias utilizadas estejam alinhadas com as melhores práticas do mercado.\n\nOs principais indicadores de desempenho (KPIs) da Quality Software, como receita líquida, lucro bruto, EBITDA ajustado e lucro líquido, refletem a saúde financeira e o desempenho operacional da empresa. A receita líquida tem apresentado um crescimento consistente, especialmente na linha Digital, que se tornou uma parte significativa do faturamento total. Os drivers de valor para a Quality Software incluem a captação de novos contratos, a modernização de suas ofertas por meio da adoção de inteligência artificial e a busca incessante por eficiência operacional, fatores que visam não apenas aumentar as margens, mas também garantir uma rentabilidade sustentável a longo prazo.\n\nEntretanto, a empresa não está isenta de riscos. A volatilidade nas receitas, a possibilidade de perda de contratos e os custos associados a atualizações de software são desafios que podem impactar suas margens e, consequentemente, sua performance financeira. A estrutura de capital da Quality Software é composta por um capital social robusto, com uma dívida total que inclui financiamentos de longo prazo e recursos destinados a aquisições. A alavancagem financeira tem se mantido estável, o que sugere uma gestão prudente das suas obrigações financeiras.\n\nNo que diz respeito à governança, a Quality Software opera sob rigorosas regulamentações do mercado de capitais brasileiro, sendo auditada por uma empresa independente. Essa prática não apenas assegura a conformidade com as normas vigentes, mas também reforça a transparência e a confiança dos investidores. A governança corporativa é um pilar fundamental para a empresa, especialmente em um ambiente de negócios em constante evolução, onde a adaptação às mudanças regulatórias e de mercado é crucial para a sustentabilidade financeira.\n\nA competição no setor de tecnologia e aceleração digital é intensa, com diversas empresas buscando capturar a mesma fatia de mercado. A Quality Software se destaca por sua capacidade de inovação e pela qualidade de suas soluções, mas deve continuar a monitorar as tendências do setor e as estratégias de seus concorrentes para manter sua posição competitiva. A aquisição da Driven Tecnologia em 2024 foi um marco importante para a empresa, ampliando suas capacidades operacionais e impactando positivamente seus resultados, mas também representa um desafio em termos de integração e sinergia entre as operações.\n\nPor fim, a sensibilidade macroeconômica é um fator que não pode ser ignorado. A Quality Software, como muitas empresas do setor, está sujeita a flutuações econômicas que podem afetar a demanda por seus serviços. Mudanças nas condições econômicas, políticas e sociais podem influenciar diretamente o comportamento dos consumidores e das empresas, impactando, assim, o crescimento e a rentabilidade da Quality Software. A capacidade da empresa de se adaptar a essas variáveis externas será fundamental para garantir sua continuidade e sucesso no mercado.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.1 bi (trimestre) | R$0.2 bi (LTM)\n- EBITDA: R$0.0 bi (trimestre) | R$0.0 bi (LTM) | Margem 14.7%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Operacional: A Quality Software apresentou uma receita líquida de R$ 70,9 milhões no 3T2025, com um lucro líquido de R$ 3,5 milhões, refletindo um crescimento em relação ao mesmo período do ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 70898000,
+      "receita_liquida_ltm": 206674000,
+      "ebitda_tri": 10451000,
+      "ebitda_ltm": 26352000,
+      "lucro_liquido_tri": 3462000,
+      "lucro_liquido_ltm": 16204000,
+      "divida_liquida": null,
+      "divida_bruta": 101000000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 14.7,
+      "margem_liquida_pct": 4.9
+    },
+    "operacionais": {
+      "descricao": "A Quality Software apresentou uma receita líquida de R$ 70,9 milhões no 3T2025, com um lucro líquido de R$ 3,5 milhões, refletindo um crescimento em relação ao mesmo período do ano anterior.",
+      "metricas": {}
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:38:00.294827Z"
+}

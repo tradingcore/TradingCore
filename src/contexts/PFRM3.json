@@ -1,0 +1,34 @@
+{
+  "ticker": "PFRM3",
+  "codigo_cvm": "20346",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "20346_2025-09-30_PROFARMA_DISTRIB_PROD_FARMACEUTICOS_SA.pdf",
+  "texto_contexto": "O Grupo Profarma (PFRM3) se posiciona como um dos principais players no setor de distribuição e varejo farmacêutico no Brasil, operando com um modelo de negócios integrado que abrange tanto a distribuição de produtos farmacêuticos quanto a operação de redes de farmácias, com destaque para a Rede d1000. Essa abordagem permite à empresa não apenas atender a uma vasta rede de clientes, que ultrapassa 54 mil mensalmente, mas também realizar um volume significativo de pedidos, em torno de 1,5 milhão por mês. Essa capilaridade nacional é um dos pilares que sustentam a competitividade da Profarma, permitindo uma presença robusta em diferentes regiões do país.\n\nOs segmentos de atuação da Profarma são claramente delineados entre a Profarma Distribuição, que se dedica à venda para farmácias e drogarias, e a Rede d1000, que se concentra no varejo farmacêutico. Essa divisão estratégica permite à empresa explorar diferentes dinâmicas de mercado e atender a uma ampla gama de necessidades dos consumidores, desde a venda de medicamentos até produtos de saúde e bem-estar. A crescente demanda por esses produtos, impulsionada por uma maior conscientização sobre saúde e autocuidado, se torna um driver essencial para o crescimento da empresa.\n\nOs indicadores de desempenho, como a receita bruta e o EBITDA, refletem a saúde financeira da Profarma e sua capacidade de gerar valor. O crescimento contínuo desses indicadores, aliado a uma margem EBITDA que demonstra eficiência operacional, é um sinal positivo para investidores e stakeholders. A empresa tem se mostrado capaz de otimizar seu capital de giro e adaptar-se rapidamente às mudanças do mercado, o que é crucial em um setor tão dinâmico quanto o farmacêutico.\n\nEntretanto, a Profarma não está isenta de riscos. A volatilidade das taxas de juros pode impactar diretamente o custo do capital, o que exige uma gestão financeira cuidadosa. Além disso, a regulação do setor farmacêutico, que é complexa e envolve normas rigorosas da ANVISA e da CVM, pode afetar a precificação e a disponibilidade de produtos. Mudanças na legislação fiscal e nas políticas de preços de medicamentos são fatores que podem influenciar o desempenho da empresa, exigindo uma vigilância constante e uma capacidade de adaptação rápida.\n\nA estrutura de capital da Profarma é um reflexo de sua gestão financeira prudente, com uma dívida líquida controlada e um nível de alavancagem que se destaca como o menor da última década. Essa abordagem conservadora não apenas proporciona maior segurança financeira, mas também permite à empresa ter flexibilidade para investir em crescimento e inovação. A busca por iniciativas de sustentabilidade e a adoção de tecnologias como inteligência artificial são exemplos de como a Profarma está se preparando para o futuro, buscando não apenas se adaptar, mas também liderar em um mercado em transformação.\n\nA competição no setor farmacêutico é intensa, com diversos players disputando espaço tanto no varejo quanto na distribuição. A capacidade da Profarma de se diferenciar por meio de uma rede de distribuição eficiente e uma presença forte no varejo é um fator que pode garantir sua posição de destaque. Além disso, a evolução do e-commerce e das vendas digitais representa uma oportunidade significativa, exigindo que a empresa não apenas acompanhe as tendências, mas também inove para capturar esse mercado em crescimento.\n\nPor fim, a sensibilidade macroeconômica é um aspecto que não pode ser ignorado. Fatores como a inflação, o crescimento econômico e as políticas de saúde pública têm um impacto direto no setor farmacêutico. A Profarma, ao se posicionar de maneira estratégica e ao investir em inovação e sustentabilidade, está se preparando para enfrentar os desafios e aproveitar as oportunidades que surgem nesse ambiente em constante mudança. A combinação de uma gestão financeira sólida, uma estrutura de capital equilibrada e um foco em inovação coloca a Profarma em uma trajetória promissora, capaz de navegar pelas complexidades do mercado farmacêutico brasileiro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$2.9 bi (trimestre) | R$11.3 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.4 bi (LTM) | Margem 4.0%\n- Lucro Líquido: R$0.1 bi (trimestre) | R$0.1 bi (LTM)\n- Operacional: Receita Bruta de R$ 3,3 bilhões, crescimento de 9,1% em relação ao 3T24. EBITDA de R$ 114,4 milhões, com margem EBITDA de 4,0%. Lucro Líquido de R$ 52,6 milhões, crescimento de 2,4% em relação ao 3T24.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 2850100000,
+      "receita_liquida_ltm": 11278500000,
+      "ebitda_tri": 114400000,
+      "ebitda_ltm": 358900000,
+      "lucro_liquido_tri": 52600000,
+      "lucro_liquido_ltm": 140200000,
+      "divida_liquida": 0,
+      "divida_bruta": 0,
+      "capex_tri": 0,
+      "capex_ltm": 0,
+      "margem_ebitda_pct": 4.0,
+      "margem_liquida_pct": 1.8
+    },
+    "operacionais": {
+      "descricao": "Receita Bruta de R$ 3,3 bilhões, crescimento de 9,1% em relação ao 3T24. EBITDA de R$ 114,4 milhões, com margem EBITDA de 4,0%. Lucro Líquido de R$ 52,6 milhões, crescimento de 2,4% em relação ao 3T24.",
+      "metricas": {
+        "clientes": 54000,
+        "lojas": 283,
+        "vendas_media_loja": 798100
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:36:27.658197Z"
+}

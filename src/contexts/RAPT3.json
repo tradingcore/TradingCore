@@ -1,0 +1,35 @@
+{
+  "ticker": "RAPT3",
+  "codigo_cvm": "14109",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "14109_2025-09-30_RANDONCORP_SA.pdf",
+  "texto_contexto": "A Randoncorp S.A. se destaca como uma das principais empresas brasileiras no setor de bens de capital, apresentando um modelo de negócio diversificado que abrange a fabricação de implementos rodoviários, autopeças, soluções financeiras e serviços, além de incorporar tecnologia avançada em suas operações. Com uma presença significativa no mercado internacional, especialmente na América do Sul e nos Estados Unidos, a empresa se posiciona como um player relevante em um setor que exige inovação constante e adaptação às dinâmicas de mercado.\n\nOs segmentos de atuação da Randoncorp são amplos e incluem a produção de caminhões e semirreboques, autopeças e serviços financeiros. Essa diversificação não apenas permite à empresa mitigar riscos associados a flutuações em um único segmento, mas também a capitalizar oportunidades em diferentes áreas de negócios. A capacidade de oferecer soluções integradas, que vão desde a fabricação até o financiamento, confere à Randoncorp uma vantagem competitiva, permitindo que atenda de forma mais eficaz às necessidades de seus clientes.\n\nOs principais indicadores de desempenho da Randoncorp, como receita líquida, EBITDA, margem EBITDA e retorno sobre o capital investido (ROIC), refletem a saúde financeira e a eficiência operacional da empresa. A companhia tem demonstrado um crescimento consistente nas receitas internacionais, impulsionado por uma estratégia de expansão que inclui aquisições e a exploração de mercados resilientes. A diversificação de produtos e a inovação tecnológica são drivers de valor fundamentais, permitindo que a Randoncorp se mantenha competitiva em um ambiente de negócios em constante evolução.\n\nEntretanto, a empresa não está isenta de riscos. A volatilidade das taxas de juros e a dependência de condições econômicas favoráveis para o setor de transporte e logística são fatores que podem impactar seu desempenho. Além disso, a exposição a riscos cambiais, decorrente de sua atuação internacional, representa um desafio adicional. A estrutura de capital da Randoncorp é composta por uma combinação de dívida e patrimônio líquido, com um foco em otimização da alavancagem e controle rigoroso de custos. A manutenção de um rating de crédito em BrAAA é um indicativo da solidez financeira da empresa, embora o aumento da dívida líquida e a necessidade de capital de giro sejam questões que demandam atenção constante.\n\nA regulação do setor automotivo e financeiro, tanto no Brasil quanto em mercados internacionais, exerce uma influência significativa sobre as operações da Randoncorp. A conformidade com normas ambientais e de segurança é essencial para garantir a continuidade dos negócios e a reputação da empresa. Recentemente, a transição de liderança com a nomeação de Daniel Randon como CEO marca um novo capítulo na trajetória da companhia, trazendo a expectativa de inovação e continuidade nas estratégias de crescimento. A captação de recursos no mercado de capitais para fortalecer a estrutura financeira é uma medida estratégica que visa garantir a flexibilidade necessária para enfrentar desafios futuros.\n\nA presença da Randoncorp no índice IBrX100 da B3 é um reflexo da confiança do mercado na empresa e de sua capacidade de gerar valor para os acionistas. Além disso, a companhia tem demonstrado um compromisso crescente com iniciativas de sustentabilidade e responsabilidade social, alinhando-se às expectativas de um mercado cada vez mais consciente em relação a questões ambientais, sociais e de governança (ESG). Essa abordagem pode não apenas melhorar a imagem da Randoncorp, mas também influenciar positivamente seu desempenho a longo prazo, atraindo investidores que valorizam práticas empresariais responsáveis.\n\nEm um cenário macroeconômico que apresenta desafios e oportunidades, a Randoncorp se posiciona como uma empresa resiliente, capaz de se adaptar às mudanças e de explorar novas frentes de crescimento. A combinação de um portfólio diversificado, uma estrutura de capital sólida e um compromisso com a inovação e a sustentabilidade coloca a Randoncorp em uma posição favorável para enfrentar as incertezas do mercado e continuar sua trajetória de crescimento.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$3.4 bi (trimestre) | R$9.9 bi (LTM)\n- EBITDA: R$0.5 bi (trimestre) | R$1.3 bi (LTM) | Margem 13.9%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$-0.0 bi (LTM)\n- Dívida Líquida: R$7.5 bi\n- Capex: R$0.1 bi (trimestre) | R$2.8 bi (LTM)\n- Operacional: Receita líquida de R$ 3,4 bilhões, com crescimento de 9,9% em relação ao 3T24. Lucro líquido de R$ 23,1 milhões, representando uma queda de 81% em relação ao ano anterior.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 3444219000,
+      "receita_liquida_ltm": 9933968000,
+      "ebitda_tri": 479784000,
+      "ebitda_ltm": 1269205000,
+      "lucro_liquido_tri": 23149000,
+      "lucro_liquido_ltm": -19450000,
+      "divida_liquida": 7546577000,
+      "divida_bruta": null,
+      "capex_tri": 125665000,
+      "capex_ltm": 2770268000,
+      "margem_ebitda_pct": 13.9,
+      "margem_liquida_pct": 0.7
+    },
+    "operacionais": {
+      "descricao": "Receita líquida de R$ 3,4 bilhões, com crescimento de 9,9% em relação ao 3T24. Lucro líquido de R$ 23,1 milhões, representando uma queda de 81% em relação ao ano anterior.",
+      "metricas": {
+        "vendas_caminhoes": 29312,
+        "vendas_semirreboques": 17791,
+        "exportacoes_caminhoes": 8195,
+        "exportacoes_semirreboques": 1427
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:39:01.664491Z"
+}

@@ -1,0 +1,35 @@
+{
+  "ticker": "QUAL3",
+  "codigo_cvm": "22497",
+  "data_release": "2025-11-13",
+  "fonte_pdf": "22497_2025-11-13_QUALICORP_CONSULTORIA_E_CORRETORA_DE_SEGUROS_SA.pdf",
+  "texto_contexto": "A Qualicorp Consultoria e Corretora de Seguros S.A. se posiciona como uma das principais empresas no Brasil no segmento de comercialização, administração e gestão de planos de saúde coletivos por adesão. Seu modelo de negócio é robusto e diversificado, centrado na oferta de soluções de saúde que vão além da simples intermediação de planos. A empresa se destaca pela consultoria personalizada que oferece aos seus clientes, permitindo uma seleção de soluções de saúde que atendem às necessidades específicas de pequenas e médias empresas (PMEs) e do varejo. Essa abordagem não apenas fortalece a relação com os clientes, mas também amplia a carteira administrada, que inclui tanto planos de saúde quanto serviços de corretagem e taxas de administração.\n\nOs principais indicadores de desempenho da Qualicorp, como receita líquida, EBITDA ajustado e lucro líquido ajustado, são reflexos de sua eficiência operacional e da capacidade de gerar valor em um mercado competitivo. A empresa tem demonstrado uma geração de caixa sólida, com um fluxo de caixa livre recorrente significativo, o que indica uma boa saúde financeira e uma gestão eficaz de seus recursos. A redução da taxa de churn, que mede o cancelamento de clientes, é um sinal positivo de que a Qualicorp está conseguindo reter seus clientes de forma mais eficaz, o que é crucial em um setor onde a fidelização é um dos principais desafios.\n\nOs drivers de valor da Qualicorp são multifacetados e incluem a eficiência operacional, o realinhamento comercial e a alocação estratégica de capital. Esses fatores são essenciais para a execução de um plano de turnaround que visa revitalizar a empresa e expandir sua base de clientes. A introdução de novos produtos e serviços, com um número expressivo de lançamentos, demonstra a capacidade da empresa de inovar e se adaptar às demandas do mercado. No entanto, a Qualicorp não está isenta de riscos. A regulação do setor de saúde no Brasil é um fator crítico que pode impactar suas operações e resultados financeiros. A supervisão da Comissão de Valores Mobiliários (CVM) impõe requisitos que a empresa deve cumprir, influenciando diretamente sua estratégia e operações.\n\nA estrutura de capital da Qualicorp é caracterizada por um nível de endividamento saudável, o que proporciona uma margem de manobra financeira para a empresa. A captação de recursos por meio da emissão de debêntures é uma estratégia que visa reforçar sua posição de caixa e garantir a viabilidade de pagamentos de amortizações programadas. Essa abordagem demonstra uma gestão prudente e uma visão de longo prazo, essencial para enfrentar os desafios do mercado.\n\nNo que diz respeito à competição, a Qualicorp opera em um ambiente dinâmico e desafiador, onde a concorrência é acirrada. A variação na demanda por planos de saúde, impulsionada por fatores econômicos e sociais, também representa um risco significativo. A sensibilidade macroeconômica, incluindo flutuações na economia brasileira, pode impactar a disposição das empresas em contratar planos de saúde para seus funcionários, afetando diretamente a receita da Qualicorp.\n\nAlém disso, eventos críticos, como a conclusão da venda de sua carteira empresarial e da Gama, prevista para o início de 2026, são fatores que podem alterar a composição de sua receita e a estrutura de negócios a longo prazo. Essas movimentações estratégicas são fundamentais para a adaptação da empresa às novas realidades do mercado e para a busca de um crescimento sustentável. Em suma, a Qualicorp se apresenta como uma empresa resiliente, com um modelo de negócio bem estruturado, mas que deve continuar a navegar por um ambiente regulatório e competitivo desafiador, sempre atenta às mudanças macroeconômicas que podem impactar seu desempenho.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.4 bi (trimestre) | R$1.1 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.4 bi (LTM) | Margem 38.7%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- Dívida Líquida: R$0.9 bi\n- Operacional: A carteira administrada encerrou o trimestre com 570,5 mil vidas, apresentando churn de 10,3%, o menor nível para um terceiro trimestre desde 2020.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 372600000,
+      "receita_liquida_ltm": 1100900000,
+      "ebitda_tri": 144200000,
+      "ebitda_ltm": 438800000,
+      "lucro_liquido_tri": 19700000,
+      "lucro_liquido_ltm": 52300000,
+      "divida_liquida": 881200000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 38.7,
+      "margem_liquida_pct": 5.3
+    },
+    "operacionais": {
+      "descricao": "A carteira administrada encerrou o trimestre com 570,5 mil vidas, apresentando churn de 10,3%, o menor nível para um terceiro trimestre desde 2020.",
+      "metricas": {
+        "carteira_administrada": 570500,
+        "churn_pct": 10.3,
+        "adicoes_organicas": 44200,
+        "cancelamentos": 60200
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T03:37:08.089041Z"
+}
