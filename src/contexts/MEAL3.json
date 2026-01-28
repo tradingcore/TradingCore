@@ -1,0 +1,33 @@
+{
+  "ticker": "MEAL3",
+  "codigo_cvm": "23574",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "23574_2025-09-30_INTERNATIONAL_MEAL_COMPANY_ALIMENTAÇÃO_SA.pdf",
+  "texto_contexto": "A International Meal Company Alimentação S.A. (IMC), listada na B3 sob o código MEAL3, se destaca como uma das principais empresas multimarcas no setor de varejo de alimentação na América Latina. Seu modelo de negócio é diversificado e abrange a operação de restaurantes e serviços de alimentação, incluindo marcas renomadas como Pizza Hut, KFC e Frango Assado. Além disso, a IMC possui operações em locais estratégicos, como aeroportos e postos de combustíveis, o que amplia sua presença no mercado e diversifica suas fontes de receita.\n\nA estrutura da IMC é segmentada em diferentes áreas, que incluem alimentação casual, fast food, catering e varejo em aeroportos. Cada um desses segmentos apresenta características e dinâmicas de mercado distintas, permitindo à empresa adaptar suas estratégias de acordo com as demandas específicas de cada nicho. A alimentação casual, por exemplo, pode se beneficiar de um público que busca experiências gastronômicas mais elaboradas, enquanto o fast food atende a uma demanda por conveniência e rapidez.\n\nOs principais indicadores de desempenho (KPIs) da IMC, como receita líquida, margem bruta, EBITDA ajustado e fluxo de caixa livre, são fundamentais para avaliar a saúde financeira da empresa. A receita líquida, que reflete o total de vendas após deduções, é um indicador crucial para entender a performance da companhia em um ambiente competitivo. A margem bruta, por sua vez, fornece insights sobre a eficiência operacional, enquanto o EBITDA ajustado é uma medida importante para avaliar a lucratividade operacional, desconsiderando itens não recorrentes. O fluxo de caixa livre é essencial para entender a capacidade da empresa de gerar caixa após investimentos, o que é vital para sustentar suas operações e financiar crescimento futuro.\n\nOs drivers de valor da IMC estão centrados na eficiência operacional, disciplina financeira e desenvolvimento de ativos estratégicos. A empresa tem se concentrado em racionalizar sua rede de lojas, fechando unidades que não apresentam desempenho satisfatório e investindo em iniciativas digitais que visam aumentar a eficiência e melhorar a experiência do cliente. A transformação digital é uma prioridade, com um crescimento significativo nas vendas digitais, refletindo uma adaptação às novas tendências de consumo e ao comportamento dos clientes.\n\nEntretanto, a IMC não está isenta de riscos. O ambiente econômico desafiador, marcado por inflação persistente e pressão sobre as margens, representa um desafio constante. A redução do número de lojas e a saída do KFC como um motor de crescimento impactaram diretamente a receita, exigindo que a empresa reavaliasse suas estratégias de expansão e operação. A estrutura de capital da IMC, caracterizada por uma dívida líquida, exige um foco contínuo na desalavancagem e no controle da alavancagem, que é um aspecto crítico para a sustentabilidade financeira da empresa.\n\nA governança corporativa da IMC é um aspecto que merece destaque, uma vez que a conformidade com normas regulatórias e de segurança alimentar é essencial para a operação no setor de alimentação. A empresa deve gerenciar continuamente esses aspectos, garantindo que suas operações estejam em conformidade com as regulamentações locais e internacionais. Eventos críticos, como a reestruturação das operações nos Estados Unidos e a conclusão da transação com o KFC, também influenciam a trajetória da empresa, moldando sua estratégia e desempenho financeiro.\n\nA competição no setor de alimentação é intensa, com diversos players disputando a atenção dos consumidores. A IMC precisa se diferenciar por meio de inovações em seu portfólio de produtos, qualidade do atendimento e experiências oferecidas aos clientes. A sensibilidade macroeconômica, incluindo variações na renda disponível dos consumidores e mudanças nas preferências alimentares, também impacta diretamente a demanda por seus produtos e serviços.\n\nEm suma, a IMC Alimentação está em um processo contínuo de adaptação e evolução, buscando construir uma operação mais sólida e rentável em um mercado dinâmico e desafiador. A empresa se compromete a alinhar suas estratégias às necessidades do consumidor, ao mesmo tempo em que gerencia riscos e busca oportunidades de crescimento sustentável.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.5 bi (trimestre) | R$1.6 bi (LTM)\n- EBITDA: R$0.1 bi (trimestre) | R$0.2 bi (LTM) | Margem 14.3%\n- Dívida Líquida: R$0.1 bi\n- Operacional: A IMC encerrou o trimestre com 356 lojas em operação, apresentando uma receita total do sistema de R$ 609,9 milhões, com destaque para o crescimento de 6,1% na receita das operações do Brasil no acumulado do ano.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 482900000,
+      "receita_liquida_ltm": 1577800000,
+      "ebitda_tri": 69200000,
+      "ebitda_ltm": 202100000,
+      "lucro_liquido_tri": null,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 144000000,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 14.3,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "A IMC encerrou o trimestre com 356 lojas em operação, apresentando uma receita total do sistema de R$ 609,9 milhões, com destaque para o crescimento de 6,1% na receita das operações do Brasil no acumulado do ano.",
+      "metricas": {
+        "numero_lojas": 356,
+        "crescimento_receita_pct": 6.1
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:37:04.460051Z"
+}

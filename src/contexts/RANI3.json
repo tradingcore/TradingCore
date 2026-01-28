@@ -1,0 +1,34 @@
+{
+  "ticker": "RANI3",
+  "codigo_cvm": "2429",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "2429_2025-09-30_IRANI_PAPEL_E_EMBALAGEM_SA.pdf",
+  "texto_contexto": "A Irani Papel e Embalagem, listada na B3 sob o código RANI3, é uma das principais empresas do setor de papel e embalagens no Brasil, destacando-se pela sua atuação focada em soluções sustentáveis. Com um modelo de negócio que integra a produção de embalagens sustentáveis e papel para embalagens, a Irani se posiciona como a quarta maior produtora de papel para embalagens do país. Sua operação é dividida em dois segmentos principais: o de Embalagens Sustentáveis, que abrange o papelão ondulado, e o de Papel para Embalagens Sustentáveis, além de um segmento florestal que envolve o cultivo de pinus, destinado à comercialização de toras de madeira e resinas.\n\nOs drivers que impulsionam o valor da Irani são diversos e incluem a eficiência operacional, que é fundamental para a manutenção de margens saudáveis, e a capacidade de implementar e capturar resultados de projetos inovadores, como a Plataforma Gaia. Este projeto, em particular, visa não apenas aumentar a capacidade instalada da empresa, mas também melhorar a eficiência operacional, permitindo que a Irani se adapte rapidamente às demandas do mercado. Outro aspecto relevante é a habilidade da empresa em repassar aumentos de preços aos seus clientes, uma estratégia que se torna ainda mais viável em um cenário de crescente demanda por produtos sustentáveis.\n\nOs principais indicadores de desempenho da Irani, como a receita líquida e o EBITDA ajustado, refletem a saúde financeira da empresa e sua capacidade de gerar lucros. A relação dívida líquida/EBITDA, que se mostra favorável, indica uma estrutura de capital robusta, com a maior parte da dívida classificada como de longo prazo e predominantemente em moeda local. Essa estrutura permite à Irani um acesso mais facilitado a financiamentos, essencial para a execução de seus projetos de expansão e modernização.\n\nEntretanto, a Irani não está isenta de riscos. A volatilidade dos preços das matérias-primas, especialmente as aparas, representa um desafio significativo, uma vez que essas matérias são componentes críticos nos custos de produção. Além disso, a concorrência em um mercado de embalagens fragmentado pode pressionar as margens e exigir que a empresa mantenha um diferencial competitivo constante. As flutuações econômicas, que podem afetar a demanda por produtos de papel e embalagens, também são fatores que a Irani deve monitorar de perto.\n\nA regulação ambiental é outro aspecto crucial para a operação da Irani. A empresa tem um forte compromisso com práticas de sustentabilidade e busca atender a normas e diretrizes que promovem a responsabilidade ambiental. Esse compromisso não apenas fortalece sua imagem corporativa, mas também a posiciona favoravelmente em um mercado cada vez mais exigente em relação a práticas ESG (ambientais, sociais e de governança).\n\nA estrutura de governança da Irani é projetada para garantir transparência e responsabilidade, aspectos fundamentais em um ambiente de negócios que valoriza a ética e a sustentabilidade. A empresa possui um rating de crédito sólido, o que não apenas reforça sua credibilidade no mercado, mas também facilita o acesso a recursos financeiros necessários para sua expansão e inovação.\n\nPor fim, a sensibilidade macroeconômica é um fator que a Irani deve considerar em sua estratégia. Mudanças nas condições econômicas, políticas e sociais podem impactar diretamente a demanda por seus produtos, assim como a disponibilidade e os preços das matérias-primas. A capacidade da Irani de se adaptar a essas variáveis será crucial para sua continuidade e crescimento no competitivo setor de papel e embalagens. Em suma, a Irani Papel e Embalagem se destaca por sua abordagem sustentável e inovadora, mas deve permanecer atenta aos desafios e oportunidades que o mercado apresenta.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.4 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.1 bi (trimestre) | N/D (LTM) | Margem 33.7%\n- Lucro Líquido: R$0.0 bi (trimestre) | N/D (LTM)\n- Dívida: R$1.1 bi (líquida) | R$1.8 bi (bruta)\n- Capex: R$0.1 bi (trimestre) | N/D (LTM)\n- Operacional: Receita líquida de R$ 433,5 milhões, EBITDA ajustado de R$ 146,2 milhões e lucro líquido de R$ 42,1 milhões no 3T25.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 433463000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 146218000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 42076000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": 1071516000,
+      "divida_bruta": 1752969000,
+      "capex_tri": 125900000,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 33.7,
+      "margem_liquida_pct": 9.7
+    },
+    "operacionais": {
+      "descricao": "Receita líquida de R$ 433,5 milhões, EBITDA ajustado de R$ 146,2 milhões e lucro líquido de R$ 42,1 milhões no 3T25.",
+      "metricas": {
+        "volume_vendas_embalagens": 42700,
+        "volume_vendas_papel": 33200,
+        "participacao_mercado": 3.8
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:38:47.484357Z"
+}

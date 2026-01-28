@@ -1,0 +1,34 @@
+{
+  "ticker": "MYPK3",
+  "codigo_cvm": "11932",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "11932_2025-09-30_IOCHPE_MAXION_SA.pdf",
+  "texto_contexto": "A Iochpe-Maxion S.A. é uma proeminente empresa brasileira que se destaca no setor automotivo, com um foco específico na fabricação de rodas e componentes estruturais para veículos leves e comerciais. Seu modelo de negócio é caracterizado por uma diversificação geográfica e de portfólio, permitindo à companhia operar em diversas regiões do mundo, incluindo América do Norte, Europa, Brasil e Índia. Essa estratégia de diversificação não apenas amplia sua presença no mercado global, mas também a torna menos vulnerável a flutuações econômicas regionais, garantindo uma base sólida para suas operações.\n\nA empresa é reconhecida pela produção de rodas de alumínio e aço, além de componentes estruturais que atendem a uma ampla gama de veículos, desde automóveis de passeio até caminhões e ônibus. Essa versatilidade no portfólio é um dos principais drivers de valor da Iochpe-Maxion, pois permite que a companhia se adapte rapidamente às mudanças nas demandas do mercado e às preferências dos consumidores. A inovação em produtos e processos também desempenha um papel crucial, uma vez que a empresa busca constantemente melhorar sua eficiência operacional e oferecer soluções que atendam às exigências crescentes de segurança e sustentabilidade.\n\nOs principais indicadores de desempenho (KPIs) da Iochpe-Maxion incluem receita operacional líquida, EBITDA, margem EBITDA, lucro líquido e alavancagem financeira, que é medida pela relação entre dívida líquida e EBITDA. A companhia tem como meta manter uma margem EBITDA recorrente de dois dígitos, o que reflete sua capacidade de gerar lucro mesmo em cenários desafiadores. A gestão eficiente de custos e a busca por melhorias contínuas são fundamentais para alcançar esses objetivos, especialmente em um setor marcado por intensa concorrência e pressões inflacionárias.\n\nEntretanto, a Iochpe-Maxion não está isenta de riscos. A volatilidade do mercado automotivo, influenciada por fatores como mudanças nas preferências dos consumidores, inovações tecnológicas e condições econômicas globais, representa um desafio constante. Além disso, a dependência de fatores geopolíticos pode impactar a produção e a demanda, exigindo que a empresa esteja sempre atenta às dinâmicas do mercado. A estrutura de capital da Iochpe-Maxion é composta por um mix de dívida e patrimônio líquido, com um endividamento que, em períodos de análise, se mostrava controlado, permitindo à empresa manter uma posição de caixa robusta. Essa liquidez é crucial para enfrentar desafios financeiros e investir em oportunidades de crescimento.\n\nA governança corporativa da Iochpe-Maxion é estruturada para garantir transparência e responsabilidade, com práticas que visam proteger os interesses de seus acionistas e stakeholders. A empresa está sujeita a uma série de regulamentações que regem o setor automotivo, incluindo normas de segurança e ambientais, o que exige conformidade constante e pode impactar suas operações. A capacidade de se adaptar a essas exigências regulatórias é um diferencial competitivo importante, especialmente em um ambiente onde a sustentabilidade e a responsabilidade social estão se tornando cada vez mais relevantes.\n\nRecentemente, a Iochpe-Maxion demonstrou sua estratégia de crescimento por meio da aquisição de 50,1% da Polimetal S.A., uma fabricante de rodas de alumínio. Essa movimentação não apenas reforça sua posição no mercado, mas também alinha-se ao seu planejamento estratégico de expandir operações e atender à crescente demanda por conteúdo local. A busca por excelência no atendimento ao cliente e a adaptação às necessidades do mercado são pilares que sustentam a visão de longo prazo da empresa.\n\nEm um cenário macroeconômico, a Iochpe-Maxion é sensível a variáveis como taxas de juros, inflação e flutuações cambiais, que podem impactar tanto seus custos operacionais quanto a demanda por seus produtos. A capacidade de navegar por essas incertezas econômicas, mantendo a eficiência operacional e a inovação, será fundamental para a continuidade de seu crescimento e sucesso no competitivo setor automotivo. A combinação de uma estrutura de capital sólida, governança eficaz e uma estratégia de diversificação robusta posiciona a Iochpe-Maxion como uma empresa resiliente e preparada para enfrentar os desafios do futuro.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$3.8 bi (trimestre) | R$11.8 bi (LTM)\n- EBITDA: R$0.4 bi (trimestre) | R$1.2 bi (LTM) | Margem 9.5%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.1 bi (LTM)\n- Dívida: R$3.9 bi (líquida) | R$5.6 bi (bruta)\n- Capex: R$0.1 bi (trimestre) | R$0.4 bi (LTM)\n- Operacional: A Iochpe-Maxion apresentou receita líquida de R$ 3,8 bilhões no 3T25, com EBITDA de R$ 360,4 milhões e lucro líquido de R$ 35,1 milhões, refletindo desafios na produção de veículos comerciais na América do Norte.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 3802400000,
+      "receita_liquida_ltm": 11847417000,
+      "ebitda_tri": 360435000,
+      "ebitda_ltm": 1165275000,
+      "lucro_liquido_tri": 35067000,
+      "lucro_liquido_ltm": 132781000,
+      "divida_liquida": 3931700000,
+      "divida_bruta": 5631200000,
+      "capex_tri": 142300000,
+      "capex_ltm": 385900000,
+      "margem_ebitda_pct": 9.5,
+      "margem_liquida_pct": 0.9
+    },
+    "operacionais": {
+      "descricao": "A Iochpe-Maxion apresentou receita líquida de R$ 3,8 bilhões no 3T25, com EBITDA de R$ 360,4 milhões e lucro líquido de R$ 35,1 milhões, refletindo desafios na produção de veículos comerciais na América do Norte.",
+      "metricas": {
+        "volume_vendas_veiculos_leves": 690000,
+        "volume_vendas_veiculos_comerciais": 114000,
+        "lucro_por_acao": 0.23413
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:37:51.532668Z"
+}
