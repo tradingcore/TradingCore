@@ -1,0 +1,34 @@
+{
+  "ticker": "INTB3",
+  "codigo_cvm": "25453",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "25453_2025-09-30_INTELBRAS_SA_IND_DE_TELECOMUNICAÇÃO_ELETRÔNICA_BRA.pdf",
+  "texto_contexto": "A Intelbras S.A. é uma referência no setor de telecomunicação eletrônica no Brasil, destacando-se pela oferta de soluções que abrangem segurança, tecnologia da informação e comunicação (TIC) e energia. O modelo de negócio da empresa é fundamentado na criação e comercialização de produtos e serviços que atendem à crescente demanda por segurança e conectividade, além de soluções inovadoras em energia solar. A Intelbras tem se posicionado como uma empresa que não apenas busca a eficiência operacional, mas também a inovação constante, visando maximizar a rentabilidade e o retorno sobre o capital investido.\n\nOs segmentos de atuação da Intelbras são diversificados e estratégicos. O setor de Segurança, por exemplo, representa uma parcela significativa da receita da empresa, refletindo a crescente preocupação com a proteção patrimonial e a segurança pessoal. No segmento de TIC, a empresa se destaca na oferta de soluções em redes de fibra óptica, que são essenciais para a conectividade moderna e a transformação digital. Por sua vez, o segmento de Energia, com foco em geradores solares, alinha-se à tendência global de sustentabilidade e à busca por fontes de energia renováveis, posicionando a Intelbras como um player relevante nesse mercado em expansão.\n\nPara medir seu desempenho, a Intelbras utiliza indicadores-chave de desempenho (KPIs) que incluem a receita operacional líquida, o lucro líquido, a margem EBITDA e o retorno sobre o capital investido (ROIC). Esses KPIs são fundamentais para a avaliação da saúde financeira e operacional da empresa, permitindo uma análise detalhada de sua performance ao longo do tempo. A capacidade de inovação, a eficiência na gestão de custos e despesas, e a fidelização de clientes e parceiros são os principais drivers de valor que sustentam o crescimento da Intelbras. A empresa tem se mostrado ágil na adaptação às mudanças do mercado e nas necessidades dos consumidores, o que é crucial em um ambiente tão dinâmico.\n\nEntretanto, a Intelbras não está isenta de riscos. O ambiente macroeconômico brasileiro, por exemplo, pode impactar a demanda por seus produtos e serviços, especialmente em períodos de instabilidade econômica. Além disso, a empresa enfrenta riscos regulatórios que podem afetar suas operações, exigindo conformidade com normas e legislações específicas que regem os setores de telecomunicações e energia. A estrutura de capital da Intelbras é robusta, composta por um patrimônio líquido significativo e dívidas que, embora tenham aumentado, são geridas de forma a garantir a liquidez e a capacidade de investimento da empresa.\n\nA governança corporativa da Intelbras é um aspecto fundamental para sua operação, pois assegura que a empresa atue de maneira ética e transparente, respeitando os interesses de seus acionistas e demais stakeholders. A regulação do setor de telecomunicações e energia no Brasil é um fator crítico que pode influenciar a operação da Intelbras, exigindo uma vigilância constante sobre as mudanças nas políticas econômicas e nas legislações pertinentes. Eventos como flutuações cambiais e a concorrência acirrada também são elementos que podem impactar o desempenho da empresa, exigindo dela uma estratégia de adaptação e resiliência.\n\nEm um cenário desafiador, a Intelbras continua a implementar ajustes estratégicos que visam garantir sua sustentabilidade e crescimento a longo prazo. A empresa tem se mostrado comprometida em inovar e se adaptar, buscando não apenas sobreviver, mas prosperar em um mercado competitivo e em constante evolução. A combinação de uma estrutura de capital sólida, uma governança eficaz e uma abordagem centrada no cliente posiciona a Intelbras de forma favorável para enfrentar os desafios futuros e aproveitar as oportunidades que surgem em um ambiente dinâmico e em transformação.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$1.1 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.1 bi (trimestre) | N/D (LTM) | Margem 12.8%\n- Lucro Líquido: R$0.1 bi (trimestre) | N/D (LTM)\n- Operacional: Receita operacional líquida de R$1.124.689 mil, lucro bruto de R$347.092 mil e lucro líquido de R$147.904 mil no trimestre.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 1124689000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 144049000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 147904000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": 1028727000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 12.8,
+      "margem_liquida_pct": 13.2
+    },
+    "operacionais": {
+      "descricao": "Receita operacional líquida de R$1.124.689 mil, lucro bruto de R$347.092 mil e lucro líquido de R$147.904 mil no trimestre.",
+      "metricas": {
+        "lucro_bruto": 347092000,
+        "margem_bruta_pct": 30.9,
+        "roic_pct": 14.5
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:35:46.711433Z"
+}

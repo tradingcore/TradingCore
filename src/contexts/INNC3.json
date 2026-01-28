@@ -1,0 +1,34 @@
+{
+  "ticker": "INNC3",
+  "codigo_cvm": "24279",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "24279_2025-09-30_INC_EMPREENDIMENTOS_IMOBILIÁRIOS_SA.pdf",
+  "texto_contexto": "A Inc Empreendimentos Imobiliários (INNC3) se destaca no setor de incorporação e construção imobiliária, com um foco claro no desenvolvimento de empreendimentos residenciais. Seu modelo de negócio é estruturado em torno da aquisição de terrenos, desenvolvimento de projetos e a subsequente venda de unidades habitacionais. A empresa adota uma estratégia que prioriza lançamentos e vendas contratadas, permitindo uma resposta ágil às dinâmicas do mercado e às necessidades dos consumidores. A segmentação geográfica de suas operações é uma característica fundamental, pois permite à Inc atender a perfis variados de renda familiar, o que não apenas diversifica seu portfólio de produtos, mas também melhora a adequação às demandas específicas de cada região.\n\nOs principais indicadores de desempenho da Inc, como receita líquida, margem bruta ajustada, EBITDA ajustado e endividamento líquido, são essenciais para a avaliação da saúde financeira e operacional da empresa. A receita líquida, em particular, serve como um termômetro do sucesso das vendas e da eficácia das estratégias comerciais implementadas. A margem bruta ajustada e o EBITDA ajustado são cruciais para entender a rentabilidade operacional, enquanto o endividamento líquido oferece uma visão clara sobre a capacidade da empresa de honrar seus compromissos financeiros, refletindo sua solidez no mercado.\n\nOs drivers de valor da Inc são variados e interconectados. A eficiência na execução de obras é um fator determinante para garantir a entrega pontual dos projetos, o que, por sua vez, impacta diretamente a satisfação do cliente e a reputação da empresa. A capacidade de lançamento de novos empreendimentos é igualmente vital, pois um pipeline robusto de projetos assegura a continuidade do crescimento e a geração de receita futura. A gestão ativa do landbank, que consiste no estoque de terrenos disponíveis para desenvolvimento, é uma estratégia que permite à empresa não apenas garantir a oferta de novos produtos, mas também otimizar a alocação de recursos e maximizar o retorno sobre investimentos.\n\nEntretanto, a Inc não está isenta de riscos. O mercado imobiliário é suscetível a flutuações na demanda, que podem ser influenciadas por fatores econômicos, sociais e até mesmo por mudanças nas preferências dos consumidores. Além disso, a variação nos preços de insumos e materiais de construção pode impactar diretamente a rentabilidade dos projetos. A empresa também deve estar atenta a riscos regulatórios, uma vez que o setor é fortemente influenciado por legislações e políticas públicas, especialmente em relação ao financiamento habitacional e às normas de construção, que podem alterar o cenário operacional de forma significativa.\n\nA estrutura de capital da Inc é composta por uma combinação equilibrada de dívida e patrimônio líquido. Embora a empresa tenha conseguido reduzir seu nível de endividamento, é fundamental que essa situação seja monitorada continuamente para garantir o cumprimento dos covenants financeiros estabelecidos. A manutenção de um endividamento líquido em relação ao patrimônio líquido abaixo de 1,0 é um indicativo de uma gestão prudente e responsável do capital, refletindo a capacidade da empresa de sustentar suas operações e financiar novos lançamentos.\n\nEventos críticos, como mudanças nas políticas de financiamento habitacional, alterações nas taxas de juros e a evolução do mercado imobiliário, podem impactar diretamente a Inc. Essas variáveis não apenas afetam a capacidade de lançamento de novos empreendimentos, mas também a velocidade de vendas, que é crucial para a geração de caixa e a sustentabilidade do negócio. Em um ambiente econômico em constante mudança, a empresa se compromete a gerar valor sustentável e resultados consistentes no longo prazo, alinhando suas operações às expectativas de seus stakeholders e buscando sempre a inovação e a excelência em seus projetos. A governança corporativa da Inc é estruturada para garantir a transparência e a responsabilidade nas decisões, o que é fundamental para fortalecer a confiança dos investidores e demais partes interessadas. Assim, a Inc Empreendimentos Imobiliários se posiciona como uma empresa resiliente, capaz de navegar pelos desafios do mercado e aproveitar as oportunidades que surgem em um setor dinâmico e competitivo.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.2 bi (trimestre) | R$0.4 bi (LTM)\n- EBITDA: R$0.0 bi (trimestre) | R$0.1 bi (LTM) | Margem 20.3%\n- Lucro Líquido: R$0.0 bi (trimestre) | R$0.0 bi (LTM)\n- Dívida: R$0.1 bi (líquida) | R$0.1 bi (bruta)\n- Operacional: Lançamentos de R$ 301.966 em VGV, 1.418 unidades lançadas e 591 unidades entregues no trimestre.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 181496000,
+      "receita_liquida_ltm": 438615000,
+      "ebitda_tri": 36822000,
+      "ebitda_ltm": 103749000,
+      "lucro_liquido_tri": 17497000,
+      "lucro_liquido_ltm": 47193000,
+      "divida_liquida": 95576000,
+      "divida_bruta": 140750000,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 20.3,
+      "margem_liquida_pct": 9.6
+    },
+    "operacionais": {
+      "descricao": "Lançamentos de R$ 301.966 em VGV, 1.418 unidades lançadas e 591 unidades entregues no trimestre.",
+      "metricas": {
+        "unidades_lancadas": 1418,
+        "unidades_entregues": 591,
+        "vendas_liquidas": 141085000
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:34:57.138122Z"
+}

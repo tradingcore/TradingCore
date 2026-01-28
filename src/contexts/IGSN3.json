@@ -1,0 +1,35 @@
+{
+  "ticker": "IGSN3",
+  "codigo_cvm": "23175",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "23175_2025-09-30_IGUA_SANEAMENTO_SA.pdf",
+  "texto_contexto": "A Igua Saneamento (IGSN3) se destaca no setor de saneamento básico no Brasil, atuando na prestação de serviços essenciais de abastecimento de água e esgotamento sanitário. Seu modelo de negócio é fundamentado em concessões públicas, o que permite à empresa assumir a responsabilidade pela operação e manutenção de sistemas de saneamento em diversas regiões do país. Essa abordagem não apenas busca garantir a universalização do acesso a serviços de água e esgoto, mas também reflete um compromisso com a melhoria da qualidade de vida das comunidades atendidas.\n\nOs principais segmentos de atuação da Igua incluem a gestão de água e esgoto, com operações significativas em estados como Rio de Janeiro, Sergipe e Paraná. A empresa tem se posicionado como um agente transformador, buscando não apenas a eficiência operacional, mas também a expansão da cobertura de serviços. A universalização do acesso a esses serviços é um dos pilares de sua estratégia, alinhando-se às diretrizes nacionais de saneamento que visam atender a uma demanda crescente por infraestrutura adequada.\n\nOs indicadores-chave de desempenho (KPIs) da Igua Saneamento são fundamentais para medir sua eficácia e eficiência. A Receita Líquida Ajustada e o EBITDA Ajustado são métricas que refletem a saúde financeira da empresa, enquanto o número de economias de água e esgoto e o Índice de Perdas no Faturamento são indicadores operacionais que evidenciam a capacidade da companhia de gerenciar recursos de forma eficaz. A melhoria contínua da eficiência operacional, a redução de perdas e a implementação de tecnologias inovadoras são drivers de valor que impulsionam o crescimento e a competitividade da Igua no setor.\n\nEntretanto, a empresa enfrenta uma série de riscos que podem impactar sua operação e desempenho financeiro. A regulação do setor de saneamento é um fator crítico, uma vez que mudanças nas tarifas e nas condições de operação podem afetar diretamente a rentabilidade. Além disso, a necessidade de investimentos constantes em infraestrutura representa um desafio significativo, especialmente em um cenário onde a gestão da inadimplência se torna cada vez mais relevante. A estrutura de capital da Igua Saneamento é marcada por um nível considerável de endividamento, refletindo a necessidade de financiamento para projetos de expansão e modernização das operações. Embora a alavancagem financeira seja alta, ela é considerada dentro do contexto das concessões em fase inicial, como as de Sergipe e Rio de Janeiro, onde o potencial de crescimento é significativo.\n\nA regulação do setor de saneamento no Brasil tem passado por transformações importantes, com a implementação de marcos legais que visam aumentar a eficiência e a participação privada. Essas mudanças criam um ambiente dinâmico e desafiador, onde a capacidade de adaptação da Igua Saneamento será crucial. Eventos críticos, como a transição de liderança com a nomeação de um novo CEO, podem influenciar a estratégia e a cultura organizacional da empresa, impactando sua capacidade de resposta às demandas do mercado e às exigências regulatórias. Além disso, marcos operacionais, como o início da operação plena em novas concessões, têm um efeito direto na receita e na performance da companhia.\n\nA sensibilidade macroeconômica também desempenha um papel importante na operação da Igua Saneamento. Fatores como a inflação, as taxas de juros e a situação econômica geral do Brasil podem influenciar tanto a demanda por serviços de saneamento quanto a capacidade da empresa de realizar investimentos necessários. A gestão eficaz dos riscos regulatórios e operacionais, aliada a uma estratégia sólida de crescimento e inovação, será fundamental para o sucesso a longo prazo da Igua Saneamento, permitindo que a empresa não apenas se mantenha competitiva, mas também contribua de forma significativa para a melhoria da infraestrutura de saneamento no Brasil.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.7 bi (trimestre) | R$1.9 bi (LTM)\n- EBITDA: R$0.3 bi (trimestre) | R$0.8 bi (LTM) | Margem 41.3%\n- Lucro Líquido: R$-0.0 bi (trimestre) | R$-0.0 bi (LTM)\n- Capex: R$0.2 bi (trimestre) | R$0.5 bi (LTM)\n- Operacional: Crescimento de 74,3% no número de economias, totalizando 2.359 mil. Volume faturado de 103,2 milhões m³, com redução de 2,0 p.p. no índice de perdas no faturamento, alcançando 47,4%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 721200000,
+      "receita_liquida_ltm": 1918000000,
+      "ebitda_tri": 297500000,
+      "ebitda_ltm": 799200000,
+      "lucro_liquido_tri": -137277,
+      "lucro_liquido_ltm": -476427,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": 155400000,
+      "capex_ltm": 533900000,
+      "margem_ebitda_pct": 41.3,
+      "margem_liquida_pct": null
+    },
+    "operacionais": {
+      "descricao": "Crescimento de 74,3% no número de economias, totalizando 2.359 mil. Volume faturado de 103,2 milhões m³, com redução de 2,0 p.p. no índice de perdas no faturamento, alcançando 47,4%.",
+      "metricas": {
+        "economias": 2359400,
+        "volume_faturado_m3": 103200000,
+        "perdas_faturamento_pct": 47.4,
+        "inadimplencia_pct": 1.1
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:32:35.403041Z"
+}

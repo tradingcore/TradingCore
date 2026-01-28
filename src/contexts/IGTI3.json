@@ -1,0 +1,36 @@
+{
+  "ticker": "IGTI3",
+  "codigo_cvm": "8672",
+  "data_release": "2025-09-30",
+  "fonte_pdf": "8672_2025-09-30_IGUATEMI_SA.pdf",
+  "texto_contexto": "A Iguatemi S.A. se posiciona como uma das principais empresas do setor de shopping centers no Brasil, destacando-se pela sua abordagem full service que abrange desde a concepção até a administração de empreendimentos. Com um portfólio diversificado, a empresa não apenas opera 17 shopping centers e dois outlets, mas também investe em complexos imobiliários de uso misto e em um e-commerce premium no modelo marketplace. Essa diversidade permite à Iguatemi não apenas mitigar riscos, mas também explorar diferentes fontes de receita, ampliando sua presença no mercado.\n\nO modelo de negócio da Iguatemi é fundamentado na gestão eficiente de um portfólio robusto, que totaliza uma significativa Área Bruta Locável (ABL). A empresa se concentra em três segmentos principais: shoppings, varejo e locação de espaços comerciais. A busca por crescimento é orientada por indicadores de desempenho como receita líquida, EBITDA, lucro líquido, taxa de ocupação e custo de ocupação. A Iguatemi tem como drivers de valor a expansão de seu portfólio, a qualificação de seus ativos e a capacidade de atrair marcas de renome, além de uma gestão de custos que visa a eficiência operacional.\n\nEntretanto, a empresa enfrenta uma série de riscos que podem impactar seu desempenho. A volatilidade econômica é um fator crítico, uma vez que mudanças nas condições econômicas podem afetar o consumo e, consequentemente, a performance dos locatários. Além disso, a evolução das preferências dos consumidores e a intensa concorrência no setor de varejo exigem que a Iguatemi esteja constantemente atenta às tendências do mercado. A dependência de locatários para a geração de receita é outro aspecto que pode representar um risco, especialmente em cenários de crise econômica ou mudanças no comportamento do consumidor.\n\nA estrutura de capital da Iguatemi é cuidadosamente gerida, com uma combinação de dívida e patrimônio líquido que busca manter a alavancagem em níveis saudáveis. Essa abordagem reflete uma gestão prudente dos passivos, permitindo à empresa ter flexibilidade financeira para investir em novos projetos e na qualificação de seus ativos. A governança corporativa da Iguatemi é estruturada para garantir transparência e responsabilidade, com conformidade às normas da Comissão de Valores Mobiliários (CVM) e legislações locais que regulam a operação de shopping centers e a gestão de ativos imobiliários.\n\nA competição no setor é acirrada, com diversas empresas buscando capturar a atenção do consumidor em um ambiente que se transforma rapidamente. A Iguatemi, no entanto, se destaca não apenas pela qualidade de seus empreendimentos, mas também por sua capacidade de inovar e se adaptar às novas demandas do mercado. Eventos críticos, como aquisições estratégicas e a inauguração de novos empreendimentos, como o Teatro Iguatemi, são fundamentais para reforçar a conexão da marca com cultura e entretenimento, ampliando sua proposta de valor.\n\nAlém disso, a empresa tem se comprometido com iniciativas de sustentabilidade e responsabilidade social, reconhecendo que esses fatores podem impactar positivamente sua imagem e atratividade no mercado. Em um cenário onde os consumidores estão cada vez mais conscientes e exigentes, a capacidade da Iguatemi de alinhar seus negócios a práticas sustentáveis pode se tornar um diferencial competitivo significativo.\n\nPor fim, a sensibilidade macroeconômica é um aspecto que não pode ser ignorado. Fatores como taxas de juros, inflação e políticas econômicas têm um papel crucial na determinação do ambiente de negócios em que a Iguatemi opera. A empresa deve estar atenta a essas variáveis, adaptando suas estratégias para garantir não apenas a sobrevivência, mas também o crescimento em um mercado dinâmico e desafiador. Assim, a Iguatemi se posiciona como uma empresa resiliente, capaz de navegar por um cenário complexo, sempre buscando inovação e excelência em suas operações.\n\nNÚMEROS DE REFERÊNCIA (3T2025):\n- Receita Líquida: R$0.4 bi (trimestre) | N/D (LTM)\n- EBITDA: R$0.3 bi (trimestre) | N/D (LTM) | Margem 79.4%\n- Lucro Líquido: R$0.1 bi (trimestre) | N/D (LTM)\n- Operacional: Vendas totais de R$ 6,0 bilhões, crescimento de 22,5% em relação ao 3T24. Taxa de ocupação de 96,1%. Aluguel por m² cresceu 16,7%.",
+  "numeros_referencia": {
+    "periodo_trimestre": "3T2025",
+    "financeiros": {
+      "receita_liquida_tri": 381000000,
+      "receita_liquida_ltm": null,
+      "ebitda_tri": 302400000,
+      "ebitda_ltm": null,
+      "lucro_liquido_tri": 128900000,
+      "lucro_liquido_ltm": null,
+      "divida_liquida": null,
+      "divida_bruta": null,
+      "capex_tri": null,
+      "capex_ltm": null,
+      "margem_ebitda_pct": 79.4,
+      "margem_liquida_pct": 33.8
+    },
+    "operacionais": {
+      "descricao": "Vendas totais de R$ 6,0 bilhões, crescimento de 22,5% em relação ao 3T24. Taxa de ocupação de 96,1%. Aluguel por m² cresceu 16,7%.",
+      "metricas": {
+        "vendas_totais": 6000000000,
+        "taxa_ocupacao_pct": 96.1,
+        "aluguel_por_m2": 689,
+        "vendas_mesmas_lojas_pct": 5.8,
+        "alugueis_mesmas_lojas_pct": 7.1
+      }
+    },
+    "moeda": "BRL"
+  },
+  "gerado_em": "2026-01-28T02:33:41.045332Z"
+}
